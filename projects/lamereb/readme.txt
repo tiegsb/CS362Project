@@ -1,0 +1,2 @@
+Brian Lamere
+CS362
