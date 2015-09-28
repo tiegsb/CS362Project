@@ -1,28 +1,29 @@
 CFLAGS = -Wall -fpic -coverage -lm
+GCC = gcc
 
 rngs.o: rngs.h rngs.c
-	gcc -c rngs.c -g  $(CFLAGS)
+	$(GCC) -c rngs.c -g  $(CFLAGS)
 
 dominion.o: dominion.h dominion.c rngs.o
-	gcc -c dominion.c -g  $(CFLAGS)
+	$(GCC) -c dominion.c -g  $(CFLAGS)
 
 playdom: dominion.o playdom.c
-	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
+	$(GCC) -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
 
 testDrawCard: testDrawCard.c dominion.o rngs.o
-	gcc -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
+	$(GCC) -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
 
 badTestDrawCard: badTestDrawCard.c dominion.o rngs.o
-	gcc -o badTestDrawCard -g  badTestDrawCard.c dominion.o rngs.o $(CFLAGS)
+	$(GCC) -o badTestDrawCard -g  badTestDrawCard.c dominion.o rngs.o $(CFLAGS)
 
 testBuyCard: testDrawCard.c dominion.o rngs.o
-	gcc -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
+	$(GCC) -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
 
 testAll: dominion.o testSuite.c
-	gcc -o testSuite testSuite.c -g  dominion.o rngs.o $(CFLAGS)
+	$(GCC) -o testSuite testSuite.c -g  dominion.o rngs.o $(CFLAGS)
 
 interface.o: interface.h interface.c
-	gcc -c interface.c -g  $(CFLAGS)
+	$(GCC) -c interface.c -g  $(CFLAGS)
 
 runtests: testDrawCard 
 	./testDrawCard &> unittestresult.out
@@ -31,7 +32,7 @@ runtests: testDrawCard
 
 
 player: player.c interface.o
-	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
+	$(GCC) -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
