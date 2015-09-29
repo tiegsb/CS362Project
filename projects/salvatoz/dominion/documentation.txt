@@ -1,0 +1,24 @@
+# smithy
+
+Smithy allows the player to draw three cards, after which Smithy is discarded.
+
+## Call tree
+* cardEffect(smithy, ...)
+    * drawCard(currentPlayer, state) three times    // card effect
+    * discardCard(handPos, currentPlayer, state, 0) // discard smithy
+
+## Observations 
+handPos designates the position of the card being played
+
+
+# adventurer
+
+Adventurer causes you to draw and reveal cards until you've found two treasure cards. These go into
+your hand while the rest of your cards are discarded. If you run out of cards, shuffle the discards
+and draw from those.
+
+
+# discardCard()
+
+
+# updateCoins()
