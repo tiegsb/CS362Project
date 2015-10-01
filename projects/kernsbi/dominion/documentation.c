@@ -9,7 +9,7 @@ smithy:
 
 adventurer:
 	The adventurer card allows the player who plays the card to go through their deck until two treasure cards are found.  These
-	treasure cards are put into the player's hand while the revealed cards are placed in the played	card pile.  This is accolmplished
+	treasure cards are put into the player's hand while the revealed cards are placed in the played	card pile.  This is accomplished
 	by running a while loop that runs while the variable drawntreasure is less than two.  In the while loop it checks to make sure
 	the player has more than one card in their deck, if not the played card pile is shuffled and added to the player's deck.  Then a 
 	card is drawn with the drawcard() function.  The variable cardDrawn is set to the top card of the player's hand.  The cardDrawn
@@ -26,6 +26,6 @@ discardCard():
 
 updateCoins():
 	The updateCoins() function uses a for loop and few if statements to update the amount of coins a player has in their hand.  This is 
-	accolmplished by first setting coins equal to 0 then entering the for loop.  Once in the for loop if statements check to if the card
+	accomplished by first setting coins equal to 0 then entering the for loop.  Once in the for loop if statements check to if the card
 	is a copper, silver, or gold and if it is the appropriate amount of coins are added to the state.  After this has been done a user's 
 	bonus is added to the total amount of coins.
