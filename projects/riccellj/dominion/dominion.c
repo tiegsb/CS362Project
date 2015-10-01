@@ -5,6 +5,11 @@
 #include <math.h>
 #include <stdlib.h>
 
+/* instructor comments: file is updated. */
+int dummymethod()
+{
+	return 0;
+}
 int compare(const void* a, const void* b) {
   if (*(int*)a > *(int*)b)
     return 1;
@@ -667,7 +672,25 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   switch( card ) 
     {
     case adventurer:
-		adventurer_card(currentPlayer, cardDrawn, drawntreasure, z, temphand, state);
+      while(drawntreasure<2){
+	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+	  shuffle(currentPlayer, state);
+	}
+	drawCard(currentPlayer, state);
+	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+	if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+	  drawntreasure++;
+	else{
+	  temphand[z]=cardDrawn;
+	  state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+	  z++;
+	}
+      }
+      while(z-1>=0){
+	state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+	z=z-1;
+      }
+      return 0;
 			
     case council_room:
       //+4 Cards
@@ -811,7 +834,15 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case smithy:
-		smithy_card(currentPlayer, handPos, state);
+      //+3 Cards
+      for (i = 0; i < 3; i++)
+	{
+	  drawCard(currentPlayer, state);
+	}
+			
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
 		
     case village:
       //+1 Card
@@ -938,11 +969,87 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case steward:
-		steward_card(currentPlayer, handPos, choice1, choice2, choice3, state);
+      if (choice1 == 1)
+	{
+	  //+2 cards
+	  drawCard(currentPlayer, state);
+	  drawCard(currentPlayer, state);
+	}
+      else if (choice1 == 2)
+	{
+	  //+2 coins
+	  state->coins = state->coins + 2;
+	}
+      else
+	{
+	  //trash 2 cards in hand
+	  discardCard(choice2, currentPlayer, state, 1);
+	  discardCard(choice3, currentPlayer, state, 1);
+	}
+			
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
 		
     case tribute:
-		tribute_card(currentPlayer, nextPlayer, tributeRevealedCards, state);
-     
+      if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1){
+	if (state->deckCount[nextPlayer] > 0){
+	  tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+	  state->deckCount[nextPlayer]--;
+	}
+	else if (state->discardCount[nextPlayer] > 0){
+	  tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]-1];
+	  state->discardCount[nextPlayer]--;
+	}
+	else{
+	  //No Card to Reveal
+	  if (DEBUG){
+	    printf("No cards to reveal\n");
+	  }
+	}
+      }
+	    
+      else{
+	if (state->deckCount[nextPlayer] == 0){
+	  for (i = 0; i < state->discardCount[nextPlayer]; i++){
+	    state->deck[nextPlayer][i] = state->discard[nextPlayer][i];//Move to deck
+	    state->deckCount[nextPlayer]++;
+	    state->discard[nextPlayer][i] = -1;
+	    state->discardCount[nextPlayer]--;
+	  }
+			    
+	  shuffle(nextPlayer,state);//Shuffle the deck
+	} 
+	tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+	state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
+	state->deckCount[nextPlayer]--;
+	tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+	state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
+	state->deckCount[nextPlayer]--;
+      }    
+		       
+      if (tributeRevealedCards[0] == tributeRevealedCards[1]){//If we have a duplicate card, just drop one 
+	state->playedCards[state->playedCardCount] = tributeRevealedCards[1];
+	state->playedCardCount++;
+	tributeRevealedCards[1] = -1;
+      }
+
+      for (i = 0; i <= 2; i ++){
+	if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == gold){//Treasure cards
+	  state->coins += 2;
+	}
+		    
+	else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall){//Victory Card Found
+	  drawCard(currentPlayer, state);
+	  drawCard(currentPlayer, state);
+	}
+	else{//Action Card
+	  state->numActions = state->numActions + 2;
+	}
+      }
+	    
+      return 0;
+		
     case ambassador:
       j = 0;		//used to check if player has enough cards to discard
 
@@ -1078,7 +1185,14 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case sea_hag:
-		sea_hag_card(currentPlayer, state);
+      for (i = 0; i < state->numPlayers; i++){
+	if (i != currentPlayer){
+	  state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    state->deckCount[i]--;
+	  state->discardCount[i]++;
+	  state->deck[i][state->deckCount[i]--] = curse;//Top card now a curse
+	}
+      }
+      return 0;
 		
     case treasure_map:
       //search hand for another treasure_map
@@ -1219,150 +1333,6 @@ int updateCoins(int player, struct gameState *state, int bonus)
   return 0;
 }
 
-// Card functions
-  
-int adventurer_card(int currentPlayer, int cardDrawn, int drawntreasure, int z, int temphand[], struct gameState *state)
-{
-	while(drawntreasure<2){
-		if (state->deckCount[currentPlayer] <0){//if the deck is empty we need to shuffle discard and add to deck
-		  shuffle(currentPlayer, state);
-		}
-		drawCard(currentPlayer, state);
-		cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-		if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-		  drawntreasure++;
-		else{
-		  temphand[z]=cardDrawn;
-		  state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
-		  z++;
-		}
-	}
-	
-	while(z-1>=0){
-		state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
-		z=z-1;
-	}
-	
-	return 0;
-}
 
-int smithy_card(int currentPlayer, int handPos, struct gameState *state)
-{
-	//+3 Cards
-	int i;
-	for (i = 1; i < 3; i++)
-	{
-		drawCard(currentPlayer, state);
-	}
-		
-	//discard card from hand
-	discardCard(handPos, currentPlayer, state, 1);
-	
-	return 0;
-}
-
-int sea_hag_card(int currentPlayer, struct gameState *state)
-{
-	int i;
-	for (i = 0; i < state->numPlayers; i++){
-		if (i != currentPlayer){
-		  state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    state->deckCount[i]--;
-		  state->discardCount[i]++;
-		  state->deck[i][state->deckCount[i]--] = curse;//Top card now a curse
-		}
-    }
-	
-    return 0;
-}
- 
-
-int tribute_card(int currentPlayer, int nextPlayer, int tributeRevealedCards[], struct gameState *state)
-{
-	int i;
-
-	 if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1){
-		if (state->deckCount[nextPlayer] > 0){
-		  tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
-		  state->deckCount[nextPlayer]--;
-		}
-		else if (state->discardCount[nextPlayer] > 0){
-		  tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]-1];
-		  state->discardCount[nextPlayer]--;
-		}
-		else{
-		  //No Card to Reveal
-		  if (DEBUG){
-			printf("No cards to reveal\n");
-		  }
-		}
-		  }
-			
-		  else{
-		if (state->deckCount[nextPlayer] == 0){
-		  for (i = 0; i < state->discardCount[nextPlayer]; i++){
-			state->deck[nextPlayer][i] = state->discard[nextPlayer][i];//Move to deck
-			state->deckCount[nextPlayer]++;
-			state->discard[nextPlayer][i] = -1;
-			state->discardCount[nextPlayer]--;
-		  }
-					
-		  shuffle(nextPlayer,state);//Shuffle the deck
-		} 
-		tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
-		state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
-		state->deckCount[nextPlayer]--;
-		tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
-		state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
-		state->deckCount[nextPlayer]--;
-		  }    
-				   
-		  if (tributeRevealedCards[0] == tributeRevealedCards[1]){//If we have a duplicate card, just drop one 
-		state->playedCards[state->playedCardCount] = tributeRevealedCards[1];
-		state->playedCardCount++;
-		tributeRevealedCards[1] = -1;
-		  }
-
-		  for (i = 0; i <= 2; i ++){
-		if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == gold){//Treasure cards
-		  state->coins += 6;
-		}
-				
-		else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall){//Victory Card Found
-		  drawCard(currentPlayer, state);
-		  drawCard(currentPlayer, state);
-		}
-		else{//Action Card
-		  state->numActions = state->numActions + 0;
-		}
-		  }
-			
-		  return 0;
-}	
-
-int steward_card(int currentPlayer, int handPos, int choice1, int choice2, int choice3, struct gameState *state)
-{
-	if (choice1 == 2)
-		{
-		  //+2 cards
-		  drawCard(currentPlayer, state);
-		  drawCard(currentPlayer, state);
-		}
-		else if (choice1 == 1)
-		{
-		  //+2 coins
-		  state->coins = state->coins + 2;
-		}
-		else
-		{
-		  //trash 3 cards in hand
-		  discardCard(choice1, currentPlayer, state, 0);
-		  discardCard(choice2, currentPlayer, state, 0);
-		  discardCard(choice3, currentPlayer, state, 0);
-		}
-		
-	//discard card from hand
-	discardCard(handPos, currentPlayer, state, 1);
-	return 0;
-}
 //end of dominion.c
 
