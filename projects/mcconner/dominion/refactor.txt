@@ -1,0 +1,18 @@
+Rachael McConnell
+CS362 Fall 2015
+September 30, 2015
+Assignment 2
+
+Adventurer
+Changed cardDrawn from copper,silver, or gold to copper, estate, or gold
+
+Smithy
+changed for loop to only get 2 new cards instead of 3
+
+Feast
+In updateCoins function, coins are only updated by 4 instead of 5.
+
+CouncilRoom
+
+Steward
+Switched the choices in the if statements, it was: if choice1 == 1, call drawCard twice, elseif choice1==2 increment coins by 2. Now, if choice1==1 increment coins by 2, if choice1==2, call drawCard twice

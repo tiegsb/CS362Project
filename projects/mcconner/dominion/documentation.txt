@@ -1,0 +1,20 @@
+Rachael McConnell
+CS362 – Fall 2015
+September 29, 2015
+
+Smithy card
+The smithy card calls the drawCard function 3 times (in a for loop), then discards the card from the player’s hand.
+
+
+Adventurer card
+The adventurer card consists of two while loops. First, it checks if the player has drawn less than two treasures. If so, it first checks if the deck is empty. If the deck is empty, it needs to be shuffled. Next, the drawCard function is called. If the drawn card is a treasure (gold, silver, or copper), the drawnTreasure variable is incremented. If the drawn card is not a treasure, the drawn card is placed in a temporary hand and is removed from the player’s hand. This first while loop continues until the player has drawn two treasures.
+	The second while loops checks if the number of cards in the temporary hand is greater than or equal to zero. If so, all cards in the temporary hand are discarded. 
+
+
+discardCard()
+This function takes 4 parameters: int handpost (position of the hand of the card to return), int currentPlayer, struct gameState *state (holds pointer to the game state variable), and int trashFlag. This function first checks if the card was played or not. If it was played, trashFlag variable is less than 1 and the card is added to the played pile. The card state is set to -1 so that the card is discarded from the players’ hand. If the player has only one card in hand, the number of cards is also reduced. If the player has more than one card, the discarded card is replaced by the last card in hand, the last card is set to -1 and the number of cards in hand is decremented.
+
+updateCoins()
+This function takes 3 arguments: int player, struct gameState *state (holds a pointer to a game state variable), and int bonus. Each player starts with an initial state of 0 coins. The function loops through the player’s hand checking for treasure cards, and adds the right value to the coin count based on types of treasure cards found. The coin total is added to the bonus once the loop ends.
+
+
