@@ -671,23 +671,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	return useAdventurer(currentPlayer, state);
 			
     case council_room:
-      //+4 Cards
-      for (i = 0; i < 4; i++)
-	{
-	  drawCard(currentPlayer, state);
-	}
-			
-      //+1 Buy
-      state->numBuys++;
-			
-      //Each other player draws a card
-      for (i = 0; i < state->numPlayers; i++)
-	{
-	  if ( i != currentPlayer )
-	    {
-	      drawCard(i, state);
-	    }
-	}
+
 			
       //put played card in played card pile
       discardCard(handPos, currentPlayer, state, 0);
@@ -866,15 +850,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case great_hall:
-      //+1 Card
-      drawCard(currentPlayer, state);
-			
-      //+1 Actions
-      state->numActions++;
-			
-      //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+	return useGreat_hall(handPos, currentPlayer, state);
 		
     case minion:
       //+1 action
@@ -928,7 +904,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case steward:
-
+	return useSteward(handPos, currentPlayer, state, choice1, choice2, choice3);
 		
     case tribute:
       if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1){
@@ -1134,7 +1110,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case village:
-
+	return useVillage(handPos, currentPlayer, state);
     
     case treasure_map:
       //search hand for another treasure_map
@@ -1366,6 +1342,13 @@ int useSteward(int handPos, int currentPlayer, struct gameState *state, int choi
 }
 
 
+/* Function: 		useVillage	
+ * Description:		Player gets an additional card, and an additional 2 actions.	
+ * Preconditions:	Switch statement must be called within cardEffect, choosing this card. 
+ * 			Further, currentPlayer and gameState and handPos must be set.
+ * Postconditions:	Card drawn and two actions are taken. That card is then discarded.
+ * Returns:		Returns 0 upon success.
+*/
 int useVillage (int handPos, int currentPlayer, struct gameState *state) {
       //+1 Card
       drawCard(currentPlayer, state);
@@ -1377,5 +1360,25 @@ int useVillage (int handPos, int currentPlayer, struct gameState *state) {
       discardCard(handPos, currentPlayer++, state, 0);
       return 0;
 }
+
+/* Function: 		useGreat_hall	
+ * Description:		An additional card is drawn and an additional action is provided.	
+ * Preconditions:	Switch statement must be called within cardEffect, choosing this card. 
+ * 			Further, currentPlayer and gameState must be set.
+ * Postconditions:	A card is drawn and an action is taken. The card is discarded form the hand.
+ * Returns:		Returns 0 upon success.
+*/
+int useGreat_hall (int handPos, int currentPlayer, struct gameState *state) {
+      //+1 Card
+      drawCard(currentPlayer, state);
+			
+      //+1 Actions
+      state->numActions--;
+			
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+
 //end of dominion.c
 

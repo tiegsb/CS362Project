@@ -141,4 +141,7 @@ int useSteward(int handPos, int currentPlayer, struct gameState *state, int choi
 int useVillage (int handPos, int currentPlayer, struct gameState *state);
 /* use the Village card */
 
+int useGreat_hall (int handPos, int currentPlayer, struct gameState *state);
+/* use the great_hall card */
+
 #endif
