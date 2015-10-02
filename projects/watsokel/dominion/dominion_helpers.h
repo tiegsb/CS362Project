@@ -10,21 +10,21 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state,
 int gainCard(int supplyPos, struct gameState *state, int toFlag, int player);
 int getCost(int cardNumber);
 
-void smithyEffect(int currentPlayer, struct gameState *state, int handPos); 
-/* Adds three cards to hand */
+int smithyEffect(int currentPlayer, struct gameState *state, int handPos); 
+/* Adds three cards to hand. */
 
-void adventurerEffect(struct gameState *state, int currentPlayer); 
+int adventurerEffect(struct gameState *state, int currentPlayer); 
 /* Draws cards until two Treasure cards drawn. Adds the two Treasure cards to hand, 
 and discards non-Treasure cards */
 
-void councilRoomEffect(int currentPlayer, struct gameState *state, int handPos); 
+int councilRoomEffect(int currentPlayer, struct gameState *state, int handPos); 
 /* Draws 4 cards, addes 1 buy, other players draw 1 card */ 
 
 int mineEffect(struct gameState *state, int currentPlayer, int choice1, int choice2, int handPos); 
 /* Trash a Treasure card, places chosen card costing up to 3 coins more into hand. 
 Returns -1 on error, returns 0 on success */
 
-void salvagerEffect(int currentPlayer, struct gameState *state, int choice1, int handPos); /**/
+int salvagerEffect(int currentPlayer, struct gameState *state, int choice1, int handPos); /**/
 /* Adds 1 buy, trashes a card, gains coins equal to cost of trashed card */
 
 int cardEffect(int card, int choice1, int choice2, int choice3, 

@@ -643,7 +643,7 @@ int getCost(int cardNumber)
   return -1;
 }
 
-void smithyEffect(int currentPlayer, struct gameState *state, int handPos)
+int smithyEffect(int currentPlayer, struct gameState *state, int handPos)
 {    
     //+3 cards
     int i;
@@ -654,9 +654,10 @@ void smithyEffect(int currentPlayer, struct gameState *state, int handPos)
     
     //discard card from hand
     discardCard(handPos, currentPlayer, state, 1);
+    return 0;
 }
 
-void adventurerEffect(struct gameState *state, int currentPlayer)
+int adventurerEffect(struct gameState *state, int currentPlayer)
 {
   int drawntreasure = 0;
   int cardDrawn;
@@ -681,10 +682,12 @@ void adventurerEffect(struct gameState *state, int currentPlayer)
   while(z-1>=0){
     state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
     z=z-1;
-  } 
+  }
+  
+  return 0;
 }
 
-void councilRoomEffect(int currentPlayer, struct gameState *state, int handPos)
+int councilRoomEffect(int currentPlayer, struct gameState *state, int handPos)
 {
   int i;
   for (i = 0; i < 4; i++)
@@ -706,6 +709,8 @@ void councilRoomEffect(int currentPlayer, struct gameState *state, int handPos)
   
   //put played card in played card pile
   discardCard(handPos, currentPlayer, state, 0);
+  
+  return 0;
 }
 
 int mineEffect(struct gameState *state, int currentPlayer, int choice1, int choice2, int handPos)
@@ -740,7 +745,7 @@ int mineEffect(struct gameState *state, int currentPlayer, int choice1, int choi
   return 0;
 }
 
-void salvagerEffect(int currentPlayer, struct gameState *state, int choice1, int handPos)
+int salvagerEffect(int currentPlayer, struct gameState *state, int choice1, int handPos)
 {
   state->numBuys++;
   
@@ -754,6 +759,8 @@ void salvagerEffect(int currentPlayer, struct gameState *state, int choice1, int
   
   //discard card
   discardCard(handPos, currentPlayer, state, 0);
+  
+  return 0;
 }
 
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
@@ -873,8 +880,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     
   case smithy:
     //+3 Cards
-    smithyEffect(currentPlayer, state, handPos);
-    return 0;
+    return smithyEffect(currentPlayer, state, handPos);
     
   case village:
     //+1 Card
