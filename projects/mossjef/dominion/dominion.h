@@ -138,4 +138,7 @@ int useAdventurer(int currentPlayer, struct gameState *state);
 int useSteward(int handPos, int currentPlayer, struct gameState *state, int choice1, int choice2, int choice3);
 /* use the Steward card */
 
+int useVillage (int handPos, int currentPlayer, struct gameState *state);
+/* use the Village card */
+
 #endif
