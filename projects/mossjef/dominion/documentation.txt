@@ -1,0 +1,19 @@
+Name: 	Jeff Moss
+Date:	09/29/15
+Title: 	Documentation of smithy, adventurer, discardCard() and updateCoins() 
+	in the dominion game.
+File:	documentation.txt
+Class:	CS362 Fall 2015
+
+smithy card
+
+
+adventurer card
+
+
+
+discardCard() method
+
+
+
+updateCoins() method
