@@ -846,7 +846,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     return -1;
     
   case mine:
-    return (mineEffect(state, currentPlayer, choice1, choice2, handPos) == -1)? -1 : 0; 
+    return mineEffect(state, currentPlayer, choice1, choice2, handPos); 
    
     
   case remodel:
