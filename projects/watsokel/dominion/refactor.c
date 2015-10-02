@@ -12,8 +12,8 @@ The code originally in the switch (card) statement for the smithy switch
 case has been refactored into a function called smithyEffect(), which 
 has the following parameters: current player number, game state, and 
 hand position of the smithy card. The original functionality is 
-preserved, i.e. three cards are added to the player's hand. As this is a 
-void function, there is no return value. 
+preserved, i.e. three cards are added to the player's hand. A value of 0 
+is returned on successful execution of the function. 
 
 *** BUGS introduced to smithyEffect() method *** 
 Instead of calling discardCard() with trashFlag value of 0 (which 
@@ -36,8 +36,8 @@ current player number. adventurerEffect() incorporates code from the
 adventurer switch case in the original dominion.c code. Because the 
 variables drawntreasure, cardDrawn and z are specifically used for the 
 adventurer switch case, the code was refactored so that these variables 
-are initialized in adventurerEffect, rather than within cardEffect(). As 
-this is a void function, there is no return value. 
+are initialized in adventurerEffect, rather than within cardEffect(). A 
+value of 0 is returned on successful execution of the function. 
 
 *** BUG introduced to adventurerEffect() method *** 
 When evaluating the card
@@ -54,8 +54,8 @@ council room switch case    Refactored to councilRoomEffect() method
 The code originally contained in the council room switch case in the 
 switch(card) statement has been refactored to produce a function called 
 councilRoomEffect(). This function takes as arguments the current player 
-and the game state. As this is a void function, there is no return 
-value. 
+and the game state. A value of 0 is returned on successful execution of 
+the function. 
 
 *** BUG introduced to councilRoomEffect() method *** 
 The if statement has been removed from the for loop, resulting in all 
@@ -114,8 +114,8 @@ player's chosen card to trash (choice1), and the salvager card's
 position in the player's hand. The number of buys is first incremented. 
 Then, the player gains the number of coins equal to the cost of the 
 chosen card to be trashed (choice1). choice1 is then trashed and the 
-salvager card is discarded. Since salvagerEffect() is a void function, 
-there is no return value. 
+salvager card is discarded. A value of 0 is returned on successful 
+execution of the function. 
 
 ***BUG introduced to salvagerEffect() method ***
 The discardCard() call passes the salvager card to the deck instead of the discard pile.

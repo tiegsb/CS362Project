@@ -783,14 +783,11 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   switch( card ) 
   {
   case adventurer:
-    adventurerEffect(state, currentPlayer);
-    return 0;
+    return adventurerEffect(state, currentPlayer);
     
   case council_room:
     //+4 Cards
-    councilRoomEffect(currentPlayer, state, handPos);
-    
-    return 0;
+    return councilRoomEffect(currentPlayer, state, handPos);
     
   case feast:
     //gain card with cost up to 5
@@ -1208,8 +1205,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     
   case salvager:
     //+1 buy
-    salvagerEffect(currentPlayer, state, choice1, handPos);
-    return 0;
+    return salvagerEffect(currentPlayer, state, choice1, handPos);
     
   case sea_hag:
     for (i = 0; i < state->numPlayers; i++){
