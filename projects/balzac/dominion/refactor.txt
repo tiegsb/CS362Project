@@ -1,0 +1,60 @@
+Refractored code
+
+cardEffect() (inside dominion.c)
+Changed the adventurer case to call the adventurer_card()
+Changed the smithy case to call the smithy_card()
+Changed the sea_hag case to call the sea_hag_card()
+Changed the tribute case to call the tribute_card()
+Changed the steward case to call the steward_card()
+
+adventurer_card()
+Added to dominion.c, copy of the code from the cardEffect() of the adventurer case and removed the code 
+from the cardEffect(). 
+Added function declaration to dominion.h
+Added bug to line 'if (state->deckCount[currentPlayer] <1)' by changing the 1 to a 0. 
+
+
+smithy_card()
+Added to dominion.c, copy of the code from the cardEffect() of the smithy case and removed the code 
+from the cardEffect(). 
+Added function declaration to dominion.h
+Added bug in for loop, i = 0 is now i = 1. And changed the fourth parameter in the discardCard() call
+from a 0 to a 1.
+
+sea_hag_card()
+Added to dominion.c, copy of the code from the cardEffect() of the sea_hag case and removed the code 
+from the cardEffect(). 
+Added function declaration to dominion.h
+
+
+tribute_card()
+Added to dominion.c, copy of the code from the cardEffect() of the tribute case and removed the code 
+from the cardEffect(). 
+Added function declaration to dominion.h
+Added bugs:
+On last else statement by changing 'state->numActions = state->numActions + 2' to + 0.
+On the 'state->coins += 2;' line I changed the 2 to a 6.
+
+Changed if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == gold){
+to 
+if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == gold){
+
+and changed
+
+else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province
+ || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall){//Victory Card Found
+
+to
+else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == province
+ || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall){//Victory Card Found
+
+
+steward_card()
+Added to dominion.c, copy of the code from the cardEffect() of the steward case and removed the code 
+from the cardEffect(). 
+Added function declaration to dominion.h
+Added bugs:
+changed 'if (choice1 == 1)' to == 2 and changed 'else if (choice1 == 2)' to == 1.
+Added a discardCard() call to last else statement with the following parameters, (choice1, currentPlayer, state, 0).
+changed the discardCard() calls fourth parameter from a 1 to a 0 for both original discardCard() calls in else statement.
+Changed the last discardCard() calls fourth parameter from 0 to a 1.
