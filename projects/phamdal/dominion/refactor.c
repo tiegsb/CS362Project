@@ -10,7 +10,7 @@ Changes made to cardeffect():
 	added to dominion.h
 
 Changes made to Adventurer code: 
-Introduced a different comparision operator, 
+Introduced a different comparison operator, 
 original line :	while(drawntreasure < 2)
 changed line:	while(drawntreasure <=2)
 
@@ -29,8 +29,8 @@ original line: 	discardCard(handPos, currentPlayer, state, 0);
 changed line: 	discardCard(handPos, currentPlayer, state, 1);
 
 Changes made to Cut Purse code: 
-Switch varibles in 2D array
-original line:	if (state->hand[i][j] == copper)
+Switch variables in 2D array
+Original line:	if (state->hand[i][j] == copper)
 changed line:	if (state->hand[j][i] == copper)
 
 Changes made to Council Room code: 
@@ -41,7 +41,6 @@ changed line:	if ( i == currentPlayer )
 Changed return statement: 
 original line:	return 0; 
 changed line:	return 1; 
-
 
 
 
