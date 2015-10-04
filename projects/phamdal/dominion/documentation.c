@@ -11,16 +11,16 @@ Adventurer -
 	Like the "Smithy" card, when the current player wants to use "Adventurer", the adventurer branch case will execute in the 
 	switch statement within cardeffect(). 
 	
-  To achieve the "Adventurer" effect, the code begins with a while loop. The while loop keeps a count of the number of treasure 
-  cards drawn so far, from the start this variable should be 0. The function first checks if the deck is empty. If it is, the 
-  function will shuffle the discard pile and add back to the deck. After that check, it draws a card and takes note of it's
-  position in the hand. If the card is indeed a treasure card, the number of drawn treasure cards is incremented. Otherwise, 
-  the that was card drawn is taken out of the player's hand and put into a temporary hand. A variable that keeps count of the 
-  number of non-treasure cards in the temporary hand is incremented (size of the temporary hand). 
+  	To achieve the "Adventurer" effect, the code begins with a while loop. The while loop keeps a count of the number of treasure 
+  	cards drawn so far, from the start this variable should be 0. The function first checks if the deck is empty. If it is, the 
+  	function will shuffle the discard pile and add back to the deck. After that check, it draws a card and takes note of it's
+  	position in the hand. If the card is indeed a treasure card, the number of drawn treasure cards is incremented. Otherwise, 
+	 the that was card drawn is taken out of the player's hand and put into a temporary hand. A variable that keeps count of the 
+  	number of non-treasure cards in the temporary hand is incremented (size of the temporary hand). 
   
-  Once 2 treasure cards are finally drawn, the while loop is finished and the program then goes into another while loop to 
-  discard each card from the temporary hand back into the current player's deck. This last while loop continues until there are
-  no more cards in the temporary hand (size is equal to 0). 
+	 Once 2 treasure cards are finally drawn, the while loop is finished and the program then goes into another while loop to 
+	 discard each card from the temporary hand back into the current player's deck. This last while loop continues until there are
+	 no more cards in the temporary hand (size is equal to 0). 
 
 discardCard() - 
 	The first event that occurs in this code is that the function determines what kind of "discard" is going on, checking to see 
