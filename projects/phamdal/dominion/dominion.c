@@ -667,7 +667,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   switch( card )
     {
     case adventurer:
-        return adventurer_card(currentPlayer, state, drawntreasure, cardDrawn, z, temphand[]);
+        return adventurer_card(currentPlayer, state, drawntreasure, cardDrawn, z, temphand);
     case council_room:
         return council_room_card(currentPlayer, state, handPos);
     case feast:
@@ -1162,6 +1162,7 @@ int adventurer_card(int currentPlayer, struct gameState *state, int drawntreasur
 
 int smithy_card(int currentPlayer, struct gameState *state, int handPos) {
     //+3 Cards
+    int i;
     for (i = 0; i < 3; i++) {
         drawCard(currentPlayer, state);
     }
@@ -1184,6 +1185,7 @@ int great_hall_card(int currentPlayer, struct gameState *state, int handPos) {
 }
 
 int cutpurse_card(int currentPlayer, struct gameState *state, int handPos) {
+    int i, j, k;
     updateCoins(currentPlayer, state, 2);
     for (i = 0; i < state->numPlayers; i++) {
         if (i != currentPlayer) {
@@ -1212,6 +1214,7 @@ int cutpurse_card(int currentPlayer, struct gameState *state, int handPos) {
 
 int council_room_card(int currentPlayer, struct gameState *state, int handPos) {
     //+4 Cards
+    int i;
     for (i = 0; i < 4; i++) {
 	  drawCard(currentPlayer, state);
 	}
