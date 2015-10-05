@@ -2,3 +2,5 @@ playdom
 player
 badTestDrawCard
 testDrawCard
+*.gcno
+*.o
