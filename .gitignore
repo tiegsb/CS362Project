@@ -1,1 +1,11 @@
+# Files which match these globs will not be committed by Git
 projects/watsokel/dominion/testUpdateCoins.c
+
+*.o
+*.out
+playdom
+testDrawCard
+badTestDrawCard
+testBuyCard
+testAll
+player
