@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <assert.h>
 #include "rngs.h"
-#include <math.h>
-#include <stdlib.h>
 
 #define DEBUG 0
 #define NOISY_TEST 1
@@ -39,7 +37,6 @@ int checkDrawCard(int p, struct gameState *post) {
   assert (r == 0);
 
   assert(memcmp(&pre, post, sizeof(struct gameState)) == 0);
-  return r;
 }
 
 int main () {
@@ -49,9 +46,10 @@ int main () {
   int k[10] = {adventurer, council_room, feast, gardens, mine,
 	       remodel, smithy, village, baron, great_hall};
 
-  struct gameState G;
 
-  printf ("Testing drawCard.\n");
+  struct gameState G;
+  
+  printf ("Testing buyCard.\n");
 
   printf ("RANDOM TESTS.\n");
 
@@ -72,7 +70,7 @@ int main () {
   printf ("ALL TESTS OK\n");
 
   exit(0);
-
+  
   printf ("SIMPLE FIXED TESTS.\n");
   for (p = 0; p < 2; p++) {
     for (deckCount = 0; deckCount < 5; deckCount++) {
