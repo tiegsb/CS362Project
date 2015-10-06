@@ -1226,10 +1226,11 @@ int adventurerCard(struct gameState *state, int currentPlayer) {
     drawCard(currentPlayer, state);
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
     if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-      drawntreasure++;
+        state->handCount[currentPlayer]--;
+
     else{
-      temphand[z]=cardDrawn;
-      state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      temphand[z]=cardDrawn;  //this should just remove the top card (the most recently drawn one).
+      drawntreasure--;
       z++;
     }
   }
@@ -1241,12 +1242,17 @@ int adventurerCard(struct gameState *state, int currentPlayer) {
 
 }
 int smithyCard(struct gameState *state, int currentPlayer, int handPos) {
-  int i;
+  int i, cardDrawn, drawn;
 
   //+3 Cards
   for (i = 0; i < 3; i++)
   {
     drawCard(currentPlayer, state);
+    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];
+    if(cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+    {
+      discardCard(handPos, currentPlayer, state, 0);
+    }
   }
 
   //discard card from hand
@@ -1257,7 +1263,7 @@ int smithyCard(struct gameState *state, int currentPlayer, int handPos) {
 int councilCard(struct gameState *state, int currentPlayer, int handPos) {
   //+4 Cards
   int i;
-  for (i = 0; i < 4; i++)
+  for (i = 1; i < 4; i++)
   {
     drawCard(currentPlayer, state);
   }
@@ -1309,6 +1315,7 @@ int mineCard(struct gameState *state, int currentPlayer, int handPos, int choice
     if (state->hand[currentPlayer][i] == j)
     {
       discardCard(i, currentPlayer, state, 0);
+      state->coins = state->coins += 4;
       break;
     }
   }
@@ -1348,7 +1355,7 @@ int minionCard(struct gameState *state, int currentPlayer, int handPos, int choi
     {
       if (i != currentPlayer)
       {
-        if ( state->handCount[i] > 4 )
+        if ( state->handCount[i] > 2 )
         {
           //discard hand
           while( state->handCount[i] > 0 )
