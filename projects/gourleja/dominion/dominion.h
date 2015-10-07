@@ -129,18 +129,18 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
    1, others to 0 */
 
 void cardSmithy(int handPos, int player, struct gameState *state);
-/* Card - Smithy */
+/* Card - Play Smithy card and update game state*/
 
 void cardAdventurer(int temphand[], int z, int cardDrawn, int drawntreasure, int handPos, int player, struct gameState *state);
-/* Card - Adventurer */
+/* Card - Play Adventurer card and update game state*/
 
 void cardBaron(int choice1, int handPos, int player, struct gameState *state);
-/* Card - Baron */
+/* Card - Play Baron card and update game state*/
 
 void cardSalvager(int choice1, int handPos, int currentPlayer, struct gameState *state);
-/* Card - Salvager */
+/* Card - Play Salvager card and update game state*/
 
 void cardCouncilRoom(int handPos, int currentPlayer, struct gameState *state);
-/* Card - Council Room */
+/* Card - Play Council Room card and update game state*/
 
 #endif
