@@ -682,12 +682,13 @@ int play_smithy(int currentPlayer, struct gameState *state, int handPos)
       discardCard(handPos, currentPlayer, state, 0);
       return 0;
 }
+
 int play_remodel(struct gameState *state, int choice2, int choice1, int currentPlayer, int handPos)
 {
      int i, j;
      j = state->hand[currentPlayer][choice1];  //store card we will trash
 
-      if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
+      if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
 	{
 	  return -1;
 	}
