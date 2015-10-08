@@ -131,13 +131,13 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 
 //Card functions added by me - Assignment 2
 
-int adventurerCard(int drawntreasure, int currentPlayer, struct gameState *state, int cardDrawn, int temphand, int z);
+int adventurerCard(int drawntreasure, int currentPlayer, struct gameState *state, int cardDrawn, int temphand[], int z);
 
 int smithyCard(int currentPlayer, struct gameState *state, int handPos);
 
-int council_roomCard(int currentPlayer, struct gameState *state);
+int council_roomCard(int currentPlayer, struct gameState *state, int handPos);
 
-int feastCard(struct gameState *state, int currentPlayer, int choice1, int temphand);
+int feastCard(struct gameState *state, int currentPlayer, int choice1, int temphand[]);
 
 int stewardCard(int choice1, int currentPlayer, struct gameState *state, int choice2, int choice3, int handPos);
 
