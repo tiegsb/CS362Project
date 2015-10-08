@@ -134,5 +134,7 @@ int play_adventurer(struct gameState *state, int currentPlayer, int *temphand);
 other cards drawn which are stored in a temp array */
 int play_remodel(struct gameState *state, int choice2, int choice1, int currentPlayer, int handPos);
 /*if current card +2 is less than chosen card then gainCard is called and the current card is discarded*/
+play_council(struct gameState *state, int currentPlayer, int handPos);
+/*draw 4 and each other player draws one then add one buy to current player */
 
 #endif

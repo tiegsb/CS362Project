@@ -32,5 +32,18 @@ remodel:
     if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
         to:
     if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
-    Still ran but with differing results. 
+    Still ran but with differing results.
+
+council room:
+    cut and pasted council_room into it's own function.  No change
+    to logic sturcture, using if card == council_room, changed dominion.h to include
+    function header.  Passed parameters from cardEffect, 
+    for loop int i the only new var declared.
+    Bug:
+    commented out: state->numBuys++;
+    The card is supposed to increase number of buys by one, this 
+    disables this feature, ran it and didn't change results but
+    other inputs would certainly have an effect on the game with 
+    no increase in buys for that card. 
+    Code still compiling and running with all bugs. 
 *******************************************************/
