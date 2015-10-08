@@ -5,12 +5,16 @@
 
 int main (int argc, char** argv) {
   struct gameState G;
+
+  //Selection of cards for current game.
   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
            sea_hag, tribute, smithy};
   
   printf ("Starting game.\n");
   
-  initializeGame(2, k, atoi(argv[1]), &G);
+  //Initialize 2 player game with k cards. 3rd argument is set to use system clock
+  //to generate random seed
+  initializeGame(atoi(argv[1]), k, -1, &G);
   
   int money = 0;
   int smithyPos = -1;
