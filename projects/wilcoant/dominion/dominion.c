@@ -642,38 +642,20 @@ int getCost(int cardNumber)
 	
   return -1;
 }
-
-int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+int play_adventurer(struct gameState *state, int currentPlayer, int *temphand)
 {
-  int i;
-  int j;
-  int k;
-  int x;
-  int index;
-  int currentPlayer = whoseTurn(state);
-  int nextPlayer = currentPlayer + 1;
-
-  int tributeRevealedCards[2] = {-1, -1};
-  int temphand[MAX_HAND];// moved above the if statement
-  int drawntreasure=0;
-  int cardDrawn;
-  int z = 0;// this is the counter for the temp hand
-  if (nextPlayer > (state->numPlayers - 1)){
-    nextPlayer = 0;
-  }
-  
-	
-  //uses switch to select card and perform actions
-  switch( card ) 
-    {
-    case adventurer:
-      while(drawntreasure<2){
+    int drawntreasure = 0; //counter for treasure cards 
+    int cardDrawn; //temp card drawn var 
+    int z = 0; //counter for temp hand 
+    
+     
+    while(drawntreasure<2){
 	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 	  shuffle(currentPlayer, state);
 	}
 	drawCard(currentPlayer, state);
 	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-	if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+	if (cardDrawn == copper || cardDrawn == silver && cardDrawn == gold)
 	  drawntreasure++;
 	else{
 	  temphand[z]=cardDrawn;
@@ -686,6 +668,49 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	z=z-1;
       }
       return 0;
+}
+int play_smithy(int currentPlayer, struct gameState *state, int handPos)
+{
+    int i;
+   //+3 Cards
+      for (i = 0; i <= 3; i++)
+	{
+	  drawCard(currentPlayer, state);
+	}
+			
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+{
+  int i;
+  int j;
+  int k;
+  int x;
+  int index;
+  int currentPlayer = whoseTurn(state);
+  int nextPlayer = currentPlayer + 1;
+  int temphand[MAX_HAND];// moved above the if statement
+  int tributeRevealedCards[2] = {-1, -1};
+ 
+  
+  if (nextPlayer > (state->numPlayers - 1)){
+    nextPlayer = 0;
+  }
+  
+   if (card == smithy)
+   {
+       play_smithy(currentPlayer, state, handPos);
+   }
+   if (card == adventurer)
+   {
+       play_adventurer(state, currentPlayer, temphand);
+   }
+  //uses switch to select card and perform actions
+  switch( card ) 
+    {
+    
 			
     case council_room:
       //+4 Cards
@@ -828,16 +853,8 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 
       return 0;
 		
-    case smithy:
-      //+3 Cards
-      for (i = 0; i <= 3; i++)
-	{
-	  drawCard(currentPlayer, state);
-	}
-			
-      //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+    
+    
 		
     case village:
       //+1 Card

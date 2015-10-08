@@ -30,7 +30,7 @@ adventurer:
     drawn the loop terminates.  The deck is shuffled if the end is reached.
     A temp hand array stores all drawn cards.  It gets emptied after
     the treasure cards are added to the player's hand. 
-    
+    helpers: drawCard, shuffle
     input: gameState *state, int card 
     output: two new treasure cards are added to the players hand.
 

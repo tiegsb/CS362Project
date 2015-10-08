@@ -127,5 +127,10 @@ int scoreFor(int player, struct gameState *state);
 int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
+int play_smithy(int currentPlayer, struct gameState *state, int handPos);
+/* draw three cards, calls drawCard 3 times and discards smithy card*/
+int play_adventurer(struct gameState *state, int currentPlayer, int *temphand);
+/* iterate through deck until you get two treasure cards and discard
+other cards drawn which are stored in a temp array */
 
 #endif
