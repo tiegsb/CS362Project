@@ -132,5 +132,7 @@ int play_smithy(int currentPlayer, struct gameState *state, int handPos);
 int play_adventurer(struct gameState *state, int currentPlayer, int *temphand);
 /* iterate through deck until you get two treasure cards and discard
 other cards drawn which are stored in a temp array */
+int play_remodel(struct gameState *state, int choice2, int choice1, int currentPlayer, int handPos);
+/*if current card +2 is less than chosen card then gainCard is called and the current card is discarded*/
 
 #endif

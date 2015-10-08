@@ -682,6 +682,36 @@ int play_smithy(int currentPlayer, struct gameState *state, int handPos)
       discardCard(handPos, currentPlayer, state, 0);
       return 0;
 }
+int play_remodel(struct gameState *state, int choice2, int choice1, int currentPlayer, int handPos)
+{
+     int i, j;
+     j = state->hand[currentPlayer][choice1];  //store card we will trash
+
+      if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
+	{
+	  return -1;
+	}
+
+      gainCard(choice2, state, 0, currentPlayer);
+
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+
+      //discard trashed card
+      for (i = 0; i < state->handCount[currentPlayer]; i++)
+	{
+	  if (state->hand[currentPlayer][i] == j)
+	    {
+	      discardCard(i, currentPlayer, state, 0);			
+	      break;
+	    }
+	}
+
+
+      return 0;
+	
+}
+     
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {
   int i;
@@ -706,6 +736,10 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
    if (card == adventurer)
    {
        play_adventurer(state, currentPlayer, temphand);
+   }
+   if (card == remodel)
+   {
+       play_remodel(state, choice2, choice1, currentPlayer, handPos);
    }
   //uses switch to select card and perform actions
   switch( card ) 
@@ -827,32 +861,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 			
       return 0;
 			
-    case remodel:
-      j = state->hand[currentPlayer][choice1];  //store card we will trash
-
-      if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
-	{
-	  return -1;
-	}
-
-      gainCard(choice2, state, 0, currentPlayer);
-
-      //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-
-      //discard trashed card
-      for (i = 0; i < state->handCount[currentPlayer]; i++)
-	{
-	  if (state->hand[currentPlayer][i] == j)
-	    {
-	      discardCard(i, currentPlayer, state, 0);			
-	      break;
-	    }
-	}
-
-
-      return 0;
-		
+    	
     
     
 		

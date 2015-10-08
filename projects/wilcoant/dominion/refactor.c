@@ -20,4 +20,17 @@ adventurer:
     changed conditional for if(cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) to if(cardDrawn == copper || cardDrawn == silver && cardDrawn == gold).  Game function still runs with now different
     results.
     
+    
+remodel:
+    cut case (remodel), used if card == remodel inside of cardEffect fn to 
+    make fn call to play_remodel.  Updated dominion.h with header info.
+    Left variable declarations used in other cards / cases or fn's inside
+    cardEffect. Logic structure unchanged.  Passed all necessary 
+    variables from cardEffect to fn.  
+    Bug:
+    changed:
+    if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
+        to:
+    if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
+    Still ran but with differing results. 
 *******************************************************/
