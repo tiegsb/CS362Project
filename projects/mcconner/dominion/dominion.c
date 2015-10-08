@@ -1260,7 +1260,7 @@ int smithyCard(int currentPlayer, struct gameState *state, int handPos) {
 }
 
 
-int council_roomCard(int currentPlayer, struct gameState *struct) {
+int council_roomCard(int currentPlayer, struct gameState *state) {
   //+4 Cards
       for (i = 0; i < 4; i++)
   {
