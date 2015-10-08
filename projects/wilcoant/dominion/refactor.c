@@ -17,7 +17,7 @@ adventurer:
     from cardEffect.  Put in funciton play_adventurer see dominion.h for header.  Moved variable declaration used locally for adventurer 
     only from cardEffect to play_adventurer.  Fun call on line 706 in card Effect. 
     Bug: 
-    changed conditional for if(cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) to if(cardDrawn == copper || cardDrawn == silver && cardDrawn == gold).  Game function still runs with now different
+    changed conditional for if(cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) to if(cardDrawn == copper || (cardDrawn == silver && cardDrawn == gold)).  Game function still runs with now different
     results.
     
     
@@ -46,4 +46,11 @@ council room:
     other inputs would certainly have an effect on the game with 
     no increase in buys for that card. 
     Code still compiling and running with all bugs. 
+    
+village:
+    cut and pasted village from switch to play_village fn.
+    used if(card == village).  See dominion.h for fn prototype. 
+    Passed all vars from cardEffect.  No new vars declared.
+    Bugs:
+    No bugs introduced at this time, 4 /5 completed for this assignment.
 *******************************************************/

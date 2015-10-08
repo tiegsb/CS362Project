@@ -655,7 +655,7 @@ int play_adventurer(struct gameState *state, int currentPlayer, int *temphand)
 	}
 	drawCard(currentPlayer, state);
 	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-	if (cardDrawn == copper || cardDrawn == silver && cardDrawn == gold)
+	if (cardDrawn == copper || (cardDrawn == silver && cardDrawn == gold))
 	  drawntreasure++;
 	else{
 	  temphand[z]=cardDrawn;
@@ -739,7 +739,18 @@ int play_council(struct gameState *state, int currentPlayer, int handPos)
 			
       return 0;    
 }
-
+int play_village(int currentPlayer, int handPos, struct gameState *state)
+{
+      //+1 Card
+      drawCard(currentPlayer, state);
+			
+      //+2 Actions
+      state->numActions = state->numActions + 2;
+			
+      //discard played card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {
   int i;
@@ -773,13 +784,14 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
    {
        play_council(state, currentPlayer, handPos);
    }
+   if (card == village)
+   {
+       play_village(currentPlayer, handPos, state);
+   }
   //uses switch to select card and perform actions
   switch( card ) 
     {
-    
-			
-    
-			
+    	
     case feast:
       //gain card with cost up to 5
       //Backup hand
@@ -871,21 +883,6 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 			
       return 0;
 			
-    	
-    
-    
-		
-    case village:
-      //+1 Card
-      drawCard(currentPlayer, state);
-			
-      //+2 Actions
-      state->numActions = state->numActions + 2;
-			
-      //discard played card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-      return 0;
-		
     case baron:
       state->numBuys++;//Increase buys by 1!
       if (choice1 > 0){//Boolean true or going to discard an estate
