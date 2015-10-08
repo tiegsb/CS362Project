@@ -3,7 +3,7 @@ October 7, 2015
 CS362
 Assignment 2
 
-This files whos my knowledge of the Smithy and Adventurer cards in the Dominion card game 
+This file shows my knowledge of the Smithy and Adventurer cards in the Dominion card game 
 along with knowledge of the discardCard() and updateCoin() functions.
 
 Smithy Card - A smithy card is an action card that allows a player to draw 3 cards when it's 
