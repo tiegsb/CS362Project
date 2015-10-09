@@ -26,8 +26,15 @@ drawn 2 treasure cards. Once the user has drawn the 2 treasure cards, the cards 
 are discarded one by one until z is back at 0. 
 
 
-discardCard(): Helper function
+discardCard(): This is a helper function helps validate that the card being played has not 
+been trashed and adds that card to the played pile. The played card’s value is then set to -1. 
+Then they player’s number of cards in hand are reduce if the last card in hand is played or 
+they only have one card in hand. Otherwise the discarded card gets replaced by the last card in hand. 
+The last card is set to -1, and the player’s number of cards in hand are reduced.
 
 
-updateCoins():
+updateCoins(): This function tallies up the value of the treasure cards in a player’s hands 
+by adding 1 for each copper treasure card, 2 for each silver treasure card, and 3 for each 
+gold treasure card. It also takes into consideration any additional bonus the player may 
+have earned from an action card.
 */
