@@ -19,6 +19,7 @@ If it's the player's turn to buy and they have at least one available buy, at le
 cards available, the player can elect to purchase the card using the buyCard() function. If the previously mentioned requirements
 are fullfilled, the player's coin count is decremented by four, the buy count by one, and the gainCard() function is called 
 in which the Smithy card is added to the player's discard pile. The total count of available Smithy cards is decremented by 1.
+
 /*****************
 * Adventurer Card
 ******************/
@@ -39,7 +40,6 @@ cards available, the player can elect to purchase the card using the buyCard() f
 are fullfilled, the player's coin count is decremented by six, the buy count by one, and the gainCard() function is called 
 in which the Adventurer card is added to the player's discard pile. The total count of available Adventurer cards is decremented by 1.
 
-
 /*****************
 * discardCard()
 ******************/
@@ -51,6 +51,7 @@ is then incremented by one. The discarded card in the player's hand is then set 
 end of the array, the array is shrunk by 1. If the card was the only card in the player's hand, it is also shrunk by 1. In all other situations,
 the last card in the player's hand is copied to the position held by the discarded card and the player's hand/array is shrunk by a value of 1.
 The function then returns 0.
+
 /*****************
 * updateCoins()
 ******************/
