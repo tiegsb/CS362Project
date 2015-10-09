@@ -672,13 +672,13 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   switch( card ) 
     {
     case adventurer:
-      return adventurerMethod(currentPlayer, state);
+      return adventurerEffect(currentPlayer, state);
 			
     case council_room:
-      return council_roomMethod(currentPlayer, handPos, state);
+      return council_roomEffect(currentPlayer, handPos, state);
 			
     case feast:
-      return feastMethod(currentPlayer, handPos, choice1, state);
+      return feastEffect(currentPlayer, handPos, choice1, state);
 			
     case gardens:
       return -1;
@@ -745,7 +745,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case smithy:
-      return smithyMethod(currentPlayer, handPos, state);
+      return smithyEffect(currentPlayer, handPos, state);
 		
     case village:
       //+1 Card
@@ -759,7 +759,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case baron:
-      return baronMethod(currentPlayer, handPos, choice1, state);
+      return baronEffect(currentPlayer, handPos, choice1, state);
 		
     case great_hall:
       //+1 Card
@@ -1189,7 +1189,7 @@ int updateCoins(int player, struct gameState *state, int bonus)
 }
 
 //Refactored methods
-int adventurerMethod(int currentPlayer, struct gameState *state)
+int adventurerEffect(int currentPlayer, struct gameState *state)
 {
   int temphand[MAX_HAND];// moved above the if statement
   int drawntreasure=0;
@@ -1218,7 +1218,7 @@ int adventurerMethod(int currentPlayer, struct gameState *state)
   return 0;
 }
 
-int smithyMethod(int currentPlayer, int handPos, struct gameState *state)
+int smithyEffect(int currentPlayer, int handPos, struct gameState *state)
 {
   int i;
 
@@ -1233,7 +1233,7 @@ int smithyMethod(int currentPlayer, int handPos, struct gameState *state)
   return 0;
 }
 
-int council_roomMethod(int currentPlayer, int handPos, struct gameState *state)
+int council_roomEffect(int currentPlayer, int handPos, struct gameState *state)
 {
   int i;
 
@@ -1261,7 +1261,7 @@ int council_roomMethod(int currentPlayer, int handPos, struct gameState *state)
   return 0;
 }
 
-int feastMethod(int currentPlayer, int handPos, int choice1, struct gameState *state)
+int feastEffect(int currentPlayer, int handPos, int choice1, struct gameState *state)
 {
   int i;
   int x;
@@ -1319,7 +1319,7 @@ int feastMethod(int currentPlayer, int handPos, int choice1, struct gameState *s
   return 0;
 }
 
-int baronMethod(int currentPlayer, int handPos, int choice1, struct gameState *state)
+int baronEffect(int currentPlayer, int handPos, int choice1, struct gameState *state)
 {
   state->numBuys++;//Increase buys by 1!
   if (choice1 > 0){//Boolean true or going to discard an estate
