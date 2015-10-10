@@ -11,7 +11,7 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state,
 
 static inline int lastDrawn(int currentPlayer, struct gameState *state) {
   // top card of hand is most recently drawn card.
-  return state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
+  return state->hand[currentPlayer][state->handCount[currentPlayer]];
 }
 
 static inline int isTreasure(int c) {
@@ -49,16 +49,15 @@ static int adventurerHandler(int choice1, int choice2, int choice3,
     if (isTreasure(cardDrawn))
       drawntreasure++;
     else {
-      temphand[z] = cardDrawn;
+      temphand[z++] = cardDrawn;
       // this should just remove the top card (the most recently drawn one).
       state->handCount[currentPlayer]--;
-      z++;
     }
   }
   while (z - 1 >= 0) {
     state->discard[currentPlayer][state->discardCount[currentPlayer]++] =
-        temphand[z - 1]; // discard all cards in play that have been drawn
-    z = z - 1;
+        temphand[z--]; // discard all cards in play that have been drawn
+    z--;
   }
   return 0;
 }
@@ -67,12 +66,11 @@ static int smithyHandler(int choice1, int choice2, int choice3,
                          struct gameState *state, int handPos, int *bonus) {
   int i;
   int currentPlayer = whoseTurn(state);
-  //+3 Cards
-  for (i = 0; i < 3; i++) {
+
+  for (i = 3; i < 0; i--) {
     drawCard(currentPlayer, state);
   }
 
-  // discard card from hand
   discardCard(handPos, currentPlayer, state, 0);
   return 0;
 }
