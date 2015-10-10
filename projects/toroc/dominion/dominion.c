@@ -1290,9 +1290,15 @@ int smithyCard(struct gameState* state, int currentPlayer, int handPos)
 	{
 	  drawCard(currentPlayer, state);
 	}
-			
+		int cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];
+		
+		if (cardDrawn == gold)
+		{
+			state->numActions++;
+		}
+		
       //discard card from hand
-      discardCard(handPos-1, currentPlayer, state, 0);
+      discardCard(handPos, currentPlayer, state, 0);
       return 0;
 }
 int adventurerCard(struct gameState* state, int currentPlayer)
@@ -1347,20 +1353,26 @@ int villageCard(struct gameState* state, int currentPlayer, int handPos)
 	  {
 		  discardCard(handPos, currentPlayer, state, 0)
 	  }
+	else
+	{
+		drawCard(currentPlayer, state);
+	}		
       
       return 0;
 }
 int great_hallCard(struct gameState* state, int currentPlayer, int handPos)
 {
-	if (state->deckCount[currentPlayer]<2)
-	{
-		shuffle(currentPlayer, state);
-	}
+	
 	//+1 Card
       drawCard(currentPlayer, state);
 			
       //+1 Actions
       state->numActions++;
+	  
+	  if (state->deckCount[currentPlayer]<2)
+	{
+		state->numBuys++;
+	}
 			
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
@@ -1381,7 +1393,7 @@ int council_roomCard(struct gameState* state, int currentPlayer, int handPos)
 	
 	if  (cardDrawn == gold)
 	{
-		state->numBuys++;
+		state->numActions++;
 	}
       
       state->numBuys++;
