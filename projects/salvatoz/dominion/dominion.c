@@ -660,10 +660,6 @@ int cardEffect(int card, int choice1, int choice2, int choice3,
 
   // uses switch to select card and perform actions
   switch (card) {
-  case adventurer:
-    fprintf(stderr, "fail: tried to handle adventurer from cardEffect switch");
-    return -1;
-
   case council_room:
     //+4 Cards
     for (i = 0; i < 4; i++) {
@@ -793,11 +789,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3,
     }
 
     return 0;
-
-  case smithy:
-    fprintf(stderr, "fail: tried to handle smithy from cardEffect switch");
-    return -1;
-
+    
   case village:
     //+1 Card
     drawCard(currentPlayer, state);
