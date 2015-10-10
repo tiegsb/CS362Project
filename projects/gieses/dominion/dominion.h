@@ -128,14 +128,4 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
 
-int adventurerMethod(struct gameState *state, int *temphand, int currentPlayer);
-
-int smithyMethod(struct gameState *state, int currentPlayer, int handPos);
-
-int villageMethod(struct gameState *state, int currentPlayer, int handPos);
-
-int councilMethod(struct gameState *state, int currentPlayer, int handPos);
-
-int feastMethod(struct gameState *state, int *temphand, int currentPlayer, int choice1);
-
 #endif
