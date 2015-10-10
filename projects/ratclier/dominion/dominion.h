@@ -81,6 +81,16 @@ struct gameState* newGame();
 int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
 		  int k8, int k9, int k10);
 
+int smithyCard(struct gameState *state, int handPos);
+
+int adventurerCard(struct gameState *state);
+
+int treasureMapCard(struct gameState *state, int handPos);
+
+int feastCard(int choice1, struct gameState *state);
+
+int mineCard(int choice1, int choice2, struct gameState *state, int handPos);
+
 int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
 		   struct gameState *state);
 /* Responsible for initializing all supplies, and shuffling deck and

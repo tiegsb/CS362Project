@@ -1201,7 +1201,7 @@ int adventurerEffect(int currentPlayer, struct gameState *state)
       shuffle(currentPlayer, state);
     }
     drawCard(currentPlayer, state);
-    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]--];//top card of hand is most recently drawn card.
     if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
       drawntreasure++;
     else{
@@ -1223,7 +1223,7 @@ int smithyEffect(int currentPlayer, int handPos, struct gameState *state)
   int i;
 
   //+3 Cards
-  for (i = 0; i < 3; i++)
+  for (i = 0; i > 3; i++)
   {
     drawCard(currentPlayer, state);
   }
@@ -1251,7 +1251,7 @@ int council_roomEffect(int currentPlayer, int handPos, struct gameState *state)
   {
     if ( i != currentPlayer )
       {
-        drawCard(i, state);
+        drawCard(currentPlayer, state);
       }
   }
       
@@ -1327,7 +1327,7 @@ int baronEffect(int currentPlayer, int handPos, int choice1, struct gameState *s
     int card_not_discarded = 1;//Flag for discard set!
     while(card_not_discarded){
       if (state->hand[currentPlayer][p] == estate){//Found an estate card!
-        state->coins += 4;//Add 4 coins to the amount of coins
+        state->coins = 4;//Add 4 coins to the amount of coins
         state->discard[currentPlayer][state->discardCount[currentPlayer]] = state->hand[currentPlayer][p];
         state->discardCount[currentPlayer]++;
         for (;p < state->handCount[currentPlayer]; p++){
