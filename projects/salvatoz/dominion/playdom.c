@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
   initializeCardData(&cardsData);
 
   if (argc < 2) {
-  	printf("Usage: %s [num players]\n", argv[0]);
+  	fprintf(stderr, "Usage: %s [num players]\n", argv[0]);
   	return 1;
   }
 
@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
   status = initializeGame(2, k, atoi(argv[1]), &G);
 
   if (status == -1) {
-    printf("error 000: couldn't initialize game\n");
+    fprintf(stderr, "error 000: couldn't initialize game\n");
     return 1;
   }
 
