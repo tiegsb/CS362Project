@@ -18,3 +18,20 @@ In dominion.h:
 
 - Added function declarations for smithyCard(), adventurerCard(), treasureMapCard(),
   feastCard(), and mineCard().
+
+
+10/10/2015:
+
+In dominion.c:
+
+- In smithyCard(), changed the trashFlag in the call to discardCard() from
+  0 to 1 (sets the card as trashed). (BUG)
+
+- In adventureCard(), changed the cardDrawn assignment to not place drawn
+  card at the end of the hand. (BUG)
+
+- In treasureMapCard(), changed the code that trashes both treasure cards
+  to no longer trash them (trashFlag changed from 1 to -1). (BUG)
+
+- In feastCard(), after gainCard(), removed the line that would set x = 0
+  to signal the end of card buying. (BUG)

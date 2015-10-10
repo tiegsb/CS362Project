@@ -49,7 +49,7 @@ int smithyCard(struct gameState *state, int handPos)
 	}
 			
   //discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
+  discardCard(handPos, currentPlayer, state, 1);
   return 0;
 }
 
@@ -73,7 +73,7 @@ int adventurerCard(struct gameState *state)
 	  drawCard(currentPlayer, state);
 
     //top card of hand is most recently drawn card.
-	  cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];
+	  cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]];
 
 	  if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
 	    drawntreasure++;
@@ -113,8 +113,8 @@ int treasureMapCard(struct gameState *state, int handPos)
   if (index > -1)
 	{
 	  //trash both treasure cards
-	  discardCard(handPos, currentPlayer, state, 1);
-	  discardCard(index, currentPlayer, state, 1);
+	  discardCard(handPos, currentPlayer, state, -1);
+	  discardCard(index, currentPlayer, state, -1);
 
 	  //gain 4 Gold cards
 	  for (i = 0; i < 4; i++)
@@ -170,7 +170,6 @@ int feastCard(int choice1, struct gameState *state)
 	    }
 
 	    gainCard(choice1, state, 0, currentPlayer);//Gain the card
-	    x = 0;//No more buying cards
 
 	    if (DEBUG){
 	      printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
