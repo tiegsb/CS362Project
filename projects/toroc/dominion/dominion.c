@@ -1286,7 +1286,7 @@ Smithy, Adventurer, Village, Great Hall, Council Room
 int smithyCard(struct gameState* state, int currentPlayer, int handPos)
 {
 	  //+3 Cards
-      for (i = 0; i < 3; i++)
+      for (int i = 0; i < 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
@@ -1303,7 +1303,10 @@ int smithyCard(struct gameState* state, int currentPlayer, int handPos)
 }
 int adventurerCard(struct gameState* state, int currentPlayer)
 {
-	int drawntreasure = 0;
+	int temphand[MAX_HAND];// moved above the if statement
+	int drawntreasure=0;
+	int cardDrawn;
+	int z = 0;// this is the counter for the temp hand
 	
 	while(drawntreasure<2)
 	{
@@ -1314,7 +1317,7 @@ int adventurerCard(struct gameState* state, int currentPlayer)
 	
 		drawCard(currentPlayer, state);
 	
-		int cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+		cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
 	
 		if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
 		  drawntreasure++;
@@ -1351,7 +1354,7 @@ int villageCard(struct gameState* state, int currentPlayer, int handPos)
       //discard played card from hand
 	  if (state->deckCount[currentPlayer] >2)
 	  {
-		  discardCard(handPos, currentPlayer, state, 0)
+		  discardCard(handPos, currentPlayer, state, 0);
 	  }
 	else
 	{
@@ -1383,7 +1386,7 @@ int council_roomCard(struct gameState* state, int currentPlayer, int handPos)
 {
 	 //+4 Cards
 	 
-      for (i = 0; i < 4; i++)
+      for (int i = 0; i < 4; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
