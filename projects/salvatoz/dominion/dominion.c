@@ -1,4 +1,5 @@
 #include "dominion.h"
+#include "cards.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
 #include <stdio.h>
@@ -15,6 +16,7 @@ int compare(const void *a, const void *b) {
 
 struct gameState *newGame() {
   struct gameState *g = malloc(sizeof(struct gameState));
+
   return g;
 }
 
@@ -653,9 +655,9 @@ int cardEffect(int card, int choice1, int choice2, int choice3,
     nextPlayer = 0;
   }
 
-  if (cardData[card]) {
-    return cardData[card].cardEffect(choice1, choice2, choice3, state, handPos, 
-                                     *bonus);
+  if (cardsData[card].effectHandler) {
+    return cardsData[card].effectHandler(choice1, choice2, choice3, state, handPos, 
+                                         bonus);
   }
 
   // uses switch to select card and perform actions

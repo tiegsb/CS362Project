@@ -1,7 +1,13 @@
+#include "dominion.h"
 #include "cards.h"
 #include <stdlib.h>
+#include <string.h>
 
-static const int NUM_CARDS = treasure_map + 1;
+struct cardData cardsData[NUM_CARDS];
+
+int drawCard(int player, struct gameState *state);
+int discardCard(int handPos, int currentPlayer, struct gameState *state,
+                int trashFlag);
 
 static inline int lastDrawn(int currentPlayer, struct gameState *state) {
   // top card of hand is most recently drawn card.
@@ -55,6 +61,8 @@ static int adventurerHandler(int choice1, int choice2, int choice3,
 
 static int smithyHandler(int choice1, int choice2, int choice3,
                          struct gameState *state, int handPos, int *bonus) {
+  int i;
+  int currentPlayer = whoseTurn(state);
   //+3 Cards
   for (i = 0; i < 3; i++) {
     drawCard(currentPlayer, state);
@@ -65,19 +73,17 @@ static int smithyHandler(int choice1, int choice2, int choice3,
   return 0;
 }
 
-struct cardData *initializeCardData() {
-  struct cardData *data;
+void initializeCardData(struct cardData (*data)[NUM_CARDS]) {
+  memset(data, 0, sizeof(struct cardData) * NUM_CARDS);
 
-  // initialize an array of cardData structs with 0 so every value is NULL
-  data = (struct cardData *) calloc(NUM_CARDS, sizeof(struct cardData));
+  struct cardData *cardData = *data;
 
   // initialize array values
-  data[adventurer].cost = 6; 
-  data[adventurer].effectHandler = adventurerHandler;
-  data[smithy].cost = 4;
-  data[smithy].effectHandler = smithyHandler;
+  cardData[adventurer].cost = 6; 
+  cardData[adventurer].effectHandler = adventurerHandler;
+  cardData[smithy].cost = 4;
+  cardData[smithy].effectHandler = smithyHandler;
 
   // TODO: three other cards
 
-  return data;
 }

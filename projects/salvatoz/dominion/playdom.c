@@ -1,4 +1,5 @@
 #include "dominion.h"
+#include "cards.h"
 #include <stdio.h>
 #include "rngs.h"
 #include <stdlib.h>
@@ -8,6 +9,8 @@ int main(int argc, char **argv) {
   int k[10] = {adventurer, gardens,  embargo, village, minion,
                mine,       cutpurse, sea_hag, tribute, smithy};
   int status;
+
+  initializeCardData(&cardsData);
 
   if (argc < 2) {
   	printf("Usage: %s [num players]\n", argv[0]);
