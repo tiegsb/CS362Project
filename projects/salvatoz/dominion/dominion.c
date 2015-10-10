@@ -576,6 +576,8 @@ int drawCard(int player, struct gameState *state) {
 }
 
 int getCost(int cardNumber) {
+  if (cardExists(cardsData, cardNumber)) return cardsData[cardNumber].cost;
+
   switch (cardNumber) {
   case curse:
     return 0;
@@ -591,8 +593,6 @@ int getCost(int cardNumber) {
     return 3;
   case gold:
     return 6;
-  case adventurer:
-    return 6;
   case council_room:
     return 5;
   case feast:
@@ -602,8 +602,6 @@ int getCost(int cardNumber) {
   case mine:
     return 5;
   case remodel:
-    return 4;
-  case smithy:
     return 4;
   case village:
     return 3;
