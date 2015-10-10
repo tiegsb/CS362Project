@@ -28,7 +28,7 @@ I changed the code to make the player who played the card is the only one who is
 condition from ( i != currentPlayer ) to ( i = currentPlayer ).
 
 Remodel Code Changes:
-In this card the player will trash one card from his hand and gain another card cost two more coins that the card he trashes.
+In this card the player will trash one card from his hand and gain another card that costs two more coins that the card he trashes.
 I changed the code to select a new card that is less in value from the card that is trashed by changing the condition to execute
 the if statement to check the card's values with getCost() function, Now the code will check if the card will be trashed +2 is "<"
 the now cost of the new card, then it will change the cards.
