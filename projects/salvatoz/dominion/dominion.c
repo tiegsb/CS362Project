@@ -655,7 +655,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3,
     nextPlayer = 0;
   }
 
-  if (cardsData[card].effectHandler) {
+  if (cardExists(cardsData, card)) {
     return cardsData[card].effectHandler(choice1, choice2, choice3, state, handPos, 
                                          bonus);
   }

@@ -18,6 +18,10 @@ static inline int isTreasure(int c) {
   return c == copper || c == silver || c == gold;
 }
 
+inline int cardExists(struct cardData *cd, int c) {
+  return cd[c].effectHandler != 0;
+}
+
 /** adventurerHandler
  * Card effect: Reveal cards from your deck until you reveal 2 treasure cards.
  * Put those Treasure cards in your hand and discard the other revealed cards.
