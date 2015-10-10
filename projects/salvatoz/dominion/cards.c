@@ -3,12 +3,13 @@
 
 static const int NUM_CARDS = treasure_map + 1;
 
-static inline int lastDrawn(struct gameState *state, int currentPlayer) {
+static inline int lastDrawn(int currentPlayer, struct gameState *state) {
+  // top card of hand is most recently drawn card.
   return state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
 }
 
-static inline int isTreasure(int card) {
-  return card == copper || card == silver || card == gold;
+static inline int isTreasure(int c) {
+  return c == copper || c == silver || c == gold;
 }
 
 /** adventurerHandler
@@ -34,9 +35,8 @@ static int adventurerHandler(int choice1, int choice2, int choice3,
       shuffle(currentPlayer, state);
     }
     drawCard(currentPlayer, state);
-    // top card of hand is most recently drawn card.
-    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
-    if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+    cardDrawn = lastDrawn(currentPlayer, state);
+    if (isTreasure(cardDrawn))
       drawntreasure++;
     else {
       temphand[z] = cardDrawn;
