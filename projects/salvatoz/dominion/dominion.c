@@ -653,6 +653,11 @@ int cardEffect(int card, int choice1, int choice2, int choice3,
     nextPlayer = 0;
   }
 
+  if (cardData[card]) {
+    return cardData[card].cardEffect(choice1, choice2, choice3, state, handPos, 
+                                     *bonus);
+  }
+
   // uses switch to select card and perform actions
   switch (card) {
   case adventurer:
