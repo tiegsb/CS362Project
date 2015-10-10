@@ -1285,8 +1285,9 @@ Smithy, Adventurer, Village, Great Hall, Council Room
 */
 int smithyCard(struct gameState* state, int currentPlayer, int handPos)
 {
+	int i;
 	  //+3 Cards
-      for (int i = 0; i < 3; i++)
+      for (i = 0; i < 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
@@ -1384,9 +1385,11 @@ int great_hallCard(struct gameState* state, int currentPlayer, int handPos)
 }
 int council_roomCard(struct gameState* state, int currentPlayer, int handPos)
 {
-	 //+4 Cards
 	 
-      for (int i = 0; i < 4; i++)
+	 int i;
+	 
+	 //+4 Cards
+      for ( i = 0; i < 4; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
