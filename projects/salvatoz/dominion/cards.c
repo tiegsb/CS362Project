@@ -72,8 +72,10 @@ struct cardData *initializeCardData() {
   data = (struct cardData *) calloc(NUM_CARDS, sizeof(struct cardData));
 
   // initialize array values
-  data[adventurer] = {.cost = 6, .effectHandler = adventurerHandler};
-  data[smithy] = {.cost = 4, .effectHandler = smithyHandler};
+  data[adventurer].cost = 6; 
+  data[adventurer].effectHandler = adventurerHandler;
+  data[smithy].cost = 4;
+  data[smithy].effectHandler = smithyHandler;
 
   // TODO: three other cards
 
