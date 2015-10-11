@@ -5,7 +5,7 @@
  * Requires dominion.h to be included first.
  */
 
-#define NUM_CARDS (treasure_map + 1)
+#define NUM_CARDS treasure_map
 
  /* cardEffectHandler
  * What is says on the tin. A pointer to a function that handles a card's 

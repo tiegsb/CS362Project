@@ -173,8 +173,8 @@ static int feastHandler(int choice1, int choice2, int choice3,
 }
 
 static int mineHandler(int choice1, int choice2, int choice3, 
-                        struct gameState *state, int handPos, 
-                        int *bonus) {
+                       struct gameState *state, int handPos, 
+                       int *bonus) {
   int i;
   int j;
   int currentPlayer = whoseTurn(state);
@@ -208,6 +208,37 @@ static int mineHandler(int choice1, int choice2, int choice3,
   }
 
   return 0;
+}
+
+static int treasureMapHandler(int choice1, int choice2, int choice3, 
+                              struct gameState *state, int handPos, 
+                              int *bonus) {
+  // search hand for another treasure_map
+  index = -1;
+  
+  for (i = 0; i < state->handCount[currentPlayer]; i++) {
+    if (state->hand[currentPlayer][i] == treasure_map && i != handPos) {
+      index = i;
+      break;
+    }
+  }
+
+  if (index > -1) {
+    // trash both treasure cards
+    discardCard(handPos, currentPlayer, state, 1);
+    discardCard(index, currentPlayer, state, 1);
+
+    // gain 4 Gold cards
+    for (i = 0; i < 4; i++) {
+      gainCard(gold, state, 1, currentPlayer);
+    }
+
+    // return success
+    return 1;
+  }
+
+  // no second treasure_map found in hand
+  return -1;
 }
 
 
