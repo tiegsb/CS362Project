@@ -748,7 +748,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 			
     case gardens:
-      return -1;
+      return gardensEffect(-1);
 			
     case mine:
       j = state->hand[currentPlayer][choice1];  //store card we will trash
@@ -786,45 +786,14 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 			
     case remodel:
-      j = state->hand[currentPlayer][choice1];  //store card we will trash
-
-      if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
-	{
-	  return -1;
-	}
-
-      gainCard(choice2, state, 0, currentPlayer);
-
-      //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-
-      //discard trashed card
-      for (i = 0; i < state->handCount[currentPlayer]; i++)
-	{
-	  if (state->hand[currentPlayer][i] == j)
-	    {
-	      discardCard(i, currentPlayer, state, 0);			
-	      break;
-	    }
-	}
-
-
-      return 0;
+      return remodelEffect(currentPlayer, state, handPos, choice1, choice2);
 		
     case smithy:
       smithyEffect(currentPlayer, state, handPos);
       return 0;
 		
     case village:
-      //+1 Card
-      drawCard(currentPlayer, state);
-			
-      //+2 Actions
-      state->numActions = state->numActions + 2;
-			
-      //discard played card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+      return villageEffect(currentPlayer, state, handPos);
 		
     case baron:
       state->numBuys++;//Increase buys by 1!
@@ -1344,6 +1313,50 @@ int adventurerEffect(int currentPlayer, struct gameState *state){
     }
 
     return 0;
+}
+
+int gardensEffect(int gardenNum){
+	if(gardenNum == -1)
+	  return 0;
+	else
+	  return -1;
+}
+
+int villageEffect(int currentPlayer, struct gameState *state, int handPos){
+	//+1 Card
+    drawCard(currentPlayer, state);
+	
+	//+2 Actions
+    state->numActions += state->numActions + 2;
+			
+    //discard played card from hand
+    discardCard(handPos, currentPlayer, state, 0);
+    return 0;
+}
+
+int remodelEffect(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2){
+    int j = state->hand[currentPlayer][choice1];  //store card we will trash
+	int i;
+
+      if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
+	{
+	  return -1;
+	}
+
+      gainCard(choice2, state, 0, currentPlayer);
+
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+
+      //discard trashed card
+      for (i = 0; i < state->handCount[currentPlayer]; i++)
+	{
+	  if (state->hand[currentPlayer][i] == j)
+	    {
+	      discardCard(i, currentPlayer, state, 0);			
+	      break;
+	    }
+	}
 }
 //end of dominion.c
 
