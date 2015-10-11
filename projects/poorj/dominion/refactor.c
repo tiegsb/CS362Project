@@ -19,3 +19,9 @@ New Function: gardensEffect
 	incorrectly returns sucessfully if the gardenNum is negative one, and it 
 	returns zero otherwize.
 	
+New Function: villageEffect
+	The villageEffect function draws a card and puts it into the player's hand,
+	then gives the player two additional actions. It is called by the switch 
+	statement in the cardEffect function. The error is that the number of 
+	turns it gives plus equals itself plus two, giving the incorrect number of 
+	additional turns.

@@ -138,6 +138,10 @@ int adventurerEffect(int currentPlayer, struct gameState *state);
    them to the player's hand and discarding any other cards found */
    
 int gardensEffect(int gardenNum);
-/* returns gardenNum -1 */
+/* Returns zero if gardenNum is negative one otherwise returns -1 */
+
+int villageEffect(int currentPlayer, struct gameState *state, int handPos);
+/* Plays village card to draw one card and give player two additional actions 
+   before discarding */
 
 #endif
