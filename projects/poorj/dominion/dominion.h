@@ -131,5 +131,9 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
    1, others to 0 */
 
 int smithyEffect(int currentPlayer, struct gameState *state, int handPos);
+/* Plays smithy card allowing the player to draw 3 cards */
    
+int adventurerEffect(int currentPlayer, struct gameState *state);
+/* Plays adventurer card which draws until two treasure coins are found, adding
+   them to the player's hand and discarding any other cards found */
 #endif
