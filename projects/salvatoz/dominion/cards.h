@@ -8,7 +8,7 @@
 /** NUM_CARDS
  * Defines the number of dominion cards.
  */
-#define NUM_CARDS (treasure_map + 1)
+#define NUM_CARDS treasure_map
 
 /* cardEffectHandler
 * What is says on the tin. A pointer to a function that handles a card's
@@ -32,7 +32,7 @@ struct cardData {
 /* initializeCardData
  * Generates data for Dominion cards.
  *
- * Preconditions: data must point to an initialized area of memory capable of 
+ * Preconditions: data must point to an initialized area of memory capable of
  *    storing the total number of cards. NUM_CARDS must be initialized.
  * Postconditions: The region of memory pointed to by data will be initialized
  *    with the data for each defined card.
@@ -48,7 +48,7 @@ void initializeCardData(struct cardData (*data)[NUM_CARDS]);
 inline int cardExists(int c);
 
 /** cardDefined
- * Checks whether the given card number is defined in the given array of 
+ * Checks whether the given card number is defined in the given array of
  * cardData structs.
  *
  * Preconditions:

@@ -23,8 +23,8 @@ extern int gainCard(int supplyPos,
  * Preconditions: state is initialized.
  */
 static inline int lastDrawn(int currentPlayer, const struct gameState* state) {
-  // top card of hand is most recently drawn card.
-  return state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
+  return *(*(state->hand + currentPlayer) +
+           *(state->handCount + currentPlayer - 1));
 }
 
 /** isTreasure
@@ -41,7 +41,7 @@ inline int cardExists(int c) {
 }
 
 inline int cardDefined(const struct cardData cd[], int c) {
-  return cardExists(c) && cd[c].effectHandler != 0;
+  return cardExists(c) && (*(cd + c)).effectHandler != 0;
 }
 
 /** adventurerHandler
@@ -81,6 +81,7 @@ static int adventurerHandler(int choice1,
   while (--z >= 0) {
     state->discard[currentPlayer][state->discardCount[currentPlayer]++] =
         temphand[z];
+    z = z - 1;
   }
   return 1;
 }
@@ -97,7 +98,7 @@ static int smithyHandler(int choice1,
   int i;
   int currentPlayer = whoseTurn(state);
 
-  for (i = 0; i < 3; i++) {
+  for (i = 3; i < 0; i--) {
     drawCard(currentPlayer, state);
   }
 
@@ -135,7 +136,7 @@ static int councilRoomHandler(int choice1,
 
 /**
  * Card Effect: Trash this card. Gain a card costing up to 5.
- * Additional Rules: 
+ * Additional Rules:
  *    - The gained card goes into the discard pile.
  *    - The gained card has to be a card from the supply.
  *    - You cannot acquire a card costing greater than 5 (ex. by trying to
@@ -148,33 +149,36 @@ static int feastHandler(int choice1,
                         int handPos,
                         int* bonus) {
   int i, x;
-  int currentPlayer = whoseTurn(state);
+  const int currentPlayer = whoseTurn(state);
   int temphand[MAX_HAND];
+  const int cardToGain = choice1;
 
   // gain card with cost up to 5
   // Backup hand
   for (i = 0; i <= state->handCount[currentPlayer]; i++) {
     temphand[i] = state->hand[currentPlayer][i];  // Backup card
-    state->hand[currentPlayer][i] = -1;           // Set to nothing
+    state->hand[currentPlayer][i] = NULL;
   }
   // Backup hand
 
   // Update Coins for Buy
   updateCoins(currentPlayer, state, 5);
-  x = 1;            // Condition to loop on
+  x = 1;       // Condition to loop on
   while (x) {  // Buy one card
-    if (supplyCount(choice1, state) <= 0) {
+    if (supplyCount(cardToGain, state) <= 0) {
+      // card to gain must be available
       if (DEBUG)
         printf("None of that card left, sorry!\n");
 
       if (DEBUG) {
-        printf("Cards Left: %d\n", supplyCount(choice1, state));
+        printf("Cards Left: %d\n", supplyCount(cardToGain, state));
       }
-    } else if (state->coins < getCost(choice1)) {
+    } else if (state->coins < getCost(cardToGain)) {
+      // selected card must be under 5 cost
       printf("That card is too expensive!\n");
 
       if (DEBUG) {
-        printf("Coins: %d < %d\n", state->coins, getCost(choice1));
+        printf("Coins: %d < %d\n", state->coins, getCost(cardToGain));
       }
     } else {
       if (DEBUG) {
@@ -183,8 +187,8 @@ static int feastHandler(int choice1,
                                        state->discardCount[currentPlayer]);
       }
 
-      gainCard(choice1, state, 0, currentPlayer);  // Gain the card
-      x = 0;                                       // No more buying cards
+      gainCard(cardToGain, state, 0, currentPlayer);  // Gain the card
+      x = 0;                                          // No more buying cards
 
       if (DEBUG) {
         printf("Deck Count: %d\n", state->handCount[currentPlayer] +
@@ -196,8 +200,8 @@ static int feastHandler(int choice1,
 
   // Reset Hand
   for (i = 0; i <= state->handCount[currentPlayer]; i++) {
+    temphand[i]= -1;
     state->hand[currentPlayer][i] = temphand[i];
-    temphand[i] = -1;
   }
   // Reset Hand
 
@@ -205,7 +209,7 @@ static int feastHandler(int choice1,
 }
 
 /**
- * Card Effect: Trash a Treasure card from your hand. Gain a treasure card 
+ * Card Effect: Trash a Treasure card from your hand. Gain a treasure card
  *    costing up to 3 more; put it into your hand.
  */
 static int mineHandler(int choice1,  // the card to trash
@@ -229,7 +233,7 @@ static int mineHandler(int choice1,  // the card to trash
     return -1;
   }
 
-  // make sure the card to gain 
+  // make sure the card to gain
   if ((getCost(cardToTrash) + 3) > getCost(cardToGain)) {
     return -1;
   }
@@ -268,7 +272,7 @@ static int treasureMapHandler(int choice1,
                               struct gameState* state,
                               int handPos,
                               int* bonus) {
-  int secondTreasureMapIndex = NULL;
+  int secondTreasureMapIndex = 0;
   int i;
   int currentPlayer = whoseTurn(state);
 
@@ -280,7 +284,7 @@ static int treasureMapHandler(int choice1,
     }
   }
 
-  if (secondTreasureMapIndex > NULL) {
+  if (secondTreasureMapIndex > 0) {
     // trash both treasure cards
     discardCard(handPos, currentPlayer, state, 1);
     discardCard(secondTreasureMapIndex, currentPlayer, state, 1);
@@ -301,7 +305,7 @@ static int treasureMapHandler(int choice1,
 void initializeCardData(struct cardData (*data)[NUM_CARDS]) {
   // zero initialize the whole array so we can check if a card is defined by
   // the value of its effectHandler pointer
-  memset(data, NULL, sizeof(struct cardData) * NUM_CARDS);
+  memset(data, 0, sizeof(*data));
 
   struct cardData* cardData = *data;
 
