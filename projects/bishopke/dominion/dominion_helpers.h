@@ -12,7 +12,10 @@ int getCost(int cardNumber);
 int cardEffect(int card, int choice1, int choice2, int choice3, 
 	       struct gameState *state, int handPos, int *bonus);
 //card effects are going here I guess!
-int smithyCard(int handPos, int currentPlayer, struct gameState *state);
+int smithyCard(int currentPlayer, int handPos, struct gameState *state);
 int adventurerCard(int currentPlayer, struct gameState *state);
+int villageCard(int currentPlayer, int handPos, struct gameState *state);
+int great_hallCard(int currentPlayer, int handPos, struct gameState *state);
+int outpostCard(int currentPlayer, int handPos, struct gameState *state);
 
 #endif
