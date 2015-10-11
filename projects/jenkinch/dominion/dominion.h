@@ -129,5 +129,25 @@ int scoreFor(int player, struct gameState *state);
 int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
+   
+int activateSmithy(int currentPlayer, struct gameState *state, int handPos);
+/* Activates Smithy card effect: +3 Cards */
+
+int activateAdventurer(int currentPlayer, struct gameState *state, int temphand[MAX_HAND]);
+/* Activates Adventurer card effect:
+Reveal cards from your deck until you reveal 2 Treasure cards.
+Put those Treasure cards in your hand and discard the other revealed cards. */
+
+int activateVillage(int currentPlayer, struct gameState *state, int handPos);
+/* Activates Village card effect: +1 Card, +2 Actions */
+
+int activateSteward(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int choice3);
+/* Activates Steward card effect: Choose one: +2 Cards; or +2 Coins; 
+or trash 2 cards from your hand */
+
+int activateMinion(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2);
+/* Activates Minion card effect: +1 Action
+Choose one: +2 Coins; or discard your hand, +4 Cards, and each other player with at least 
+5 cards in hand discards his hand and draws 4 cards. */
 
 #endif
