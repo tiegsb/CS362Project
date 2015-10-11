@@ -748,7 +748,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 			
     case gardens:
-      return -1;
+      return gardensEffect(-1);
 			
     case mine:
       j = state->hand[currentPlayer][choice1];  //store card we will trash
@@ -1344,6 +1344,13 @@ int adventurerEffect(int currentPlayer, struct gameState *state){
     }
 
     return 0;
+}
+
+int gardensEffect(int gardenNum){
+	if(gardenNum == -1)
+	  return 0;
+	else
+	  return -1;
 }
 //end of dominion.c
 
