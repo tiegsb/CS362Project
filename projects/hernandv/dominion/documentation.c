@@ -1,31 +1,15 @@
-Billy Kerns
-CS 362
-Documentation
+Victor Hernandez
+CS_362_F15
+Assignment 2 - Part 2 - Documentation 
 
-smithy:
-	The smithy card adds three cards to the hand of the player who played the smithy card.  Once this is completed the card is
-	discarded from the player''s hand and goes into their played card pile.  This is done with a for loop that runs three times,
-	calling drawCard() on each iteration, and then calling the discardCard() function after exiting the loop.
+Smithy - 
+When the Smithy card is played, the player adds three cards from their deck to their hand, if they do not have three cards in their deck, they must add as many as they can to complete the action.  The code for the Smithy card uses a loop to execute the drawCard function three times, the drawCard function first checks the players deck to see if it is empty or not. If the players deck is empty the discard pile is first moved back into the players deck then shuffled, cards are then drawn into the players hand. If the players deck is not empty the drawCard function adds a card to the players hand until the action is satisfied or the deck is empty. After this action is completed, the discardCard function is executed and removes the Smithy card from the players hand and moves it to the the discard pile.
 
-adventurer:
-	The adventurer card allows the player who plays the card to go through their deck until two treasure cards are found.  These
-	treasure cards are put into the player's hand while the revealed cards are placed in the played	card pile.  This is accolmplished
-	by running a while loop that runs while the variable drawntreasure is less than two.  In the while loop it checks to make sure
-	the player has more than one card in their deck, if not the played card pile is shuffled and added to the player's deck.  Then a 
-	card is drawn with the drawcard() function.  The variable cardDrawn is set to the top card of the player's hand.  The cardDrawn
-	variable is checked to see if it is a treasure card.  If it is then the drawntreasure variable is incremented.  Else the cardDrawn
-	is added to temp hand at z and the top card is removed.  z is incremented and the while loop goes back to the top.  After the while
-	loop is exited another while loop is started that gets rid of the non treasure cards that were drawn.
+Adventurer - 
+When the adventurer card is played, the player is allowed to cycle through their deck for the next two treasure cards in their deck and add them to their hand, if they do not have two treasure cards they must add as many as available to complete the action. Cards that are not treasure cards are placed into the players discard pile. The code for the Adventurer card uses a while loop to determine if two treasure cards have been drawn by using a drawnTreasure variable. In the while loop, the players deck is first checked to determine if it is empty or not by checking the state of the deckCount for the player, if it is empty the players discard pile is shuffled and cards are then drawn using the drawCard function. The card that is drawn is checked for treasure by using the cardDrawn variable that increments the drawnTreasure counter if the drawn card is a copper, silver or gold. If the card drawn is not a treasure it is placed in tempHand and the z counter is incremented and the while loops runs until two treasures are drawn or the deck is empty. Once the loop exits, a second while loop is executed that discards all of the non treasure cards from tempHand until it is empty.
 
-discardCard():
-	The discardCard() function will discard a card when called.  This is done by first entering an if statement that checks if trashFlag
-	has been set.  If it has not been set then the card is added to the played pile and playedCardCount is incremented.  Then the played
-	card is set to -1.  Another if block is entered which first checks if the card is the last card in the array.  If it is, the player's 
-	hand count is decremented.  Else if the player only has one card in their hand the player's hand count is decremented.  If neither of 
-	these conditions are met then the discarded card is replaced with last card, the last card is set to -1, and handCount is decremented.
+discardCard() - 
+When the discardCard() method executes, a card from the players hand is moved to the discard pile. The  method does this by first executing an if statement to determine if the card should be trashed rather than discarded by checking the trashFlag. If the trashFlag is not set the card is then added to the played pile and playedCardCount is incremented, handPos is set to -1 and the card is removed from the players hand. If the trashFlag is set then the card is replaced with the last card in the hand and set to -1 and the cards in the hand are reduced.
 
-updateCoins():
-	The updateCoins() function uses a for loop and few if statements to update the amount of coins a player has in their hand.  This is 
-	accolmplished by first setting coins equal to 0 then entering the for loop.  Once in the for loop if statements check to if the card
-	is a copper, silver, or gold and if it is the appropriate amount of coins are added to the state.  After this has been done a user's 
-	bonus is added to the total amount of coins.
+updateCoins() - 
+When the updateCoins() method executes a for loop and if statements are executed to update the amount of coins a player has in the layers hand. The method does this by setting coins equal to 0 then entering the loop.  The for loop if statements check if the card is a copper, silver, or gold and the coins variable is incremented by the coordinating amount as well as a bonus if it is present.
