@@ -195,8 +195,7 @@ void printHand(int player, struct gameState* game) {
   int handCount = game->handCount[player];
   int handIndex;
   printf("Player %d's hand:\n", player);
-  if (handCount > 0)
-    printf("#  Card\n");
+  if (handCount > 0) printf("#  Card\n");
   for (handIndex = 0; handIndex < handCount; handIndex++) {
     int card = game->hand[player][handIndex];
     char name[MAX_STRING_LENGTH];
@@ -210,8 +209,7 @@ void printDeck(int player, struct gameState* game) {
   int deckCount = game->deckCount[player];
   int deckIndex;
   printf("Player %d's deck: \n", player);
-  if (deckCount > 0)
-    printf("#  Card\n");
+  if (deckCount > 0) printf("#  Card\n");
   for (deckIndex = 0; deckIndex < deckCount; deckIndex++) {
     int card = game->deck[player][deckIndex];
     char name[MAX_STRING_LENGTH];
@@ -225,8 +223,7 @@ void printPlayed(int player, struct gameState* game) {
   int playedCount = game->playedCardCount;
   int playedIndex;
   printf("Player %d's played cards: \n", player);
-  if (playedCount > 0)
-    printf("#  Card\n");
+  if (playedCount > 0) printf("#  Card\n");
   for (playedIndex = 0; playedIndex < playedCount; playedIndex++) {
     int card = game->playedCards[playedIndex];
     char name[MAX_STRING_LENGTH];
@@ -240,8 +237,7 @@ void printDiscard(int player, struct gameState* game) {
   int discardCount = game->discardCount[player];
   int discardIndex;
   printf("Player %d's discard: \n", player);
-  if (discardCount > 0)
-    printf("#  Card\n");
+  if (discardCount > 0) printf("#  Card\n");
   for (discardIndex = 0; discardIndex < discardCount; discardIndex++) {
     int card = game->discard[player][discardIndex];
     char name[MAX_STRING_LENGTH];
@@ -257,8 +253,7 @@ void printSupply(struct gameState* game) {
   printf("#   Card          Cost   Copies\n");
   for (cardNum = 0; cardNum < NUM_TOTAL_K_CARDS; cardNum++) {
     cardCount = game->supplyCount[cardNum];
-    if (cardCount == -1)
-      continue;
+    if (cardCount == -1) continue;
     cardNumToName(cardNum, name);
     cardCost = getCardCost(cardNum);
     printf("%-2d  %-13s %-5d  %-5d", cardNum, name, cardCost, cardCount);
@@ -339,16 +334,14 @@ void selectKingdomCards(int randomSeed, int kingCards[NUM_K_CARDS]) {
   while (numSelected < NUM_K_CARDS) {
     used = FALSE;
     card = floor(Random() * NUM_TOTAL_K_CARDS);
-    if (card < adventurer)
-      continue;
+    if (card < adventurer) continue;
     for (i = 0; i < numSelected; i++) {
       if (kingCards[i] == card) {
         used = TRUE;
         break;
       }
     }
-    if (used == TRUE)
-      continue;
+    if (used == TRUE) continue;
     kingCards[numSelected] = card;
     numSelected++;
   }
@@ -398,8 +391,7 @@ void executeBotTurn(int player, int* turnNum, struct gameState* game) {
     printf("Player %d buys card Silver\n\n", player);
   }
 
-  if (player == (game->numPlayers - 1))
-    (*turnNum)++;
+  if (player == (game->numPlayers - 1)) (*turnNum)++;
   endTurn(game);
   if (!isGameOver(game)) {
     int currentPlayer = whoseTurn(game);

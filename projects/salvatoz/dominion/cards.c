@@ -7,15 +7,11 @@
 struct cardData cardsData[NUM_CARDS];
 
 extern int drawCard(int player, struct gameState* state);
-extern int discardCard(int handPos,
-                       int currentPlayer,
-                       struct gameState* state,
+extern int discardCard(int handPos, int currentPlayer, struct gameState* state,
                        int trashFlag);
 extern int updateCoins(int player, struct gameState* state, int bonus);
 extern int getCost(int cardNumber);
-extern int gainCard(int supplyPos,
-                    struct gameState* state,
-                    int toFlag,
+extern int gainCard(int supplyPos, struct gameState* state, int toFlag,
                     int player);
 
 /** lastDrawn
@@ -36,9 +32,7 @@ static inline int isTreasure(int c) {
   return c == copper || c == silver || c == gold;
 }
 
-inline int cardExists(int c) {
-  return 0 <= c && c < NUM_CARDS;
-}
+inline int cardExists(int c) { return 0 <= c && c < NUM_CARDS; }
 
 inline int cardDefined(const struct cardData cd[], int c) {
   return cardExists(c) && (*(cd + c)).effectHandler != 0;
@@ -53,12 +47,8 @@ inline int cardDefined(const struct cardData cd[], int c) {
  * until you have finished revealing cards. If you run out of cards while
  * shuffling and still have only one Treasure, you get just that one Treasure.
  */
-static int adventurerHandler(int choice1,
-                             int choice2,
-                             int choice3,
-                             struct gameState* state,
-                             int handPos,
-                             int* bonus) {
+static int adventurerHandler(int choice1, int choice2, int choice3,
+                             struct gameState* state, int handPos, int* bonus) {
   int z = 0;
   int temphand[MAX_HAND];
   int drawntreasure = 0;
@@ -89,12 +79,8 @@ static int adventurerHandler(int choice1,
 /** smithyHandler
  * Card Effect: +3 cards
  */
-static int smithyHandler(int choice1,
-                         int choice2,
-                         int choice3,
-                         struct gameState* state,
-                         int handPos,
-                         int* bonus) {
+static int smithyHandler(int choice1, int choice2, int choice3,
+                         struct gameState* state, int handPos, int* bonus) {
   int i;
   int currentPlayer = whoseTurn(state);
 
@@ -109,11 +95,8 @@ static int smithyHandler(int choice1,
 /** councilRoomHandler
  * Card Effect: +4 cards, +1 buy, each other player draws a card.
  */
-static int councilRoomHandler(int choice1,
-                              int choice2,
-                              int choice3,
-                              struct gameState* state,
-                              int handPos,
+static int councilRoomHandler(int choice1, int choice2, int choice3,
+                              struct gameState* state, int handPos,
                               int* bonus) {
   int i;
   int currentPlayer = whoseTurn(state);
@@ -142,12 +125,8 @@ static int councilRoomHandler(int choice1,
  *    - You cannot acquire a card costing greater than 5 (ex. by trying to
  *      combine other treasures with this card.)
  */
-static int feastHandler(int choice1,
-                        int choice2,
-                        int choice3,
-                        struct gameState* state,
-                        int handPos,
-                        int* bonus) {
+static int feastHandler(int choice1, int choice2, int choice3,
+                        struct gameState* state, int handPos, int* bonus) {
   int i, x;
   const int currentPlayer = whoseTurn(state);
   int temphand[MAX_HAND];
@@ -167,8 +146,7 @@ static int feastHandler(int choice1,
   while (x) {  // Buy one card
     if (supplyCount(cardToGain, state) <= 0) {
       // card to gain must be available
-      if (DEBUG)
-        printf("None of that card left, sorry!\n");
+      if (DEBUG) printf("None of that card left, sorry!\n");
 
       if (DEBUG) {
         printf("Cards Left: %d\n", supplyCount(cardToGain, state));
@@ -200,7 +178,7 @@ static int feastHandler(int choice1,
 
   // Reset Hand
   for (i = 0; i <= state->handCount[currentPlayer]; i++) {
-    temphand[i]= -1;
+    temphand[i] = -1;
     state->hand[currentPlayer][i] = temphand[i];
   }
   // Reset Hand
@@ -214,9 +192,7 @@ static int feastHandler(int choice1,
  */
 static int mineHandler(int choice1,  // the card to trash
                        int choice2,  // the card to gain
-                       int choice3,
-                       struct gameState* state,
-                       int handPos,
+                       int choice3, struct gameState* state, int handPos,
                        int* bonus) {
   int i;
   const int currentPlayer = whoseTurn(state);
@@ -266,11 +242,8 @@ static int mineHandler(int choice1,  // the card to trash
  *      golds.
  *    - If your deck was empty, then the gold cards are the only cards in it.
  */
-static int treasureMapHandler(int choice1,
-                              int choice2,
-                              int choice3,
-                              struct gameState* state,
-                              int handPos,
+static int treasureMapHandler(int choice1, int choice2, int choice3,
+                              struct gameState* state, int handPos,
                               int* bonus) {
   int secondTreasureMapIndex = 0;
   int i;

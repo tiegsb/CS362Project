@@ -7,10 +7,8 @@
 #include <stdlib.h>
 
 int compare(const void* a, const void* b) {
-  if (*(int*)a > *(int*)b)
-    return 1;
-  if (*(int*)a < *(int*)b)
-    return -1;
+  if (*(int*)a > *(int*)b) return 1;
+  if (*(int*)a < *(int*)b) return -1;
   return 0;
 }
 
@@ -20,16 +18,8 @@ struct gameState* newGame() {
   return g;
 }
 
-int* kingdomCards(int k1,
-                  int k2,
-                  int k3,
-                  int k4,
-                  int k5,
-                  int k6,
-                  int k7,
-                  int k8,
-                  int k9,
-                  int k10) {
+int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+                  int k8, int k9, int k10) {
   int* k = malloc(10 * sizeof(int));
   k[0] = k1;
   k[1] = k2;
@@ -44,9 +34,7 @@ int* kingdomCards(int k1,
   return k;
 }
 
-int initializeGame(int numPlayers,
-                   int kingdomCards[10],
-                   int randomSeed,
+int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
                    struct gameState* state) {
   int i;
   int j;
@@ -190,8 +178,7 @@ int shuffle(int player, struct gameState* state) {
   int card;
   int i;
 
-  if (state->deckCount[player] < 1)
-    return -1;
+  if (state->deckCount[player] < 1) return -1;
   qsort((void*)(state->deck[player]), state->deckCount[player], sizeof(int),
         compare);
   /* SORT CARDS IN DECK TO ENSURE DETERMINISM! */
@@ -213,10 +200,7 @@ int shuffle(int player, struct gameState* state) {
   return 0;
 }
 
-int playCard(int handPos,
-             int choice1,
-             int choice2,
-             int choice3,
+int playCard(int handPos, int choice1, int choice2, int choice3,
              struct gameState* state) {
   int card;
   int coin_bonus = 0;  // tracks coins gain from actions
@@ -265,12 +249,10 @@ int buyCard(int supplyPos, struct gameState* state) {
   who = state->whoseTurn;
 
   if (state->numBuys < 1) {
-    if (DEBUG)
-      printf("You do not have any buys left\n");
+    if (DEBUG) printf("You do not have any buys left\n");
     return -1;
   } else if (supplyCount(supplyPos, state) < 1) {
-    if (DEBUG)
-      printf("There are not any of that type of card left\n");
+    if (DEBUG) printf("There are not any of that type of card left\n");
     return -1;
   } else if (state->coins < getCost(supplyPos)) {
     if (DEBUG)
@@ -317,26 +299,21 @@ int fullDeckCount(int player, int card, struct gameState* state) {
   int count = 0;
 
   for (i = 0; i < state->deckCount[player]; i++) {
-    if (state->deck[player][i] == card)
-      count++;
+    if (state->deck[player][i] == card) count++;
   }
 
   for (i = 0; i < state->handCount[player]; i++) {
-    if (state->hand[player][i] == card)
-      count++;
+    if (state->hand[player][i] == card) count++;
   }
 
   for (i = 0; i < state->discardCount[player]; i++) {
-    if (state->discard[player][i] == card)
-      count++;
+    if (state->discard[player][i] == card) count++;
   }
 
   return count;
 }
 
-int whoseTurn(struct gameState* state) {
-  return state->whoseTurn;
-}
+int whoseTurn(struct gameState* state) { return state->whoseTurn; }
 
 int endTurn(struct gameState* state) {
   int k;
@@ -564,8 +541,7 @@ int drawCard(int player, struct gameState* state) {
     deckCounter =
         state->deckCount[player];  // Create a holder for the deck count
 
-    if (deckCounter == 0)
-      return -1;
+    if (deckCounter == 0) return -1;
 
     state->hand[player][count] =
         state->deck[player][deckCounter - 1];  // Add card to hand
@@ -591,8 +567,7 @@ int drawCard(int player, struct gameState* state) {
 }
 
 int getCost(int cardNumber) {
-  if (cardDefined(cardsData, cardNumber))
-    return cardsData[cardNumber].cost;
+  if (cardDefined(cardsData, cardNumber)) return cardsData[cardNumber].cost;
 
   switch (cardNumber) {
     case curse:
@@ -642,13 +617,8 @@ int getCost(int cardNumber) {
   return -1;
 }
 
-int cardEffect(int card,
-               int choice1,
-               int choice2,
-               int choice3,
-               struct gameState* state,
-               int handPos,
-               int* bonus) {
+int cardEffect(int card, int choice1, int choice2, int choice3,
+               struct gameState* state, int handPos, int* bonus) {
   int i;
   int j;
   int k;
@@ -1032,9 +1002,7 @@ int cardEffect(int card,
   return -1;
 }
 
-int discardCard(int handPos,
-                int currentPlayer,
-                struct gameState* state,
+int discardCard(int handPos, int currentPlayer, struct gameState* state,
                 int trashFlag) {
   // if card is not trashed, added to Played pile
   if (trashFlag < 1) {

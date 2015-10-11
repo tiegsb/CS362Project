@@ -14,11 +14,8 @@
 * What is says on the tin. A pointer to a function that handles a card's
 * effect.
 */
-typedef int (*cardEffectHandler)(int choice1,
-                                 int choice2,
-                                 int choice3,
-                                 struct gameState* state,
-                                 int handPos,
+typedef int (*cardEffectHandler)(int choice1, int choice2, int choice3,
+                                 struct gameState* state, int handPos,
                                  int* bonus);
 
 /* struct cardData

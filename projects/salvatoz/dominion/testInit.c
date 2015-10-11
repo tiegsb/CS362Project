@@ -10,16 +10,8 @@ int main(int argc, char** argv) {
 
   int start = -1;
 
-  int k[10] = {adventurer,
-               gardens,
-               embargo,
-               village,
-               minion,
-               mine,
-               cutpurse,
-               sea_hag,
-               tribute,
-               smithy};
+  int k[10] = {adventurer, gardens,  embargo, village, minion,
+               mine,       cutpurse, sea_hag, tribute, smithy};
 
   memset(&G, 'z', sizeof(struct gameState));
 

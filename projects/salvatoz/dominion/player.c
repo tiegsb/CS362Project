@@ -20,16 +20,8 @@
 
 int main2(int argc, char* argv[]) {
   // Default cards, as defined in playDom
-  int k[10] = {adventurer,
-               gardens,
-               embargo,
-               village,
-               minion,
-               mine,
-               cutpurse,
-               sea_hag,
-               tribute,
-               smithy};
+  int k[10] = {adventurer, gardens,  embargo, village, minion,
+               mine,       cutpurse, sea_hag, tribute, smithy};
   struct gameState g;
   initializeGame(2, k, 1, &g);
   printf("SUCCESSFUL INIT\n");
@@ -69,16 +61,8 @@ int main(int argc, char* argv[]) {
   int randomSeed = atoi(argv[1]);
 
   // Default cards, as defined in playDom
-  int kCards[10] = {adventurer,
-                    gardens,
-                    embargo,
-                    village,
-                    minion,
-                    mine,
-                    cutpurse,
-                    sea_hag,
-                    tribute,
-                    smithy};
+  int kCards[10] = {adventurer, gardens,  embargo, village, minion,
+                    mine,       cutpurse, sea_hag, tribute, smithy};
 
   struct gameState g;
   struct gameState* game = &g;
@@ -119,8 +103,7 @@ int main(int argc, char* argv[]) {
       getWinners(players, game);
       printf("After %d turns, the winner(s) are:\n", turnNum);
       for (playerNum = 0; playerNum < game->numPlayers; playerNum++) {
-        if (players[playerNum] == WINNER)
-          printf("Player %d\n", playerNum);
+        if (players[playerNum] == WINNER) printf("Player %d\n", playerNum);
       }
       for (playerNum = 0; playerNum < game->numPlayers; playerNum++) {
         printHand(playerNum, game);
@@ -156,8 +139,7 @@ int main(int argc, char* argv[]) {
       }
     } else if (COMPARE(command, endT) == 0) {
       if (gameStarted == TRUE) {
-        if (currentPlayer == (game->numPlayers - 1))
-          turnNum++;
+        if (currentPlayer == (game->numPlayers - 1)) turnNum++;
         endTurn(game);
         currentPlayer = whoseTurn(game);
         printf("Player %d's turn number %d\n\n", currentPlayer, turnNum);
@@ -197,15 +179,13 @@ int main(int argc, char* argv[]) {
       printScores(game);
       break;
     } else if (COMPARE(command, show) == 0) {
-      if (gameStarted == FALSE)
-        continue;
+      if (gameStarted == FALSE) continue;
       printHand(currentPlayer, game);
       printPlayed(currentPlayer, game);
       // printDiscard(currentPlayer, game);
       // printDeck(currentPlayer, game);
     } else if (COMPARE(command, stat) == 0) {
-      if (gameStarted == FALSE)
-        continue;
+      if (gameStarted == FALSE) continue;
       printState(game);
     } else if (COMPARE(command, supply) == 0) {
       printSupply(game);
