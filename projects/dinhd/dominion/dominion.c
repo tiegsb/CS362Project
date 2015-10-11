@@ -701,7 +701,7 @@ int smithyCard(int currentPlayer, struct gameState *state, int handPos)
       return 0;
 }
 
-int mineCard(int currentPlayer, struct gameState *state, int handPos)
+int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2)
 {
       j = state->hand[currentPlayer][choice1];  //store card we will trash
 
@@ -825,11 +825,13 @@ int mineCard(int currentPlayer, struct gameState *state, int handPos)
       return -1;
 			
     case mine:
-    return mineCard(currentPlayer, state, handPos);
+    return mineCard(currentPlayer, state, handPos, choice1, choice2);
 
 
 			
     case remodel:
+
+
       j = state->hand[currentPlayer][choice1];  //store card we will trash
 
       if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
