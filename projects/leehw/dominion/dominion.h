@@ -8,7 +8,7 @@
 
 #define MAX_PLAYERS 4
 
-#define DEBUG 0
+#define DEBUG 0 
 
 /* http://dominion.diehrstraits.com has card texts */
 /* http://dominion.isotropic.org has other stuff */
@@ -128,4 +128,27 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
 
+int baronAction(int player, struct gameState *state, int choice1, int handPos);
+/*play baron card with index handpos from current player's hand. 
+  Player decides with choice1 if they want to trade in estate card
+  for 4 coins, or if they want to draw an estate card*/
+
+int villageAction(int player, struct gameState *state, int handPos);
+/*Play village card with index handpos from current player's hand.
+  Card gives player an addtional card from their deck and 2 additional
+  actions.*/
+
+int councilAction(int player, struct gameState *state, int handPos);
+/*Play council room card with index handpos from current player's hand.
+  Current player draws 4 additional cards, and get 1 addtional buy.
+  All other players gets to draw a card.*/
+
+int adventurerAction(int player, struct gameState *state, int temphand[]);
+/*Play adventurer card with index handpos from current player's hand.
+ Current Player cycles through their deck until they get  treasure cards.  
+ The drawn non-treasure cards are placed in the temphand array to be discarded later.*/
+
+int smithyAction(int player, struct gameState *state, int handPos);
+/*Play smithy card with index handpos from current palyer's hand.
+ The player draws 3 additional cards from their deck.*/
 #endif
