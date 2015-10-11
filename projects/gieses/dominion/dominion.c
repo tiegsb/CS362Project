@@ -663,6 +663,7 @@ void adventurerCard(struct gameState *state){
 		  temphand[z]=cardDrawn;
 		  state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
 		  z++;
+		  drawntreasure++;
 		}
     }
     while(z-1>=0){
@@ -693,6 +694,17 @@ void great_hallCard(gameState *state, int handPos){
     state->numActions++;
 		
     //discard card from hand
+    discardCard(handPos, currentPlayer, state, 0);
+}
+
+void villageCard(struct gameState *state, int handPos){
+    //+1 Card
+    drawCard(currentPlayer, state);
+		
+    //+2 Actions
+    state->numActions = state->numActions + 2;
+		
+    //discard played card from hand
     discardCard(handPos, currentPlayer, state, 0);
 }
 
@@ -869,14 +881,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case village:
-      //+1 Card
-      drawCard(currentPlayer, state);
-			
-      //+2 Actions
-      state->numActions = state->numActions + 2;
-			
-      //discard played card from hand
-      discardCard(handPos, currentPlayer, state, 0);
+	  villageCard(state, handPos);
       return 0;
 		
     case baron:
