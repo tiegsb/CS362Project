@@ -13,3 +13,9 @@ New Function: adventurerEffect
 	that drawntreasure is no longer incremented when copper is drawn (This 
 	card is OP). 
 	
+New Function: gardensEffect
+	The gardensEffect is now called when the gardensEffect card is played. It
+	is called by the switch statement in the cardEffect function. It 
+	incorrectly returns sucessfully if the gardenNum is negative one, and it 
+	returns zero otherwize.
+	

@@ -136,4 +136,8 @@ int smithyEffect(int currentPlayer, struct gameState *state, int handPos);
 int adventurerEffect(int currentPlayer, struct gameState *state);
 /* Plays adventurer card which draws until two treasure coins are found, adding
    them to the player's hand and discarding any other cards found */
+   
+int gardensEffect(int gardenNum);
+/* returns gardenNum -1 */
+
 #endif
