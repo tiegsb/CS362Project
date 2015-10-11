@@ -1,4 +1,31 @@
+-----------------------
 Refactor Documentation:
+-----------------------
+
+Switch statement refactored:
+****************************
+
+(i) Smithy
+   Refactored to function "cardEffect_smithy" with no return value (void function)
+
+(ii) Adventurer
+   Refactored to function "cardEffect_adventurer" with no return value (void function)
+
+(iii) Council Room
+   Refactored to function "cardEffect_council_room" with no return value (void function)
+
+(iv) Remodal
+   Refactored to function "cardEffect_remodal", returning integer value of -1 or 0
+
+(v) Salvager
+   Refactored to function "cardEffect_salvager" with no return value (void function)
+
+*Function will be called if satisfied the switch-case statement*
+*Function declaration added to dominion_helpers.c*
+
+
+Implementation with bug and fix:
+********************************
 
 Smithy:
 Fix: discardCard(handPos, currentPlayer, state, 0);
