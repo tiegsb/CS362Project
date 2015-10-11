@@ -1,0 +1,46 @@
+# smithy
+
+Smithy allows the player to draw three cards, after which Smithy is discarded.
+
+## Call tree/pseudocode
+* cardEffect(smithy, ...)
+    * drawCard(currentPlayer, state) three times    // card effect
+    * discardCard(handPos, currentPlayer, state, 0) // discard smithy
+
+## Observations 
+handPos designates the position of the card being played.
+
+
+# adventurer
+
+Adventurer causes you to draw and reveal cards until you've found two treasure cards. These go into
+your hand while the rest of your cards are discarded. If you run out of cards, shuffle the discards
+and draw from those.
+
+## Call tree/pseudocode
+* cardEffect(adventurer, ...)
+    * repeat until the count of drawn treasure is over 2
+        * if the deck is empty, refill it from the discard pile
+        * draw a card and get what card we just draw
+        * if the card is a treasure, increment the count of drawn treasure
+            * else remove the card drawn and increment the count of cards drawn
+    * now repeat until the count of cards drawn is 0
+        * add the top card from the hand to the discard pile
+
+
+## Observations
+z counts how many cards are in the player's hand during drawing. The hand is treated as a stack,
+with the most recent card added to the "top" (last index) of the hand.
+
+
+# discardCard()
+- accepts a flag trashFlag indicating whether the card is being trashed
+    - if not, card is added to played pile
+- the card is removed from the player's hand
+    - if there is more than one card in hand and the discarded card is not the last card, then
+        the last card in the hand is moved to fill in the empty space where the discarded card was
+
+
+# updateCoins()
+- counts how many coins are available based on the treasure cards in the player's hand
+- adds the bonus amount
