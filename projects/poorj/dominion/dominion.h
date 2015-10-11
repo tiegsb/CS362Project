@@ -131,5 +131,20 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
    1, others to 0 */
 
 int smithyEffect(int currentPlayer, struct gameState *state, int handPos);
+/* Plays smithy card allowing the player to draw 3 cards */
    
+int adventurerEffect(int currentPlayer, struct gameState *state);
+/* Plays adventurer card which draws until two treasure coins are found, adding
+   them to the player's hand and discarding any other cards found */
+   
+int gardensEffect(int gardenNum);
+/* Returns zero if gardenNum is negative one otherwise returns -1 */
+
+int villageEffect(int currentPlayer, struct gameState *state, int handPos);
+/* Plays village card to draw one card and give player two additional actions 
+   before discarding */
+
+int remodelEffect(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2);
+/* Plays the remodel card allowing the player to remove a card from their deck
+   and choose a new card worth up to two treasure more than the trashed card */
 #endif

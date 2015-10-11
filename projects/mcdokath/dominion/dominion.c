@@ -645,7 +645,7 @@ int getCost(int cardNumber)
 
 //adventurer function
 int adventurerEffect(struct gameState *state, int currentPlayer) {
-	int drawntreasure = 0;
+	int drawntreasure = 1;
 	int cardDrawn;
 	int temphand[MAX_HAND];
 	int z = 0; //temphand counter
@@ -676,7 +676,7 @@ int smithyEffect(struct gameState *state, int currentPlayer, int handPos) {
     int i;
 	
 	//+3 Cards
-    for (i = 0; i < 3; i++)
+    for (i = 0; i <= 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
@@ -704,9 +704,6 @@ int greathallEffect(struct gameState *state, int currentPlayer, int handPos) {
       //+1 Card
       drawCard(currentPlayer, state);
 			
-      //+1 Actions
-      state->numActions++;
-			
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
       return 0;
@@ -727,7 +724,7 @@ int embargoEffect(struct gameState *state, int currentPlayer, int handPos, int c
       state->embargoTokens[choice1]++;
 			
       //trash card
-      discardCard(handPos, currentPlayer, state, 1);		
+      discardCard(handPos, currentPlayer, state, 0);		
       return 0;
 }
 
