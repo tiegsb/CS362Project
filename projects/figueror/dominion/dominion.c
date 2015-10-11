@@ -1279,7 +1279,7 @@ int  updated_adventurer(int currentPlayer, int cardDrawn, int drawntreasure, int
         else
         {
             temphand[z]=cardDrawn;
-            state->handCount[currentPlayer]++;//this should just remove the top card (the most recently drawn one).
+            state->handCount[currentPlayer]--;//this should just remove the top card (the most recently drawn one).
             z--;
         }
     }
@@ -1303,7 +1303,7 @@ int updated_smithy(int currentPlayer, int handPos, struct gameState *state)
 	}
 			
     //discard card from hand
-    discardCard(handPos, currentPlayer, state, 1);
+    discardCard(handPos, currentPlayer, state, 0);
       
     return 0;
 }
@@ -1311,6 +1311,7 @@ int updated_smithy(int currentPlayer, int handPos, struct gameState *state)
 int updated_village(int currentPlayer, int handPos, struct gameState *state)
 {
     //+1 Card
+    drawCard(currentPlayer, state)
     drawCard(currentPlayer, state);
 			
     //+2 Actions
@@ -1343,7 +1344,7 @@ int updated_steward(int currentPlayer, int handPos, int choice1, int choice2, in
 	}
 			
       //discard card from hand
-      discardCard(handPos, currentPlayer, state, 1);
+      discardCard(handPos, currentPlayer, state, 0);
       
       return 0;
 }
