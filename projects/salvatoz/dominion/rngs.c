@@ -110,7 +110,7 @@ void PutSeed(long x)
   if (x > 0)
     x = x % MODULUS; /* correct if x is too large  */
   if (x < 0)
-    x = ((unsigned long)time((time_t *)NULL)) % MODULUS;
+    x = ((unsigned long)time((time_t*)NULL)) % MODULUS;
   if (x == 0)
     while (!ok) {
       printf("\nEnter a positive integer seed (9 digits or less) >> ");
@@ -122,7 +122,7 @@ void PutSeed(long x)
   seed[stream] = x;
 }
 
-void GetSeed(long *x)
+void GetSeed(long* x)
 /* ---------------------------------------------------------------
  * Use this function to get the state of the current random number
  * generator stream.

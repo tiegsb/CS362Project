@@ -5,13 +5,18 @@
  * Requires dominion.h to be included first.
  */
 
-#define NUM_CARDS treasure_map
+#define NUM_CARDS (treasure_map + 1)
 
- /* cardEffectHandler
- * What is says on the tin. A pointer to a function that handles a card's 
- * effect.
- */
-typedef int (*cardEffectHandler)(int, int, int, struct gameState *, int, int *);
+/* cardEffectHandler
+* What is says on the tin. A pointer to a function that handles a card's
+* effect.
+*/
+typedef int (*cardEffectHandler)(int choice1,
+                                 int choice2,
+                                 int choice3,
+                                 struct gameState* state,
+                                 int handPos,
+                                 int* bonus);
 
 /* struct cardData
  * Contains relevant data for cards.
@@ -26,7 +31,7 @@ struct cardData {
  */
 void initializeCardData(struct cardData (*data)[NUM_CARDS]);
 
-inline int cardExists(struct cardData *cd, int c);
+inline int cardExists(struct cardData* cd, int c);
 
 extern struct cardData cardsData[NUM_CARDS];
 #endif

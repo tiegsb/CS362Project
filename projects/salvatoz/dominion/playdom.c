@@ -4,17 +4,25 @@
 #include "rngs.h"
 #include <stdlib.h>
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
   struct gameState G;
-  int k[10] = {adventurer, gardens,  embargo, village, minion,
-               mine,       cutpurse, sea_hag, tribute, smithy};
+  int k[10] = {adventurer,
+               gardens,
+               embargo,
+               village,
+               minion,
+               mine,
+               cutpurse,
+               sea_hag,
+               tribute,
+               smithy};
   int status;
 
   initializeCardData(&cardsData);
 
   if (argc < 2) {
-  	fprintf(stderr, "Usage: %s [num players]\n", argv[0]);
-  	return 1;
+    fprintf(stderr, "Usage: %s [num players]\n", argv[0]);
+    return 1;
   }
 
   printf("Starting game.\n");
@@ -129,7 +137,7 @@ int main(int argc, char **argv) {
 
       endTurn(&G);
     }
-  } // end of While
+  }  // end of While
 
   printf("Finished game.\n");
   printf("Player 0: %d\nPlayer 1: %d\n", scoreFor(0, &G), scoreFor(1, &G));

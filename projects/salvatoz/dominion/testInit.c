@@ -3,15 +3,23 @@
 #include <stdlib.h>
 #include "rngs.h"
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
   struct gameState G;
 
   int i;
 
   int start = -1;
 
-  int k[10] = {adventurer, gardens,  embargo, village, minion,
-               mine,       cutpurse, sea_hag, tribute, smithy};
+  int k[10] = {adventurer,
+               gardens,
+               embargo,
+               village,
+               minion,
+               mine,
+               cutpurse,
+               sea_hag,
+               tribute,
+               smithy};
 
   memset(&G, 'z', sizeof(struct gameState));
 
@@ -27,7 +35,7 @@ int main(int argc, char **argv) {
   printf("%ld: playerCards[0]\n", ((long)&(G.playedCards[0])) - (long)(&G));
 
   for (i = 0; i < sizeof(struct gameState); i++) {
-    if (((char *)&G)[i] == 'z') {
+    if (((char*)&G)[i] == 'z') {
       if (start == -1) {
         start = i;
       }

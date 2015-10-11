@@ -18,30 +18,38 @@
 #include "interface.h"
 #include "rngs.h"
 
-int main2(int argc, char *argv[]) {
+int main2(int argc, char* argv[]) {
   // Default cards, as defined in playDom
-  int k[10] = {adventurer, gardens,  embargo, village, minion,
-               mine,       cutpurse, sea_hag, tribute, smithy};
+  int k[10] = {adventurer,
+               gardens,
+               embargo,
+               village,
+               minion,
+               mine,
+               cutpurse,
+               sea_hag,
+               tribute,
+               smithy};
   struct gameState g;
   initializeGame(2, k, 1, &g);
   printf("SUCCESSFUL INIT\n");
   getchar();
 }
 
-int main(int argc, char *argv[]) {
-  char *add = "add";
-  char *buyC = "buy";
-  char *endT = "end";
-  char *exit = "exit";
-  char *help = "help";
-  char *init = "init";
-  char *numH = "num";
-  char *play = "play";
-  char *resign = "resi";
-  char *show = "show";
-  char *stat = "stat";
-  char *supply = "supp";
-  char *whos = "whos";
+int main(int argc, char* argv[]) {
+  char* add = "add";
+  char* buyC = "buy";
+  char* endT = "end";
+  char* exit = "exit";
+  char* help = "help";
+  char* init = "init";
+  char* numH = "num";
+  char* play = "play";
+  char* resign = "resi";
+  char* show = "show";
+  char* stat = "stat";
+  char* supply = "supp";
+  char* whos = "whos";
 
   char command[MAX_STRING_LENGTH];
   char line[MAX_STRING_LENGTH];
@@ -61,11 +69,19 @@ int main(int argc, char *argv[]) {
   int randomSeed = atoi(argv[1]);
 
   // Default cards, as defined in playDom
-  int kCards[10] = {adventurer, gardens,  embargo, village, minion,
-                    mine,       cutpurse, sea_hag, tribute, smithy};
+  int kCards[10] = {adventurer,
+                    gardens,
+                    embargo,
+                    village,
+                    minion,
+                    mine,
+                    cutpurse,
+                    sea_hag,
+                    tribute,
+                    smithy};
 
   struct gameState g;
-  struct gameState *game = &g;
+  struct gameState* game = &g;
 
   memset(game, 0, sizeof(struct gameState));
 
@@ -113,7 +129,7 @@ int main(int argc, char *argv[]) {
         printDeck(playerNum, game);
       }
 
-      break; // Exit out of the game/while loop
+      break;  // Exit out of the game/while loop
     }
 
     if (isBot[currentPlayer] == TRUE) {
@@ -146,7 +162,6 @@ int main(int argc, char *argv[]) {
         currentPlayer = whoseTurn(game);
         printf("Player %d's turn number %d\n\n", currentPlayer, turnNum);
       }
-
     } else if (COMPARE(command, exit) == 0) {
       break;
     } else if (COMPARE(command, help) == 0) {
@@ -165,7 +180,6 @@ int main(int argc, char *argv[]) {
         currentPlayer = whoseTurn(game);
         printf("Player %d's turn number %d\n\n", currentPlayer, turnNum);
       }
-
     } else if (COMPARE(command, numH) == 0) {
       int numCards = numHandCards(game);
       printf("There are %d cards in your hand.\n", numCards);
@@ -178,7 +192,6 @@ int main(int argc, char *argv[]) {
       } else {
         printf("Player %d cannot play card %d\n\n", currentPlayer, arg0);
       }
-
     } else if (COMPARE(command, resign) == 0) {
       endTurn(game);
       printScores(game);

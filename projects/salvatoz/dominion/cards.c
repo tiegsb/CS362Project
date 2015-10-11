@@ -6,16 +6,21 @@
 
 struct cardData cardsData[NUM_CARDS];
 
-extern int drawCard(int player, struct gameState *state);
-extern int discardCard(int handPos, int currentPlayer, struct gameState *state,
-                int trashFlag);
-extern int updateCoins(int player, struct gameState *state, int bonus);
+extern int drawCard(int player, struct gameState* state);
+extern int discardCard(int handPos,
+                       int currentPlayer,
+                       struct gameState* state,
+                       int trashFlag);
+extern int updateCoins(int player, struct gameState* state, int bonus);
 extern int getCost(int cardNumber);
-extern int gainCard(int supplyPos, struct gameState *state, int toFlag, int player);
+extern int gainCard(int supplyPos,
+                    struct gameState* state,
+                    int toFlag,
+                    int player);
 
-static inline int lastDrawn(int currentPlayer, struct gameState *state) {
+static inline int lastDrawn(int currentPlayer, struct gameState* state) {
   // top card of hand is most recently drawn card.
-  return state->hand[currentPlayer][state->handCount[currentPlayer]];
+  return state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
 }
 
 static inline int isTreasure(int c) {
@@ -42,8 +47,12 @@ inline int cardExists(struct cardData cd[], int c) {
  * until you have finished revealing cards. If you run out of cards while
  * shuffling and still have only one Treasure, you get just that one Treasure.
  */
-static int adventurerHandler(int choice1, int choice2, int choice3, 
-                             struct gameState *state, int handPos, int *bonus) {
+static int adventurerHandler(int choice1,
+                             int choice2,
+                             int choice3,
+                             struct gameState* state,
+                             int handPos,
+                             int* bonus) {
   int z = 0;
   int temphand[MAX_HAND];
   int drawntreasure = 0;
@@ -63,36 +72,42 @@ static int adventurerHandler(int choice1, int choice2, int choice3,
       state->handCount[currentPlayer]--;
     }
   }
-  while (z - 1 >= 0) {
+  while (--z >= 0) {
     state->discard[currentPlayer][state->discardCount[currentPlayer]++] =
-        temphand[z--];
-    z--;
+        temphand[z];
   }
-  return 0;
+  return 1;
 }
 
 /** smithyHandler
  * Card Effect: +3 cards
  */
-static int smithyHandler(int choice1, int choice2, int choice3,
-                         struct gameState *state, int handPos, int *bonus) {
+static int smithyHandler(int choice1,
+                         int choice2,
+                         int choice3,
+                         struct gameState* state,
+                         int handPos,
+                         int* bonus) {
   int i;
   int currentPlayer = whoseTurn(state);
 
-  for (i = 3; i < 0; i--) {
+  for (i = 0; i < 3; i++) {
     drawCard(currentPlayer, state);
   }
 
   discardCard(handPos, currentPlayer, state, 0);
-  return 0;
+  return 1;
 }
 
 /** councilRoomHandler
  * Card Effect: +4 cards, +1 buy, each other player draws a card.
  */
-static int councilRoomHandler(int choice1, int choice2, int choice3, 
-                              struct gameState *state, int handPos, 
-                              int *bonus) {
+static int councilRoomHandler(int choice1,
+                              int choice2,
+                              int choice3,
+                              struct gameState* state,
+                              int handPos,
+                              int* bonus) {
   int i;
   int currentPlayer = whoseTurn(state);
   for (i = 0; i < 4; i++) {
@@ -109,12 +124,15 @@ static int councilRoomHandler(int choice1, int choice2, int choice3,
 
   discardCard(handPos, currentPlayer, state, 0);
 
-  return 0;
+  return 1;
 }
 
-static int feastHandler(int choice1, int choice2, int choice3, 
-                        struct gameState *state, int handPos, 
-                        int *bonus) {
+static int feastHandler(int choice1,
+                        int choice2,
+                        int choice3,
+                        struct gameState* state,
+                        int handPos,
+                        int* bonus) {
   int i, x;
   int currentPlayer = whoseTurn(state);
   int temphand[MAX_HAND];
@@ -122,15 +140,15 @@ static int feastHandler(int choice1, int choice2, int choice3,
   // gain card with cost up to 5
   // Backup hand
   for (i = 0; i <= state->handCount[currentPlayer]; i++) {
-    temphand[i] = state->hand[currentPlayer][i]; // Backup card
-    state->hand[currentPlayer][i] = -1;          // Set to nothing
+    temphand[i] = state->hand[currentPlayer][i];  // Backup card
+    state->hand[currentPlayer][i] = -1;           // Set to nothing
   }
   // Backup hand
 
   // Update Coins for Buy
   updateCoins(currentPlayer, state, 5);
-  x = 1;           // Condition to loop on
-  while (x == 1) { // Buy one card
+  x = 1;            // Condition to loop on
+  while (x) {  // Buy one card
     if (supplyCount(choice1, state) <= 0) {
       if (DEBUG)
         printf("None of that card left, sorry!\n");
@@ -151,8 +169,8 @@ static int feastHandler(int choice1, int choice2, int choice3,
                                        state->discardCount[currentPlayer]);
       }
 
-      gainCard(choice1, state, 0, currentPlayer); // Gain the card
-      x = 0;                                      // No more buying cards
+      gainCard(choice1, state, 0, currentPlayer);  // Gain the card
+      x = 0;                                       // No more buying cards
 
       if (DEBUG) {
         printf("Deck Count: %d\n", state->handCount[currentPlayer] +
@@ -169,17 +187,20 @@ static int feastHandler(int choice1, int choice2, int choice3,
   }
   // Reset Hand
 
-  return 0;
+  return 1;
 }
 
-static int mineHandler(int choice1, int choice2, int choice3, 
-                       struct gameState *state, int handPos, 
-                       int *bonus) {
+static int mineHandler(int choice1,
+                       int choice2,
+                       int choice3,
+                       struct gameState* state,
+                       int handPos,
+                       int* bonus) {
   int i;
   int j;
   int currentPlayer = whoseTurn(state);
 
-  j = state->hand[currentPlayer][choice1]; // store card we will trash
+  j = state->hand[currentPlayer][choice1];  // store card we will trash
 
   if (state->hand[currentPlayer][choice1] < copper ||
       state->hand[currentPlayer][choice1] > gold) {
@@ -207,15 +228,21 @@ static int mineHandler(int choice1, int choice2, int choice3,
     }
   }
 
-  return 0;
+  return 1;
 }
 
-static int treasureMapHandler(int choice1, int choice2, int choice3, 
-                              struct gameState *state, int handPos, 
-                              int *bonus) {
+static int treasureMapHandler(int choice1,
+                              int choice2,
+                              int choice3,
+                              struct gameState* state,
+                              int handPos,
+                              int* bonus) {
+  int index;
+  int i;
+  int currentPlayer = whoseTurn(state);
   // search hand for another treasure_map
   index = -1;
-  
+
   for (i = 0; i < state->handCount[currentPlayer]; i++) {
     if (state->hand[currentPlayer][i] == treasure_map && i != handPos) {
       index = i;
@@ -241,16 +268,15 @@ static int treasureMapHandler(int choice1, int choice2, int choice3,
   return -1;
 }
 
-
 void initializeCardData(struct cardData (*data)[NUM_CARDS]) {
   // zero initialize the whole array so we can check if a card is defined by
   // the value of its effectHandler pointer
   memset(data, 0, sizeof(struct cardData) * NUM_CARDS);
 
-  struct cardData *cardData = *data;
+  struct cardData* cardData = *data;
 
   // initialize array values
-  cardData[adventurer].cost = 6; 
+  cardData[adventurer].cost = 6;
   cardData[adventurer].effectHandler = adventurerHandler;
   cardData[smithy].cost = 4;
   cardData[smithy].effectHandler = smithyHandler;
@@ -260,7 +286,7 @@ void initializeCardData(struct cardData (*data)[NUM_CARDS]) {
   cardData[feast].effectHandler = feastHandler;
   cardData[mine].cost = 5;
   cardData[mine].effectHandler = mineHandler;
-
+  cardData[treasure_map].cost = 4;
+  cardData[treasure_map].effectHandler = treasureMapHandler;
   // TODO: three other cards
-
 }
