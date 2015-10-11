@@ -18,7 +18,7 @@ extern int gainCard(int supplyPos,
                     int toFlag,
                     int player);
 
-static inline int lastDrawn(int currentPlayer, struct gameState* state) {
+static inline int lastDrawn(int currentPlayer, const struct gameState* state) {
   // top card of hand is most recently drawn card.
   return state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
 }
@@ -27,15 +27,12 @@ static inline int isTreasure(int c) {
   return c == copper || c == silver || c == gold;
 }
 
-/** cardExists
- * Checks whether the given card number is stored in the given array of cards.
- *
- * Preconditions:
- *    - c[] has been zero initialized so that any undefined cards have a NULL
- *      pointer for effectHandler
- */
-inline int cardExists(struct cardData cd[], int c) {
-  return 0 <= c && c < NUM_CARDS && cd[c].effectHandler != 0;
+inline int cardExists(int c) {
+  return 0 <= c && c < NUM_CARDS;
+}
+
+inline int cardDefined(const struct cardData cd[], int c) {
+  return cardExists(c) && cd[c].effectHandler != 0;
 }
 
 /** adventurerHandler
@@ -127,6 +124,14 @@ static int councilRoomHandler(int choice1,
   return 1;
 }
 
+/**
+ * Card Effect: Trash this card. Gain a card costing up to 5.
+ * Additional Rules: 
+ *    - The gained card goes into the discard pile.
+ *    - The gained card has to be a card from the supply.
+ *    - You cannot acquire a card costing greater than 5 (ex. by trying to
+ *      combine other treasures with this card.)
+ */
 static int feastHandler(int choice1,
                         int choice2,
                         int choice3,
@@ -190,39 +195,44 @@ static int feastHandler(int choice1,
   return 1;
 }
 
-static int mineHandler(int choice1,
-                       int choice2,
+/**
+ * Card Effect: Trash a Treasure card from your hand. Gain a treasure card 
+ *    costing up to 3 more; put it into your hand.
+ */
+static int mineHandler(int choice1,  // the card to trash
+                       int choice2,  // the card to gain
                        int choice3,
                        struct gameState* state,
                        int handPos,
                        int* bonus) {
   int i;
-  int j;
-  int currentPlayer = whoseTurn(state);
+  const int currentPlayer = whoseTurn(state);
+  const int cardToTrash = state->hand[currentPlayer][choice1];
+  const int cardToGain = choice2;
 
-  j = state->hand[currentPlayer][choice1];  // store card we will trash
-
-  if (state->hand[currentPlayer][choice1] < copper ||
-      state->hand[currentPlayer][choice1] > gold) {
+  // verify that the card to trash is treasure
+  if (!isTreasure(cardToTrash)) {
     return -1;
   }
 
-  if (choice2 > treasure_map || choice2 < curse) {
+  // check that the card to gain actually exists
+  if (!cardExists(cardToGain)) {
     return -1;
   }
 
-  if ((getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2)) {
+  // make sure the card to gain 
+  if ((getCost(cardToTrash) + 3) > getCost(cardToGain)) {
     return -1;
   }
 
-  gainCard(choice2, state, 2, currentPlayer);
+  gainCard(cardToGain, state, 2, currentPlayer);
 
   // discard card from hand
   discardCard(handPos, currentPlayer, state, 0);
 
   // discard trashed card
   for (i = 0; i < state->handCount[currentPlayer]; i++) {
-    if (state->hand[currentPlayer][i] == j) {
+    if (state->hand[currentPlayer][i] == cardToTrash) {
       discardCard(i, currentPlayer, state, 0);
       break;
     }
@@ -231,29 +241,40 @@ static int mineHandler(int choice1,
   return 1;
 }
 
+/** treasureMapHandler
+ * Card Effect: Trash this and another copy of Treasure Map from your hand. If
+ *    you do trash two Treasure Maps, gain 4 Gold cards, putting them on top of
+ *    your deck.
+ * Additional Rules:
+ *    - Playing this without another Treasure Map in hand means you trash this
+ *      and gain nothing.
+ *    - Two copies of Treasure Map must be trashed to gain the gold.
+ *    - If there aren't enough gold cards remaining, then gain all remaining
+ *      golds.
+ *    - If your deck was empty, then the gold cards are the only cards in it.
+ */
 static int treasureMapHandler(int choice1,
                               int choice2,
                               int choice3,
                               struct gameState* state,
                               int handPos,
                               int* bonus) {
-  int index;
+  int secondTreasureMapIndex = -1;
   int i;
   int currentPlayer = whoseTurn(state);
-  // search hand for another treasure_map
-  index = -1;
 
+  // search hand for another treasure_map
   for (i = 0; i < state->handCount[currentPlayer]; i++) {
     if (state->hand[currentPlayer][i] == treasure_map && i != handPos) {
-      index = i;
+      secondTreasureMapIndex = i;
       break;
     }
   }
 
-  if (index > -1) {
+  if (secondTreasureMapIndex > -1) {
     // trash both treasure cards
     discardCard(handPos, currentPlayer, state, 1);
-    discardCard(index, currentPlayer, state, 1);
+    discardCard(secondTreasureMapIndex, currentPlayer, state, 1);
 
     // gain 4 Gold cards
     for (i = 0; i < 4; i++) {

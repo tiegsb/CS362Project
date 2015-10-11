@@ -1,10 +1,13 @@
-#ifndef _CARDS_H
-#define _CARDS_H
 /* cards.h
  * New centralized implementation of Dominion cards.
  * Requires dominion.h to be included first.
  */
+#ifndef _CARDS_H
+#define _CARDS_H
 
+/** NUM_CARDS
+ * Defines the number of dominion cards.
+ */
 #define NUM_CARDS (treasure_map + 1)
 
 /* cardEffectHandler
@@ -31,7 +34,20 @@ struct cardData {
  */
 void initializeCardData(struct cardData (*data)[NUM_CARDS]);
 
-inline int cardExists(struct cardData* cd, int c);
+/** cardExists
+ * Helper function to check whether the given card number is in range.
+ */
+inline int cardExists(int c);
+
+/** cardDefined
+ * Checks whether the given card number is defined in the given array of 
+ * cardData structs.
+ *
+ * Preconditions:
+ *    - c[] has been zero initialized so that any undefined cards have a NULL
+ *      pointer for effectHandler
+ */
+inline int cardDefined(const struct cardData cd[], int c);
 
 extern struct cardData cardsData[NUM_CARDS];
 #endif

@@ -591,7 +591,7 @@ int drawCard(int player, struct gameState* state) {
 }
 
 int getCost(int cardNumber) {
-  if (cardExists(cardsData, cardNumber))
+  if (cardDefined(cardsData, cardNumber))
     return cardsData[cardNumber].cost;
 
   switch (cardNumber) {
@@ -660,7 +660,7 @@ int cardEffect(int card,
     nextPlayer = 0;
   }
 
-  if (cardExists(cardsData, card)) {
+  if (cardDefined(cardsData, card)) {
     return cardsData[card].effectHandler(choice1, choice2, choice3, state,
                                          handPos, bonus);
   }
