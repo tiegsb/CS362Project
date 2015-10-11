@@ -1,5 +1,5 @@
 CFLAGS = -Wall -fpic -coverage -lm
-GCC = colorgcc
+GCC = gcc
 
 rngs.o: rngs.h rngs.c
 	$(GCC) -c rngs.c -g  $(CFLAGS)
