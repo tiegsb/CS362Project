@@ -1,0 +1,33 @@
+Casey Balza
+CS-362
+Assignment 2
+
+
+smithy
+This card runs a for loop that loops three times and it calls the drawCard function each iteration.
+After the loop finishes the smithy card is discarded from the players hand.
+
+adventurer
+This card process first runs a while loop if the amount of drawntrasure is less than two. If this while 
+loop runs it checks if the deck count of the current player is less than 1, if so the discard pile is added
+to the deck. A card is then drawn and goes into the players hand. An if else statement checks to see if 
+the card drawn is a coin card and if so the drawntrasure variable is incremented. If the card is not
+a coin type then a temporary hand holds the drawn card and removes it from the players hand. This first 
+while loop then ends and a new while loop runs if the value of z (number of cards in temp hand) is greater
+than or equal to 0. In this loop the number of cards that have been drawn in the current players turn are
+discarded.
+
+
+discardCard()
+Is a function that uses the parameters of int handPos, int currentPlayer, struct gameState *state, int trashFlag.
+If the trashFlag is less that 1 then the card goes into the players playedCards pile. The cards state in
+the players hand is set to -1 which clears the card from the players hand. The number of cards in the players 
+hand is then decremented. If there are more than one cards remaining in hand after discard the last card in the
+players hand is replaced with the discarded card.
+
+
+updateCoins()
+This is a function that has the parameters of int player, struct gameState *state, int bonus. It initially
+sets the coin count to zero then runs a loop that loops the amount of times based on the number of cards
+in the players hand. The loop then checks with if statements if the card is copper, silver, or gold and
+adds the approriate value to the coin count. Once the loop exits the coins total is added to the bonus.
