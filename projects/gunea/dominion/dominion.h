@@ -131,10 +131,16 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
    1, others to 0 */
 
 
-void smithyfunction(int currentPlayer, struct gameState *state, int handPos);
+void smithyFunction(int currentPlayer, struct gameState *state, int handPos);
 /*Refactored to introduce bug into smithy functionality*/
 
 
 void adventurerFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int temphand[MAX_HAND], int z, int cardDrawn);
 /*Refactored to introduce bug into adventurer functionality*/
+
+void ambassadorFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int i, int j);
+/*Refactored to introduce bug into ambassador functionality*/
+
+
+
 #endif
