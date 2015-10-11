@@ -7,3 +7,9 @@ New Function: smithyEffect
 	The error in the new code is that when smithyEffect calls the discardCard
 	function, the trashFlag is set, which removes the card from the game.
 	
+New Function: adventurerEffect
+	The adventurerEffect function plays the adventurer card. It is called by 
+	the switch statement in the cardEffect function. The error introduced is 
+	that drawntreasure is no longer incremented when copper is drawn (This 
+	card is OP). 
+	
