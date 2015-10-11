@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
   initializeCardData(&cardsData);
 
   if (argc < 2) {
-    fprintf(stderr, "Usage: %s [num players]\n", argv[0]);
+    fprintf(stderr, "Usage: %s [random seed]\n", argv[0]);
     return 1;
   }
 
