@@ -18,11 +18,20 @@ extern int gainCard(int supplyPos,
                     int toFlag,
                     int player);
 
+/** lastDrawn
+ * Get the last card drawn by currentPlayer.
+ * Preconditions: state is initialized.
+ */
 static inline int lastDrawn(int currentPlayer, const struct gameState* state) {
   // top card of hand is most recently drawn card.
   return state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
 }
 
+/** isTreasure
+ * Checks whether the given card number c is a treasure card.
+ * Preconditions: copper, silver, and gold are defined globally, preferably by
+ *    the CARD enum from dominion.h.
+ */
 static inline int isTreasure(int c) {
   return c == copper || c == silver || c == gold;
 }
@@ -259,7 +268,7 @@ static int treasureMapHandler(int choice1,
                               struct gameState* state,
                               int handPos,
                               int* bonus) {
-  int secondTreasureMapIndex = -1;
+  int secondTreasureMapIndex = NULL;
   int i;
   int currentPlayer = whoseTurn(state);
 
@@ -271,7 +280,7 @@ static int treasureMapHandler(int choice1,
     }
   }
 
-  if (secondTreasureMapIndex > -1) {
+  if (secondTreasureMapIndex > NULL) {
     // trash both treasure cards
     discardCard(handPos, currentPlayer, state, 1);
     discardCard(secondTreasureMapIndex, currentPlayer, state, 1);
@@ -292,7 +301,7 @@ static int treasureMapHandler(int choice1,
 void initializeCardData(struct cardData (*data)[NUM_CARDS]) {
   // zero initialize the whole array so we can check if a card is defined by
   // the value of its effectHandler pointer
-  memset(data, 0, sizeof(struct cardData) * NUM_CARDS);
+  memset(data, NULL, sizeof(struct cardData) * NUM_CARDS);
 
   struct cardData* cardData = *data;
 
@@ -309,5 +318,4 @@ void initializeCardData(struct cardData (*data)[NUM_CARDS]) {
   cardData[mine].effectHandler = mineHandler;
   cardData[treasure_map].cost = 4;
   cardData[treasure_map].effectHandler = treasureMapHandler;
-  // TODO: three other cards
 }

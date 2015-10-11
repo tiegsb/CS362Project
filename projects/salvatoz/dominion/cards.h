@@ -31,11 +31,19 @@ struct cardData {
 
 /* initializeCardData
  * Generates data for Dominion cards.
+ *
+ * Preconditions: data must point to an initialized area of memory capable of 
+ *    storing the total number of cards. NUM_CARDS must be initialized.
+ * Postconditions: The region of memory pointed to by data will be initialized
+ *    with the data for each defined card.
  */
 void initializeCardData(struct cardData (*data)[NUM_CARDS]);
 
 /** cardExists
- * Helper function to check whether the given card number is in range.
+ * Checks whether the given card number c is in the range of valid card numbers.
+ * Preconditions: NUM_CARDS is defined.
+ * Assumptions: Card numbers are contiguously defined (i.e. there are no "holes"
+ * in the range of card numbers).
  */
 inline int cardExists(int c);
 
