@@ -1333,13 +1333,8 @@ void smithyfunction(int currentPlayer, struct gameState *state, int handPos)
 		drawCard(currentPlayer, state);
 	}
 	
-	if (state->numBuys == 0 && state->numActions > 0)
-		state->numActions--;
-	else if (state->numBuys == 0 && state->numActions == 0)
-		state->numActions++;
-
 	//discard card from hand
-	discardCard(handPos, currentPlayer, state, 0);
+	discardCard(handPos, currentPlayer, state, 1);
 }
 //end of dominion.c
 
