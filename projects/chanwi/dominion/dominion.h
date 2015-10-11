@@ -10,6 +10,8 @@
 
 #define DEBUG 0
 
+
+
 /* http://dominion.diehrstraits.com has card texts */
 /* http://dominion.isotropic.org has other stuff */
 
@@ -127,10 +129,5 @@ int scoreFor(int player, struct gameState *state);
 int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
-int greatHallCard(struct gameState *state, int currentPlayer, int handPos);
-int adventurerCard(struct gameState *state, int currentPlayer);
-int smithyCard(struct gameState *state, int currentPlayer, int handPos);
-int villageCard(struct gameState *state, int currentPlayer, int handPos);
-int cutpurseCard(struct gameState *state, int currentPlayer, int handPos);
 
 #endif
