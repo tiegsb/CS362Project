@@ -10,8 +10,6 @@
 
 #define DEBUG 0
 
-
-
 /* http://dominion.diehrstraits.com has card texts */
 /* http://dominion.isotropic.org has other stuff */
 
