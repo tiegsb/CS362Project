@@ -78,6 +78,12 @@ struct gameState {
 
 struct gameState* newGame();
 
+void smithyEffect(struct gameState *state, int player, int handPos);
+void adventurerEffect(struct gameState *state, int player, int hand[MAX_HAND], int handPos);
+int mineEffect(struct gameState *state, int player, int handPos, int choice1, int choice2);
+void villageEffect(struct gameState *state, int player, int handPos);
+void stewardEffect(struct gameState *state, int player, int handPos, int choice1, int choice2, int choice3);
+
 int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
 		  int k8, int k9, int k10);
 
