@@ -831,14 +831,8 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case smithy:
-      //+3 Cards
-      for (i = 0; i < 3; i++)
-	{
-	  drawCard(currentPlayer, state);
-	}
-			
-      //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
+      //call Smithyfunction
+	smithyfunction(currentPlayer, state, handPos);
       return 0;
 		
     case village:
@@ -1331,5 +1325,21 @@ int updateCoins(int player, struct gameState *state, int bonus)
 }
 
 
+/*Smithy function*/
+void smithyfunction(int currentPlayer, struct gameState *state, int handPos)
+{
+	for (int i = 0; i < 3; i++)
+	{
+		drawCard(currentPlayer, state);
+	}
+	
+	if (state->numBuys == 0 && state->numActions > 0)
+		state->numActions--;
+	else if (state->numBuys == 0 && state->numActions == 0)
+		state->numActions++;
+
+	//discard card from hand
+	discardCard(handPos, currentPlayer, state, 0);
+}
 //end of dominion.c
 
