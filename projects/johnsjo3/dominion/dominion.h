@@ -128,4 +128,23 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
 
+//My refactored functions
+
+int playSmithy(int handPos, int currentPlayer, struct gameState *state);
+/* Draw 3 cards and discard Smithy card */
+
+int playAdventurer(int currentPlayer, struct gameState *state);
+/* Draw until we find 2 treasure cards, then discard others along with 
+Adventurer Card */
+
+int playCouncil_Room(int handPas, int currentPlayer, struct gameState *state);
+/* Draw four cards and add a buy.  All other players draw a single card.  
+Discard council_room card to played pile. */
+
+int playFeast(int choice1, int currentPlayer, struct gameState *state);
+/* Trashes card and Allows a player to obtain a new card worth up to 5 coin */
+
+int playMine(int handPos, int choice1, int choice2, int currentPlayer, struct gameState *state);
+/* Allows a player to trash a treasure in exchange for a treasure costing up to
+3 more coin*/
 #endif
