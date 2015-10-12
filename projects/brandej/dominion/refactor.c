@@ -27,7 +27,6 @@ council_room:
 Function starts on line 1325
 playCouncil_Room(int i, int handPos, int currentPlayer, struct gameState *state) //rotated int handPos with int currentPlayer in func definition
 {
-    //+4 Cards
     for (i = 0; i < 4; i++)
 	{
 	  drawCard(currentPlayer, state);
