@@ -792,6 +792,19 @@ int minionCard(int currentPlayer, struct gameState *state, int handPos, int choi
       return 0;
 }
 
+int villageCard(int currentPlayer, struct gameState *state, int handPos)
+{
+      //+1 Card
+      drawCard(currentPlayer, state);
+      
+      //+2 Actions
+      state->numActions = state->numActions + 2;
+      
+      //discard played card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+
   //uses switch to select card and perform actions
   switch( card ) 
     {
@@ -916,15 +929,7 @@ int minionCard(int currentPlayer, struct gameState *state, int handPos, int choi
     return smithyCard(currentPlayer, state, handPos);
 		
     case village:
-      //+1 Card
-      drawCard(currentPlayer, state);
-			
-      //+2 Actions
-      state->numActions = state->numActions + 2;
-			
-      //discard played card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+    return villageCard(currentPlayer, state, handPos);
 		
     case baron:
       state->numBuys++;//Increase buys by 1!
