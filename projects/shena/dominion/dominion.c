@@ -648,7 +648,7 @@ int getCost(int cardNumber)
 // refactored adventurer card
 void adventurerEffect(struct gameState *state){
     
-	// necessary declarations (from cardEffect function)
+    // necessary declarations (from cardEffect function)
     int currentPlayer = whoseTurn(state);
     int drawntreasure = 0;
 	int temphand[MAX_HAND];// moved above the if statement
@@ -679,7 +679,7 @@ void adventurerEffect(struct gameState *state){
 // refactored smithy card
 void smithyEffect(struct gameState *state, int handPos){
     
-	// necessary declarations (from cardEffect function)
+    // necessary declarations (from cardEffect function)
     int i;
     int currentPlayer = whoseTurn(state);
 
@@ -713,6 +713,7 @@ void villageEffect(struct gameState *state, int handPos){
 
 // refactored feast card
 void feastEffect(int currentPlayer, struct gameState *state, int choice1, int *temphand){
+	// necessary declarations
 	int i;
 	int x;
 	//gain card with cost up to 5
@@ -770,7 +771,7 @@ void feastEffect(int currentPlayer, struct gameState *state, int choice1, int *t
 
 // refactored great_hall card
 void great_hallEffect(int handPos, int currentPlayer, struct gameState *state){
-	//+1 Card
+    //+1 Card
     drawCard(currentPlayer, state);
 			
     //+1 Actions
