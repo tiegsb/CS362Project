@@ -1066,20 +1066,8 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 
 		
     case embargo: 
-      //+2 Coins
-      state->coins = state->coins + 2;
-			
-      //see if selected pile is in play
-      if ( state->supplyCount[choice1] == -1 )
-	{
-	  return -1;
-	}
-			
-      //add embargo token to selected supply pile
-      state->embargoTokens[choice1]++;
-			
-      //trash card
-      discardCard(handPos, currentPlayer, state, 1);		
+    	//call embargoFunction
+		embargoFunction(currentPlayer, state, handPos, choice1);
       return 0;
 		
     case outpost:
@@ -1270,7 +1258,8 @@ void smithyFunction(int currentPlayer, struct gameState *state, int handPos)
 //end of dominion.c
 
 
-void adventurerFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int temphand[MAX_HAND], int z, int cardDrawn) {
+void adventurerFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int temphand[MAX_HAND], int z, int cardDrawn)
+{
 	while (drawntreasure<2) {
 		if (state->deckCount[currentPlayer] <1) {//if the deck is empty we need to shuffle discard and add to deck
 			shuffle(currentPlayer, state);
@@ -1291,10 +1280,8 @@ void adventurerFunction(int drawntreasure, int currentPlayer, struct gameState *
 	}
 }
 
-
-
-
-void ambassadorFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int i, int j) {
+void ambassadorFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int i, int j)
+{
 
 	j = 0;		//used to check if player has enough cards to discard
 
@@ -1350,4 +1337,22 @@ void ambassadorFunction(int drawntreasure, int currentPlayer, struct gameState *
 			}
 		}
 	}
+}
+
+int embargoFunction(int currentPlayer, struct gameState *state, int handPos, int choice1)
+{
+	//+2 Coins
+	state->coins = state->coins + 2;
+
+	//see if selected pile is in play
+	if (state->supplyCount[choice1] == -1)
+	{
+		return -1;
+	}
+
+	//add embargo token to selected supply pile
+	state->embargoTokens[choice1]++;
+
+	//trash card
+	discardCard(handPos, currentPlayer, state, 1);
 }
