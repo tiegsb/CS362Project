@@ -1,6 +1,6 @@
 Robert Ward
 10-10-2015
-CS362 Assignment 2
+Assignment 2
 
 Documentation
 
