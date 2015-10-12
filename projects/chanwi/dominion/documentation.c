@@ -1,13 +1,13 @@
 /* Documentation
 
-Smithy Card - Player draws 3 cards and add them to their hand. Card has enumeration value of 7. Card with enumeration value between 7 and 25 require action to be played. Card cost 4 coins to buy.
+Smithy Card - Player draws 3 cards and add them to their hand. Card has enumeration value of 7. Card cost 4 coins to buy.
 cardEffect():
 1. For loop invokes drawCard() 3 times.
 2. The discardCard() function is called to discard 
 getCost():
 1. Return 4
 
-Adventurer Card - Player reveals cards from hand until two treasure cards are revealed. The two treasure cards are added to the hand, the rest is discarded. Card has enumeration value of 13. Card with enumeration value between 7 and 25 require action to be played. Card cost 6 coins to buy.
+Adventurer Card - Player reveals cards from hand until two treasure cards are revealed. The two treasure cards are added to the hand, the rest is discarded. Card has enumeration value of 13. Card cost 6 coins to buy.
 cardEffect():
 1. While loop repeats step 2 to 4, until treasure card counter is not less than 2.
 2. If deck is empty, call shuffle() to add discard pile into deck.
