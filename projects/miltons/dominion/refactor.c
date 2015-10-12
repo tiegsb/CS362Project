@@ -11,7 +11,7 @@ parameters added:
 int currentPlayer, int drawntreasure, int temphand[MAX_HAND],
 struct gameState *state, int cardDrawn, int z
 
-Added matching function declaration to dominion.h
+Added matching function declaration to dominion.h.
 
 ----------
 
@@ -21,10 +21,14 @@ function call. These are the parameters added:
 
 int currentPlayer, struct gameState *state, int handPos
 
-Added matching function declaration to dominion.h
+Added matching function declaration to dominion.h.
 
 ----------
 
+3) Moved code for Council Room, Feast, and Mine cards to separate functions.
+Added function calls at appropriate places in switch statement in cardEffect().
+Added parameters to function definitions and arguments to function calls.
+Added matching function declarations to dominion.h.
 
 
 
