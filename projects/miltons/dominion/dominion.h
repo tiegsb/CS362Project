@@ -131,4 +131,16 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 int adventurerEffect(int currentPlayer, int drawntreasure, int temphand[MAX_HAND], struct gameState *state, int cardDrawn, int z);
 /* behavior for Adventurer card */
 
+int smithyEffect(int currentPlayer, struct gameState *state, int handPos);
+/* behavior for Smithy card */
+
+int councilRoomEffect(int currentPlayer, struct gameState *state, int handPos);
+/* behavior for Council Room card */
+
+int feastEffect(int currentPlayer, struct gameState *state, int temphand[MAX_HAND], int choice1);
+/* behavior for Feast card */
+
+int mineEffect(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2);
+/* behavior for Mine card */
+
 #endif
