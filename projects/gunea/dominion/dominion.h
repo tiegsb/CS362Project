@@ -130,17 +130,22 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
 
-
-void smithyFunction(int currentPlayer, struct gameState *state, int handPos);
-/*Refactored to introduce bug into smithy functionality*/
-
+/************************************************************
+*              REFACTORED FUNCTION PROTOTYPES               *
+*************************************************************/
+void smithyFunction(int currentPlayer, struct gameState *state, int handPos, int i);
+/*Refactored smithy functionality*/
 
 void adventurerFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int temphand[MAX_HAND], int z, int cardDrawn);
-/*Refactored to introduce bug into adventurer functionality*/
+/*Refactored adventurer functionality*/
 
 void ambassadorFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int i, int j);
-/*Refactored to introduce bug into ambassador functionality*/
+/*Refactored ambassador functionality*/
 
+int embargoFunction(int currentPlayer, struct gameState *state, int handPos, int choice1);
+/*Refactored embargo functionality*/
 
+void greathallFunction(int currentPlayer, struct gameState *state, int handPos);
+/*Refactored great hall functionality*/
 
 #endif

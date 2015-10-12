@@ -816,7 +816,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 		
     case smithy:
       //call SmithyFunction
-	smithyFunction(currentPlayer, state, handPos);
+	smithyFunction(currentPlayer, state, handPos, i);
       return 0;
 		
     case village:
@@ -882,14 +882,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case great_hall:
-      //+1 Card
-      drawCard(currentPlayer, state);
-			
-      //+1 Actions
-      state->numActions++;
-			
-      //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
+		greathallFunction(currentPlayer, state, handPos);
       return 0;
 		
     case minion:
@@ -1244,10 +1237,14 @@ int updateCoins(int player, struct gameState *state, int bonus)
 }
 
 
-/*Smithy function*/
-void smithyFunction(int currentPlayer, struct gameState *state, int handPos)
+/************************************************************
+*                    REFACTORED FUNCTIONS                   *
+*************************************************************/
+
+//Refactored Smithy function
+void smithyFunction(int currentPlayer, struct gameState *state, int handPos, int i)
 {
-	for (int i = 0; i < 3; i++)
+	for (i = 0; i < 3; i++)
 	{
 		drawCard(currentPlayer, state);
 	}
@@ -1255,9 +1252,8 @@ void smithyFunction(int currentPlayer, struct gameState *state, int handPos)
 	//discard card from hand
 	discardCard(handPos, currentPlayer, state, 1);
 }
-//end of dominion.c
 
-
+//Refactored Adventurer function
 void adventurerFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int temphand[MAX_HAND], int z, int cardDrawn)
 {
 	while (drawntreasure<2) {
@@ -1280,6 +1276,7 @@ void adventurerFunction(int drawntreasure, int currentPlayer, struct gameState *
 	}
 }
 
+//Refactored Ambassador function
 void ambassadorFunction(int drawntreasure, int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int i, int j)
 {
 
@@ -1339,6 +1336,7 @@ void ambassadorFunction(int drawntreasure, int currentPlayer, struct gameState *
 	}
 }
 
+//Refactored Embargo function
 int embargoFunction(int currentPlayer, struct gameState *state, int handPos, int choice1)
 {
 	//+2 Coins
@@ -1356,3 +1354,19 @@ int embargoFunction(int currentPlayer, struct gameState *state, int handPos, int
 	//trash card
 	discardCard(handPos, currentPlayer, state, 1);
 }
+
+//Refactored Great Hall function
+void greathallFunction(int currentPlayer, struct gameState *state, int handPos)
+{
+	//+1 Card
+	drawCard(currentPlayer, state);
+
+	//+1 Actions
+	state->numActions++;
+
+	//discard card from hand
+	discardCard(handPos, currentPlayer, state, 0);
+}
+
+
+//end of dominion.c

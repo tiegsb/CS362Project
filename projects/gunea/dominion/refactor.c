@@ -4,8 +4,7 @@ Smithy:
 Introduced a bug where the trashflag is set when
 discardCard() is called. This way the card is
 already marked as trashed, and is therefore
-not added to the played cards pile. Also created
-new variable i within scope of smithyFunction().
+not added to the played cards pile.
 
 Adventurer:
 Introduced bugs into this function when turning
@@ -48,27 +47,9 @@ the Embargo card is always successful
 	main() reads out come of playCard(embargo) as success
 
 
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Great Hall:
+Refactored into function with no bugs.
 
 */
+
+//end of refactor.c
