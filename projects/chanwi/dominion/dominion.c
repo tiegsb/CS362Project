@@ -232,8 +232,8 @@ int shuffle(int player, struct gameState *state) {
 
 int adventurerCard(int drawntreasure, int cardDrawn, int currentPlayer, int z, int temphand[], struct gameState *state)
 {
-	while(drawntreasure<2){
-		if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+	while(drawntreasure<=2){
+		if (state->deckCount[currentPlayer] =0){//if the deck is empty we need to shuffle discard and add to deck
 			shuffle(currentPlayer, state);
 		}
 		
@@ -261,8 +261,9 @@ int smithyCard(int i, int currentPlayer, int handPos, struct gameState *state)
 	for (i = 0; i < 3; i++)	{
 		drawCard(currentPlayer, state);
 	}
-	//discard card from hand
-	discardCard(handPos, currentPlayer, state, 0);
+	if(i == 3){ //after 3 cards are drawn, discard card from hand
+		discardCard(handPos, currentPlayer, state, 1);
+	}
 	return 0;
 }
 
@@ -276,15 +277,17 @@ int councilRoomCard(int i, int currentPlayer, int handPos, struct gameState *sta
 	//+1 Buy
 	state->numBuys++;	
 	
-	//Each other player draws a card
-	for (i = 0; i < state->numPlayers; i++){
-		if ( i != currentPlayer ){
-			drawCard(i, state);
-		}
+	//Other player draws a card
+	int nextPlayer = currentPlayer + 1;
+	if (nextPlayer > state->numPlayers - 1){
+		nextPlayer = 0;
 	}
+	drawCard(nextPlayer, state);
 			
 	//put played card in played card pile
-	discardCard(handPos, currentPlayer, state, 0);
+	if(i == 4){ //after 4 cards are drawn, discard card from hand
+		discardCard(handPos, currentPlayer, state, 0);
+	}
 			
 	return 0;
 }
@@ -308,7 +311,7 @@ int treasureMapCard(int index, int i, int currentPlayer, int handPos, struct gam
 	//search hand for another treasure_map
 	index = -1;
     
-	for (i = 0; i < state->handCount[currentPlayer]; i++){
+	for (i = 1; i < state->handCount[currentPlayer]; i++){
 		if (state->hand[currentPlayer][i] == treasure_map && i != handPos){
 			index = i;
 			break;
@@ -322,7 +325,7 @@ int treasureMapCard(int index, int i, int currentPlayer, int handPos, struct gam
 
 		//gain 4 Gold cards
 		for (i = 0; i < 4; i++){
-			gainCard(gold, state, 1, currentPlayer);
+			gainCard(gold, state, 0, currentPlayer);
 		}
 				
 		//return success
