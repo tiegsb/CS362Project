@@ -1,11 +1,4 @@
 -----------------------Dominion Documentation-----------------------
-Submit a file called documentation.c (.c file because github thinks
-    you are using github for file storage if you use many .txt files)
-that contains documentation of smithy, adventurer cards. Documentation
-should contain your understanding of smithy and adventurer cards (code).
-It should also contain documentation of your understanding of discardCard()
-  and updateCoins() method.  Keep your documentation short, though there is
-  no upper limit. Documentation.txt file should contain at least 100 words.
 
 #######################
 Smithy Card
@@ -60,9 +53,22 @@ Code Understanding:  The cost of the Adventurer card is defined in the getCost()
 #######################
 Understanding of discardCard() Method
 #######################
-
+  The purpose of the discardCard() is in dominion.c is to remove a card from a players hand
+and put the card into the discard pile. The first thing that is checked in the method is
+if the we are not trashing the specified card, then we will add the card to the played
+card pile (in other words the discard pile). After that is done, we start removing the card
+from the players hand by setting that card to -1 in the players hand. We decrement the player's
+hand count when the discarded card is in the last position of the hand or if the card is the only
+card in the hand. Otherwise, we replace the discarded card in the hand with the last card in the hand.
+A 0 is returned if the card was successfully discarded. There are no other return alternatives.
 
 #######################
 Understanding of updateCoins() Method
 #######################
+  The purpose of the updateCoins() method is to update the current coin count with the number
+of coins that are in the current player's hand. The first thing this method does is reset the
+coin count to 0. It then iterates though to players hand to find any coppers, silvers, and
+gold. If any coin types are found, then it adds the coin values to the current coin value for
+the player. If updateCoins() is called with a bonus int, then the bonus amount will be added
+to the player's current coin count. A 0 is returned if the coins were updated with success.
 
