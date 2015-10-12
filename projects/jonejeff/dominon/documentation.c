@@ -1,11 +1,11 @@
 Documentation of smithy & adventurer card
 
-The smithy card allows the player to draw three cards to add to their hand.  This is a case in the cardEffect() function in dominion.c.  This is done with a for loop that loops three times, and draws a card each time from your deck.  Then it calls the discardCard() function that removes a card from the player's hand.
+The smithy card allows the player to draw three cards to add to their hand. The case in the card effect function is very simple. It is a for loop that calls the drawCard() function three times. Then discards it's self when it is done.
 
-The adventurer card allows the player to reveal cards from their deck until they reveal two treasure cards. Then they put those treasure cards in their hand and discard the other revealed cards.  This is a case in the cardEffect() function in dominion.c.  This is done with two while loops, that loops until two treasure cards are drawn.  First if the deck is empty, then the deck is shuffled.  Then the card is drawn, and checked to see if it is copper, silver, or gold.  If the card drawn isn't a treasure, it ends up being discarded.
+The adventurer card allows the player to reveal cards from their deck until they reveal two treasure cards and aadd them to there hand. This is done with a while loop with a drawntreasures counter. First it checks it he deck is emtny and need to be reshuffled with shuffle function. Next it draws a card if it is a treasure card drawnTreasures goes up. Else it is added to a temp hand after amount of treasure cards is draw the temp hand is discard one by one.
 
 Documentation of discardCard() & updateCoins()
 
-The discardCard() function allows the player to do simply that, discard a card from their hand.  First, it checks if the trashFlag is set, if it is not, then it gets added to the played pile.  Then the card gets removed from the player's hand, and the handCount variable decreases by one.  
+The discardCard function allows a player discard a card when needed. It first checks the trash flag to know if the card should be trashed.  The second if else block is for lowering the hand count it has three cases.The first check is if it was the end card in there hand. The second check is if it was there last card. The third check handles a middle or first card discard.
 
-The updateCoins() function first resets the players coin count.  Then with a for loop it adds the appropriate number of coins for copper treasure cards, a silver treasure cards and a gold treasure cards.  This for loop ends when all treasure cards in the player's hand are accounted for.  Then if there is a bonus, this function adds it to the player's total coin count in their hand.
+The updateCoins function counts the amount of coins from treasure cards and add the bonufrom action card.Frist it sets coins to 0. Then the for loop goes though the hand and sums up the coins. It then adds the bonus on top
