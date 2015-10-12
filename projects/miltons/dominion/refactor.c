@@ -15,11 +15,15 @@ Added matching function declaration to dominion.h
 
 ----------
 
+2) Moved code for Smithy card to separate function. Added function call in
+cardEffect(). Added parameters to function definition and arguments to
+function call. These are the parameters added:
 
+int currentPlayer, struct gameState *state, int handPos
 
+Added matching function declaration to dominion.h
 
-
-
+----------
 
 
 
