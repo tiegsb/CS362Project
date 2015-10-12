@@ -1,1 +1,3 @@
 dummy file: refactor.txt
+
+We were instructed to save this as a .c file in the instructions. refractor.txt was part of the copied files. Please refer to refactor.c.
