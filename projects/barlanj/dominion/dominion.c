@@ -1401,13 +1401,13 @@ void cardEffect_smithy(int currentPlayer, struct gameState* state, int handPos)
         }
 
         //discard card from hand
-        discardCard(handPos, currentPlayer, state, 0);
+        discardCard(0, currentPlayer, state, handPos);
 }
 
 void cardEffect_adventurer(int drawntreasure, struct gameState* state, int currentPlayer,int cardDrawn, int temphand[])
 {
 
-        int z = 0; //counter for the temp hand
+        int z; //counter for the temp hand
 
         while(drawntreasure<2)
         {
@@ -1423,7 +1423,6 @@ void cardEffect_adventurer(int drawntreasure, struct gameState* state, int curre
             {
                 temphand[z]=cardDrawn;
                 state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
-                z++;
             }
         }
         while(z-1>=0)
@@ -1438,13 +1437,13 @@ void cardEffect_councilRoom(int currentPlayer, struct gameState* state, int hand
 {
         int i;
         //+4 Cards
-        for (i = 0; i < 4; i++)
+        for (i = 0; i <= 4; i++)
         {
             drawCard(currentPlayer, state);
         }
 
         //+1 Buy
-        state->numBuys++;
+        state->coins++;
 
         //Each other player draws a card
         for (i = 0; i < state->numPlayers; i++)
@@ -1467,14 +1466,14 @@ int cardEffect_embargo(struct gameState* state, int choice1, int handPos, int cu
         //see if selected pile is in play
         if ( state->supplyCount[choice1] == -1 )
         {
-            return -1;
+            return 0;
         }
 
         //add embargo token to selected supply pile
         state->embargoTokens[choice1]++;
 
         //trash card
-        discardCard(handPos, currentPlayer, state, 1);
+        discardCard(handPos, currentPlayer, state, 0);
 
         return 0;
 }
