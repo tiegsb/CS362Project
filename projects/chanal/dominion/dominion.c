@@ -1265,7 +1265,7 @@ int updateCoins(int player, struct gameState *state, int bonus)
   return 0;
 }
 
-//Refactored code Adventurer card
+//Refactored code Adventurer card effects
 void adventurerCard (int drawntreasure, struct gameState* state, int currentPlayer, int cardDrawn, int temphand[], int z) {
       while(drawntreasure<=2){
 	if (state->deckCount[currentPlayer] <=1){//if the deck is empty we need to shuffle discard and add to deck
@@ -1288,7 +1288,7 @@ void adventurerCard (int drawntreasure, struct gameState* state, int currentPlay
 	  return;
 }
 
-//Refactored code Council Room card
+//Refactored code Council Room card effects
 void councilRoomCard (int i, int currentPlayer, struct gameState* state, int handPos){
       //+4 Cards
       for (i = 0; i <= 4; i++)
@@ -1313,6 +1313,7 @@ void councilRoomCard (int i, int currentPlayer, struct gameState* state, int han
 	return;
 }
 
+//Refactored code for smithy card effect
 void smithyCard(int i, int currentPlayer, struct gameState* state, int handPos) {
       //+3 Cards
       for (i = 0; i <= 3; i++)
@@ -1325,6 +1326,7 @@ void smithyCard(int i, int currentPlayer, struct gameState* state, int handPos) 
 	return;
 }
 
+//Refactored code for salvager card effect
 void salvagerCard(struct gameState* state, int choice1, int currentPlayer, int handPos) {
       //+1 buy
       state->numActions++;
@@ -1342,6 +1344,7 @@ void salvagerCard(struct gameState* state, int choice1, int currentPlayer, int h
 	  return;
 }
 
+//Refactored code for great hall card effect
 void greatHallCard(int currentPlayer, struct gameState* state, int handPos){
 	  //+1 Card
       drawCard(currentPlayer, state);

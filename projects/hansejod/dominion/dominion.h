@@ -126,6 +126,22 @@ int scoreFor(int player, struct gameState *state);
 
 int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
-   1, others to 0 */
+ 1, others to 0 */
+
+int callSmithy(int currentPlayer_, int handPos_, struct gameState *state);
+/* Cals drawCard() three times. */
+
+int callAdventurer(int currentPlayer_, int cardDrawn_, int *temphand, struct gameState *state);
+/* Reset's the players hand to hold two treasure cards drawn from the deck */
+
+int callCouncilRoom(int currentPlayer_, int handPos_, struct gameState *state);
+/* Call drawCard() 4 times for currentPlayer and once for all players. */
+
+int callAmbassador(int currentPlayer_, int handPos_, int choice1_, int choice2_, int choice3_, struct gameState *state);
+/* Player reveals one card, up to two copies are transferred to the supply deck. All players get a copy of it. */
+
+int callSeaHag(int currentPlayer_, struct gameState *state);
+/* Discards a card from all other players and replaces it with a curse card */
+
 
 #endif
