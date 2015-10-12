@@ -133,4 +133,8 @@ int smithyCard(int currentPlayer, struct gameState *state, int handPos);
 int adventurerCard(int currentPlayer, struct gameState *state, int handPos);
 
 int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2);
+
+int minionCard(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2);
 #endif
+
+
