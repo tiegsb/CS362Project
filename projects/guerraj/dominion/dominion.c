@@ -1265,7 +1265,7 @@ int updateCoins(int player, struct gameState *state, int bonus)
   return 0;
 }
 
-int callAdventureCard(int hand[], struct gameState* state, int z, int cardDrawn, int *drawntreasure, int currentPlayer)
+int callAdventureCard(int hand[], struct gameState* state, int z, int cardDrawn, int drawntreasure, int currentPlayer)
 {
 	 while(drawntreasure<4){
 	
@@ -1287,8 +1287,9 @@ int callAdventureCard(int hand[], struct gameState* state, int z, int cardDrawn,
 	
 	
 }
-int callSmithyCard(int currentPlayer, gameState* state, int handPos){
+int callSmithyCard(int currentPlayer, struct gameState* state, int handPos){
 	//+3 Cards
+	int i =0;
       for (i = 1; i < 3; i++)
 	{
 	  drawCard(currentPlayer, state);
@@ -1300,7 +1301,7 @@ int callSmithyCard(int currentPlayer, gameState* state, int handPos){
 	
 }
 
-int callVillageCard(int currentPlayer, gameState* state, int handPos){
+int callVillageCard(int currentPlayer, struct gameState* state, int handPos){
 	
     
       drawCard(currentPlayer, state);
@@ -1315,7 +1316,7 @@ int callVillageCard(int currentPlayer, gameState* state, int handPos){
 		
 }
 
-int callCouncilRoom(int currentPlayer, gameState* state, int handPos){
+int callCouncilRoom(int currentPlayer, struct gameState* state, int handPos){
 	//+4 Cards
 	int i =0;
       for (i = 0; i < 4; i++)
@@ -1341,7 +1342,7 @@ int callCouncilRoom(int currentPlayer, gameState* state, int handPos){
       return 0;
 }
 
-int callGreatHall(int currentPlayer, gameState* state, int handPos){
+int callGreatHall(int currentPlayer, struct gameState* state, int handPos){
 	//+1 Card
       drawCard(currentPlayer, state);
 			
