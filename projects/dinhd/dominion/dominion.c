@@ -681,7 +681,7 @@ int adventurerCard(int currentPlayer, struct gameState *state, int handPos)
     z++;
   }
       }
-      while(z-1>=0){
+      while(z>=0){
   state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
   z=z-1;
       }
@@ -694,14 +694,15 @@ int smithyCard(int currentPlayer, struct gameState *state, int handPos)
   for (i = 0; i < 3; i++)
   {
     drawCard(currentPlayer, state);
-  }
+  
       
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
+  }
       return 0;
 }
 
-int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2)
+int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice2, int choice1)
 {
       j = state->hand[currentPlayer][choice1];  //store card we will trash
 
@@ -776,7 +777,7 @@ int minionCard(int currentPlayer, struct gameState *state, int handPos, int choi
           //discard hand
           while( state->handCount[i] > 0 )
       {
-        discardCard(handPos, i, state, 0);
+        discardCard(handPos, i, state, 1);
       }
               
           //draw 4
