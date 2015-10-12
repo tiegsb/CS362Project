@@ -29,7 +29,7 @@ minionCard: on line 780, the discardCard parameters are changed so that instead 
 
     to this: discardCard(handPos, i, state, 1);
     
-adventurerCard: line 684 off by one error: 1 more card gets discarded.
+adventurerCard: line 684 off by one error: 1 more card gets discarded but doesnt get removed from hand so another card gets created.
 
     from this: while(z-1>=0)
 
