@@ -5,6 +5,8 @@
 #include <math.h>
 #include <stdlib.h>
 
+// 
+// testing change. 
 int compare(const void* a, const void* b) {
   if (*(int*)a > *(int*)b)
     return 1;
@@ -12,6 +14,11 @@ int compare(const void* a, const void* b) {
     return -1;
   return 0;
 }
+
+int dummymethod(){
+	return 0;
+}
+
 
 struct gameState* newGame() {
   struct gameState* g = malloc(sizeof(struct gameState));
