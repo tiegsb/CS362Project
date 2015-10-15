@@ -16,6 +16,8 @@
 #include <math.h>
 #include <time.h>
 
+// set NOISY_TEST to 0 to remove printfs from output
+#define NOISY_TEST 1
 
 int checkUpdateCoins(int player, struct gameState *state, int bonus);
 int main()
@@ -83,9 +85,9 @@ int main()
 		{
 			bonus = rand() % 9;
 			gameSeed = rand() % 10000;
-
+#if (NOISY_TEST==1)
 			printf("Round %d : Test player %d with treasure card(s) and %d bonus.\n", b+1, p, bonus);
-
+#endif
 			memset(&G, 23, sizeof(struct gameState));   // clear the game state
 			/*initialize game and randomly load hand*/
 			initializeGame(numPlayer, k, gameSeed, &G);
@@ -98,28 +100,37 @@ int main()
 			{
 				/*Set all cards to randHand1*/
 				memcpy(G.hand[p], randHand1, sizeof(int) * handCount);
+#if (NOISY_TEST==1)
 				printf("\t Setting hand to randhand1 \n");
+#endif
 			}
 			else if (setHand == 1)
 			{
 				memcpy(G.hand[p], randHand2, sizeof(int) * handCount);
+#if (NOISY_TEST==1)
 				printf("\t Setting hand to randhand2 \n");
+#endif
 			}
 			else if (setHand == 2)
 			{
 				memcpy(G.hand[p], randHand3, sizeof(int)* handCount);
+#if (NOISY_TEST==1)
 				printf("\t Setting hand to randhand3 \n");
+#endif
 			}
 			else if (setHand == 3)
 			{
 				memcpy(G.hand[p], randHand4, sizeof(int)* handCount);
+#if (NOISY_TEST==1)
 				printf("\t Setting hand to randhand4 \n");
+#endif
 			}
 
 			updateCoins(p, &G, bonus);
 			value = checkUpdateCoins(p, &G, bonus);
-
+#if (NOISY_TEST==1)
 			printf("\t G.coins = %d, Expected = %d\n", G.coins, value);
+#endif
 			assert(G.coins == value);
 		}
 	}
@@ -157,10 +168,10 @@ int checkUpdateCoins(int player, struct gameState *state, int bonus)
 
 	//add bonus
 	coinValue += bonus;
-
+#if (NOISY_TEST==1)
 	printf("\t Test player %d had %d copper cards\n", player, copperCount);
 	printf("\t Test player %d had %d silver cards\n", player, silverCount);
 	printf("\t Test player %d had %d gold cards\n", player, goldCount);
-
+#endif
 	return coinValue;
 }
