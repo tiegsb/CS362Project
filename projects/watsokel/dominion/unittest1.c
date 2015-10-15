@@ -29,6 +29,7 @@ int main() {
   int coppersInHand, coppersInDeck, coppersInDiscard;
   int estates[MAX_HAND];
   int coppers[MAX_HAND];
+  int errFlag = 0;
   for (i = 0; i < MAX_HAND; i++){
     estates[i] = estate;
   }
@@ -42,6 +43,7 @@ int main() {
     for (handCount = 1; handCount <= maxHandCount; handCount++){
       for(deckCount = 1; deckCount <= maxDeckCount; deckCount++){
         for(discardCount=1; discardCount <=maxDiscardCount; discardCount++){
+          printf("Testing player %d with %d card(s) in hand and discardCount of %d:\n", p, handCount, discardCount);
           memset(&G, 23, sizeof(struct gameState));   // clear game state
           r=initializeGame(numPlayers, k, seed, &G);  // initialize new game
           G.handCount[p] = handCount;
@@ -54,10 +56,18 @@ int main() {
           estatesInDeck = deckCount;
           estatesInDiscard = discardCount; 
           fullDeck = fullDeckCount(p, estate, &G);
+          
+          if(fullDeck != estatesInHand+estatesInDeck+estatesInDiscard){
 #if (NOISY_TEST==1)
-          printf("Estate: fullDeckCount=%d, expected=%d\n",fullDeck, estatesInHand+estatesInDeck+estatesInDiscard);
+            errFlag++;
+            printf("  fullDeckCount(): FAIL, Estate: fullDeckCount=%d, expected=%d\n",fullDeck, estatesInHand+estatesInDeck+estatesInDiscard);
 #endif
-          assert(fullDeck == (estatesInHand+estatesInDeck+estatesInDiscard));
+          } else{
+#if (NOISY_TEST==1)
+          printf("  fullDeckCount(): PASS, Estate: fullDeckCount=%d, expected=%d\n",fullDeck, estatesInHand+estatesInDeck+estatesInDiscard);  
+#endif
+          }
+          //assert(fullDeck == (estatesInHand+estatesInDeck+estatesInDiscard));
           memcpy(G.hand[p], coppers, sizeof(int) * handCount); //set all cards to copper
           memcpy(G.deck[p], coppers, sizeof(int) * deckCount); //set all cards to copper
           memcpy(G.discard[p], coppers, sizeof(int) * discardCount); //set all cards to copper
@@ -65,16 +75,29 @@ int main() {
           coppersInDeck = deckCount;
           coppersInDiscard = discardCount; 
           fullDeck = fullDeckCount(p, copper, &G);
+          if(fullDeck != (estatesInHand+estatesInDeck+estatesInDiscard)){
 #if (NOISY_TEST==1)
-          printf("Copper: fullDeckCount=%d, expected=%d\n",fullDeck, estatesInHand+estatesInDeck+estatesInDiscard);
+            errFlag++;  
+            printf("  fullDeckCount(): FAIL, Copper: fullDeckCount=%d, expected=%d\n",fullDeck, coppersInHand+coppersInDeck+coppersInDiscard);
 #endif
-          assert(fullDeck == (coppersInHand+coppersInDeck+coppersInDiscard));
+          } else{
+#if (NOISY_TEST==1)
+            printf("  fullDeckCount(): PASS, Copper: fullDeckCount=%d, expected=%d\n",fullDeck, coppersInHand+coppersInDeck+coppersInDiscard);    
+#endif
+          }
+          //assert(fullDeck == (coppersInHand+coppersInDeck+coppersInDiscard));
         }
       }
     }    
   }      
   
-  printf("All tests passed!\n");
+  if(errFlag != 0){
+    printf("Some tests failed.\n");  
+  }else{
+    printf("All tests passed!\n");
+  }
+  
+  
 
   return 0;
 }
