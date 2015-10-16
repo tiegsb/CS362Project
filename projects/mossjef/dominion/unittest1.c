@@ -58,23 +58,23 @@ void testShuffle () {
 		  for (i = 0; i < 5; i++) {
 			begDeck[i] = G.deck[0][i];
 		  }
-		#if (NOISY_TEST == 1)
+#if (NOISY_TEST == 1)
 		  printf("Beginning order: %d, %d, %d, %d, %d\n", G.deck[0][0], G.deck[0][1], G.deck[0][2], G.deck[0][3], G.deck[0][4]);
-		#endif
+#endif
 
 		  retVal = shuffle(player, &G);
 		  
 		  //assert the return value is 0 (no error);
 		  assert(retVal == 0);
 
-		#if (NOISY_TEST == 1)
+#if (NOISY_TEST == 1)
 		  if (retVal == 0)
 			printf("shuffle(): PASS when return value 0\n");
-		#endif
+#endif
 		  
-		#if (NOISY_TEST == 1)
+#if (NOISY_TEST == 1)
 		  printf("Ending order: %d, %d, %d, %d, %d\n", G.deck[0][0], G.deck[0][1], G.deck[0][2], G.deck[0][3], G.deck[0][4]);
-		#endif
+#endif
 
 		  for (i = 0; i < 5; i++) {
 			if(begDeck[i] == G.deck[0][i]) {
