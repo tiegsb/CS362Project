@@ -21,27 +21,39 @@ testBuyCard: testDrawCard.c dominion.o rngs.o
 testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
 	gcc -o testUpdateCoins -g testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
 
+unittest1: unittest1.c dominion.o rngs.o
+	gcc -o unittest1 -g unittest1.c dominion.c rngs.o $(CFLAGS)
+  
+unittest2: unittest2.c dominion.o rngs.o
+	gcc -o unittest2 -g unittest2.c dominion.c rngs.o $(CFLAGS)
+
+unittest3: unittest3.c dominion.o rngs.o
+	gcc -o unittest3 -g unittest3.c dominion.c rngs.o $(CFLAGS)
+  
+unittest4: unittest4.c dominion.o rngs.o
+	gcc -o unittest4 -g unittest4.c dominion.c rngs.o $(CFLAGS)
+  
 unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c dominion.o rngs.o
-	echo "Result for running unit tests:" > tests.out
+	echo "Result for running unit tests:" > unittestresults.out
 	
-	echo "unittest1.c:" >> tests.out
+	echo "unittest1.c:" >> unittestresults.out
 	gcc -o unittest1 dominion.o rngs.o unittest1.c $(CFLAGS)
-	unittest1 >> tests.out
+	unittest1 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 
-	echo "unittest2.c:" >> tests.out
+	echo "unittest2.c:" >> unittestresults.out
 	gcc -o unittest2 dominion.o rngs.o unittest2.c $(CFLAGS)
-	unittest2 >> tests.out
+	unittest2 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 
-	echo "unittest3.c:" >> tests.out
+	echo "unittest3.c:" >> unittestresults.out
 	gcc -o unittest3 dominion.o rngs.o unittest3.c $(CFLAGS)
-	unittest3 >> tests.out
+	unittest3 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 
-	echo "unittest4.c:" >> tests.out
+	echo "unittest4.c:" >> unittestresults.out
 	gcc -o unittest4 dominion.o rngs.o unittest4.c $(CFLAGS)
-	unittest4 >> tests.out
+	unittest4 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 
 testAll: dominion.o testSuite.c
