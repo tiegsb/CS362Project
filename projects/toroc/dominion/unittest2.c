@@ -1,16 +1,16 @@
 /*
-*	CS362 - Assignment 3
+*	CS362 - Assignment 3  unittest2.c
 *	Unit Test #2: This program ensures the isGameOver method
-*		in dominion is working properly by running 4 tests.
-*		Test 1 is for 2 players and depleting provinces, test 2 is
-*		for 4 players & depleting provinces, test 3 is for 2 players
-*		and depleting adventure cards, and test3 is for 2 players
-*		and both depleting adventure cards and provinces.
+*		in dominion is working properly by running 7 tests.
+*		Test # 1 is for 2 players and 8 provinces are bought,
+*		Test #2 is for 2 players and 7 provinces are bought,
+*		Test #3 is for 4 players, and 12 provinces are bought
+*		Test #4 is for 4 players, and 11 provinces are bought
+*		Test #5 is for 2 players, with 3 adventure cards all bought
+*		Test #6 is for 4 players, with 3 adventure cards all bought
+*		Test #7 is for 2 players, trying to buy 9 provinces.
 *	Author: Carol D. Toro
 *	Date: 10/15/2015
-*	If supply count goes into neg, isGameOver kept breaking my assertion,
-*	for the purpose of testing, I opted out of allowing the supply count to 
-*	turn negative. 
 */
 
 #include "dominion.h"
@@ -25,268 +25,378 @@
 
 // set NOISY_TEST to 0 to remove printfs from output
 #define NOISY_TEST 1
-void tests(int testType);
 
-void depleteProvince(struct gameState *state);
-void depleteAdventureCards(struct gameState *state);
-int checkIsGameOver(struct gameState *state);
+
 int main()
 {
-
-	tests(1);
-	tests(2);
-	tests(3);
-	tests(4);
-
-	return 0;
-
-}
-int checkIsGameOver(struct gameState *state)
-{
-	if (state->supplyCount[province] <= 0)
-		return 1;
-	
-	int i; 
-	int depletedCount = 0;
-
-
-	for (i=0; i<25; i++)
-	{
-		if (state->supplyCount[i] == 0)
-		{
-			depletedCount++;
-		}
-	}
-	if ( depletedCount>= 3)
-	{
-		return 1;
-	}
-		return 0;
-}
-void depleteProvince(struct gameState *state)
-{
-	int b;
-	int go;
-
-	if (state->numPlayers == 2)
-	{
-		go = 8;
-	}
-	else
-	{
-		go = 12;
-	}
-
-	for (b = 0; b < go; b++)
-	{
-		int randDeplete = rand() % 9;
-		if (randDeplete <= 7)
-		{
-			state->supplyCount[province]--;
-		}
-		if (state->supplyCount[province] == 0)
-			break;
-	}
-	/*if supply count goes into neg, isGameOver kept breaking my assertion*/
-	/*this function prevents supply count from going neg*/
-}
-void depleteAdventureCards(struct gameState *state)
-{
-	int b;
-
-	for (b = 0; b < 7; b++)
-	{
-		int randDeplete = rand() % 5;
-
-		if (randDeplete >2)
-		{
-			state->supplyCount[smithy]--;
-			state->supplyCount[feast]--;
-			state->supplyCount[village]--;
-		}
-		else if (randDeplete < 2)
-		{
-			state->supplyCount[smithy]-=2;
-			state->supplyCount[feast]-=2;
-			state->supplyCount[village]-=2;
-		}
-
-		if (state->supplyCount[smithy] == 0 || state->supplyCount[feast] == 0 || state->supplyCount[village] == 0)
-		{
-			break;
-		}
-		else if (state->supplyCount[smithy] == 1 || state->supplyCount[feast] == 1 || state->supplyCount[village] == 1)
-		{
-			state->supplyCount[smithy]--;
-			state->supplyCount[feast]--;
-			state->supplyCount[village]--;
-			break;
-		}
-		
-	}
-	
-}
-void tests(int testType)
-{
-	int p, handCount, cardNum;
+	/*initialize variables needed*/
+	int	i;
 	int k[10] = { adventurer, council_room, feast, gardens, mine,
 		remodel, smithy, village, baron, great_hall };
 	int gameSeed;
-	int round;
-	int roundCount;
 	int numPlayer = 2;
 	struct gameState Game;
+	int result;
 
+	/*initialize array of gold filled hands*/
+	int goldHand[MAX_HAND];
+	for (i = 0; i < MAX_HAND; i++)
+	{
+		goldHand[i] = gold;
+	}
 
-	/*utilizing rand so that no run has same number of tests*/
-	cardNum = rand() % MAX_HAND;
-	handCount = rand() % cardNum;
-	roundCount = rand() % handCount;
-
+	/*Starting Test #1*/
 #if (NOISY_TEST==1)
-	if (testType == 1)
-	{
-		printf("Starting Test #1 with 2 players & depleting providences \n");
-	}
-	else if (testType == 2)
-	{
-		printf("Starting Test #2 with 4 players & depleting providences \n");
-	}
-	else if (testType == 3)
-	{
-		printf("Starting Test #3 with 2 players & depleting adventure cards \n");
-	}
-	else if (testType == 4)
-	{
-		printf("Starting Test #4 with 2 players & depleting adventure & providences \n");
-	}
-#endif 
-
-	for (round = 0; round < roundCount; round++)
-	{
-		/*test thru both players*/
-		for (p = 0; p < numPlayer; p++)
-		{
-			
-			do
-			{
-				gameSeed = rand() % 1000;
-			} while (gameSeed == 0);
-
-			/*clear the game state*/
-			memset(&Game, 23, sizeof(struct gameState));
-
-			if (testType == 2)
-			{
-				numPlayer = 4;
-			}
-			/*initialize game*/
-			initializeGame(numPlayer, k, gameSeed, &Game);
-
-#if (NOISY_TEST==1)
-		if (testType == 1)
-		{
-			printf("\t Randomly depleting supply of provinces \n");
-		}
-		else if (testType == 2)
-		{
-			printf("\t Randomly depleting supply of provinces \n");
-		}
-		else if (testType == 3)
-		{
-			printf("\t Randomly depleting supply of adventure cards \n");
-		}
-		else if (testType == 4)
-		{
-			printf("\t Randomly depleting supply of adventure cards & providences \n");
-		}
+	printf("Starting Test #1 - 2 players buy 8 provinces \n");
 #endif
-			/*randomly deplete the supply count*/
+	/*initialize gameSeed*/
+	gameSeed = rand() % 1000 + 1;
 
-		if (testType == 1)
-		{
-			depleteProvince(&Game);
-		}
-		else if (testType == 2)
-		{
-			depleteProvince(&Game);
-		}
-		else if (testType == 3)
-		{
-			depleteAdventureCards(&Game);
-		}
-		else if (testType == 4)
-		{
-			depleteProvince(&Game);
-			depleteAdventureCards(&Game);
-		}
-			
+	/*clear the game state*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load both hands with goldHand array*/
+	memcpy(Game.hand[0], goldHand, sizeof(int) * MAX_HAND);
+
+	/*Call updateCoins to ensure goldHand worked*/
+	updateCoins(0, &Game, 0);
+
+	/*increase the number of buys to 8*/
+	Game.numBuys = 8;
+
+	for (i = 0; i < 8; i++)
+	{
+		/*Call Buy Card to buy 1 province*/
+		result = buyCard(province, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
 #if (NOISY_TEST==1)
-		if (testType == 1)
-		{
-			printf("\t Current supply of provinces is %d \n", Game.supplyCount[province]);
-		}
-		else if (testType == 2)
-		{
-			printf("\t Current supply of provinces is %d \n", Game.supplyCount[province]);
-		}
-		else if (testType == 3)
-		{
-			printf("\t Current supply of smithy is %d \n", Game.supplyCount[smithy]);
-			printf("\t Current supply of feast is %d \n", Game.supplyCount[feast]);
-			printf("\t Current supply of village is %d \n", Game.supplyCount[village]);
-		}
-		else if (testType == 4)
-		{
-			printf("\t Current supply of provinces is %d \n", Game.supplyCount[province]);
-			printf("\t Current supply of smithy is %d \n", Game.supplyCount[smithy]);
-			printf("\t Current supply of feast is %d \n", Game.supplyCount[feast]);
-			printf("\t Current supply of village is %d \n", Game.supplyCount[village]);
-		}		
+	printf("Supply of province is %d \n", Game.supplyCount[province]);
 #endif
 
-			assert(isGameOver(&Game) == checkIsGameOver(&Game));
+	assert(isGameOver(&Game) == 1);
+
+#if (NOISY_TEST==1)
+	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+	printf("Test #1 passed. \n");
+#endif
+
+
+	/*Starting Test #2*/
+#if (NOISY_TEST==1)
+	printf("Starting Test #2 - 2 players buy 7 provinces \n");
+#endif
+	/*initialize gameSeed*/
+	gameSeed = rand() % 1000 + 1;
+
+	/*clear the game state*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load both hands with goldHand array*/
+	memcpy(Game.hand[0], goldHand, sizeof(int) * MAX_HAND);
+
+	/*Call updateCoins to ensure goldHand worked*/
+	updateCoins(0, &Game, 0);
+
+	/*increase the number of buys to 8*/
+	Game.numBuys = 8;
+
+	for (i = 0; i < 7; i++)
+	{
+		/*Call Buy Card to buy 1 province*/
+		result = buyCard(province, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
 
 
 #if (NOISY_TEST==1)
-		if (testType == 1)
-		{
-			printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), checkIsGameOver(&Game));
-		}
-		else if (testType == 2)
-		{
-			printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), checkIsGameOver(&Game));
-		}
-		else if (testType == 3)
-		{
-			printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), checkIsGameOver(&Game));
-		}
-		else if (testType == 4)
-		{
-			printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), checkIsGameOver(&Game));
-		}
-			
+	printf("Supply of province is %d \n", supplyCount(province, &Game));
 #endif
-		}
+
+	assert(isGameOver(&Game) == 0);
+
+#if (NOISY_TEST==1)
+	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 0);
+	printf("Test #2 passed. \n");
+#endif
+
+
+	/*Starting Test #3*/
+#if (NOISY_TEST==1)
+	printf("Starting Test #3 - 4 players buy 12 provinces \n");
+#endif
+
+	/*reset # players */
+	numPlayer = 4;
+
+	/*initialize gameSeed*/
+	gameSeed = rand() % 1000 + 1;
+
+	/*clear the game state*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load both hands with goldHand array*/
+	memcpy(Game.hand[0], goldHand, sizeof(int) * MAX_HAND);
+
+	/*Call updateCoins to ensure goldHand worked*/
+	updateCoins(0, &Game, 0);
+
+	/*increase the number of buys to 12*/
+	Game.numBuys = 12;
+
+	for (i = 0; i < 12; i++)
+	{
+		/*Call Buy Card to buy 1 province*/
+		result = buyCard(province, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
 	}
 
 #if (NOISY_TEST==1)
-	if (testType == 1)
-	{
-		printf("Passed the first test with provinces and 2 players! \n");
-	}
-	else if (testType == 2)
-	{
-		printf("Passed the first test with provinces and 4 players! \n");
-	}
-	else if (testType == 3)
-	{
-		printf("Passed the third test with adventure cards and 2 players! \n");
-	}
-	else if (testType == 4)
-	{
-		printf("Passed the fourth test with adventure cards & provinces and 2 players! \n");
-	}
+	printf("Supply of province is %d \n", supplyCount(province, &Game));
 #endif
-	return;
+
+	assert(isGameOver(&Game) == 1);
+
+#if (NOISY_TEST==1)
+	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+	printf("Test #3 passed. \n");
+#endif
+
+
+	/*Starting Test #4*/
+#if (NOISY_TEST==1)
+	printf("Starting Test #4 - 4 players buy 11 provinces \n");
+#endif
+
+	/*reset # players */
+	numPlayer = 4;
+
+	/*initialize gameSeed*/
+	gameSeed = rand() % 1000 + 1;
+
+	/*clear the game state*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load both hands with goldHand array*/
+	memcpy(Game.hand[0], goldHand, sizeof(int) * MAX_HAND);
+
+	/*Call updateCoins to ensure goldHand worked*/
+	updateCoins(0, &Game, 0);
+
+	/*increase the number of buys to 12*/
+	Game.numBuys = 12;
+
+	for (i = 0; i < 11; i++)
+	{
+		/*Call Buy Card to buy 1 province*/
+		result = buyCard(province, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
+#if (NOISY_TEST==1)
+	printf("Supply of province is %d \n", supplyCount(province, &Game));
+#endif
+
+	assert(isGameOver(&Game) == 0);
+
+#if (NOISY_TEST==1)
+	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 0);
+	printf("Test #4 passed. \n");
+#endif
+
+	/*Starting Test #5*/
+#if (NOISY_TEST==1)
+	printf("Starting Test #5 - 2 players buy all of 3 adventure cards: smithy, feast, village  \n");
+#endif
+
+	/*reset # players */
+	numPlayer = 2;
+
+	/*initialize gameSeed*/
+	gameSeed = rand() % 1000 + 1;
+
+	/*clear the game state*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load both hands with goldHand array*/
+	memcpy(Game.hand[0], goldHand, sizeof(int) * MAX_HAND);
+
+	/*Call updateCoins to ensure goldHand worked*/
+	updateCoins(0, &Game, 0);
+
+	/*increase the number of buys to 12*/
+	Game.numBuys = 30;
+
+	/*Call Buy Card to buy 10 smithy*/
+	for (i = 0; i < 10; i++)
+	{
+		result = buyCard(smithy, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
+	/*Call Buy Card to buy 10 feast */
+	for (i = 0; i < 10; i++)
+	{
+		result = buyCard(feast, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
+	/*Call Buy Card to buy 10 smithy*/
+	for (i = 0; i < 10; i++)
+	{
+		result = buyCard(village, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
+
+
+#if (NOISY_TEST==1)
+	printf("Supply of smithy is %d \n", supplyCount(smithy, &Game));
+	printf("Supply of feast is %d \n", supplyCount(feast, &Game));
+	printf("Supply of village is %d \n", supplyCount(village, &Game));
+#endif
+
+	assert(isGameOver(&Game) == 1);
+
+#if (NOISY_TEST==1)
+	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+	printf("Test #5 passed. \n");
+#endif
+
+
+	/*Starting Test #6*/
+#if (NOISY_TEST==1)
+	printf("Starting Test #6 - 4 players buy all of 3 adventure cards: smithy, feast, village  \n");
+#endif
+
+	/*reset # players */
+	numPlayer = 4;
+
+	/*initialize gameSeed*/
+	gameSeed = rand() % 1000 + 1;
+
+	/*clear the game state*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load both hands with goldHand array*/
+	memcpy(Game.hand[0], goldHand, sizeof(int) * MAX_HAND);
+
+	/*Call updateCoins to ensure goldHand worked*/
+	updateCoins(0, &Game, 0);
+
+	/*increase the number of buys to 12*/
+	Game.numBuys = 30;
+
+	/*Call Buy Card to buy 10 smithy*/
+	for (i = 0; i < 10; i++)
+	{
+		result = buyCard(smithy, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
+	/*Call Buy Card to buy 10 feast */
+	for (i = 0; i < 10; i++)
+	{
+		result = buyCard(feast, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
+	/*Call Buy Card to buy 10 smithy*/
+	for (i = 0; i < 10; i++)
+	{
+		result = buyCard(village, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
+
+
+#if (NOISY_TEST==1)
+	printf("Supply of smithy is %d \n", supplyCount(smithy, &Game));
+	printf("Supply of feast is %d \n", supplyCount(feast, &Game));
+	printf("Supply of village is %d \n", supplyCount(village, &Game));
+#endif
+
+	assert(isGameOver(&Game) == 1);
+
+#if (NOISY_TEST==1)
+	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+	printf("Test #6 passed. \n");
+#endif
+
+	/*Starting Test #7*/
+#if (NOISY_TEST==1)
+	printf("Starting Test #7 - 2 players try to buy 9 provinces \n");
+#endif
+	/*reset # of players*/
+	numPlayer = 2;
+
+	/*initialize gameSeed*/
+	gameSeed = rand() % 1000 + 1;
+
+	/*clear the game state*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load both hands with goldHand array*/
+	memcpy(Game.hand[0], goldHand, sizeof(int) * MAX_HAND);
+
+	/*Call updateCoins to ensure goldHand worked*/
+	updateCoins(0, &Game, 0);
+
+	/*increase the number of buys to 8*/
+	Game.numBuys = 9;
+
+	for (i = 0; i < 9; i++)
+	{
+		/*Call Buy Card to buy 1 province*/
+		result = buyCard(province, &Game);
+		/*Set coins to 8*/
+		Game.coins = 8;
+	}
+
+#if (NOISY_TEST==1)
+	printf("Supply of province is %d \n", supplyCount(province, &Game));
+#endif
+
+	assert(isGameOver(&Game) == 1);
+
+#if (NOISY_TEST==1)
+	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+	printf("Test #7 passed. \n");
+#endif
+
+	return 0;
+
 }
