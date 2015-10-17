@@ -1,7 +1,11 @@
 /*
-*	CS362 - Assignment 3
-*	Unit Test #1: This program ensures the updateCoins method
-*		in dominion is working properly.
+*	CS362 - Assignment 3 - unittest1.c
+*	Unit Test #1: This program runs 6 tests to ensure the 
+*		updateCoins method 	in dominion is properly working.
+*		The program checks the method against various hands:
+*		hands with treasure cards as well as empty hands, 
+*		with bonuses and no bonuses, different hand counts aside
+*		from just the 5 at each turn.
 *	Author: Carol D. Toro
 *	Date: 10/15/2015
 */
@@ -19,159 +23,261 @@
 // set NOISY_TEST to 0 to remove printfs from output
 #define NOISY_TEST 1
 
-int checkUpdateCoins(int player, struct gameState *state, int bonus);
+
 int main()
 {
-	int i, p, bonus, handCount;
+	int handCount;
 	int k[10] = { adventurer, council_room, feast, gardens, mine,
 		remodel, smithy, village, baron, great_hall };
 	int gameSeed;
 	int numPlayer;
-	struct gameState G;
-	int value;
-	srand(time(NULL));
 
+	struct gameState Game;
+	srand(time(NULL));
+	int bonus = 0;
 	numPlayer = 2;
 
-	/*generate random coins for player's hand*/
-	int treasureCard;
 
-	/*Random Hands*/
-	int randHand1[MAX_HAND];
-	int randHand2[MAX_HAND];
-	int randHand3[MAX_HAND];
-	int randHand4[MAX_HAND];
+	/*Hands to be tested*/
+	int testHand1[8];	//hand with silver and gold, no bonus, handCount set to 8---Test1
+	int testHand3[MAX_HAND] = { 0 };   //hand will be empty, no bonus ---Test 2
+	int testHand6[MAX_HAND] = { 0 }; //empty hand, 7 bonus ---Test3
+	int testHand4[8];	//hand will have 1 gold ---Test 4
+	int testHand5[12];	//hand with gold and copper, 20 bonus, handCount set to 10---Test5
+	int testHand2[8];  //hand with all gold, 2 bonus, and handCount set to 3---Test6
+	
 
-	for (i = 0; i < MAX_HAND; i++)
-	{
-		treasureCard = rand() % 3;
-		if (treasureCard == 0)
-		{
-			randHand1[i] = copper;
-			randHand2[i] = gold;
-
-			randHand3[i] = silver;
-			randHand4[i] = copper;
-		}
-		else if (treasureCard == 1)
-		{
-			randHand1[i] = silver;
-			randHand2[i] = silver;
-
-			randHand3[i] = gold;
-			randHand4[i] = gold;
-
-		}
-		else if (treasureCard == 2)
-		{
-			randHand1[i] = gold;
-			randHand2[i] = copper;
-			randHand3[i] = copper;
-			randHand4[i] = copper;
-		}
-	}
-
-
-	/*keep track of how much the coins are*/
-	int b;
-	int cardNum;
-
-	cardNum = rand() % MAX_HAND;
-	handCount = rand() % cardNum;
-
-	for (b = 0; b < handCount; b++)
-	{
-		for (p = 0; p < numPlayer; p++)
-		{
-			bonus = rand() % 9;
-			gameSeed = rand() % 10000;
+	/*Start Test 1*/
 #if (NOISY_TEST==1)
-			printf("Round %d : Test player %d with treasure card(s) and %d bonus.\n", b+1, p, bonus);
+	printf("Starting Test #1 with 1copper, 4silver, 3gold, no bonus, handCount of 8 \n");
 #endif
-			memset(&G, 23, sizeof(struct gameState));   // clear the game state
-			/*initialize game and randomly load hand*/
-			initializeGame(numPlayer, k, gameSeed, &G);
+	/*load hand with silver and gold*/
+	testHand1[0] = copper;
+	testHand1[1] = silver;
+	testHand1[2] = silver;
+	testHand1[3] = silver;
+	testHand1[4] = silver;
+	testHand1[5] = gold;
+	testHand1[6] = gold;
+	testHand1[7] = gold;
 
-			int setHand;
-			setHand = rand() % 4;
+	/*Set handCount and Seed*/
+	handCount = 8;
+	gameSeed = rand() % 10000 + 1;
+
+	/*clear the state of the game*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load hand with testHand1 array*/
+	memcpy(Game.hand[0], testHand1, sizeof(int) * handCount);
+
+	/*set game's handCount to 8*/
+	Game.handCount[0] = 8;
+
+	updateCoins(0, &Game, bonus);
+
+	/*Coins expected to be 18*/
+	assert(Game.coins == 18);
+#if (NOISY_TEST==1)
+	printf("\t Game coins=%d Expected=%d \n", Game.coins, 18);
+	printf("Test #1 passed. \n");
+#endif
 
 
-			if (setHand == 0)
-			{
-				/*Set all cards to randHand1*/
-				memcpy(G.hand[p], randHand1, sizeof(int) * handCount);
+	/*Start Test 2*/
 #if (NOISY_TEST==1)
-				printf("\t Setting hand to randhand1 \n");
+	printf("Starting Test #2 with empty hand no bonus \n");
 #endif
-			}
-			else if (setHand == 1)
-			{
-				memcpy(G.hand[p], randHand2, sizeof(int) * handCount);
-#if (NOISY_TEST==1)
-				printf("\t Setting hand to randhand2 \n");
-#endif
-			}
-			else if (setHand == 2)
-			{
-				memcpy(G.hand[p], randHand3, sizeof(int)* handCount);
-#if (NOISY_TEST==1)
-				printf("\t Setting hand to randhand3 \n");
-#endif
-			}
-			else if (setHand == 3)
-			{
-				memcpy(G.hand[p], randHand4, sizeof(int)* handCount);
-#if (NOISY_TEST==1)
-				printf("\t Setting hand to randhand4 \n");
-#endif
-			}
 
-			updateCoins(p, &G, bonus);
-			value = checkUpdateCoins(p, &G, bonus);
+	/*Set handCount and Seed*/
+	handCount = 8;
+	gameSeed = rand() % 10000 + 1;
+
+	/*clear the state of the game*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load hand with testHand3 array*/
+	memcpy(Game.hand[0], testHand3, sizeof(int) * handCount);
+
+	updateCoins(0, &Game, bonus);
+
+	/*Coins expected to be 0*/
+	assert(Game.coins == 0);
+
 #if (NOISY_TEST==1)
-			printf("\t G.coins = %d, Expected = %d\n", G.coins, value);
+	printf("\t Game coins=%d Expected=%d \n", Game.coins, 0);
+	printf("Test #2 passed. \n");
 #endif
-			assert(G.coins == value);
-		}
-	}
+
+
+	/*Start Test 3*/
+#if (NOISY_TEST==1)
+
+	printf("Starting Test #3 with empty hand, 7 bonus \n");
+#endif
+
+	bonus = 7;
+	/*Set handCount and Seed*/
+	handCount = 8;
+
+	gameSeed = rand() % 10000 + 1;
+
+	/*clear the state of the game*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+
+	/*load hand with testHand6 array*/
+	memcpy(Game.hand[0], testHand6, sizeof(int) * handCount);
+
+	updateCoins(0, &Game, bonus);
+
+	/*Coins expected to be 7*/
+	assert(Game.coins == 7);
+
+#if (NOISY_TEST==1)
+	printf("\t Game coins=%d Expected=%d \n", Game.coins, 7);
+	printf("Test #3 passed. \n");
+#endif
+
+
+
+	/*Start Test 4*/
+#if (NOISY_TEST==1)
+	printf("Starting Test #4 with only 1 gold and no bonus \n");
+#endif
+	/*load hand with 1 gold*/
+	testHand4[0] = gold;
+	testHand4[1] = 0;
+	testHand4[2] = 0;
+	testHand4[3] = 0;
+	testHand4[4] = 0;
+
+	/*Clear bonus*/
+	bonus = 0;
+	/*Set handCount and Seed*/
+	handCount = 8;
+
+	gameSeed = rand() % 10000 + 1;
+
+	/*clear the state of the game*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load hand with testHand4 array*/
+	memcpy(Game.hand[0], testHand4, sizeof(int) * handCount);
+
+	updateCoins(0, &Game, bonus);
+
+	/*Coins expected to be 3*/
+	assert(Game.coins == 3);
+
+#if (NOISY_TEST==1)
+	printf("\t Game coins=%d Expected=%d \n", Game.coins, 3);
+	printf("Test #4 passed. \n");
+#endif
+
+
+	/*Start Test 5*/
+#if (NOISY_TEST==1)
+
+	printf("Starting Test #5 with 7copper, 1gold, 2silver, 15 bonus, hand count of 10 \n");
+#endif
+	/*load hand with silver and gold*/
+	testHand5[0] = copper;
+	testHand5[1] = copper;
+	testHand5[2] = copper;
+	testHand5[3] = copper;
+	testHand5[4] = copper;
+	testHand5[5] = copper;
+	testHand5[6] = copper;
+	testHand5[7] = gold;
+	testHand5[8] = silver;
+	testHand5[9] = silver;
+	testHand5[10] = 0;
+
+	/*Set Bonus*/
+	bonus = 15;
+	/*Set handCount and Seed*/
+	handCount = 10;
+
+	gameSeed = rand() % 10000 + 1;
+
+	/*clear the state of the game*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load hand with testHand5 array*/
+	memcpy(Game.hand[0], testHand5, sizeof(int) * handCount);
+
+	/*set handCount to 10*/
+	Game.handCount[0] = 10;
+
+	updateCoins(0, &Game, bonus);
+
+	/*Coins expected to be 29*/
+	assert(Game.coins == 29);
+
+#if (NOISY_TEST==1)
+	printf("\t Game coins=%d Expected=%d \n", Game.coins, 29);
+	printf("Test #5 passed. \n");
+#endif
+
+	/*Start Test 6*/
+#if (NOISY_TEST==1)
+
+	printf("Starting Test #6 with 8 gold, 0 bonus, hand count of 3 \n");
+#endif
+	/*load hand with silver and gold*/
+	testHand2[0] = gold;
+	testHand2[1] = gold;
+	testHand2[2] = gold;
+	testHand2[3] = gold;
+	testHand2[4] = gold;
+	testHand2[5] = gold;
+	testHand2[6] = gold;
+	testHand2[7] = gold;
+
+	/*Set Bonus*/
+	bonus = 0;
+	/*Set handCount and Seed*/
+	handCount = 10;
+
+	gameSeed = rand() % 10000 + 1;
+
+	/*clear the state of the game*/
+	memset(&Game, 23, sizeof(struct gameState));
+
+	/*initialize game*/
+	initializeGame(numPlayer, k, gameSeed, &Game);
+
+	/*load hand with testHand5 array*/
+	memcpy(Game.hand[0], testHand2, sizeof(int) * handCount);
+
+	/*set handCount to 3*/
+	Game.handCount[0] = 3;
+
+	updateCoins(0, &Game, bonus);
+
+	/*Coins expected to be 9*/
+	assert(Game.coins == 9);
+
+#if (NOISY_TEST==1)
+	printf("\t Game coins=%d Expected=%d \n", Game.coins, 9);
+	printf("Test #6 passed. \n");
+#endif
+
 	return 0;
-
-}
-
-int checkUpdateCoins(int player, struct gameState *state, int bonus)
-{
-	int i;
-	int coinValue = 0;
-	int copperCount = 0;
-	int silverCount = 0;
-	int goldCount = 0;
-
-
-	for (i = 0; i < state->handCount[player]; i++)
-	{
-		if (state->hand[player][i] == copper)
-		{
-			coinValue += 1;
-			copperCount += 1;
-		}
-		else if (state->hand[player][i] == silver)
-		{
-			coinValue += 2;
-			silverCount += 1;
-		}
-		else if (state->hand[player][i] == gold)
-		{
-			coinValue += 3;
-			goldCount += 1;
-		}
-	}
-
-	//add bonus
-	coinValue += bonus;
-#if (NOISY_TEST==1)
-	printf("\t Test player %d had %d copper cards\n", player, copperCount);
-	printf("\t Test player %d had %d silver cards\n", player, silverCount);
-	printf("\t Test player %d had %d gold cards\n", player, goldCount);
-#endif
-	return coinValue;
 }
