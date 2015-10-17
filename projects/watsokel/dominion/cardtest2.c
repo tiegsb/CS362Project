@@ -18,83 +18,105 @@
 // set NOISY_TEST to 0 to remove printfs from output
 #define NOISY_TEST 1
 
+int supplyCheck(struct gameState *S, int cardType, const char* cardName, int expectedCount){
+	int err=0;
+	if(S->supplyCount[cardType] != expectedCount){
+		#if (NOISY_TEST==1)
+		printf("      FAIL: number of %s cards=%d, expected=%d\n",cardName,S->supplyCount[cardType],expectedCount);
+		#endif 
+		err++;
+	} else{
+		#if (NOISY_TEST==1)
+		printf("      PASS: number of %s=%d, expected=%d\n",cardName,S->supplyCount[cardType],expectedCount);
+		#endif 
+	}
+	return err;
+}
 
 int checkAdventurerEffect(struct gameState *state, int player, int treasureCard){
-  int err=0; //used in place of assertion failure: test passed=0; assertion failure=1
-  //if treasureCard is a copper, an infinite loop will happen
-  //this block causes an infinite loop since coppers do not count in the buggy adventurerEffect function
-  int r = adventurerEffect(state, player);
-  if(r != 0){
-#if (NOISY_TEST==1)
-    printf("  adventurerEffect() call: FAIL, return value=%d, expected=%d\n", r, 0);
-    err++;
-#endif 
-  } else{
-#if (NOISY_TEST==1)
-    printf("  adventurerEffect() call: PASS, return value=%d, expected=%d\n", r, 0);
-#endif 
-  }
-  int expectedTreasureCount=2;
-  int silverOrGoldCount=0;
-  //int copperCount=0;
-  //count the treasures in the hand
-  int h;
-  for(h=0; h<state->handCount[player]; h++){
-	if(treasureCard != copper){ //bug introduced will cause infinite loop if coppers are counted
-		if(state->hand[player][h]==treasureCard){
-			silverOrGoldCount++;
-		}
-	} /*else { 
+	int err=0; //used in place of assertion failure: test passed=0; assertion failure=1
+	//if treasureCard is a copper, an infinite loop will happen
+	//this block causes an infinite loop since coppers do not count in the buggy adventurerEffect function
+	int r = adventurerEffect(state, player);
+	if(r != 0){
+		#if (NOISY_TEST==1)
+		printf("  FAIL, return value=%d, expected=%d\n", r, 0);
+		#endif 
+		err++;
+	} else{
+		#if (NOISY_TEST==1)
+		printf("  PASS, return value=%d, expected=%d\n", r, 0);
+		#endif 
+	}
+	int expectedTreasureCount=2;
+	int silverOrGoldCount=0;
+	//int copperCount=0;
+	//count the treasures in the hand
+	int h;
+	for(h=0; h<state->handCount[player]; h++){
+		if(treasureCard != copper){ //bug introduced will cause infinite loop if coppers are counted
+			if(state->hand[player][h]==treasureCard){
+				silverOrGoldCount++;
+			}
+		} /*else { 
 		if(state->hand[player][h]==treasureCard){
 			copperCount++;
 		}
 	}	*/
-  }
-  if(silverOrGoldCount != expectedTreasureCount){
-	printf("  adventurerEffect(): FAIL, treasureCount=%d, expected=%d\n", silverOrGoldCount, expectedTreasureCount);
-	printf("  NOTE: If treasure is 4 (copper), fail is expected due to bug");
-	err++;
-  }else{
-	printf("  adventurerEffect(): PASS, treasureCount=%d, expected=%d\n", silverOrGoldCount, expectedTreasureCount);	  
-  }
-  return err;
+	}
+	if(silverOrGoldCount != expectedTreasureCount){
+		printf("  FAIL, treasureCount=%d, expected=%d\n", silverOrGoldCount, expectedTreasureCount);
+		printf("  NOTE: If treasure is 4 (copper), failed unit test is expected due to bug introduced in assignment 1.\n");
+		err++;
+	}else{
+		printf("  PASS, treasureCount=%d, expected=%d\n", silverOrGoldCount, expectedTreasureCount);	  
+	}
+
+	/*Check for unexpected transactions*/
+	printf("  Testing for unexpected transactions. Checking supply counts...\n");
+	err += supplyCheck(state,curse,"curse",10);
+	printf("    Checking Victory cards in supply:\n");
+	err += supplyCheck(state,estate,"estate",8);
+	err += supplyCheck(state,duchy,"duchy",8);
+	err += supplyCheck(state,province,"province",8);
+	printf("    Checking Treasure cards in supply:\n");	
+	err += supplyCheck(state,copper,"copper",60-(7*2));
+	err += supplyCheck(state,silver,"silver",40);
+	err += supplyCheck(state,gold,"gold",30);
+	
+	return err;
 }
 
+
 int main() {
-    int i,p,r;
-    int seed = 1000;
-    int numPlayer = 2;
-    int k[10] = {adventurer, council_room, feast, gardens, mine
-               , remodel, smithy, village, baron, great_hall};
-    struct gameState G;
-    // arrays of all coppers, silvers, and golds
-    int adventurers[MAX_HAND];
+	int i,p,r;
+	int seed = 1000;
+	int numPlayer = 2;
+	int k[10] = {adventurer, council_room, feast, gardens, mine
+		, remodel, smithy, village, baron, great_hall};
+	struct gameState G;
+	// arrays of all coppers, silvers, and golds
+	int adventurers[MAX_HAND];
 	int coppers[MAX_HAND];
 	int silvers[MAX_HAND];
 	int golds[MAX_HAND];
-    for (i = 0; i < MAX_HAND; i++){
-        adventurers[i] = adventurer;
-    }
-    for (i = 0; i < MAX_HAND; i++){
-        coppers[i] = copper;
-    }	
 	for (i = 0; i < MAX_HAND; i++){
-        silvers[i] = silver;
-    }
-    for (i = 0; i < MAX_HAND; i++){
-        golds[i] = gold;
-    }
+		adventurers[i] = adventurer;
+		coppers[i] = copper;
+		silvers[i] = silver;
+		golds[i] = gold;
+	}
 	
-    int errFlag=0;
-    int maxHandCount = 5; 
+	int errFlag=0;
+	int maxHandCount = 5; 
 	int maxDiscardCount = 5;
-    int maxDeckCount = 5;
-    int deckPos;
+	int maxDeckCount = 5;
+	int deckPos;
 	int treasureCard;
 	
-    printf ("TESTING adventurerEffect():\n");
+	printf ("TESTING adventurerEffect():\n");
 
-    for(p = 0; p<numPlayer; p++){
+	for(p = 0; p<numPlayer; p++){
 		for(deckPos = 0; deckPos <= maxDeckCount; deckPos++){
 			for(treasureCard = copper; treasureCard<=gold; treasureCard++){
 				printf("Testing player %d, deck count %d and treasure card %d\n", p,deckPos,treasureCard);
@@ -120,13 +142,14 @@ int main() {
 				}
 			}
 		}
-    }
-  
-  
-  if(errFlag != 0){
-    printf("Some tests failed.\n");  
-  }else{
-    printf("All tests passed!\n");
-  }
-  return 0;
+	}
+
+
+	if(errFlag != 0){
+		printf("Some tests failed.\n");
+		printf("NOTE: Some tests may have failed due to bugs introduced in assignment 1. These tests have detected those bugs. See above results for explanation.\n");
+	}else{
+		printf("All tests passed!\n");
+	}
+	return 0;
 }

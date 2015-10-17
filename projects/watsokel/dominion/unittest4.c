@@ -59,19 +59,20 @@ int main() {
           && supplyPos != remodel && supplyPos != smithy && supplyPos != outpost && supplyPos != salvager
           && supplyPos != sea_hag){
           //if card is not in the game, then player should not be able to gain that card
-            if(gain != -1){
-              printf("  gainCard(): FAIL, gain=%d, expected=%d\n", gain, -1);
+            printf("  Attempt to gain a card that is not in the game\n");
+			if(gain != -1){
+              printf("    FAIL, gain=%d, expected=%d\n", gain, -1);
               errFlag++;
             }else{
-              printf("  gainCard(): PASS, gain=%d, expected=%d\n", gain, -1);
+              printf("    PASS, gain=%d, expected=%d\n", gain, -1);
             }
         //if card is in the game, then player should be able to gain that card
         } else{
           if(gain != 0){
-            printf("  gainCard(): FAIL, gain=%d, expected=%d\n", gain, 0);
+            printf("    FAIL, gain=%d, expected=%d\n", gain, 0);
             errFlag++;
           }else{
-            printf("  gainCard(): PASS, gain=%d, expected=%d\n", gain, 0);
+            printf("    PASS, gain=%d, expected=%d\n", gain, 0);
           }
         }
       }
