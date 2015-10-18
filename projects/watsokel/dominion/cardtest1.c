@@ -16,6 +16,20 @@
 // set NOISY_TEST to 0 to remove printfs from output
 #define NOISY_TEST 1
 
+int supplyCheck(struct gameState *S, int cardType, const char* cardName, int expectedCount){
+	int err=0;
+	if(S->supplyCount[cardType] != expectedCount){
+		#if (NOISY_TEST==1)
+		printf("      FAIL: number of %s cards=%d, expected=%d\n",cardName,S->supplyCount[cardType],expectedCount);
+		#endif 
+		err++;
+	} else{
+		#if (NOISY_TEST==1)
+		printf("      PASS: number of %s=%d, expected=%d\n",cardName,S->supplyCount[cardType],expectedCount);
+		#endif 
+	}
+	return err;
+}
 
 int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	int err=0; //used in place of assertion failure: test passed=0; assertion failure=1
@@ -27,8 +41,8 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	if(state->handCount[player] != expectedHandCount){
 		#if (NOISY_TEST==1)
 		printf("  BEFORE smithyEffect() call: FAIL, handCount=%d, expected=%d\n", state->handCount[player], expectedHandCount);
-		err++;
 		#endif 
+		err++;
 	} else{
 		#if (NOISY_TEST==1)
 		printf("  BEFORE smithyEffect() call: PASS, handCount=%d, expected=%d\n", state->handCount[player], expectedHandCount);
@@ -43,7 +57,9 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 		}
 	}
 	if(numSmithys != 5){
+		#if (NOISY_TEST==1)
 		printf("    FAIL: hand contains number of smithys=%d, expected=%d\n",numSmithys,expectedSmithys);
+		#endif 
 		err++;
 	} else{
 		printf("    PASS: hand contains number of smithys=%d, expected=%d\n",numSmithys,expectedSmithys);
@@ -53,8 +69,8 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	if(r != 0){
 		#if (NOISY_TEST==1)
 		printf("  AFTER smithyEffect() call: FAIL, return value=%d, expected=%d\n", r, 0);
-		err++;
 		#endif 
+		err++;
 	} else{
 		#if (NOISY_TEST==1)
 		printf("  AFTER smithyEffect() call: PASS, return value=%d, expected=%d\n", r, 0);
@@ -64,8 +80,8 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	if(state->handCount[player] != expectedHandCount){
 		#if (NOISY_TEST==1)
 		printf("    FAIL, handCount=%d, expected=%d\n", state->handCount[player], expectedHandCount);
-		err++;
 		#endif 
+		err++;
 	} else{
 		#if (NOISY_TEST==1)
 		printf("    PASS, handCount=%d, expected=%d\n", state->handCount[player], expectedHandCount);
@@ -75,8 +91,8 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	if(state->deckCount[player] != expectedDeckCount){
 		#if (NOISY_TEST==1)
 		printf("    FAIL, deckCount=%d, expected=%d\n", state->deckCount[player], expectedDeckCount);
-		err++;
 		#endif 
+		err++;
 	} else{
 		#if (NOISY_TEST==1)
 		printf("    PASS, deckCount=%d, expected=%d\n", state->deckCount[player], expectedDeckCount);
@@ -95,16 +111,24 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 		}
 	}
 	if(numSmithys != 4){
+		#if (NOISY_TEST==1)
 		printf("    FAIL: hand contains number of smithys=%d, expected=%d\n",numSmithys,expectedSmithys);
+		#endif 
 		err++;
 	} else{
+		#if (NOISY_TEST==1)
 		printf("    PASS: hand contains number of smithys=%d, expected=%d\n",numSmithys,expectedSmithys);
+		#endif 
 	}
 	if(numGolds != 3){
+		#if (NOISY_TEST==1)
 		printf("    FAIL: hand contains number of golds=%d, expected=%d\n",numGolds,expectedGolds);
+		#endif 
 		err++;
 	} else{
+		#if (NOISY_TEST==1)
 		printf("    PASS: hand contains number of golds=%d, expected=%d\n",numGolds,expectedGolds);
+		#endif 
 	}
 
 	
@@ -119,8 +143,8 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	if(state->handCount[otherPlayer] != expectedOtherPlayerHandCount){
 		#if (NOISY_TEST==1)
 		printf("    FAIL, otherPlayerHandCount=%d, expected=%d\n", state->handCount[otherPlayer], expectedOtherPlayerHandCount);
-		err++;
 		#endif 
+		err++;
 	} else{
 		#if (NOISY_TEST==1)
 		printf("    PASS, otherPlayerHandCount=%d, expected=%d\n", state->handCount[otherPlayer], expectedOtherPlayerHandCount);
@@ -129,8 +153,8 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	if(state->deckCount[otherPlayer] != expectedOtherPlayerDeckCount){
 		#if (NOISY_TEST==1)
 		printf("    FAIL, otherPlayerDeckCount=%d, expected=%d\n", state->deckCount[otherPlayer], expectedOtherPlayerDeckCount);
-		err++;
 		#endif 
+		err++;
 	} else{
 		#if (NOISY_TEST==1)
 		printf("    PASS, otherPlayerDeckCount=%d, expected=%d\n", state->deckCount[otherPlayer], expectedOtherPlayerDeckCount);
@@ -152,16 +176,24 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 		}
 	}
 	if(numMines != 5){
+		#if (NOISY_TEST==1)
 		printf("    FAIL: other player's hand contains number of mines=%d, expected=%d\n",numMines,expectedMines);
+		#endif 
 		err++;
 	} else{
+		#if (NOISY_TEST==1)
 		printf("    PASS: other player's hand contains number of mines=%d, expected=%d\n",numMines,expectedMines);
+		#endif 
 	}
 	if(numSilvers != 10){
+		#if (NOISY_TEST==1)
 		printf("    FAIL: other player's hand contains number of silvers=%d, expected=%d\n",numSilvers,expectedSilvers);
+		#endif 
 		err++;
 	} else{
+		#if (NOISY_TEST==1)
 		printf("    PASS: other player's hand contains number of silvers=%d, expected=%d\n",numSilvers,expectedSilvers);
+		#endif 
 	}
 
 	/*Check for unexpected transactions*/
@@ -169,61 +201,16 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	err += supplyCheck(state,curse,"curse",10);
 	printf("    Checking Victory cards in supply:\n");
 	err += supplyCheck(state,estate,"estate",8);
-	err += supplyCheck(state,duchy,"estate",8);
-	err += supplyCheck(state,province,"estate",8);
+	err += supplyCheck(state,duchy,"duchy",8);
+	err += supplyCheck(state,province,"province",8);
 	printf("    Checking Treasure cards in supply:\n");	
-	err += supplyCheck(state,copper,"estate",60-(7*2));
-	err += supplyCheck(state,silver,"estate",40);
-	err += supplyCheck(state,gold,"estate",30);
-	
-	/*if(state->supplyCount[curse] != 10){
-		printf("    FAIL: number of curses=%d, expected=%d\n",state->supplyCount[curse],10);
-		err++;
-	} else{
-		printf("    PASS: number of curses=%d, expected=%d\n",state->supplyCount[curse],10);
-	}
-	if(state->supplyCount[estate] != 8){
-		printf("    FAIL: number of estates=%d, expected=%d\n",8);
-		err++;
-	} else {
-		printf("    PASS: number of estates=%d, expected=%d\n",8);
-	}
-	if(state->supplyCount[duchy] != 8){
-		printf("    FAIL: number of duchys=%d, expected=%d\n",8);
-		err++;
-	}else{
-		printf("    PASS: number of duchys=%d, expected=%d\n",8);		
-	}
-	if(state->supplyCount[province] != 8){
-		printf("    FAIL: number of provinces=%d, expected=%d\n",8);
-		err++;
-	}
-	if(state->supplyCount[copper] != (60-(7*2))){
-		printf("    FAIL: number of coppers=%d, expected=%d\n",(60-(7*2)));
-		err++;
-	}
-	if(state->supplyCount[silver] != 40){
-		printf("    FAIL: number of silvers=%d, expected=%d\n",40);
-		err++;
-	}	
-	if(state->supplyCount[gold] != 30){
-		printf("    FAIL: number of golds=%d, expected=%d\n",30);
-		err++;
-	}*/
-	
+	err += supplyCheck(state,copper,"copper",60-(7*2));
+	err += supplyCheck(state,silver,"silver",40);
+	err += supplyCheck(state,gold,"gold",30);
+		
 	return err;
 }
 
-int supplyCheck(struct gameState *S, int cardType, const char* cardName, int expectedCount){
-	int err=0;
-	if(S->supplyCount[cardType] != expectedCount){
-		printf("      FAIL: number of %s cards=%d, expected=%d\n",cardName,S->supplyCount[cardType],expectedCount);
-		err++;
-	} else{
-		printf("      PASS: number of %s=%d, expected=%d\n",cardName,S->supplyCount[cardType],expectedCount);
-	}
-	return err;
-}
 
 int main() {
 	int i,p,r;
