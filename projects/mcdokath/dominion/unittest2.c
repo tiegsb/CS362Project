@@ -30,10 +30,22 @@ int main() {
   /* test */
   printf("Testing shuffle()...\n");
   
+  /* save game state */
+  struct gameState Save;
+  Save.numPlayers = G.numPlayers;
+  Save.outpostPlayed = G.outpostPlayed;
+  Save.outpostTurn = G.outpostTurn;
+  Save.whoseTurn = G.whoseTurn;
+  Save.phase = G.phase;
+  Save.numActions = G.numActions;
+  Save.coins = G.coins;
+  Save.numBuys = G.numBuys;
+  
+  
   /* shuffle Player 0's deck */
   int shuffleResult = shuffle(0, &G);
   
-  /* check result */
+  /* check shuffle() result */
 #if (PRINT_TEST == 1)
   printf("Shuffle Player 0.\nResult: %d, Expected: %d\n",shuffleResult, 0);
 #endif
@@ -42,7 +54,7 @@ int main() {
   /* shuffle Player 1's deck */
   shuffleResult = shuffle(1, &G);
   
-  /* check result */
+  /* check shuffle() result */
 #if (PRINT_TEST == 1)
   printf("Shuffle Player 1.\nResult: %d, Expected: %d\n",shuffleResult, 0);
 #endif
