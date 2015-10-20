@@ -14,7 +14,7 @@ New Function: adventurerEffect
 	card is OP). 
 	
 New Function: gardensEffect
-	The gardensEffect is now called when the gardensEffect card is played. It
+	The gardensEffect is now called when the gardens card is played. It
 	is called by the switch statement in the cardEffect function. It 
 	incorrectly returns sucessfully if the gardenNum is negative one, and it 
 	returns zero otherwize.
@@ -25,3 +25,10 @@ New Function: villageEffect
 	statement in the cardEffect function. The error is that the number of 
 	turns it gives plus equals itself plus two, giving the incorrect number of 
 	additional turns.
+	
+New Function: remodelEffect
+	The remodelEffect function is called by the cardEffect function when the 
+	remodel card is played. It gets the player's choice of trashed card and 
+	compares it to the player's card pickup. If the difference is greater than 
+	two the  function returns false, otherwise the card is picked up. Then the 
+	trashed card is returned and the card is removed from the deck.

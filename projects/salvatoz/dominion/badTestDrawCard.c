@@ -8,24 +8,23 @@
 #define DEBUG 0
 #define NOISY_TEST 1
 
-int checkDrawCard(int p, struct gameState *post) {
+int checkDrawCard(int p, struct gameState* post) {
   int r;
-    
-  r = drawCard (p, post);
+
+  r = drawCard(p, post);
 }
 
-int main () {
-
+int main() {
   int i, n, r, p, deckCount, discardCount, handCount;
 
-  int k[10] = {adventurer, council_room, feast, gardens, mine,
-	       remodel, smithy, village, baron, great_hall};
+  int k[10] = {adventurer, council_room, feast,   gardens, mine,
+               remodel,    smithy,       village, baron,   great_hall};
 
   struct gameState G;
 
-  printf ("Testing drawCard.\n");
+  printf("Testing drawCard.\n");
 
-  printf ("RANDOM TESTS.\n");
+  printf("RANDOM TESTS.\n");
 
   SelectStream(2);
   PutSeed(3);
@@ -38,7 +37,7 @@ int main () {
     checkDrawCard(p, &G);
   }
 
-  printf ("ALL TESTS OK\n");
+  printf("ALL TESTS OK\n");
 
   exit(0);
 }
