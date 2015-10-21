@@ -1,2 +1,4 @@
 projects/watsokel/dominion/testUpdateCoins.c
 projects/watsokel/dominion/*.o
+projects/watsokel/dominion/*.gcov
+

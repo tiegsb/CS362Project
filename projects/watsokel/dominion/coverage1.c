@@ -1,7 +1,7 @@
 CS 362 - ASSIGNMENT 3               KELVIN WATSON 
 coverage1.c                    		ONID: watsokel      
                                     OSU ID: 932540242 
-                                    github.com/watsokel 
+                                    https://github.com/amchristi/cs362f15/tree/master/projects/watsokel 
 ----------------------------------------------- -----------------------
 COVERAGE:
 
