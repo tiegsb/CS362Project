@@ -11,4 +11,4 @@ For this exercise, I first started with the intputChar() function and implemente
 
 For the inputString() function, I first started by implementing all lowercase letters in the input domain. This meant that there would be 26^5 chance of being able to hit the special condition "reset". I found that I hit reset in a few times within 2-4 minutes around the 9-20 millionth iteration. I still didn't feel like the random testing was directed enough, so I decided to restrict the domain even more and fix the first letter. Now, the error message is reached within about 1 minute. If I were able to modify more than just the input functions I might make nested loops, fixing one and random testing the others.
 
-Lastly, I made one minor change to avoid a huge memory leak, at the end of each while statement I free the memory from allocating the memory for the string.
+Lastly, I made one minor change to avoid a huge memory leak. At the end of each while statement iteration I free the memory from allocating the memory for the string.
