@@ -129,10 +129,10 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
    1, others to 0 */
 
 //Refactored methods
-int adventurerMethod(int currentPlayer, struct gameState *state);
-int smithyMethod(int currentPlayer, int handPos, struct gameState *state);
-int council_roomMethod(int currentPlayer, int handPos, struct gameState *state);
-int feastMethod(int currentPlayer, int handPos, int choice1, struct gameState *state);
-int baronMethod(int currentPlayer, int handPos, int choice1, struct gameState *state);
+int adventurerEffect(int currentPlayer, struct gameState *state);
+int smithyEffect(int currentPlayer, int handPos, struct gameState *state);
+int council_roomEffect(int currentPlayer, int handPos, struct gameState *state);
+int feastEffect(int currentPlayer, int handPos, int choice1, struct gameState *state);
+int baronEffect(int currentPlayer, int handPos, int choice1, struct gameState *state);
 
 #endif
