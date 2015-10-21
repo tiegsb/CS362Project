@@ -155,8 +155,7 @@ int main() {
 	}
 	
 	if(errFlag != 0){
-		printf("Some tests failed.\n");  
-		printf("NOTE: I am quite confident that the sea_hag case in cardEffect() has several bugs.\n");
+		printf("Some tests failed. See bug1.c for details.\n");  
 	}else{
 		printf("All tests passed!\n");
 	}

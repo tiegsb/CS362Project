@@ -271,7 +271,7 @@ int main() {
 	}
 
 	if(errFlag != 0){
-		printf("Some tests failed.\n");  
+		printf("Some tests failed. See bug1.c for details.\n");  
 	}else{
 		printf("All tests passed!\n");
 	}
