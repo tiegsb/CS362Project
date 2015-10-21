@@ -53,6 +53,7 @@ int main()
 
 	/*Starting Test #1*/
 #if (NOISY_TEST==1)
+	printf("Starting unittest4.c which checks playCard() \n");
 	printf("Starting Test #1 - player plays a card during play phase \n");
 #endif
 	/*initialize gameSeed*/
@@ -77,11 +78,20 @@ int main()
 
 	result = playCard(0, 1, 2, 3, &Game);
 
-	assert(result == 0);
+	//assert(result == 0);
 
 #if (NOISY_TEST==1)
-	printf("\t Game state = %d, Expected state = %d\n", result, 0);
-	printf("Test #1 passed. \n");
+	if (result == 0)
+	{
+		printf("\t Game state = %d, Expected state = %d\n", result, 0);
+		printf("Test #1 passed. \n");
+	}
+	else
+	{
+		printf("\t Game state = %d, Expected state = %d\n", result, 0);
+		printf("Test #1 FAILED! \n");
+	}
+	
 #endif
 
 
@@ -93,10 +103,19 @@ int main()
 	/*Attemp to play a card during the buy phase*/
 	result = playCard(0, 1, 2, 3, &Game);
 
-	assert(result == -1);
+	//assert(result == -1);
 #if (NOISY_TEST==1)
-	printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
-	printf("Test #2 passed. \n");
+	if (result == -1)
+	{
+		printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
+		printf("Test #2 passed. \n");
+	}
+	else
+	{
+		printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
+		printf("Test #2 FAILED! \n");
+	}
+	
 #endif
 
 	/*Starting Test #3*/
@@ -122,11 +141,19 @@ int main()
 	/*Attemp to play a gold during the play phase*/
 	result = playCard(1, 1, 2, 3, &Game);
 
-	assert(result == -1);
+	//assert(result == -1);
 
 #if (NOISY_TEST==1)
-	printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
-	printf("Test #3 passed. \n");
+	if (result == -1)
+	{
+		printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
+		printf("Test #3 passed. \n");
+	}
+	else
+	{
+		printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
+		printf("Test #3 FAILED! \n");
+	}
 #endif
 
 	/*player plays card in hand*/
@@ -143,11 +170,20 @@ int main()
 	/*player plays card in hand*/
 	result = playCard(0, 1, 2, 3, &Game);
 
-	assert(result == -1);
+	//assert(result == -1);
 
 #if (NOISY_TEST==1)
-	printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
-	printf("Test #4 passed. \n");
+	if (result == -1)
+	{
+		printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
+		printf("Test #4 passed. \n");
+	}
+	else
+	{
+		printf("\t Result from method = %d, Expected result from method = %d\n", result, -1);
+		printf("Test #4 FAILED! \n");
+	}
+	
 #endif
 
 	/*End turn*/

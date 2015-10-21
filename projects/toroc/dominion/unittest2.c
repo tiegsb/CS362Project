@@ -1,5 +1,5 @@
 /*
-*	CS362 - Assignment 3  unittest2.c
+*	CS362 - Assignment 3 unittest2.c
 *	Unit Test #2: This program ensures the isGameOver method
 *		in dominion is working properly by running 7 tests.
 *		Test # 1 is for 2 players and 8 provinces are bought,
@@ -38,6 +38,7 @@ int main()
 	struct gameState Game;
 	int result;
 
+
 	/*initialize array of gold filled hands*/
 	int goldHand[MAX_HAND];
 	for (i = 0; i < MAX_HAND; i++)
@@ -47,6 +48,7 @@ int main()
 
 	/*Starting Test #1*/
 #if (NOISY_TEST==1)
+	printf("Starting unittest2.c which checks the isGameOver() method \n");
 	printf("Starting Test #1 - 2 players buy 8 provinces \n");
 #endif
 	/*initialize gameSeed*/
@@ -79,11 +81,20 @@ int main()
 	printf("Supply of province is %d \n", Game.supplyCount[province]);
 #endif
 
-	assert(isGameOver(&Game) == 1);
+	//assert(isGameOver(&Game) == 1);
 
 #if (NOISY_TEST==1)
-	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
-	printf("Test #1 passed. \n");
+	if (isGameOver(&Game) == 1)
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #1 passed. \n");
+	}
+	else
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #1 FAILED! \n");
+	}
+	
 #endif
 
 
@@ -123,11 +134,20 @@ int main()
 	printf("Supply of province is %d \n", supplyCount(province, &Game));
 #endif
 
-	assert(isGameOver(&Game) == 0);
+	//assert(isGameOver(&Game) == 0);
 
 #if (NOISY_TEST==1)
-	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 0);
-	printf("Test #2 passed. \n");
+	if (isGameOver(&Game) == 0)
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 0);
+		printf("Test #2 passed. \n");
+	}
+	else
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 0);
+		printf("Test #2 FAILED! \n");
+	}
+	
 #endif
 
 
@@ -169,11 +189,20 @@ int main()
 	printf("Supply of province is %d \n", supplyCount(province, &Game));
 #endif
 
-	assert(isGameOver(&Game) == 1);
+	//assert(isGameOver(&Game) == 1);
 
 #if (NOISY_TEST==1)
-	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
-	printf("Test #3 passed. \n");
+	if (isGameOver(&Game) == 1)
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #3 passed. \n");
+	}
+	else
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #3 FAILED! \n");
+	}
+	
 #endif
 
 
@@ -215,11 +244,20 @@ int main()
 	printf("Supply of province is %d \n", supplyCount(province, &Game));
 #endif
 
-	assert(isGameOver(&Game) == 0);
+	//assert(isGameOver(&Game) == 0);
 
 #if (NOISY_TEST==1)
-	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 0);
-	printf("Test #4 passed. \n");
+	if (isGameOver(&Game) == 0)
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 0);
+		printf("Test #4 passed. \n");
+	}
+	else
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 0);
+		printf("Test #4 FAILED \n");
+	}
+	
 #endif
 
 	/*Starting Test #5*/
@@ -280,11 +318,20 @@ int main()
 	printf("Supply of village is %d \n", supplyCount(village, &Game));
 #endif
 
-	assert(isGameOver(&Game) == 1);
+	//assert(isGameOver(&Game) == 1);
 
 #if (NOISY_TEST==1)
-	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
-	printf("Test #5 passed. \n");
+	if (isGameOver(&Game) == 1)
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #5 passed. \n");
+	}
+	else
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #5 FAILED! \n");
+	}
+	
 #endif
 
 
@@ -346,11 +393,20 @@ int main()
 	printf("Supply of village is %d \n", supplyCount(village, &Game));
 #endif
 
-	assert(isGameOver(&Game) == 1);
+	//assert(isGameOver(&Game) == 1);
 
 #if (NOISY_TEST==1)
-	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
-	printf("Test #6 passed. \n");
+	if (isGameOver(&Game) == 1)
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #6 passed. \n");
+	}
+	else
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #6 FAILED! \n");
+	}
+	
 #endif
 
 	/*Starting Test #7*/
@@ -390,11 +446,20 @@ int main()
 	printf("Supply of province is %d \n", supplyCount(province, &Game));
 #endif
 
-	assert(isGameOver(&Game) == 1);
+	//assert(isGameOver(&Game) == 1);
 
 #if (NOISY_TEST==1)
-	printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
-	printf("Test #7 passed. \n");
+	if (isGameOver(&Game) == 1)
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #7 passed. \n");
+	}
+	else
+	{
+		printf("\t Game state = %d, Expected state = %d\n", isGameOver(&Game), 1);
+		printf("Test #7 FAILED! \n");
+	}
+
 #endif
 
 	return 0;
