@@ -1,5 +1,9 @@
 /* -----------------------------------------------------------------------
-*
+* Programmed by: Kelvin Watson
+* Filename: unittest4.c
+* Created: 10 Oct 2015
+* Last modified: 15 Oct 2015
+* Description: Unit tests for dominion.c 's gainCard() function
 * -----------------------------------------------------------------------
 */
 
@@ -15,43 +19,6 @@
 
 int checkDiscardCard(int handPos, int player, struct gameState* state,int handCount, int discardedCard){
   int errFlag=0; //used in place of assertion failure: test passed=0; assertion failure=1
-  int r = discardCard(handPos,player,state,0);
-  assert(r==0);
-  //check handCount
-  if(state->handCount[player] != (handCount-1)){
-#if (NOISY_TEST==1)
-    printf("  discardCard(): FAIL, handCount=%d, expected=%d\n", state->handCount[player], (handCount-1));
-#endif    
-    errFlag=1; //set error flag
-  } else {
-#if (NOISY_TEST==1)
-    printf("  discardCard(): PASS handCount=%d, expected=%d\n", state->handCount[player], (handCount-1));
-#endif
-  }
-  //assert(state->handCount[player] == (handCount-1));
-  //check discard pile for the card discarded
-  if(state->discardCount[player] != 1){
-#if (NOISY_TEST==1)
-    printf("  discardCard(): FAIL, discardCount=%d, expected=%d\n", state->discardCount[player], 1);
-#endif    
-    errFlag=1; //set error flag
-  } else {
-#if (NOISY_TEST==1)
-    printf("  discardCard(): PASS discardCount=%d, expected=%d\n", state->discardCount[player], 1);
-#endif
-  }
-
-  if(state->discard[player][(state->discardCount[player])-1] != discardedCard){
-#if (NOISY_TEST==1)
-    printf("  discardCard(): FAIL, discardedCard=%d, expected=%d\n", state->discard[player][(state->discardCount[player])-1], discardedCard);
-#endif    
-    errFlag=1; //set error flag
-  } else {
-#if (NOISY_TEST==1)
-    printf("  discardCard(): PASS, discardedCard=%d, expected=%d\n",state->discard[player][(state->discardCount[player])-1] , discardedCard);
-#endif
-  }
-  //assert(state->discard[player][(state->discardCount[player])-1] == discardedCard);
   
   return errFlag;
 }
@@ -91,18 +58,21 @@ int main() {
           && supplyPos != council_room && supplyPos != feast && supplyPos != gardens && supplyPos != mine 
           && supplyPos != remodel && supplyPos != smithy && supplyPos != outpost && supplyPos != salvager
           && supplyPos != sea_hag){
-            if(gain != -1){
-              printf("  gainCard(): FAIL, gain=%d, expected=%d\n", gain, -1);
+          //if card is not in the game, then player should not be able to gain that card
+            printf("  Attempt to gain a card that is not in the game\n");
+			if(gain != -1){
+              printf("    FAIL, gain=%d, expected=%d\n", gain, -1);
               errFlag++;
             }else{
-              printf("  gainCard(): PASS, gain=%d, expected=%d\n", gain, -1);
+              printf("    PASS, gain=%d, expected=%d\n", gain, -1);
             }
+        //if card is in the game, then player should be able to gain that card
         } else{
           if(gain != 0){
-            printf("  gainCard(): FAIL, gain=%d, expected=%d\n", gain, 0);
+            printf("    FAIL, gain=%d, expected=%d\n", gain, 0);
             errFlag++;
           }else{
-            printf("  gainCard(): PASS, gain=%d, expected=%d\n", gain, 0);
+            printf("    PASS, gain=%d, expected=%d\n", gain, 0);
           }
         }
       }

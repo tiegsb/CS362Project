@@ -1,5 +1,9 @@
 /* -----------------------------------------------------------------------
-*
+* Programmed by: Kelvin Watson
+* Filename: unittest1.c
+* Created: 10 Oct 2015
+* Last modified: 14 Oct 2015
+* Description: Unit tests for dominion.c 's fullDeckCount() function
 * -----------------------------------------------------------------------
 */
 

@@ -1,10 +1,11 @@
 /* -----------------------------------------------------------------------
- * Demonstration of how to write unit tests for dominion-base
- * Include the following lines in your makefile:
- *
- * -----------------------------------------------------------------------
- */
-
+* Programmed by: Kelvin Watson
+* Filename: unittest3.c
+* Created: 10 Oct 2015
+* Last modified: 14 Oct 2015
+* Description: Unit tests for dominion.c 's isGameOver() function
+* -----------------------------------------------------------------------
+*/
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <string.h>
