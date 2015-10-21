@@ -7,6 +7,7 @@ BUGS IDENTIFIED:
 
 
 unittest2.c: discardCard()
+--------------------------
 	After a card is discarded, the the discard count should be increased by 
 	one. To detect a discarded card, the discard count was initialized to 
 	zero. However, the state->discardCount remains zero even after a call to 
@@ -17,11 +18,37 @@ unittest2.c: discardCard()
 		"FAIL, discardCount=0, expected=1"
 		"FAIL, discardedCard=387389207, expected=6"
 	
-cardtest2: adventurerEffect()
-	In assignment 2, I introduced a bug to the adventurer card when the 
-	adventurer case in cardEffect() was refactored to the adventurerEffect() 
+	
+cardtest1: smithyEffect()
+-------------------------
+	In assignment 2, I introduced a bug to the smithy card when I 
+	refactored the smithy case in cardEffect() to the smithyEffect() 
 	method. 
-		*** BUG introduced to adventurerEffect() method *** 
+		*** BUGS introduced to smithyEffect() method in Assignment 2 *** 
+		Instead of calling discardCard() with trashFlag value of 0 (which 
+		correctly places the smithy card into the discard pile), a bug has been 
+		introduced that calls discardCard() passing in the trashFlag with a 
+		value of 1 (which erroneously places the smithy card in the deck). 
+		Specifically, the line: 
+		  discardCard(handPos, currentPlayer, state, 0); //original
+		has been changed to: 
+		  discardCard(handPos, currentPlayer, state, 1); //bug introduced
+	In cardtest1, a bug was detected as the following "FAIL" result:
+		"FAIL, discardCount=0, expected=1"
+	Although the unit test detects a failed test with the discarded smithy card, it is 
+	uncertain whether this is an actual bug in smithyEffect or discardCard solely by 
+	examining this unit test alone. However, in conjunction with 
+	the results from the unittest2.c, it is likely that there is a bug in 
+	discardCard() since neither the flag 0 or 1 passed as arguments to discardCard 
+	result in the discardCount being incremented.
+	
+	
+cardtest2: adventurerEffect()
+-----------------------------
+	In assignment 2, I introduced a bug to the adventurer card when I 
+	refactored the adventurer case in cardEffect() to the adventurerEffect() 
+	method. 
+		*** BUG introduced to adventurerEffect() method in Assignment 2 *** 
 		When evaluating the card that was drawn, a drawn copper card no 
 		longer increments drawntreasure. Namely, the line: 
 		  if (cardDrawn==copper || cardDrawn==silver || cardDrawn==gold) //original
@@ -35,7 +62,9 @@ cardtest2: adventurerEffect()
 		bug introduced in assignment 1. Testing for unexpected transactions. 
 		Checking supply counts..."
 	
+	
 cardtest3: cardEffect(sea_hag)
+------------------------------
  The sea_hag case in cardEffect() contains several bugs:
 	1. In this line in dominion.c cardEffect's sea_hag case, 
 	state->discard[i][state->discardCount[i]] =	state->deck[i][state->deckCount[i]--]; 

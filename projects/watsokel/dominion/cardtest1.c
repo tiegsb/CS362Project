@@ -34,7 +34,8 @@ int supplyCheck(struct gameState *S, int cardType, const char* cardName, int exp
 int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	int err=0; //used in place of assertion failure: test passed=0; assertion failure=1
 	int expectedHandCount = 5;
-	int expectedDeckCount;
+	int expectedDeckCount = 10;
+	int expectedDiscardCount = 0;
 	
 	int otherPlayer = player==0? 1:0; 
 	
@@ -48,6 +49,29 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 		printf("  BEFORE smithyEffect() call: PASS, handCount=%d, expected=%d\n", state->handCount[player], expectedHandCount);
 		#endif 
 	}
+
+	if(state->deckCount[player] != expectedDeckCount){
+		#if (NOISY_TEST==1)
+		printf("  BEFORE smithyEffect() call: FAIL, deckCount=%d, expected=%d\n", state->deckCount[player], expectedDeckCount);
+		#endif 
+		err++;
+	} else{
+		#if (NOISY_TEST==1)
+		printf("  BEFORE smithyEffect() call: PASS, deckCount=%d, expected=%d\n", state->deckCount[player], expectedDeckCount);
+		#endif 
+	}
+
+	if(state->discardCount[player] != expectedDiscardCount){
+		#if (NOISY_TEST==1)
+		printf("  BEFORE smithyEffect() call: FAIL, discardCount=%d, expected=%d\n", state->discardCount[player], expectedDiscardCount);
+		#endif 
+		err++;
+	} else{
+		#if (NOISY_TEST==1)
+		printf("  BEFORE smithyEffect() call: PASS, discardCount=%d, expected=%d\n", state->discardCount[player], expectedDiscardCount);
+		#endif 
+	}
+
 	
 	/*print player's hand and deck prior to playing smithy*/
 	int i, numSmithys=0, expectedSmithys=5;
@@ -66,6 +90,7 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	}
 	
 	int r = smithyEffect(player, state, handPosition);
+	
 	if(r != 0){
 		#if (NOISY_TEST==1)
 		printf("  AFTER smithyEffect() call: FAIL, return value=%d, expected=%d\n", r, 0);
@@ -76,6 +101,7 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 		printf("  AFTER smithyEffect() call: PASS, return value=%d, expected=%d\n", r, 0);
 		#endif 
 	}
+	
 	expectedHandCount = 7; //5 in hand + 3 drawn - 1 smithy = 7
 	if(state->handCount[player] != expectedHandCount){
 		#if (NOISY_TEST==1)
@@ -96,6 +122,18 @@ int checkSmithyEffect(int player, struct gameState *state, int handPosition){
 	} else{
 		#if (NOISY_TEST==1)
 		printf("    PASS, deckCount=%d, expected=%d\n", state->deckCount[player], expectedDeckCount);
+		#endif 
+	}  
+	
+	expectedDiscardCount = 1; //10 in original deck -3 for smithy draw = 7
+	if(state->discardCount[player] != expectedDiscardCount){
+		#if (NOISY_TEST==1)
+		printf("    FAIL, discardCount=%d, expected=%d\n", state->discardCount[player], expectedDiscardCount);
+		#endif 
+		err++;
+	} else{
+		#if (NOISY_TEST==1)
+		printf("    PASS, discardCount=%d, expected=%d\n", state->discardCount[player], expectedDiscardCount);
 		#endif 
 	}  
 
