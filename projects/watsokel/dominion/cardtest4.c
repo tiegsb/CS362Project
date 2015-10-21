@@ -1,20 +1,10 @@
 /* -----------------------------------------------------------------------
 * Programmed by: Kelvin Watson
-* Filename: cardtest3.c
+* Filename: cardtest4.c
 * Created: 15 Oct 2015
 * Last modified: 17 Oct 2015
-* Description: Unit tests for dominion.c's sea_hag case in the cardEffect() 
+* Description: Unit tests for dominion.c's steward case in the cardEffect() 
 * function.
-* NOTE: BUGS IDENTIFIED:
-	I am quite confident that the sea_hag case in cardEffect() contains 
-	several bugs. Namely, the deck count is erroneously reduced by 3 cards, 
-	when the overall deck count should not have changed - i.e. the deck 
-	count should have only been decremented once when top of deck was 
-	discarded, then incremented when curse card was added. Instead, the deck 
-	count was decremented three times and the deck was not incremented when 
-	the curse was placed at the top of the pile. Also, the supply count of 
-	curse cards was not decremented when the curse card was placed on top 
-	of opponents' decks.
 * -----------------------------------------------------------------------
 */
 #include "dominion.h"

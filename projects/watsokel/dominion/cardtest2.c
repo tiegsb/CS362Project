@@ -1,6 +1,6 @@
 /* -----------------------------------------------------------------------
 * Programmed by: Kelvin Watson
-* Filename: cardtest1.c
+* Filename: cardtest2.c
 * Created: 15 Oct 2015
 * Last modified: 15 Oct 2015
 * Description: Unit tests for dominion.c 's adventurerEffect() function
