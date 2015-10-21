@@ -51,7 +51,6 @@ int main() {
 	//int estatesOnStart = 3;
 	//int coppersOnStart = 7;
 	int estates[MAX_HAND];
-	int coppers[MAX_HAND];
 	int curses[MAX_HAND];
 	int errFlag = 0;
 	for (i = 0; i < MAX_HAND; i++){

@@ -24,7 +24,7 @@ int checkDiscardCard(int handPos, int player, struct gameState* state,int handCo
 
 
 int main() {
-  int i,p,r;
+  int p,r;
   int seed = 1000;
   int numPlayers = 2;
   int k[10] = {adventurer, council_room, feast, gardens, mine
