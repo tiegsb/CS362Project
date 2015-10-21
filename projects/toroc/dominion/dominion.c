@@ -1322,7 +1322,8 @@ int adventurerCard(struct gameState* state, int currentPlayer)
 	
 		if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
 		  drawntreasure++;
-		else if (cardDrawn == silver)
+		
+		if (cardDrawn == silver)
 		{
 			drawntreasure--;
 			temphand[z]=cardDrawn;

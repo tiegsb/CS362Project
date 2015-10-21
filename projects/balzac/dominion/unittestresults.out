@@ -1,0 +1,169 @@
+Result for running unit tests:
+unittest1.c
+
+TESTING discardCard():
+Copper, Silver, Village, Gold, Smithy, 
+Discard village card trash flag set to 0
+PASS - card added to played pile when trash flag set to 0.
+FAIL - card NOT added to discard pile.
+PASS - Last card replaced discarded card's position.
+Copper, Silver, Smithy, Gold, 
+PASS - card has been discarded from player's hand
+
+Discard gold card trash flag set to 1
+PASS - card NOT added to played pile when trash flag set to 1.
+FAIL - card NOT added to discard pile.
+PASS - Last card's position in hand discarded NOT replaced with another card.
+Copper, Silver, Smithy, 
+PASS - card has been discarded from player's hand
+
+Copper, 
+PASS - Player's hand is empty.
+PASS - card has been discarded from player's hand
+
+File 'dominion.c'
+Lines executed:17.71% of 576
+dominion.c:creating 'dominion.c.gcov'
+
+unittest2.c
+
+TESTING drawCard():
+Draw card with cards left in deck.
+PASS - card added to player's hand.
+PASS - card removed from deck pile.
+PASS - deck count is NOT less than 0.
+
+Draw card with 0 cards left in deck and 5 cards in discard pile.
+PASS - discard pile added to deck pile.
+PASS - discard pile is empty.
+PASS - card added to player's hand.
+PASS - card removed from deck pile.
+PASS - deck count is NOT less than 0.
+
+Draw card with 0 cards left in deck but -1 discard pile.
+PASS - discard pile added to deck pile.
+PASS - discard pile is empty.
+PASS - card added to player's hand.
+PASS - card removed from deck pile.
+FAIL - deck count is less than 0.
+File 'dominion.c'
+Lines executed:18.40% of 576
+dominion.c:creating 'dominion.c.gcov'
+
+unittest3.c
+
+TESTING isGameOver():
+Determine if game is over when Province card stack is empty.
+PASS - Game is NOT over when 1 Province remaining.
+PASS - Game is over when 0 Province remaining.
+
+Determine if game is over when 3 coin card stacks are empty; copper, silver, gold.
+PASS - Game is NOT over when 1 card stack empty.
+PASS - Game is NOT over when 2 card stacks are empty.
+PASS - Game is over when 3 card stacks are empty.
+
+Determine if game is over when 3 action card stacks are empty; Smithy, Village, Treasure Map
+PASS - Game is NOT over when 1 card stack empty.
+PASS - Game is NOT over when 2 card stacks are empty.
+FAIL - Game is NOT over when 3 card stacks are empty.
+File 'dominion.c'
+Lines executed:17.36% of 576
+dominion.c:creating 'dominion.c.gcov'
+
+unittest4.c
+
+TESTING scoreFor():
+
+Player Hand
+Curse, Silver, Village, Gold, Duchy, 
+Score for Player's Hand is 2
+PASS - Score correctly calculated for cards in Player's Hand
+
+Discard Pile
+Village, Smithy, Estate, Duchy, Curse, 
+Score for Player's Discard pile is 0
+FAIL - Score NOT correctly calculated for cards in Player's discard pile
+
+Deck Pile
+Curse, Curse, Village, Great Hall, Province, 
+Score Player's Deck pile is 0
+FAIL - Score NOT correctly calculated for cards in Player's deck pile
+File 'dominion.c'
+Lines executed:17.71% of 576
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest1.c
+
+TESTING smithy_card():
+Test player 1 with 5 card(s) with 1 card being a Smithy card.
+Copper, Village, Silver, Smithy, Mine, 
+PASS - Smithy card is in player's hand
+Using Smithy card...
+FAIL - Player 1 has not received the proper amount of cards.
+Copper, Village, Silver, Estate, Mine, Copper, 
+PASS - Smithy card was discarded from hand.
+File 'dominion.c'
+Lines executed:18.06% of 576
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest2.c
+
+TESTING adventurer_card():
+Test player 1 with 5 card(s) with 1 card being an Adventurer card.
+Smithy, Village, Gardens, Adventurer, Mine, 
+PASS - Adventurer card is in player's hand
+Player's deck count is 0 and must be shuffled
+Using Adventurer card...
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+PASS - Adventurer card was discarded from hand.
+FAIL - Two treasure cards were NOT added to hand.
+File 'dominion.c'
+Lines executed:20.14% of 576
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest3.c
+
+TESTING Village card:
+Test player 0 with 5 card(s) with 1 card being a Village card.
+Copper, Village, Silver, Gold, Mine, 
+PASS - Village card is in player's hand
+Using Village card...
+PASS - Player 0 has received 1 card.
+FAIL - Player gained 2 actions but action to play card was not decremented.
+Copper, Copper, Silver, Gold, Mine, 
+PASS - Village card has been discarded from player's hand
+File 'dominion.c'
+Lines executed:19.97% of 576
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest4.c
+
+TESTING steward_card() with three different choices:
+Test player 0 with 5 card(s) with 1 card being a Steward card.
+
+Feast, Village, Steward, Smithy, Mine, 
+PASS - Steward card is in player's hand
+Using steward card choice1 is 0
+FAIL - 2 cards NOT discarded.
+Mine, 
+PASS - Steward card has been discarded from player's hand
+
+Feast, Village, Steward, Smithy, Mine, 
+PASS - Steward card is in player's hand
+Using steward card choice1 is 1
+FAIL - Player 0 has not received 2 cards.
+Feast, Village, Mine, Smithy, 
+PASS - Steward card has been discarded from player's hand
+
+Feast, Village, Steward, Smithy, Mine, 
+PASS - Steward card is in player's hand
+Using steward card choice1 is 2
+FAIL - Player 0 has not received 2 coins.
+Feast, Village, Copper, Smithy, Mine, Copper, 
+PASS - Steward card has been discarded from player's hand
+
+File 'dominion.c'
+Lines executed:19.44% of 576
+dominion.c:creating 'dominion.c.gcov'
+
