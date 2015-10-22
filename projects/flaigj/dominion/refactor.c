@@ -1,27 +1,40 @@
-Jana Gallina
-CS362 Fall 2015
-Assignment 2
-October 11, 2015
+/*
+Author: Jason Flaig
+
+smithyCard: 
+Changed line 319 
+from -  for (i = 0; i < 3; i++)
+to -	for (i = 0; i <= 3; i++)
 
 
-Pick five cards implemented in dominion.c. Choose 3 cards of your choice and smithy and adventurer cards are 
-mandatory. Refactor the code so that these cards are implemented in their own functions, rather than as part 
-of the switch statement in cardEffect. You should call the functions for these cards in the appropriate place 
-in cardEffect. Check in your changes, with appropriate git commit messages. Document your changes in a text file 
-in your dominion source directory, called “refactor.c.” Your implementation of at least 4 of these 5 cards should 
-be incorrect in some way, i.e., you should introduce subtle bugs that are hard to catch in your changes. Introducing 
-bugs in smithy and adventurer is mandatory.  Write information of your bugs also in refactor.c.   Later in this class, 
-other students will test your code, so try to keep your bugs not superficial. Refactored program should compile 
-without any error.
+adventurerCard: 
+Removed '|| cardDrawn == gold' from line 335's if statement so it's changed
+to - 	if (cardDrawn == copper || cardDrawn == silver)
 
 
-Refactored cards:
-Smithy: In the call to the discardCard function, the value being passed as trashFlag is 1 instead if 0. 
+minionCard: 
+No error here: just throws off person to look at this first while the second 
+change in minionCard is an error
+Removed line 372 // draw 4
+Changed line 373 from - (i = 0; i < 4; i++)
+to - for (i = 0; i <= 3; i++)
 
-Adventurer: In the while loop, the loop should run as long as drawntreasure is less than 2, not less than or equal to 2.
+Condensed line 390 and 391 to just line 390  
+from - 390 //draw 4
+ 	   391 for (j = 0; j < 4; j++)
+to -   390 for (j = 0; j <= 4; j++)
 
-Village: In the call to the discardCard function, the value being passed as trashFlag is 9 instead if 0.  
 
-Feast: In the final for loop to reset the hand, the value of i should be less than or equal to state->handcount...
+tributeCard: 
+Removed line 428 which was - shuffle(nextPlayer,state);//Shuffle the deck
 
-Council_Room: Implemented in own function but no bugs
+
+council_roomCard: 
+Changed line 463
+from - for (i = 0; i < 4; i++)
+to - for (i = 0; i <= 4; i++)
+
+Removed lines 468 and 469
+//+1 Buy
+state->numBuys++;
+*/
