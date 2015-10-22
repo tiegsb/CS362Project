@@ -17,16 +17,16 @@
 
 
 void test(){
-  struct gameState game;
+  struct gameState *game;
   srand(time(NULL));
   int r = rand();
   int player = 0;
-  int card, position, same, index;
+  int card, position, same, index, i;
   int testDeck[500];
 
   //Initial check, first if
   game->deckCount[player] = 0;
-  if(shuffle(player, &game) == -1){
+  if(shuffle(player, game) == -1){
     printf("shuffle() test 1:  PASSED - first if\n");
   }
   else{
@@ -46,14 +46,14 @@ void test(){
       testDeck[i] = game->deck[player][i];
     }
 
-    shuffle(player, &game);
+    shuffle(player, game);
 
     for(i = 0; i <= position; i++){
       if(testDeck[i] == game->deck[player][i]){
         same++;
       }
     }
-    if((float(same/index) > 0.75){
+    if((float)(same)/index > 0.75){
       printf("shuffle() increase random test:  FAIL\n");
       printf("Amount of Cards:  %d\tPercent same:  %.1f\n\n", index, (float)(same/index*100));
     }
@@ -76,14 +76,14 @@ void test(){
       testDeck[i] = card;
     } 
 
-    shuffle(player, &game);
+    shuffle(player, game);
 
     for(i = 0; i < 500; i++){
       if(testDeck[i] == game->deck[player][i]){
         same++;
       }
     }
-    if((float(same/500) > 0.75){
+    if(((float)(same)/500) > 0.75){
       printf("shuffle() 500 random test:  FAIL\n");
       printf("%d:  Percent same:  %.1f\n\n", index+1, (float)(same/index*100));
     }

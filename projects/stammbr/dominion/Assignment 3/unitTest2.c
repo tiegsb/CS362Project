@@ -16,7 +16,7 @@
 #include <time.h>
 
 void test(){
-  struct gameState game;
+  struct gameState *game;
 
   int i, total, player = 0;
   int bonus = 0;

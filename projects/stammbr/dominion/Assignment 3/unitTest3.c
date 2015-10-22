@@ -15,8 +15,8 @@
 #include <stdlib.h>
 #include <time.h>
 
- void test{
-	struct gameState game;
+ void test() {
+	struct gameState *game;
   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
            sea_hag, tribute, smithy};
 	int supplyPos, toFlag, player, testA, testB;
@@ -25,7 +25,7 @@
   int r = rand();
 
   //Setting up a game, so all values are filled.
-  intializeGame(2, k, r, &game);
+  intializeGame(2, k, r, game);
   supplyPos = 1;
   game->supplyCount[supplyPos] = 0;
 
@@ -41,8 +41,8 @@
   game->supplyCount[supplyPos] = 8;
   player = 1;
   toFlag = 0;
-  testA = state->discardCount[player];
-  testB = state->supplyCount[supplyPos];
+  testA = game->discardCount[player];
+  testB = game->supplyCount[supplyPos];
   if(gainCard(supplyPos, game, toFlag, player) == -1){
     printf("gainCard():  Error test two, first if.\n");
   }
@@ -64,7 +64,7 @@
   toFlag = 1;
   game->discardCount[player] = testA;
   game->supplyCount[supplyPos] = testB;
-  testA = game->deckCount[player]
+  testA = game->deckCount[player];
   if(gainCard(supplyPos, game, toFlag, player) == -1){
     printf("gainCard():  Error test three, first if.\n");
   }

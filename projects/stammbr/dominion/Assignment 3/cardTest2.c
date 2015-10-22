@@ -39,7 +39,7 @@ int setHand(struct gameState *g, int card, int r, int choice){
       newCard = r % 27;
       g->hand[1][i] = newCard;
     }
-    g->deck[1] = MAX_HAND;
+    g->deckCount[1] = MAX_HAND;
     return 0;
   }
   else{
@@ -52,8 +52,8 @@ int setHand(struct gameState *g, int card, int r, int choice){
   return 1;
 }
 
-void test{
-	struct gameState game;
+void test(){
+	struct gameState *game;
 	int player = 1;
   int counter = 1;
   int treasureCounter, i;
@@ -62,19 +62,19 @@ void test{
   int r = rand();
 
   //Initial check
-  if(setHand(&game, copper, r, 1)){
+  if(setHand(game, copper, r, 1)){
     printf("%d:  Error setting DECK.\n", counter);
-    if(setHand(&game, estate, r, 0)){
+    if(setHand(game, estate, r, 0)){
       printf("%d:  Error setting HAND.\n", counter);
     }
   }
-  if(adventurerMethod(&game, temphand, player) != 0){
+  if(adventurerMethod(game, tempHand, player) != 0){
     printf("%d:  Error unknown.\n", counter);
     counter++;
   }
   else{
     treasureCounter = 0;
-    for(i=0;i<game->handCount;i++){
+    for(i=0;i<game->handCount[player];i++){
       if(game->hand[player][i] == copper){
         treasureCounter++;
       }
@@ -89,19 +89,19 @@ void test{
   }
 
   //Second check, large deck, only last cards are copper
-  if(setHand(&game, copper, r, 2)){
+  if(setHand(game, copper, r, 2)){
     printf("%d:  Error setting DECK.\n", counter);
-    if(setHand(&game, estate, r, 0)){
+    if(setHand(game, estate, r, 0)){
       printf("%d:  Error setting HAND.\n", counter);
     }
   }
-  if(adventurerMethod(&game, temphand, player) != 0){
+  if(adventurerMethod(game, tempHand, player) != 0){
     printf("%d:  Error unknown.\n", counter);
     counter++;
   }
   else{
     treasureCounter = 0;
-    for(i=0;i<game->handCount;i++){
+    for(i=0;i<game->handCount[player];i++){
       if(game->hand[player][i] == copper){
         treasureCounter++;
       }
@@ -116,19 +116,19 @@ void test{
   }
 
   //Third check, random deck, only last cards are copper
-  if(setHand(&game, copper, r, 3)){
+  if(setHand(game, copper, r, 3)){
     printf("%d:  Error setting DECK.\n", counter);
-    if(setHand(&game, estate, r, 0)){
+    if(setHand(game, estate, r, 0)){
       printf("%d:  Error setting HAND.\n", counter);
     }
   }
-  if(adventurerMethod(&game, temphand, player) != 0){
+  if(adventurerMethod(game, tempHand, player) != 0){
     printf("%d:  Error unknown.\n", counter);
     counter++;
   }
   else{
     treasureCounter = 0;
-    for(i=0;i<game->handCount;i++){
+    for(i=0;i<game->handCount[player];i++){
       if(game->hand[player][i] == copper){
         treasureCounter++;
       }
@@ -143,19 +143,19 @@ void test{
   }
 
   //Fourth check, no treasure in deck, only last cards are copper
-  if(setHand(&game, curse, r, 1)){
+  if(setHand(game, curse, r, 1)){
     printf("%d:  Error setting DECK.\n", counter);
-    if(setHand(&game, estate, r, 0)){
+    if(setHand(game, estate, r, 0)){
       printf("%d:  Error setting HAND.\n", counter);
     }
   }
-  if(adventurerMethod(&game, temphand, player) != 0){
+  if(adventurerMethod(game, tempHand, player) != 0){
     printf("%d:  Error unknown.  NO TREASURE.\n", counter);
     counter++;
   }
   else{
     treasureCounter = 0;
-    for(i=0;i<game->handCount;i++){
+    for(i=0;i<game->handCount[player];i++){
       if(game->hand[player][i] == copper){
         treasureCounter++;
       }
