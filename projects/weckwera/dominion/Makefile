@@ -3,8 +3,14 @@ CFLAGS = -Wall -fpic -coverage -lm
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
 
+refactor.o: dominion.h refactor.c rngs.o
+	gcc -c refactor.c -g  $(CFLAGS)
+
 dominion.o: dominion.h dominion.c rngs.o
 	gcc -c dominion.c -g  $(CFLAGS)
+
+playdomrefactor: refactor.o playdom.c
+	gcc -o playdom playdom.c -g refactor.o rngs.o $(CFLAGS)
 
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)

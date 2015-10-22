@@ -25,9 +25,9 @@ drawCard(). At the end of the player's turn, all cards are discarded with discar
 
 Adenturer Card:
 Player draws additional cards in a loop using drawCard() until two treasure cards are drawn.
-Treasure is monitored via the found variable, incrementing when treasure is found. The
-treasure cards are kept in the player's hand, and the other drawn cards keptina  temporary
-pile. When found reaches 2, the temporary hand is discarded with state->discard.
+Treasure is monitored via the drawntreasure variable, incrementing when treasure is found. The
+treasure cards are kept in the player's hand, and the other drawn cards kept in a  temporary
+pile. When drawntreasure reaches 2, the temporary hand is discarded with state->discard.
 
 -----------------------------------------------------------------------------------------------------
 

@@ -1,0 +1,5 @@
+bug1: Adventurer() will draw an extra card each time it is used.
+bug2: Salvager() does not remove itself from the user's hand after it is played.
+bug3: sea_hag() puts a "cutpurse" instead of a "curse" on top of each other player's deck.
+bug4: smithy() removes the next card from the user's hand instead of itself. 
+ 
