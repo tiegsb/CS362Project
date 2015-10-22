@@ -9,13 +9,16 @@ dominion.o: dominion.h dominion.c rngs.o
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
 
-unittests: unittest1.c unittest2.c unittest3.c unittest4.c unittest5.c cardtest1.c dominion.o rngs.o
+unittests: unittest1.c unittest2.c unittest3.c unittest4.c unittest5.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c dominion.o rngs.o
 	gcc -o unittest1 -g unittest1.c dominion.o rngs.o $(CFLAGS)
 	gcc -o unittest2 -g unittest2.c dominion.o rngs.o $(CFLAGS)
 	gcc -o unittest3 -g unittest3.c dominion.o rngs.o $(CFLAGS)	
 	gcc -o unittest4 -g unittest4.c dominion.o rngs.o $(CFLAGS)
 	gcc -o unittest5 -g unittest5.c dominion.o rngs.o $(CFLAGS)
 	gcc -o cardtest1 -g cardtest1.c dominion.o rngs.o $(CFLAGS)
+	gcc -o cardtest2 -g cardtest2.c dominion.o rngs.o $(CFLAGS)
+	gcc -o cardtest3 -g cardtest3.c dominion.o rngs.o $(CFLAGS)
+	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o $(CFLAGS)
 
 testDrawCard: testDrawCard.c dominion.o rngs.o
 	gcc -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
