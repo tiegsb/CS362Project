@@ -8,7 +8,6 @@
 
 #include "dominion.h"
 #include "dominion_helpers.h"
-#include "dominion.c"
 #include "rngs.h"
 #include <stdio.h>
 #include <math.h>
@@ -30,7 +29,7 @@ void test(){
   int testDiscard[500];
   int testTrialCard;
 
-  initilizeGame(4, k, r, game);
+  initializeGame(4, k, r, game);
 
 
   //same tests as smithy card

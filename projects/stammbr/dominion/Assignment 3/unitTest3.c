@@ -8,7 +8,6 @@
 
 #include "dominion.h"
 #include "dominion_helpers.h"
-#include "dominion.c"
 #include "rngs.h"
 #include <stdio.h>
 #include <math.h>
@@ -25,7 +24,7 @@
   int r = rand();
 
   //Setting up a game, so all values are filled.
-  intializeGame(2, k, r, game);
+  initializeGame(2, k, r, game);
   supplyPos = 1;
   game->supplyCount[supplyPos] = 0;
 

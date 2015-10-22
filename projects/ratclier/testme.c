@@ -5,25 +5,25 @@
 
 char inputChar()
 {
-    int idx;
-    char allowedChars[] = " resetaxRESETAX[({)]}"; // 21 characters total
+    char allowedChars[] = " resetaxRESETAX[({)]}";    // Allowed characters
+    int idx;                   // Random index for the allowedChars[] array
 
-    idx = rand() % 21;
+    idx = rand() % 21;         // Get a random index in range of allowedChars[]
 
     return allowedChars[idx];
 }
 
 char *inputString()
 {
-    int idx;
-    static char randomStr[6]; // Size has to be a constant
+    static char randomStr[6];  // Randomly generated string (const. length)
+    int idx;                   // Index for looping through randomStr[]
 
     for(idx = 0; idx < 5; idx++)
     {
-	    randomStr[idx] = inputChar();
+	    randomStr[idx] = inputChar(); // Assign a random character
     }
 
-    randomStr[5] = '\0';
+    randomStr[5] = '\0';       // Terminate the string
 
     return randomStr;
 }
