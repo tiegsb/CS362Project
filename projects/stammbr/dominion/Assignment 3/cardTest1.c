@@ -15,8 +15,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-void test{
-	struct gameState game;
+void test(){
+	struct gameState *game;
 	int player = 1;
   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
     sea_hag, tribute, smithy};
@@ -29,7 +29,7 @@ void test{
   int testDiscard[500];
   int testTrialCard;
 
-  initilizeGame(2, k, r, &game);
+  initilizeGame(2, k, r, game);
 
   //First check.  Set up same valuse
   for(i = 0; i < game->discardCount[player]; i++){
@@ -46,7 +46,7 @@ void test{
   testDiscardCount = game->discardCount[player];
   testDeckCount = game->deckCount[player];
 
-  if(smithyMethod(&game, player, 0) == 0){
+  if(smithyMethod(game, player, 0) == 0){
     if((testDiscardCount+1) == game->discardCount[player]){
       printf("smithyMethod() Test 1:  PASS, discard amounts equal.\n");
     }
@@ -100,7 +100,7 @@ void test{
     testDiscardCount = game->discardCount[player];
     testDeckCount = game->deckCount[player];
 
-    if(smithyMethod(&game, player, 0) == 0){
+    if(smithyMethod(game, player, 0) == 0){
       if((testDiscardCount+1) != game->discardCount[player]){
         printf("smithyMethod() Random Test %d:  FAIL, discard amounts NOT equal.\n", counter);
         failNum++;

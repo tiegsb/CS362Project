@@ -109,7 +109,7 @@ int main() {
 	int k[10] = {adventurer, sea_hag, council_room, feast, gardens, mine
 		, remodel, smithy, baron, salvager};
 	struct gameState G;
-	int handPos;
+	int handPos,handCount;
 	int maxHandCount = 5;
 	int estates[MAX_HAND];
 	int golds[MAX_HAND];
@@ -124,19 +124,23 @@ int main() {
 	}
 
 	printf ("TESTING discardCard():\n");
-	
+
 	for (p = 0; p < numPlayers; p++){
-		for(handPos = 0; handPos < maxHandCount; handPos++){
-			printf("Testing player %d and discard card position of %d:\n", p, handPos);
-			memset(&G, 23, sizeof(struct gameState));   // clear game state
-			r=initializeGame(numPlayers, k, seed, &G);  // initialize new game
-			G.handCount[p] = maxHandCount;                 // set the number of cards on hand
-			memcpy(G.hand[p], estates, sizeof(int) * maxHandCount); //set all cards in hand to estate
-			//printf("setting handPos=%d to be gold\n",handPos);
-			G.hand[p][handPos]=gold; //set one card to be gold
-			//printf("G.hand[p][gold]=%d\n",G.hand[p][handPos]);
-			if(checkDiscardCard(handPos,p,&G,maxHandCount,gold) == 1){ //attempt to remove the single gold card
-				err++;
+		for(handCount=0; handCount<=maxHandCount; handCount++){
+			for(handPos = 0; handPos < handCount; handPos++){
+				printf("Testing player %d and discard card position of %d:\n", p, handPos);
+				memset(&G, 23, sizeof(struct gameState));   // clear game state
+				r=initializeGame(numPlayers, k, seed, &G);  // initialize new game
+				G.handCount[p] = handCount;                 // set the number of cards on hand
+				if(handCount>0){
+					memcpy(G.hand[p], estates, sizeof(int) * handCount); //set all cards in hand to estate
+					//printf("setting handPos=%d to be gold\n",handPos);
+					if(handCount) G.hand[p][handPos]=gold; //set one card to be gold
+				}
+				//printf("G.hand[p][gold]=%d\n",G.hand[p][handPos]);
+				if(checkDiscardCard(handPos,p,&G,handCount,gold) == 1){ //attempt to remove the single gold card
+					err++;
+				}
 			}
 		}
 	}
