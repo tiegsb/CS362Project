@@ -18,6 +18,7 @@
 #define NOISY_TEST 0
 
 int main() {
+    printf ("TESTING getCost:\n");
     int i;
     for(i = 0; i < treasure_map + 2; i++)
     {//assert proper return value based on enueration in switch when 
