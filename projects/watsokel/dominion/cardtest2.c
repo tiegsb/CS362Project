@@ -110,36 +110,32 @@ int main() {
 	int errFlag=0;
 	int maxHandCount = 5; 
 	int maxDiscardCount = 5;
-	int maxDeckCount = 5;
-	int deckPos;
+	int maxDeckCount = 10;
 	int treasureCard;
 	
 	printf ("TESTING adventurerEffect():\n");
 
 	for(p = 0; p<numPlayer; p++){
-		for(deckPos = 0; deckPos <= maxDeckCount; deckPos++){
-			for(treasureCard = copper; treasureCard<=gold; treasureCard++){
-				printf("Testing player %d, deck count %d and treasure card %d\n", p,deckPos,treasureCard);
-				memset(&G, 23, sizeof(struct gameState));   // clear the game state
-				r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
-				G.handCount[p] = maxHandCount;                 // set the number of cards on hand
-				G.deckCount[p] = deckPos; //test with increasing deck count - tests with no deck to draw from in adventurer effect (improves code coverage as it forces shuffle and transfer to deck from discard pile)
-				//but then will need to pull from discard. hmm
-				G.discardCount[p] = maxDiscardCount;
-				memcpy(G.hand[p], adventurers, sizeof(int) * maxHandCount); //set all cards in hand to adventurer
-				if(treasureCard == gold){
-					memcpy(G.deck[p], golds, sizeof(int) * deckPos); // set all the cards to gold
-					memcpy(G.discard[p], golds, sizeof(int) * deckPos); // set all the cards to gold
-				} else if (treasureCard == silver){
-					memcpy(G.deck[p], silvers, sizeof(int) * deckPos); // set all the cards to gold
-					memcpy(G.discard[p], silvers, sizeof(int) * deckPos); // set all the cards to gold
-				} else{
-					memcpy(G.deck[p], coppers, sizeof(int) * deckPos); // set all the cards to gold
-					memcpy(G.discard[p], coppers, sizeof(int) * deckPos); // set all the cards to gold
-				}
-				if(checkAdventurerEffect(&G,p,treasureCard) > 0){
-					errFlag++;
-				}
+		for(treasureCard = copper; treasureCard<=gold; treasureCard++){
+			printf("Testing player %d, and treasure card %d\n", p,treasureCard);
+			memset(&G, 23, sizeof(struct gameState));   // clear the game state
+			r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
+			G.handCount[p] = maxHandCount;                 // set the number of cards on hand
+			G.deckCount[p] = maxDeckCount; 
+			G.discardCount[p] = maxDiscardCount;
+			memcpy(G.hand[p], adventurers, sizeof(int) * maxHandCount); //set all cards in hand to adventurer
+			if(treasureCard == gold){
+				memcpy(G.deck[p], golds, sizeof(int) * maxDeckCount); // set all the cards to gold
+				memcpy(G.discard[p], golds, sizeof(int) * maxDiscardCount); // set all the cards to gold
+			} else if (treasureCard == silver){
+				memcpy(G.deck[p], silvers, sizeof(int) * maxDeckCount); // set all the cards to silver
+				memcpy(G.discard[p], silvers, sizeof(int) * maxDiscardCount); // set all the cards to silver
+			} else{
+				memcpy(G.deck[p], coppers, sizeof(int) * maxDeckCount); // set all the cards to copper
+				memcpy(G.discard[p], silvers, sizeof(int) * maxDiscardCount); // set all the cards to copper
+			}
+			if(checkAdventurerEffect(&G,p,treasureCard) > 0){
+				errFlag++;
 			}
 		}
 	}

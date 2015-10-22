@@ -168,7 +168,7 @@ int main() {
 	int maxHandCount = 5;
 	int maxDeckCount = 10;
 	int opponent;
-	printf ("TESTING sea hag in cardEffect():\n");
+	printf ("TESTING sea_hag case in cardEffect():\n");
 	
 	for(p = 0; p<numPlayer; p++){
 		printf("Testing player %d\n", p);
