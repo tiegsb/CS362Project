@@ -24,9 +24,8 @@ int main() {
     int i;
     int seed = 1000;
     int numPlayer = 2;
-    int maxBonus = 10;
-    int p, r, handCount;
-    int bonus;
+    int r;
+
     int k[10] = {adventurer, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
@@ -35,31 +34,84 @@ int main() {
     int testCards[5] = {adventurer, council_room, feast, gardens, mine};
 
 
-    printf ("TESTING supplyCount():\n");
+    printf ("TESTING supplyCount(%d):\n", adventurer);
 
-    r = initializeGame(numPlayer, k, seed, &G);
-    
-    assert(supplyCount(7, &G) == 10);
-    assert(supplyCount(8, &G) == 10);
-    assert(supplyCount(9, &G) == 10);
-    assert(supplyCount(10, &G) == 8);
-    assert(supplyCount(11, &G) == 10);
-    
-    for (i = 0; i < 10; i++)
+    int p;
+    for (p=0; p< numPlayer; p++)
     {
-        G.supplyCount[7] = i;
-        G.supplyCount[8] = i;
-        G.supplyCount[9] = i;
-        G.supplyCount[10] = i;
-        G.supplyCount[11] = i;
-        assert(supplyCount(7, &G) == i);
-        assert(supplyCount(8, &G) == i);
-        assert(supplyCount(9, &G) == i);
-        assert(supplyCount(10, &G) == i);
-        assert(supplyCount(11, &G) == i);
+        r = initializeGame(numPlayer, k, seed, &G);
         
+#if (NOISY_TEST == 1)
+        printf("***Test for player %d\n",p);
+#endif
+        
+        G.whoseTurn = p;
+#if (NOISY_TEST == 1)
+        printf("Testing initial supply counts for player %d\n",p);
+#endif
+
+#if (NOISY_TEST == 1)
+        printf("Testing for card: %d\n",testCards[0]);
+#endif
+        assert(supplyCount(testCards[0], &G) == 10);
+#if (NOISY_TEST == 1)
+        printf("Testing for card: %d\n",testCards[1]);
+#endif
+      
+        assert(supplyCount(testCards[1], &G) == 10);
+#if (NOISY_TEST == 1)
+        printf("Testing for card: %d\n",testCards[2]);
+#endif
+
+        assert(supplyCount(testCards[2], &G) == 10);
+#if (NOISY_TEST == 1)
+        printf("Testing for card: %d\n",testCards[3]);
+#endif
+
+        assert(supplyCount(testCards[3], &G) == 8);
+#if (NOISY_TEST == 1)
+        printf("Testing for card: %d\n",testCards[4]);
+#endif
+
+        assert(supplyCount(testCards[4], &G) == 10);
+
+        
+        for (i = 0; i < 10; i++)
+        {
+            G.supplyCount[testCards[0]] = i;
+            G.supplyCount[testCards[1]] = i;
+            G.supplyCount[testCards[2]] = i;
+            G.supplyCount[testCards[3]] = i;
+            G.supplyCount[testCards[4]] = i;
+#if (NOISY_TEST == 1)
+            printf("Testing for card: %d and a supply count of %d\n",testCards[0], i);
+#endif
+            assert(supplyCount(testCards[0], &G) == i);
+#if (NOISY_TEST == 1)
+            printf("Testing for card: %d and a supply count of %d\n",testCards[1], i);
+#endif
+
+            assert(supplyCount(testCards[1], &G) == i);
+#if (NOISY_TEST == 1)
+            printf("Testing for card: %d and a supply count of %d\n",testCards[2], i);
+#endif
+
+            assert(supplyCount(testCards[2], &G) == i);
+#if (NOISY_TEST == 1)
+            printf("Testing for card: %d and a supply count of %d\n",testCards[3], i);
+#endif
+
+            assert(supplyCount(testCards[3], &G) == i);
+#if (NOISY_TEST == 1)
+            printf("Testing for card: %d and a supply count of %d\n",testCards[4], i);
+#endif
+
+            assert(supplyCount(testCards[4], &G) == i);
+            
+        }
+        
+
     }
-    
-    printf("All tests passed!");
+    printf("All tests passed!\n");
     return 0;
 }

@@ -20,18 +20,18 @@
 // handcard
 
 int main() {
-    int i;
+
     int seed = 1000;
     int numPlayer = 2;
-    int maxBonus = 10;
+
     int p, r, handCount;
-    int bonus;
+
     int k[10] = {adventurer, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
     int maxHandCount = 5;
 
-    printf ("TESTING handCount():\n");
+    printf ("TESTING handCard():\n");
     int testCards[5] = {adventurer, council_room, feast, gardens, mine};
     memset(&G, 23, sizeof(struct gameState));   // clear the game state
     
@@ -50,16 +50,21 @@ int main() {
                 G.hand[p][i] = testCards[i];
                 
             }
+#if (NOISY_TEST == 1)
+            printf("***Test for player %d with %d cards in hand\n",p,handCount);
+#endif
+
+            for (i = 0; i<handCount; i++)
+            {
+#if (NOISY_TEST == 1)
+                printf("Checking at hand position %d\n",i);
+#endif
+
+                assert(handCard(i, &G) == testCards[i]);
+
+            }
+            printf("\n");
         }
-    }
-    for (p=0; p<numPlayer; p++)
-    {
-        G.whoseTurn = p;
-        assert(handCard(0, &G) == 7);
-        assert(handCard(1, &G) == 8);
-        assert(handCard(2, &G) == 9);
-        assert(handCard(3, &G) == 10);
-        assert(handCard(4, &G) == 11);
     }
 
 

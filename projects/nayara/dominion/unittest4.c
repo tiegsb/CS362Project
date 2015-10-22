@@ -33,6 +33,8 @@ int main() {
     int maxHandCount = 5;
     int testCard = adventurer;
 
+    printf("Testing fullDeckCount()\n");
+
     for (p = 0; p <numPlayer; p++)
     {
         r = initializeGame(numPlayer, k, seed, &G);
@@ -46,12 +48,23 @@ int main() {
             G.discard[p][i] = 13;
             G.hand[p][i] = 13;
         }
+#if (NOISY_TEST == 1)
+        printf("***Test for player %d\n\n",p);
+#endif
+#if (NOISY_TEST == 1)
+        printf("Testing card %d for player %d\n",testCard, p);
+        printf("Expected: %d, Received: %d  \n",0, fullDeckCount(p, testCard,&G));
+#endif
         assert(fullDeckCount(p,testCard , &G) == 0);
 
         G.deck[p][0] = testCard;
         G.discard[p][0] = testCard;
         G.hand[p][0] = testCard;
         
+#if (NOISY_TEST == 1)
+        printf("Testing card %d for player %d\n",testCard, p);
+        printf("Expected: %d, Received: %d  \n",3, fullDeckCount(p, testCard,&G));
+#endif
         assert(fullDeckCount(p,testCard , &G) == 3);
 
         for (i = 0; i<MAX_DECK; i++)
@@ -60,11 +73,16 @@ int main() {
             G.discard[p][i] = testCard;
             G.hand[p][i] = testCard;
         }
+#if (NOISY_TEST == 1)
+        printf("Testing card %d for player %d\n",testCard, p);
+        printf("Expected: %d, Received: %d  \n",MAX_DECK + MAX_DECK + MAX_HAND, fullDeckCount(p, testCard,&G));
+#endif
         
         assert(fullDeckCount(p,testCard , &G) == (MAX_DECK + MAX_DECK + MAX_HAND) );
 
+        printf("\n");
     }
-
+    
 
     printf("All tests passed!\n");
 

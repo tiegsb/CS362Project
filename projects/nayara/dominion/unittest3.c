@@ -22,39 +22,33 @@
 
 
 int main() {
-    int i;
+
     int seed = 1000;
     int numPlayer = 2;
-    int maxBonus = 10;
     int p, r, handCount;
-    int bonus;
     int k[10] = {adventurer, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
     int maxHandCount = 5;
-    // arrays of all coppers, silvers, and golds
-    int coppers[MAX_HAND];
-    int silvers[MAX_HAND];
-    int golds[MAX_HAND];
-    for (i = 0; i < MAX_HAND; i++)
-    {
-        coppers[i] = copper;
-        silvers[i] = silver;
-        golds[i] = gold;
-    }
 
     printf ("TESTING numHandCards():\n");
     for (p = 0; p < numPlayer; p++)
     {
+#if (NOISY_TEST == 1)
+        printf("***Test for player %d\n",p);
+#endif
         for (handCount = 1; handCount <=maxHandCount; handCount++)
         {
             memset(&G, 23, sizeof(struct gameState));   // clear the game state
             r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
             G.whoseTurn = p;
             G.handCount[p] = handCount;
+#if (NOISY_TEST == 1)
+            printf("Testing hand count of %d for player %d\n",handCount, p);
+#endif
             assert(numHandCards(&G) == handCount);
         }
-        
+        printf("\n");
     }
     printf("All tests passed!\n");
 
