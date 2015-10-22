@@ -15,7 +15,8 @@
 #include <time.h>
 
 void test(){
-  struct gameState *game;
+  struct gameState g;
+  struct gameState *game = &g;
   srand(time(NULL));
   int r = rand();
   int j, i, k, c, truth;

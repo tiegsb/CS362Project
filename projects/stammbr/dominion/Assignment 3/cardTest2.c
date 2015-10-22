@@ -52,7 +52,8 @@ int setHand(struct gameState *g, int card, int r, int choice){
 }
 
 void test(){
-	struct gameState *game;
+  struct gameState g;
+  struct gameState *game = &g;
 	int player = 1;
   int counter = 1;
   int treasureCounter, i;

@@ -16,7 +16,8 @@
 
 
 void test(){
-  struct gameState *game;
+  struct gameState g;
+  struct gameState *game = &g;
   srand(time(NULL));
   int r = rand();
   int player = 0;

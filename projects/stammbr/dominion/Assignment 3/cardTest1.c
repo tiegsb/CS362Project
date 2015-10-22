@@ -15,7 +15,8 @@
 #include <time.h>
 
 void test(){
-	struct gameState *game;
+  struct gameState g;
+  struct gameState *game = &g;
 	int player = 1;
   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
     sea_hag, tribute, smithy};
