@@ -32,10 +32,10 @@ Result: -1 	 Expected: -1
 Result: -1 	 Expected: -1
 All tests passed
 File 'dominion.c'
-Lines executed:31.05% of 570
-Branches executed:28.78% of 417
-Taken at least once:26.14% of 417
-Calls executed:12.63% of 95
+Lines executed:5.26% of 570
+Branches executed:6.71% of 417
+Taken at least once:6.71% of 417
+Calls executed:0.00% of 95
 Creating 'dominion.c.gcov'
 
 unittest2.c:
@@ -85,10 +85,10 @@ DeckCount	 Before:15	 After:15
 Qty of Cards	 Before:15	 After:15
 All tests passed!
 File 'dominion.c'
-Lines executed:31.05% of 570
-Branches executed:28.78% of 417
-Taken at least once:26.14% of 417
-Calls executed:12.63% of 95
+Lines executed:21.05% of 570
+Branches executed:22.54% of 417
+Taken at least once:19.90% of 417
+Calls executed:7.37% of 95
 Creating 'dominion.c.gcov'
 
 unittest3.c:
@@ -136,10 +136,10 @@ Testing for 5 copper, 3 other cards
 Total Coins	 Expected: 5	 Result:5
 ALL TESTS PASSED!
 File 'dominion.c'
-Lines executed:31.05% of 570
-Branches executed:28.78% of 417
-Taken at least once:26.14% of 417
-Calls executed:12.63% of 95
+Lines executed:21.40% of 570
+Branches executed:22.54% of 417
+Taken at least once:20.38% of 417
+Calls executed:7.37% of 95
 Creating 'dominion.c.gcov'
 
 unittest4.c:
@@ -201,20 +201,20 @@ Drawn Card:	 Expected:5	 Result:5
 Hand Count	 Expected: 1	 Result:1
 ALL TESTS PASSED!
 File 'dominion.c'
-Lines executed:31.05% of 570
-Branches executed:28.78% of 417
-Taken at least once:26.14% of 417
-Calls executed:12.63% of 95
+Lines executed:23.68% of 570
+Branches executed:23.50% of 417
+Taken at least once:21.34% of 417
+Calls executed:8.42% of 95
 Creating 'dominion.c.gcov'
 
 cardtest1.c:
 TESTING SMITHY CARD
-Testing for player 1
+Testing for smithy card at index 0 of hand
 Hand Count	 Expected: 12	 Result:13
 Deck Count	 Expected: 7	 Result:6
-Added Cards (No.1)	 Expected: 15	 Result:15
+Added Cards (No.1)	 Expected: 9	 Result:9
 Added Cards (No.2)	 Expected: 15	 Result:15
-Added Cards (No.3)	 Expected: 15	 Result:15
+Added Cards (No.3)	 Expected: 9	 Result:15
 HandCount for player 2	 Expected: 15	 Result:15
 HandCount for player 3	 Expected: 12	 Result:12
 HandCount for player 4	 Expected: 5	 Result:5
@@ -223,14 +223,15 @@ Smithy count	 Expected: 0	 Result:0
 Discard count 	 Expected: 1	 Result:0
 Unexpected handcount
 Unexcpected deckCount
+Unexpected card added to hand
 Discard count not incremented
 FAILURES
-Testing for player 2
+Testing for smithy card at last index of hand
 Hand Count	 Expected: 17	 Result:18
 Deck Count	 Expected: 7	 Result:6
-Added Cards (No.1)	 Expected: 14	 Result:14
+Added Cards (No.1)	 Expected: 10	 Result:10
 Added Cards (No.2)	 Expected: 14	 Result:14
-Added Cards (No.3)	 Expected: 14	 Result:14
+Added Cards (No.3)	 Expected: 10	 Result:14
 HandCount for player 1	 Expected: 10	 Result:10
 HandCount for player 3	 Expected: 12	 Result:12
 HandCount for player 4	 Expected: 5	 Result:5
@@ -239,14 +240,15 @@ Smithy count	 Expected: 0	 Result:0
 Discard count 	 Expected: 1	 Result:0
 Unexpected handcount
 Unexcpected deckCount
+Unexpected card added to hand
 Discard count not incremented
 FAILURES
-Testing for player 3
+Normal testing mode
 Hand Count	 Expected: 14	 Result:15
 Deck Count	 Expected: 7	 Result:6
-Added Cards (No.1)	 Expected: 25	 Result:25
+Added Cards (No.1)	 Expected: 11	 Result:11
 Added Cards (No.2)	 Expected: 25	 Result:25
-Added Cards (No.3)	 Expected: 25	 Result:25
+Added Cards (No.3)	 Expected: 11	 Result:25
 HandCount for player 1	 Expected: 10	 Result:10
 HandCount for player 2	 Expected: 15	 Result:15
 HandCount for player 4	 Expected: 5	 Result:5
@@ -255,14 +257,15 @@ Smithy count	 Expected: 0	 Result:0
 Discard count 	 Expected: 1	 Result:0
 Unexpected handcount
 Unexcpected deckCount
+Unexpected card added to hand
 Discard count not incremented
 FAILURES
-Testing for player 4
+Normal testing mode
 Hand Count	 Expected: 7	 Result:8
 Deck Count	 Expected: 7	 Result:6
-Added Cards (No.1)	 Expected: 7	 Result:7
+Added Cards (No.1)	 Expected: 12	 Result:12
 Added Cards (No.2)	 Expected: 7	 Result:7
-Added Cards (No.3)	 Expected: 7	 Result:7
+Added Cards (No.3)	 Expected: 12	 Result:7
 HandCount for player 1	 Expected: 10	 Result:10
 HandCount for player 2	 Expected: 15	 Result:15
 HandCount for player 3	 Expected: 12	 Result:12
@@ -271,43 +274,39 @@ Smithy count	 Expected: 0	 Result:0
 Discard count 	 Expected: 1	 Result:0
 Unexpected handcount
 Unexcpected deckCount
+Unexpected card added to hand
 Discard count not incremented
 FAILURES
 File 'dominion.c'
-Lines executed:31.05% of 570
-Branches executed:28.78% of 417
-Taken at least once:26.14% of 417
-Calls executed:12.63% of 95
+Lines executed:27.72% of 570
+Branches executed:25.90% of 417
+Taken at least once:23.50% of 417
+Calls executed:10.53% of 95
 Creating 'dominion.c.gcov'
 
 cardtest2.c:
 TESTING ADVENTURER CARD
 Testing for 0 treasure cards in deck
-Result is 12
-discardCard is 0
 Hand Count	 Expected:10	 Result:10
 Deck Count	 Expected:-2	 Result:0
 Discard Count	 Expected:0	 Result:0
 Unexcpected deckCount
 FAILURES
 Testing for all gold cards in deck
-Result is 2
-discardCard is 0
 Hand Count	 Expected:16	 Result:17
-Deck Count	 Expected:8	 Result:8
-Discard Count	 Expected:3	 Result:0
+Deck Count	 Expected:6	 Result:6
+Discard Count	 Expected:5	 Result:0
 HandCount for player 1	 Expected: 10	 Result:10
 HandCount for player 3	 Expected: 12	 Result:12
 HandCount for player 4	 Expected: 5	 Result:5
 Coins	 Expected: 4	 Result:4
 Adventurer count	 Expected: 0	 Result:1
 Unexpected handcount
+Unexcpected deckCount
 Unexcpected discardCount
 Adventurer card not discarded
 FAILURES
 Testing for 2 treasure cards in deck
-Result is 10
-discardCard is 0
 Hand Count	 Expected:13	 Result:14
 Deck Count	 Expected:0	 Result:0
 Discard Count	 Expected:11	 Result:0
@@ -319,13 +318,9 @@ Adventurer count	 Expected: 0	 Result:1
 Unexpected handcount
 Unexcpected deckCount
 Unexcpected discardCount
-Treasurer card not added to hand
-Treasurer card not found in player's previous deck
 Adventurer card not discarded
 FAILURES
 Testing for 4 treasure cards in deck
-Result is 8
-discardCard is 0
 Hand Count	 Expected:6	 Result:7
 Deck Count	 Expected:2	 Result:2
 Discard Count	 Expected:9	 Result:0
@@ -341,5 +336,222 @@ Adventurer card not discarded
 FAILURES
 File 'dominion.c'
 Lines executed:31.05% of 570
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+TESTING COUNCIL CARD
+Testing for council card at index 0 of hand
+Hand Count	 Expected: 12	 Result:14
+Deck Count	 Expected: 6	 Result:5
+Added Cards (No.1)	 Expected: 9	 Result:9
+Added Cards (No.2)	 Expected: 15	 Result:15
+Added Cards (No.3)	 Expected: 9	 Result:9
+Added Cards (No.4)	 Expected: 15	 Result:9
+Buys	 Expected: 2	 Result:2
+HandCount p2	 Expected: 16	 Result:15
+DeckCount p2	 Expected: 9	 Result:10
+AddedCard p2	 Expected: 10	 Result:5
+HandCount p3	 Expected: 13	 Result:12
+DeckCount p3	 Expected: 9	 Result:10
+AddedCard p3	 Expected: 11	 Result:6
+HandCount p4	 Expected: 6	 Result:5
+DeckCount p4	 Expected: 9	 Result:10
+AddedCard p4	 Expected: 12	 Result:10
+Coins	 Expected: 4	 Result:4
+Council count	 Expected: 0	 Result:0
+Discard count 	 Expected: 1	 Result:0
+Unexpected handcount
+Unexpected deckCount
+Unexpected card added to hand
+Unexpected Handcount p2
+Unexpected Deckcount p2
+Unexpected cardAdded p2
+Unexpected Handcount p3
+Unexpected Deckcount p3
+Unexpected cardAdded p3
+Unexpected Handcount p4
+Unexpected Deckcount p4
+Unexpected cardAdded p4
+Discard count not incremented
+FAILURES
+Testing for council card at last index of hand
+Hand Count	 Expected: 17	 Result:19
+Deck Count	 Expected: 6	 Result:5
+Added Cards (No.1)	 Expected: 10	 Result:10
+Added Cards (No.2)	 Expected: 14	 Result:14
+Added Cards (No.3)	 Expected: 10	 Result:10
+Added Cards (No.4)	 Expected: 14	 Result:10
+Buys	 Expected: 2	 Result:2
+HandCount p1	 Expected: 11	 Result:10
+DeckCount p1	 Expected: 9	 Result:10
+AddedCard p1	 Expected: 9	 Result:4
+HandCount p3	 Expected: 13	 Result:12
+DeckCount p3	 Expected: 9	 Result:10
+AddedCard p3	 Expected: 11	 Result:6
+HandCount p4	 Expected: 6	 Result:5
+DeckCount p4	 Expected: 9	 Result:10
+AddedCard p4	 Expected: 12	 Result:10
+Coins	 Expected: 4	 Result:4
+Council count	 Expected: -1	 Result:0
+Discard count 	 Expected: 1	 Result:0
+Unexpected handcount
+Unexpected deckCount
+Unexpected card added to hand
+Unexpected Handcount p1
+Unexpected Deckcount p1
+Unexpected cardAdded p1
+Unexpected Handcount p3
+Unexpected Deckcount p3
+Unexpected cardAdded p3
+Unexpected Handcount p4
+Unexpected Deckcount p4
+Unexpected cardAdded p4
+Council card not discarded
+Discard count not incremented
+FAILURES
+Normal testing mode
+Hand Count	 Expected: 14	 Result:16
+Deck Count	 Expected: 6	 Result:5
+Added Cards (No.1)	 Expected: 11	 Result:11
+Added Cards (No.2)	 Expected: 25	 Result:25
+Added Cards (No.3)	 Expected: 11	 Result:11
+Added Cards (No.4)	 Expected: 25	 Result:11
+Buys	 Expected: 2	 Result:2
+HandCount p1	 Expected: 11	 Result:10
+DeckCount p1	 Expected: 9	 Result:10
+AddedCard p1	 Expected: 9	 Result:4
+HandCount p2	 Expected: 16	 Result:15
+DeckCount p2	 Expected: 9	 Result:10
+AddedCard p2	 Expected: 10	 Result:5
+HandCount p4	 Expected: 6	 Result:5
+DeckCount p4	 Expected: 9	 Result:10
+AddedCard p4	 Expected: 12	 Result:10
+Coins	 Expected: 4	 Result:4
+Council count	 Expected: 0	 Result:0
+Discard count 	 Expected: 1	 Result:0
+Unexpected handcount
+Unexpected deckCount
+Unexpected card added to hand
+Unexpected Handcount p1
+Unexpected Deckcount p1
+Unexpected cardAdded p1
+Unexpected Handcount p2
+Unexpected Deckcount p2
+Unexpected cardAdded p2
+Unexpected Handcount p4
+Unexpected Deckcount p4
+Unexpected cardAdded p4
+Discard count not incremented
+FAILURES
+Normal testing mode
+Hand Count	 Expected: 7	 Result:9
+Deck Count	 Expected: 6	 Result:5
+Added Cards (No.1)	 Expected: 12	 Result:12
+Added Cards (No.2)	 Expected: 7	 Result:7
+Added Cards (No.3)	 Expected: 12	 Result:12
+Added Cards (No.4)	 Expected: 7	 Result:12
+Buys	 Expected: 2	 Result:2
+HandCount p1	 Expected: 11	 Result:10
+DeckCount p1	 Expected: 9	 Result:10
+AddedCard p1	 Expected: 9	 Result:4
+HandCount p2	 Expected: 16	 Result:15
+DeckCount p2	 Expected: 9	 Result:10
+AddedCard p2	 Expected: 10	 Result:5
+HandCount p3	 Expected: 13	 Result:12
+DeckCount p3	 Expected: 9	 Result:10
+AddedCard p3	 Expected: 11	 Result:6
+Coins	 Expected: 4	 Result:4
+Council count	 Expected: 0	 Result:0
+Discard count 	 Expected: 1	 Result:0
+Unexpected handcount
+Unexpected deckCount
+Unexpected card added to hand
+Unexpected Handcount p1
+Unexpected Deckcount p1
+Unexpected cardAdded p1
+Unexpected Handcount p2
+Unexpected Deckcount p2
+Unexpected cardAdded p2
+Unexpected Handcount p3
+Unexpected Deckcount p3
+Unexpected cardAdded p3
+Discard count not incremented
+FAILURES
+File 'dominion.c'
+Lines executed:32.81% of 570
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+TESTING VILLAGE CARD
+Testing for village card at index 0 of hand
+Hand Count	 Expected: 10	 Result:10
+Deck Count	 Expected: 9	 Result:9
+Added Card	 Expected: 9	 Result:9
+Actions	 Expected: 3	 Result:2
+HandCount p2	 Expected: 15	 Result:15
+DeckCount p2	 Expected: 10	 Result:10
+HandCount p3	 Expected: 12	 Result:12
+DeckCount p3	 Expected: 10	 Result:10
+HandCount p4	 Expected: 5	 Result:5
+DeckCount p4	 Expected: 10	 Result:10
+Coins	 Expected: 4	 Result:4
+Village count	 Expected: 0	 Result:0
+Discard count 	 Expected: 1	 Result:0
+Unexpected number of actions
+Discard count not incremented
+FAILURES
+Testing for village card at last index of hand
+Hand Count	 Expected: 15	 Result:15
+Deck Count	 Expected: 9	 Result:9
+Added Card	 Expected: 10	 Result:10
+Actions	 Expected: 3	 Result:2
+HandCount p1	 Expected: 10	 Result:10
+DeckCount p1	 Expected: 10	 Result:10
+HandCount p3	 Expected: 12	 Result:12
+DeckCount p3	 Expected: 10	 Result:10
+HandCount p4	 Expected: 5	 Result:5
+DeckCount p4	 Expected: 10	 Result:10
+Coins	 Expected: 4	 Result:4
+Village count	 Expected: 0	 Result:0
+Discard count 	 Expected: 1	 Result:0
+Unexpected number of actions
+Discard count not incremented
+FAILURES
+Normal testing mode
+Hand Count	 Expected: 12	 Result:12
+Deck Count	 Expected: 9	 Result:9
+Added Card	 Expected: 11	 Result:11
+Actions	 Expected: 3	 Result:2
+HandCount p1	 Expected: 10	 Result:10
+DeckCount p1	 Expected: 10	 Result:10
+HandCount p2	 Expected: 15	 Result:15
+DeckCount p2	 Expected: 10	 Result:10
+HandCount p4	 Expected: 5	 Result:5
+DeckCount p4	 Expected: 10	 Result:10
+Coins	 Expected: 4	 Result:4
+Village count	 Expected: 0	 Result:0
+Discard count 	 Expected: 1	 Result:0
+Unexpected number of actions
+Discard count not incremented
+FAILURES
+Normal testing mode
+Hand Count	 Expected: 5	 Result:5
+Deck Count	 Expected: 9	 Result:9
+Added Card	 Expected: 12	 Result:12
+Actions	 Expected: 3	 Result:2
+HandCount p1	 Expected: 10	 Result:10
+DeckCount p1	 Expected: 10	 Result:10
+HandCount p2	 Expected: 15	 Result:15
+DeckCount p2	 Expected: 10	 Result:10
+HandCount p3	 Expected: 12	 Result:12
+DeckCount p3	 Expected: 10	 Result:10
+Coins	 Expected: 4	 Result:4
+Village count	 Expected: 0	 Result:0
+Discard count 	 Expected: 1	 Result:0
+Unexpected number of actions
+Discard count not incremented
+FAILURES
+File 'dominion.c'
+Lines executed:33.68% of 570
 Creating 'dominion.c.gcov'
 
