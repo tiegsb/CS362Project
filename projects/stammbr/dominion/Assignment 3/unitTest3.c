@@ -2,7 +2,7 @@
  * Author:  Brian Stamm
  * Title:  unitTest3.c
  * Assignment:  3
- * Date:  10.?.15
+ * Date:  10.25.15
  * Notes:  Test for gainCard().
  * ****************/
 
