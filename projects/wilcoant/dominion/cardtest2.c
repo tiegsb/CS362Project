@@ -1,4 +1,8 @@
-/* -----------------------------------------------------------------------
+/* 
+Anthony Wilcox
+CS362 
+Fall 2015
+-----------------------------------------------------------------------
  * card test for adventurer -----------------------------------------------------------------------
  */
 //used provided testUpdateCoins.c shell provided in OSU Fall CS362
@@ -21,7 +25,7 @@ int main() {
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
     int maxHandCount = 5;  //number of cards in each player's hand 
-    printf ("TESTING drawCard():\n");
+    printf ("TESTING adventurer():\n");
     while (numPlayer <= MAX_PLAYERS)
     {//check for all ranges of players 2 - 4
         for (p = 0; p < numPlayer; p++)

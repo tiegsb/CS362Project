@@ -1,5 +1,9 @@
 //if supplycount i ! = 0 then set = 0 then call isgame over
-/* -----------------------------------------------------------------------
+/* 
+Anthony Wilcox
+CS362 
+Fall 2015
+-----------------------------------------------------------------------
  * unit test for isgameover  -----------------------------------------------------------------------
  */
 //used provided testUpdateCoins.c shell provided in OSU Fall CS362
@@ -21,7 +25,7 @@ int main() {
     int k[10] = {adventurer, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
-    
+    printf ("TESTING isGameOver():\n");
     memset(&G, 23, sizeof(struct gameState));   // clear the game state
     r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
     for(i = 0; i <= treasure_map; i++)

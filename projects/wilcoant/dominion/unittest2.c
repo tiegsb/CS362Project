@@ -1,5 +1,9 @@
 /* -----------------------------------------------------------------------
- * unit test for drawCard -----------------------------------------------------------------------
+Anthony Wilcox
+CS362 
+Fall 2015
+ *
+ unit test for drawCard -----------------------------------------------------------------------
  */
 //used provided testUpdateCoins.c shell provided in OSU Fall CS362
 //modified some initialation variables to test boundaries more completely
