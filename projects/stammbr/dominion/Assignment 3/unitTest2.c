@@ -18,7 +18,7 @@ void test(){
   struct gameState g;
   struct gameState *game = &g;
 
-  int i, total, player = 0;
+  int i, test, total, player = 0;
   int bonus = 0;
 
   //Initial test, checking initializing all copper, silver, and gold.
@@ -27,16 +27,17 @@ void test(){
   total = 0;
 
   for(i = 0; i < 5; i++){
-  	game->deck[player][i] = copper;
+  	game->hand[player][i] = copper;
   	total++;
   } 
+  test = 1;
 
   if(updateCoins(player, game, bonus) == 0){
   	if(game->coins == total){
-  		printf("updateCoins():  PASS when all copper, no bonus\n");
+  		printf("%d- updateCoins():  PASS when all copper, no bonus\n", test);
   	}
   	else{
-  		printf("updateCoins():  FAIL when all copper, no bonus\n");
+  		printf("%d- updateCoins():  FAIL when all copper, no bonus\n", test);
   	}
   }
   else{
@@ -44,21 +45,24 @@ void test(){
   }
 
   //Checking only silver, player incremented, and cards increased.
-  player++;
+  //player++;
+  test++;
   total = 0;
+  //game->coins = 0;
   game->handCount[player] == 50;
 
   for(i = 0; i < 50; i++){
-  	game->deck[player][i] = silver;
+  	game->hand[player][i] = silver;
   	total += 2;
   } 
 
   if(updateCoins(player, game, bonus) == 0){
   	if(game->coins == total){
-  		printf("updateCoins():  PASS when all silver, no bonus\n");
+  		printf("%d- updateCoins():  PASS when all silver, no bonus\n", test);
   	}
   	else{
-  		printf("updateCoins():  FAIL when all silver, no bonus\n");
+  		printf("%d- updateCoins():  FAIL when all silver, no bonus\n", test);
+      printf("Total:  %d\tActual Coins:  %d\n", total, game->coins);
   	}
   }
   else{
@@ -66,21 +70,23 @@ void test(){
   }  
 
   //Checking only gold, player incremented, and cards increased to max.
-  player++;
+  //player++;
+  test++;
   total = 0;
   game->handCount[player] == 500;
 
   for(i = 0; i < 500; i++){
-  	game->deck[player][i] = gold;
+  	game->hand[player][i] = gold;
   	total += 3;
   } 
 
   if(updateCoins(player, game, bonus) == 0){
   	if(game->coins == total){
-  		printf("updateCoins():  PASS when all gold, no bonus\n");
+  		printf("%d- updateCoins():  PASS when all gold, no bonus\n", test);
   	}
   	else{
-  		printf("updateCoins():  FAIL when all gold, no bonus\n");
+  		printf("%d- updateCoins():  FAIL when all gold, no bonus\n", test);
+      printf("Total:  %d\tActual Coins:  %d\n", total, game->coins);
   	}
   }
   else{
@@ -88,29 +94,30 @@ void test(){
   } 
   
   //New test - mix of gold, silver and copper, no bonus
+  test++;
   total = 0;
   for(i = 0; i < 500; i++){
   	if(i < 166){
-  		game->deck[player][i] = copper;
+  		game->hand[player][i] = copper;
   		total++;
   	}
   	else if(i < 333){
-  		game->deck[player][i] = silver;
+  		game->hand[player][i] = silver;
   		total += 2;
   	}
   	else{
-  		game->deck[player][i] = gold;
+  		game->hand[player][i] = gold;
   		total += 3;
   	}
-
   }
 
   if(updateCoins(player, game, bonus) == 0){
   	if(game->coins == total){
-  		printf("updateCoins():  PASS mix, no bonus\n");
+  		printf("%d- updateCoins():  PASS mix, no bonus\n", test);
   	}
   	else{
-  		printf("updateCoins():  FAIL mix, no bonus\n");
+  		printf("%d- updateCoins():  FAIL mix, no bonus\n", test);
+      printf("Total:  %d\tActual Coins:  %d\n", total, game->coins);
   	}
   }
   else{
@@ -118,15 +125,22 @@ void test(){
   } 
 
 //Checking bonus with initial amount;
-  player = 0;
+  //player = 0;
+  test++;
+  for(i = 0; i < 5; i++){
+    game->hand[player][i] = copper;
+    total++;
+  }
+  game->handCount[player] = 5; 
   bonus = 5;
   total = 5;
   if(updateCoins(player, game, bonus) == 0){
   	if(game->coins == (total+bonus)){
-  		printf("updateCoins():  PASS copper, small bonus\n");
+  		printf("%d- updateCoins():  PASS copper, small bonus\n", test);
   	}
   	else{
-  		printf("updateCoins():  FAIL mix, small bonus\n");
+  		printf("%d- updateCoins():  FAIL mix, small bonus\n", test);
+      printf("Total:  %d\tActual Coins:  %d\n", total, game->coins);
   	}
   }
   else{
@@ -134,15 +148,17 @@ void test(){
   } 
 
 //Checking bonus with negative amount;
-  player = 0;
+  //player = 0;
+  test++;
   bonus = -5;
   total = 5;
   if(updateCoins(player, game, bonus) == 0){
   	if(game->coins == (total+bonus)){
-  		printf("updateCoins():  PASS copper, small bonus\n");
+  		printf("%d- updateCoins():  PASS copper, negative bonus\n", test);
   	}
   	else{
-  		printf("updateCoins():  FAIL mix, small bonus\n");
+  		printf("%d- updateCoins():  FAIL mix, negative bonus\n", test);
+      printf("Total:  %d\tActual Coins:  %d\n", total, game->coins);
   	}
   }
   else{
@@ -150,30 +166,33 @@ void test(){
   } 
 
 //Checking bonus with large amount;
-  player = 0;
+  //player = 0;
+  test++;
   bonus = 2000000000;
   total = 5;
   if(updateCoins(player, game, bonus) == 0){
   	if(game->coins == (total+bonus)){
-  		printf("updateCoins():  PASS copper, large bonus\n");
+  		printf("%d- updateCoins():  PASS copper, large bonus\n", test);
   	}
   	else{
-  		printf("updateCoins():  FAIL mix, large bonus\n");
+  		printf("%d- updateCoins():  FAIL mix, large bonus\n", test);
+      printf("Total:  %d\tActual Coins:  %d\n", total, game->coins);
   	}
   }
   else{
   	printf("updateCoins():  FAIL test 7.\n");
   } 
 //Checking bonus with boundary of positive amount;
-  player = 0;
+  //player = 0;
+  test++;
   bonus = 4294967291;
   total = 5;
   if(updateCoins(player, game, bonus) == 0){
   	if(game->coins == 4294967296){
-  		printf("updateCoins():  PASS copper, extreme large bonus\n");
+  		printf("%d- updateCoins():  PASS copper, extreme large bonus\n", test);
   	}
   	else{
-  		printf("updateCoins():  FAIL mix, extreme large bonus\n");
+  		printf("%d- updateCoins():  FAIL mix, extreme large bonus\n", test);
   		printf("Should have:  4294967296\tWas:%d\n", game->coins);
   	}
   }
