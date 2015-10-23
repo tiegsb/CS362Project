@@ -1,5 +1,5 @@
 /* -----------------------------------------------------------------------
- * unit test for get cost -----------------------------------------------------------------------
+ * unit test for drawCard -----------------------------------------------------------------------
  */
 //used provided testUpdateCoins.c shell provided in OSU Fall CS362
 //modified some initialation variables to test boundaries more completely
@@ -12,7 +12,7 @@
 #include "rngs.h"
 
 // set NOISY_TEST to 0 to remove printfs from output
-#define NOISY_TEST 0
+
 
 int main() {
     int drawcard; //drawcard var for assert 0
@@ -23,7 +23,6 @@ int main() {
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
     int maxHandCount = 5;  //number of cards in each player's hand 
-    // arrays of all coppers, silvers, and golds
     int deckcounter; //place holder
     int count; // current' player's hand count 
     int predeck, prehand; //precounter
@@ -35,7 +34,7 @@ int main() {
         {//for 0 -  numPlayer starting at 2 and going to 4
             for (handCount = 0; handCount <= maxHandCount; handCount++)
             {//start at handcount 0 to test return -1 status
-                printf("Test player %d with %d handcounts(s).\n", p, handCount);
+                //printf("Test player %d with %d handcounts(s).\n", p, handCount);
                 memset(&G, 23, sizeof(struct gameState));   // clear the game state
                 r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
                 G.handCount[p] = handCount;   
