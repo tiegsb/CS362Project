@@ -8,15 +8,15 @@
 
 #include "dominion.h"
 #include "dominion_helpers.h"
-#include "dominion.c"
 #include "rngs.h"
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
 
-void test{
-	struct gameState game;
+void test(){
+  struct gameState g;
+  struct gameState *game = &g;
   int player = 1;
   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
     sea_hag, tribute, smithy};
@@ -25,11 +25,11 @@ void test{
   int i, counter, card, total, failNum;
   int testCards[3];
   int testHand[500];
-  int testHandCount, testDeckCount, testDiscardCount;
+  int testHandCount, testDeckCount, testDiscardCount, testActions;
   int testDiscard[500];
   int testTrialCard;
 
-  initilizeGame(2, k, r, &game);
+  initializeGame(2, k, r, game);
 
   //First check.  Set up same valuse
   for(i = 0; i < game->discardCount[player]; i++){
@@ -48,7 +48,7 @@ void test{
   testActions = game->numActions;
   testActions += 2;
 
-  if(villageMethod(&game, player, 0) == 0){
+  if(villageMethod(game, player, 0) == 0){
     if((testDiscardCount+1) == game->discardCount[player]){
       printf("villageMethod() Test 1:  PASS, discard amounts equal.\n");
     }
@@ -105,7 +105,7 @@ void test{
     testDiscardCount = game->discardCount[player];
     testDeckCount = game->deckCount[player];
 
-    if(villageMethod(&game, player, 0) == 0){
+    if(villageMethod(game, player, 0) == 0){
       if((testDiscardCount+1) != game->discardCount[player]){
         printf("villageMethod() Random Test %d:  FAIL, discard amounts NOT equal.\n", counter);
         failNum++;

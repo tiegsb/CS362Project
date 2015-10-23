@@ -8,15 +8,15 @@
 
 #include "dominion.h"
 #include "dominion_helpers.h"
-#include "dominion.c"
 #include "rngs.h"
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
 
-void test{
-	struct gameState game;
+void test(){
+  struct gameState g;
+  struct gameState *game = &g;
 	int player = 1;
   int testBuys;
   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
@@ -30,7 +30,7 @@ void test{
   int testDiscard[500];
   int testTrialCard;
 
-  initilizeGame(4, k, r, &game);
+  initializeGame(4, k, r, game);
 
 
   //same tests as smithy card
@@ -45,7 +45,7 @@ void test{
 
   printf("This is first initial test.\n");
 
-  if(councilMethod(&game, player, 0) == 0){
+  if(councilMethod(game, player, 0) == 0){
     if((testDiscardCount+1) == game->discardCount[player]){
       printf("councilMethod() Test 1:  PASS, discard amounts equal.\n");
     }
@@ -66,7 +66,7 @@ void test{
     else{
       printf("councilMethod() Test 1:  FAIL, deckCount amounts NOT equal.\n");
     }
-    if(game->testBuys == testBuys){
+    if(game->numBuys == testBuys){
       printf("Council Test :  PASSED - buy number correct\n");
     }
     else{
@@ -89,7 +89,7 @@ void test{
         game->deck[j][i] = card;
       }
     }
-    for(i=0;i<4;i++{
+    for(i=0;i<4;i++){
       game->deckCount[i] = 10;
     }
     total = r % MAX_HAND;
@@ -110,7 +110,7 @@ void test{
     testDiscardCount = game->discardCount[player];
     testDeckCount = game->deckCount[player];
 
-    if(councilMethod(&game, player, 0) == 0){
+    if(councilMethod(game, player, 0) == 0){
       if((testDiscardCount+1) != game->discardCount[player]){
         printf("councilMethod() Random Test %d:  FAIL, discard amounts NOT equal.\n", counter);
         failNum++;
@@ -125,7 +125,7 @@ void test{
         printf("councilMethod() Test %d:  FAIL, deckCount amounts NOT equal.\n", counter);
         failNum++;
       }
-      if(game->testBuys != testBuys){
+      if(game->numBuys != testBuys){
         printf("councilMethod() Test %d:  FAILED - buy number NOT correct\n", counter);
         failNum++;
       }
@@ -133,7 +133,7 @@ void test{
     else{
       printf("councilMethod() Random Test %d:  FAIL.  Unknown error, danger, danger Will Robinson.\n", counter);
     }
-    counter++;      
+    counter++;
   }
   printf("smithyMethod() Random Test fail number:  %d\n", failNum);
 }
