@@ -1,5 +1,5 @@
 /*
-This program tests the isGameOver function.
+This program tests the villageCard function.
 The parameters for this function are:
 struct gameState *state
 
@@ -19,49 +19,21 @@ struct gameState *state
 int main() {
 
     int i;
+
+    //initialize the game
     struct gameState G;
-    //default gamestate.
-    struct gameState D;
+    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
+    sea_hag, tribute, smithy};
 
-    //create a default game where all supply has one each
-    for (i = 0; i < 27; i++)
-    {
-        D.supplyCount[i] = 1;
-    }
+    printf ("Starting game.\n");
 
-    char card[32];
-    //printSupply(&G);
+    printState(&G);
+    printSupply(&G);
+    printGamestate(&G);
+    printScores(&G);
 
-    cardNumToName(26, card);
-    printf ("TESTING isGameOver():\n");
-    printf ("Testing with all supply gone \n");
-    assert (isGameOver(&G) == 1);
+    initializeGame(2, k, atoi(argv[1]), &G);
 
-    printf ("Testing with two supply gone \n");
-    G = D;
-    G.supplyCount[0] = 0;
-    G.supplyCount[1] = 0;
-    assert (isGameOver(&G) == 0);
-
-    for (i = 2; i < 27; i++)
-    {
-        cardNumToName(i, card);
-        printf("Test: remove %s + Curse + Estate triggers end. \n", card);
-        G.supplyCount[0] = 0;
-        G.supplyCount[1] = 0;
-        G.supplyCount[i] = 0;
-        printSupply(&G);
-        //assert (isGameOver(&G) == 1);
-
-        //Found bug, removed assertion
-        if (i == 25 || i == 26)
-            printf ("**********************************************************  \n Removing Seahag or Treasuremap in addition 2 other cards does not trigger end of game \n ********************************************************** \n");
-
-        //reset for next round
-        //printf("Resetting \n");
-        G = D;
-        assert (isGameOver(&G) == 0);
-    }
     
     printf("All tests passed!\n");
 
