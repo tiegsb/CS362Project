@@ -41,6 +41,9 @@ test1: unittest1.c interface.o
 test2: unittest2.c interface.o
 	gcc -o unittest2 -g unittest2.c dominion.o rngs.o interface.o $(CFLAGS)
 
+test3: unittest3.c interface.o
+	gcc -o unittest3 -g unittest3.c dominion.o rngs.o interface.o $(CFLAGS)
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins test1
 
 clean:

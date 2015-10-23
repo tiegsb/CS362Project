@@ -1,7 +1,7 @@
 /*
-This program tests the gainCard function.
+This program tests the fullDeckCount function.
 The parameters for this function are:
-int supplyPos, struct gameState *state, int toFlag, int player
+int player, int card, struct gameState *state
 
 */
 
