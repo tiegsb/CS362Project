@@ -24,13 +24,11 @@ int main() {
     int i;
     int seed = 1000;
     int numPlayer = 2;
-    int maxBonus = 10;
-    int p, r, handCount;
-    int bonus;
+
+    int p, r;
     int k[10] = {adventurer, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
-    int maxHandCount = 5;
     int testCard = adventurer;
 
     printf("Testing fullDeckCount()\n");
