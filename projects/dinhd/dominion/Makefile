@@ -44,7 +44,10 @@ test2: unittest2.c interface.o
 test3: unittest3.c interface.o
 	gcc -o unittest3 -g unittest3.c dominion.o rngs.o interface.o $(CFLAGS)
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins test1
+test4: unittest4.c interface.o
+	gcc -o unittest4 -g unittest4.c dominion.o rngs.o interface.o $(CFLAGS)
+
+all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins test1 test2 test3 test4
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
