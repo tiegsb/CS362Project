@@ -30,7 +30,6 @@ int main() {
 
 	int handCount=G.handCount[player1];
 	int coinCount=G.coins;
-	int discardCount=G.discardCount[player1];
 
 	//Test +2 card option
 	stewardCard(1, G.handCount[player1]-1, G.handCount[player1]-2, player1, 0, &G);
@@ -54,7 +53,6 @@ int main() {
 
 	handCount=G.handCount[player1];
 	coinCount=G.coins;
-	discardCount=G.discardCount[player1];
 
 	stewardCard(2, G.handCount[player1]-1, G.handCount[player1]-2, player1, 0, &G);
 
@@ -77,12 +75,11 @@ int main() {
 
 	handCount=G.handCount[player1];
 	coinCount=G.coins;
-	discardCount=G.discardCount[player1];
 
-	printf("DISCARDCNT BEFORE: %d\n", discardCount);
+	printf("ORIG HAND COUNT: %d\n", handCount);
 
-	int savedCard1=G.hand[player1][1];
-	int savedCard2=G.hand[player1][2];
+	int lastCard=G.hand[player1][G.handCount[player1]-1];
+	int secondToLastCard=G.hand[player1][G.handCount[player1]-2];
 
 	//remove cards in handPos 1 and 2
 
@@ -90,38 +87,38 @@ int main() {
 		printf("CARD %d before Steward Card: %d\n", i, G.hand[player1][i]);
 	}
 
-	stewardCard(1, 1, 2, player1, 0, &G);
+	stewardCard(3, 1, 2, player1, 0, &G);
 
 
-	int newDiscardCount=G.discardCount[player1];
+	int newCardPos1=G.hand[player1][0];
+	int newCardPos2=G.hand[player1][1];
 	newHandCount=G.handCount[player1];
 
-	printf("DISCARDCNT AFTER: %d\n", newDiscardCount);
-
-	if(newDiscardCount == discardCount+3) {
-		printf("Discard Test passed\n");
-	} else {
-		printf("Discard Test failed\n");
-	}
+	printf("NEW HAND COUNT: %d\n", newHandCount);
 
 	if(newHandCount == handCount-3) {
-		printf("Discard hand Test passed\n");
+		printf("TEST 1: Remove correct number of cards PASS\n");
 	} else {
-		printf("Discard hand Test failed\n");
+		printf("TEST 1: Remove correct number of cards FAIL\n");
 	}
+
 
 	for(i=0; i<G.handCount[player1]; i++) {
 		printf("CARD %d after Steward Card: %d\n", i, G.hand[player1][i]);
 	}
 
-	if(G.hand[player1][1] != savedCard1 && G.hand[player1][2] != savedCard2) {
-		printf("Remove the right cards... PASS\n");
+	// if(G.hand[player1][1] != savedCard1 && G.hand[player1][2] != savedCard2) {
+	// 	printf("TEST 1: Remove the right cards... PASS\n");
+	// } else {
+	// 	printf("TEST 1: Removed the wrong cards... FAIL\n");
+	// }
+
+	if(secondToLastCard == newCardPos1 && lastCard == newCardPos2) {
+		printf("TEST 2: Remove the right cards... PASS\n");
 	} else {
-		printf("Removed the wrong cards... FAIL\n");
+		printf("TEST 2: Removed the wrong cards... FAIL\n");
 	}
 
-
-	//NOTE DISCARD COUNT IS ALSO CALLED PLAYED CARDS. FIX THIS
 
 
 }

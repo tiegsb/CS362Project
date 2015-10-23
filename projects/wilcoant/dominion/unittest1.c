@@ -140,7 +140,7 @@ int main() {
     
 
 
-    printf("All tests passed!\n");
+    printf("All tests passed! Expected results were assertions\nfor each card value value\n\n\n");
 
     return 0;
 }
