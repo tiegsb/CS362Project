@@ -29,6 +29,7 @@ int main() {
     int maxHandCount = 5;
     int dummyCard = adventurer;
     int testCard = village;
+    int passed = 1;
     
     
     printf ("TESTING villageEffect():\n");
@@ -94,7 +95,12 @@ int main() {
 #if (NOISY_TEST == 1)
             printf("Num actions. Expected %d, received %d\n",7,G.numActions);
 #endif
-            assert(G.numActions == 7);
+            //assert(G.numActions == 7);
+            if (G.numActions != 7)
+            {
+                printf("FAILURE: Number of actions do not match");
+                passed = 0;
+            }
             
 #if (NOISY_TEST == 1)
             printf("Num coins. Expected %d, received %d\n",5,G.coins);
@@ -114,7 +120,15 @@ int main() {
         }
     }
     
-    printf("All tests passed!\n");
+    if (passed)
+    {
+        printf("All tests passed!\n");
+    }
+    else
+    {
+        printf("\nAT LEAST ONE TEST FAILED. PLEASE INVESTIGATE.\n");
+    }
+    
     
     return 0;
 }

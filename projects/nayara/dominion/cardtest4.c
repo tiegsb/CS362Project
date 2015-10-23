@@ -126,7 +126,11 @@ int main() {
 #if (NOISY_TEST == 1)
             printf("Num buys. Expected %d, received %d\n",2,G.numBuys);
 #endif
-            assert(G.numBuys == 2);
+            //assert(G.numBuys == 2);
+            if (G.numBuys != 2)
+            {
+                printf("FAILURE: Number of buys is incorrect.\n");
+            }
 #if (NOISY_TEST == 1)
             printf("Num actions. Expected %d, received %d\n",5,G.numActions);
 #endif
@@ -143,7 +147,11 @@ int main() {
 #if (NOISY_TEST == 1)
             printf("Hand count. Expected %d, received %d\n",handCount, G.handCount[p]);
 #endif
-            assert(G.handCount[p] == handCount);
+            //assert(G.handCount[p] == handCount);
+            if(G.handCount[p] != handCount)
+            {
+                printf("FAILURE: Hand counts do not match.\n");
+            }
 #if (NOISY_TEST == 1)
             if (p == 0)
             {
@@ -158,13 +166,22 @@ int main() {
 #endif
             if (p ==0 )
             {
-                assert(G.handCount[p] == handCount);
-                assert(G.handCount[1] == 0);
+                //assert(G.handCount[p] == handCount);
+                //assert(G.handCount[1] == 0);
+                if (G.handCount[p] != handCount || G.handCount[1] !=0)
+                {
+                    printf("FAILURE: Hands have too many or too few cards.\n");
+                }
             }
             else
             {
-                assert(G.handCount[p] == handCount);
-                assert(G.handCount[0] == 0);
+                //assert(G.handCount[p] == handCount);
+                //assert(G.handCount[0] == 0);
+                if (G.handCount[p] != handCount || G.handCount[1] !=0)
+                {
+                    printf("FAILURE: Hands have too many or too few cards.\n");
+                }
+                
             }
             printf("\n");
             
