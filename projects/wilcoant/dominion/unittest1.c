@@ -1,4 +1,7 @@
 /* -----------------------------------------------------------------------
+ Anthony Wilcox
+CS362 
+Fall 2015
  * unit test for get cost, check values passed through 
  for loop as integers returning correct return values for cost 
  and negative one for non enumerated values.
@@ -140,7 +143,7 @@ int main() {
     
 
 
-    printf("All tests passed!\n");
+    printf("All tests passed! Expected results were assertions\nfor each card value value\n\n\n");
 
     return 0;
 }

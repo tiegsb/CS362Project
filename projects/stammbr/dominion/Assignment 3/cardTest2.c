@@ -2,7 +2,7 @@
  * Author:  Brian Stamm
  * Title:  cardTest2.c
  * Assignment:  3
- * Date:  10.?.15
+ * Date:  10.25.15
  * Notes:  Unit tests for the Adventurer card, adventurerMethod().
  * ****************/
 
@@ -14,8 +14,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+//Function setHand - set up to quickly set the deck for various situations
+//Runs through, and depending, fills deck with cards user passes in
 int setHand(struct gameState *g, int card, int r, int choice){
   int i, newCard;
+  //Fills deck completely
   if(choice == 1){
     for(i=0;i<MAX_HAND; i++){
       g->deck[1][i] = card;
@@ -23,6 +26,8 @@ int setHand(struct gameState *g, int card, int r, int choice){
     g->deckCount[1] = MAX_HAND;
     return 0;
   }
+  //Fills deck with (card -1), except the last 3 cards, which is filled
+  //with card
   else if(choice == 2){
     for(i=0;i<(MAX_HAND-3);i++){
       g->deck[1][i] = (card -1);
@@ -33,14 +38,18 @@ int setHand(struct gameState *g, int card, int r, int choice){
     g->deckCount[1]= MAX_HAND;
     return 0;
   }
+  //Fills deck with random cards
   else if(choice == 3){
     for(i=0;i<MAX_HAND;i++){
+      r = rand();
       newCard = r % 27;
       g->hand[1][i] = newCard;
     }
     g->deckCount[1] = MAX_HAND;
     return 0;
   }
+  //ONLY HAND FILLING SITUATION
+  //fills hand with 5 cards
   else{
     for(i=0;i<5;i++){
       g->hand[1][i] = card;
@@ -51,6 +60,7 @@ int setHand(struct gameState *g, int card, int r, int choice){
   return 1;
 }
 
+//Actual test
 void test(){
   struct gameState g;
   struct gameState *game = &g;
@@ -64,10 +74,11 @@ void test(){
   //Initial check
   if(setHand(game, copper, r, 1)){
     printf("%d:  Error setting DECK.\n", counter);
-    if(setHand(game, estate, r, 0)){
-      printf("%d:  Error setting HAND.\n", counter);
-    }
   }
+  if(setHand(game, estate, r, 0)){
+    printf("%d:  Error setting HAND.\n", counter);
+  }
+  
   if(adventurerMethod(game, tempHand, player) != 0){
     printf("%d:  Error unknown.\n", counter);
     counter++;
@@ -91,10 +102,11 @@ void test(){
   //Second check, large deck, only last cards are copper
   if(setHand(game, copper, r, 2)){
     printf("%d:  Error setting DECK.\n", counter);
-    if(setHand(game, estate, r, 0)){
-      printf("%d:  Error setting HAND.\n", counter);
-    }
   }
+  if(setHand(game, estate, r, 0)){
+    printf("%d:  Error setting HAND.\n", counter);
+  }
+  
   if(adventurerMethod(game, tempHand, player) != 0){
     printf("%d:  Error unknown.\n", counter);
     counter++;
@@ -118,10 +130,11 @@ void test(){
   //Third check, random deck, only last cards are copper
   if(setHand(game, copper, r, 3)){
     printf("%d:  Error setting DECK.\n", counter);
-    if(setHand(game, estate, r, 0)){
-      printf("%d:  Error setting HAND.\n", counter);
-    }
   }
+  if(setHand(game, estate, r, 0)){
+    printf("%d:  Error setting HAND.\n", counter);
+  }
+  
   if(adventurerMethod(game, tempHand, player) != 0){
     printf("%d:  Error unknown.\n", counter);
     counter++;
@@ -145,10 +158,11 @@ void test(){
   //Fourth check, no treasure in deck, only last cards are copper
   if(setHand(game, curse, r, 1)){
     printf("%d:  Error setting DECK.\n", counter);
-    if(setHand(game, estate, r, 0)){
-      printf("%d:  Error setting HAND.\n", counter);
-    }
   }
+  if(setHand(game, estate, r, 0)){
+    printf("%d:  Error setting HAND.\n", counter);
+  }
+  
   if(adventurerMethod(game, tempHand, player) != 0){
     printf("%d:  Error unknown.  NO TREASURE.\n", counter);
     counter++;

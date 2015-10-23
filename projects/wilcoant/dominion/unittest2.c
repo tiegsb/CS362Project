@@ -1,5 +1,9 @@
 /* -----------------------------------------------------------------------
- * unit test for drawCard -----------------------------------------------------------------------
+Anthony Wilcox
+CS362 
+Fall 2015
+ *
+ unit test for drawCard -----------------------------------------------------------------------
  */
 //used provided testUpdateCoins.c shell provided in OSU Fall CS362
 //modified some initialation variables to test boundaries more completely
@@ -55,6 +59,8 @@ int main() {
                 assert(G.hand[p][count] = G.deck[p][deckcounter - 1]);
                 assert(postdeck = predeck - 1); //one card removed from deck
                 assert(posthand = prehand + 1); //one card added to player hand 
+                printf("postdeck: %d, predeck - 1: %d\n", postdeck, predeck - 1);
+                printf("posthand: %d, prehand + 1: %d\n", posthand, prehand +1);
             }
             //start at 2 players
          }//exit top for loop 

@@ -2,7 +2,7 @@
  * Author:  Brian Stamm
  * Title:  cardTest1.c
  * Assignment:  3
- * Date:  10.?.15
+ * Date:  10.25.15
  * Notes:  Unit Test for smithyMethod(), the Smithy card.
  * ****************/
 
@@ -23,60 +23,50 @@ void test(){
   srand(time(NULL));
   int r = rand();
   int i, counter, card, total, failNum;
-  int testCards[3];
-  int testHand[500];
   int testHandCount, testDeckCount, testDiscardCount;
-  int testDiscard[500];
   int testTrialCard;
 
   initializeGame(2, k, r, game);
 
-  //First check.  Set up same valuse
-  for(i = 0; i < game->discardCount[player]; i++){
-    testDiscard[i] = game->discard[player][i];
-  }
-  for(i = 0; i < game->handCount[player]; i++){
-    testHand[i] = game->hand[player][i];
-  }
-  for(i = 0; i < 3; i++){
-    testCards[i] = game->deck[player][i];
-  }
   testTrialCard = game->hand[player][0];
-  testHandCount = game->handCount[player];
-  testDiscardCount = game->discardCount[player];
-  testDeckCount = game->deckCount[player];
+  testHandCount = game->handCount[player] + 3;
+  testDiscardCount = game->discardCount[player] + 1;
+  testDeckCount = game->deckCount[player] - 1;
 
   if(smithyMethod(game, player, 0) == 0){
-    if((testDiscardCount+1) == game->discardCount[player]){
-      printf("smithyMethod() Test 1:  PASS, discard amounts equal.\n");
+    if(testDiscardCount == game->discardCount[player]){
+      printf("smithyMethod() Test 1a:  PASS, discard amounts equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testDiscardCount, game->discardCount[player]);
     }
     else{
-      printf("smithyMethod() Test 1:  FAIL, discard amounts NOT equal.\n");
+      printf("smithyMethod() Test 1a:  FAIL, discard amounts NOT equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testDiscardCount, game->discardCount[player]);
     }
 
-    if((testHandCount+2) == game->handCount[player]){
-      printf("smithyMethod() Test 1:  PASS, handCount amounts equal.\n");
+    if(testHandCount == game->handCount[player]){
+      printf("Test 1b:  PASS, handCount amounts equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testHandCount, game->handCount[player]);      
     }
     else{
-      printf("smithyMethod() Test 1:  FAIL, handCount amounts NOT equal.\n");
+      printf("Test 1b:  FAIL, handCount amounts NOT equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testHandCount, game->handCount[player]); 
     }
 
     if(testDeckCount == game->deckCount[player]){
-      printf("smithyMethod() Test 1:  PASS, deckCount amounts equal.\n");
+      printf("Test 1c:  PASS, deckCount amounts equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testDeckCount, game->deckCount[player]); 
     }
     else{
-      printf("smithyMethod() Test 1:  FAIL, deckCount amounts NOT equal.\n");
+      printf("Test 1c:  FAIL, deckCount amounts NOT equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testDeckCount, game->deckCount[player]);      
     }
-
-    //need to check 3 cards, are they the same?
-
   }
   else{
     printf("smithyMethod() Test 1:  FAIL.  Unknown error, danger, danger Will Robinson.\n");
   }
 
 //Then do random decks, similar to shuffle test.
-  printf("Random Testing to Start\n");
+  printf("\nRandom Testing to Start\n");
   counter = 1;
   failNum = 0;
   while(counter < 501){
@@ -96,23 +86,26 @@ void test(){
     game->handCount[player] = total;
 
     testTrialCard = game->hand[player][0];
-    testHandCount = game->handCount[player];
-    testDiscardCount = game->discardCount[player];
-    testDeckCount = game->deckCount[player];
-
+    testHandCount = game->handCount[player] + 3;
+    testDiscardCount = game->discardCount[player] + 1;
+    testDeckCount = game->deckCount[player] - 1;
+    printf("\n");
     if(smithyMethod(game, player, 0) == 0){
-      if((testDiscardCount+1) != game->discardCount[player]){
-        printf("smithyMethod() Random Test %d:  FAIL, discard amounts NOT equal.\n", counter);
+      if(testDiscardCount != game->discardCount[player]){
+        printf("smithyMethod() Random Test %da:  FAIL, discard amounts NOT equal.\n", counter);
+        printf("\tTest:  %d\tSaved:  %d\n", testDiscardCount, game->discardCount[player]);
         failNum++;
       }
 
-      if((testHandCount+2) != game->handCount[player]){
-        printf("smithyMethod() Test %d:  FAIL, handCount amounts NOT equal.\n", counter);
+      if(testHandCount != game->handCount[player]){
+        printf("Random Test %db:  FAIL, handCount amounts NOT equal.\n", counter);
+        printf("\tTest:  %d\tSaved:  %d\n", testHandCount, game->handCount[player]);
         failNum++;
       }
 
       if(testDeckCount != game->deckCount[player]){
-        printf("smithyMethod() Test %d:  FAIL, deckCount amounts NOT equal.\n", counter);
+        printf("Test %dc:  FAIL, deckCount amounts NOT equal.\n", counter);
+        printf("\tTest:  %d\tSaved:  %d\n", testDeckCount, game->deckCount[player]);   
         failNum++;
       }
     }
@@ -121,7 +114,7 @@ void test(){
     }
     counter++;      
   }
-  printf("smithyMethod() Random Test fail number:  %d\n", failNum);
+  printf("\nsmithyMethod() Random Test fail number:  %d\n", failNum);
 }
 
 int main(int argc, char **argv){
