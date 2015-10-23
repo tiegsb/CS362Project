@@ -55,6 +55,8 @@ int main() {
                 assert(G.hand[p][count] = G.deck[p][deckcounter - 1]);
                 assert(postdeck = predeck - 1); //one card removed from deck
                 assert(posthand = prehand + 1); //one card added to player hand 
+                printf("postdeck: %d, predeck - 1: %d\n", postdeck, predeck - 1);
+                printf("posthand: %d, prehand + 1: %d\n", posthand, prehand +1);
             }
             //start at 2 players
          }//exit top for loop 
