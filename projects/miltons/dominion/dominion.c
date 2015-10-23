@@ -653,7 +653,6 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   int i;
   int j;
   int k;
-  int x;
   int index;
   int currentPlayer = whoseTurn(state);
   int nextPlayer = currentPlayer + 1;
@@ -1213,7 +1212,7 @@ int adventurerEffect(int currentPlayer, int drawntreasure, int temphand[MAX_HAND
     }
     drawCard(currentPlayer, state);
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-    if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+    if (cardDrawn = copper || cardDrawn == silver || cardDrawn == gold)
       drawntreasure++;
     else{
       temphand[z]=cardDrawn;
@@ -1233,7 +1232,7 @@ int smithyEffect(int currentPlayer, struct gameState *state, int handPos)
   int i;
 
   //+3 Cards
-  for (i = 0; i < 3; i++)
+  for (i = 0; i <= 3; i++)
   {
 	drawCard(currentPlayer, state);
   }
@@ -1257,7 +1256,7 @@ int councilRoomEffect(int currentPlayer, struct gameState *state, int handPos)
   state->numBuys++;
 
   //Each other player draws a card
-  for (i = 0; i < state->numPlayers; i++)
+  for (i = 0; i < state->numPlayers; ++i)
   {
     if ( i != currentPlayer )
     {
@@ -1339,7 +1338,7 @@ int mineEffect(int currentPlayer, struct gameState *state, int handPos, int choi
     return -1;
   }
 
-  if (choice2 > treasure_map || choice2 < curse)
+  if (choice2 > treasure_map && choice2 < curse)
   {
     return -1;
   }
