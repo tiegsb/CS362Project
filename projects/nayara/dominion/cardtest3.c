@@ -52,10 +52,7 @@ int main() {
             
             printf("Testing  %d\n", testCard);
             G.hand[p][0] = testCard;
-            for(i = 0; i<handCount;i++)
-            {
-                printf("Pre Call [%d]: %d\n",i, G.hand[p][i]);
-            }
+
 #if (NOISY_TEST == 1)
             printf("***Test for player %d with %d  cards in hand\n",p,i);
 #endif
