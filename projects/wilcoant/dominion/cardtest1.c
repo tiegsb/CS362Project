@@ -45,7 +45,7 @@ int main() {
   
    }//exit while loop 
     
-    printf("All tests passed!\n");
+    printf("Test Failure if pre and post hand count difference != 3!\n");
 
     return 0;
 }
