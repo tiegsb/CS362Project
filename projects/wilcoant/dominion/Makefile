@@ -2,7 +2,7 @@ CFLAGS = -Wall -fpic -coverage -lm -std=c99
 
 default: unittestresults.out
 
-unittestresults.out: cardtest3.c cardtest2.c unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c rngs.c dominion.c
+unittestresults.out: cardtest4.c cardtest3.c cardtest2.c unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c rngs.c dominion.c
 	gcc -c rngs.c -g  $(CFLAGS)
 	gcc -c dominion.c -g  $(CFLAGS)
 	
@@ -41,8 +41,15 @@ unittestresults.out: cardtest3.c cardtest2.c unittest1.c unittest2.c unittest3.c
 	gcc -o cardtest3 -g cardtest3.c dominion.o rngs.o $(CFLAGS)
 	cardtest3 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	
+	
+	echo "cardtest4.c:" >> unittestresults.out
+	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o $(CFLAGS)
+	cardtest4 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+
 clean:
 	rm unittestresults.out
 
 cleanall: 
-	rm unittestresults.out unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 *.gcda *.gcno *.gcov
+	rm unittestresults.out cardtest4 unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 *.gcda *.gcno *.gcov
