@@ -1,7 +1,7 @@
 /* Author: Ashok Nayar
  * cs362, Fall 2015
  * Assignment 3: Unit Testing
- * unittest1.c (Testing handCount)
+ * unittest1.c (Testing handCard)
  */
 
 #include "dominion.h"
