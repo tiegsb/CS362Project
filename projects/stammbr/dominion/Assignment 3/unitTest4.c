@@ -8,15 +8,15 @@
 
 #include "dominion.h"
 #include "dominion_helpers.h"
-#include "dominion.c"
 #include "rngs.h"
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
 
-void test{
-	struct gameState game;
+void test(){
+  struct gameState g;
+  struct gameState *game = &g;
   srand(time(NULL));
   int r = rand();
   int j, i, k, c, truth;

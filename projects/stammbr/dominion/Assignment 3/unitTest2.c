@@ -8,7 +8,6 @@
 
 #include "dominion.h"
 #include "dominion_helpers.h"
-#include "dominion.c"
 #include "rngs.h"
 #include <stdio.h>
 #include <math.h>
@@ -16,7 +15,8 @@
 #include <time.h>
 
 void test(){
-  struct gameState game;
+  struct gameState g;
+  struct gameState *game = &g;
 
   int i, total, player = 0;
   int bonus = 0;

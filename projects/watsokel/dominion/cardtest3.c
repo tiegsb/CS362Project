@@ -168,7 +168,7 @@ int main() {
 	int maxHandCount = 5;
 	int maxDeckCount = 10;
 	int opponent;
-	printf ("TESTING sea hag in cardEffect():\n");
+	printf ("TESTING sea_hag case in cardEffect():\n");
 	
 	for(p = 0; p<numPlayer; p++){
 		printf("Testing player %d\n", p);
@@ -190,7 +190,7 @@ int main() {
 		G.handCount[opponent] = maxHandCount;
 		memcpy(G.hand[opponent], mines, sizeof(int) * maxHandCount); //set all cards in other players' hands to mines
 		memcpy(G.deck[opponent], estates, sizeof(int) * maxDeckCount);//set all cards in oppponent's deck to estates except the top to enable detection of card to be placed in discard
-		G.deck[opponent][maxDeckCount-1] = gold; //top of opponent's deck is a gold Treasure card
+		G.deck[opponent][maxDeckCount-1] = gold; //top of opponent's deck is a gold Treasure card to allow detection of discard
 		
 		if(checkSeaHag(&G,p,opponent)>0){
 			errFlag++;
@@ -198,7 +198,7 @@ int main() {
 	}
 	
 	if(errFlag != 0){
-		printf("Some tests failed.\n");  
+		printf("Some tests failed. See bug1.c for details.\n");  
 		printf("NOTE: I am quite confident that the sea_hag case in cardEffect() has several bugs.\n");
 	}else{
 		printf("All tests passed!\n");
