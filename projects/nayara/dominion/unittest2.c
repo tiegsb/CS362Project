@@ -1,11 +1,9 @@
-/* -----------------------------------------------------------------------
- * Demonstration of how to write unit tests for dominion-base
- * Include the following lines in your makefile:
- *
- * testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
- *      gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
- * -----------------------------------------------------------------------
+/* Author: Ashok Nayar
+ * cs362, Fall 2015
+ * Assignment 3: Unit Testing
+ * unittest2.c (Testing supplyCount())
  */
+
 
 #include "dominion.h"
 #include "dominion_helpers.h"
@@ -18,8 +16,6 @@
 #define NOISY_TEST 1
 
 
-// int supplyCount(int card, struct gameState *state);
-
 int main() {
     int i;
     int seed = 1000;
@@ -29,27 +25,29 @@ int main() {
     int k[10] = {adventurer, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
-    int maxHandCount = 5;
 
     int testCards[5] = {adventurer, council_room, feast, gardens, mine};
 
 
     printf ("TESTING supplyCount(%d):\n", adventurer);
 
+    // Loop over each player
     int p;
     for (p=0; p< numPlayer; p++)
     {
-        r = initializeGame(numPlayer, k, seed, &G);
+        r = initializeGame(numPlayer, k, seed, &G); // Initialize game state
         
 #if (NOISY_TEST == 1)
         printf("***Test for player %d\n",p);
 #endif
         
-        G.whoseTurn = p;
+        G.whoseTurn = p; // Set the turn to current player
 #if (NOISY_TEST == 1)
         printf("Testing initial supply counts for player %d\n",p);
 #endif
 
+        // Make sure supply counts match the default size
+        //for each of the test cards in the testCard array
 #if (NOISY_TEST == 1)
         printf("Testing for card: %d\n",testCards[0]);
 #endif
@@ -76,6 +74,7 @@ int main() {
         assert(supplyCount(testCards[4], &G) == 10);
 
         
+        // Set the supplies of each card to different values
         for (i = 0; i < 10; i++)
         {
             G.supplyCount[testCards[0]] = i;
@@ -83,6 +82,10 @@ int main() {
             G.supplyCount[testCards[2]] = i;
             G.supplyCount[testCards[3]] = i;
             G.supplyCount[testCards[4]] = i;
+            
+            
+            // Check to see if the values match the value given
+            // by the supplyCount function
 #if (NOISY_TEST == 1)
             printf("Testing for card: %d and a supply count of %d\n",testCards[0], i);
 #endif

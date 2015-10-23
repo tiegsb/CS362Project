@@ -1,13 +1,7 @@
-// int smithyEffect(int player, int handPos, struct gameState *state);
-
-
-/* -----------------------------------------------------------------------
- * Demonstration of how to write unit tests for dominion-base
- * Include the following lines in your makefile:
- *
- * testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
- *      gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
- * -----------------------------------------------------------------------
+/* Author: Ashok Nayar
+ * cs362, Fall 2015
+ * Assignment 3: Unit Testing
+ * cardtest1.c (Testing smithy card function)
  */
 
 #include "dominion.h"
@@ -34,6 +28,7 @@ int main() {
     printf ("TESTING smithyEffect():\n");
     for (p = 0; p < numPlayer; p++)
     {
+        // Intialize game and set current player's turn and coin size to 5
         r = initializeGame(numPlayer, k, seed, &G);
         printf("deckcount Pre Player %d : %d\n",p, G.deckCount[p]);
         G.whoseTurn = p;
@@ -44,12 +39,17 @@ int main() {
         {
             G.handCount[p] = handCount;
             int i;
+            // Make the hand out of dummy cards
             for(i = 0; i<handCount;i++)
             {
                 G.hand[p][i] = dummyCard;
             }
+            // Add a smithy card to the hand
             G.hand[p][0] = testCard;
-            G.deckCount[p] = 10;
+            G.deckCount[p] = 10; // Make the deck out of 10
+            
+            // These tests just ensure that our values before calling the function are correct
+            // They test for number of buys, coin coint, hand count, etc
 #if (NOISY_TEST == 1)
             printf("***Test for player %d with %d cards in hand\n",p,handCount);
 #endif
@@ -81,8 +81,9 @@ int main() {
 #if (NOISY_TEST == 1)
             printf("Calling smithy Function\n");
 #endif
-            smithyEffect(p, 0, &G);
+            smithyEffect(p, 0, &G); // Call the smithy function
             
+            // Compare the results of the smithy function to what is expected
 #if (NOISY_TEST == 1)
             printf("Num coins. Expected %d, received %d\n",5,G.coins);
 #endif
@@ -107,11 +108,7 @@ int main() {
             printf("Finished test for player %d with %d cards in hand\n\n", p, handCount);
             
         }
-        
 
-        // Add one smithy card, call function
-        // check to see if smithy card is set to -1
-        // check to see if 3 cards are added
     }
     
     printf("All tests passed!\n");
