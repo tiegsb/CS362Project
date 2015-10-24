@@ -1,4 +1,8 @@
-/* -----------------------------------------------------------------------
+/* 
+Anthony Wilcox
+CS362 
+Fall 2015
+-----------------------------------------------------------------------
  * card test for village  -----------------------------------------------------------------------
  */
 //used provided testUpdateCoins.c shell provided in OSU Fall CS362
@@ -23,7 +27,7 @@ int main() {
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
     int maxHandCount = 5;  //number of cards in each player's hand 
-    printf ("TESTING drawCard():\n");
+    printf ("TESTING village():\n");
     while (numPlayer <= MAX_PLAYERS)
     {//check for all ranges of players 2 - 4
         for (p = 0; p < numPlayer; p++)
@@ -34,14 +38,14 @@ int main() {
                 memset(&G, 23, sizeof(struct gameState));   // clear the game state
                 r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
                 preact = G.numActions;
-                test1 = G.hand[p][handCount];
-                vil = play_council(&G, p, handCount);
+                test1 = G.handCount[p];
+                vil = play_village(p, handCount, &G);
                 /*actions shoudl increase by two
                 player hand count should go up by one 
                 vil should equal test2 if drawCard is working*/
                 postact = G.numActions;
-                test2 = G.hand[p][handCount];
-                printf("test1 is: %d, test2 is: %d vil is: %d\npreact is: %d, postact is: %d\n", test1, test2, vil, preact, postact);
+                test2 = G.handCount[p];
+                printf("test1 is: %d, test2 is: %d\npreact is: %d, postact is: %d\n", test1, test2, preact, postact);
             }
             //start at 2 players
          }//exit top for loop 
@@ -49,7 +53,7 @@ int main() {
   
    }//exit while loop 
     
-    printf("Test Failure if test2 != vil and test2 != test1 + 1\nTest Faulure if postact != preact + 2.\n");
+    printf("Test Failure if test1 != test2\nTest Faulure if postact != preact + 2.\n");
 
     return 0;
 }
