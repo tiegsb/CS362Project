@@ -1,7 +1,7 @@
 /*
 This program tests the adventurerCard function.
 The parameters for this function are:
-struct gameState *state
+int currentPlayer, struct gameState *state, int handPos)
 
 */
 
@@ -26,9 +26,8 @@ int main() {
     int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
     sea_hag, tribute, smithy};
 
-    printf ("Starting game.\n");
-
     initializeGame(2, k, 2, &G);
+
 
     //replace all cards in hand with a adventurer card
     for (i = 0; i < numHandCards(&G); i++)
@@ -36,19 +35,17 @@ int main() {
         G.hand[0][i] = adventurer;
     }
     
-
-
     // check state of game before calling function
     // printState(&G);
     //  printSupply(&G);
     // // printScores(&G);
-    printHand(0, &G);
+   // printHand(0, &G);
     // printPlayed(0, &G);
-    printDeck(0, &G);
-    printf ("Number of cards in hand %i \n", numHandCards(&G));
+    //printDeck(0, &G);
+    //printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
-    printf("played card \n");
+    printf("Testing adventurer card \n");
 
     //keeps track of played cards
     int playedCards = 0;

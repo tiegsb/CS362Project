@@ -1,7 +1,7 @@
 /*
-This program tests the adventurerCard function.
+This program tests the smithyCard function.
 The parameters for this function are:
-struct gameState *state
+int currentPlayer, struct gameState *state, int handPos
 
 */
 
@@ -26,14 +26,12 @@ int main() {
     int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
     sea_hag, tribute, smithy};
 
-    printf ("Starting game.\n");
-
     initializeGame(2, k, 2, &G);
 
     //replace all cards in hand with a adventurer card
     for (i = 0; i < numHandCards(&G); i++)
     {
-        G.hand[0][i] = adventurer;
+        G.hand[0][i] = smithy;
     }
     
 
@@ -42,44 +40,40 @@ int main() {
     // printState(&G);
     //  printSupply(&G);
     // // printScores(&G);
-    printHand(0, &G);
-    // printPlayed(0, &G);
-    printDeck(0, &G);
-    printf ("Number of cards in hand %i \n", numHandCards(&G));
+    // printHand(0, &G);
+    // // printPlayed(0, &G);
+    // printDeck(0, &G);
+    // printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
-    printf("played card \n");
+    printf("Testing smithy card\n");
 
     //keeps track of played cards
     int playedCards = 0;
-    for (i = (numHandCards(&G) -1); i >= 0; i--)
-    {
 
-        playCard(i, -1, -1, -1, &G);
-
-        //check to see if adventurer card goes into discard
-        printPlayed(0, &G);
-        printHand(0, &G);
-        // assert (G.playedCards[playedCards] == adventurer);
-        printf ("################################################### \n Error: played card (adventurer) was not discarded after use. \n ################################################### \n");
-
-        //check to see if 2 coins are added.
-        int treasurePresent = 0;
-        if (G.hand[0][i] == copper || G.hand[0][i] == silver || G.hand[0][i] == gold )
-            treasurePresent++;
-        if (G.hand[0][i+1] == copper || G.hand[0][i+1] == silver || G.hand[0][i+1] == gold )
-            treasurePresent++;
-        
-//assertion commented out because previous error affects this assertion.        
-        //assert (treasurePresent == 2);
+    i = 4;
+    playCard(i, -1, -1, -1, &G);
 
 
-        // printState(&G);
-        
-        // printPlayed(0, &G);
-        // printDeck(0, &G);
-        playedCards++;
-    }
+    //check to see if adventurer card goes into discard
+    printPlayed(0, &G);
+    printHand(0, &G);
+    //make sure card is discarded
+    assert (G.hand[4][i] != smithy);
+    
+    //make sure there are + 2 cards in hand 
+    printf ("################################################### \n Error: incorrect number of cards in hand left after Smithy played. \n ################################################### \n");
+    // assert (numHandCards(&G) == cardsInHand + 2);
+    
+    //make sure that smithy was discarded. 
+    assert (G.playedCards[playedCards] == smithy);
+    playedCards++;
+
+    // printState(&G);
+    
+    // printPlayed(0, &G);
+    // printDeck(0, &G);
+    
 
     printf("All tests passed!\n");
 
