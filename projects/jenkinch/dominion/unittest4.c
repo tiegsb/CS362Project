@@ -60,9 +60,9 @@ int testShuffle() {
     
     //Test for unsuccessful function call
     if(shuffle(1, &G) == -1)
-        printf("scoreFor(): PASS player 1, function returned unsuccessfully on empty deck \n");
+        printf("shuffle(): PASS player 1, function returned unsuccessfully on empty deck \n");
     else
-        printf("scoreFor(): FAIL player 1, function returned unsuccessfully on empty deck \n");
+        printf("shuffle(): FAIL player 1, function returned unsuccessfully on empty deck \n");
     
     //Reset game and set players' decks, hands, and discard piles    
     memset(&G, 23, sizeof(struct gameState));   // clear the game state
@@ -83,15 +83,15 @@ int testShuffle() {
     
     //Test for successful function call
     if(!shuffle(0, &G))
-        printf("scoreFor(): PASS player 0, function returned successfully on initial hand/discard/deck mix \n");
+        printf("shuffle(): PASS player 0, function returned successfully on initial hand/discard/deck mix \n");
     else
-        printf("scoreFor(): FAIL player 0, function returned successfully on initial hand/discard/deck mix \n");
+        printf("shuffle(): FAIL player 0, function returned successfully on initial hand/discard/deck mix \n");
     
     //Test that player 0 deck count is unaffected
     if(G.deckCount[0] == p0DeckCount)
-        printf("scoreFor(): PASS player 0, deck count stayed the same \n");
+        printf("shuffle(): PASS player 0, deck count stayed the same \n");
     else
-        printf("scoreFor(): FAIL player 0, deck count stayed the same \n");
+        printf("shuffle(): FAIL player 0, deck count stayed the same \n");
     
     //Test that player 0 deck is in different order then before
     for(i = 0; i < p0DeckCount; i++){
@@ -99,35 +99,35 @@ int testShuffle() {
             posChangeCount++;
     }
     if(posChangeCount > 0)
-        printf("scoreFor(): PASS player 0, %d cards changed position in deck \n", posChangeCount);
+        printf("shuffle(): PASS player 0, %d cards changed position in deck \n", posChangeCount);
     else
-        printf("scoreFor(): FAIL player 0, %d cards changed position in deck \n", posChangeCount);
+        printf("shuffle(): FAIL player 0, %d cards changed position in deck \n", posChangeCount);
     
     //Test for any other unexpected game state changes
     if(G.handCount[0] == p0HandCount)
-        printf("scoreFor(): PASS player 0, hand count stayed the same \n");
+        printf("shuffle(): PASS player 0, hand count stayed the same \n");
     else
-        printf("scoreFor(): FAIL player 0, hand count stayed the same \n");
+        printf("shuffle(): FAIL player 0, hand count stayed the same \n");
     
     if(G.discardCount[0] == p0DiscardCount)
-        printf("scoreFor(): PASS player 0, discard count stayed the same \n");
+        printf("shuffle(): PASS player 0, discard count stayed the same \n");
     else
-        printf("scoreFor(): FAIL player 0, discard count stayed the same \n");
+        printf("shuffle(): FAIL player 0, discard count stayed the same \n");
     
     if(G.deckCount[1] == p1DeckCount)
-        printf("scoreFor(): PASS player 1, deck count stayed the same \n");
+        printf("shuffle(): PASS player 1, deck count stayed the same \n");
     else
-        printf("scoreFor(): FAIL player 1, deck count stayed the same \n");
+        printf("shuffle(): FAIL player 1, deck count stayed the same \n");
     
     if(G.handCount[1] == p1HandCount)
-        printf("scoreFor(): PASS player 1, hand count stayed the same \n");
+        printf("shuffle(): PASS player 1, hand count stayed the same \n");
     else
-        printf("scoreFor(): FAIL player 1, hand count stayed the same \n");
+        printf("shuffle(): FAIL player 1, hand count stayed the same \n");
     
     if(G.discardCount[1] == p1DiscardCount)
-        printf("scoreFor(): PASS player 1, discard count stayed the same \n");
+        printf("shuffle(): PASS player 1, discard count stayed the same \n");
     else
-        printf("scoreFor(): FAIL player 1, discard count stayed the same \n");
+        printf("shuffle(): FAIL player 1, discard count stayed the same \n");
     
     for(i = 0; i < p0HandCount; i++){
         if(G.hand[0][i] != p0Hand[i])
@@ -135,9 +135,9 @@ int testShuffle() {
             break;
     }
     if(cardIsDifferent)
-        printf("scoreFor(): FAIL player 0, cards in hand remained same after shuffle \n");
+        printf("shuffle(): FAIL player 0, cards in hand remained same after shuffle \n");
     else
-        printf("scoreFor(): PASS player 0, cards in hand remained same after shuffle \n");
+        printf("shuffle(): PASS player 0, cards in hand remained same after shuffle \n");
     
     cardIsDifferent = 0;
     
@@ -147,9 +147,9 @@ int testShuffle() {
             break;
     }
     if(cardIsDifferent)
-        printf("scoreFor(): FAIL player 0, cards in discard remained same after shuffle \n");
+        printf("shuffle(): FAIL player 0, cards in discard remained same after shuffle \n");
     else
-        printf("scoreFor(): PASS player 0, cards in discard remained same after shuffle \n");
+        printf("shuffle(): PASS player 0, cards in discard remained same after shuffle \n");
     
     cardIsDifferent = 0;
     
@@ -159,9 +159,9 @@ int testShuffle() {
             break;
     }
     if(cardIsDifferent)
-        printf("scoreFor(): FAIL player 1, cards in deck remained same after shuffle \n");
+        printf("shuffle(): FAIL player 1, cards in deck remained same after shuffle \n");
     else
-        printf("scoreFor(): PASS player 1, cards in deck remained same after shuffle \n");
+        printf("shuffle(): PASS player 1, cards in deck remained same after shuffle \n");
     
     cardIsDifferent = 0;
     
@@ -171,9 +171,9 @@ int testShuffle() {
             break;
     }
     if(cardIsDifferent)
-        printf("scoreFor(): FAIL player 1, cards in hand remained same after shuffle \n");
+        printf("shuffle(): FAIL player 1, cards in hand remained same after shuffle \n");
     else
-        printf("scoreFor(): PASS player 1, cards in hand remained same after shuffle \n");
+        printf("shuffle(): PASS player 1, cards in hand remained same after shuffle \n");
     
     cardIsDifferent = 0;
     
@@ -183,9 +183,9 @@ int testShuffle() {
             break;
     }
     if(cardIsDifferent)
-        printf("scoreFor(): FAIL player 1, cards in discard remained same after shuffle \n");
+        printf("shuffle(): FAIL player 1, cards in discard remained same after shuffle \n");
     else
-        printf("scoreFor(): PASS player 1, cards in discard remained same after shuffle \n");
+        printf("shuffle(): PASS player 1, cards in discard remained same after shuffle \n");
     
     return 0;
 }
