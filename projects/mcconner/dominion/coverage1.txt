@@ -1,0 +1,18 @@
+
+Unittest1.c	lines executed 87.72% of 57
+				15.83% of 575
+Unittest2.c	lines executed 95.74% of 47
+				16.00% of 575
+Unittest3.c	lines executed 95.08% of 61
+				17.39% of 575
+Unittest4.c	lines executed 85.29% of 68
+				17.57% of 575
+
+Cardtest1.c	lines executed 91.37% of 139
+				18.43% of 575
+Cardtest2.c	lines executed 88.62% of 123
+				17.22% of 575
+Cardtest3.c	lines executed 90.21% of 143
+				19.13% of 575
+Cardtest4.c	lines executed 91.49% of 141
+				20.00% of 575
