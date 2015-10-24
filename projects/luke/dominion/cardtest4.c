@@ -13,6 +13,8 @@
 
 int main() {
 
+	printf("Test steward card:\n");
+
 	srand(time(NULL));
 	int numberPlayer = 2;
 	int player1 = 0;
@@ -32,18 +34,31 @@ int main() {
 	int coinCount=G.coins;
 
 	//Test +2 card option
+
+	printf("****************************************************\n");
+
+	printf("Test that +2 card option picked is successful\n");
+
+	printf("****************************************************\n");
+
 	stewardCard(1, G.handCount[player1]-1, G.handCount[player1]-2, player1, 0, &G);
 
 	int newHandCount=G.handCount[player1];
 
 	if(newHandCount == handCount+1) {
-		printf("Hand Test passed\n");
+		printf("TEST PASSED\n");
 	} else {
-		printf("Hand Test failed\n");
+		printf("TEST FAILED\n");
 	}
 
 	//reset game and
 	//Test +2 coins option
+
+	printf("****************************************************\n");
+
+	printf("Test that +2 coins option picked is successful\n");
+
+	printf("****************************************************\n");
 
 	//Clear the game state
 	memset(&G, 23, sizeof(struct gameState));
@@ -59,13 +74,19 @@ int main() {
 	int newCoinCount = G.coins;
 
 	if(newCoinCount == coinCount+2) {
-		printf("Coin Test passed\n");
+		printf("TEST PASSED\n");
 	} else {
-		printf("Coin Test failed\n");
+		printf("TEST FAILED\n");
 	}
 
 	//reset game and
 	//Test trash 2 cards option
+
+	printf("***********************************************************\n");
+
+	printf("Test that the trash 2 cards option picked is successful\n");
+
+	printf("***********************************************************\n");
 
 	//Clear the game state
 	memset(&G, 23, sizeof(struct gameState));
@@ -76,15 +97,17 @@ int main() {
 	handCount=G.handCount[player1];
 	coinCount=G.coins;
 
-	printf("ORIG HAND COUNT: %d\n", handCount);
+	printf("Original hand count: %d\n", handCount);
 
 	int lastCard=G.hand[player1][G.handCount[player1]-1];
 	int secondToLastCard=G.hand[player1][G.handCount[player1]-2];
 
 	//remove cards in handPos 1 and 2
 
+	printf("Remove cards in handPos 1 and 2...\n");
+
 	for(i=0; i<G.handCount[player1]; i++) {
-		printf("CARD %d before Steward Card: %d\n", i, G.hand[player1][i]);
+		printf("Card at handPos %d before Steward Card: %d\n", i, G.hand[player1][i]);
 	}
 
 	stewardCard(3, 1, 2, player1, 0, &G);
@@ -104,7 +127,7 @@ int main() {
 
 
 	for(i=0; i<G.handCount[player1]; i++) {
-		printf("CARD %d after Steward Card: %d\n", i, G.hand[player1][i]);
+		printf("Card at handPos %d after Steward Card: %d\n", i, G.hand[player1][i]);
 	}
 
 	// if(G.hand[player1][1] != savedCard1 && G.hand[player1][2] != savedCard2) {
@@ -120,5 +143,7 @@ int main() {
 	}
 
 
+
+	return 0;
 
 }

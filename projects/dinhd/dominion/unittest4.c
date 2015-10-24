@@ -18,7 +18,6 @@ struct gameState *state
 
 int main() {
 
-	int i = 66; 
 	int score;
 	int card;
     struct gameState G;
@@ -90,7 +89,6 @@ int main() {
     //printDiscard(0, &G);
     //printHand(0, &G);
 
-    int discardCount = G.discardCount[0];
     score = scoreFor(0, &G);
     //printf ("score: %i disardcount: %i \n", score, discardCount);
     printf ("################################################### \n Error: iterator for deck count cycles through i = discardCount istead of deckCount \n ################################################### \n");
