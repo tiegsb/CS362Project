@@ -38,4 +38,7 @@ void testCouncilRoomEffect() {
     assert(gs.deckCount[1] == 5);
     assert(gs.handCount[2] == 7);
     assert(gs.deckCount[2] == 5);
+
+    // Check that 1 buy was added.
+    assert(gs.numBuys == 1);
 }
