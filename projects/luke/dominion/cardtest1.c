@@ -13,6 +13,8 @@
 
 int main() {
 
+	printf("Test smithy card:\n");
+
 	srand(time(NULL));
 	int numberPlayer = 2;
 	int player1 = 0;
@@ -40,11 +42,25 @@ int main() {
 	//expect newHand to be 2 more cards than the original 
 	//hand because 3 are drawn from the smithy card and
 	//and also the smithy card was played.
+
+	printf("****************************************************\n");
+
+	printf("Test case: expect newHand to be 2 more cards than the original\n");
+	printf("hand because 3 are drawn from the smithy card and\n");
+	printf("and also the smithy card was played.\n");
+
+	printf("****************************************************\n");
+
 	if(newHand == (handCount+2)) {
-		printf("Test Success.\n");
+		printf("TEST PASSED.\n");
 	} else {
-		printf("Test Failed.");
+		printf("TEST FAILED:\n");
+		printf("Old hand has %d cards\n", handCount);
+		printf("New hand has %d cards\n", newHand);
+
 	}
+
+	return 0;
 
 
 }

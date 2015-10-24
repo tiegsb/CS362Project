@@ -39,7 +39,6 @@ int main() {
 
 	GS->hand[p][4] = council_room; //5th card in hand is council room
 
-//void councilRoomCard (int currentPlayer, struct gameState* state, int handPos){
 	printf("Playing Council Room card and testing...\n");
 
 	/*Checking handcount and cards in hand before playing council room*/

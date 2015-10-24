@@ -30,7 +30,7 @@ int main() {
     r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
     for(i = 0; i <= treasure_map; i++)
     {
-        if(G.supplyCount[i] != 0)
+        if(G.supplyCount[i] != 0 && i != 3)
         {//if there is currently a supply, set to zero
             G.supplyCount[i] = 0; 
         }
