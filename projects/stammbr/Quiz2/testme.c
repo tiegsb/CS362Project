@@ -22,14 +22,15 @@ char inputChar()
 char *inputString()
 {
   char rArray[5] = {'r', 'e', 's', 't', '\0'};
-  char returnString[5];
+  
+  static char returnString[5];
   int r, i;
   for(i = 0; i < 5; i++){
     r = rand() % 5;
     returnString[i] = rArray[r];
   }
-  char *p = &returnString[0];
-  return p;
+  
+  return returnString;
 }
 
 void testme()
