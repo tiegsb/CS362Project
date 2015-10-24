@@ -2,6 +2,6 @@
 
 int main(int argc, char *argv[])
 {
-    echo "unittest2 working! ";
+    printf("unittest2 working!\n");
     return 0;
 }

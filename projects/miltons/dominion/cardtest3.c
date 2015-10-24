@@ -2,6 +2,6 @@
 
 int main(int argc, char *argv[])
 {
-    echo "cardtest3 working! ";
+    printf("cardtest3 working!\n");
     return 0;
 }
