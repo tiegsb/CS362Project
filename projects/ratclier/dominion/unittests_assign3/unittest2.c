@@ -44,26 +44,26 @@ int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
         {
             if(state->deck[player][origState->deckCount[player]] == supplyPos)
             {
-                printf("Test PASSED: Card added to player deck\n");
+                printf("gainCard: PASS card added to player deck\n");
             }
             else
             {
-                printf("Test FAILED: Card not added to player deck\n");
+                printf("gainCard FAIL card not added to player deck\n");
             }
 
             if(state->deckCount[player] == origState->deckCount[player]+1)
             {
-                printf("Test PASSED: Player deck count incremented\n");
+                printf("gainCard: PASS player deck count incremented\n");
             }
             else
             {
-                printf("Test FAILED: Player deck count not incremented\n");
+                printf("gainCard: FAIL player deck count not incremented\n");
             }
         }
 
         if(state->deck[player][ state->deckCount[player]] == supplyPos)
         {
-            printf("Test PASSED: Exited without enough cards, no action taken\n");
+            printf("gainCard: PASS exited without enough cards, no action taken\n");
         }
 
         /* From dominion.c code:
@@ -193,6 +193,10 @@ int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
     }
 */
     
+    printf("\ngainCard: Changes to game state:\n----------------------------------------\n");
+    whatChanged(origState, state);
+
+    printf("\n");
 
     return 0;
 }
@@ -203,6 +207,9 @@ int main(int argc, char *argv[])
     int numPlayers = 2;
     int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
     int randomSeed = 100;
+    int supplyPos = feast; // Just a placeholder, can be changed later
+    int toFlag;            // Where to put the card (0 = discard, 1 = deck, 2 = hand)
+    int player = 0;        // Just a placeholder, can be changed later
     struct gameState *state;
 
     // New game
@@ -216,7 +223,8 @@ int main(int argc, char *argv[])
     //
     printf("Testing: Sufficient supply deck...\n");
     // Make sure state->supplyCount[supplyPos] >= 1
-    testGainCard(handPos, state, toFlag, player);
+    toFlag = 1;
+    testGainCard(supplyPos, state, toFlag, player);
 
     printf("\n");
 
@@ -228,8 +236,9 @@ int main(int argc, char *argv[])
     // Gain a card w/ an empty or insufficient supply deck
     //
     printf("Testing: Insufficient supply deck...\n");
+    toFlag = 1;
     state->supplyCount[supplyPos] = 0;
-    testGainCard(handPos, state, toFlag, player);
+    testGainCard(supplyPos, state, toFlag, player);
 
     return 0;
 }
