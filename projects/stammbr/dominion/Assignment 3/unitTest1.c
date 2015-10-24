@@ -2,7 +2,7 @@
  * Author:  Brian Stamm
  * Title:  unitTest1.c
  * Assignment:  3
- * Date:  10.?.15
+ * Date:  10.25.15
  * Notes:  Create unit test for shuffle().
  * ****************/
 
@@ -19,9 +19,8 @@ void test(){
   struct gameState g;
   struct gameState *game = &g;
   srand(time(NULL));
-  int r = rand();
   int player = 0;
-  int card, position, same, index, i;
+  int card, position, same, index, i, r, failNum;
   int testDeck[500];
 
   //Initial check, first if
@@ -37,12 +36,14 @@ void test(){
   position = 0;
   same = 0;
   index = 1;
+  failNum = 0;
   printf("Testing started - increasing card count from 0 to 500\n");
   while(game->deckCount[player] <= 500){
-    card = r % treasure_map;
-    game->deck[player][position] = card;
     
-    for(i = 0; i <= position; i++){
+    for(i = 0; i <= position; i++){    
+      r = rand();
+      card = r % treasure_map;
+      game->deck[player][i] = card;
       testDeck[i] = game->deck[player][i];
     }
 
@@ -53,9 +54,10 @@ void test(){
         same++;
       }
     }
-    if((float)(same)/index > 0.75){
+    if((float)same/index > 0.75){
       printf("shuffle() increase random test:  FAIL\n");
-      printf("Amount of Cards:  %d\tPercent same:  %.1f\n\n", index, (float)(same/index*100));
+      printf("Amount of Cards:  %d\tPercent same:  %.1f\n\n", index, (float)same/index*100);
+      failNum++;
     }
     same = 0;
     game->deckCount[player] += 1;
@@ -63,14 +65,23 @@ void test(){
     index++;
   }
 
+  if(failNum == 0){
+    printf("shuffle() increasing deck - PASSED.\n\n");
+  }
+  else{
+    printf("shuffle() increasing deck - FAILED  - %d times\n\n", failNum);
+  }
+
   //Random testing, 500 cards, 500 times
   game->deckCount[player] = 500;
   position = 0;
   same = 0;
   index = 0;
+  failNum = 0;
   printf("Testing 500 cards, random\n");
   while(index < 500){
     for(i = 0; i < 500; i++){
+      r = rand();
       card = r % treasure_map;
       game->deck[player][i] = card;
       testDeck[i] = card;
@@ -83,12 +94,19 @@ void test(){
         same++;
       }
     }
-    if(((float)(same)/500) > 0.75){
+    if(((float)same/500) > 0.75){
       printf("shuffle() 500 random test:  FAIL\n");
-      printf("%d:  Percent same:  %.1f\n\n", index+1, (float)(same/index*100));
+      printf("%d:  Percent same:  %.1f\n\n", index+1, (float)same/index*100);
+      failNum++;
     }
     same = 0;
     index++;
+  }
+  if(failNum == 0){
+    printf("shuffle() random deck - PASSED.\n\n");
+  }
+  else{
+    printf("shuffle() random deck - FAILED  - %d times\n\n", failNum);
   }
 }
 

@@ -41,11 +41,16 @@ remodel, smithy, village, baron, great_hall };
    
   }
   calculatedCoins+=bonus;
-  printf("Calculated coins w/ bonus: %d\n", calculatedCoins);
+  
   updateCoins(0, &gs, bonus);
-  printf("gs.coins: %d\n", gs.coins);
-  assert(calculatedCoins == gs.coins);
-  printf("Pass\n");
+
+  if(calculatedCoins == gs.coins)
+    printf("Pass: Correct number of coins.\n");
+  else
+    printf("Fail: Wrong number of coins.\n");
+  printf("Calculated coins actual: %d, expected: %d\n", gs.coins, calculatedCoins);
+  //assert(calculatedCoins == gs.coins);
+  
   return 0;
 }
 
@@ -54,21 +59,29 @@ int main(){
   int test1[5] = { copper, copper, copper, copper, copper };
   int test2[5] = { copper, silver, estate, duchy, silver };
   int test3[5] = { estate, gold, gold, copper, estate };
+  int test4[5] = { gold, gold, gold, gold, gold };
   int returned;
-  printf("Calling Test1: All Coppers\n");
+
+  printf("Calling Test1\n");
   bonus=0;
   returned = testUpdateCoins(test1, bonus);
+  
   printf("Calling Test2\n");
   bonus=5;
   returned = testUpdateCoins(test2, bonus);
+  
   printf("Calling Test3\n");
   bonus=4;
   returned = testUpdateCoins(test3, bonus);
   
+  printf("Calling Test 4\n");
+  bonus=2;
+  returned = testUpdateCoins(test4, bonus);
+
   if(returned == 0)
     printf("All updateCoins tests passed!\n");
   else
-    printf("Some updateCoins tests failed\n");
+    printf("%d updateCoins tests failed\n", returned);
 
   return 0;
 }

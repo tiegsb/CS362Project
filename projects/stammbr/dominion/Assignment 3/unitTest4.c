@@ -54,8 +54,9 @@ void test(){
   }
 
   //Check two supply card zero
-  k = -1;
-  while(k != j){
+  k = j;
+  while(k == j){
+    r = rand();
     k = r % total;
   }
   game->supplyCount[k] = 0;
@@ -67,9 +68,13 @@ void test(){
   }
 
   //Check 3 supply cards are zero
-  c = -1;
-  while(c != j && c != k){
+  c = k;
+  while(c == k){
+    r = rand();
     c = r % total;
+    if(c == j){
+      c = k;
+    }
   }
   game->supplyCount[c] = 0;
   if(isGameOver(game) == 1){
@@ -86,8 +91,10 @@ void test(){
   c = 0;
   truth = 0;
   while(c != 500){
+    r = rand();
     j = r % total;
-    for(i = 0; i <= j; i++){
+    for(i = 0; i < j; i++){
+      r = rand();
       k = r % total;
       while(game->supplyCount[k] == 0){
         k++;
@@ -100,14 +107,15 @@ void test(){
     if(j>= 3){
       if(isGameOver(game) != 1){
         printf("isGameOver() test:  FAILED 6a - Game over\n");
-        printf("\tNumber of cards 0:  %d\n", j);
+        printf("Game should be over.\tNumber of cards:  %d\n", j);
         truth++;
       }
     }
     else{
         if(isGameOver(game) != 0){
         printf("isGameOver() test:  FAILED 6b - Game over\n");
-        printf("\tNumber of cards 0:  %d\n", j);
+        printf("\tNumber of cards:  %d\n", j);
+        printf("\tProvince supplyCount:  %d\n", game->supplyCount[province]);
         truth++;
       }
     }

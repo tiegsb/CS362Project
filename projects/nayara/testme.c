@@ -16,7 +16,7 @@ char inputChar()
     char chars[] = "[({ ax})]";
 
     // There are 10 choices, so pick a 
-    // number between 0-9
+    // number between 0-8
     int i =   rand() %9;
 
     // Return the respective character
@@ -41,7 +41,7 @@ char *inputString()
     for(i=0;i<5;i++)
     {
       // Random choose a number between 0-5
-      int j = rand() % 5;
+      int j = rand() % 6;
       // Use that number to grab the char at that index
       // and use the char to assemble the string
       word[i] = chars[j];

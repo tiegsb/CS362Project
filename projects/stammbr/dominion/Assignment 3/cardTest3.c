@@ -2,7 +2,7 @@
  * Author:  Brian Stamm
  * Title:  cardTest3.c
  * Assignment:  3
- * Date:  10.?.15
+ * Date:  10.25.15
  * Notes:  Tests the Village card, in villageMethod().
  * ****************/
 
@@ -23,57 +23,52 @@ void test(){
   srand(time(NULL));
   int r = rand();
   int i, counter, card, total, failNum;
-  int testCards[3];
-  int testHand[500];
-  int testHandCount, testDeckCount, testDiscardCount, testActions;
-  int testDiscard[500];
+  int testHandCount, testDeckCount, testPlayedCount, testActions;
   int testTrialCard;
 
   initializeGame(2, k, r, game);
 
   //First check.  Set up same valuse
-  for(i = 0; i < game->discardCount[player]; i++){
-    testDiscard[i] = game->discard[player][i];
-  }
-  for(i = 0; i < game->handCount[player]; i++){
-    testHand[i] = game->hand[player][i];
-  }
-  for(i = 0; i < 3; i++){
-    testCards[i] = game->deck[player][i];
-  }
   testTrialCard = game->hand[player][0];
   testHandCount = game->handCount[player];
-  testDiscardCount = game->discardCount[player];
-  testDeckCount = game->deckCount[player];
-  testActions = game->numActions;
-  testActions += 2;
+  testPlayedCount = game->playedCardCount + 1;
+  testDeckCount = game->deckCount[player]-1;
+  testActions = game->numActions + 2;
 
   if(villageMethod(game, player, 0) == 0){
-    if((testDiscardCount+1) == game->discardCount[player]){
-      printf("villageMethod() Test 1:  PASS, discard amounts equal.\n");
+    if(testPlayedCount == game->playedCardCount){
+      printf("villageMethod() Test 1:  PASS, played card amounts equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testPlayedCount, game->playedCardCount);
     }
     else{
       printf("villageMethod() Test 1:  FAIL, discard amounts NOT equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testPlayedCount, game->playedCardCount);
     }
 
-    if((testHandCount+2) == game->handCount[player]){
+    if((testHandCount) == game->handCount[player]){
       printf("villageMethod() Test 1:  PASS, handCount amounts equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testHandCount, game->handCount[player]);
     }
     else{
       printf("villageMethod() Test 1:  FAIL, handCount amounts NOT equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testHandCount, game->handCount[player]);
     }
 
     if(testDeckCount == game->deckCount[player]){
       printf("villageMethod() Test 1:  PASS, deckCount amounts equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testDeckCount, game->deckCount[player]);
     }
     else{
       printf("villageMethod() Test 1:  FAIL, deckCount amounts NOT equal.\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testDeckCount, game->deckCount[player]);
     }
     if(game->numActions == testActions){
       printf("villageMethod() Test :  PASSED - action number correct\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testActions, game->numActions);
     }
     else{
       printf("villageMethod() Test :  FAILED - action number NOT correct\n");
+      printf("\tTest:  %d\tSaved:  %d\n", testActions, game->numActions);
     }
   }
   else{
@@ -81,20 +76,23 @@ void test(){
   }
 
 //Then do random decks, similar to shuffle test.
-  printf("Random Testing to Start\n");
+  printf("\nRandom Testing to Start\n");
   counter = 1;
   failNum = 0;
   while(counter < 501){
     for(i=0; i < 10; i++){
+      r = rand();
       card = r % treasure_map;
       game->deck[player][i] = card;
     }
     game->deckCount[player] = 10;
+    r = rand();
     total = r % MAX_HAND;
     if(total == 0){
       total++;
     }
     for(i=0; i<total; i++){
+      r = rand();
       card = r % treasure_map;
       game->hand[player][i] = card;
     }
@@ -102,22 +100,33 @@ void test(){
 
     testTrialCard = game->hand[player][0];
     testHandCount = game->handCount[player];
-    testDiscardCount = game->discardCount[player];
-    testDeckCount = game->deckCount[player];
+    game->playedCardCount = 0;
+    testPlayedCount = 1;
+    testDeckCount = game->deckCount[player] -1;
+    testTrialCard = game->hand[player][0];
+    testActions = game->numActions + 2;
 
     if(villageMethod(game, player, 0) == 0){
-      if((testDiscardCount+1) != game->discardCount[player]){
-        printf("villageMethod() Random Test %d:  FAIL, discard amounts NOT equal.\n", counter);
+      if(testPlayedCount != game->playedCardCount){
+        printf("villageMethod() Random Test %d:  FAIL, played amounts NOT equal.\n", counter);
+        printf("\tTest:  %d\tSaved:  %d\n", testPlayedCount, game->playedCardCount);
         failNum++;
       }
 
-      if((testHandCount+2) != game->handCount[player]){
+      if(testHandCount != game->handCount[player]){
         printf("villageMethod() Test %d:  FAIL, handCount amounts NOT equal.\n", counter);
+        printf("\tTest:  %d\tSaved:  %d\n", testHandCount, game->handCount[player]);
         failNum++;
       }
 
       if(testDeckCount != game->deckCount[player]){
         printf("villageMethod() Test %d:  FAIL, deckCount amounts NOT equal.\n", counter);
+        printf("\tTest:  %d\tSaved:  %d\n", testDeckCount, game->deckCount[player]);
+        failNum++;
+      }
+      if(testActions != game->numActions){
+        printf("villageMethod() Test :  FAILED - action number NOT correct\n");
+        printf("\tTest:  %d\tSaved:  %d\n", testActions, game->numActions);
         failNum++;
       }
     }

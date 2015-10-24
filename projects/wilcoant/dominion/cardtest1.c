@@ -1,4 +1,8 @@
-/* -----------------------------------------------------------------------
+/* 
+Anthony Wilcox
+CS362 
+Fall 2015
+-----------------------------------------------------------------------
  * card test for smithy  -----------------------------------------------------------------------
  */
 //used provided testUpdateCoins.c shell provided in OSU Fall CS362
@@ -14,14 +18,14 @@
 int main() {
     int seed = 1000;
     int numPlayer = 2;   //add for loop condition to iterate up to 4
-    int p, r, handCount;
+    int p, r, handCount, handcount2;
     int k[10] = {adventurer, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
     int maxHandCount = 5;  //number of cards in each player's hand 
     int prehand; //precounter
     int posthand; //post counter 
-    printf ("TESTING drawCard():\n");
+    printf ("TESTING smithy():\n");
     while (numPlayer <= MAX_PLAYERS)
     {//check for all ranges of players 2 - 4
         for (p = 0; p < numPlayer; p++)
@@ -31,13 +35,30 @@ int main() {
                 
                 memset(&G, 23, sizeof(struct gameState));   // clear the game state
                 r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
-                G.handCount[p] = handCount;   
+                G.handCount[p] = handCount; 
+                
+                //post hand count of other players 
+                for(int i = 0; i < numPlayer; i++)
+                {
+                    if(i != p)
+                    {
+                        printf("Pre-call: Other hand counts are: %d\n", G.handCount[i]);
+                    }
+                }
                 prehand = G.handCount[p]; //prefn call hand count 
                 printf("pre-handcount is %d\n", prehand);
                     // set the number of cards on hand
                 play_smithy(p, &G, 0);
                 posthand = G.handCount[p]; //after call hand count 
                 printf("post-handcount is %d\n", posthand);
+                //post hand count of other players 
+                for(int i = 0; i < numPlayer; i++)
+                {
+                    if(i != p)
+                    {
+                        printf("Other hand counts are: %d\n", G.handCount[i]);
+                    }
+                }
             }
             //start at 2 players
          }//exit top for loop 
@@ -45,7 +66,7 @@ int main() {
   
    }//exit while loop 
     
-    printf("All tests passed!\n");
+    printf("Test Failure if pre and post hand count difference != 3!\n");
 
     return 0;
 }
