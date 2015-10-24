@@ -34,6 +34,7 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
 {
     struct gameState *origState;  // copy of game state
     int coinCount = 0;
+    int i;
 
     // Make a copy of the original game state
     //
@@ -63,13 +64,18 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
 
     if(state->coins == coinCount)
     {
-        printf("Test PASSED: Game state holds correct number of coins.\n");
+        printf("updateCoins: PASS game state holds correct number of coins.\n");
     }
     else
     {
-        printf("Test FAILED: Game state holds incorrect number of coins.\n");
+        printf("updateCoins: FAIL game state holds incorrect number of coins.\n");
     }
 
+    printf("\nupdateCoins: Changes to game state:\n----------------------------------------\n");
+    whatChanged(origState, state);
+
+    printf("\n");
+    
     return 0;
 }
 
@@ -96,8 +102,6 @@ int main(int argc, char *argv[])
     bonus = 5;
     testUpdateCoins(player, state, bonus);
 
-    printf("\n");
-
     // New game
     //
     state = newGame();
@@ -106,7 +110,7 @@ int main(int argc, char *argv[])
     // Discard a non-trashed card
     printf("Testing: Player 1's coins, 3 bonus...\n");
     player = 0;
-    bonus = 5;
+    bonus = 3;
     testUpdateCoins(player, state, bonus);
 
     return 0;
