@@ -12,6 +12,7 @@ struct gameState *state
 #include <assert.h>
 #include "rngs.h"
 #include "interface.h"
+#include <stdlib.h>
 
 // set NOISY_TEST to 0 to remove printfs from output
 #define NOISY_TEST 1
@@ -27,14 +28,48 @@ int main() {
 
     printf ("Starting game.\n");
 
-    printState(&G);
-    printSupply(&G);
-    printGamestate(&G);
-    printScores(&G);
+    initializeGame(2, k, 2, &G);
 
-    initializeGame(2, k, atoi(argv[1]), &G);
-
+    //replace all cards in hand with a village card
+    for (i = 0; i < numHandCards(&G); i++)
+    {
+        G.hand[0][i] = village;
+    }
     
+
+
+    // check state of game before calling function
+    // printState(&G);
+    //  printSupply(&G);
+    // // printScores(&G);
+    // printHand(0, &G);
+    // printPlayed(0, &G);
+    // printDeck(0, &G);
+    printf ("Number of cards in hand %i \n", numHandCards(&G));
+
+
+    printf("played card \n");
+
+    //keeps track of played cards
+    int playedCards = 0;
+    for (i = (numHandCards(&G) -1); i >= 0; i--)
+    {
+        int numActions = G.numActions;
+        playCard(i, -1, -1, -1, &G);
+
+        //check to see if village card goes into discard
+        assert (G.playedCards[playedCards] == village);
+        //check to see if number of actions increased by 2
+        assert (numActions + 1 == G.numActions);
+        //check to see if the is replaced by a drawn card form the deck
+        assert (G.hand[0][i] != village);
+        // printState(&G);
+        // printHand(0, &G);
+        // printPlayed(0, &G);
+        // printDeck(0, &G);
+        playedCards++;
+    }
+
     printf("All tests passed!\n");
 
     
