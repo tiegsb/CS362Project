@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <string.h>
 #include "dominion.h"
 
 void test_shuffle() {
@@ -13,11 +14,11 @@ void test_shuffle() {
         .numActions = 0,
         .coins = 0,
         .numBuys = 0,
-        .hand = {0},
+        .hand = {{0}},
         .handCount = {0},
         .deckCount = {0, 6, 6},
         .deck = {{0, 1, 2, 3, 4, 5}, {0, 1, 2, 3, 4, 5}, {0, 1, 2, 3, 4, 5},},
-        .discard = {0},
+        .discard = {{0}},
         .discardCount = {0},
         .playedCards = {0},
         .playedCardCount = 0,
@@ -41,8 +42,6 @@ void test_shuffle() {
 
     // WARNING: NON-DETERMINISTIC TEST! There is a one in 6! = 720 chance that
     // this test will fail.
-    for (int i = 0; i < 6; i++) {
-        assert(gs.deck[0][i] == i);
-    }
+    int original[] = {0, 1, 2, 3, 4, 5};
+    assert(memcmp(original, gs.deck[0], 6*sizeof(int)) != 0);
 }
-

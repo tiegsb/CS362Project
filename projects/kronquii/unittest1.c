@@ -1,24 +1,18 @@
 #include <limits.h>
+#include <assert.h>
 
 #include "dominion.h"
 
 
-void test_compare(const void* a, const void* b) {
-    // Search the whole state space of integers to ensure that the function has
-    // the expected return values
-    for (int i = INT_MIN; i < INT_MAX; i++) {
-        for (int j = i + 1; j =< INT_MAX; j++) {
-            assert(compare(i, j) == 1);
-        }
-    }
-
-    for (int i = INT_MIN; i < INT_MAX; i++) {
-        for (int j = i + 1; j =< INT_MAX; j++) {
-            assert(compare(j, i) == -1);
-        }
-    }
-
-    for (int i = INT_MIN; i =< INT_MAX; i++) {
-        assert(compare(i, i) == 0);
-    }
+void test_compare() {
+    int max = INT_MAX;
+    int min = INT_MIN;
+    int hmax = max/2;
+    int hmin = min/2;
+    assert(compare(&max, &min) == 1);
+    assert(compare(&hmax, &hmin) == 1);
+    assert(compare(&min, &max) == -1);
+    assert(compare(&hmin, &hmax) == -1);
+    assert(compare(&min, &min) == 0);
+    assert(compare(&max, &max) == 0);
 }
