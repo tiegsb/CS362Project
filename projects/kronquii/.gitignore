@@ -1,1 +1,7 @@
 .*.swp
+*.o
+*.gcno
+*.out
+*.gcda
+*.gcov
+test
