@@ -40,7 +40,7 @@ array indexing.  Although crash behaviour was not observed, integration testing
 may yield crash behavior if this isn't resolved.
 
 ID: #d003
-dventurer card: function play_adventurer in dominion.c 
+aventurer card: function play_adventurer in dominion.c 
 version:
 dominion.c in \cs362f15\projects\wilcoant\dominion\dominion.c as of 10-23-2015
 1125AM
@@ -71,4 +71,25 @@ one upon playing this card.  It isn't.  This has the same effect for
 both players but second order effect and potential crash behavior isn't 
 known until integration testing, but the bug currently invalidates the rules
 and the card.
+
+ID: #d005
+drawCard: function drawCard 
+dominion.c in \cs362f15\projects\wilcoant\dominion\dominion.c as of 10-23-2015
+1125AM
+The bug occurs when passing an empty player deckcount into drawCard function.
+Code examination shows that this should trigger a card shuffle, but it does not.
+It currently core dumps.  This test was conducted in order to increase coverage
+for the testing done on the function itself as that branch was not being covered
+at all during game execution.  Integration testing may be necessary to see if a
+secondary condition may have caused the core dump.  Currently, however, this bug
+should be labeled as severe since it crashes the system.
+
+ID: #d006
+adventurer: function play_adventurer 
+dominion.c in \cs362f15\projects\wilcoant\dominion\dominion.c as of 10-23-2015
+1125AM
+The bug occurs over the unit test of adventurer in that the deck never empties 
+during game state and shuffle is never called with all variations of gameState being
+tested up to the boundaries defined in dominion.h  This is further indication that 
+there is some potential bug existing in the discard function during game state. 
 *******************************************************************/

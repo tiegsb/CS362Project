@@ -67,8 +67,11 @@ int main() {
    numPlayer++; //increase numPlayer by one maxing at 4 to test game state for 2 - 4 players 
   
    }//exit while loop 
-    
-    printf("All tests passed!\n");
+    /* memset(&G, 23, sizeof(struct gameState));   // clear the game state
+                r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
+    G.deckCount[0] = 0;
+    drawcard = drawCard(p, &G); */
+    printf("Empty Deck Fails, all others pass.\n");
 
     return 0;
 }

@@ -1,0 +1,11 @@
+Unittest3.c isGameOver – 
+	Game does not end if card #25, 26, or 27 is one of the 3 supply piles at 0
+
+Unittest4.c discardCard
+	Card does not get placed in discard pile
+
+Cardtest2.c adventurerCard
+	Does not discard adventurer card after it is played
+
+Cardtest4.c villageCard
+	Does not decrease actions by 1
