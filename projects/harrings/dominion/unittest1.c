@@ -146,6 +146,6 @@ void drawcard_test()
 }
 
 int main() {
-    drawcard_test;
+    drawcard_test();
     return 0;
 }
