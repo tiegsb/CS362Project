@@ -13,6 +13,8 @@
 
 int main() {
 
+	printf("Test buyCard() function:\n");
+
 	srand(time(NULL));
 	int numberPlayer = 2;
 	int randomSeed = rand() % 1000 + 1;
@@ -28,6 +30,12 @@ int main() {
 
 	//TEST 1 Test when numBuys runs out.
 	//Make sure adventurer is always greater than numBuys
+	printf("****************************************************\n");
+
+	printf("Test: Test when numBuys runs out with while loop:\n");
+
+	printf("****************************************************\n");
+
 	G.numBuys=12;
 	G.coins=500;
 	G.supplyCount[adventurer]=G.numBuys+1;
@@ -36,18 +44,21 @@ int main() {
 
 
 		if(buyCard(adventurer, &G) == 0) {
-			printf("GOOD");
+			printf("TEST PASSED\n");
 		} else {
-			printf("ERROR");
+			printf("TEST FAILED\n");
 			break;
 		};
 
 	}
+	printf("****************************************************\n");
+	printf("Test: Test when numBuys is equal to 0:\n");
+	printf("****************************************************\n");
 
 	if(buyCard(adventurer, &G) == -1) {
-			printf("GOOD");
+			printf("TEST PASSED\n");
 	} else {
-			printf("ERROR");
+			printf("TEST FAILED\n");
 	};
 
 	//Clear the game state
@@ -56,8 +67,11 @@ int main() {
 	//initialize game
 	initializeGame(numberPlayer, k, randomSeed, &G);
 
-	//TEST 2 Test when chosen card type runs out.
+	//TEST 3 Test when chosen card type runs out.
 	//Make sure adventurer is always greater than numBuys
+	printf("****************************************************\n");
+	printf("Test when chosen card to buy still exists:\n");
+	printf("****************************************************\n");
 	G.numBuys=12;
 	G.coins=500;
 	G.supplyCount[adventurer]=10;
@@ -65,18 +79,21 @@ int main() {
 	while(G.supplyCount[adventurer] > 0) {
 
 		if(buyCard(adventurer, &G) == 0) {
-			printf("GOOD");
+			printf("TEST PASSED\n");
 		} else {
-			printf("ERROR");
+			printf("TEST FAILED\n");
 			break;
 		};
 
 	}
 
+	printf("****************************************************\n");
+	printf("Test when chosen card to buy's supply count is 0:\n");
+	printf("****************************************************\n");
 	if(buyCard(adventurer, &G) == -1) {
-			printf("GOOD");
+			printf("TEST PASSED\n");
 	} else {
-			printf("ERROR");
+			printf("TEST FAILED\n");
 	};
 
 	//Clear the game state
@@ -91,23 +108,34 @@ int main() {
 	G.coins=50;
 	G.supplyCount[adventurer]=G.numBuys+1;
 
-	while(G.coins > 0) {
+	printf("****************************************************\n");
+	printf("Test case where player has enough coins to buy a card:\n");
+	printf("****************************************************\n");
+
+	//adventurer costs 6 coins so set last case to less than or equal to 5
+	while(G.coins > 5) {
 
 		if(buyCard(adventurer, &G) == 0) {
-			printf("GOOD");
+			printf("TEST PASSED\n");
 		} else {
-			printf("ERROR");
+			printf("TEST FAILED\n");
 			break;
 		};
 
 	}
+	printf("****************************************************\n");
+	printf("Test case where player has a lack of coins for a card:\n");
+	printf("****************************************************\n");
 
 	if(buyCard(adventurer, &G) == -1) {
-			printf("GOOD");
+			printf("TEST PASSED\n");
 	} else {
-			printf("ERROR");
+			printf("TEST FAILED\n");
 
 	};
+
+	
+	return 0;
 
 
 
