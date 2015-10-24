@@ -24,9 +24,14 @@ int whatChanged(struct gameState *origState, struct gameState *state)
     if(origState->playedCardCount != state->playedCardCount)
         printf("playedCardCount changed! Orig: %d, New: %d\n", origState->playedCardCount, state->playedCardCount);
 
+    // Add code to loop through arrays to see what changed
+    
     return 0;
 }
 
+
+// Make a deep copy of the game state for later comparison
+//
 struct gameState *copyState(struct gameState *state)
 {
     int idx1, idx2;               // loop index vars
@@ -68,10 +73,11 @@ struct gameState *copyState(struct gameState *state)
         origState->playedCards[idx1] = state->playedCards[idx1];
     }
 
-    /* NEED TO COPY THESE!
-    origState->supplyCount[treasure_map+1]; 
-    origState->embargoTokens[treasure_map+1];
-    */
+    for(idx1 = 0; idx1 < (treasure_map+1); idx1++)
+    {
+        origState->supplyCount[idx1]   = state->supplyCount[idx1];
+        origState->embargoTokens[idx1] = state->embargoTokens[idx1];
+    }
 
     return origState;
 }

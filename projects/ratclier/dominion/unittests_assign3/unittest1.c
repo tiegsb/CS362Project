@@ -4,6 +4,8 @@
 #include "unittest_helpers.h"
 
 
+// Test the discardCard() function
+//
 int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
 {
     struct gameState *origState;  // copy of game state
