@@ -35,6 +35,13 @@ The hand counts for the other players were not affected, confirming that the cal
 function did not unwantingly alter the hands of the other players.
 The coins count was also not altered.
 
+**NOTE**
+I removed the previously introduced bug of passing the gamestate struct by reference.
+I was getting seg fault errors, and it was inhibiting my ability to properly test the
+cases that I had written for the test suite.  I justify this by stating that in a real
+test environment, I would have noticed the bug in the code and fixed it so that I could
+test for other bugs.  
+
 /**************
 Adventurer Card
 ****************/
@@ -69,6 +76,12 @@ Testing outside factors :
 The hand counts for the other players were not affected, confirming that the call to
 function did not unwantingly alter the hands of the other players.
 The coins count was also not altered.
+
+***NOTE****
+I added some code to the refactored Adventurer function to change the return value of the function.
+The return value now returns information that is useful in my test suite/debugging.  Again, I 
+justify this by the fluid nature of the testing environment, and the need to alter or reconsider
+things as you are testing so that you may have a more robust testing session.
 
 
 /**************
