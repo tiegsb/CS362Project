@@ -24,14 +24,14 @@ void testVillageEffect() {
         .playedCardCount = 0,
     };
 
-    int ret = villageEffect(0, 0, &gs);
+    int ret = villageEffect(1, 0, &gs);
     // Assert the return value is 0.
     assert(ret == 0);
     // Assert that one card was drawn
-    assert(gs.handCount[0] == 1);
+    assert(gs.handCount[1] == 1);
     // Assert that two actions were added
     assert(gs.numActions == 2);
-    assert(gs.deckCount[0] == 5);
+    assert(gs.deckCount[1] == 5);
     assert(gs.playedCardCount == 1);
-    assert(gs.playedCards[0] == village);
+    assert(gs.playedCards[1] == village);
 }
