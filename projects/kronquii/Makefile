@@ -74,7 +74,7 @@ runTests: testRunner
 	gcov dominion.c >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
 
-unittestresults.out: runTests
+unittestresults.out: runTests dominion.o
 
 player: player.c interface.o
 	$(CC) -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
