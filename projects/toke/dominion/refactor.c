@@ -14,8 +14,11 @@ Changes to the Adventurer Code in cardEffect()
 Refactor Changes: Added a method at the bottom of dominion.c called executeAdventurerCard().
                                Replaced the Adventurer code in cardEffect() with the new function. Added
                                the method signature to the dominion header file.
-Bug Introduced: Changed the Adventurer code to draw 4 treasures, instead of 2. Also added
-                           an additional bug to count one drawn treasure as two.
+Bug Introduced: Changed the Adventurer code to draw 4 treasures, instead of 2. Also changed 
+                Adventurer to count each treasure drawn as two treasures. This will be a very
+                hard bug to detect because the Adventurer card will still only draw 2 treasure
+                cards. Here there is a bug in the code, but it can only be detected by code
+                review, since the end behavior is correct.
 
 #######################
 Changes to the Village Code in cardEffect()
