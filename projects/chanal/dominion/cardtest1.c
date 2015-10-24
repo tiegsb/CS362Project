@@ -97,11 +97,11 @@ int main(){
 		}
 	}
 
-	printf("Testing if card is discarded from hand...\n");
+	printf("\nTesting if card is discarded from hand...\n");
 	if(cardStatus == 0){
-		printf("\nTest PASSED, Smithy is discarded from player %d's hand after use\n\n", p);
+		printf("Test PASSED, Smithy is discarded from player %d's hand after use\n\n", p);
 	} else {
-		printf("\nTest FAILED, Smithy card is NOT discarded from player %d's hand after use\n\n", p);
+		printf("Test FAILED, Smithy card is NOT discarded from player %d's hand after use\n\n", p);
 	}
 
 	return 0;
