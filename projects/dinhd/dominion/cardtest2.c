@@ -1,5 +1,5 @@
 /*
-This program tests the villageCard function.
+This program tests the adventurerCard function.
 The parameters for this function are:
 struct gameState *state
 
@@ -30,10 +30,10 @@ int main() {
 
     initializeGame(2, k, 2, &G);
 
-    //replace all cards in hand with a village card
+    //replace all cards in hand with a adventurer card
     for (i = 0; i < numHandCards(&G); i++)
     {
-        G.hand[0][i] = village;
+        G.hand[0][i] = adventurer;
     }
     
 
@@ -42,9 +42,9 @@ int main() {
     // printState(&G);
     //  printSupply(&G);
     // // printScores(&G);
-    // printHand(0, &G);
+    printHand(0, &G);
     // printPlayed(0, &G);
-    // printDeck(0, &G);
+    printDeck(0, &G);
     printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
@@ -54,17 +54,28 @@ int main() {
     int playedCards = 0;
     for (i = (numHandCards(&G) -1); i >= 0; i--)
     {
-        int numActions = G.numActions;
+
         playCard(i, -1, -1, -1, &G);
 
-        //check to see if village card goes into discard
-        assert (G.playedCards[playedCards] == village);
-        //check to see if number of actions increased by 2
-        assert (numActions + 1 == G.numActions);
-        //check to see if the is replaced by a drawn card form the deck
-        assert (G.hand[0][i] != village);
+        //check to see if adventurer card goes into discard
+        printPlayed(0, &G);
+        printHand(0, &G);
+        // assert (G.playedCards[playedCards] == adventurer);
+        printf ("################################################### \n Error: played card (adventurer) was not discarded after use. \n ################################################### \n");
+
+        //check to see if 2 coins are added.
+        int treasurePresent = 0;
+        if (G.hand[0][i] == copper || G.hand[0][i] == silver || G.hand[0][i] == gold )
+            treasurePresent++;
+        if (G.hand[0][i+1] == copper || G.hand[0][i+1] == silver || G.hand[0][i+1] == gold )
+            treasurePresent++;
+        
+//assertion commented out because previous error affects this assertion.        
+        //assert (treasurePresent == 2);
+
+
         // printState(&G);
-        // printHand(0, &G);
+        
         // printPlayed(0, &G);
         // printDeck(0, &G);
         playedCards++;
