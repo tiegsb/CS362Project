@@ -16,7 +16,7 @@ int testCardEffect(int card) {
     int numPlayer = 2;
     int r;
     int k[10] = {sea_hag, council_room, feast, gardens, mine
-               , remodel, smithy, village, baron, great_hall};
+               , remodel, smithy, village, adventurer, great_hall};
     struct gameState G;
     
     int p0Hand[MAX_HAND] = {sea_hag, copper, copper, copper, adventurer};
@@ -31,7 +31,7 @@ int testCardEffect(int card) {
     int p1Hand[MAX_HAND] = {sea_hag, adventurer, gold};
     int p1Discard[MAX_DECK] = {sea_hag, copper, gold};
     int p1Deck[MAX_DECK] = {sea_hag, council_room, feast, gardens, mine
-                    , remodel, smithy, village, baron, great_hall};
+                    , remodel, smithy, village, adventurer, great_hall};
     int p1HandCount = 3;
     int p1DiscardCount = 3;
     int p1DeckCount = 10;
