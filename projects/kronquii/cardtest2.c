@@ -1,32 +1,6 @@
 #include <assert.h>
 
 #include "dominion.h"
-int adventurerEffect(int currentPlayer, int handPos, struct gameState *state) {
-    int temphand[MAX_HAND];// moved above the if statement
-    int z;
-    int drawntreasure = 0;
-    int cardDrawn;
-    while(drawntreasure<2){
-        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
-            shuffle(currentPlayer, state);
-        }
-        drawCard(currentPlayer, state);
-        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-            drawntreasure++;
-        else{
-            temphand[z]=cardDrawn;
-            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
-            z++;
-        }
-    }
-    while(z-1>=0){
-        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
-        z=z-1;
-    }
-    return 0;
-}
-
 
 void testAdventurerEffect() {
     struct gameState gs = {
@@ -40,8 +14,8 @@ void testAdventurerEffect() {
         .numActions = 0,
         .coins = 0,
         .numBuys = 0,
-        .hand = {{0}},
-        .handCount = {0},
+        .hand = {{adventurer}},
+        .handCount = {1},
         .deckCount = {4, 4, 4},
         .deck = {{silver, silver, curse, curse},
                  {curse, curse, curse, curse},
@@ -52,5 +26,40 @@ void testAdventurerEffect() {
         .playedCardCount = 0,
     };
 
+    // Test the first player's hand
+    adventurerEffect(0, 0, &gs);
+    // Assert the hand will have 2 cards in it because there are 2 silvers and
+    // the adventurer is discarded.
+    assert(gs.handCount[0] == 2);
+    // Assert that the deck will have 2 cards in it because the coins are the
+    // first two cards.
+    printf("%d\n", gs.deckCount[0]);
+    assert(gs.deckCount[0] == 2);
+    // Assert that there were no cards discarded because the first two drawn
+    // were coins.
+    assert(gs.discardCount[0] == 2);
 
+    // Check that the adventurer was placed in the played pile.
+    assert(gs.playedCardCount == 1);
+
+    // Test the third player's hand
+    adventurerEffect(2, 0, &gs);
+    // Check that they have 2 cards in their hand
+    assert(gs.handCount[2] == 2);
+    // Check that they discarded the two other cards in their deck because the
+    // second treasure is the last card in the deck.
+    assert(gs.discardCount[2] == 2);
+    // Check that there are no cards in the deck for the same reason as above.
+    assert(gs.deckCount[2] == 0);
+
+    // Test the second player's hand.
+    adventurerEffect(1, 0, &gs);
+    // Check that their hand is empty because there are no treasure cards in
+    // the deck.
+    assert(gs.handCount[1] == 0);
+    // Check that their deck has no cards because all of their cards were
+    // drawn.
+    assert(gs.deckCount[1] == 0);
+    // Check that they discarded their whole deck.
+    assert(gs.discardCount[1] == 4);
 }
