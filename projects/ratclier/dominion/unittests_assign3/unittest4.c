@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
     printf("\n");
 
     // Discard a trashed card
-    printf("Testing: Player 0's coins, 5 bonus...\n");
+    printf("Testing: Player 0 coins, 5 bonus...\n");
     player = 0;
     bonus = 5;
     testUpdateCoins(player, state, bonus);
@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
     initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
     // Discard a non-trashed card
-    printf("Testing: Player 1's coins, 3 bonus...\n");
+    printf("Testing: Player 1 coins, 3 bonus...\n");
     player = 0;
     bonus = 5;
     testUpdateCoins(player, state, bonus);
