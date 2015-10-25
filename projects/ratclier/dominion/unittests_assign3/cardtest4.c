@@ -25,7 +25,7 @@
 // - Card went to discard pile.
 // - Card is valued <= 5 (getCost() will tell you this)
 //
-int testFeastCard(struct gameState *state, int currentPlayer, int handPos, int choice)
+int testFeastCard(struct gameState *state, int currentPlayer, int choice)
 {
     struct gameState *origState;  // copy of game state
 
@@ -33,22 +33,7 @@ int testFeastCard(struct gameState *state, int currentPlayer, int handPos, int c
     //
     origState = copyState(state);
 
-    // int cardEffect(int card, 
-    //                int choice1, 
-    //                int choice2, 
-    //                int choice3, 
-    //                struct gameState *state, 
-    //                int handPos, 
-    //                int *bonus)
-    //
-    // Feast card only uses choice1.
-    // 
-    // int feastCard(int choice1, struct gameState *state)
-    //
-    // End result: one new card from supply costing up to 5 coins added to
-    // discard pile. You can only buy one! TEST FOR THIS!
-    //
-    cardEffect(feast, choice, 0, 0, state, handPos, 0);
+    feastCard(choice, state);
 
     // Is the gained card valued at <= 5 coins?
     //
@@ -63,7 +48,7 @@ int testFeastCard(struct gameState *state, int currentPlayer, int handPos, int c
 
     // Did the gained card come from the supply pile?
     //
-    if(state->supplyCount[handPos] == origState->supplyCount[handPos]-1)
+    if(state->supplyCount[choice] == origState->supplyCount[choice]-1)
     {
         printf("feastCard: PASS gained card taken from supply pile\n");
     }
@@ -74,7 +59,7 @@ int testFeastCard(struct gameState *state, int currentPlayer, int handPos, int c
     
     // Was the gained card added to the discard pile?
     //
-    if(state->discard[currentPlayer][origState->discardCount[currentPlayer]] == handPos)
+    if(state->discard[currentPlayer][origState->discardCount[currentPlayer]] == choice)
     {
         printf("feastCard: PASS gained card added to discard pile\n");
     }
@@ -106,7 +91,6 @@ int testFeastCard(struct gameState *state, int currentPlayer, int handPos, int c
 int main(int argc, char *argv[])
 {
     int numPlayers = 2;
-    int handPos;
     int choice;
     int currentPlayer;
     int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, cutpurse, sea_hag, tribute, smithy, feast};
@@ -139,9 +123,8 @@ int main(int argc, char *argv[])
     // don't try to be tricky.
     //
     currentPlayer = 0;
-    handPos = floor(Random() * state->handCount[currentPlayer]);
     choice = smithy;
-    testFeastCard(state, currentPlayer, handPos, choice);
+    testFeastCard(state, currentPlayer, choice);
 
     return 0;
 }
