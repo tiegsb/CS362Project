@@ -1,7 +1,7 @@
 CFLAGS = -Wall -fpic -coverage -lm -g -Wfatal-errors
 GCC = gcc
 
-.PHONY: all clean testAll runtests
+.PHONY: all clean testAll runtests rununittest1 rununittest2
 
 rngs.o: rngs.h rngs.c
 	$(GCC) -c rngs.c  $(CFLAGS)
@@ -46,9 +46,17 @@ testAll: dominion.o cards.o testSuite.c
 	$(GCC) -o testSuite testSuite.c  dominion.o cards.o rngs.o $(CFLAGS)
 
 # run unit tests
-runtests: testDrawCard unittest1 unittest2
+runtests: testDrawCard
 	./testDrawCard &> unittestresult.out
+	gcov dominion.c >> unittestresult.out
+	cat dominion.c.gcov >> unittestresult.out
+
+rununittest1: unittest1
 	./unittest1 &> unittestresult.out
+	gcov dominion.c >> unittestresult.out
+	cat dominion.c.gcov >> unittestresult.out
+
+rununittest2: unittest2
 	./unittest2 &> unittestresult.out
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
