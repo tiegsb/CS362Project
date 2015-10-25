@@ -182,6 +182,9 @@ void testscoreFor() {
 	}
 	
 
-	if(fail == 0) 
+	if(fail == 0) { 
 		printf("gainCard(): OK - ALL TESTS PASSED\n\n");
+	} else {
+		printf("gainCard(): ISSUES - AT LEAST ONE TEST FAILED\n\n");
+	}
 }
