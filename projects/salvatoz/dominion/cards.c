@@ -40,7 +40,7 @@ int cardDefined(const struct cardData cd[], int c) {
  * until you have finished revealing cards. If you run out of cards while
  * shuffling and still have only one Treasure, you get just that one Treasure.
  */
-static int adventurerHandler(int choice1, int choice2, int choice3,
+int adventurerHandler(int choice1, int choice2, int choice3,
                              struct gameState* state, int handPos, int* bonus) {
   int z = 0;
   int temphand[MAX_HAND];
@@ -72,7 +72,7 @@ static int adventurerHandler(int choice1, int choice2, int choice3,
 /** smithyHandler
  * Card Effect: +3 cards
  */
-static int smithyHandler(int choice1, int choice2, int choice3,
+int smithyHandler(int choice1, int choice2, int choice3,
                          struct gameState* state, int handPos, int* bonus) {
   int i;
   int currentPlayer = whoseTurn(state);
@@ -88,7 +88,7 @@ static int smithyHandler(int choice1, int choice2, int choice3,
 /** councilRoomHandler
  * Card Effect: +4 cards, +1 buy, each other player draws a card.
  */
-static int councilRoomHandler(int choice1, int choice2, int choice3,
+int councilRoomHandler(int choice1, int choice2, int choice3,
                               struct gameState* state, int handPos,
                               int* bonus) {
   int i;
@@ -118,7 +118,7 @@ static int councilRoomHandler(int choice1, int choice2, int choice3,
  *    - You cannot acquire a card costing greater than 5 (ex. by trying to
  *      combine other treasures with this card.)
  */
-static int feastHandler(int choice1, int choice2, int choice3,
+int feastHandler(int choice1, int choice2, int choice3,
                         struct gameState* state, int handPos, int* bonus) {
   int i, x;
   const int currentPlayer = whoseTurn(state);
@@ -183,7 +183,7 @@ static int feastHandler(int choice1, int choice2, int choice3,
  * Card Effect: Trash a Treasure card from your hand. Gain a treasure card
  *    costing up to 3 more; put it into your hand.
  */
-static int mineHandler(int choice1,  // the card to trash
+int mineHandler(int choice1,  // the card to trash
                        int choice2,  // the card to gain
                        int choice3, struct gameState* state, int handPos,
                        int* bonus) {
@@ -235,7 +235,7 @@ static int mineHandler(int choice1,  // the card to trash
  *      golds.
  *    - If your deck was empty, then the gold cards are the only cards in it.
  */
-static int treasureMapHandler(int choice1, int choice2, int choice3,
+int treasureMapHandler(int choice1, int choice2, int choice3,
                               struct gameState* state, int handPos,
                               int* bonus) {
   int secondTreasureMapIndex = 0;
