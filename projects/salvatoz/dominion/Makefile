@@ -1,5 +1,6 @@
 CFLAGS = -Wall -fpic -coverage -lm -g -Wpedantic -Werror -Wfatal-errors -std=c99
 GCC = gcc
+GOV = gcov -b -c -f
 
 .PHONY: all clean testAll runtests rununittest1 rununittest2
 
@@ -54,15 +55,15 @@ testAll: dominion.o cards.o testSuite.c
 # run unit tests
 runtests: testDrawCard
 	./testDrawCard &> unittestresult.out
-	gcov dominion.c >> unittestresult.out
+	$(GCOV) dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
 rununittest1: unittest1
 	./unittest1 &> unittestresult.out
-	gcov dominion.c >> unittestresult.out
+	$(GCOV) dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
 rununittest2: unittest2
 	./unittest2 &> unittestresult.out
-	gcov dominion.c >> unittestresult.out
+	$(GCOV) dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
