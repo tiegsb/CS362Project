@@ -25,9 +25,9 @@ static inline int isTreasure(int c) {
   return c == copper || c == silver || c == gold;
 }
 
-inline int cardExists(int c) { return 0 <= c && c < NUM_CARDS; }
+int cardExists(int c) { return 0 <= c && c < NUM_CARDS; }
 
-inline int cardDefined(const struct cardData cd[], int c) {
+int cardDefined(const struct cardData cd[], int c) {
   return cardExists(c) && (*(cd + c)).effectHandler != 0;
 }
 
