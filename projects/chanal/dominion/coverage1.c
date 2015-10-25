@@ -37,8 +37,6 @@ unittest1 - updateCoins()
     #####:  176:		printf("Test #3 FAILED\n\n");
     #####:  224:		printf("Test #4 FAILED\n\n");
     #####:  270:		printf("Test #5 FAILED\n\n");
-	Since my test suite was mostly if-else statements, the branches executed was 100%, however the
-	taken at least once is 50%. 
 
 
 
@@ -56,8 +54,7 @@ unittest2 - isGameOver()
     #####:   84:		printf( "Test #2 FAILED\n\n");
     #####:  104:		printf( "Test #3 FAILED\n\n");
     #####:  126:		printf( "Test #4 FAILED\n\n");
-	Since my test suite was mostly if-else statements, the branches executed was 100%, however the
-	taken at least once is 50%
+
 
 
 
@@ -73,8 +70,6 @@ unittest3 - shuffle()
 	There were some '####' unexecuted lines in my test. 
     	#####:   86:			deck2Shuffle++;	//Should not increment since Player 2's deck should not have shuffled
    		#####:   99:		printf( "Test FAILED\n\n");
-	Since my test suite did not contain many if-else statements, the branches executed was 100% and the
-	taken at least once is 68.75%
 
 
 
