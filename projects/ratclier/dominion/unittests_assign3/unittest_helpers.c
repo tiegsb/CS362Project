@@ -21,7 +21,7 @@ int whatChanged(struct gameState *origState, struct gameState *state)
     if(origState->numActions != state->numActions)
         printf("numActions changed! Orig: %d, New: %d\n", origState->numActions, state->numActions);
     if(origState->coins != state->coins)
-        printf("coins changed! Orig: %d, New: %d\n", origState->coins, state->coins);
+        printf("coins changed! Orig (not specific to any player): %d, New: %d\n", origState->coins, state->coins);
     if(origState->numBuys != state->numBuys)
         printf("numBuys changed! Orig: %d, New: %d\n", origState->numBuys, state->numBuys);
     if(origState->playedCardCount != state->playedCardCount)
