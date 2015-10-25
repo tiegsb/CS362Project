@@ -1,7 +1,7 @@
 Name: 	Jeff Moss
 Date:	10/24/15
 Title: 	Documentation of the coverage of the unit tests that were developed for dominion.
-File:	coverage.c
+File:	coverage1.c
 Class:	CS362 Fall 2015
 
 OVERALL COVERAGE:
