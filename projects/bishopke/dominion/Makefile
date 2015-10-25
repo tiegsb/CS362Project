@@ -56,6 +56,25 @@ cardtest3: cardtest3.c dominion.o rngs.o
 cardtest4: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest4 -g cardtest4.c dominion.c rngs.c $(CFLAGS)
 
+#unittestresults.out
+
+unittestresults.out: unittest1 unittest2 unittest3 unittest4 dominion.o rngs.o
+	echo "Keenan Bishop: Unit Test Results:" >> unittestresults.out
+	#test 1
+	echo "Unit Test 1:" >> unittestresults.out
+	./unittest1 >> unittestresults.out
+	#test 1
+	echo "Unit Test 2:" >> unittestresults.out
+	./unittest2 >> unittestresults.out
+	#test 1
+	echo "Unit Test 1:" >> unittestresults.out
+	./unittest3 >> unittestresults.out
+	#test 1
+	echo "Unit Test 1:" >> unittestresults.out
+	./unittest4 >> unittestresults.out
+
+	#gcov dominion.c >> uniontestsresults.out
+
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
@@ -63,4 +82,4 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so testDrawCard badTestDrawCard
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so testDrawCard badTestDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 unittestresults.out

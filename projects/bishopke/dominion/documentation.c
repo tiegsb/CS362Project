@@ -11,7 +11,7 @@
 
 Smithy Card
 Smithy Card lets the player draw 3 cards when used.
-it calls drawCard 3 times, then discardCard
+It calls drawCard 3 times, then discardCard.
 It returns a 0 on success.
 
 Adventurer Card
@@ -38,9 +38,8 @@ It returns a 0 on success.
 updateCoins()
 int updateCoins(int player, struct gameState *state, int bonus)
 (defined in dominion.c)
-This function updates the coin count for the specified player
+This function updates the coin count for the specified player.
 First, it resets the coin count to zero.
-
 Next it enters a for loop from 0 to the number of cards the player has.
 It adds appropriate values (1, 2, 3) for the copper, silver, and gold coins, respectively, for the cards the player owns.
 Before returning, it also adds the bonus, which is specified when it is called.
