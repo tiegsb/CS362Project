@@ -38,10 +38,13 @@ Looking at the overall coverage amounts, it also occurs to me that I may have re
 if I had picked other, more critical, functions. An example would be drawCard(), as it is used
 very frequently. In SE2 we learned that coverage for the sake of coverage is not the goal, however, 
 and that leads me to look at the functions I did choose and how they may make me view the above
-data.
+data. Additionally, I may also want to consider putting more thought into boundary testing in future
+test suites, as merely achieving coverage does not necessarily indicate that I am testing all areas
+that require attention.
 
-Most of the tests I ran achieved 100% line coverage and 100% branch coverage. The two tests that
-did not were still in the 90% range for bone line and branch coverage. In general, I think this
+Most of the tests I ran achieved 100% line coverage and 100% branch coverage of their particular
+functions in dominion.c, and achieved overall dominion.c coverage in the 20% range. The two tests that
+did not were still in the 90% range for both line and branch coverage. In general, I think this
 indicates that if this quality of test were to continue past the scope of the assignment, my
 overall dominion.c coverage would continue to improve. Additionally, I think it reinforces that
 the 30% total coverage achieved is quite thorough, as each test took into account player choice,
