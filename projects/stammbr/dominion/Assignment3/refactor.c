@@ -39,6 +39,37 @@ error is in line 1224 where x should be == instead of !=.
 
 /*********** For Assignment 3 **************
 
-something goes here.
+Most tests, I included some random testing, which I thought would help.  I set up some initial testing
+of values, and then moved into creating random number of cards or random values.  This was not
+as helpful as I thought it would be, but is definitely an area where I can improved.
+
+UnitTest1 - Covers shuffle().  Did not find any bugs in the shuffle method.
+
+UnitTest2 - Covers updateCoins().  At least in my tests, there appears to be some type of bug with the
+addition of the coins.  Both adding silver and gold behave odd, especially when the number is higher
+than expected.  At this time, I cannot tell if this is in part because of issues with my test writing or
+with the program writing.
+
+UnitTest3 - Covers gainCard() method.  In the tests I set up, there were no issues found in this function.
+
+UnitTest4 - Covers the isGameOver() method.  In the tests I set up, it did pass most of the tests,
+but there was one random test that it did fail.  It is unclear to me at this time why it failed, but
+in the random tests I set up, there seems to bee something off if the card number is low and the providence
+cards is off.  Overall, though, it seems like this might be from an extreme case, but should be looked into
+further.
+
+cardTest1 - covers the smithyCard, and it definitely shows there is a bug with the totalling.  This is
+the result of an introduced bug.
+
+cardTest2 - It looks at the adventureCard, and it passes the tests.  Yet, there was a bug introduced in
+this function and it passed a test that should have produced curious results (the final test), so there
+appears to be smoke in this function/test pair.
+
+cardTest3 - It tests the Village method, and it appears to pass everythign without issue, but the test
+coverage could be better.  Further testing should be done, especially since I am not too confident in my
+test making ability yet.
+
+cardTest4 - This looks at the Council method, which I did introduced a bug into, and it fails exactly
+where it would be expected.  
 
 *******************************************/
