@@ -25,7 +25,7 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
 
 # unit tests
 testDrawCard: testDrawCard.c dominion.o cards.o rngs.o
@@ -48,6 +48,18 @@ unittest3: unittest3.c dominion.o cards.o rngs.o
 
 unittest4: unittest4.c dominion.o cards.o rngs.o
 	$(GCC) -o unittest4 unittest4.c dominion.o cards.o rngs.o $(CFLAGS)
+
+cardtest1: dominion.o cards.o rngs.o cardtest1.c
+	$(GCC) -o cardtest1 cardtest1.c dominion.o cards.o rngs.o $(CFLAGS)
+
+cardtest2: dominion.o cards.o rngs.o cardtest2.c
+	$(GCC) -o cardtest2 cardtest2.c dominion.o cards.o rngs.o $(CFLAGS)
+
+cardtest3: dominion.o cards.o rngs.o cardtest3.c
+	$(GCC) -o cardtest3 cardtest3.c dominion.o cards.o rngs.o $(CFLAGS)
+
+cardtest4: dominion.o cards.o rngs.o cardtest4.c
+	$(GCC) -o cardtest4 cardtest4.c dominion.o cards.o rngs.o $(CFLAGS)
 
 testAll: dominion.o cards.o testSuite.c
 	$(GCC) -o testSuite testSuite.c  dominion.o cards.o rngs.o $(CFLAGS)
@@ -77,3 +89,23 @@ rununittest4: unittest4
 	./unittest4 &> unittestresult.out
 	$(GCOV) dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
+
+runcardtest1: cardtest1
+	./cardtest1 &> cardtestresult.out
+	$(GCOV) cards.c >> cardtestresult.out
+	cat cards.c.gcov >> cardtestresult.out
+
+runcardtest2: cardtest2
+	./cardtest2 &> cardtestresult.out
+	$(GCOV) cards.c >> cardtestresult.out
+	cat cards.c.gcov >> cardtestresult.out
+
+runcardtest3: cardtest3
+	./cardtest3 &> cardtestresult.out
+	$(GCOV) cards.c >> cardtestresult.out
+	cat cards.c.gcov >> cardtestresult.out
+
+runcardtest4: cardtest4
+	./cardtest4 &> cardtestresult.out
+	$(GCOV) cards.c >> cardtestresult.out
+	cat cards.c.gcov >> cardtestresult.out
