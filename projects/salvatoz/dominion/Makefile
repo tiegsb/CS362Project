@@ -1,4 +1,4 @@
-CFLAGS = -Wall -fpic -coverage -lm -g -Wfatal-errors
+CFLAGS = -Wall -fpic -coverage -lm -g -Wpedantic -Werror -Wfatal-errors -std=c99
 GCC = gcc
 
 .PHONY: all clean testAll runtests rununittest1 rununittest2
@@ -41,6 +41,12 @@ unittest1: unittest1.c dominion.o cards.o rngs.o
 
 unittest2: unittest2.c dominion.o cards.o rngs.o
 	$(GCC) -o unittest2 unittest2.c dominion.o cards.o rngs.o $(CFLAGS)
+
+unittest3: unittest3.c dominion.o cards.o rngs.o
+	$(GCC) -o unittest3 unittest3.c dominion.o cards.o rngs.o $(CFLAGS)
+
+unittest4: unittest4.c dominion.o cards.o rngs.o
+	$(GCC) -o unittest4 unittest4.c dominion.o cards.o rngs.o $(CFLAGS)
 
 testAll: dominion.o cards.o testSuite.c
 	$(GCC) -o testSuite testSuite.c  dominion.o cards.o rngs.o $(CFLAGS)
