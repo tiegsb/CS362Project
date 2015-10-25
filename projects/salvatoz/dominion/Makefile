@@ -1,4 +1,4 @@
-CFLAGS = -Wall -fpic -coverage -lm -g -Wpedantic -Werror -Wfatal-errors -std=c99
+CFLAGS = -Wall -fpic -coverage -lm -g -Wfatal-errors
 GCC = gcc
 
 .PHONY: all clean testAll runtests rununittest1 rununittest2
@@ -24,7 +24,7 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard unittest1 unittest2 unittest3 unittest4
 
 # unit tests
 testDrawCard: testDrawCard.c dominion.o cards.o rngs.o
@@ -37,7 +37,7 @@ testBuyCard: testDrawCard.c dominion.o cards.o rngs.o
 	$(GCC) -o testDrawCard  testDrawCard.c dominion.o cards.o rngs.o $(CFLAGS)
 
 unittest1: unittest1.c dominion.o cards.o rngs.o
-	$(GCC) -o unittest1 unittest1.c dominion.o cards.o rngs.o $(CFLAGS)
+	$(GCC) -o unittest1 unittest1.c cards.o dominion.o rngs.o $(CFLAGS)
 
 unittest2: unittest2.c dominion.o cards.o rngs.o
 	$(GCC) -o unittest2 unittest2.c dominion.o cards.o rngs.o $(CFLAGS)
