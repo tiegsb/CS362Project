@@ -29,34 +29,34 @@ tests.out: unittest1.c unittest2.c unittest3.c unittest4.c unittest_helpers.c ..
 	echo ">>> START OF unittest1.c:" >> tests.out
 	gcc -o unittest1 -g unittest1.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./unittest1 >> tests.out
-	echo ">>> END OF unittest1.c\n" >> tests.out
 	echo "Coverage: unittest1:" >> tests.out
 	gcov dominion.c >> tests.out
-	echo "\n" >> tests.out
+	echo ">>> END OF unittest1.c\n" >> tests.out
+	#echo "\n" >> tests.out
 
 	echo ">>> START OF unittest2.c:" >> tests.out
 	gcc -o unittest2 -g unittest2.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./unittest2 >> tests.out
-	echo ">>> END OF unittest2.c\n" >> tests.out
 	echo "Coverage: unittest2:" >> tests.out
 	gcov dominion.c >> tests.out
-	echo "\n" >> tests.out
+	echo ">>> END OF unittest2.c\n" >> tests.out
+	#echo "\n" >> tests.out
 
 	echo ">>> START OF unittest3.c:" >> tests.out
 	gcc -o unittest3 -g unittest3.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./unittest3 >> tests.out
-	echo ">>> END OF unittest3.c\n" >> tests.out
 	echo "Coverage: unittest3:" >> tests.out
 	gcov dominion.c >> tests.out
-	echo "\n" >> tests.out
+	echo ">>> END OF unittest3.c\n" >> tests.out
+	#echo "\n" >> tests.out
 
 	echo ">>> START OF unittest4.c:" >> tests.out
 	gcc -o unittest4 -g unittest4.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./unittest4 >> tests.out
-	echo ">>> END OF unittest4.c\n" >> tests.out
 	echo "Coverage: unittest4:" >> tests.out
 	gcov dominion.c >> tests.out
-	echo "\n" >> tests.out
+	echo ">>> END OF unittest4.c\n" >> tests.out
+	#echo "\n" >> tests.out
 
 clean:
 	rm tests.out

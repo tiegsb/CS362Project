@@ -6,6 +6,7 @@
 
 // Test the gainCard() function.
 //
+// gainCard():
 // Checks for an ample supply of cards first, and if one exists, adds a
 // specific card to a player's hand, deck, or trash.
 //
@@ -137,9 +138,9 @@ int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
         }
     }
     
-    printf("\ngainCard: Changes to game state:\n----------------------------------------\n");
+    // Report what, if anything, changed in the game state
+    //
     whatChanged(origState, state);
-
     printf("\n");
 
     return 0;
@@ -165,7 +166,7 @@ int main(int argc, char *argv[])
 
     // Gain a card w/ an ample supply deck
     //
-    printf("Testing: Sufficient supply deck...\n");
+    printf(">>> TESTING: gainCard(), sufficient supply deck...\n");
     toFlag = 1;
     state->supplyCount[supplyPos] = 2;
     testGainCard(supplyPos, state, toFlag, player);
@@ -179,14 +180,14 @@ int main(int argc, char *argv[])
 
     // Gain a card w/ an empty or insufficient supply deck
     //
-    printf("Testing: Insufficient supply deck...\n");
+    printf(">>> TESTING: gainCard(), insufficient supply deck...\n");
     toFlag = 1;
     state->supplyCount[supplyPos] = 0;
     testGainCard(supplyPos, state, toFlag, player);
 
     // Gain a card w/ a card that is not used in the game
     //
-    printf("Testing: Card not used in the game...\n");
+    printf(">>> TESTING: gainCard(), card not used in the game...\n");
     toFlag = 1;
     state->supplyCount[supplyPos] = -1;
     testGainCard(supplyPos, state, toFlag, player);
