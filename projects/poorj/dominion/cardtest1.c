@@ -1,9 +1,5 @@
 /*	Unit tests for the Smithy card
 		Tests if the player has the correct number of cards after using smithy
-	
-	Include in makefile:
-	testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
-		gcc -o testSmithyCard -g  testSmithyCard.c dominion.o rngs.o $(CFLAGS)
 */
 
 #include "dominion.h"
@@ -41,7 +37,7 @@ int testSmithyCard()
 	hand[3] = estate;
 	hand[4] = smithy;
 	
-	printf ("Testing smithy_card():\n");
+	printf ("Testing smithyEffect():\n");
 
 	initializeGame(numPlayer, k, 1000, &state); //initialize a new game
 	state.handCount[player] = handCount; //set the number of cards in hand
@@ -62,13 +58,11 @@ int testSmithyCard()
 		printf ("Using Smithy card\n");
 		smithyEffect(player, state, i); //uses smithy card
 		hasSmithy = 0;
-		//Smithy adds 3 cards and discards itself 5+3-1==7*/
-		if (state.handCount[player] == 7){
-			printf ("Player has the correct number of cards!\n")
-		}
-		else{
-			printf("Player has the incorrect number of cards.\n")
-		}
+		/*Smithy adds 3 cards and discards itself 5+3-1==7*/
+		if (state.handCount[player] == 7)
+			printf ("Player has the correct number of cards!\n");
+		else
+			printf("Player has the incorrect number of cards.\n");
 	}
 	else
 	{
