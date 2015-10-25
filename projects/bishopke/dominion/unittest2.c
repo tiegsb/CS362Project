@@ -1,7 +1,7 @@
-//Keenan Bishop
-//unittest2.c
-//isGameOver() test
-//from template
+// Keenan Bishop
+// unittest2.c
+// isGameOver() test
+// from template
 
 #include "dominion.h"
 #include "dominion_helpers.h"
@@ -17,26 +17,11 @@ void test_isGameOver(){
 	int i;
 	int seed = 1000;
 	int numPlayer = 2; //2 players
-	int maxBonus = 10;
-	int p; //player
 	int r; 
-	int handCount;
-	int bonus;
 	//set kindom cards to a normalish set
 	int k[10] = {adventurer, council_room, feast, gardens, mine,
 			 remodel, smithy, village, baron, great_hall};
 	struct gameState G;
-	int maxHandCount = 5;
-	// arrays of all coppers, silvers, and golds
-	int coppers[MAX_HAND];
-	int silvers[MAX_HAND];
-	int golds[MAX_HAND];
-    	for (i = 0; i < MAX_HAND; i++){
-		coppers[i] = copper;
-		silvers[i] = silver;
-		golds[i] = gold;
-	}
-
 
 	printf ("TESTING isGameOver():\n");
 	//Game end states:
@@ -81,7 +66,7 @@ void test_isGameOver(){
 
 	//1st scenario
 	//silver, gold, copper cards all gone		
-	memset(&G, 23, sizeof(struct gameState));
+	memset(&G, 0, sizeof(struct gameState));
 	r = initializeGame(numPlayer, k, seed, &G);	
 
 	//deplete copper
@@ -107,7 +92,7 @@ void test_isGameOver(){
 
 	//2nd scenario
 	//3 kingdom card piles depleted
-	memset(&G, 23, sizeof(struct gameState));
+	memset(&G, 0, sizeof(struct gameState));
 	r = initializeGame(numPlayer, k, seed, &G);	
 
 
@@ -134,7 +119,7 @@ void test_isGameOver(){
 
 	//3rd scenario
 	//1 kingdom pile, 1 treasure pile, 1 victory card pile missing
-	memset(&G, 23, sizeof(struct gameState));
+	memset(&G, 0, sizeof(struct gameState));
 	r = initializeGame(numPlayer, k, seed, &G);	
 	
 	//deplete silver
