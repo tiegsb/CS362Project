@@ -25,7 +25,7 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 unittestresult.out
 
 # unit tests
 testDrawCard: testDrawCard.c dominion.o cards.o rngs.o
@@ -91,21 +91,23 @@ rununittest4: unittest4
 	cat dominion.c.gcov >> unittestresult.out
 
 runcardtest1: cardtest1
-	./cardtest1 &> cardtestresult.out
-	$(GCOV) cards.c >> cardtestresult.out
-	cat cards.c.gcov >> cardtestresult.out
+	./cardtest1 &> unittestresult.out
+	$(GCOV) cards.c >> unittestresult.out
+	cat cards.c.gcov >> unittestresult.out
 
 runcardtest2: cardtest2
-	./cardtest2 &> cardtestresult.out
-	$(GCOV) cards.c >> cardtestresult.out
-	cat cards.c.gcov >> cardtestresult.out
+	./cardtest2 &> unittestresult.out
+	$(GCOV) cards.c >> unittestresult.out
+	cat cards.c.gcov >> unittestresult.out
 
 runcardtest3: cardtest3
-	./cardtest3 &> cardtestresult.out
-	$(GCOV) cards.c >> cardtestresult.out
-	cat cards.c.gcov >> cardtestresult.out
+	./cardtest3 &> unittestresult.out
+	$(GCOV) cards.c >> unittestresult.out
+	cat cards.c.gcov >> unittestresult.out
 
 runcardtest4: cardtest4
-	./cardtest4 &> cardtestresult.out
-	$(GCOV) cards.c >> cardtestresult.out
-	cat cards.c.gcov >> cardtestresult.out
+	./cardtest4 &> unittestresult.out
+	$(GCOV) cards.c >> unittestresult.out
+	cat cards.c.gcov >> unittestresult.out
+
+unittestresult.out: clean rununittest1 rununittest2 rununittest3 rununittest4 runcardtest1 runcardtest2 runcardtest3 runcardtest4

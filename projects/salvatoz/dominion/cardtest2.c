@@ -55,7 +55,6 @@ int main(int argc, char **argv) {
                remodel,    smithy,       village, baron,   great_hall};
   struct gameState state;
   int handCount;
-  printf("test adventurer\n");
 
   initializeGame(NUM_PLAYERS, k, SEED, &state);
   state.whoseTurn = player;
@@ -70,6 +69,8 @@ int main(int argc, char **argv) {
   // set up for 0 treasure test
   fillDeck(player, &state, curse);
   state.hand[player][0] = adventurer;
+
+  printf("test adventurer\n");
   adventurerHandler(0, 0, 0, &state, 0, NULL);
   updateCoins(player, &state, 0);
 

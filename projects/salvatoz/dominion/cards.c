@@ -200,7 +200,7 @@ int mineHandler(int choice1,  // the card to trash
     return -1;
   }
 
-  // make sure the card to gain
+  // make sure the card to gain isn't too expensive
   if ((getCost(cardToTrash) + 3) > getCost(cardToGain)) {
     return -1;
   }
