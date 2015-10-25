@@ -62,6 +62,11 @@ ctest4: cardtest4.c interface.o
 ctest5: cardtest5.c interface.o
 	gcc -o cardtest5 -g cardtest5.c dominion.o rngs.o interface.o $(CFLAGS)
 
+unittestresults.out: all
+	cardtest1 > unittestresults.out
+	gcov dominion.c >> unittestresults.out
+
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins test1 test2 test3 test4 ctest1 ctest2 ctest3 ctest4 ctest5
 
 clean:

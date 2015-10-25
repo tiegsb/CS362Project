@@ -33,7 +33,7 @@ int main() {
     //printSupply(&G);
 
     cardNumToName(26, card);
-    printf ("TESTING isGameOver():\n");
+    printf ("* * * * * * * * * * * * * * * * TESTING isGameOver():* * * * * * * * * * * * * * * * \n");
     printf ("Testing with all supply gone \n");
     assert (isGameOver(&G) == 1);
 

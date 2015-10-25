@@ -51,7 +51,7 @@ int main() {
     // printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
-    printf("Testing mineCard card\n");
+    printf("* * * * * * * * * * * * * * * * Testing mineCard card* * * * * * * * * * * * * * * * \n");
 
     //keeps track of the mine card's location.
     mineCardLoc = 4;

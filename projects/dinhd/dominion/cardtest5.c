@@ -53,7 +53,7 @@ int main() {
     // printDeck(0, &G);
     // printf ("Number of cards in hand %i \n", numHandCards(&G));
 
-
+    printf("* * * * * * * * * * * * * * * * Testing minionCard * * * * * * * * * * * * * * * *\n");
     printf("Testing minion card choice 1\n");
     int OrigNumActions = G.numActions;
     int OrigNumCoins = 0;

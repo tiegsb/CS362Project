@@ -30,7 +30,7 @@ int main() {
 
     char name[32];
 
-    printf ("TESTING gainCard():\n");
+    printf ("* * * * * * * * * * * * * * * * TESTING gainCard():* * * * * * * * * * * * * * * * \n");
     for (p = 0; p < numPlayer; p++)
     {
         //test to see if you can gain a card without supply

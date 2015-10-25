@@ -31,7 +31,7 @@ int main() {
     
     assert (score == 0);
 
-    printf("Test: One of each in hand \n");
+    printf("* * * * * * * * * * * * * * * * Test: One of each in hand * * * * * * * * * * * * * * * * \n");
     for (card = curse; card <= great_hall; card++)
     {
     	G.supplyCount[card] = 1;

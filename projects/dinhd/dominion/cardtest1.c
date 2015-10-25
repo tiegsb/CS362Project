@@ -26,7 +26,7 @@ int main() {
     int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
     sea_hag, tribute, smithy};
 
-    printf ("Testing village card.\n");
+    printf ("* * * * * * * * * * * * * * * *  Testing village card.* * * * * * * * * * * * * * * * \n");
 
     initializeGame(2, k, 2, &G);
 

@@ -45,7 +45,7 @@ int main() {
     //printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
-    printf("Testing adventurer card \n");
+    printf("* * * * * * * * * * * * * * * * Testing adventurer card * * * * * * * * * * * * * * * * \n");
 
     //keeps track of played cards
     int playedCards = 0;

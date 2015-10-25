@@ -1,0 +1,42 @@
+Testing minion card choice 1
+################################################### 
+ Error: bonus coins not updated to + 2. 
+################################################### 
+Testing minion card choice 2
+Player 0's hand:
+#  Card
+0  Minion       
+1  Minion       
+2  Minion       
+3  Minion       
+4  Minion       
+
+Player 1's hand:
+
+played 
+Player 0's deck: 
+#  Card
+0  Estate       
+
+Player 0's played cards: 
+#  Card
+0  Minion        
+1  Minion        
+2  Minion        
+3  Minion        
+4  Minion        
+
+################################################### 
+ Error: expected 10 discard cards played between player 1 and 2 received 5. 
+ ################################################### 
+Player 1's played cards: 
+#  Card
+0  Minion        
+1  Minion        
+2  Minion        
+3  Minion        
+4  Minion        
+
+Player 1's hand:
+
+All tests passed!
