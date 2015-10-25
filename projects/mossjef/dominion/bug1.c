@@ -1,7 +1,7 @@
 Name: 	Jeff Moss
 Date:	10/24/15
 Title: 	Documentation of the bugs that were found through the execution of unit tests.
-File:	bugs.c
+File:	bug1.c
 Class:	CS362 Fall 2015
 
 unittest1.c - Shuffle function
