@@ -4,28 +4,23 @@
 #include "unittest_helpers.h"
 
 
-// Test the mine card
+// Test the treasure map card
+//
+// NOTE: YOU ADDED A BUG: changed the code that trashes both treasure
+// cards to no longer trash them (trashFlag changed from 1 to -1).
 //
 // From the Dominion Card Game Wiki (dominioncg.wikia.com):
 //
-// Trash a treaure card from your hand, gain a treasure card worth up to 3
-// coins more than the trashed treasure card and add it to your hand.
+// Trash this and another copy of treasure map from your hand. If you do
+// trash two treasure maps, gain 4 gold cards, putting them on top of your
+// deck.
 //
-// If you don't have a treasure card to trash, you can't do anything
-// including gaining a new card.
+// If you play this and you do not have another treasure map card in your
+// hand, you gain nothing. Two cards are required to get gold.
 //
-// The gained card goes in your hand, so it can be played in the same
-// turn.
+// If there aren't enough gold cards left, you gain what you can.
 //
-// *** VERIFY THE FOLLOWING! COPIED FROM HANDOUT! ***
-//
-// Order of operations: cardEffect() [switch(mine)]
-//                      store card we will trash 
-//                      gainCard()
-//                      discardCard() [discard card from hand]
-//                      discardCard() [discard trashed card]
-//
-int testMineCard(struct gameState *state)
+int testTreasureMapCard(struct gameState *state)
 {
     struct gameState *origState;  // copy of game state
 
@@ -33,7 +28,7 @@ int testMineCard(struct gameState *state)
     //
     origState = copyState(state);
 
-    printf("Here is where the mine card will be tested.\n");
+    printf("Here is where the treasure map card will be tested.\n");
     
     // Report what, if anything, changed in the game state
     //
@@ -47,7 +42,7 @@ int testMineCard(struct gameState *state)
 int main(int argc, char *argv[])
 {
     int numPlayers = 2;
-    int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+    int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, treasure_map, cutpurse, sea_hag, tribute, smithy};
     int randomSeed = 100;
     struct gameState *state;
 
@@ -60,52 +55,10 @@ int main(int argc, char *argv[])
 
     // Discard a trashed card
     //
-    printf(">>> TESTING: mine card...\n");
-    testMineCard(state);
+    printf(">>> TESTING: treasure map card...\n");
+    testTreasureMapCard(state);
 
     return 0;
 }
 
 
-/*
-int mineCard(int choice1, int choice2, struct gameState *state, int handPos)
-{
-  int currentPlayer = whoseTurn(state);
-  int i; // for loop counter
-  int j; // holds card to trash
-
-  j = state->hand[currentPlayer][choice1];  //store card we will trash
-
-  if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
-        {
-          return -1;
-        }
-                
-  if (choice2 > treasure_map || choice2 < curse)
-        {
-          return -1;
-        }
-
-  if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
-        {
-          return -1;
-        }
-
-  gainCard(choice2, state, 2, currentPlayer);
-
-  //discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
-
-  //discard trashed card
-  for (i = 0; i < state->handCount[currentPlayer]; i++)
-        {
-          if (state->hand[currentPlayer][i] == j)
-            {
-              discardCard(i, currentPlayer, state, 0);                  
-              break;
-            }
-        }
-                        
-  return 0;
-}
-*/
