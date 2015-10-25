@@ -9,7 +9,7 @@ dominion.o: dominion.h dominion.c rngs.o
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
 	
-unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c dominion.o rngs.o
+unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c cardtest5.c dominion.o rngs.o
 	echo "Result for running Dominion tests:" > unittestresults.out
 	
 	echo "unittest1.c:" >> unittestresults.out
@@ -52,6 +52,11 @@ unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c
 	cardtest4 >> unittestresults.out
 	gcov dominion.c -b >> unittestresults.out
 	
+	echo "cardtest5.c:" >> unittestresults.out
+	gcc -o cardtest5 dominion.o rngs.o cardtest5.c $(CFLAGS)
+	cardtest5 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	
 unittest1: unittest1.c dominion.o rngs.o
 	gcc	-o unittest1 -g	 unittest1.c dominion.o rngs.o $(CFLAGS)
 	
@@ -84,7 +89,6 @@ runtests: testDrawCard
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
-
 	
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
@@ -92,4 +96,4 @@ player: player.c interface.o
 all: playdom unittest1 player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom unittest1.exe unittest1 unittest2.exe unittest2 unittest3.exe unittest3 unittest4.exe unittest4 unittestresults.out cardtest1 cardtest2 cardtest3 cardtest4 test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
+	rm -f *.o playdom.exe playdom unittest1.exe unittest1 unittest2.exe unittest2 unittest3.exe unittest3 unittest4.exe unittest4 unittestresults.out cardtest1 cardtest2 cardtest3 cardtest4 cardtest5 test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so

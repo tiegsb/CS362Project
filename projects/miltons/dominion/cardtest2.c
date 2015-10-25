@@ -3,12 +3,13 @@
 
 #include<stdio.h>
 #include "dominion.h"
-//#include "dominion_helpers.h"
+#include "dominion_helpers.h"
 //#include "rngs.h"
 
 int main(int argc, char *argv[])
 {
-    int retVal = adventurerEffect(0, 0, 0, gameState, 0, 0);
+    struct gameState testState;
+    int retVal = adventurerEffect(0, 0, 0, &testState, 0, 0);
     if (retVal == 0)
     {
         printf("Adventurer card: PASS\n");

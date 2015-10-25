@@ -18,14 +18,14 @@
 // set NOISY_TEST to 0 to remove printfs from output
 #define NOISY_TEST 1
 
-void testscoreFor();
+void testgainCard();
 
 int main() {
-	testscoreFor(); 
+	testgainCard(); 
  	return 0;
 }
 
-void testscoreFor() {
+void testgainCard() {
 	struct gameState G;
 	int fail = 0;  
 	G.numPlayers = 2;
