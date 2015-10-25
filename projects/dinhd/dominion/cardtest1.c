@@ -26,7 +26,7 @@ int main() {
     int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
     sea_hag, tribute, smithy};
 
-    printf ("Testing village card.\n");
+    printf ("* * * * * * * * * * * * * * * *  Testing village card.* * * * * * * * * * * * * * * * \n");
 
     initializeGame(2, k, 2, &G);
 
@@ -45,7 +45,7 @@ int main() {
     // printHand(0, &G);
     // printPlayed(0, &G);
     // printDeck(0, &G);
-    printf ("Number of cards in hand %i \n", numHandCards(&G));
+    //printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
     printf("played card \n");
@@ -58,6 +58,8 @@ int main() {
         playCard(i, -1, -1, -1, &G);
 
         //check to see if village card goes into discard
+        //printPlayed(0, &G);
+
         assert (G.playedCards[playedCards] == village);
         //check to see if number of actions increased by 2
         assert (numActions + 1 == G.numActions);

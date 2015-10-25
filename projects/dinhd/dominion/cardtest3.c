@@ -46,18 +46,19 @@ int main() {
     // printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
-    printf("Testing smithy card\n");
+    printf("* * * * * * * * * * * * * * * * Testing smithy card * * * * * * * * * * * * * * * * \n");
 
     //keeps track of played cards
     int playedCards = 0;
+    int cardsInHand = G.handCount[0];
 
     i = 4;
     playCard(i, -1, -1, -1, &G);
 
 
     //check to see if adventurer card goes into discard
-    printPlayed(0, &G);
-    printHand(0, &G);
+    //printPlayed(0, &G);
+    //printHand(0, &G);
     //make sure card is discarded
     assert (G.hand[4][i] != smithy);
     

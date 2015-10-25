@@ -48,6 +48,15 @@ unittest4: unittest4.c dominion.o rngs.o
 cardtest1: cardtest1.c dominion.o rngs.o
 	gcc -o cardtest1 -g  cardtest1.c dominion.o rngs.o -fprofile-arcs -ftest-coverage -g $(CFLAGS)
 
+cardtest2: cardtest2.c dominion.o rngs.o
+	gcc -o cardtest2 -g  cardtest2.c dominion.o rngs.o -fprofile-arcs -ftest-coverage -g $(CFLAGS)
+
+cardtest3: cardtest3.c dominion.o rngs.o
+	gcc -o cardtest3 -g  cardtest3.c dominion.o rngs.o -fprofile-arcs -ftest-coverage -g $(CFLAGS)
+
+cardtest4: cardtest4.c dominion.o rngs.o
+	gcc -o cardtest4 -g  cardtest4.c dominion.o rngs.o -fprofile-arcs -ftest-coverage -g $(CFLAGS)
+
 unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c
 	echo "Result for running tests:" > unittestresults.out
 	
@@ -76,20 +85,20 @@ unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c
 	./cardtest1 >> unittestresults.out
 	gcov dominion.c -b >> unittestresults.out
 	
-#	echo "cardtest2.c:" >> unittestresults.out
-#	gcc -o cardtest2 rngs.o dominion.o cardtest2.c $(CFLAGS)
-#	cardtest2 >> unittestresults.out
-#	gcov dominion.c >> unittestresults.out
+	echo "cardtest2.c:" >> unittestresults.out
+	gcc -o cardtest2 rngs.o dominion.o cardtest2.c $(CFLAGS)
+	./cardtest2 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
 	
-#	echo "cardtest3.c:" >> unittestresults.out
-#	gcc -o cardtest3 rngs.o dominion.o cardtest3.c $(CFLAGS)
-#	cardtest3 >> unittestresults.out
-#	gcov dominion.c >> unittestresults.out
+	echo "cardtest3.c:" >> unittestresults.out
+	gcc -o cardtest3 rngs.o dominion.o cardtest3.c $(CFLAGS)
+	./cardtest3 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
 	
-#	echo "cardtest4.c:" >> unittestresults.out
-#	gcc -o cardtest4 rngs.o dominion.o cardtest4.c $(CFLAGS)
-#	cardtest4 >> unittestresults.out
-#	gcov dominion.c >> unittestresults.out
+	echo "cardtest4.c:" >> unittestresults.out
+	gcc -o cardtest4 rngs.o dominion.o cardtest4.c $(CFLAGS)
+	./cardtest4 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
 
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard

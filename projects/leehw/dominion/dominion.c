@@ -1251,12 +1251,14 @@ int adventurerAction(int player, struct gameState *state, int temphand[]){
   int cardDrawn = 0;
   int z = 0;
   int drawntreasure = 0;
+  int cycledCards=0;
 
   while(drawntreasure<2){
     if (state->deckCount[player] <1){//if the deck is empty we need to shuffle discard and add to deck
       shuffle(player, state);
     }
     drawCard(player, state);
+    cycledCards++; //for debugging
     cardDrawn = state->hand[player][state->handCount[player]-1];//top card of hand is most recently drawn card.
     if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold){
       drawntreasure++;
@@ -1271,7 +1273,7 @@ int adventurerAction(int player, struct gameState *state, int temphand[]){
     state->discard[player][state->discardCount[player]++]=temphand[z-1]; // discard all cards in play that have been drawn
     z=z-1;
   }
-  return 0;
+  return cycledCards;
 }
 			
 

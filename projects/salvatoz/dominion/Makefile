@@ -1,7 +1,7 @@
 CFLAGS = -Wall -fpic -coverage -lm -g -Wfatal-errors
 GCC = gcc
 
-.PHONY: all clean testAll runtests
+.PHONY: all clean testAll runtests rununittest1 rununittest2
 
 rngs.o: rngs.h rngs.c
 	$(GCC) -c rngs.c  $(CFLAGS)
@@ -24,7 +24,7 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard unittest1 unittest2 unittest3 unittest4
 
 # unit tests
 testDrawCard: testDrawCard.c dominion.o cards.o rngs.o
@@ -37,18 +37,32 @@ testBuyCard: testDrawCard.c dominion.o cards.o rngs.o
 	$(GCC) -o testDrawCard  testDrawCard.c dominion.o cards.o rngs.o $(CFLAGS)
 
 unittest1: unittest1.c dominion.o cards.o rngs.o
-	$(GCC) -o unittest1 unittest1.c dominion.o cards.o rngs.o $(CFLAGS)
+	$(GCC) -o unittest1 unittest1.c cards.o dominion.o rngs.o $(CFLAGS)
 
 unittest2: unittest2.c dominion.o cards.o rngs.o
 	$(GCC) -o unittest2 unittest2.c dominion.o cards.o rngs.o $(CFLAGS)
+
+unittest3: unittest3.c dominion.o cards.o rngs.o
+	$(GCC) -o unittest3 unittest3.c dominion.o cards.o rngs.o $(CFLAGS)
+
+unittest4: unittest4.c dominion.o cards.o rngs.o
+	$(GCC) -o unittest4 unittest4.c dominion.o cards.o rngs.o $(CFLAGS)
 
 testAll: dominion.o cards.o testSuite.c
 	$(GCC) -o testSuite testSuite.c  dominion.o cards.o rngs.o $(CFLAGS)
 
 # run unit tests
-runtests: testDrawCard unittest1 unittest2
+runtests: testDrawCard
 	./testDrawCard &> unittestresult.out
+	gcov dominion.c >> unittestresult.out
+	cat dominion.c.gcov >> unittestresult.out
+
+rununittest1: unittest1
 	./unittest1 &> unittestresult.out
+	gcov dominion.c >> unittestresult.out
+	cat dominion.c.gcov >> unittestresult.out
+
+rununittest2: unittest2
 	./unittest2 &> unittestresult.out
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
