@@ -33,7 +33,6 @@ void testAdventurerEffect() {
     assert(gs.handCount[0] == 2);
     // Assert that the deck will have 2 cards in it because the coins are the
     // first two cards.
-    printf("%d\n", gs.deckCount[0]);
     assert(gs.deckCount[0] == 2);
     // Assert that there were no cards discarded because the first two drawn
     // were coins.
