@@ -57,8 +57,8 @@ int main() {
 
 
     //check to see if adventurer card goes into discard
-    printPlayed(0, &G);
-    printHand(0, &G);
+    //printPlayed(0, &G);
+    //printHand(0, &G);
     //make sure card is discarded
     assert (G.hand[4][i] != smithy);
     

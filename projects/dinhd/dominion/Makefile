@@ -64,7 +64,19 @@ ctest5: cardtest5.c interface.o
 
 unittestresults.out: all
 	cardtest1 > unittestresults.out
-	gcov dominion.c >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+
+	cardtest2 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+
+	cardtest3 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+
+	cardtest4 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+
+	cardtest5 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
 
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins test1 test2 test3 test4 ctest1 ctest2 ctest3 ctest4 ctest5

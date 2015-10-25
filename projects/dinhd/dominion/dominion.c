@@ -736,7 +736,7 @@ int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice
     return -1;
   }
 
-    // printf("difference is %i and %i \n", getCost(state->hand[currentPlayer][choice1]) + 3, getCost(choice2));
+    printf("difference is %i and %i \n", getCost(state->hand[currentPlayer][choice1]) + 3, getCost(choice2));
 
       if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
   {
@@ -765,56 +765,54 @@ int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice
 int minionCard(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2)
 {
 
-  //+1 action
-  state->numActions++;
-  
-  //discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
+      //+1 action
+      state->numActions++;
       
-  if (choice1)    //+2 coins
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      
+      if (choice1)    //+2 coins
   {
-    printf("chose choice 1 \n");
     state->coins = state->coins + 2;
   }
       
-  else if (choice2)   //discard hand, redraw 4, other players with 5+ cards discard hand and draw 4
+      else if (choice2)   //discard hand, redraw 4, other players with 5+ cards discard hand and draw 4
   {
-    printf("chose choice 2 \n");
     //discard hand
     while(numHandCards(state) > 0)
-    {
+      {
         discardCard(handPos, currentPlayer, state, 0);
-    }
+      }
         
     //draw 4
     for (i = 0; i < 4; i++)
-    {
+      {
         drawCard(currentPlayer, state);
-    }
+      }
         
     //other players discard hand and redraw if hand size > 4
     for (i = 0; i < state->numPlayers; i++)
-    {
-      if (i != currentPlayer)
       {
-        if ( state->handCount[i] > 4 )
+        if (i != currentPlayer)
+    {
+      if ( state->handCount[i] > 4 )
         {
           //discard hand
           while( state->handCount[i] > 0 )
-          {
-              discardCard(handPos, i, state, 0);
-          }
-                  
+      {
+        discardCard(handPos, i, state, 1);
+      }
+              
           //draw 4
           for (j = 0; j < 4; j++)
-          {
-            drawCard(i, state);
-          }
-        }
+      {
+        drawCard(i, state);
       }
+        }
     }
+      }
         
-}
+  }
       return 0;
 }
 

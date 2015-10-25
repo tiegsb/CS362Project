@@ -1,3 +1,6 @@
+Dustin Dinh
+CS 362 Assignment 3
+
 ***********************************  Function Bugs  ***********************************
 
 There is a bug with isGameOver(). It goes through all the possible supply cards EXCEPT the last 

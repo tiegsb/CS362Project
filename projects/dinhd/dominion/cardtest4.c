@@ -80,7 +80,7 @@ int main() {
                 int playedIndex;
                 int foundMine = 0;
                 int foundCoin = 0;
-                printf ("affordable");
+                printf ("affordable \n");
                 //assert (G.hand[0][i] == coin);
                 printf ("################################################### \n Error: Expected coin in hand location %i. \n ################################################### \n", i);
 
@@ -110,7 +110,7 @@ int main() {
                 int foundMine = 0;
                 int foundCoin = 0;
 
-                printf ("unaffordable");
+                printf ("unaffordable \n");
                 assert (G.hand[0][i] != coin);
                 //verify that mine card is still in hand
                 assert (G.hand[0][mineCardLoc] == mine);

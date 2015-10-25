@@ -1,3 +1,175 @@
+* * * * * * * * * * * * * * * *  Testing village card.* * * * * * * * * * * * * * * * 
+played card 
+All tests passed!
+File 'dominion.c'
+Lines executed:29.98% of 577
+Branches executed:31.89% of 417
+Taken at least once:22.30% of 417
+Calls executed:27.27% of 99
+dominion.c:creating 'dominion.c.gcov'
+
+* * * * * * * * * * * * * * * * Testing adventurer card * * * * * * * * * * * * * * * * 
+################################################### 
+ Error: played card (adventurer) was not discarded after use. 
+ ################################################### 
+################################################### 
+ Error: played card (adventurer) was not discarded after use. 
+ ################################################### 
+################################################### 
+ Error: played card (adventurer) was not discarded after use. 
+ ################################################### 
+################################################### 
+ Error: played card (adventurer) was not discarded after use. 
+ ################################################### 
+################################################### 
+ Error: played card (adventurer) was not discarded after use. 
+ ################################################### 
+All tests passed!
+File 'dominion.c'
+Lines executed:29.98% of 577
+Branches executed:31.89% of 417
+Taken at least once:22.30% of 417
+Calls executed:27.27% of 99
+dominion.c:creating 'dominion.c.gcov'
+
+* * * * * * * * * * * * * * * * Testing smithy card * * * * * * * * * * * * * * * * 
+Player 0's played cards: 
+#  Card
+0  Smithy        
+1  Copper        
+2  Copper        
+
+Player 0's hand:
+#  Card
+0  Smithy       
+1  Smithy       
+2  Smithy       
+3  Smithy       
+4  Copper       
+
+################################################### 
+ Error: incorrect number of cards in hand left after Smithy played. 
+ ################################################### 
+All tests passed!
+File 'dominion.c'
+Lines executed:29.98% of 577
+Branches executed:31.89% of 417
+Taken at least once:22.30% of 417
+Calls executed:27.27% of 99
+dominion.c:creating 'dominion.c.gcov'
+
+* * * * * * * * * * * * * * * * Testing mineCard card* * * * * * * * * * * * * * * * 
+Testing swapping position 0 for Copper 
+code returned: -1 
+cost of choice1 is 0 
+affordable################################################### 
+ Error: Expected coin in hand location 0. 
+ ################################################### 
+################################################### 
+ Error: expected non-mine card in hand location 4. 
+ ################################################### 
+################################################### 
+ Error: expected mine card in played area. 
+ ################################################### 
+################################################### 
+ Error: expected a coin card in played area. 
+ ################################################### 
+Testing swapping position 0 for Silver 
+code returned: -1 
+cost of choice1 is 0 
+unaffordableTesting swapping position 0 for Gold 
+code returned: -1 
+cost of choice1 is 0 
+unaffordableTesting swapping position 1 for Copper 
+code returned: -1 
+cost of choice1 is 3 
+affordable################################################### 
+ Error: Expected coin in hand location 1. 
+ ################################################### 
+################################################### 
+ Error: expected non-mine card in hand location 4. 
+ ################################################### 
+################################################### 
+ Error: expected mine card in played area. 
+ ################################################### 
+################################################### 
+ Error: expected a coin card in played area. 
+ ################################################### 
+Testing swapping position 1 for Silver 
+code returned: -1 
+cost of choice1 is 3 
+affordable################################################### 
+ Error: Expected coin in hand location 1. 
+ ################################################### 
+################################################### 
+ Error: expected non-mine card in hand location 4. 
+ ################################################### 
+################################################### 
+ Error: expected mine card in played area. 
+ ################################################### 
+################################################### 
+ Error: expected a coin card in played area. 
+ ################################################### 
+Testing swapping position 1 for Gold 
+code returned: -1 
+cost of choice1 is 3 
+unaffordableTesting swapping position 2 for Copper 
+code returned: -1 
+cost of choice1 is 6 
+affordable################################################### 
+ Error: Expected coin in hand location 2. 
+ ################################################### 
+################################################### 
+ Error: expected non-mine card in hand location 4. 
+ ################################################### 
+################################################### 
+ Error: expected mine card in played area. 
+ ################################################### 
+################################################### 
+ Error: expected a coin card in played area. 
+ ################################################### 
+Testing swapping position 2 for Silver 
+code returned: -1 
+cost of choice1 is 6 
+affordable################################################### 
+ Error: Expected coin in hand location 2. 
+ ################################################### 
+################################################### 
+ Error: expected non-mine card in hand location 4. 
+ ################################################### 
+################################################### 
+ Error: expected mine card in played area. 
+ ################################################### 
+################################################### 
+ Error: expected a coin card in played area. 
+ ################################################### 
+Testing swapping position 2 for Gold 
+code returned: -1 
+cost of choice1 is 6 
+affordable################################################### 
+ Error: Expected coin in hand location 2. 
+ ################################################### 
+################################################### 
+ Error: expected non-mine card in hand location 4. 
+ ################################################### 
+################################################### 
+ Error: expected mine card in played area. 
+ ################################################### 
+################################################### 
+ Error: expected a coin card in played area. 
+ ################################################### 
+################################################### 
+ Error: allows user to choose a non treasure card to buy. 
+ ################################################### 
+All tests passed!
+File 'dominion.c'
+Lines executed:29.98% of 577
+Branches executed:31.89% of 417
+Taken at least once:22.30% of 417
+Calls executed:27.27% of 99
+dominion.c:creating 'dominion.c.gcov'
+
+* * * * * * * * * * * * * * * * Testing minionCard * * * * * * * * * * * * * * * *
 Testing minion card choice 1
 ################################################### 
  Error: bonus coins not updated to + 2. 
@@ -40,3 +212,10 @@ Player 1's played cards:
 Player 1's hand:
 
 All tests passed!
+File 'dominion.c'
+Lines executed:29.98% of 577
+Branches executed:31.89% of 417
+Taken at least once:22.30% of 417
+Calls executed:27.27% of 99
+dominion.c:creating 'dominion.c.gcov'
+
