@@ -23,7 +23,7 @@ int main() {
     struct gameState G;
     struct gameState D;
 
-    printf ("TESTING scoreFor():\n");
+    printf("* * * * * * * * * * * * * * * * Testint unittest4 scoreFor * * * * * * * * * * * * * * * * \n");
 
     printf ("Test: Empty Game \n");
     score = scoreFor(0, &G);
@@ -31,7 +31,7 @@ int main() {
     
     assert (score == 0);
 
-    printf("* * * * * * * * * * * * * * * * Test: One of each in hand * * * * * * * * * * * * * * * * \n");
+    printf("Test: one score card found in hand\n");
     for (card = curse; card <= great_hall; card++)
     {
     	G.supplyCount[card] = 1;

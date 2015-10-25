@@ -60,9 +60,8 @@ int main() {
     int foundMinion = 0;
     int Index;
     //printHand(0, &G);
+    
     //test when gain 2 coins is added;
-
-
     playCard(4, 1, 0, -1, &G);
 
     //check to make sure that coins were added.
@@ -108,14 +107,11 @@ int main() {
     // printPlayed(0, &G);
     // printDiscard(0, &G);
     // printDeck(0, &G);
-    printHand(0, &G);
-    printHand(1, &G);
-    printf ("played \n");
+    //printHand(0, &G);
+    //printHand(1, &G);
+    //printf ("played \n");
 
     playCard(0, 0, 1, -1, &G);
-
-     printDeck(0, &G);
-     printPlayed(0, &G);
 
     //check to make sure that coins weren't added.
     assert (countHandCoins(0, &G) == G.coins);
@@ -132,15 +128,10 @@ int main() {
     // assert (foundMinion == 10);
 
     //verify that the other player discarded 5 cards
-
     
-    printPlayed(1, &G);
-    printHand(1, &G);
+    //printPlayed(1, &G);
+    //printHand(1, &G);
    
-
-
-    //printf ("################################################### \n Error: allows user to choose a non treasure card to buy. \n ################################################### \n");
-
     printf("All tests passed!\n");
 
     

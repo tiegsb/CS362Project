@@ -78,6 +78,18 @@ unittestresults.out: all
 	cardtest5 >> unittestresults.out
 	gcov -b dominion.c >> unittestresults.out
 
+	unittest1 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+
+	unittest2 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+
+	unittest3 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+
+	unittest4 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins test1 test2 test3 test4 ctest1 ctest2 ctest3 ctest4 ctest5
 
