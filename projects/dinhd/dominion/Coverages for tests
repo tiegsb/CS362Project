@@ -1,0 +1,121 @@
+       15:  819:int villageCard(int currentPlayer, struct gameState *state, int handPos)
+        -:  820:{
+        -:  821:      //+1 Card
+       15:  822:      drawCard(currentPlayer, state);
+        -:  823:      
+        -:  824:      //+2 Actions
+       15:  825:      state->numActions = state->numActions + 2;
+        -:  826:      
+        -:  827:      //discard played card from hand
+       15:  828:      discardCard(handPos, currentPlayer, state, 0);
+       15:  829:      return 0;
+        -:  830:}
+
+
+                2:  709:int smithyCard(int currentPlayer, struct gameState *state, int handPos)
+        -:  710:{
+        -:  711:  //+3 Cards
+        8:  712:  for (i = 0; i < 3; i++)
+        -:  713:  {
+        6:  714:    drawCard(currentPlayer, state);
+        -:  715:  
+        -:  716:      
+        -:  717:      //discard card from hand
+        6:  718:      discardCard(handPos, currentPlayer, state, 0);
+        -:  719:  }
+        2:  720:      return 0;
+        -:  721:}
+
+
+                1:  685:int adventurerCard(int currentPlayer, struct gameState *state, int handPos)
+        -:  686:{
+        -:  687:  //investigate further: there is no discard function for the played card.
+        4:  688:  while(drawntreasure<2){
+        2:  689:  if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  690:    shuffle(currentPlayer, state);
+        -:  691:  }
+        2:  692:  drawCard(currentPlayer, state);
+        2:  693:  cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+        4:  694:  if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+        2:  695:    drawntreasure++;
+        -:  696:  else{
+    #####:  697:    temphand[z]=cardDrawn;
+    #####:  698:    state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+    #####:  699:    z++;
+        -:  700:  }
+        -:  701:      }
+        3:  702:      while(z>=0){
+        1:  703:  state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+        1:  704:  z=z-1;
+        -:  705:      }
+        1:  706:      return 0;
+        -:  707:}
+        -:  708:
+        3:  709:int smithyCard(int currentPlayer, struct gameState *state, int handPos)
+        -:  710:{
+        -:  711:  //+3 Cards
+       12:  712:  for (i = 0; i < 3; i++)
+        -:  713:  {
+        9:  714:    drawCard(currentPlayer, state);
+        -:  715:  
+        -:  716:      
+        -:  717:      //discard card from hand
+        9:  718:      discardCard(handPos, currentPlayer, state, 0);
+        -:  719:  }
+        3:  720:      return 0;
+        -:  721:}
+        -:  722:
+
+          4:  765:int minionCard(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2)
+        -:  766:{
+        -:  767:
+        -:  768:      //+1 action
+        4:  769:      state->numActions++;
+        -:  770:      
+        -:  771:      //discard card from hand
+        4:  772:      discardCard(handPos, currentPlayer, state, 0);
+        -:  773:      
+        4:  774:      if (choice1)    //+2 coins
+        -:  775:  {
+        2:  776:    state->coins = state->coins + 2;
+        -:  777:  }
+        -:  778:      
+        2:  779:      else if (choice2)   //discard hand, redraw 4, other players with 5+ cards discard hand and draw 4
+        -:  780:  {
+        -:  781:    //discard hand
+       12:  782:    while(numHandCards(state) > 0)
+        -:  783:      {
+        8:  784:        discardCard(handPos, currentPlayer, state, 0);
+        -:  785:      }
+        -:  786:        
+        -:  787:    //draw 4
+       10:  788:    for (i = 0; i < 4; i++)
+        -:  789:      {
+        8:  790:        drawCard(currentPlayer, state);
+        -:  791:      }
+        -:  792:        
+        -:  793:    //other players discard hand and redraw if hand size > 4
+        6:  794:    for (i = 0; i < state->numPlayers; i++)
+        -:  795:      {
+        4:  796:        if (i != currentPlayer)
+        -:  797:    {
+        2:  798:      if ( state->handCount[i] > 4 )
+        -:  799:        {
+        -:  800:          //discard hand
+    #####:  801:          while( state->handCount[i] > 0 )
+        -:  802:      {
+    #####:  803:        discardCard(handPos, i, state, 1);
+        -:  804:      }
+        -:  805:              
+        -:  806:          //draw 4
+    #####:  807:          for (j = 0; j < 4; j++)
+        -:  808:      {
+    #####:  809:        drawCard(i, state);
+        -:  810:      }
+        -:  811:        }
+        -:  812:    }
+        -:  813:      }
+        -:  814:        
+        -:  815:  }
+        4:  816:      return 0;
+        -:  817:}
