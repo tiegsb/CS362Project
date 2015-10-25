@@ -132,7 +132,7 @@ int main() {
   G.hand[0][4] = smithy;
   
   G.handCount[0] = 5;
-  updateCoins(0, &G, 0);
+  G.coins = 4;
   
   printf("Setup complete.\n");
   
@@ -148,7 +148,6 @@ int main() {
   
   /* play smithy */
   int smithyResult = smithyEffect(&G, 0, 4);
-  updateCoins(0, &G, 0);
   
 #if (PRINT_TEST == 1)
   printf("SmithyResult: %d ",smithyResult);
