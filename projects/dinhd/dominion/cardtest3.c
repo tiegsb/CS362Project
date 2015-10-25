@@ -50,6 +50,7 @@ int main() {
 
     //keeps track of played cards
     int playedCards = 0;
+    int cardsInHand = G.handCount[0];
 
     i = 4;
     playCard(i, -1, -1, -1, &G);

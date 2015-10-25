@@ -53,7 +53,7 @@ int main() {
 
     printf("Testing mineCard card\n");
 
-    //keeps track of played cards
+    //keeps track of the mine card's location.
     mineCardLoc = 4;
     // loop through each type of coin and swap it for each available coin.
     int coin;

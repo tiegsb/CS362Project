@@ -15,4 +15,12 @@ It only checks to see if the card exists.
 
 There is a bug with mineCard that was introduced by me, the input parameters for choice1 and choice2 were swapped. 
 
-There is a bug with minion
+There is a bug with minionCard. No matter what the input parameters for choice1 and choice2, it will always
+give two coins rather.
+
+There is a bug with minionCard. If choice1 is chosen, coins are not added to the state because function 
+minionCard is not able to modify the bonusCoin variable which resides inside of the playcard function.
+
+There is a bug with minionCard that I introduced that I cannot test because it is masked by another bug. The game
+does not store the other player's state (cards in hand, discard etc) until it is that player's turn. As a result I
+cannot perform tests that depend on the non-active player's state such as discard 
