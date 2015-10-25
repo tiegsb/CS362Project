@@ -4,6 +4,7 @@ Title: 	Documentation of the coverage of the unit tests that were developed for 
 File:	coverage1.c
 Class:	CS362 Fall 2015
 
+
 OVERALL COVERAGE:
 Lines executed:17.71% of 576
 Branches executed:13.91% of 417
