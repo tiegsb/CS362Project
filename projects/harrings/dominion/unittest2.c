@@ -19,7 +19,7 @@ void discardCard_test()
     int k[10] = {adventurer, council_room, feast, gardens, mine, remodel, smithy, village, baron, great_hall};
 	int rando = 512; //seed for random numbers I have heard base 2 is best
     
-    int p_id = 0; //player id, 2 player game so ids are 0 and 1	   
+    int pid = 0; //player id, 2 player game so ids are 0 and 1	   
 	int playercount = 2; 
 	int handCount = 5;
     int test_h[handCount];
