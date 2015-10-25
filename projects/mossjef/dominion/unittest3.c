@@ -110,6 +110,9 @@ void testisGameOver() {
 		printf("isGameOver(): FAIL > 3 empty supply piles\n");
 		fail = 1;
 	}
-	if(fail == 0) 
+	if(fail == 0) {
 		printf("isGameOver(): OK - ALL TESTS PASSED\n\n");
+	} else {
+		printf("isGameOver(): ISSUES - AT LEAST ONE TEST FAILED\n\n");
+	}	
 }

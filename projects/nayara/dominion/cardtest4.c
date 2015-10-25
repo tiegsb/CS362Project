@@ -1,13 +1,7 @@
-//int councilEffect(int player, int handPos, struct gameState *state);
-
-
-/* -----------------------------------------------------------------------
- * Demonstration of how to write unit tests for dominion-base
- * Include the following lines in your makefile:
- *
- * testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
- *      gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
- * -----------------------------------------------------------------------
+/* Author: Ashok Nayar
+ * cs362, Fall 2015
+ * Assignment 3: Unit Testing
+ * cardtest4.c (Testing council card function)
  */
 
 #include "dominion.h"
@@ -29,31 +23,35 @@ int main() {
         , remodel, smithy, village, baron, great_hall};
     struct gameState G;
     int maxHandCount = 5;
-    // arrays of all coppers, silvers, and golds
     int dummyCard = adventurer;
     int testCard = council_room;
     
     
     printf("Testing councilEffect()\n");
-    
+    // Loop through each player
     for (p = 0; p < numPlayer; p++)
     {
+        // Intialize game and set explicit values
         r = initializeGame(numPlayer, k, seed, &G);
         G.whoseTurn = p;
         G.coins = 5;
         G.discardCount[p]= 0;
         G.numActions = 5;
         G.deckCount[p] = MAX_DECK;
+        // Set every card in the deck to dummy cards
+        // so we can compare easily
         for (i=0; i< MAX_DECK; i++)
         {
             G.deck[p][i] = dummyCard;
         }
 
+        // Create different sized hands
         for (handCount = 1; handCount <= maxHandCount; handCount++)
         {
             int i;
             G.handCount[p] = handCount;
             
+            // Set the other player's hand count to 0
             if (p ==0)
             {
                 G.handCount[1] = 0;
@@ -63,21 +61,22 @@ int main() {
                 G.handCount[0] = 0;
             }
             
+            // Set the current player cards to dummy cards
             for(i = 0; i<handCount;i++)
             {
                 G.hand[p][i] = dummyCard;
             }
             
-
+            // Add one council card
             G.hand[p][0] = testCard;
+            
+            
+            // Double check to make sure intial values are correct
 #if (NOISY_TEST == 1)
             printf("***Test for player %d with %d  cards in hand\n",p,i);
 #endif
             
-#if (NOISY_TEST == 1)
-            printf("Num buys. Expected %d, received %d\n",1,G.numBuys);
-#endif
-            //assert(G.numBuys == 1);
+
 #if (NOISY_TEST == 1)
             printf("Num actions. Expected %d, received %d\n",5,G.numActions);
 #endif
@@ -95,6 +94,7 @@ int main() {
             printf("Hand count. Expected %d, received %d\n",handCount, G.handCount[p]);
 #endif
             assert(G.handCount[p] == handCount);
+            // Check other player hand counts
 #if (NOISY_TEST == 1)
             if (p == 0)
             {
@@ -121,16 +121,12 @@ int main() {
 #if (NOISY_TEST == 1)
             printf("*Calling council function.\n");
 #endif
-            councilEffect(p, 0, &G);
+            councilEffect(p, 0, &G); // Call council card function
       
-#if (NOISY_TEST == 1)
-            printf("Num buys. Expected %d, received %d\n",2,G.numBuys);
-#endif
-            //assert(G.numBuys == 2);
-            if (G.numBuys != 2)
-            {
-                printf("FAILURE: Number of buys is incorrect.\n");
-            }
+            // Check results
+            // Cards are not added to other players' hands but
+            // instead added to current player's hand
+
 #if (NOISY_TEST == 1)
             printf("Num actions. Expected %d, received %d\n",5,G.numActions);
 #endif

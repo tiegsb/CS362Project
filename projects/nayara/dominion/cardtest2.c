@@ -1,14 +1,9 @@
-// int adventurerEffect(int player, struct gameState *state);
-
-
-/* -----------------------------------------------------------------------
- * Demonstration of how to write unit tests for dominion-base
- * Include the following lines in your makefile:
- *
- * testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
- *      gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
- * -----------------------------------------------------------------------
+/* Author: Ashok Nayar
+ * cs362, Fall 2015
+ * Assignment 3: Unit Testing
+ * cardtest2.c (Testing adventurer card function)
  */
+
 
 #include "dominion.h"
 #include "dominion_helpers.h"
@@ -37,12 +32,14 @@ int main() {
     printf("Testing silver\n");
     for (p = 0; p < numPlayer; p++)
     {
+        // Initialize game and explicity set test values
         r = initializeGame(numPlayer, k, seed, &G);
         G.whoseTurn = p;
         G.coins = 5;
         G.discardCount[p]= 0;
         G.deckCount[p] = MAX_DECK;
-
+        
+        // Create and test different size hands
         for (handCount = 1; handCount <= maxHandCount; handCount++)
         {
             G.handCount[p] = handCount;
@@ -58,11 +55,14 @@ int main() {
             {
                 G.hand[p][i] = dummyCard;
             }
+            
+            // Set two cards to silver and one to a dummy card
             G.hand[p][0] = dummyCard;
             G.deck[p][MAX_DECK-1] = silver;
             G.deck[p][MAX_DECK-2] = dummyCard;
             G.deck[p][MAX_DECK-3] = silver;
 
+            // Double check that our values before calling the function are correct
 #if (NOISY_TEST == 1)
             printf("***Test for player %d with silver card\n",p);
 #endif
@@ -90,8 +90,11 @@ int main() {
 #if (NOISY_TEST == 1)
             printf("*Calling adventurer Function\n");
 #endif
-            adventurerEffect(p, &G);
+            adventurerEffect(p, &G); // Call function
             
+            // Test to see if the correct cards are added,
+            // the correct decks are decreased, and other
+            // attributes remain the same
 #if (NOISY_TEST == 1)
             printf("Checking for first silver card. Expected %d, received %d\n",silver, G.hand[p][G.handCount[p] -1]);
 #endif
@@ -121,6 +124,7 @@ int main() {
         }
     }
   
+    // Same test as above, but testing gold cards
     printf("Testing gold\n");
     for (p = 0; p < numPlayer; p++)
     {
@@ -207,7 +211,8 @@ int main() {
             printf("\n");
         }
     }
-    
+    // Same test as above, but testing copper cards.
+    // This test fails!
     printf("Testing copper\n");
     for (p = 0; p < numPlayer; p++)
     {

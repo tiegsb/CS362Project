@@ -428,30 +428,48 @@ int scoreFor (int player, struct gameState *state) {
       if (state->hand[player][i] == duchy) { score = score + 3; };
       if (state->hand[player][i] == province) { score = score + 6; };
       if (state->hand[player][i] == great_hall) { score = score + 1; };
-      if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, gardens, state) / 10 ); };
     }
+
+    // printf ("score after hand: %i \n \n" , score);
 
   //score from discard
   for (i = 0; i < state->discardCount[player]; i++)
     {
       if (state->discard[player][i] == curse) { score = score - 1; };
+      // printf ("score after curse: %i \n" , score);
       if (state->discard[player][i] == estate) { score = score + 1; };
+      // printf ("score after estate: %i \n" , score);
       if (state->discard[player][i] == duchy) { score = score + 3; };
+      // printf ("score after duchy: %i \n" , score);
       if (state->discard[player][i] == province) { score = score + 6; };
+      // printf ("score after province: %i \n" , score);
       if (state->discard[player][i] == great_hall) { score = score + 1; };
-      if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      // printf ("score after great_hall: %i \n" , score);
+      if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, gardens, state) / 10 ); };
+      // printf ("score after gardens: %i \n" , score);
     }
+
+    // printf ("score after discard: %i \n \n" , score);
 
   //score from deck
   for (i = 0; i < state->discardCount[player]; i++)
     {
       if (state->deck[player][i] == curse) { score = score - 1; };
+      // printf ("score after curse: %i \n" , score);
       if (state->deck[player][i] == estate) { score = score + 1; };
+      // printf ("score after estate: %i \n" , score);
       if (state->deck[player][i] == duchy) { score = score + 3; };
+       // printf ("score after duchy: %i \n" , score);
       if (state->deck[player][i] == province) { score = score + 6; };
+      // printf ("score after province: %i \n" , score);
       if (state->deck[player][i] == great_hall) { score = score + 1; };
-      if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      // printf ("score after great_hall: %i \n" , score);
+      if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, gardens, state) / 10 ); };
+        // printf ("score after gardens: %i \n" , score);
     }
+
+    printf ("score after deck: %i \n \n" , score);
 
   return score;
 }
@@ -708,16 +726,21 @@ int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice
 
       if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
   {
+    // printf("Choice 1 invalid \n");
     return -1;
   }
     
       if (choice2 > treasure_map || choice2 < curse)
   {
+    // printf("Choice 2 invalid \n");
     return -1;
   }
 
+    // printf("difference is %i and %i \n", getCost(state->hand[currentPlayer][choice1]) + 3, getCost(choice2));
+
       if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
   {
+    // printf("Cannot afford \n");
     return -1;
   }
 
