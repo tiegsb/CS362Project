@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "dominion.h"
+#include "dominion_helpers.h"
 #include "cards.h"
-
-int updateCoins(int player, struct gameState* state, int bonus);
 
 static void doTest(char *testName, int condition) {
   printf("TEST %s:  ", testName);
