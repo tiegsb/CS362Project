@@ -92,7 +92,7 @@ void testuseSmithy () {
 	}
 
   	//initialize first player's turn
-	int extOutpostPlayed = G.outpostPlayed = 0;
+	G.outpostPlayed = 0;
   	G.phase = 0;
   	int extnumActions = G.numActions = 1;
   	int extnumBuys = G.numBuys = 1;
