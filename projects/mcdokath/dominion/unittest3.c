@@ -126,9 +126,8 @@ int main() {
   G.hand[0][2] = copper;
   G.hand[0][3] = copper;
   G.hand[0][4] = copper;
-  
-  updateCoins(0, *G, 0);
-  
+  G.coins = 5;
+    
   G.handCount[0] = 5; 
   
   printf("Setup complete.\n");
@@ -150,6 +149,8 @@ int main() {
   Save.handCount[1] = G.handCount[1];
   Save.deckCount[0] = G.deckCount[0];
   Save.deckCount[1] = G.deckCount[1];
+  Save.discardCount[0] = G.discardCount[0];
+  Save.discardCount[1] = G.discardCount[1];
   
   /* Player 0 buys a village card, costs 3 coins */
   int buyCardResult = buyCard(14, &G);
@@ -162,12 +163,29 @@ int main() {
   assert(buyCardResult == 0);
 #endif
   
+  /* confirm discard */
+#if (PRINT_TEST == 1)
+  if (G.discardCount[0] == Save.discardCount[0] + 1)
+    printf("Player 0 discardCount +1: Pass!\n");
+  else
+    printf("Player 0 discardCount +1: Fail!\n");
+  if (G.discardCount[1] == Save.discardCount[1])
+    printf("Player 1 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 1 discardCount unchanged: Fail!\n");
+#endif
+  
+#if (ENABLE_ASSERTS == 1)
+  assert(G.discardCount[0] == Save.discardCount[0] + 1);
+  assert(G.discardCount[1] == Save.discardCount[1]);
+#endif
+  
   /* confirm number of cards in Player 0 and Player 1's decks */
 #if (PRINT_TEST == 1)
-  if (Save.deckCount[0] = G.deckCount[0] + 1)
-    printf("Player 0 deckCount +1: Pass!\n");
+  if (Save.deckCount[0] == G.deckCount[0])
+    printf("Player 0 deckCount unchanged: Pass!\n");
   else
-    printf("Player 0 deckCount +1: Fail!\n");
+    printf("Player 0 deckCount unchanged: Fail!\n");
   if (Save.deckCount[1] == G.deckCount[1])
     printf("Player 1 deckCount unchanged: Pass!\n");
   else
@@ -175,7 +193,7 @@ int main() {
 #endif
   
 #if (ENABLE_ASSERTS == 1)
-  assert(Save.deckCount[0] = G.deckCount[0] + 1);
+  assert(G.deckCount[0] == Save.deckCount[0] + 1);
   assert(Save.deckCount[1] == G.deckCount[1]);
 #endif
     
@@ -205,11 +223,11 @@ int main() {
     printf("numActions unchanged: Pass!\n");
   else
     printf("numActions unchanged: Fail!\n");
-  if (Save.coins == G.coins - 3)
+  if (G.coins == Save.coins - 3)
     printf("Coins -3: Pass!\n");
   else
     printf("Coins -3: Fail!\n");
-  if (Save.numBuys == G.numBuys - 1)
+  if (G.numBuys == Save.numBuys - 1)
     printf("numBuys-1: Pass!\n");
   else
     printf("numBuys-1: Fail!\n");
@@ -230,8 +248,8 @@ int main() {
   assert(Save.whoseTurn == G.whoseTurn);
   assert(G.phase == 1);
   assert(Save.numActions == G.numActions);
-  assert(Save.coins == G.coins - 3);
-  assert(Save.numBuys == G.numBuys - 1);
+  assert(G.coins == Save.coins - 3);
+  assert(G.numBuys == Save.numBuys - 1);
   assert(Save.handCount[0] == G.handCount[0]);
   assert(Save.handCount[1] == G.handCount[1]);
 #endif
