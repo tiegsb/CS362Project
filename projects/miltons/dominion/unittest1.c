@@ -1,3 +1,5 @@
+// tests discardCard() function
+
 #include<stdio.h>
 #include "dominion.h"
 

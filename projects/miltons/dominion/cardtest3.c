@@ -1,8 +1,12 @@
+// tests Council Room card
+
 #include<stdio.h>
 #include "dominion.h"
 
 int main(int argc, char *argv[])
 {
-    printf("cardtest3 working!\n");
+    int retVal = councilRoomEffect();
+    assert(retVal == 0) printf("Council Room card is working!\n");
+
     return 0;
 }

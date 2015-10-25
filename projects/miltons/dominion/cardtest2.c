@@ -1,8 +1,11 @@
+// tests Adventurer card
+
 #include<stdio.h>
 #include "dominion.h"
 
 int main(int argc, char *argv[])
 {
-    printf("cardtest2 working!\n");
+    int retVal = adventurerEffect();
+    assert(retVal == 0) printf("Adventurer card is working!\n");
     return 0;
 }

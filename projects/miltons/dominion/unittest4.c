@@ -1,3 +1,5 @@
+// tests gainCard() function
+
 #include<stdio.h>
 #include "dominion.h"
 
