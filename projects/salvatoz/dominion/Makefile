@@ -1,6 +1,6 @@
 CFLAGS = -Wall -fpic -coverage -lm -g -Wfatal-errors -std=c99
 GCC = gcc
-GOV = gcov -b -c -f
+GCOV = gcov -b -c -f
 
 .PHONY: all clean testAll runtests rununittest1 rununittest2
 
@@ -65,5 +65,15 @@ rununittest1: unittest1
 
 rununittest2: unittest2
 	./unittest2 &> unittestresult.out
+	$(GCOV) dominion.c >> unittestresult.out
+	cat dominion.c.gcov >> unittestresult.out
+
+rununittest3: unittest3
+	./unittest3 &> unittestresult.out
+	$(GCOV) dominion.c >> unittestresult.out
+	cat dominion.c.gcov >> unittestresult.out
+
+rununittest4: unittest4
+	./unittest4 &> unittestresult.out
 	$(GCOV) dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
