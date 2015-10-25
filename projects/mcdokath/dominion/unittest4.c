@@ -110,41 +110,36 @@ int testInitializeGame(int numPlayers, int kingdomCards[10], struct gameState *s
   return 0;
 }
 
-int main() {
-  
-  /* set up game state */
-  struct gameState G;
-  int k[10] = {adventurer, gardens, embargo, village, minion, 
-    mine, cutpurse, sea_hag, tribute, smithy};
+void successDiscard(int numPlayers, int kingdomCards[10], struct gameState *state) {
     
   /* initialize decks */
-  testInitializeGame(2, k, &G);
+  testInitializeGame(numPlayers, kingdomCards, state);
   
   /* set up hand for Player 0 */
-  G.hand[0][0] = copper;
-  G.hand[0][1] = copper;
-  G.hand[0][2] = copper;
-  G.hand[0][3] = copper;
-  G.hand[0][4] = copper;
+  state->hand[0][0] = copper;
+  state->hand[0][1] = copper;
+  state->hand[0][2] = copper;
+  state->hand[0][3] = copper;
+  state->hand[0][4] = copper;
     
-  G.handCount[0] = 5; 
+  state->handCount[0] = 5; 
   
   /* save game state */
   struct gameState Save;
-  Save.handCount[0] = G.handCount[0];
-  Save.handCount[1] = G.handCount[1];
-  Save.deckCount[0] = G.deckCount[0];
-  Save.deckCount[1] = G.deckCount[1];
-  Save.discardCount[0] = G.discardCount[0];
-  Save.discardCount[1] = G.discardCount[1];
+  Save.handCount[0] = state->handCount[0];
+  Save.handCount[1] = state->handCount[1];
+  Save.deckCount[0] = state->deckCount[0];
+  Save.deckCount[1] = state->deckCount[1];
+  Save.discardCount[0] = state->discardCount[0];
+  Save.discardCount[1] = state->discardCount[1];
   
   printf("Setup complete.\n");
   
   /* test */
-  printf("Testing gainCard()...\n");
+  printf("***\nSuccess test discard gainCard()...\n***\n");
   
   /* Player 0 gains estate card in discard pile */
-  int gaincardResult = gainCard(1, &G, 0, 0);
+  int gaincardResult = gainCard(1, state, 0, 0);
   
   /* check gainCard() result */
 #if (PRINT_TEST == 1)
@@ -157,40 +152,377 @@ int main() {
   
   /* confirm hand, deck, and discard counts */
 #if (PRINT_TEST == 1)
-  if (Save.handCount[0] == G.handCount[0])
+  if (Save.handCount[0] == state->handCount[0])
     printf("Player 0 handCount unchanged: Pass!\n");
   else
     printf("Player 0 handCount unchanged: Fail!\n");
-  if (Save.handCount[1] == G.handCount[1])
+  if (Save.handCount[1] == state->handCount[1])
     printf("Player 1 handCount unchanged: Pass!\n");
   else
     printf("Player 1 handCount unchanged: Fail!\n");
-  if (Save.deckCount[0] == G.deckCount[0])
+  if (Save.deckCount[0] == state->deckCount[0])
     printf("Player 0 deckCount unchanged: Pass!\n");
   else
     printf("Player 0 deckCount unchanged: Fail!\n");
-  if (Save.deckCount[1] == G.deckCount[1])
+  if (Save.deckCount[1] == state->deckCount[1])
     printf("Player 1 deckCount unchanged: Pass!\n");
   else
     printf("Player 1 deckCount unchanged: Fail!\n");
-  if (G.discardCount[0] == Save.discardCount[0] + 1)
+  if (state->discardCount[0] == Save.discardCount[0] + 1)
     printf("Player 0 discardCount + 1: Pass!\n");
   else
     printf("Player 0 discardCount + 1: Fail!\n");
-  if (Save.discardCount[1] == G.discardCount[1])
+  if (Save.discardCount[1] == state->discardCount[1])
     printf("Player 1 discardCount unchanged: Pass!\n");
   else
     printf("Player 1 discardCount unchanged: Fail!\n");
 #endif
 
 #if (ENABLE_ASSERTS == 1)
-  assert(Save.handCount[0] == G.handCount[0]);
-  assert(Save.handCount[1] == G.handCount[1]);
-  assert(Save.deckCount[0] == G.deckCount[0]);
-  assert(Save.deckCount[1] == G.deckCount[1]);
-  assert(G.discardCount[0] == Save.discardCount[0] + 1);
-  assert(Save.discardCount[1] == G.discardCount[1]);
+  assert(Save.handCount[0] == state->handCount[0]);
+  assert(Save.handCount[1] == state->handCount[1]);
+  assert(Save.deckCount[0] == state->deckCount[0]);
+  assert(Save.deckCount[1] == state->deckCount[1]);
+  assert(state->discardCount[0] == Save.discardCount[0] + 1);
+  assert(Save.discardCount[1] == state->discardCount[1]);
 #endif
+}
+
+void successDeck(int numPlayers, int kingdomCards[10], struct gameState *state) {
+    
+  /* initialize decks */
+  testInitializeGame(numPlayers, kingdomCards, state);
+  
+  /* set up hand for Player 0 */
+  state->hand[0][0] = copper;
+  state->hand[0][1] = copper;
+  state->hand[0][2] = copper;
+  state->hand[0][3] = copper;
+  state->hand[0][4] = copper;
+    
+  state->handCount[0] = 5; 
+  
+  /* save game state */
+  struct gameState Save;
+  Save.handCount[0] = state->handCount[0];
+  Save.handCount[1] = state->handCount[1];
+  Save.deckCount[0] = state->deckCount[0];
+  Save.deckCount[1] = state->deckCount[1];
+  Save.discardCount[0] = state->discardCount[0];
+  Save.discardCount[1] = state->discardCount[1];
+  
+  printf("Setup complete.\n");
+  
+  /* test */
+  printf("***\nSuccess test deck gainCard()...\n***\n");
+  
+  /* Player 0 gains estate card in deck pile */
+  int gaincardResult = gainCard(1, state, 1, 0);
+  
+  /* check gainCard() result */
+#if (PRINT_TEST == 1)
+  printf("gainCard Player 0.\nResult: %d, Expected: %d\n",gaincardResult, 0);
+#endif
+  
+#if (ENABLE_ASSERTS == 1)
+  assert(gaincardResult == 0);
+#endif
+  
+  /* confirm hand, deck, and discard counts */
+#if (PRINT_TEST == 1)
+  if (Save.handCount[0] == state->handCount[0])
+    printf("Player 0 handCount unchanged: Pass!\n");
+  else
+    printf("Player 0 handCount unchanged: Fail!\n");
+  if (Save.handCount[1] == state->handCount[1])
+    printf("Player 1 handCount unchanged: Pass!\n");
+  else
+    printf("Player 1 handCount unchanged: Fail!\n");
+  if (state->deckCount[0] == Save.deckCount[0] + 1)
+    printf("Player 0 deckCount +1: Pass!\n");
+  else
+    printf("Player 0 deckCount +1: Fail!\n");
+  if (Save.deckCount[1] == state->deckCount[1])
+    printf("Player 1 deckCount unchanged: Pass!\n");
+  else
+    printf("Player 1 deckCount unchanged: Fail!\n");
+  if (Save.discardCount[0] == state->discardCount[0])
+    printf("Player 0 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 0 discardCount unchanged: Fail!\n");
+  if (Save.discardCount[1] == state->discardCount[1])
+    printf("Player 1 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 1 discardCount unchanged: Fail!\n");
+#endif
+
+#if (ENABLE_ASSERTS == 1)
+  assert(Save.handCount[0] == state->handCount[0]);
+  assert(Save.handCount[1] == state->handCount[1]);
+  assert(state->deckCount[0] == Save.deckCount[0] + 1);
+  assert(Save.deckCount[1] == state->deckCount[1]);
+  assert(Save.discardCount[0] == state->discardCount[0]);
+  assert(Save.discardCount[1] == state->discardCount[1]);
+#endif
+}
+
+void successHand(int numPlayers, int kingdomCards[10], struct gameState *state) {
+    
+  /* initialize decks */
+  testInitializeGame(numPlayers, kingdomCards, state);
+  
+  /* set up hand for Player 0 */
+  state->hand[0][0] = copper;
+  state->hand[0][1] = copper;
+  state->hand[0][2] = copper;
+  state->hand[0][3] = copper;
+  state->hand[0][4] = copper;
+    
+  state->handCount[0] = 5; 
+  
+  /* save game state */
+  struct gameState Save;
+  Save.handCount[0] = state->handCount[0];
+  Save.handCount[1] = state->handCount[1];
+  Save.deckCount[0] = state->deckCount[0];
+  Save.deckCount[1] = state->deckCount[1];
+  Save.discardCount[0] = state->discardCount[0];
+  Save.discardCount[1] = state->discardCount[1];
+  
+  printf("Setup complete.\n");
+  
+  /* test */
+  printf("***\nSuccess test hand gainCard()...\n***\n");
+  
+  /* Player 0 gains estate card in deck pile */
+  int gaincardResult = gainCard(1, state, 2, 0);
+  
+  /* check gainCard() result */
+#if (PRINT_TEST == 1)
+  printf("gainCard Player 0.\nResult: %d, Expected: %d\n",gaincardResult, 0);
+#endif
+  
+#if (ENABLE_ASSERTS == 1)
+  assert(gaincardResult == 0);
+#endif
+  
+  /* confirm hand, deck, and discard counts */
+#if (PRINT_TEST == 1)
+  if (state->handCount[0] = Save.handCount[0] + 1)
+    printf("Player 0 handCount +1: Pass!\n");
+  else
+    printf("Player 0 handCount +1: Fail!\n");
+  if (Save.handCount[1] == state->handCount[1])
+    printf("Player 1 handCount unchanged: Pass!\n");
+  else
+    printf("Player 1 handCount unchanged: Fail!\n");
+  if (Save.deckCount[0] == state->deckCount[0])
+    printf("Player 0 deckCount unchanged: Pass!\n");
+  else
+    printf("Player 0 deckCount unchanged: Fail!\n");
+  if (Save.deckCount[1] == state->deckCount[1])
+    printf("Player 1 deckCount unchanged: Pass!\n");
+  else
+    printf("Player 1 deckCount unchanged: Fail!\n");
+  if (Save.discardCount[0] == state->discardCount[0])
+    printf("Player 0 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 0 discardCount unchanged: Fail!\n");
+  if (Save.discardCount[1] == state->discardCount[1])
+    printf("Player 1 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 1 discardCount unchanged: Fail!\n");
+#endif
+
+#if (ENABLE_ASSERTS == 1)
+  assert(state->handCount[0] == Save.handCount[0] + 1);
+  assert(Save.handCount[1] == state->handCount[1]);
+  assert(Save.deckCount[0] == state->deckCount[0]);
+  assert(Save.deckCount[1] == state->deckCount[1]);
+  assert(Save.discardCount[0] == state->discardCount[0]);
+  assert(Save.discardCount[1] == state->discardCount[1]);
+#endif
+}
+
+void notEnoughCards(int numPlayers, int kingdomCards[10], struct gameState *state) {
+    
+  /* initialize decks */
+  testInitializeGame(numPlayers, kingdomCards, state);
+  
+  /* set up hand for Player 0 */
+  state->hand[0][0] = copper;
+  state->hand[0][1] = copper;
+  state->hand[0][2] = copper;
+  state->hand[0][3] = copper;
+  state->hand[0][4] = copper;
+    
+  state->handCount[0] = 5;
+  
+  state->supplyCount[estate] = 0;
+  
+  /* save game state */
+  struct gameState Save;
+  Save.handCount[0] = state->handCount[0];
+  Save.handCount[1] = state->handCount[1];
+  Save.deckCount[0] = state->deckCount[0];
+  Save.deckCount[1] = state->deckCount[1];
+  Save.discardCount[0] = state->discardCount[0];
+  Save.discardCount[1] = state->discardCount[1];
+  
+  printf("Setup complete.\n");
+  
+  /* test */
+  printf("***\nTest not enough cards gainCard()...\n***\n");
+  
+  /* Player 0 gains estate card in discard pile */
+  int gaincardResult = gainCard(1, state, 0, 0);
+  
+  /* check gainCard() result */
+#if (PRINT_TEST == 1)
+  printf("gainCard Player 0.\nResult: %d, Expected: %d\n",gaincardResult, -1);
+#endif
+  
+#if (ENABLE_ASSERTS == 1)
+  assert(gaincardResult == 0);
+#endif
+  
+  /* confirm hand, deck, and discard counts */
+#if (PRINT_TEST == 1)
+  if (Save.handCount[0] == state->handCount[0])
+    printf("Player 0 handCount unchanged: Pass!\n");
+  else
+    printf("Player 0 handCount unchanged: Fail!\n");
+  if (Save.handCount[1] == state->handCount[1])
+    printf("Player 1 handCount unchanged: Pass!\n");
+  else
+    printf("Player 1 handCount unchanged: Fail!\n");
+  if (Save.deckCount[0] == state->deckCount[0])
+    printf("Player 0 deckCount unchanged: Pass!\n");
+  else
+    printf("Player 0 deckCount unchanged: Fail!\n");
+  if (Save.deckCount[1] == state->deckCount[1])
+    printf("Player 1 deckCount unchanged: Pass!\n");
+  else
+    printf("Player 1 deckCount unchanged: Fail!\n");
+  if (Save.discardCount[0] == state->discardCount[0])
+    printf("Player 0 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 0 discardCount unchanged: Fail!\n");
+  if (Save.discardCount[1] == state->discardCount[1])
+    printf("Player 1 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 1 discardCount unchanged: Fail!\n");
+#endif
+
+#if (ENABLE_ASSERTS == 1)
+  assert(Save.handCount[0] == state->handCount[0]);
+  assert(Save.handCount[1] == state->handCount[1]);
+  assert(Save.deckCount[0] == state->deckCount[0]);
+  assert(Save.deckCount[1] == state->deckCount[1]);
+  assert(Save.discardCount[0] == state->discardCount[0]);
+  assert(Save.discardCount[1] == state->discardCount[1]);
+#endif
+}
+
+void notInGame(int numPlayers, int kingdomCards[10], struct gameState *state) {
+    
+  /* initialize decks */
+  testInitializeGame(numPlayers, kingdomCards, state);
+  
+  /* set up hand for Player 0 */
+  state->hand[0][0] = copper;
+  state->hand[0][1] = copper;
+  state->hand[0][2] = copper;
+  state->hand[0][3] = copper;
+  state->hand[0][4] = copper;
+    
+  state->handCount[0] = 5;
+  
+  /* save game state */
+  struct gameState Save;
+  Save.handCount[0] = state->handCount[0];
+  Save.handCount[1] = state->handCount[1];
+  Save.deckCount[0] = state->deckCount[0];
+  Save.deckCount[1] = state->deckCount[1];
+  Save.discardCount[0] = state->discardCount[0];
+  Save.discardCount[1] = state->discardCount[1];
+  
+  printf("Setup complete.\n");
+  
+  /* test */
+  printf("***\nTest card not in game gainCard()...\n***\n");
+  
+  /* Player 0 gains feast card in discard pile */
+  int gaincardResult = gainCard(9, state, 0, 0);
+  
+  /* check gainCard() result */
+#if (PRINT_TEST == 1)
+  printf("gainCard Player 0.\nResult: %d, Expected: %d\n",gaincardResult, -1);
+#endif
+  
+#if (ENABLE_ASSERTS == 1)
+  assert(gaincardResult == 0);
+#endif
+  
+  /* confirm hand, deck, and discard counts */
+#if (PRINT_TEST == 1)
+  if (Save.handCount[0] == state->handCount[0])
+    printf("Player 0 handCount unchanged: Pass!\n");
+  else
+    printf("Player 0 handCount unchanged: Fail!\n");
+  if (Save.handCount[1] == state->handCount[1])
+    printf("Player 1 handCount unchanged: Pass!\n");
+  else
+    printf("Player 1 handCount unchanged: Fail!\n");
+  if (Save.deckCount[0] == state->deckCount[0])
+    printf("Player 0 deckCount unchanged: Pass!\n");
+  else
+    printf("Player 0 deckCount unchanged: Fail!\n");
+  if (Save.deckCount[1] == state->deckCount[1])
+    printf("Player 1 deckCount unchanged: Pass!\n");
+  else
+    printf("Player 1 deckCount unchanged: Fail!\n");
+  if (Save.discardCount[0] == state->discardCount[0])
+    printf("Player 0 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 0 discardCount unchanged: Fail!\n");
+  if (Save.discardCount[1] == state->discardCount[1])
+    printf("Player 1 discardCount unchanged: Pass!\n");
+  else
+    printf("Player 1 discardCount unchanged: Fail!\n");
+#endif
+
+#if (ENABLE_ASSERTS == 1)
+  assert(Save.handCount[0] == state->handCount[0]);
+  assert(Save.handCount[1] == state->handCount[1]);
+  assert(Save.deckCount[0] == state->deckCount[0]);
+  assert(Save.deckCount[1] == state->deckCount[1]);
+  assert(Save.discardCount[0] == state->discardCount[0]);
+  assert(Save.discardCount[1] == state->discardCount[1]);
+#endif
+}
+
+int main() {
+  
+  /* set up game state */
+  struct gameState G;
+  int k[10] = {adventurer, gardens, embargo, village, minion, 
+    mine, cutpurse, sea_hag, tribute, smithy};
+    
+  /*  Success test discard */
+  successDiscard(2, k, &G);
+  
+  /* Success test deck */
+  successDeck(2, k, &G);
+  
+  /* Success test hand */
+  successHand(2, k, &G);
+  
+  /* Not enough cards */
+  notEnoughCards(2, k, &G);
+  
+  /* Card not in game */
+  notInGame(2, k, &G);
 
 #if (ENABLE_ASSERTS == 1)
   printf("All tests passed!\n");
