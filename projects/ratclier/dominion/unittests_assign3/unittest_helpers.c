@@ -7,6 +7,9 @@
 int whatChanged(struct gameState *origState, struct gameState *state)
 {
     int idx1, idx2;
+    int i;
+
+    printf("\n>>> STATE CHANGES: for all players:\n");
 
     if(origState->numPlayers != state->numPlayers)
         printf("numPlayers changed! Orig: %d, New: %d\n", origState->numPlayers, state->numPlayers);
@@ -27,30 +30,6 @@ int whatChanged(struct gameState *origState, struct gameState *state)
     if(origState->playedCardCount != state->playedCardCount)
         printf("playedCardCount changed! Orig: %d, New: %d\n", origState->playedCardCount, state->playedCardCount);
 
-    for(idx1 = 0; idx1 < MAX_PLAYERS; idx1++)
-    {
-        if(origState->handCount[idx1] != state->handCount[idx1])
-            printf("handCount[%d] changed! Orig: %d, New: %d\n", idx1, origState->handCount[idx1], state->handCount[idx1]);
-        if(origState->deckCount[idx1] != state->deckCount[idx1])
-            printf("deckCount[%d] changed! Orig: %d, New: %d\n", idx1, origState->deckCount[idx1], state->deckCount[idx1]);
-        if(origState->discardCount[idx1] != state->discardCount[idx1])
-            printf("discardCount[%d] changed! Orig: %d, New: %d\n", idx1, origState->discardCount[idx1], state->discardCount[idx1]);
-
-        for(idx2 = 0; idx2 < MAX_HAND; idx2++)
-        {
-            if(origState->hand[idx1][idx2] != state->hand[idx1][idx2])
-                printf("hand[%d][%d] changed! Orig: %d, New: %d\n", idx1, idx2, origState->hand[idx1][idx2], state->hand[idx1][idx2]);
-        }
-
-        for(idx2 = 0; idx2 < MAX_DECK; idx2++)
-        {
-            if(origState->deck[idx1][idx2] != state->deck[idx1][idx2])
-                printf("deck[%d][%d] changed! Orig: %d, New: %d\n", idx1, idx2, origState->deck[idx1][idx2], state->deck[idx1][idx2]);
-            if(origState->discard[idx1][idx2] != state->discard[idx1][idx2])
-                printf("discard[%d][%d] changed! Orig: %d, New: %d\n", idx1, idx2, origState->discard[idx1][idx2], state->discard[idx1][idx2]);
-        }
-    }
-
     for(idx1 = 0; idx1 < MAX_DECK; idx1++)
     {
         if(origState->playedCards[idx1] != state->playedCards[idx1])
@@ -63,6 +42,31 @@ int whatChanged(struct gameState *origState, struct gameState *state)
             printf("supplyCount[%d] changed! Orig: %d, New: %d\n", idx1, origState->supplyCount[idx1], state->supplyCount[idx1]);
         if(origState->embargoTokens[idx1] != state->embargoTokens[idx1])
             printf("embargoTokens[%d] changed! Orig: %d, New: %d\n", idx1, origState->embargoTokens[idx1], state->embargoTokens[idx1]);
+    }
+
+    for(i = 0; i < state->numPlayers; i++)
+    {
+        printf("\n>>> STATE CHANGES: specific to player %d:\n", i);
+        if(origState->handCount[i] != state->handCount[i])
+            printf("handCount[%d] changed! Orig: %d, New: %d\n", i, origState->handCount[i], state->handCount[i]);
+        if(origState->deckCount[i] != state->deckCount[i])
+            printf("deckCount[%d] changed! Orig: %d, New: %d\n", i, origState->deckCount[i], state->deckCount[i]);
+        if(origState->discardCount[i] != state->discardCount[i])
+            printf("discardCount[%d] changed! Orig: %d, New: %d\n", i, origState->discardCount[i], state->discardCount[i]);
+
+        for(idx2 = 0; idx2 < MAX_HAND; idx2++)
+        {
+            if(origState->hand[i][idx2] != state->hand[i][idx2])
+                printf("hand[%d][%d] changed! Orig: %d, New: %d\n", i, idx2, origState->hand[i][idx2], state->hand[i][idx2]);
+        }
+
+        for(idx2 = 0; idx2 < MAX_DECK; idx2++)
+        {
+            if(origState->deck[i][idx2] != state->deck[i][idx2])
+                printf("deck[%d][%d] changed! Orig: %d, New: %d\n", i, idx2, origState->deck[i][idx2], state->deck[i][idx2]);
+            if(origState->discard[i][idx2] != state->discard[i][idx2])
+                printf("discard[%d][%d] changed! Orig: %d, New: %d\n", i, idx2, origState->discard[i][idx2], state->discard[i][idx2]);
+        }
     }
 
     return 0;

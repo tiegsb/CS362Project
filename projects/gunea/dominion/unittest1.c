@@ -5,12 +5,14 @@
 #include <assert.h>
 #include "rngs.h"
 
-int main()
+
+int unittest1()
 {
 	int seed = 2500;
 	int players = 2;
 	int maxBonus = 20;
-	int p, r;
+	int c, i, j, k;
+	int failedtests = 0;
 	int hand[10] = { adventurer, embargo, steward, cutpurse, outpost
 		, mine, smithy, remodel, great_hall, feast };
 	struct gameState testState;
@@ -19,7 +21,7 @@ int main()
 	int coppers[MAX_HAND];
 	int silvers[MAX_HAND];
 	int golds[MAX_HAND];
-	for (int c = 0; c < MAX_HAND; c++)
+	for (c = 0; c < MAX_HAND; c++)
 	{
 		coppers[c] = copper;
 		silvers[c] = silver;
@@ -29,14 +31,15 @@ int main()
 
 	printf("-----------------------------------------\n");
 	printf("Testing with a hand full of the same treasure cards\n");
-	for (int i = 0; i < players; i++)
+	for (i = 0; i < players; i++)
 	{
-		for (int j = 0; j < maxHandCount; j++)
+		for (j = 0; j < maxHandCount; j++)
 		{
-			for (int k = 0; k < maxBonus; k++)
+			for (k = 0; k < maxBonus; k++)
 			{
 				printf("Player: %d | Treasures in hand: %d | Bonus: %d\n", i, j, k);
 
+				memset(&testState, 23, sizeof(struct gameState));
 				//Initialize the game
 				initializeGame(players, hand, seed, &testState);
 
@@ -45,22 +48,24 @@ int main()
 
 				printf("Testing coppers\n");
 				//set all cards to coppers
-				memcpy(testState.handCount[i], coppers, (sizeof(int)*j));
+				memcpy(testState.hand[i], coppers, (sizeof(int)*j));
 
 				//call the function
 				updateCoins(i, &testState, k);
-
+				
 				//Print results
 				if (testState.coins == (j * 1 + k))
 					printf("PASS: ");
-				else
+				else {
 					printf("FAIL: ");
+					failedtests++;
+				}
 				printf("Expected = %d | Actual = %d\n", j * 1 + k, testState.coins);
 
 
 				printf("Testing silvers\n");
 				//set all cards to silvers
-				memcpy(testState.handCount[i], silvers, (sizeof(int)*j));
+				memcpy(testState.hand[i], silvers, (sizeof(int)*j));
 
 				//call the function
 				updateCoins(i, &testState, k);
@@ -68,13 +73,15 @@ int main()
 				//Print results
 				if (testState.coins == (j * 2 + k))
 					printf("PASS: ");
-				else
+				else {
 					printf("FAIL: ");
+					failedtests++;
+				}
 				printf("Expected = %d | Actual = %d\n", j * 2 + k, testState.coins);
 
 				printf("Testing golds\n");
 				//set all cards to golds
-				memcpy(testState.handCount[i], golds, (sizeof(int)*j));
+				memcpy(testState.hand[i], golds, (sizeof(int)*j));
 
 				//call the function
 				updateCoins(i, &testState, k);
@@ -82,13 +89,18 @@ int main()
 				//Print results
 				if (testState.coins == (j * 3 + k))
 					printf("PASS: ");
-				else
+				else {
 					printf("FAIL: ");
+					failedtests++;
+				}
 				printf("Expected = %d | Actual = %d\n", j * 3 + k, testState.coins);
 			}
 		}
 	}
 
+	printf("\n");
+	printf("Failed tests: %d", failedtests);
+	printf("\n");
 	printf("-----------------------------------------\n");
 	printf("\n");
 

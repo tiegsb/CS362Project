@@ -1,0 +1,260 @@
+Result for running tests:
+unittest1.c:
+TESTING getCost():
+Result: 0 	 Expected: 0
+Result: 2 	 Expected: 2
+Result: 5 	 Expected: 5
+Result: 8 	 Expected: 8
+Result: 0 	 Expected: 0
+Result: 3 	 Expected: 3
+Result: 6 	 Expected: 6
+Result: 6 	 Expected: 6
+Result: 5 	 Expected: 5
+Result: 4 	 Expected: 4
+Result: 4 	 Expected: 4
+Result: 5 	 Expected: 5
+Result: 4 	 Expected: 4
+Result: 4 	 Expected: 4
+Result: 3 	 Expected: 3
+Result: 4 	 Expected: 4
+Result: 3 	 Expected: 3
+Result: 5 	 Expected: 5
+Result: 3 	 Expected: 3
+Result: 5 	 Expected: 5
+Result: 3 	 Expected: 3
+Result: 4 	 Expected: 4
+Result: 2 	 Expected: 2
+Result: 5 	 Expected: 5
+Result: 4 	 Expected: 4
+Result: 4 	 Expected: 4
+Result: 4 	 Expected: 4
+Result: -1 	 Expected: -1
+Result: -1 	 Expected: -1
+All tests passed
+File 'dominion.c'
+Lines executed:5.28% of 568
+Branches executed:6.71% of 417
+Taken at least once:6.71% of 417
+Calls executed:0.00% of 95
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+TESTING SHUFFLE DECK
+Testing for player 1
+Testing DeckCount of 0
+DeckCount	 Expected:-1	 Result:-1
+DeckCount	 Before:0	 After:0
+Qty of Cards	 Before:0	 After:0
+Testing DeckCount of 1
+DeckCount	 Expected:0	 Result:0
+DeckCount	 Before:1	 After:1
+Qty of Cards	 Before:1	 After:1
+Testing DeckCount of -1
+DeckCount	 Expected:-1	 Result:-1
+DeckCount	 Before:-1	 After:-1
+Qty of Cards	 Before:0	 After:0
+Testing DeckCount of 15
+DeckCount	 Expected:0	 Result:0
+DeckCount	 Before:500	 After:500
+Qty of Cards	 Before:500	 After:500
+Testing DeckCount of 15
+DeckCount	 Expected:0	 Result:0
+DeckCount	 Before:15	 After:15
+Qty of Cards	 Before:15	 After:15
+All tests passed!
+Testing for player 2
+Testing DeckCount of 0
+DeckCount	 Expected:-1	 Result:-1
+DeckCount	 Before:0	 After:0
+Qty of Cards	 Before:0	 After:0
+Testing DeckCount of 1
+DeckCount	 Expected:0	 Result:0
+DeckCount	 Before:1	 After:1
+Qty of Cards	 Before:1	 After:1
+Testing DeckCount of -1
+DeckCount	 Expected:-1	 Result:-1
+DeckCount	 Before:-1	 After:-1
+Qty of Cards	 Before:0	 After:0
+Testing DeckCount of 15
+DeckCount	 Expected:0	 Result:0
+DeckCount	 Before:500	 After:500
+Qty of Cards	 Before:500	 After:500
+Testing DeckCount of 15
+DeckCount	 Expected:0	 Result:0
+DeckCount	 Before:15	 After:15
+Qty of Cards	 Before:15	 After:15
+All tests passed!
+File 'dominion.c'
+Lines executed:21.13% of 568
+Branches executed:22.54% of 417
+Taken at least once:19.90% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+TESTING UPDATE COINS
+Testing for player 1
+Testing for no coins
+Total Coins	 Expected: 0	 Result:0
+Testing for all copper more than max allowed, no bonus
+Total Coins	 Expected: 60	 Result:60
+Testing for all gold, 100 bonus for max hand
+Total Coins	 Expected: 1600	 Result:1600
+Testing for all copper, no bonus
+Total Coins	 Expected: 15	 Result:15
+Testing for all silver, no bonus
+Total Coins	 Expected: 30	 Result:30
+Testing for all gold, no bonus
+Hand is15
+Total Coins	 Expected: 45	 Result:45
+Testing for mix, no bonus
+Total Coins	 Expected: 30	 Result:30
+Testing for mix, 20 bonus
+Total Coins	 Expected: 50	 Result:50
+Testing for 5 copper, 3 other cards
+Total Coins	 Expected: 5	 Result:5
+ALL TESTS PASSED!
+Testing for player 2
+Testing for no coins
+Total Coins	 Expected: 0	 Result:0
+Testing for all copper more than max allowed, no bonus
+Total Coins	 Expected: 60	 Result:60
+Testing for all gold, 100 bonus for max hand
+Total Coins	 Expected: 1600	 Result:1600
+Testing for all copper, no bonus
+Total Coins	 Expected: 15	 Result:15
+Testing for all silver, no bonus
+Total Coins	 Expected: 30	 Result:30
+Testing for all gold, no bonus
+Hand is15
+Total Coins	 Expected: 45	 Result:45
+Testing for mix, no bonus
+Total Coins	 Expected: 30	 Result:30
+Testing for mix, 20 bonus
+Total Coins	 Expected: 50	 Result:50
+Testing for 5 copper, 3 other cards
+Total Coins	 Expected: 5	 Result:5
+ALL TESTS PASSED!
+File 'dominion.c'
+Lines executed:21.48% of 568
+Branches executed:22.54% of 417
+Taken at least once:20.38% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+TESTING DRAW CARD
+Testing for player 1
+Testing for no cards in deck
+Deck Count	 Expected: 9	 Result:9
+Discard Count	 Expected: 0	 Result:0
+Hand Count	 Expected: 6	 Result:6
+Testing for neg cards in deck
+Deck Count	 Expected: 9	 Result:9
+Discard Count	 Expected: 0	 Result:0
+Hand Count	 Expected: 7	 Result:7
+Testing for max cards in deck
+Deck Count	 Expected: 499	 Result:499
+Discard Count	 Expected: 0	 Result:0
+Drawn Card	 Expected: 4	 Result:4
+Hand Count	 Expected: 8	 Result:8
+Testing for 10 cards in deck
+Deck Count	 Expected: 9	 Result:9
+Discard Count	 Expected: 10	 Result:10
+Drawn Card	 Expected: 4	 Result:4
+Hand Count	 Expected: 9	 Result:9
+Testing for 0 cards in hand
+Deck Count	 Expected: 9	 Result:9
+Discard Count	 Expected: 10	 Result:10
+Drawn Card	 Expected: 4	 Result:4
+Hand Count	 Expected: 1	 Result:1
+ALL TESTS PASSED!
+Testing for player 2
+Testing for no cards in deck
+Deck Count	 Expected: 9	 Result:9
+Discard Count	 Expected: 0	 Result:0
+Hand Count	 Expected: 1	 Result:1
+Testing for neg cards in deck
+Deck Count	 Expected: 9	 Result:9
+Discard Count	 Expected: 0	 Result:0
+Hand Count	 Expected: 2	 Result:2
+Testing for max cards in deck
+Deck Count	 Expected: 499	 Result:499
+Discard Count	 Expected: 0	 Result:0
+Drawn Card	 Expected: 4	 Result:4
+Hand Count	 Expected: 3	 Result:3
+Testing for 10 cards in deck
+Deck Count	 Expected: 9	 Result:9
+Discard Count	 Expected: 10	 Result:10
+Drawn Card	 Expected: 4	 Result:4
+Hand Count	 Expected: 4	 Result:4
+Testing for 0 cards in hand
+Deck Count	 Expected: 9	 Result:9
+Discard Count	 Expected: 10	 Result:10
+Drawn Card	 Expected: 4	 Result:4
+Hand Count	 Expected: 1	 Result:1
+ALL TESTS PASSED!
+File 'dominion.c'
+Lines executed:23.77% of 568
+Branches executed:23.50% of 417
+Taken at least once:21.34% of 417
+Calls executed:8.42% of 95
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+TESTING SMITHY CARD
+Testing for player 1
+Hand Count	 Expected: 12	 Result:13
+Deck Count	 Expected: 7	 Result:6
+Added Cards (No.1)	 Expected: 15	 Result:15
+Added Cards (No.2)	 Expected: 15	 Result:15
+Added Cards (No.3)	 Expected: 15	 Result:15
+HandCount for player 2	 Expected: 15	 Result:15
+HandCount for player 3	 Expected: 12	 Result:12
+HandCount for player 4	 Expected: 5	 Result:5
+Coins	 Expected: 4	 Result:4
+Unexpected handcount
+FAILURES
+Testing for player 2
+Hand Count	 Expected: 17	 Result:18
+Deck Count	 Expected: 7	 Result:6
+Added Cards (No.1)	 Expected: 14	 Result:14
+Added Cards (No.2)	 Expected: 14	 Result:14
+Added Cards (No.3)	 Expected: 14	 Result:14
+HandCount for player 1	 Expected: 10	 Result:10
+HandCount for player 3	 Expected: 12	 Result:12
+HandCount for player 4	 Expected: 5	 Result:5
+Coins	 Expected: 4	 Result:4
+Unexpected handcount
+FAILURES
+Testing for player 3
+Hand Count	 Expected: 14	 Result:15
+Deck Count	 Expected: 7	 Result:6
+Added Cards (No.1)	 Expected: 25	 Result:25
+Added Cards (No.2)	 Expected: 25	 Result:25
+Added Cards (No.3)	 Expected: 25	 Result:25
+HandCount for player 1	 Expected: 10	 Result:10
+HandCount for player 2	 Expected: 15	 Result:15
+HandCount for player 4	 Expected: 5	 Result:5
+Coins	 Expected: 4	 Result:4
+Unexpected handcount
+FAILURES
+Testing for player 4
+Hand Count	 Expected: 7	 Result:8
+Deck Count	 Expected: 7	 Result:6
+Added Cards (No.1)	 Expected: 7	 Result:7
+Added Cards (No.2)	 Expected: 7	 Result:7
+Added Cards (No.3)	 Expected: 7	 Result:7
+HandCount for player 1	 Expected: 10	 Result:10
+HandCount for player 2	 Expected: 15	 Result:15
+HandCount for player 3	 Expected: 12	 Result:12
+Coins	 Expected: 4	 Result:4
+Unexpected handcount
+FAILURES
+File 'dominion.c'
+Lines executed:27.82% of 568
+Branches executed:25.90% of 417
+Taken at least once:23.50% of 417
+Calls executed:10.53% of 95
+Creating 'dominion.c.gcov'
+
