@@ -18,6 +18,7 @@ int testCardEffect(int card) {
     int k[10] = {sea_hag, council_room, feast, gardens, mine
                , remodel, smithy, village, baron, great_hall};
     struct gameState G;
+    int numActionsOriginal = 1;
     
     int p0Hand[MAX_HAND] = {sea_hag, copper, copper, copper, village};
     int p0Discard[MAX_DECK] = {copper, council_room, feast, gardens, mine
@@ -55,6 +56,7 @@ int testCardEffect(int card) {
     G.deckCount[1] = p1DeckCount;
     
     G.whoseTurn = 0;
+    G.numActions = 1;
     
     //Test for successful function call
     if(cardEffect(village, 0, 0, 0, &G, 4, 0) == 0)
@@ -81,7 +83,7 @@ int testCardEffect(int card) {
         printf("cardEffect(village): FAIL player 0, deckCount correct after draw \n");
     
     //Test for updated numActions - player 0
-    if(G.numActions == G.numActions + 2)
+    if(G.numActions == numActionsOriginal + 2)
         printf("cardEffect(village): PASS player 0, numActions correct after draw \n");
     else
         printf("cardEffect(village): FAIL player 0, numActions correct after draw \n");

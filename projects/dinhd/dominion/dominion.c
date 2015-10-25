@@ -726,16 +726,21 @@ int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice
 
       if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
   {
+    // printf("Choice 1 invalid \n");
     return -1;
   }
     
       if (choice2 > treasure_map || choice2 < curse)
   {
+    // printf("Choice 2 invalid \n");
     return -1;
   }
 
+    // printf("difference is %i and %i \n", getCost(state->hand[currentPlayer][choice1]) + 3, getCost(choice2));
+
       if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
   {
+    // printf("Cannot afford \n");
     return -1;
   }
 

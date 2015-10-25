@@ -117,6 +117,10 @@ int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int
         }
     }
     
+    printf("\ndiscardCard: Changes to game state:\n----------------------------------------\n");
+    whatChanged(origState, state);
+
+    printf("\n");
 
     return 0;
 }
@@ -144,7 +148,7 @@ int main(int argc, char *argv[])
     trashFlag     = 1;   // trashed
     testDiscardCard(handPos, currentPlayer, state, trashFlag);
 
-    printf("\n");
+    //printf("\n");
 
     // New game
     //
