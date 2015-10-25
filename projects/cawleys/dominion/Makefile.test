@@ -1,0 +1,31 @@
+DIR = hw3Test/
+
+unittestresults.out: clean $(DIR)main.c $(DIR)assert.o $(DIR)unittest1.o $(DIR)unittest2.o $(DIR)unittest3.o $(DIR)unittest4.o $(DIR)cardtest1.o $(DIR)cardtest2.o $(DIR)cardtest3.o $(DIR)cardtest4.o dominion.o rngs.o
+	gcc -fprofile-arcs -ftest-coverage -o unittestresults.out $(DIR)main.c -g $(DIR)assert.o $(DIR)unittest1.o $(DIR)unittest2.o $(DIR)unittest3.o $(DIR)unittest4.o $(DIR)cardtest1.o $(DIR)cardtest2.o $(DIR)cardtest3.o $(DIR)cardtest4.o dominion.o rngs.o $(CFLAGS)
+
+assert.o: $(DIR)assert.h $(DIR)assert.c
+	gcc -c $(DIR)assert.c -g $(CFLAGS)
+
+unittest1.o: $(DIR)unittest1.h $(DIR)unittest1.c
+	gcc -c $(DIR)unittest1.c -g $(CFLAGS)
+
+unittest2.o: $(DIR)unittest2.h $(DIR)unittest2.c
+	gcc -c $(DIR)unittest2.c -g $(CFLAGS)
+
+unittest3.o: $(DIR)unittest3.h $(DIR)unittest3.c
+	gcc -c $(DIR)unittest3.c -g $(CFLAGS)
+
+unittest4.o: $(DIR)unittest4.h $(DIR)unittest4.c
+	gcc -c $(DIR)unittest4.c -g $(CFLAGS)
+
+cardtest1.o: $(DIR)cardtest1.h $(DIR)cardtest1.c
+	gcc -c $(DIR)cardtest1.c -g $(CFLAGS)
+
+cardtest2.o: $(DIR)cardtest2.h $(DIR)cardtest2.c
+	gcc -c $(DIR)cardtest2.c -g $(CFLAGS)
+
+cardtest3.o: $(DIR)cardtest3.h $(DIR)cardtest3.c
+	gcc -c $(DIR)cardtest3.c -g $(CFLAGS)
+
+cardtest4.o: $(DIR)cardtest4.h $(DIR)cardtest4.c
+	gcc -c $(DIR)cardtest4.c -g $(CFLAGS)
