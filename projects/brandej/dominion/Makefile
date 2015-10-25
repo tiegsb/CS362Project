@@ -1,6 +1,6 @@
 CFLAGS = -Wall -fpic -coverage -lm
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard unittest1 unittest2 unittest3 unittest4 unittestresults.out
+all: playdom player testDrawCard testBuyCard badTestDrawCard cardtest1 unittest1 unittest2 unittest3 unittest4 unittestresults.out
 
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
@@ -45,28 +45,36 @@ unittest3: unittest3.c dominion.o rngs.o interface.o
 
 unittest4: unittest4.c dominion.o rngs.o interface.o
 	gcc -o unittest4 unittest4.c -g dominion.o rngs.o $(CFLAGS)
+
+cardtest1: cardtest1.c dominion.o rngs.o interface.o
+	gcc -o cardtest1 cardtest1.c -g dominion.o rngs.o $(CFLAGS)
 	
-unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c dominion.c rngs.o interface.o
+unittestresults.out: cardtest1.c unittest1.c unittest2.c unittest3.c unittest4.c dominion.c rngs.o interface.o
 	echo "Result for running unit tests:" > unittestresults.out
 	
-	echo "unittest1.c" >> unittestresults.out
+	echo "unittest1.c results" >> unittestresults.out
 	gcc -o unittest1 unittest1.c -g dominion.c rngs.o interface.o $(CFLAGS)
 	./unittest1 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 	
-	echo "unittest2.c" >> unittestresults.out
+	echo "unittest2.c results" >> unittestresults.out
 	gcc -o unittest2 unittest2.c -g dominion.c rngs.o $(CFLAGS)
 	./unittest2 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 	
-	echo "unittest3.c" >> unittestresults.out
+	echo "unittest3.c results" >> unittestresults.out
 	gcc -o unittest3 unittest3.c -g dominion.c rngs.o $(CFLAGS)
 	./unittest3 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 
-	echo "unittest4.c" >> unittestresults.out
+	echo "unittest4.c results" >> unittestresults.out
 	gcc -o unittest4 unittest4.c -g dominion.c rngs.o $(CFLAGS)
 	./unittest4 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+
+	echo "cardtest1.c results" >> unittestresults.out
+	gcc -o cardtest1 cardtest1.c -g dominion.c rngs.o $(CFLAGS)
+	./cardtest1 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 
 clean:
