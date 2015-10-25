@@ -29,35 +29,19 @@ runtests: testDrawCard
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
+# added this from Week 3 test
+testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
+	gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-unitTest1: unitTest1.c dominion.o rngs.o
-	gcc -o unitTest1 -g unitTest1.c dominion.o rngs.o $(CFLAGS)
 
-unitTest2: unitTest2.c dominion.o rngs.o
-	gcc -o unitTest2 -g unitTest2.c dominion.o rngs.o $(CFLAGS)
+# adding these files in for HW 3
+testGainCard: unittest1.c dominion.o rngs.o
+	gcc -o testGainCard -g	unittest1.c dominion.o rngs.o $(CFLAGS)
 
-unitTest3: unitTest3.c dominion.o rngs.o
-	gcc -o unitTest3 -g unitTest3.c dominion.o rngs.o $(CFLAGS)
-
-unitTest4: unitTest4.c dominion.o rngs.o
-	gcc -o unitTest4 -g unitTest4.c dominion.o rngs.o $(CFLAGS)
-
-cardTest1: cardTest1.c dominion.o rngs.o
-	gcc -o cardTest1 -g cardTest1.c dominion.o rngs.o $(CFLAGS)
-
-cardTest2: cardTest2.c dominion.o rngs.o
-	gcc -o cardTest2 -g cardTest2.c dominion.o rngs.o $(CFLAGS)
-
-cardTest3: cardTest3.c dominion.o rngs.o
-	gcc -o cardTest3 -g cardTest3.c dominion.o rngs.o $(CFLAGS)
-
-cardTest4: cardTest4.c dominion.o rngs.o
-	gcc -o cardTest4 -g cardTest4.c dominion.o rngs.o $(CFLAGS)
-
-all: playdom player testDrawCard testBuyCard badTestDrawCard unitTest1 unitTest2 unitTest3 unitTest4 cardTest1 cardTest2 cardTest3 cardTest4
+all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins testGainCard
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
