@@ -18,11 +18,53 @@ void gameover_test()
 	struct gameState G;  //sets up new game
     printf ("\nUnit test of Game Over function");
 	
+	printf ("\nChecks if game ends when 3 action card stacks are empty. (feast, mine, smithy) \n");
+	
+	
+	initializeGame(playercount, k, rando, &G); // new game
+	
+	G.supplyCount[feast] = 0;
+	over = isGameOver(&G);
+	
+	if(over == 0)
+	{
+		printf ("Pass game is not over with 1 empty stack (feast).\n");
+	}
+	else
+	{
+		printf ("Fail game is over with only 1 empty stack \n");
+	}
+	
+	G.supplyCount[mine] = 0;
+	over = isGameOver(&G);
+	
+	if(over == 0)
+	{
+		printf ("Pass game is not over with 2 empty stacks (feast, mine).\n");
+	}
+	else
+	{
+		printf ("Fail game is over with only 2 empty stacks (feast, mine) \n");
+	}
+	
+	G.supplyCount[smithy] = 0;
+	over = isGameOver(&G);
+	
+	if(over == 0)
+	{
+		printf ("Fail game has not ended with 3 empty stack (feast,mine, smithy).\n");
+	}
+	else
+	{
+		printf ("Pass game has ended with 3 empty stacks (feast, mine, smithy) \n");
+	}
+	
+	
 
 	printf ("\nChecks if game ends when the 3 currency stacks are empty.\n");
 	
-	
-	initializeGame(numPlayer, k, seed, &G); // new game
+	memset(&G, 23, sizeof(struct gameState)); //resets game
+	initializeGame(playercount, k, rando, &G); // new game
 	
 	G.supplyCount[gold] = 0;
 	over = isGameOver(&G);
@@ -62,7 +104,7 @@ void gameover_test()
 	
 	
 	memset(&G, 23, sizeof(struct gameState)); //resets game
-	initializeGame(numPlayer, k, seed, &G); 
+	initializeGame(playercount, k, rando, &G); 
 	
 	printf ("\nChecks if is over properly ends game when province stack empty\n");
 	
@@ -92,6 +134,6 @@ void gameover_test()
 }
 
 int main() {
-    gameover_test;
+    gameover_test();
     return 0;
 }

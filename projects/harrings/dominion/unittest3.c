@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include "rngs.h"
 #include "interface.h"
-#include<time.h>
+#include <time.h>
 
 //tests update coins function using a random number generator, to create
 //randon hands of cards with random bonus and confirms that correct value
@@ -23,7 +23,6 @@ void updatecoin_test()
     int pid = 0; //player id, 2 player game so ids are 0 and 1	   
 	int playercount = 2; 
 	int handCount = 5;
-	int sum=0; used to calculate expected coin value
 	int temp;
     int i=0;
 	int j=0;
@@ -31,11 +30,12 @@ void updatecoin_test()
 	int bad=0;
 	int total=0;
 	int test_h[handCount];
+	int bonus=0;
 	
 	struct gameState G;  //sets up new game
 	
     printf ("\nUnit test of update coins\n");
-	for (int j=0; j<=100; j++) //since its a random test it loops through 100 times
+	for (j=0; j<=100; j++) //since its a random test it loops through 100 times
 	{
 		 for (pid = 0; pid < playercount; pid++) //cycles through number of cards and players and bonus
 		{
@@ -64,10 +64,9 @@ void updatecoin_test()
 							test_h[i]=gold;
 							sum=sum+3;
 						}
-					}
-						
+					}	
 					memcpy(G.hand[pid], test_h, sizeof(int) * handCount); //creates hand with cards above
-					updateCoins(p, &G, bonus);
+					updateCoins(pid, &G, bonus);
 					if (G.coins==sum) //checks to make sure expected coins matches actual coins
 					{
 						if (j==0) //only prints sucess on first run through to avoid clutter
@@ -89,12 +88,13 @@ void updatecoin_test()
 			
 		}
 	}
-	printf ( "End of test %d tests were run with %d successes and %d failures \n" total, good, bad)
+	printf ( "End of test %d tests were run with %d successes and %d failures \n", total, good, bad);
 	
 }
 
 int main() {
-	 srand(time(NULL));
+	int rando=512;
+	 srand(rando);
     updatecoin_test();
     return 0;
 }
