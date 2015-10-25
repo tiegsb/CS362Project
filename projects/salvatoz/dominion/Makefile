@@ -1,4 +1,4 @@
-CFLAGS = -Wall -fpic -coverage -lm -g -Wpedantic -Werror -Wfatal-errors -std=c99
+CFLAGS = -Wall -fpic -coverage -lm -g -Wfatal-errors -std=c99
 GCC = gcc
 GOV = gcov -b -c -f
 
@@ -10,10 +10,10 @@ rngs.o: rngs.h rngs.c
 cards.o: cards.h cards.c
 	$(GCC) -c cards.c $(CFLAGS)
 
-dominion.o: dominion.h dominion.c cards.o rngs.o
-	$(GCC) -c dominion.c cards.o rngs.o $(CFLAGS)
+dominion.o: dominion.h dominion.c
+	$(GCC) -c dominion.c $(CFLAGS)	
 
-playdom: dominion.o playdom.c
+playdom: dominion.o cards.o rngs.o playdom.c
 	$(GCC) -o playdom playdom.c dominion.o cards.o rngs.o $(CFLAGS)
 
 interface.o: interface.h interface.c
@@ -37,7 +37,7 @@ badTestDrawCard: badTestDrawCard.c dominion.o cards.o rngs.o
 testBuyCard: testDrawCard.c dominion.o cards.o rngs.o
 	$(GCC) -o testDrawCard  testDrawCard.c dominion.o cards.o rngs.o $(CFLAGS)
 
-unittest1: unittest1.c dominion.o cards.o rngs.o
+unittest1: dominion.o cards.o rngs.o unittest1.c
 	$(GCC) -o unittest1 unittest1.c dominion.o cards.o rngs.o $(CFLAGS)
 
 unittest2: unittest2.c dominion.o cards.o rngs.o

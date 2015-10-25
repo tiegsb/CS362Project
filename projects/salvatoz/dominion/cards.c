@@ -1,18 +1,11 @@
 #include "dominion.h"
+#include "dominion_helpers.h"
 #include "cards.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 struct cardData cardsData[NUM_CARDS];
-
-extern int drawCard(int player, struct gameState* state);
-extern int discardCard(int handPos, int currentPlayer, struct gameState* state,
-                       int trashFlag);
-extern int updateCoins(int player, struct gameState* state, int bonus);
-extern int getCost(int cardNumber);
-extern int gainCard(int supplyPos, struct gameState* state, int toFlag,
-                    int player);
 
 /** lastDrawn
  * Get the last card drawn by currentPlayer.
