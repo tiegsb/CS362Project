@@ -39,11 +39,16 @@ testBuyCard: testDrawCard.c dominion.o cards.o rngs.o
 unittest1: unittest1.c dominion.o cards.o rngs.o
 	$(GCC) -o unittest1 unittest1.c dominion.o cards.o rngs.o $(CFLAGS)
 
+unittest2: unittest2.c dominion.o cards.o rngs.o
+	$(GCC) -o unittest2 unittest2.c dominion.o cards.o rngs.o $(CFLAGS)
+
 testAll: dominion.o cards.o testSuite.c
 	$(GCC) -o testSuite testSuite.c  dominion.o cards.o rngs.o $(CFLAGS)
 
 # run unit tests
-runtests: testDrawCard unittest1
+runtests: testDrawCard unittest1 unittest2
 	./testDrawCard &> unittestresult.out
+	./unittest1 &> unittestresult.out
+	./unittest2 &> unittestresult.out
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
