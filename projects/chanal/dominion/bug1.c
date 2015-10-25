@@ -90,3 +90,7 @@ The bug was detected in one of the tests with a choice card effect for Salvager 
 	"Test FAILED, Player 0 has incorrect number of numBuys"
 As a result of both of the tests of playing Salvager with no choice and a choice effect,
 the numBuys was not incremented, rather it was the numActions as expected. 
+A potential bug may be getting the coins after playing salvager. In some executions
+of creating unittestresults.out yielded the correct number of coins while sometimes yielding
+an incorrect number. The coin status varies and it may be a bug, but my unit test catches
+the error when it is not the expected coin amount.

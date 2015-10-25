@@ -10,6 +10,8 @@
 *		6. Player receives 1 additional action
 *		7. Player does not receive additional buy
 *
+*
+*
 *	Author: Carol D. Toro
 *	Date: 10/21/2015
 */
@@ -37,7 +39,7 @@ int main()
 	int numPlayer = 2;
 	struct gameState Game;
 	int currentActions, expectedActions, currentBuys, expectedBuys;
-	int result, currentCards[10], cardsAfter[10], currentNumCards, numCardsAfter, cardType, testDeckCount;
+	int result, currentCards[10], cardsAfter[10], currentNumCards, numCardsAfter, cardType;
 	const char* cardNames[] = { "curse", "estate", "duchy", "province", "copper", "silver", "gold", "adventurer", "council_room", "feast", "gardens", "mine", "remodel", "Adventurer", "village", "baron", "great_hall", "minion", "steward", "tribute", "ambassador", "cutpurse", "embargo", "outpost", "salvager", "sea_hag", "treasure_map" };
 
 	/*Keep track of P0s deck & hand before & after*/
@@ -52,7 +54,7 @@ int main()
 	int p_1_handBeforeGreatHall[MAX_HAND];
 	int p_1_handAfterGreatHall[MAX_HAND];
 
-	/*initialize array of silver filled hands, starting with greatHall*/
+	/*initialize array of silver filled hands, starting with CouncilRoom*/
 	int silverHand[MAX_HAND];
 	for (i = 0; i < MAX_HAND; i++)
 	{
@@ -77,7 +79,7 @@ int main()
 
 	/*Starting Test #1*/
 #if (NOISY_TEST==1)
-	printf("Starting cardtest4.c which checks GreatHallCard() \n");
+	printf("Starting cardtest3.c which checks GreatHallCard() \n");
 	printf("\n Starting Test #1 - player receives 1 card after playing Great Hall \n");
 #endif
 	/*initialize gameSeed*/
@@ -106,7 +108,7 @@ int main()
 
 	cardType = handCard(0, &Game);
 
-	/*play the great_hall*/
+	/*play the smithy card*/
 	result = playCard(0, 1, 2, 3, &Game);
 
 	numCardsAfter = (numHandCards(&Game));
@@ -215,12 +217,12 @@ int main()
 		p_1_deckBeforeGreatHall[i] = Game.deck[1][i];
 	}
 
-	/*play the Great Hall card*/
+	/*play the smithy card*/
 	result = playCard(0, 1, 2, 3, &Game);
 
 	numCardsAfter = (numHandCards(&Game));
 
-	/*Copy the hand after the Great Hall was played*/
+	/*Copy the hand after the Smithy was played*/
 	for (i = 0; i < numCardsAfter; i++)
 	{
 		p_0_handAfterGreatHall[i] = Game.hand[0][i];
@@ -325,7 +327,7 @@ int main()
 #if (NOISY_TEST==1)
 	if (memcmp(p_1_handBeforeGreatHall, p_1_handAfterGreatHall, 5) == 0)
 	{
-		printf("Test #5 passed. Other player's hand was not affected. \n");
+		printf("Test #5 passed. Other player hand was not affected. \n");
 	}
 	else
 	{
@@ -397,20 +399,16 @@ int main()
 	memcpy(Game.hand[0], silverHand, sizeof(int) * MAX_HAND);
 	memcpy(Game.hand[1], copperHand, sizeof(int) * MAX_HAND);
 
-	
-	testDeckCount = Game.deckCount[0];
+	/*load player's deck with gold*/
+	memcpy(Game.deck[0], silverHand, sizeof(int) * MAX_DECK);
 
-	if (testDeckCount > 2)
-	{
-		Game.deckCount[0] = 2;
-	}
 	updateCoins(0, &Game, 0);
 
 	currentNumCards = (numHandCards(&Game));
 
 	cardType = handCard(0, &Game);
 
-	/*play the great HALL card*/
+	/*play the smithy card*/
 	result = playCard(0, 1, 2, 3, &Game);
 
 	expectedBuys = 1;
