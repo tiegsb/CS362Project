@@ -56,6 +56,9 @@ ctest2: cardtest2.c interface.o
 ctest3: cardtest3.c interface.o
 	gcc -o cardtest3 -g cardtest3.c dominion.o rngs.o interface.o $(CFLAGS)
 
+ctest4: cardtest4.c interface.o
+	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o interface.o $(CFLAGS)
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins test1 test2 test3 test4 ctest1 ctest3
 
 clean:
