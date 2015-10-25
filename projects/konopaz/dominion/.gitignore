@@ -1,2 +1,5 @@
 *.o
 *.swp
+*.gcda
+*.gcno
+unittestresults.out
