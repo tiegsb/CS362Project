@@ -45,7 +45,7 @@ int main() {
     //printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
-    printf("Testing adventurer card \n");
+    printf("* * * * * * * * * * * * * * * * Testing adventurer card * * * * * * * * * * * * * * * * \n");
 
     //keeps track of played cards
     int playedCards = 0;
@@ -55,8 +55,8 @@ int main() {
         playCard(i, -1, -1, -1, &G);
 
         //check to see if adventurer card goes into discard
-        printPlayed(0, &G);
-        printHand(0, &G);
+        //printPlayed(0, &G);
+       // printHand(0, &G);
         // assert (G.playedCards[playedCards] == adventurer);
         printf ("################################################### \n Error: played card (adventurer) was not discarded after use. \n ################################################### \n");
 
