@@ -32,10 +32,10 @@ Result: -1 	 Expected: -1
 Result: -1 	 Expected: -1
 All tests passed
 File 'dominion.c'
-Lines executed:5.26% of 570
-Branches executed:6.71% of 417
-Taken at least once:6.71% of 417
-Calls executed:0.00% of 95
+Lines executed:33.68% of 570
+Branches executed:30.22% of 417
+Taken at least once:27.58% of 417
+Calls executed:17.89% of 95
 Creating 'dominion.c.gcov'
 
 unittest2.c:
@@ -53,7 +53,7 @@ Testing DeckCount of -1
 DeckCount	 Expected:-1	 Result:-1
 DeckCount	 Before:-1	 After:-1
 Qty of Cards	 Before:0	 After:0
-Testing DeckCount of 15
+Testing DeckCount of 500
 DeckCount	 Expected:0	 Result:0
 DeckCount	 Before:500	 After:500
 Qty of Cards	 Before:500	 After:500
@@ -75,7 +75,7 @@ Testing DeckCount of -1
 DeckCount	 Expected:-1	 Result:-1
 DeckCount	 Before:-1	 After:-1
 Qty of Cards	 Before:0	 After:0
-Testing DeckCount of 15
+Testing DeckCount of 500
 DeckCount	 Expected:0	 Result:0
 DeckCount	 Before:500	 After:500
 Qty of Cards	 Before:500	 After:500
@@ -85,10 +85,10 @@ DeckCount	 Before:15	 After:15
 Qty of Cards	 Before:15	 After:15
 All tests passed!
 File 'dominion.c'
-Lines executed:21.05% of 570
-Branches executed:22.54% of 417
-Taken at least once:19.90% of 417
-Calls executed:7.37% of 95
+Lines executed:33.68% of 570
+Branches executed:30.22% of 417
+Taken at least once:27.58% of 417
+Calls executed:17.89% of 95
 Creating 'dominion.c.gcov'
 
 unittest3.c:
@@ -136,10 +136,10 @@ Testing for 5 copper, 3 other cards
 Total Coins	 Expected: 5	 Result:5
 ALL TESTS PASSED!
 File 'dominion.c'
-Lines executed:21.40% of 570
-Branches executed:22.54% of 417
-Taken at least once:20.38% of 417
-Calls executed:7.37% of 95
+Lines executed:33.68% of 570
+Branches executed:30.22% of 417
+Taken at least once:27.58% of 417
+Calls executed:17.89% of 95
 Creating 'dominion.c.gcov'
 
 unittest4.c:
@@ -201,10 +201,10 @@ Drawn Card:	 Expected:5	 Result:5
 Hand Count	 Expected: 1	 Result:1
 ALL TESTS PASSED!
 File 'dominion.c'
-Lines executed:23.68% of 570
-Branches executed:23.50% of 417
-Taken at least once:21.34% of 417
-Calls executed:8.42% of 95
+Lines executed:33.68% of 570
+Branches executed:30.22% of 417
+Taken at least once:27.58% of 417
+Calls executed:17.89% of 95
 Creating 'dominion.c.gcov'
 
 cardtest1.c:
@@ -278,10 +278,10 @@ Unexpected card added to hand
 Discard count not incremented
 FAILURES
 File 'dominion.c'
-Lines executed:27.72% of 570
-Branches executed:25.90% of 417
-Taken at least once:23.50% of 417
-Calls executed:10.53% of 95
+Lines executed:33.68% of 570
+Branches executed:30.22% of 417
+Taken at least once:27.58% of 417
+Calls executed:17.89% of 95
 Creating 'dominion.c.gcov'
 
 cardtest2.c:
@@ -335,13 +335,16 @@ Unexcpected discardCount
 Adventurer card not discarded
 FAILURES
 File 'dominion.c'
-Lines executed:31.05% of 570
+Lines executed:33.68% of 570
+Branches executed:30.22% of 417
+Taken at least once:27.58% of 417
+Calls executed:17.89% of 95
 Creating 'dominion.c.gcov'
 
 cardtest3.c:
 TESTING COUNCIL CARD
 Testing for council card at index 0 of hand
-Hand Count	 Expected: 12	 Result:14
+Hand Count	 Expected: 13	 Result:14
 Deck Count	 Expected: 6	 Result:5
 Added Cards (No.1)	 Expected: 9	 Result:9
 Added Cards (No.2)	 Expected: 15	 Result:15
@@ -375,7 +378,7 @@ Unexpected cardAdded p4
 Discard count not incremented
 FAILURES
 Testing for council card at last index of hand
-Hand Count	 Expected: 17	 Result:19
+Hand Count	 Expected: 18	 Result:19
 Deck Count	 Expected: 6	 Result:5
 Added Cards (No.1)	 Expected: 10	 Result:10
 Added Cards (No.2)	 Expected: 14	 Result:14
@@ -410,7 +413,7 @@ Council card not discarded
 Discard count not incremented
 FAILURES
 Normal testing mode
-Hand Count	 Expected: 14	 Result:16
+Hand Count	 Expected: 15	 Result:16
 Deck Count	 Expected: 6	 Result:5
 Added Cards (No.1)	 Expected: 11	 Result:11
 Added Cards (No.2)	 Expected: 25	 Result:25
@@ -444,7 +447,7 @@ Unexpected cardAdded p4
 Discard count not incremented
 FAILURES
 Normal testing mode
-Hand Count	 Expected: 7	 Result:9
+Hand Count	 Expected: 8	 Result:9
 Deck Count	 Expected: 6	 Result:5
 Added Cards (No.1)	 Expected: 12	 Result:12
 Added Cards (No.2)	 Expected: 7	 Result:7
@@ -478,7 +481,10 @@ Unexpected cardAdded p3
 Discard count not incremented
 FAILURES
 File 'dominion.c'
-Lines executed:32.81% of 570
+Lines executed:33.68% of 570
+Branches executed:30.22% of 417
+Taken at least once:27.58% of 417
+Calls executed:17.89% of 95
 Creating 'dominion.c.gcov'
 
 cardtest4.c:
@@ -553,5 +559,8 @@ Discard count not incremented
 FAILURES
 File 'dominion.c'
 Lines executed:33.68% of 570
+Branches executed:30.22% of 417
+Taken at least once:27.58% of 417
+Calls executed:17.89% of 95
 Creating 'dominion.c.gcov'
 

@@ -69,7 +69,7 @@ int main(){
        //check for max 
        G.deckCount[p] = MAX_DECK;
 
-       printf("Testing DeckCount of 15\n");
+       printf("Testing DeckCount of %d\n", MAX_DECK);
        setPlayerDecks(p, &G);
        result = checkShuffleDeck(p, &G, 0);
        if (result == -1){
