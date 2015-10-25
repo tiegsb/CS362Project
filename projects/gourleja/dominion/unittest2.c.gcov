@@ -1,0 +1,134 @@
+        -:    0:Source:unittest2.c
+        -:    0:Graph:unittest2.gcno
+        -:    0:Data:unittest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2: * Jason Gourley
+        -:    3: * gourleja@oregonstate.edu
+        -:    4: * CS362-400
+        -:    5: * Assignment 3 - unittest2.c
+        -:    6: * Description : Unit tests for buyCard method
+        -:    7: */
+        -:    8:
+        -:    9:#include <stdio.h>
+        -:   10:#include <stdlib.h>
+        -:   11:#include "dominion.h"
+        -:   12:#include "rngs.h"
+        -:   13:
+        -:   14:#define METHODNAME  "buyCard"
+        -:   15:#define BASESEED    10
+        -:   16:
+        -:   17:/*
+        -:   18: * Description:     Test the return values of the buyCard method
+        -:   19: * Preconditions:   The games state has been initialized, the seed and method name to test are passed
+        -:   20: * Postconditions:  The general messages and any failed test messages are displayed
+        -:   21: */
+        1:   22:int testMethod(char* currentTest, int seed, struct gameState *state)
+        -:   23:{
+        -:   24:    int i;
+        1:   25:    int testsPassed = 0;
+        1:   26:    int testsFailed = 0;
+        1:   27:    int expectedValue = 0;
+        1:   28:    int expectedState = 0;
+        -:   29:
+        1:   30:    printf ("\n\n-------------------------------------------------------------------------------\n");
+        1:   31:    printf ("-------------------------------------------------------------------------------\n");
+        1:   32:    printf ("Testing Method  : %s()\n", currentTest);
+        1:   33:    printf ("Seed            : %i\n", seed);
+        -:   34:
+       26:   35:    for(i=0; i<25; i++){
+       25:   36:        state->supplyCount[i] = 1;
+        -:   37:    }
+        -:   38:
+        1:   39:    int supplyPos = 1;
+        -:   40:
+        -:   41:    //check lack of buys produces the correct error
+        1:   42:    expectedValue = -1;
+        1:   43:    state->numBuys = 0;
+        1:   44:    if(buyCard(supplyPos,state) != expectedValue) {
+    #####:   45:        printf("  TEST FAIL    : No buys left check failed\n");
+    #####:   46:        testsFailed++;
+        1:   47:    } else {testsPassed++;}
+        -:   48:
+        -:   49:    //check lack of cards
+        1:   50:    state->numBuys = 1;
+        1:   51:    state->supplyCount[supplyPos] = 0;
+        1:   52:    if(buyCard(supplyPos,state) != expectedValue) {
+    #####:   53:        printf("  TEST FAIL    : No cards left check failed\n");
+    #####:   54:        testsFailed++;
+        1:   55:    } else {testsPassed++;}
+        1:   56:    state->supplyCount[supplyPos] = 1;
+        -:   57:
+        -:   58:    //check lack of coins produces the correct error
+        1:   59:    state->numBuys = 1;
+        1:   60:    state->coins = 0;
+        1:   61:    supplyPos = 1;
+        1:   62:    if(buyCard(supplyPos,state) != expectedValue) {
+    #####:   63:        printf("  TEST FAIL    : No coins left check failed\n");
+    #####:   64:        testsFailed++;
+        1:   65:    } else {testsPassed++;}
+        -:   66:
+        -:   67:    //check coin value is correct after call
+        1:   68:    state->numBuys = 1;
+        1:   69:    state->coins = 5;
+        1:   70:    expectedValue = 0;
+        1:   71:    if(buyCard(supplyPos,state) != expectedValue || state->coins != 3) {
+    #####:   72:        printf("  TEST FAIL    : coins value check failed\n");
+    #####:   73:        testsFailed++;
+        1:   74:    } else {testsPassed++;}
+        -:   75:
+        -:   76:    //check numbuys value is correct after call
+        1:   77:    state->numBuys = 1;
+        1:   78:    state->coins = 5;
+        1:   79:    state->supplyCount[1] = 1;
+        1:   80:    expectedState = 0;
+        1:   81:    int buyCardTest = buyCard(supplyPos,state);
+        1:   82:    if(buyCardTest != expectedValue || state->numBuys != expectedState) {
+    #####:   83:        printf("  TEST FAIL    : numBuys value check failed, %i, %i\n", buyCardTest, state->numBuys);
+    #####:   84:        testsFailed++;
+        1:   85:    } else {testsPassed++;}
+        -:   86:
+        -:   87:    // Check card taken has supply reduced
+        1:   88:    state->numBuys = 1;
+        1:   89:    state->coins = 5;
+        1:   90:    state->supplyCount[1] = 1;
+        1:   91:    expectedValue = state->supplyCount[supplyPos] - 1;
+        1:   92:    int testBuy = buyCard(supplyPos,state);
+        1:   93:    if(state->supplyCount[supplyPos] != expectedValue) {
+    #####:   94:        printf("  TEST FAIL    : Card supply value reduced correctly check failed\n");
+    #####:   95:        testsFailed++;
+        1:   96:    } else {testsPassed++;}
+        -:   97:
+        1:   98:    printf ("    Tests Passed    : %i\n", testsPassed);
+        1:   99:    printf ("    Tests Failed    : %i\n", testsFailed);
+        1:  100:    printf ("-------------------------------------------------------------------------------\n\n");
+        -:  101:
+        1:  102:    return 0;
+        -:  103:}
+        -:  104:
+        -:  105:
+        -:  106:/*
+        -:  107: * Preconditions:   The user can pass a seed value for testing or it defaults to a set value
+        -:  108: * Postconditions:  Exit the test program normally
+        -:  109: */
+        1:  110:int main (int argc, char** argv)
+        -:  111:{
+        -:  112:
+        -:  113:    // Setup Game Seed
+        -:  114:    int seed;
+        1:  115:    char* currentTest = METHODNAME;
+        1:  116:    if(argv[1]) {
+    #####:  117:        seed = atoi(argv[1]);
+        -:  118:    } else {
+        1:  119:        seed = BASESEED;
+        -:  120:    }
+        -:  121:
+        -:  122:    // Initialize Game State
+        -:  123:    struct gameState G;
+        1:  124:    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        1:  125:    initializeGame(2, k, seed, &G);
+        -:  126:
+        1:  127:    testMethod(currentTest,seed, &G);
+        1:  128:    return 0;
+        -:  129:}

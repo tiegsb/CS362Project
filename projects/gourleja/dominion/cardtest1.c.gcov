@@ -1,0 +1,79 @@
+        -:    0:Source:cardtest1.c
+        -:    0:Graph:cardtest1.gcno
+        -:    0:Data:cardtest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2: * Jason Gourley
+        -:    3: * gourleja@oregonstate.edu
+        -:    4: * CS362-400
+        -:    5: * Assignment 3 - cardtest1.c
+        -:    6: * Description : Unit tests for Smithy card
+        -:    7: */
+        -:    8:
+        -:    9:#include <stdio.h>
+        -:   10:#include <stdlib.h>
+        -:   11:#include "dominion.h"
+        -:   12:#include "rngs.h"
+        -:   13:
+        -:   14:#define CARDNAME  "smithy"
+        -:   15:#define BASESEED    10
+        -:   16:
+        -:   17:/*
+        -:   18: * Description:     Test the return values of the smithy card
+        -:   19: * Preconditions:   The games state has been initialized, the seed and method name to test are passed
+        -:   20: * Postconditions:  The general messages and any failed test messages are displayed
+        -:   21: */
+        1:   22:int testCard(char* currentTest, int seed, struct gameState *state)
+        -:   23:{
+        -:   24:    int i;
+        1:   25:    int testsPassed = 0;
+        1:   26:    int testsFailed = 0;
+        1:   27:    int expectedValue = 0;
+        -:   28:
+        1:   29:    printf ("\n\n-------------------------------------------------------------------------------\n");
+        1:   30:    printf ("-------------------------------------------------------------------------------\n");
+        1:   31:    printf ("Testing Method  : %s()\n", currentTest);
+        1:   32:    printf ("Seed            : %i\n", seed);
+        -:   33:
+        -:   34:    //Check increase of cards in hand
+        1:   35:    expectedValue = state->handCount[state->whoseTurn] + 2;
+        1:   36:    cardSmithy(1,0,state);
+        1:   37:    if(state->handCount[state->whoseTurn] != expectedValue) {
+        1:   38:        printf("  TEST FAIL    : Smithy card added correct number of cards failed\n");
+        1:   39:        testsFailed++;
+    #####:   40:    } else {testsPassed++;}
+        -:   41:
+        1:   42:    printf ("    Tests Passed    : %i\n", testsPassed);
+        1:   43:    printf ("    Tests Failed    : %i\n", testsFailed);
+        1:   44:    printf ("-------------------------------------------------------------------------------\n\n");
+        -:   45:
+        1:   46:    return 0;
+        -:   47:}
+        -:   48:
+        -:   49:
+        -:   50:/*
+        -:   51: * Preconditions:   The user can pass a seed value for testing or it defaults to a set value
+        -:   52: * Postconditions:  Exit the test program normally
+        -:   53: */
+        1:   54:int main (int argc, char** argv)
+        -:   55:{
+        -:   56:
+        -:   57:    // Setup Game Seed
+        -:   58:    int seed;
+        1:   59:    char* currentTest = CARDNAME;
+        1:   60:    if(argv[1]) {
+    #####:   61:        seed = atoi(argv[1]);
+        -:   62:    } else {
+        1:   63:        seed = BASESEED;
+        -:   64:    }
+        -:   65:
+        -:   66:    // Initialize Game State
+        -:   67:    struct gameState G;
+        1:   68:    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        1:   69:    initializeGame(2, k, seed, &G);
+        -:   70:
+        1:   71:    testCard(currentTest,seed, &G);
+        -:   72:
+        1:   73:    return 0;
+        -:   74:}

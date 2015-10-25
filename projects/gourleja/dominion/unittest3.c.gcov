@@ -1,0 +1,123 @@
+        -:    0:Source:unittest3.c
+        -:    0:Graph:unittest3.gcno
+        -:    0:Data:unittest3.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2: * Jason Gourley
+        -:    3: * gourleja@oregonstate.edu
+        -:    4: * CS362-400
+        -:    5: * Assignment 3 - unittest3.c
+        -:    6: * Description : Unit tests for playCard method
+        -:    7: */
+        -:    8:
+        -:    9:#include <stdio.h>
+        -:   10:#include <stdlib.h>
+        -:   11:#include "dominion.h"
+        -:   12:#include "rngs.h"
+        -:   13:
+        -:   14:#define METHODNAME  "playCard"
+        -:   15:#define BASESEED    10
+        -:   16:
+        -:   17:/*
+        -:   18: * Description:     Test the return values of the playCard method
+        -:   19: * Preconditions:   The games state has been initialized, the seed and method name to test are passed
+        -:   20: * Postconditions:  The general messages and any failed test messages are displayed
+        -:   21: */
+        1:   22:int testMethod(char* currentTest, int seed, struct gameState *state)
+        -:   23:{
+        -:   24:    int i;
+        1:   25:    int testsPassed = 0;
+        1:   26:    int testsFailed = 0;
+        1:   27:    int expectedValue = 0;
+        1:   28:    int expectedState = 0;
+        1:   29:    int actualValue = 0;
+        1:   30:    int actualState = 0;
+        -:   31:
+        1:   32:    printf ("\n\n-------------------------------------------------------------------------------\n");
+        1:   33:    printf ("-------------------------------------------------------------------------------\n");
+        1:   34:    printf ("Testing Method  : %s()\n", currentTest);
+        1:   35:    printf ("Seed            : %i\n", seed);
+        -:   36:
+        1:   37:    int supplyPos = 1;
+        -:   38:
+        -:   39:    //check incorrect phase produces the correct error value
+        1:   40:    expectedValue = -1;
+        1:   41:    state->phase = 0;
+        1:   42:    actualValue = playCard(0, -1, -1, -1, state);
+        1:   43:    if(actualValue != expectedValue) {
+    #####:   44:        printf("  TEST FAIL    : Phase check failed\n");
+    #####:   45:        testsFailed++;
+        1:   46:    } else {testsPassed++;}
+        -:   47:
+        -:   48:    //check incorrect phase produces the correct error value
+        1:   49:    expectedValue = -1;
+        1:   50:    state->numActions = 0;
+        1:   51:    actualValue = playCard(0, -1, -1, -1, state);
+        1:   52:    if(actualValue != expectedValue) {
+    #####:   53:        printf("  TEST FAIL    : Phase check failed\n");
+    #####:   54:        testsFailed++;
+        1:   55:    } else {testsPassed++;}
+        -:   56:
+        -:   57:    //check incorrect card type produces the correct error value
+        1:   58:    expectedValue = -1;
+        1:   59:    state->numActions = 1;
+        1:   60:    state->hand[whoseTurn(state)][0] = 0;
+        1:   61:    actualValue = playCard(0, -1, -1, -1, state);
+        1:   62:    if(actualValue != expectedValue) {
+    #####:   63:        printf("  TEST FAIL    : Action card check failed\n");
+    #####:   64:        testsFailed++;
+        1:   65:    } else {testsPassed++;}
+        -:   66:
+        -:   67:    //check for correct action decrement value
+        1:   68:    expectedValue = 0;
+        1:   69:    state->numActions = 1;
+        1:   70:    state->hand[whoseTurn(state)][0] = 7;
+        1:   71:    actualValue = playCard(0, -1, -1, -1, state);
+        1:   72:    if(actualValue != expectedValue) {
+    #####:   73:        printf("  TEST FAIL    : Actions decrement check failed\n");
+    #####:   74:        testsFailed++;
+        1:   75:    } else {testsPassed++;}
+        -:   76:
+        -:   77:    //check for correct coin increment value
+        1:   78:    expectedValue = state->coins + 2;
+        1:   79:    state->numActions = 2;
+        1:   80:    state->hand[whoseTurn(state)][0] = 17;
+        1:   81:    actualValue = playCard(0, 1, -1, -1, state);
+        1:   82:    if(state->coins != expectedValue) {
+        1:   83:        printf("  TEST FAIL    : Coin increment check failed\n");
+        1:   84:        testsFailed++;
+    #####:   85:    } else {testsPassed++;}
+        -:   86:
+        1:   87:    printf ("    Tests Passed    : %i\n", testsPassed);
+        1:   88:    printf ("    Tests Failed    : %i\n", testsFailed);
+        1:   89:    printf ("-------------------------------------------------------------------------------\n\n");
+        -:   90:
+        1:   91:    return 0;
+        -:   92:}
+        -:   93:
+        -:   94:
+        -:   95:/*
+        -:   96: * Preconditions:   The user can pass a seed value for testing or it defaults to a set value
+        -:   97: * Postconditions:  Exit the test program normally
+        -:   98: */
+        1:   99:int main (int argc, char** argv)
+        -:  100:{
+        -:  101:
+        -:  102:    // Setup Game Seed
+        -:  103:    int seed;
+        1:  104:    char* currentTest = METHODNAME;
+        1:  105:    if(argv[1]) {
+    #####:  106:        seed = atoi(argv[1]);
+        -:  107:    } else {
+        1:  108:        seed = BASESEED;
+        -:  109:    }
+        -:  110:
+        -:  111:    // Initialize Game State
+        -:  112:    struct gameState G;
+        1:  113:    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        1:  114:    initializeGame(2, k, seed, &G);
+        -:  115:
+        1:  116:    testMethod(currentTest,seed, &G);
+        1:  117:    return 0;
+        -:  118:}

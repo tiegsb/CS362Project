@@ -1,0 +1,71 @@
+        -:    0:Source:cardtest4.c
+        -:    0:Graph:cardtest4.gcno
+        -:    0:Data:cardtest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2: * Jason Gourley
+        -:    3: * gourleja@oregonstate.edu
+        -:    4: * CS362-400
+        -:    5: * Assignment 3 - cardtest4.c
+        -:    6: * Description : Unit tests for ... card
+        -:    7: */
+        -:    8:
+        -:    9:#include <stdio.h>
+        -:   10:#include <stdlib.h>
+        -:   11:#include "dominion.h"
+        -:   12:#include "rngs.h"
+        -:   13:
+        -:   14:#define CARDNAME  "..."
+        -:   15:#define BASESEED    10
+        -:   16:
+        -:   17:/*
+        -:   18: * Description:     Test the return values of the ... card
+        -:   19: * Preconditions:   The games state has been initialized, the seed and method name to test are passed
+        -:   20: * Postconditions:  The general messages and any failed test messages are displayed
+        -:   21: */
+        1:   22:int testCard(char* currentTest, int seed, struct gameState *state)
+        -:   23:{
+        -:   24:    int i;
+        1:   25:    int testsPassed = 0;
+        1:   26:    int testsFailed = 0;
+        1:   27:    int expectedValue = 0;
+        -:   28:
+        1:   29:    printf ("\n\n-------------------------------------------------------------------------------\n");
+        1:   30:    printf ("-------------------------------------------------------------------------------\n");
+        1:   31:    printf ("Testing Method  : %s()\n", currentTest);
+        1:   32:    printf ("Seed            : %i\n", seed);
+        -:   33:
+        1:   34:    printf ("    Tests Passed    : %i\n", testsPassed);
+        1:   35:    printf ("    Tests Failed    : %i\n", testsFailed);
+        1:   36:    printf ("-------------------------------------------------------------------------------\n\n");
+        -:   37:
+        1:   38:    return 0;
+        -:   39:}
+        -:   40:
+        -:   41:
+        -:   42:/*
+        -:   43: * Preconditions:   The user can pass a seed value for testing or it defaults to a set value
+        -:   44: * Postconditions:  Exit the test program normally
+        -:   45: */
+        1:   46:int main (int argc, char** argv)
+        -:   47:{
+        -:   48:
+        -:   49:    // Setup Game Seed
+        -:   50:    int seed;
+        1:   51:    char* currentTest = CARDNAME;
+        1:   52:    if(argv[1]) {
+    #####:   53:        seed = atoi(argv[1]);
+        -:   54:    } else {
+        1:   55:        seed = BASESEED;
+        -:   56:    }
+        -:   57:
+        -:   58:    // Initialize Game State
+        -:   59:    struct gameState G;
+        1:   60:    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        1:   61:    initializeGame(2, k, seed, &G);
+        -:   62:
+        1:   63:    testCard(currentTest,seed, &G);
+        -:   64:
+        1:   65:    return 0;
+        -:   66:}

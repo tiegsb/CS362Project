@@ -1,0 +1,95 @@
+        -:    0:Source:unittest1.c
+        -:    0:Graph:unittest1.gcno
+        -:    0:Data:unittest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2: * Jason Gourley
+        -:    3: * gourleja@oregonstate.edu
+        -:    4: * CS362-400
+        -:    5: * Assignment 3 - unittest1.c
+        -:    6: * Description : Unit tests for isGameOver method
+        -:    7: */
+        -:    8:
+        -:    9:#include <stdio.h>
+        -:   10:#include <stdlib.h>
+        -:   11:#include "dominion.h"
+        -:   12:#include "rngs.h"
+        -:   13:
+        -:   14:#define METHODNAME  "isGameOver"
+        -:   15:#define BASESEED    10
+        -:   16:
+        -:   17:/*
+        -:   18: * Description:     Test the return values of the isGameOver method
+        -:   19: * Preconditions:   The games state has been initialized, the seed and method name to test are passed
+        -:   20: * Postconditions:  The general messages and any failed test messages are displayed
+        -:   21: */
+        1:   22:int testMethod(char* currentTest, int seed, struct gameState *state)
+        -:   23:{
+        -:   24:    int i;
+        1:   25:    int testsPassed = 0;
+        1:   26:    int testsFailed = 0;
+        1:   27:    int expectedValue = 0;
+        -:   28:
+        1:   29:    printf ("\n\n-------------------------------------------------------------------------------\n");
+        1:   30:    printf ("-------------------------------------------------------------------------------\n");
+        1:   31:    printf ("Testing Method  : %s()\n", currentTest);
+        1:   32:    printf ("Seed            : %i\n", seed);
+        -:   33:
+        1:   34:    expectedValue = 1;
+        1:   35:    if(isGameOver(state) == expectedValue) {
+    #####:   36:        printf("  TEST FAIL    : Newly initialized game failed\n");
+    #####:   37:        testsFailed++;
+        1:   38:    } else {testsPassed++;}
+        -:   39:
+        1:   40:    expectedValue = 0;
+        1:   41:    state->supplyCount[province] = 0;
+        1:   42:    if(isGameOver(state) == expectedValue) {
+    #####:   43:        printf("  TEST FAIL    : Province supply out check failed\n");
+    #####:   44:        testsFailed++;
+        1:   45:    } else {testsPassed++;}
+        -:   46:
+        -:   47:
+        1:   48:    expectedValue = 0;
+        1:   49:    state->supplyCount[province] = 1;
+        4:   50:    for(i=0; i<3; i++){
+        3:   51:        state->supplyCount[i] = 0;
+        -:   52:    }
+        1:   53:    if(isGameOver(state) == expectedValue) {
+    #####:   54:        printf("  TEST FAIL    : 3 card supply out check failed\n");
+    #####:   55:        testsFailed++;
+        1:   56:    } else {testsPassed++;}
+        -:   57:
+        1:   58:    printf ("    Tests Passed    : %i\n", testsPassed);
+        1:   59:    printf ("    Tests Failed    : %i\n", testsFailed);
+        1:   60:    printf ("-------------------------------------------------------------------------------\n\n");
+        -:   61:
+        1:   62:    return 0;
+        -:   63:}
+        -:   64:
+        -:   65:
+        -:   66:/*
+        -:   67: * Preconditions:   The user can pass a seed value for testing or it defaults to a set value
+        -:   68: * Postconditions:  Exit the test program normally
+        -:   69: */
+        1:   70:int main (int argc, char** argv)
+        -:   71:{
+        -:   72:
+        -:   73:    // Setup Game Seed
+        -:   74:    int seed;
+        1:   75:    char* currentTest = METHODNAME;
+        1:   76:    if(argv[1]) {
+    #####:   77:        seed = atoi(argv[1]);
+        -:   78:    } else {
+        1:   79:        seed = BASESEED;
+        -:   80:    }
+        -:   81:
+        -:   82:    // Initialize Game State
+        -:   83:    struct gameState G;
+        1:   84:    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        1:   85:    initializeGame(2, k, seed, &G);
+        -:   86:
+        1:   87:    testMethod(currentTest,seed, &G);
+        1:   88:    return 0;
+        -:   89:}
+        -:   90:
