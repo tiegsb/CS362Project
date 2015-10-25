@@ -23,10 +23,13 @@ int main(int argc, char **argv) {
   PutSeed(37); /* 37 is the most random number */
 
   a = b = floor(Random() * INT_MAX);
-  doTest("equal", a == b);
+  doTest("equal", compare(&a, &b) == 0);
 
   a -= floor(Random() * INT_MAX);
-  doTest("not equal", a != b);
+  doTest("a less", compare(&a, &b) == -1);
+
+  b = a - floor(Random() * INT_MAX / 2);
+  doTest("b less", compare(&a, &b) == 1);
 
   return 0;
 }
