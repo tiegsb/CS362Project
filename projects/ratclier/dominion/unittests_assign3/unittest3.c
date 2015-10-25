@@ -6,6 +6,18 @@
 
 // Test the updateCoins() function
 //
+// updateCoins():
+// Tallies the coin value of the current player's treasuer cards along
+// with optional bonus and writes it to state->coins, a var that is not
+// player-speciric.
+//
+// player    - current player
+// state     - holds the game state
+// bonus     - amount to add to coins
+//
+// Always returns 0.
+//
+
 int testUpdateCoins(int player, struct gameState *state, int bonus)
 {
     struct gameState *origState;  // copy of game state
@@ -16,12 +28,13 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
     //
     origState = copyState(state);
 
-    // Run discardCard()
+    // Run updateCoins()
     //
     updateCoins(player, state, bonus);
 
+    // Report the current player's coins
+    //
     printf("Player %d coins:\n", player);
-
     for (i = 0; i < state->handCount[player]; i++)
     {
         if (state->hand[player][i] == copper)
@@ -40,9 +53,8 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
             printf("\tOne gold (3)\n");
         }       
     }   
-
+    if(coinCount == 0) printf("\tNone...\n");
     printf("Plus optional bonus: %d\n", bonus);
-    
     coinCount += bonus;
 
     // Note that state->coins is not tied to any player. It is a temporary
@@ -58,7 +70,6 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
         printf("updateCoins: FAIL game state holds incorrect number of coins (%d)\n", state->coins);
     }
 
-    printf("\nupdateCoins: Changes to game state:\n----------------------------------------\n");
     whatChanged(origState, state);
 
     printf("\n");
@@ -85,7 +96,7 @@ int main(int argc, char *argv[])
 
     // Player 0, bonus 5
     //
-    printf("Testing: Player 0's coins, 5 bonus...\n");
+    printf(">>> TESTING: updateCoins(), player 0's coins, 5 bonus...\n");
     player = 0;
     bonus = 5;
     testUpdateCoins(player, state, bonus);
@@ -97,8 +108,8 @@ int main(int argc, char *argv[])
 
     // Player 1, bonus 3
     //
-    printf("Testing: Player 1's coins, 3 bonus...\n");
-    player = 4;
+    printf(">>> TESTING: updateCoins(), player 1's coins, 3 bonus...\n");
+    player = 1;
     bonus = 8;
     testUpdateCoins(player, state, bonus);
 

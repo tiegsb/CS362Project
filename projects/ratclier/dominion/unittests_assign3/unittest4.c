@@ -4,32 +4,19 @@
 #include "unittest_helpers.h"
 
 
-// Test the updateCoins() function
-/*
-  //reset coin count
-  state->coins = 0;
-
-  //add coins for each Treasure card in player's hand
-  for (i = 0; i < state->handCount[player]; i++)
-    {
-      if (state->hand[player][i] == copper)
-        {
-          state->coins += 1;
-        }
-      else if (state->hand[player][i] == silver)
-        {
-          state->coins += 2;
-        }
-      else if (state->hand[player][i] == gold)
-        {
-          state->coins += 3;
-        }       
-    }   
-
-  //add bonus
-  state->coins += bonus;
-*/
-
+// Test the gainCard() function.
+//
+// gainCard():
+// Checks for an ample supply of cards first, and if one exists, adds a
+// specific card to a player's hand, deck, or trash.
+//
+// supplyPos - enumerated card
+// state     - holds the game state
+// toFlag    - where to put the card (0 = discard, 1 = deck, 2 = hand)
+// player    - who to give the card to
+//
+// Returns -1 if not enough supply or 0 on success
+//
 int testUpdateCoins(int player, struct gameState *state, int bonus)
 {
     struct gameState *origState;  // copy of game state
@@ -40,7 +27,7 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
     //
     origState = copyState(state);
 
-    // Run discardCard()
+    // Run updateCoins()
     //
     updateCoins(player, state, bonus);
 
@@ -71,7 +58,7 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
         printf("updateCoins: FAIL game state holds incorrect number of coins.\n");
     }
 
-    printf("\nupdateCoins: Changes to game state:\n----------------------------------------\n");
+    //printf("\nupdateCoins: Changes to game state:\n----------------------------------------\n");
     whatChanged(origState, state);
 
     printf("\n");
@@ -97,7 +84,7 @@ int main(int argc, char *argv[])
     printf("\n");
 
     // Discard a trashed card
-    printf("Testing: Player 0 coins, 5 bonus...\n");
+    printf(">>> TESTING: updateCoins(), player 0 coins, 5 bonus...\n");
     player = 0;
     bonus = 5;
     testUpdateCoins(player, state, bonus);
@@ -110,7 +97,7 @@ int main(int argc, char *argv[])
     initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
     // Discard a non-trashed card
-    printf("Testing: Player 1 coins, 3 bonus...\n");
+    printf(">>> TESTING: updateCoins(), player 1 coins, 3 bonus...\n");
     player = 0;
     bonus = 5;
     testUpdateCoins(player, state, bonus);
