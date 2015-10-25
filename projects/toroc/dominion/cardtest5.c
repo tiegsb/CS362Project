@@ -1,23 +1,17 @@
 /*
-*	CS362 - Assignment 3 - cardtest2.c
-*	Card Test #2: This program runs the following 6 tests 
+*	CS362 - Assignment 3 - cardtest5.c
+*	Card Test #5: This program runs the following 6 tests 
 *		to ensure the Village card implementation is correct:
 *			1. Player gets 2 actions
 *			2. Player gets 1 card
-*			3. Village doesn't affect other player's deck
-*			4. Village doesn't affect other player's hand
-*			5. Village doesn't grant additional actions
-*			6. Village doesn't grant additional buys
-*			7. Village gets discarded
-
-
-Village Card: Whenever a player has more than 2 cards in their deck count,
-the village card will get discarded. This ensures that a majority of the time
-the village card functions correctly. On the occasion that a player has less
-than 2 cards in their deck count, they will draw an additional card.
+*			3. Village get's discarded
+*			4. Village doesn't affect other player's deck
+*			5. Village doesn't affect other player's hand
+*			6. Village doesn't grant additional cards
+*			7. Village doesn't grant additional buys		
 * 
 *	Author: Carol D. Toro
-*	Date: 10/20/2015
+*	Date: 10/24/2015
 */
 
 #include "dominion.h"
@@ -33,16 +27,17 @@ than 2 cards in their deck count, they will draw an additional card.
 
 // set NOISY_TEST to 0 to remove printfs from output
 #define NOISY_TEST 1
+
 int main()
 {
 	/*initialize variables needed*/
 	int	i;
 	int k[10] = { adventurer, council_room, feast, gardens, mine,
 		remodel, smithy, village, baron, great_hall };
-	int gameSeed;
+	int gameSeed, testHandCount;
 	int numPlayer = 2;
 	struct gameState Game;
-	int currentActions, expectedActions, currentBuys, expectedBuys, testActionsBefore, testActionsAfter;
+	int currentActions, expectedActions, currentBuys, expectedBuys, testActionsBefore, testDeckCount;
 	int result, currentNumCards, numCardsAfter, cardType, currentCards[10], cardsAfter[10];
 	const char* cardNames[] = { "curse", "estate", "duchy", "province", "copper", "silver", "gold", "adventurer", "council_room", "feast", "gardens", "mine", "remodel", "Adventurer", "village", "baron", "great_hall", "minion", "steward", "tribute", "ambassador", "cutpurse", "embargo", "outpost", "salvager", "sea_hag", "treasure_map" };
 	
@@ -126,7 +121,7 @@ int main()
 
 
 #if (NOISY_TEST==1)
-	printf("\n Starting Test #1 - player receives 1 card after playing Great Hall \n");
+	printf("\n Starting Test #2 - player receives 1 card after playing Village \n");
 #endif
 	/*initialize gameSeed*/
 	gameSeed = rand() % 1000 + 1;
@@ -179,46 +174,11 @@ int main()
 	}
 #endif
 
-
-
-
-
-
-
-
-
-
-	numCardsAfter = (numHandCards(&Game));
-
-	/*Copy the hand after the Adventure was played*/
-	for (i = 0; i < numCardsAfter; i++)
-	{
-		p_0_handAfterVillage[i] = Game.hand[0][i];
-	}
-
-
-#if (NOISY_TEST==1)
-	if (p_0_handAfterVillage[currentNumCards] == p_0_deckBeforeVillage[currentNumCards - 1] && p_0_handAfterVillage[currentNumCards + 1] == p_0_deckBeforeVillage[currentNumCards - 2])
-	{
-		printf("\t Current card = %d, Expected card = %d\n", p_0_handAfterVillage[currentNumCards], p_0_deckBeforeVillage[currentNumCards - 1]);
-		printf("\t Current card = %d, Expected card = %d\n", p_0_handAfterVillage[currentNumCards+1], p_0_deckBeforeVillage[currentNumCards - 2]);
-		printf(" Test #1 passed. Player received the expected cards\n");
-	}
-	else
-	{
-		printf("\t Current card = %d, Expected card = %d\n", p_0_handAfterVillage[currentNumCards], p_0_deckBeforeVillage[currentNumCards - 1]);
-		printf("\t Current card = %d, Expected card = %d\n", p_0_handAfterVillage[currentNumCards + 1], p_0_deckBeforeVillage[currentNumCards - 2]);
-		printf(" Test #1 FAILED! Player did not receive expected cards. \n");
-	}
-
-#endif
-
-
-
 	/*Starting Test #2*/
 #if (NOISY_TEST==1)
-	printf("\n Starting Test #2 - player receives treasures from own deck \n");
+	printf("\n Starting Test #3 - Village card is discarded & replaced by correct card \n");
 #endif
+
 	/*initialize gameSeed*/
 	gameSeed = rand() % 1000 + 1;
 
@@ -228,10 +188,9 @@ int main()
 	/*initialize game*/
 	initializeGame(numPlayer, k, gameSeed, &Game);
 
-	/*load player 0 hands with silverHand array & player 1 with copper*/
+	/*load player 0 hands with silverHand array & player's 1 deck with copper*/
 	memcpy(Game.hand[0], silverHand, sizeof(int) * MAX_HAND);
-	memcpy(Game.hand[1], copperHand, sizeof(int) * MAX_HAND);
-
+	memcpy(Game.deck[1], copperHand, sizeof(int) * MAX_HAND);
 
 	/*Save player 0's deck*/
 	for (i = 0; i < 10; i++)
@@ -239,43 +198,38 @@ int main()
 		p_0_deckBeforeVillage[i] = Game.deck[0][i];
 	}
 
-	updateCoins(0, &Game, 0);
+	/*save player 1's deck*/
+	for (i = 0; i < 10; i++)
+	{
+		p_1_deckBeforeVillage[i] = Game.deck[1][i];
+	}
 
-	currentNumCards = (numHandCards(&Game));
-
-	cardType = handCard(0, &Game);
-
-	/*play the adventurer card*/
+	/*play the smithy card*/
 	result = playCard(0, 1, 2, 3, &Game);
 
 	numCardsAfter = (numHandCards(&Game));
 
-	/*Copy the hand after the Adventure was played*/
-	for (i = 0; i < numCardsAfter+2; i++)
+	/*Copy the hand after the Smithy was played*/
+	for (i = 0; i < numCardsAfter; i++)
 	{
 		p_0_handAfterVillage[i] = Game.hand[0][i];
 	}
 
-
-#if (NOISY_TEST==1)
-	if (p_0_handAfterVillage[currentNumCards] == p_0_deckBeforeVillage[currentNumCards - 3] && p_0_handAfterVillage[currentNumCards + 1] == p_0_deckBeforeVillage[currentNumCards - 4])
+	if (p_0_deckBeforeVillage[4] == p_0_handAfterVillage[0])
 	{
-		printf("\t Current card = %s, Expected card = %s\n", cardNames[p_0_handAfterVillage[currentNumCards]], cardNames[p_0_deckBeforeVillage[currentNumCards - 3]]);
-		printf("\t Current card = %s, Expected card = %s\n", cardNames[p_0_handAfterVillage[currentNumCards + 1]], cardNames[p_0_deckBeforeVillage[currentNumCards - 4]]);
-		printf(" Test #2 passed. Player received treasure cards from deck \n");
+		printf("\t Received card: %s, Expected card: %s \n", cardNames[p_0_handAfterVillage[0]], cardNames[p_0_deckBeforeVillage[4]]);
+		printf(" Test #3 passed. Village was replaced by correct card! \n");
 	}
 	else
 	{
-		printf("\t Current card = %s, Expected card = %s\n", cardNames[p_0_handAfterVillage[currentNumCards]], cardNames[p_0_deckBeforeVillage[currentNumCards - 3]]);
-		printf("\t Current card = %s, Expected card = %s\n", cardNames[p_0_handAfterVillage[currentNumCards + 1]], cardNames[p_0_deckBeforeVillage[currentNumCards - 4]]);
-		printf(" Test #2 FAILED! Player did not receive treasure cards from own deck. \n");
+		printf("\t Received card: %s, Expected card: %s \n", cardNames[p_0_handAfterVillage[0]], cardNames[p_0_deckBeforeVillage[4]]);
+		printf(" Test #3 FAILED! Village was not replaced by correct card! \n");
 	}
 
-#endif
 
 	/*Starting Test #3*/
 #if (NOISY_TEST==1)
-	printf("\n Starting Test #3 - Adventurer doesn't affect other player's deck \n");
+	printf("\n Starting Test #4 - Village doesn't affect other player's deck \n");
 #endif
 
 	/*initialize gameSeed*/
@@ -303,7 +257,7 @@ int main()
 
 	numCardsAfter = (numHandCards(&Game));
 
-	/*Copy p1's deck after the Adventurer was played*/
+	/*Copy p1's deck after the Village was played*/
 	for (i = 0; i < 10; i++)
 	{
 		p_1_deckAfterVillage[i] = Game.deck[1][i];
@@ -312,17 +266,17 @@ int main()
 #if (NOISY_TEST==1)
 	if (memcmp(p_1_deckBeforeVillage, p_1_deckAfterVillage, 10) == 0)
 	{
-		printf("Test #3 passed and other player's deck was not affected! \n");
+		printf("Test #4 passed and other player's deck was not affected! \n");
 	}
 	else
 	{
-		printf("Test #3 FAILED! Other player's deck was affected by Adventurer! \n");
+		printf("Test #4 FAILED! Other player's deck was affected by Village! \n");
 	}
 #endif
 
-	/*Starting Test #4*/
+	/*Starting Test #5*/
 #if (NOISY_TEST==1)
-	printf("\n Starting Test #4 - adventurer doesn't affect other player's hand \n");
+	printf("\n Starting Test #5 - Village doesn't affect other player's hand \n");
 #endif
 
 	/*initialize gameSeed*/
@@ -358,17 +312,17 @@ int main()
 #if (NOISY_TEST==1)
 	if (memcmp(p_1_handBeforeVillage, p_1_handAfterVillage, 10) == 0)
 	{
-		printf("Test #4 passed and other player's hand was not affected! \n");
+		printf("Test #5 passed and other player's hand was not affected! \n");
 	}
 	else
 	{
-		printf("Test #4 FAILED! Other player's hand was affected by Adventurer! \n");
+		printf("Test #5 FAILED! Other player's hand was affected by Village! \n");
 	}
 #endif
 
 	/*Starting Test #5*/
 #if (NOISY_TEST==1)
-	printf("\n Starting Test #5 - ensure player doesn't receive additional actions \n");
+	printf("\n Starting Test #6 - ensure player doesn't receive additional cards \n");
 #endif
 	/*initialize gameSeed*/
 	gameSeed = rand() % 1000 + 1;
@@ -381,7 +335,6 @@ int main()
 
 	/*load player 0 hands with silverHand array & player 1 with copper*/
 	memcpy(Game.hand[0], silverHand, sizeof(int) * MAX_HAND);
-	memcpy(Game.hand[1], copperHand, sizeof(int) * MAX_HAND);
 
 	/*load player's deck with gold*/
 	memcpy(Game.deck[0], silverHand, sizeof(int) * MAX_DECK);
@@ -391,30 +344,37 @@ int main()
 	currentNumCards = (numHandCards(&Game));
 
 	cardType = handCard(0, &Game);
+	
+	testHandCount = numHandCards(&Game);
+	testDeckCount = Game.deckCount[0];
 
-	/*play the Adventurer card*/
+	if (testDeckCount > 2)
+	{
+		Game.deckCount[0] = 2;
+	}
+
+	/*play the Village card*/
 	result = playCard(0, 1, 2, 3, &Game);
 
-	expectedActions = 0;
-	currentActions = Game.numActions;
+	
 
 #if (NOISY_TEST==1)
-	if (expectedActions == currentActions)
+	if (testHandCount+1 == numHandCards(&Game))
 	{
-		printf("\t Current actions = %d, Expected actions = %d\n", currentActions, expectedActions);
-		printf("Test #5 passed. \n");
+		printf("\t Current handcount = %d, Expected handCount = %d\n", numHandCards(&Game), testHandCount);
+		printf("Test #6 passed. \n");
 	}
 	else
 	{
-		printf("\t Current actions = %d, Expected actions = %d\n", currentActions, expectedActions);
-		printf("Test #5 FAILED! Player had additional actions. \n");
+		printf("\t Current handcount = %d, Expected handCount = %d\n", numHandCards(&Game), testHandCount);
+		printf("Test #6 FAILED! Player had additional cards. \n");
 	}
 
 #endif
 
 	/*Starting Test #7*/
 #if (NOISY_TEST==1)
-	printf("\n Starting Test #6 - ensure player doesn't receive additional buys \n");
+	printf("\n Starting Test #7 - ensure player doesn't receive additional buys \n");
 #endif
 	/*initialize gameSeed*/
 	gameSeed = rand() % 1000 + 1;
@@ -448,12 +408,12 @@ int main()
 	if (expectedBuys == currentBuys)
 	{
 		printf("\t Current buys = %d, Expected buys = %d\n", currentBuys, expectedBuys);
-		printf("Test #6 passed.  Player did not have additional buys.\n");
+		printf("Test #7 passed.  Player did not have additional buys.\n");
 	}
 	else
 	{
 		printf("\t Current buys = %d, Expected buys = %d\n", currentBuys, expectedBuys);
-		printf("Test #6 FAILED! Player had additional buys. \n");
+		printf("Test #7 FAILED! Player had additional buys. \n");
 	}
 
 #endif
