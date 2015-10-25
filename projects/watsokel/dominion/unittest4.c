@@ -2,7 +2,7 @@
 * Programmed by: Kelvin Watson
 * Filename: unittest4.c
 * Created: 10 Oct 2015
-* Last modified: 15 Oct 2015
+* Last modified: 21 Oct 2015
 * Description: Unit tests for dominion.c 's gainCard() function
 * -----------------------------------------------------------------------
 */
@@ -19,30 +19,19 @@
 
 int checkDiscardCard(int handPos, int player, struct gameState* state,int handCount, int discardedCard){
   int errFlag=0; //used in place of assertion failure: test passed=0; assertion failure=1
-  
   return errFlag;
 }
 
 
 int main() {
-  int i,p,r;
+  int p,r;
   int seed = 1000;
   int numPlayers = 2;
   int k[10] = {adventurer, council_room, feast, gardens, mine
     , remodel, smithy, outpost, salvager, sea_hag};
   struct gameState G;
-  int estates[MAX_HAND];
-  int golds[MAX_HAND];
   int errFlag=0;
   int supplyPos, toFlag, gain;
-  
-  for (i = 0; i < MAX_HAND; i++){
-    estates[i] = estate;
-  }
-  
-  for (i = 0; i < MAX_HAND; i++){
-    golds[i] = gold;
-  }
   
   printf ("TESTING gainCard():\n");
 	
@@ -80,7 +69,7 @@ int main() {
   }
   
   if(errFlag != 0){
-    printf("Some tests failed.\n");
+    printf("Some tests failed. See bug1.c for details.\n");
   } else {
     printf("All tests passed!\n");
   }

@@ -12,6 +12,9 @@
 // to remove printfs, set PRINT_TEST to 0
 #define PRINT_TEST 1
 
+// to enable asserts, set ENABLE_ASSERTS to 1
+#define ENABLE_ASSERTS 0
+
 int main() {
  
   /* set up game state */
@@ -61,41 +64,67 @@ int main() {
        updateCoins(p, &G, bonus);
 #if (PRINT_TEST == 1)
        printf("Treasure Cards: %d\nG.coins = %d, expected = %d\n", handCount, G.coins, handCount * 1 + bonus);
+       if (G.coins == handCount * 1 + bonus)
+	 printf("Pass!\n");
+       else
+	 printf("Fail!\n");
 #endif
        /* check that number of coins is correct */
+#if (ENABLE_ASSERTS == 1)
        assert(G.coins == handCount * 1 + bonus);
+#endif
        
        /* set all cards to silver */
        memcpy(G.hand[p], silvers, sizeof(int) * handCount);
        updateCoins(p, &G, bonus);
 #if (PRINT_TEST == 1)
        printf("Treasure Cards: %d\nG.coins = %d, expected = %d\n", handCount, G.coins, handCount * 2 + bonus);
+       if (G.coins == handCount * 2 + bonus)
+	 printf("Pass!\n");
+       else
+	 printf("Fail!\n");
 #endif
        /* check that number of coins is correct */
+#if (ENABLE_ASSERTS == 1)
        assert (G.coins == handCount * 2 + bonus);
+#endif
        
        /* set all cards to gold*/
        memcpy(G.hand[p], golds, sizeof(int) * handCount);
        updateCoins(p, &G, bonus);
 #if (PRINT_TEST == 1)
        printf("Treasure Cards: %d\nG.coins = %d, expected = %d\n", handCount, G.coins, handCount * 3 + bonus);
+       if (G.coins == handCount * 3 + bonus)
+	 printf("Pass!\n");
+       else
+	 printf("Fail!\n");
 #endif
        /* check that number of coins is correct */
+#if (ENABLE_ASSERTS == 1)
        assert(G.coins == handCount * 3 + bonus);
+#endif
        
        /* set all cards to non-Treasure cards */
        memcpy(G.hand[p], duchies, sizeof(int) * handCount);
        updateCoins(p, &G, bonus);
 #if (PRINT_TEST == 1)
        printf("Treasure Cards: 0\nG.coins = %d, expected = %d\n", G.coins, bonus);
+       if (G.coins == bonus)
+	 printf("Pass!\n");
+       else
+	 printf("Fail!\n");
 #endif
        /* check that number of coins is correct */
+#if (ENABLE_ASSERTS == 1)
        assert(G.coins == bonus);
+#endif
      }
     }
   }
   
+#if (ENABLE_ASSERTS == 1)  
   printf("All tests passed!\n");
+#endif  
   
   return 0;
 }

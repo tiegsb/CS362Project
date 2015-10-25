@@ -1,9 +1,9 @@
 /*
 *	CS362 - Assignment 3 - unittest1.c
-*	Unit Test #1: This program runs 6 tests to ensure the 
+*	Unit Test #1: This program runs 6 tests to ensure the
 *		updateCoins method 	in dominion is properly working.
 *		The program checks the method against various hands:
-*		hands with treasure cards as well as empty hands, 
+*		hands with treasure cards as well as empty hands,
 *		with bonuses and no bonuses, different hand counts aside
 *		from just the 5 at each turn.
 *	Author: Carol D. Toro
@@ -49,7 +49,8 @@ int main()
 
 	/*Start Test 1*/
 #if (NOISY_TEST==1)
-	printf("Starting Test #1 with 1copper, 4silver, 3gold, no bonus, handCount of 8 \n");
+	printf("Starting unittest1.c which checks the updateCoins() method \n");
+	printf("\n Starting Test #1 with 1copper, 4silver, 3gold, no bonus, handCount of 8 \n");
 #endif
 	/*load hand with silver and gold*/
 	testHand1[0] = copper;
@@ -80,16 +81,27 @@ int main()
 	updateCoins(0, &Game, bonus);
 
 	/*Coins expected to be 18*/
-	assert(Game.coins == 18);
+	//assert(Game.coins == 18);
+
+
 #if (NOISY_TEST==1)
-	printf("\t Game coins=%d Expected=%d \n", Game.coins, 18);
-	printf("Test #1 passed. \n");
+	if (Game.coins == 18)
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 18);
+		printf("Test #1 passed. \n");
+	}
+	else
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 18);
+		printf("Test #1 FAILED! Bug present in updateCoins()...\n");
+	}
+	
 #endif
 
 
 	/*Start Test 2*/
 #if (NOISY_TEST==1)
-	printf("Starting Test #2 with empty hand no bonus \n");
+	printf("\n Starting Test #2 with empty hand no bonus \n");
 #endif
 
 	/*Set handCount and Seed*/
@@ -108,18 +120,26 @@ int main()
 	updateCoins(0, &Game, bonus);
 
 	/*Coins expected to be 0*/
-	assert(Game.coins == 0);
+	//assert(Game.coins == 0);
 
 #if (NOISY_TEST==1)
-	printf("\t Game coins=%d Expected=%d \n", Game.coins, 0);
-	printf("Test #2 passed. \n");
+	if (Game.coins == 0)
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 0);
+		printf("Test #2 passed.  \n");
+	}
+	else
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 0);
+		printf("Test #2 FAILED! Bug present in updateCoins()... \n");
+	}
+	
 #endif
 
 
 	/*Start Test 3*/
 #if (NOISY_TEST==1)
-
-	printf("Starting Test #3 with empty hand, 7 bonus \n");
+	printf("\n Starting Test #3 with empty hand, 7 bonus \n");
 #endif
 
 	bonus = 7;
@@ -141,18 +161,27 @@ int main()
 	updateCoins(0, &Game, bonus);
 
 	/*Coins expected to be 7*/
-	assert(Game.coins == 7);
+	//assert(Game.coins == 7);
 
 #if (NOISY_TEST==1)
-	printf("\t Game coins=%d Expected=%d \n", Game.coins, 7);
-	printf("Test #3 passed. \n");
+	if (Game.coins == 7)
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 7);
+		printf("Test #3 passed. \n");
+	}
+	else
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 7);
+		printf("Test #3 FAILED! Bug present in updateCoins()... \n");
+	}
+
 #endif
 
 
 
 	/*Start Test 4*/
 #if (NOISY_TEST==1)
-	printf("Starting Test #4 with only 1 gold and no bonus \n");
+	printf("\n Starting Test #4 with only 1 gold and no bonus \n");
 #endif
 	/*load hand with 1 gold*/
 	testHand4[0] = gold;
@@ -180,18 +209,27 @@ int main()
 	updateCoins(0, &Game, bonus);
 
 	/*Coins expected to be 3*/
-	assert(Game.coins == 3);
+	//assert(Game.coins == 3);
 
 #if (NOISY_TEST==1)
-	printf("\t Game coins=%d Expected=%d \n", Game.coins, 3);
-	printf("Test #4 passed. \n");
+	if (Game.coins == 3)
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 3);
+		printf("Test #4 passed. \n");
+	}
+	else
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 3);
+		printf("Test #4 FAILED! Bug present in updateCoins()... \n");
+	}
+
 #endif
 
 
 	/*Start Test 5*/
 #if (NOISY_TEST==1)
 
-	printf("Starting Test #5 with 7copper, 1gold, 2silver, 15 bonus, hand count of 10 \n");
+	printf("\n Starting Test #5 with 7copper, 1gold, 2silver, 15 bonus, hand count of 10 \n");
 #endif
 	/*load hand with silver and gold*/
 	testHand5[0] = copper;
@@ -228,17 +266,26 @@ int main()
 	updateCoins(0, &Game, bonus);
 
 	/*Coins expected to be 29*/
-	assert(Game.coins == 29);
+	//assert(Game.coins == 29);
 
 #if (NOISY_TEST==1)
-	printf("\t Game coins=%d Expected=%d \n", Game.coins, 29);
-	printf("Test #5 passed. \n");
+	if (Game.coins == 29)
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 29);
+		printf("Test #5 passed. \n");
+	}
+	else
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 29);
+		printf("Test #5 FAILED! Bug present in updateCoins()... \n");
+	}
+	
 #endif
 
 	/*Start Test 6*/
 #if (NOISY_TEST==1)
 
-	printf("Starting Test #6 with 8 gold, 0 bonus, hand count of 3 \n");
+	printf("\n Starting Test #6 with 8 gold, 0 bonus, hand count of 3 \n");
 #endif
 	/*load hand with silver and gold*/
 	testHand2[0] = gold;
@@ -272,11 +319,20 @@ int main()
 	updateCoins(0, &Game, bonus);
 
 	/*Coins expected to be 9*/
-	assert(Game.coins == 9);
+	//assert(Game.coins == 9);
 
 #if (NOISY_TEST==1)
-	printf("\t Game coins=%d Expected=%d \n", Game.coins, 9);
-	printf("Test #6 passed. \n");
+	if (Game.coins == 9)
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 9);
+		printf("Test #6 passed. \n");
+	}
+	else
+	{
+		printf("\t Game coins=%d Expected=%d \n", Game.coins, 9);
+		printf("Test #6 FAILED! Bug present in updateCoins()... \n");
+	}
+
 #endif
 
 	return 0;

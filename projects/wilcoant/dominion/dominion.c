@@ -647,13 +647,15 @@ int play_adventurer(struct gameState *state, int currentPlayer, int *temphand)
     int drawntreasure = 0; //counter for treasure cards 
     int cardDrawn; //temp card drawn var 
     int z = 0; //counter for temp hand 
-    
+    int y = 0; //test counter var 
+    //int k[10] = {&z, &drawntreasure, &y}; //counters for testing
      
     while(drawntreasure<2){
 	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 	  shuffle(currentPlayer, state);
 	}
 	drawCard(currentPlayer, state);
+    y++; //test counter var 
 	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
 	if (cardDrawn == copper || (cardDrawn == silver && cardDrawn == gold))
 	  drawntreasure++;
@@ -667,13 +669,13 @@ int play_adventurer(struct gameState *state, int currentPlayer, int *temphand)
 	state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
 	z=z-1;
       }
-      return 0;
+      return (z + drawntreasure) - y; //return 0 if not testing 
 }
 int play_smithy(int currentPlayer, struct gameState *state, int handPos)
 {
     int i;
    //+3 Cards
-      for (i = 0; i <= 3; i++)
+      for (i = 0; i < 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
@@ -715,10 +717,12 @@ int play_remodel(struct gameState *state, int choice2, int choice1, int currentP
 int play_council(struct gameState *state, int currentPlayer, int handPos)
 {
     int i; 
-    
+    int x = 0; //testing vars 
+    int y = 0; //testing vars 
   //+4 Cards
       for (i = 0; i < 4; i++)
 	{
+      x++; //testing 
 	  drawCard(currentPlayer, state);
 	}
 			
@@ -727,29 +731,31 @@ int play_council(struct gameState *state, int currentPlayer, int handPos)
 			
       //Each other player draws a card
       for (i = 0; i < state->numPlayers; i++)
-	{
+	{ 
 	  if ( i != currentPlayer )
 	    {
 	      drawCard(i, state);
+          y++; //testing 
 	    }
 	}
 			
       //put played card in played card pile
       discardCard(handPos, currentPlayer, state, 0);
-			
-      return 0;    
+	 //x + y gives value 4 + number of of other players if functioning properly	
+      return x + y; //return 0 if not testing     
 }
 int play_village(int currentPlayer, int handPos, struct gameState *state)
 {
-      //+1 Card
+     
+    //+1 Card
       drawCard(currentPlayer, state);
-			
+	
       //+2 Actions
       state->numActions = state->numActions + 2;
 			
       //discard played card from hand
       discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+      return 0;  //return 0 if not testing 
 }
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {

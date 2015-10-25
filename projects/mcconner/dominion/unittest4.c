@@ -15,22 +15,68 @@ int testDiscardCard(struct gameState *gs, int player, int trashFlag){
   
   int handPos = 0;
   int handCount=5;
-  
+  int errors = 0;
+
   printf("BEFORE DISCARD\n");
   printf("discardPile: %d\n", gs->discardCount[player]);
   printf("playedCards: %d\n", gs->playedCardCount);
   printf("handCount: %d\n", gs->handCount[player]);
+
+
   discardCard(handPos, player, gs, trashFlag);
   printf("AFTER DISCARD\n");
   printf("discardPile: %d\n", gs->discardCount[player]);
   printf("playedCards: %d\n", gs->playedCardCount);
   printf("handCount: %d\n", gs->handCount[player]);
-  assert(gs->handCount[player] == handCount-1);
-  if(trashFlag == 0)
-    assert(gs->playedCardCount == 1);
+  //assert(gs->handCount[player] == handCount-1);
+
+
+  if(gs->handCount[player] == handCount-1){
+    printf("Pass: correct handCount.\n");
+  }else{
+    errors++;
+    printf("Fail: wrong handCount.\n");
+  }
+  printf("Hand count: %d, expected: %d\n", gs->handCount[player], handCount-1);
+
+  if(trashFlag == 0){
+     if(gs->playedCardCount == 1){
+        printf("Pass: correct playedCardCount\n");
+      }else{
+        errors++;
+        printf("Fail: wrong playedCardCount\n");
+      }
+      printf("Played card count: %d, expected: 1\n", gs->playedCardCount);
+    if(gs->discardCount == 0){
+      printf("Pass: correct discardCount\n");
+    }else{
+      errors++;
+      printf("Fail: wrong discardCount\n");
+    }
+    printf("Discard pile count: %d, expected: 0\n", gs->discardCount[player]);
+  }else{
+    //assert(gs->playedCardCount == 0);
+      if(gs->playedCardCount == 0){
+        printf("Pass: correct playedCardCount\n");
+      }else{
+        printf("Fail: wrong playedCardCount\n");
+        errors++;
+      }
+      printf("Played card count: %d, expected: 0\n", gs->playedCardCount);
+      
+      if(gs->discardCount == 0){
+        printf("Pass: correct discardCount\n");
+      }else{
+        errors++;
+        printf("Fail: wrong discardCount\n");
+      }
+      printf("Discard pile count: %d, expected: 1\n", gs->discardCount[player]);
+  }
+
+  if(errors == 0)
+    return 0;
   else
-    assert(gs->playedCardCount == 0);
-  return 0;
+    return (errors);
 }
 
 int main(){
@@ -54,7 +100,7 @@ int main(){
   printf("\nTesting player 0 (Trash Flag set)\n");
   player=0;
   trashFlag=1;
-  returned = testDiscardCard(&gs, player, trashFlag);
+  returned += testDiscardCard(&gs, player, trashFlag);
 
   printf("\nTesting player 1 (Trash Flag not set)\n");
   player=1;
@@ -63,7 +109,7 @@ int main(){
   if(returned == 0)
     printf("\nAll discardCard tests passed!\n");
   else
-    printf("\nSome discardCard tests failed.\n");
+    printf("\n%d discardCard tests failed.\n", returned);
   return 0;
 }
 
