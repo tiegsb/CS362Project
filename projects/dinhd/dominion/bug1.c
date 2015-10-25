@@ -14,3 +14,5 @@ There is a bug with mineCard. It does not check to see if the card being bought 
 It only checks to see if the card exists. 
 
 There is a bug with mineCard that was introduced by me, the input parameters for choice1 and choice2 were swapped. 
+
+There is a bug with minion
