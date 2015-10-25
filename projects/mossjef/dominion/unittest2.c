@@ -127,5 +127,7 @@ void testfullDeckCount () {
 
 	if(fail == 0) {
 		printf("fullDeckCount(): OK - ALL TESTS PASSED\n\n");	
+	} else {
+		printf("fullDeckCount(): ISSUES - AT LEAST ONE TEST FAILED \n\n");
 	}
 }
