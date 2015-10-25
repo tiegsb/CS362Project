@@ -2,7 +2,7 @@
  * Author:  Brian Stamm
  * Title:  unitTest4.c
  * Assignment:  3
- * Date:  10.?.15
+ * Date:  10.25.15
  * Notes:  Unit test for isGameOver().
  * ****************/
 

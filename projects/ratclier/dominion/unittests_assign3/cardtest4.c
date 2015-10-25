@@ -1,13 +1,15 @@
 #include <stdio.h>
+#include <math.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "unittest_helpers.h"
+#include "rngs.h"
 
 
 // Test the feast card
 //
-// NOTE: YOU ADDED A BUG: after gainCard(), removed the line that would
-// set x = 0 to signal the end of card buying.
+// NOTE: YOU ADDED A BUG: gainCard() should add the card to the discard
+// pile, but now it adds it to the hand.
 //
 // From the Dominion Card Game Wiki (dominioncg.wikia.com):
 //
@@ -17,7 +19,13 @@
 //
 // You can only gain cards from the supply pile.
 //
-int testFeastCard(struct gameState *state)
+// TO TEST:
+//
+// - Card came from supply pile.
+// - Card went to discard pile.
+// - Card is valued <= 5 (getCost() will tell you this)
+//
+int testFeastCard(struct gameState *state, int currentPlayer, int handPos, int choice)
 {
     struct gameState *origState;  // copy of game state
 
@@ -25,8 +33,67 @@ int testFeastCard(struct gameState *state)
     //
     origState = copyState(state);
 
-    printf("Here is where the feast card will be tested.\n");
+    // int cardEffect(int card, 
+    //                int choice1, 
+    //                int choice2, 
+    //                int choice3, 
+    //                struct gameState *state, 
+    //                int handPos, 
+    //                int *bonus)
+    //
+    // Feast card only uses choice1.
+    // 
+    // int feastCard(int choice1, struct gameState *state)
+    //
+    // End result: one new card from supply costing up to 5 coins added to
+    // discard pile. You can only buy one! TEST FOR THIS!
+    //
+    cardEffect(feast, choice, 0, 0, state, handPos, 0);
+
+    // Is the gained card valued at <= 5 coins?
+    //
+    if(getCost(choice) <= 5)
+    {
+        printf("feastCard: PASS gained card is valued at <= 5 coins\n");
+    }
+    else
+    {
+        printf("feastCard: FAIL gained card is valued at > 5 coins\n");
+    }
+
+    // Did the gained card come from the supply pile?
+    //
+    if(state->supplyCount[handPos] == origState->supplyCount[handPos]-1)
+    {
+        printf("feastCard: PASS gained card taken from supply pile\n");
+    }
+    else
+    {
+        printf("feastCard: FAIL gained card not taken from supply pile\n");
+    }
     
+    // Was the gained card added to the discard pile?
+    //
+    if(state->discard[currentPlayer][origState->discardCount[currentPlayer]] == handPos)
+    {
+        printf("feastCard: PASS gained card added to discard pile\n");
+    }
+    else
+    {
+        printf("feastCard: FAIL gained card not added to discard pile\n");
+    }
+
+    // Was the discard pile count incremented?
+    //
+    if(state->discardCount[currentPlayer] == origState->discardCount[currentPlayer]+1)
+    {
+        printf("feastCard: PASS discard count incremented\n");
+    }
+    else
+    {
+        printf("feastCard: FAIL discard count not incremented\n");
+    }
+
     // Report what, if anything, changed in the game state
     //
     whatChanged(origState, state);
@@ -39,6 +106,9 @@ int testFeastCard(struct gameState *state)
 int main(int argc, char *argv[])
 {
     int numPlayers = 2;
+    int handPos;
+    int choice;
+    int currentPlayer;
     int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, cutpurse, sea_hag, tribute, smithy, feast};
     int randomSeed = 100;
     struct gameState *state;
@@ -50,71 +120,29 @@ int main(int argc, char *argv[])
 
     printf("\n");
 
-    // Discard a trashed card
-    //
     printf(">>> TESTING: feast card...\n");
-    testFeastCard(state);
+
+    // Set up arguments to cardEffect().
+    //
+    // Cards worth up to 5 coins (for choice):
+    //
+    // 5: council room, festival, laboratory, library, market, mine, witch
+    //
+    // 4: bureaucrat, feast, gardens, militia, moneylender, remodel,
+    // smithy, spy, thief, throne room
+    //
+    // 3: chancellor, village, woodcutter, workshop
+    //
+    // 2: cellar, chapel, moat
+    //
+    // Be sure to have the card in kingdomCards[] above! You control this,
+    // don't try to be tricky.
+    //
+    currentPlayer = 0;
+    handPos = floor(Random() * state->handCount[currentPlayer]);
+    choice = smithy;
+    testFeastCard(state, currentPlayer, handPos, choice);
 
     return 0;
 }
 
-
-/*
-int feastCard(int choice1, struct gameState *state)
-{
-  int currentPlayer = whoseTurn(state);
-  int temphand[MAX_HAND];
-  int i; // for loop counter
-  int x; // while loop flag
-
-  //gain card with cost up to 5
-  //Backup hand
-  for (i = 0; i <= state->handCount[currentPlayer]; i++){
-        temphand[i] = state->hand[currentPlayer][i];//Backup card
-        state->hand[currentPlayer][i] = -1;//Set to nothing
-  }
-  //Backup hand
-
-  //Update Coins for Buy
-  updateCoins(currentPlayer, state, 5);
-  x = 1;//Condition to loop on
-  while( x == 1) {//Buy one card
-          if (supplyCount(choice1, state) <= 0){
-            if (DEBUG)
-              printf("None of that card left, sorry!\n");
-            if (DEBUG){
-              printf("Cards Left: %d\n", supplyCount(choice1, state));
-            }
-          }
-          else if (state->coins < getCost(choice1)){
-          printf("That card is too expensive!\n");
-
-          if (DEBUG){
-            printf("Coins: %d < %d\n", state->coins, getCost(choice1));
-          }
-          }
-          else{
-            if (DEBUG){
-              printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
-            }
-
-            gainCard(choice1, state, 0, currentPlayer);//Gain the card
-
-            if (DEBUG){
-              printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
-            }
-          }
-  }     
-
-  //Reset Hand
-  for (i = 0; i <= state->handCount[currentPlayer]; i++){
-          state->hand[currentPlayer][i] = temphand[i];
-          temphand[i] = -1;
-  }
-
-  //Reset Hand
-                        
-  return 0;
-}
-
-*/
