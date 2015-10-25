@@ -35,5 +35,56 @@ player: player.c interface.o
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
+unittestresults.out: 
+	echo "cardtest1.c:" >> unittestresults.out
+	gcc  dominion.c  rngs.c cardtest1.c -o cardtest1 $(CFLAGS)
+	./cardtest1 >> unittestresults.out
+	echo "coverage for cardtest1.c:" >> unittestresults.out
+
+	echo "cardtest2.c:" >> unittestresults.out
+	gcc  dominion.c  rngs.c cardtest2.c -o cardtest2 $(CFLAGS)
+	./cardtest2 >> unittestresults.out
+	echo "coverage for cardtest2.c:" >> unittestresults.out
+
+	echo "cardtest3.c:" >> unittestresults.out
+	gcc  dominion.c  rngs.c cardtest3.c -o cardtest3 $(CFLAGS)
+	./cardtest3 >> unittestresults.out
+	echo "coverage for cardtest3.c:" >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+
+	echo "cardtest4.c:" >> unittestresults.out
+	gcc  dominion.c  rngs.c cardtest4.c -o cardtest4 $(CFLAGS)
+	./cardtest4 >> unittestresults.out
+	echo "coverage for cardtest4.c:" >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+	echo "unittest1.c:" >> unittestresults.out
+	gcc  dominion.c  rngs.c unittest1.c -o unittest1 $(CFLAGS)
+	./unittest1 >> unittestresults.out
+	echo "coverage for unittest1.c:" >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+
+	echo "unittest2.c:" >> unittestresults.out
+	gcc  dominion.c  rngs.c unittest2.c -o unittest2 $(CFLAGS)
+	./unittest2 >> unittestresults.out
+	echo "coverage for unittest2.c:" >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+
+	echo "unittest3.c:" >> unittestresults.out
+	gcc  dominion.c  rngs.c unittest3.c -o unittest3 $(CFLAGS)
+	./unittest3 >> unittestresults.out
+	echo "coverage for unittest3.c:" >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+
+	echo "unittest4.c:" >> unittestresults.out
+	gcc  dominion.c  rngs.c unittest4.c -o unittest4 $(CFLAGS)
+	./unittest4 >> unittestresults.out
+	echo "coverage for unittest4.c:" >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
