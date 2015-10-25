@@ -13,6 +13,8 @@
 
 int main() {
 
+	printf("Test village card:\n");
+
 	srand(time(NULL));
 	int numberPlayer = 2;
 	int player1 = 0;
@@ -39,19 +41,37 @@ int main() {
 	newActionCnt=G.numActions;
 	newHandCount=G.handCount[player1];
 
+	printf("************************************************************\n");
+
+	printf("Test case: Make sure the right amount of actions are added:\n");
+
+	printf("************************************************************\n");
+
 	if(newActionCnt == (actions+2)) {
-		printf("TEST 1 PASSED.\n");
+		printf("TEST PASSED.\n");
 	} else {
-		printf("TEST 1 FAILED.\n");
+		printf("TEST FAILED.\n");
 	}
 
-	printf("newhandcnt: %d\n", newHandCount);
-	printf("handcnt: %d\n", handCount);
+	// printf("newhandcnt: %d\n", newHandCount);
+	// printf("handcnt: %d\n", handCount);
+
+	printf("**************************************************************************\n");
+
+	printf("Test case: Make sure an extra card is in hand after playing village card (old hand and new hand should be equal):\n");
+
+	printf("**************************************************************************\n");
 
 	if(newHandCount == handCount) {
-		printf("TEST 2 PASSED.\n");
+		printf("TEST PASSED.\n");
 	} else {
-		printf("TEST 2 FAILED.\n");
+		printf("TEST FAILED:\n");
+	    printf("Old hand count: %d\n", handCount);
+	    printf("New hand count: %d\n", newHandCount);
+
 	}
+
+	
+	return 0;
 
 }
