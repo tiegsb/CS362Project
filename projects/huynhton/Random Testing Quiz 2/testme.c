@@ -1,3 +1,11 @@
+/* -----------------------------------------------------------------------
+ * Author: Tony Huynh		CS 362		unittest1.c
+
+ * This is for the quiz in Week 4. I made it so that it is much more likely for the user
+ * to encounter the error message.
+ * -----------------------------------------------------------------------
+ */
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
