@@ -746,16 +746,16 @@ int play_council(struct gameState *state, int currentPlayer, int handPos)
 }
 int play_village(int currentPlayer, int handPos, struct gameState *state)
 {
-      int x = 0; //testing counter
+     
     //+1 Card
       drawCard(currentPlayer, state);
-	x++; //remove after testing 	
+	
       //+2 Actions
       state->numActions = state->numActions + 2;
 			
       //discard played card from hand
       discardCard(handPos, currentPlayer, state, 0);
-      return x;  //return 0 if not testing 
+      return 0;  //return 0 if not testing 
 }
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {

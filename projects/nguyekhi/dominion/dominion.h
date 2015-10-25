@@ -53,7 +53,7 @@ enum CARD
   };
 
 struct gameState {
-  int numPlayers; //number of players
+  int numPlayers; //number of players, min is 1 and max is 4, but index of player is from 0 to 3
   int supplyCount[treasure_map+1];  //this is the amount of a specific type of card given a specific number.
   int embargoTokens[treasure_map+1];
   int outpostPlayed;
@@ -85,7 +85,7 @@ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
 		   struct gameState *state);
 /* Responsible for initializing all supplies, and shuffling deck and
    drawing starting hands for all players.  Check that 10 cards selected
-   are in fact (different) kingdom cards, and that numPlayers is valid. 
+   are in fact (different) kingdom cards, and that numPlayers is valid.
 
 Cards not in game should initialize supply position to -1 */
 
@@ -130,9 +130,11 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 
 // card effects
 void CEsmithy(int currentPlayer, struct gameState *state, int handPos);
-void CEadventurer(struct gameState *state, int currentPLayer);
+void CEadventurer(struct gameState *state, int currentPLayer, int handPos);
 void CEcouncil_room(int currentPlayer, struct gameState *state, int handPos);
 void CEgreat_hall(int currentPlayer, struct gameState *state, int handPos);
 void CEsteward(int currentPlayer, struct gameState *state, int choice1, int choice2, int choice3, int handPos);
+
+void displayGameState(struct gameState *state, int currentPlayer);
 
 #endif

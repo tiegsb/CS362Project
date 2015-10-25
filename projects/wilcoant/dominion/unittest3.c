@@ -1,4 +1,8 @@
-/* -----------------------------------------------------------------------
+/* 
+Anthony Wilcox
+CS362 
+Fall 2015
+-----------------------------------------------------------------------
  * unit test for scoreFor  -----------------------------------------------------------------------
  */
 //used provided testUpdateCoins.c shell provided in OSU Fall CS362
@@ -23,7 +27,7 @@ int main() {
     
     memset(&G, 23, sizeof(struct gameState));   // clear the game state
     r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
-    
+    printf ("TESTING scoreFor():\n");
     while (numPlayer <= MAX_PLAYERS)
     {//check for all ranges of players 2 - 4
         for (p = 0; p < numPlayer; p++)

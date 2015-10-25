@@ -104,32 +104,31 @@ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
 
   //set number of Kingdom cards
   for (i = adventurer; i <= treasure_map; i++)       	//loop all cards
-    {
-      for (j = 0; j < 10; j++)           		//loop chosen cards
-	{
-	  if (kingdomCards[j] == i)
-	    {
-	      //check if card is a 'Victory' Kingdom card
-	      if (kingdomCards[j] == great_hall || kingdomCards[j] == gardens)
-		{
-		  if (numPlayers == 2){ 
-		    state->supplyCount[i] = 8; 
-		  }
-		  else{ state->supplyCount[i] = 12; }
-		}
-	      else
-		{
-		  state->supplyCount[i] = 10;
-		}
-	      break;
-	    }
-	  else    //card is not in the set choosen for the game
-	    {
-	      state->supplyCount[i] = -1;
-	    }
-	}
-
-    }
+  {
+    for (j = 0; j < 10; j++)           		//loop chosen cards
+  	{
+  	  if (kingdomCards[j] == i)
+      {
+        //check if card is a 'Victory' Kingdom card
+        if (kingdomCards[j] == great_hall || kingdomCards[j] == gardens)
+  	    {
+  	      if (numPlayers == 2){ 
+  	        state->supplyCount[i] = 8; 
+  	      }
+  	      else{ state->supplyCount[i] = 12; }
+  	    }
+        else
+  	    {
+  	      state->supplyCount[i] = 10;
+  	    }
+        break;
+      }
+  	  else    //card is not in the set chosen for the game
+  	  {
+  	    state->supplyCount[i] = -1;
+  	  }
+  	}
+  }
 
   ////////////////////////
   //supply intilization complete
@@ -198,9 +197,14 @@ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
   return 0;
 }
 
+/**
+ * Randomly reorder deck array for player
+ * @param  player valid player int
+ * @param  state  
+ * 
+ * @post state->deck[player] is reordered, but has same num elements.       
+ */
 int shuffle(int player, struct gameState *state) {
- 
-
   int newDeck[MAX_DECK];
   int newDeckPos = 0;
   int card;
@@ -211,6 +215,7 @@ int shuffle(int player, struct gameState *state) {
   qsort ((void*)(state->deck[player]), state->deckCount[player], sizeof(int), compare); 
   /* SORT CARDS IN DECK TO ENSURE DETERMINISM! */
 
+  /* Randomly remove cards from deck into newDeck */
   while (state->deckCount[player] > 0) {
     card = floor(Random() * state->deckCount[player]);
     newDeck[newDeckPos] = state->deck[player][card];
@@ -224,7 +229,6 @@ int shuffle(int player, struct gameState *state) {
     state->deck[player][i] = newDeck[i];
     state->deckCount[player]++;
   }
-
   return 0;
 }
 
@@ -268,31 +272,44 @@ int playCard(int handPos, int choice1, int choice2, int choice3, struct gameStat
 	
   return 0;
 }
-
+/**
+ * Handles entire card purchase.
+ * @param  supplyPos enum of card
+ * @param  state     
+ * @return           0 on success -1 on failure
+ */
 int buyCard(int supplyPos, struct gameState *state) {
   int who;
   if (DEBUG){
     printf("Entering buyCard...\n");
   }
 
-  // I don't know what to do about the phase thing.
-
   who = state->whoseTurn;
 
-  if (state->numBuys < 1){
+  if (state->numBuys < 1)
+  {
     if (DEBUG)
       printf("You do not have any buys left\n");
     return -1;
-  } else if (supplyCount(supplyPos, state) <1){
+  } 
+
+  else if (supplyCount(supplyPos, state) < 1)
+  {
     if (DEBUG)
       printf("There are not any of that type of card left\n");
     return -1;
-  } else if (state->coins < getCost(supplyPos)){
+  } 
+
+  else if (state->coins < getCost(supplyPos))
+  {
     if (DEBUG) 
       printf("You do not have enough money to buy that. You have %d coins.\n", state->coins);
     return -1;
-  } else {
-    state->phase=1;
+  }
+
+  else 
+  {
+    state->phase = 1;
     //state->supplyCount[supplyPos]--;
     gainCard(supplyPos, state, 0, who); //card goes in discard, this might be wrong.. (2 means goes into hand, 0 goes into discard)
   
@@ -301,10 +318,6 @@ int buyCard(int supplyPos, struct gameState *state) {
     if (DEBUG)
       printf("You bought card number %d for %d coins. You now have %d buys and %d coins.\n", supplyPos, getCost(supplyPos), state->numBuys, state->coins);
   }
-
-  //state->discard[who][state->discardCount[who]] = supplyPos;
-  //state->discardCount[who]++;
-    
   return 0;
 }
 
@@ -400,22 +413,20 @@ int isGameOver(struct gameState *state) {
   //if three supply pile are at 0, the game ends
   j = 0;
   for (i = 0; i < 25; i++)
-    {
+  {
       if (state->supplyCount[i] == 0)
-	{
-	  j++;
-	}
-    }
+      {
+        j++;
+      }
+  }
   if ( j >= 3)
     {
       return 1;
     }
-
   return 0;
 }
 
 int scoreFor (int player, struct gameState *state) {
-
   int i;
   int score = 0;
   //score from hand
@@ -450,7 +461,6 @@ int scoreFor (int player, struct gameState *state) {
       if (state->deck[player][i] == great_hall) { score = score + 1; };
       if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
     }
-
   return score;
 }
 
@@ -525,12 +535,12 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state) {
 int drawCard(int player, struct gameState *state)
 {	int count;
   int deckCounter;
-  if (state->deckCount[player] <= 0){//Deck is empty
+  if (state->deckCount[player] <= 0) {//Deck is empty
     
     //Step 1 Shuffle the discard pile back into a deck
     int i;
     //Move discard to deck
-    for (i = 0; i < state->discardCount[player];i++){
+    for (i = 0; i < state->discardCount[player]; i++) {
       state->deck[player][i] = state->discard[player][i];
       state->discard[player][i] = -1;
     }
@@ -1260,7 +1270,14 @@ int updateCoins(int player, struct gameState *state, int bonus)
 
   return 0;
 }
-
+/**
+ * Call drawCard and check type of card drawn. Card remains in hand if Treasure,
+ * otherwise it is added to a temporary array. Repeat until 2 treasure
+ * cards have been drawn, then return cards in temp array to discard. 
+ * @param  state         
+ * @param  currentPlayer 
+ * @return              
+ */
 int adventurerCard(struct gameState *state, int currentPlayer) {
   int drawntreasure = 0;
   int z = 0;// Declare counter for temp hand
@@ -1287,7 +1304,6 @@ int adventurerCard(struct gameState *state, int currentPlayer) {
       z++;
     }
   }
-
   //Discard temp hand
   while(z > 0){
     state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; 
@@ -1296,10 +1312,16 @@ int adventurerCard(struct gameState *state, int currentPlayer) {
   return 0;
 }
 
+/**
+ * Call drawCard 3 times, then call discardCard
+ * @param  state         
+ * @param  currentPlayer 
+ * @param  handPos       card to discard
+ */
 int smithyCard(struct gameState *state, int currentPlayer, int handPos) {
   //+3 Cards
   int i = 0;
-  for (i = 1; i < 3; i)
+  for (i = 1; i < 3; i++)
   {
     drawCard(currentPlayer, state);
   }
@@ -1323,7 +1345,7 @@ int villageCard(struct gameState *state, int currentPlayer, int handPos) {
 
 int greatHallCard(struct gameState *state, int currentPlayer, int handPos) {
   //+1 Card
-  drawCard(((currentPlayer) ? (currentPlayer - 1) : currentPlayer), state);
+  drawCard(((currentPlayer > 0) ? (currentPlayer - 1) : currentPlayer), state);
 
   //+1 Actions
   state->numActions++;

@@ -1,0 +1,3 @@
+inputChar is a simple function that randomly generates a number, and mods it with 95. This is because we want the range to be between 32 and 126 for the character that we desire. If we mod it to 95, and then add to that 32, then we get our desired range for our character.
+
+inputString starts with a sized array, string, and a character, c. It runs a for loop from 0 to 5, the size we need to fill the array, and randomly genereates letters (simlary to inputChar), and adds those characters to the string. It does this until we fill 5 positions in the array, and then outside of the loop it adds the null terminating character. It then returns the array that we generated.
