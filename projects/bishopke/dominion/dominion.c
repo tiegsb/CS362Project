@@ -435,6 +435,7 @@ int scoreFor (int player, struct gameState *state) {
     }
 
   //score from discard
+  //bug: state->discard instead of deck?
   for (i = 0; i < state->discardCount[player]; i++)
     {
       if (state->discard[player][i] == curse) { score = score - 1; };

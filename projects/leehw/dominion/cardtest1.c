@@ -52,7 +52,20 @@ int main (){
      printf("TESTING SMITHY CARD\n");
 
      for(p=0; p<MAX_PLAYERS; p++){
-       printf("Testing for player %d\n", p+1);
+       switch(p){
+         case 0:
+           printf("Testing for smithy card at index 0 of hand\n");
+           break;
+         case 1: 
+           printf("Testing for smithy card at last index of hand\n");
+           break;
+         case 2:
+           printf("Normal testing mode\n");
+           break;
+         case 3:
+           printf("Normal testing mode\n");
+           break;
+       }
        memset(&G, 23, sizeof(struct gameState));   // clear the game state
        r = initializeGame(MAX_PLAYERS, k, seed, &G); // initialize a new game
        //set deck for each player
@@ -94,7 +107,10 @@ void setDeck(struct gameState *G){
     switch(p){
       case 0:
         for (j = 0; j < 10; j++){
-          G->deck[p][j] = baron ;
+          G->deck[p][j] = baron;
+          G->deckCount[p]++;
+          j++;
+          G->deck[p][j] = feast;
           G->deckCount[p]++;
         }
         break;
@@ -102,17 +118,26 @@ void setDeck(struct gameState *G){
         for (j = 0; j < 10; j++){
           G->deck[p][j] = village;
           G->deckCount[p]++;
+          j++;
+          G->deck[p][j] = gardens;
+          G->deckCount[p]++;
         }
         break;
       case 2:
         for (j = 0; j < 10; j++){
           G->deck[p][j] = sea_hag;
           G->deckCount[p]++;
+          j++;
+          G->deck[p][j] = mine;
+          G->deckCount[p]++;
         }
         break;
       case 3:
         for (j = 0; j < 10; j++){
           G->deck[p][j] = adventurer;
+          G->deckCount[p]++;
+          j++;
+          G->deck[p][j] = remodel;
           G->deckCount[p]++;
         }
         break;
@@ -128,7 +153,7 @@ void setHand(struct gameState *G){
       case 0:
         G->handCount[p] = 10;
         for(j = 0; j < G->handCount[p]; j++){
-          if(j== 1) {
+          if(j== 0) {
             G->hand[p][j] = smithy;
           }else{
             G->hand[p][j] = copper;
@@ -138,7 +163,7 @@ void setHand(struct gameState *G){
       case 1:
         G->handCount[p] = 15;
         for(j = 0; j < G->handCount[p]; j++){
-          if(j== 3) {
+          if(j== 14) {
             G->hand[p][j] = smithy;
           }else{
             G->hand[p][j] = silver;
@@ -174,7 +199,6 @@ int checkSmithy(int p, struct gameState *post, int handPos) {
      struct gameState pre;
      int i;
      int currentPlayer;
-     bool found = false;
      bool fail = false;
      int newCard1, newCard2, newCard3;
      int deckCard1, deckCard2, deckCard3;
@@ -189,10 +213,11 @@ int checkSmithy(int p, struct gameState *post, int handPos) {
      printf("Hand Count\t Expected: %d\t Result:%d\n", pre.handCount[p]+2, post->handCount[p]);    
      //check deck count
      printf("Deck Count\t Expected: %d\t Result:%d\n", pre.deckCount[p]-3, post->deckCount[p]);
-     //check cards added to hand
+     //check expected cards are added to hand
+     //assumes no shuffling
      newCard1 = post->hand[p][pre.handCount[p]];
      newCard2 = post->hand[p][pre.handCount[p]+1];
-     newCard3 = post->hand[p][pre.handCount[p]+2];
+     newCard3 = post->hand[p][handPos];
      deckCard1 = pre.deck[p][pre.deckCount[p]-1];
      deckCard2 = pre.deck[p][pre.deckCount[p]-2];
      deckCard3 = pre.deck[p][pre.deckCount[p]-3];
@@ -200,28 +225,6 @@ int checkSmithy(int p, struct gameState *post, int handPos) {
      printf("Added Cards (No.2)\t Expected: %d\t Result:%d\n", deckCard2, newCard2);
      printf("Added Cards (No.3)\t Expected: %d\t Result:%d\n", deckCard3, newCard3);
 
-     //check cards came from player's deck
-     //check for first new card
-     for(i=0; i < pre.deckCount[p]; i++){
-       if(pre.deck[p][i] == newCard1){
-         found = true;
-         break;
-       }
-     }
-     //check for second new card
-     for(i=0; i < pre.deckCount[p]; i++){
-       if(pre.deck[p][i] == newCard2){
-         found = true;
-         break;
-       }
-     }
-     //check for third new card
-     for(i=0; i < pre.deckCount[p]; i++){
-       if(pre.deck[p][i] == newCard3){
-         found = true;
-         break;
-       }
-     }
 
      //check card count for all other players
      currentPlayer = p;
@@ -237,14 +240,14 @@ int checkSmithy(int p, struct gameState *post, int handPos) {
      preSmithy=0;
      postSmithy=0;
      for(i=0; i< pre.handCount[p]; i++){
-     //  printf("prehand[%d][%d]: %d\n", p, i, pre.hand[p][i]);
+//       printf("prehand[%d][%d]: %d\n", p, i, pre.hand[p][i]);
        if(pre.hand[p][i] == smithy){
          preSmithy++;
        }
      }
      //iterate through post hand - NOTE: no new smithy cards were added from deck to hand
      for(i=0; i< post->handCount[p]; i++){
-     //    printf("posthand[%d][%d]: %d\n", p, i, post->hand[p][i]);
+       //  printf("posthand[%d][%d]: %d\n", p, i, post->hand[p][i]);
        if(post->hand[p][i] == smithy){
          postSmithy++;
        }
@@ -267,10 +270,6 @@ int checkSmithy(int p, struct gameState *post, int handPos) {
        printf("Unexpected card added to hand\n");
        fail = true;
      }
-     if(found != true){
-       printf("New Card not found in player's previous deck\n");
-       fail = true;
-     }
      //check card count for other players
      for(i=0; i< MAX_PLAYERS; i++){
        if(i != currentPlayer)
@@ -283,7 +282,6 @@ int checkSmithy(int p, struct gameState *post, int handPos) {
      //check coin count has not changed
      if(pre.coins != post->coins){
        printf("Unexpected change in coin count\n");
-       return -1;
        fail = true;
      }
      //check smithy count

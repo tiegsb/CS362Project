@@ -14,14 +14,14 @@ introducing bugs.
 *************************************************************
 
 Smithy Card Refactoring:
-In the loop I deleted the changed the iterations to be less than 3, instead
-of less than or equals 3. This minor change will alter the total amount of
+In the loop I deleted the changed the iterations to be more than 3, instead
+of less than 3. This minor change will alter the total amount of
 cards the player is allowed to draw by one.
 
 Error Code:
 	int i;
       //+3 Cards
-      for (i = 0; i < 3; i++)
+      for (i = 0; i <= 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
