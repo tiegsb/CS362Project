@@ -73,6 +73,14 @@ struct gameState {
   int playedCardCount;
 };
 
+/* NEW INDIVIDUAL CARD EFFECT FUNCTIONS TO REPLACE CODE IN cardEffect() SWITCH STATEMENT*/
+void adventurerCardEffect(int currentPlayer, struct gameState *state);
+void smithyCardEffect(int handPos, int currentPlayer, struct gameState *state);
+void stewardCardEffect(int handPos, int currentPlayer, struct gameState *state,
+                       int choice1, int choice2, int choice3);
+void villageCardEffect(int handPos, int currentPlayer, struct gameState *state);
+void seaHagCardEffect(int currentPlayer, struct gameState *state);
+
 /* All functions return -1 on failure, and DO NOT CHANGE GAME STATE;
    unless specified for other return, return 0 on success */
 
@@ -85,7 +93,7 @@ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
 		   struct gameState *state);
 /* Responsible for initializing all supplies, and shuffling deck and
    drawing starting hands for all players.  Check that 10 cards selected
-   are in fact (different) kingdom cards, and that numPlayers is valid. 
+   are in fact (different) kingdom cards, and that numPlayers is valid.
 
 Cards not in game should initialize supply position to -1 */
 
