@@ -8,7 +8,8 @@
 
 int main(int argc, char *argv[])
 {
-    int retVal = councilRoomEffect(0, gameState, 0);
+    struct gameState testState;
+    int retVal = councilRoomEffect(0, &testState, 0);
     if (retVal == 0)
     {
         printf("Council Room card: PASS\n");

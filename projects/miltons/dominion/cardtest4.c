@@ -8,7 +8,8 @@
 
 int main(int argc, char *argv[])
 {
-    int retVal = mineEffect(0, gameState, 0, 0, 0);
+    struct gameState testState;
+    int retVal = mineEffect(0, &testState, 0, 0, 0);
     if (retVal == 0)
     {
         printf("Mine card: PASS\n");

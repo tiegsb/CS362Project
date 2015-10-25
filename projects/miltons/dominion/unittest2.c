@@ -8,7 +8,11 @@
 
 int main(int argc, char *argv[])
 {
-    int retVal = updateCoins(0, gameState, 0);
+
+//    struct gameState * testState = newGame();
+
+    struct gameState testState;
+    int retVal = updateCoins(0, &testState, 0);
     if (retVal == 0)
     {
         printf("updateCoins(): PASS\n");

@@ -8,7 +8,8 @@
 
 int main(int argc, char *argv[])
 {
-    int retVal = discardCard(0, 0, gameState, 0);
+    struct gameState testState;
+    int retVal = discardCard(0, 0, &testState, 0);
     if (retVal == 0)
     {
         printf("discardCard(): PASS\n");
