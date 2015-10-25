@@ -1235,7 +1235,7 @@ Output:     Three more cards are drawn and added to hand, smithy is
 int smithyRef(int handPos, int currentPlayer, struct gameState *state) {
 	int i;
       //+3 Cards
-      for (i = 0; i < 3; i++)
+      for (i = 0; i <= 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}

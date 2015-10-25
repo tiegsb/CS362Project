@@ -4,6 +4,19 @@
 #include "unittest_helpers.h"
 
 
+// Test the discardCard() function
+//
+// discardCard():
+// Removes card from player's hand and either puts it in the played pile
+// (if not trashed) or not (if trashed).
+//
+// handPos       - enumerated card
+// currentPlayer - the index of the current player
+// state         - holds the game state
+// trashFlag     - determines whether the card is trashed (>= 1) or not (< 1)
+//
+// Always returns 0.
+//
 int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
 {
     struct gameState *origState;  // copy of game state
@@ -24,11 +37,11 @@ int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int
     {
         if(state->playedCardCount == origState->playedCardCount)
         {
-            printf("Test PASSED: playedCardCount not incremented\n");
+            printf("discardCard: PASS trashed card did not increment playedCardCount\n");
         }
         else
         {
-            printf("Test FAILED: playedCardCount incremented\n");
+            printf("discardCard: FAIL trashed card incremented playedCardCount\n");
         }
     }
     else
@@ -38,20 +51,20 @@ int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int
         //
         if(state->playedCardCount == origState->playedCardCount + 1)
         {
-            printf("Test PASSED: playedCardCount incremented\n");
+            printf("discardCard: PASS non-trashed card incremented playedCardCount\n");
         }
         else
         {
-            printf("Test FAILED: playedCardCount not incremented\n");
+            printf("discardCard: FAIL non-trashed card did not incremenet playedCardCount\n");
         }
 
         if(state->playedCards[state->playedCardCount-1] == origState->hand[currentPlayer][handPos])
         {
-            printf("Test PASSED: Card added to played card pile\n");
+            printf("discardCard: PASS non-trashed card added to played card pile\n");
         }
         else
         {
-            printf("Test FAILED: Card not added to played card pile\n");
+            printf("discardCard: FAIL non-trashed card not added to played card pile\n");
         }
     }
 
@@ -61,22 +74,22 @@ int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int
     {
         if(state->handCount[currentPlayer] == origState->handCount[currentPlayer] - 1)
         {
-            printf("Test PASSED: Current player handcount was decremented\n");
+            printf("discardCard: PASS card removal decremented current player handcount\n");
         }
         else
         {
-            printf("Test FAILED: Current player handcount was not decremented\n");
+            printf("discardCard: FAIL card removal did not decrement current player handcount\n");
         }
     }
     else if(origState->handCount[currentPlayer] == 1)
     {
         if(state->handCount[currentPlayer] == origState->handCount[currentPlayer] - 1)
         {
-            printf("Test PASSED: Current player handcount was decremented\n");
+            printf("discardCard: PASS card removal decremented current player handcount\n");
         }
         else
         {
-            printf("Test FAILED: Current player handcount was not decremented\n");
+            printf("discardCard: FAIL card removal did not decrement current player handcount\n");
         }
     }
     else
@@ -85,36 +98,40 @@ int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int
         //
         if(state->hand[currentPlayer][handPos] == origState->hand[currentPlayer][(origState->handCount[currentPlayer] - 1)])
         {
-            printf("Test PASSED: Discarded card was replaced with last card in hand\n");
+            printf("discardCard: PASS discarded card was replaced with last card in hand\n");
         }
         else
         {
-            printf("Test FAILED: Discarded card was not replaced with last card in hand\n");
+            printf("discardCard: FAIL discarded card was not replaced with last card in hand\n");
         }
 
         // Check if last card was set to -1
         //
         if(state->hand[currentPlayer][origState->handCount[currentPlayer] - 1] == -1)
         {
-            printf("Test PASSED: Last card set to -1\n");
+            printf("discardCard: PASS last card set to -1\n");
         }
         else
         {
-            printf("Test FAILED: Last card not set to -1\n");
+            printf("discardCard: FAIL last card not set to -1\n");
         }
 
         // Check if the number of cards in hand was reduced
         //
         if(state->handCount[currentPlayer] == origState->handCount[currentPlayer] - 1)
         {
-            printf("Test PASSED: Current player handcount was decremented\n");
+            printf("discardCard: PASS card removal decremented current player handcount\n");
         }
         else
         {
-            printf("Test FAILED: Current player handcount was not decremented\n");
+            printf("discardCard: FAIL card removal did not decrement current player handcount\n");
         }
     }
     
+    // Report what, if anything, changed in the game state
+    //
+    whatChanged(origState, state);
+    printf("\n");
 
     return 0;
 }
@@ -138,11 +155,11 @@ int main(int argc, char *argv[])
     printf("\n");
 
     // Discard a trashed card
-    printf("Testing: Trashed card...\n");
+    printf(">>> TESTING: discardCard(), trashed card...\n");
     trashFlag     = 1;   // trashed
     testDiscardCard(handPos, currentPlayer, state, trashFlag);
 
-    printf("\n");
+    //printf("\n");
 
     // New game
     //
@@ -150,7 +167,7 @@ int main(int argc, char *argv[])
     initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
     // Discard a non-trashed card
-    printf("Testing: Non-trashed card...\n");
+    printf(">>> TESTING: discardCard(), non-trashed card...\n");
     trashFlag     = 0;   // not trashed
     testDiscardCard(handPos, currentPlayer, state, trashFlag);
 

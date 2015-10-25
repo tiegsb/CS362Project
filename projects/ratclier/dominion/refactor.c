@@ -35,3 +35,15 @@ In dominion.c:
 
 - In feastCard(), after gainCard(), removed the line that would set x = 0
   to signal the end of card buying. (BUG)
+
+
+10/25/2015:
+
+In dominion.c:
+
+- In feastCard(), removed the infinite loop that resulted from the code 
+  change from 10/10/2015. Noting the bug would require MANUAL testing, not 
+  automated testing. Instead, I set the gainCard() call just above x=0 to
+  put the gained card in the player's hand instead of the discard pile.
+  (So there's still a BUG)
+
