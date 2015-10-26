@@ -71,7 +71,7 @@ testRunner: dominion.o rngs.o
 
 runTests: testRunner
 	./tests &> testresult.out
-	gcov dominion.c >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
 
 unittestresults.out: runTests dominion.o

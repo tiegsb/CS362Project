@@ -148,10 +148,10 @@ int main() {
         }
     }
     if (testCounter <= 0) {
-           printf("All Tests Passed discardCard()\n");
+        printf("All Tests Passed discardCard()\n");
     }
     else {
-        printf("At least one test failed on discardCard()\n\n");
+        printf("%d tests failed on discardCard()\n\n", testCounter);
     }
 
     return 0;
