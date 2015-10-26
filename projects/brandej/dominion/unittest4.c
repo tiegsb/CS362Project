@@ -126,7 +126,7 @@ int main() {
         printf("All tests passed getWinners()\n");
     }
     else {
-        printf("At least one test failed on getWinners()\n\n");
+        printf("%d tests failed on getWinners()\n\n", counter);
     }
 
     return 0;
