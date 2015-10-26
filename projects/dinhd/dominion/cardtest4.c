@@ -51,9 +51,9 @@ int main() {
     // printf ("Number of cards in hand %i \n", numHandCards(&G));
 
 
-    printf("Testing mineCard card\n");
+    printf("* * * * * * * * * * * * * * * * Testing mineCard card* * * * * * * * * * * * * * * * \n");
 
-    //keeps track of played cards
+    //keeps track of the mine card's location.
     mineCardLoc = 4;
     // loop through each type of coin and swap it for each available coin.
     int coin;
@@ -80,7 +80,7 @@ int main() {
                 int playedIndex;
                 int foundMine = 0;
                 int foundCoin = 0;
-                printf ("affordable");
+                printf ("affordable \n");
                 //assert (G.hand[0][i] == coin);
                 printf ("################################################### \n Error: Expected coin in hand location %i. \n ################################################### \n", i);
 
@@ -110,7 +110,7 @@ int main() {
                 int foundMine = 0;
                 int foundCoin = 0;
 
-                printf ("unaffordable");
+                printf ("unaffordable \n");
                 assert (G.hand[0][i] != coin);
                 //verify that mine card is still in hand
                 assert (G.hand[0][mineCardLoc] == mine);

@@ -3,7 +3,6 @@
 #include <string.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
-#include "cards.h"
 
 static void doTest(char *testName, int condition) {
   printf("TEST %s:  ", testName);

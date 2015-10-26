@@ -33,7 +33,7 @@ int main() {
     //printSupply(&G);
 
     cardNumToName(26, card);
-    printf ("TESTING isGameOver():\n");
+    printf ("* * * * * * * * * * * * * * * * TESTING unittest3 isGameOver():* * * * * * * * * * * * * * * * \n");
     printf ("Testing with all supply gone \n");
     assert (isGameOver(&G) == 1);
 
@@ -50,7 +50,7 @@ int main() {
         G.supplyCount[0] = 0;
         G.supplyCount[1] = 0;
         G.supplyCount[i] = 0;
-        printSupply(&G);
+        //printSupply(&G);
         //assert (isGameOver(&G) == 1);
 
         //Found bug, removed assertion

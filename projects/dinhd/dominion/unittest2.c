@@ -28,7 +28,7 @@ int main() {
     //printSupply(&G);
     //testing to see if all cards can be accounted for. 
 
-    printf ("TESTING fullDeckCount():\n");
+    printf ("* * * * * * * * * * * * * * * * TESTING unittest2 fullDeckCount():* * * * * * * * * * * * * * * * \n");
 
     int arraySize = sizeof(k)/sizeof(k[0]);
     for (i = 0; i < arraySize; i++)
