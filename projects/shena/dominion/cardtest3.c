@@ -22,25 +22,63 @@ int main(int argc, char **argv){
 	printf("Initializing Game...\n");
 	initializeGame(2,k,21,s);
 	numCards = s->handCount[s->whoseTurn];
-	assert(s->outpostPlayed == 0);
-	assert(s->phase == 0);
-	assert(s->numActions == 1);
-	assert(s->numBuys == 1);
-	assert(s->playedCardCount == 0);
-	assert(s->whoseTurn ==0);
-	assert(s->handCount[s->whoseTurn] == numCards);
-	printf("Game initialized\n\n");
+	if(s->outpostPlayed == 0){
+		printf("outpostPlayed == 0... Pass!\n");
+	}else{
+		printf("outPostPlayed == 0... Fail.\n");
+	}
+	if(s->phase == 0){
+		printf("s->phase == 0... Pass!\n");
+	}else{
+		printf("s->phase == 0... Fail.\n");
+	}
+	if(s->numActions == 1){
+		printf("numActions == 1... Pass!\n");
+	}else{
+		printf("numActions == 1... Fail.\n");
+	}
+	if(s->numBuys == 1){
+		printf("numBuys == 1... Pass!\n");
+	}else{
+		printf("numBuys == 1... Fail!\n");
+	}
+	if(s->playedCardCount == 0){
+		printf("playedCardCount == 0... Pass!\n");
+	}else{
+		printf("playedCardCount == 0... Fail!\n");
+	}
+	if(s->whoseTurn == 0){
+		printf("numBuys == 0... Pass!\n");
+	}else{
+		printf("numBuys == 0... Fail!\n");
+	}
+	if(s->handCount[s->whoseTurn] == numCards){
+		printf("s->handCount[s->whoseTurn] == numCards... Pass!\n");
+	}else{
+		printf("s->handCount[s->whoseTurn] == numCards... Fail!\n");
+	}
+	printf("\nGame initialized\n\n");
 	int r = cardEffect(village, 0, 0, 0, s, 0, 0);
 	printf("Checking if card count correctly decreased...");
-	assert(s->handCount[s->whoseTurn] == (numCards));
-	printf(" Success!\n");
+	if(s->handCount[s->whoseTurn] == (numCards)){
+		printf(" Success!\n");
+	}else{
+		printf(" Failed!\n");
+	}
 	printf("Checking return value...");
-	assert(r == 0);
-	printf(" Success!\n");
+	if(r == 0){
+		printf(" Success!\n");
+	}else{
+		printf(" Failed!\n");
+	}
 	printf("Checking if numActions increased...");
-	assert(s->numActions == 3);
-	printf(" Success!\n");
-	printf("\n\nVillage Card Test Successful!\n\n");
+	if(s->numActions == 3){
+		printf(" Success!\n");
+	}else{
+		printf(" Failed!\n");
+	}
+	
+	printf("\n\nVillage Card Test Completed!\n\n");
 	
 	return 0;
 	
