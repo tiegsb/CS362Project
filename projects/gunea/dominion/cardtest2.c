@@ -36,8 +36,7 @@ int main()
 		printf("Discard count: %d\n", testState.discardCount[i]);
 
 		printf("Playing Adventurer Card\n");
-		adventurerFunction(drawntreasure, i, &testState, c, temphand[handCount], j, k);
-	
+		adventurerFunction(3, i, &testState, 1, 0, j, k);
 		printf("Cards in hand: %d\n", numHandCards(&testState));
 		printf("Number of played cards: %d\n", playedCount);
 		printf("Discard count: %d\n", testState.discardCount[i]);
