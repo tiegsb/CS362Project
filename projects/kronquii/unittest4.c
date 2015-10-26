@@ -1,4 +1,4 @@
-#include <assert.h>
+#include "notassert.h"
 #include "dominion.h"
 
 void test_updateCoins() {
