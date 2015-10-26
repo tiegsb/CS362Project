@@ -69,12 +69,12 @@ void test_card_adventurer(){
 		printf("PASS: cardEffect(adventurer): function returned zero!\n");	
 	}
 
-	//next check for 3 cards drawn (player 1)
-	if(G.handCount[0] != 5){	
-		printf("FAIL: cardEffect(adventurer): player 1 gained 3 cards!\n");	
+	//next check for 2 treasure cards gained (player 1)
+	if(G.handCount[0] == 5){	
+		printf("PASS: cardEffect(adventurer): player 1 gained 2 treasure cards!\n");	
 	}
 	else{
-		printf("FAIL: cardEffect(adventurer): player 1 did not gain 3 cards!\n");	
+		printf("FAIL: cardEffect(adventurer): player 1 did not gain 1 card! hand count = %d\n", G.handCount[0]);	
 	}
 
 	//check for discarded card!
@@ -86,11 +86,11 @@ void test_card_adventurer(){
 	}
 
 	//check for 3 cards drawn from deck (player 1)
-	if(G.deckCount[0] != 0){
-		printf("PASS: cardEffect(adventurer): player 1 deck gained 3 cards!\n");
+	if(G.deckCount[0] == 2){
+		printf("PASS: cardEffect(adventurer): player 1 deck lost 1 cards!\n");
 	}
 	else{
-		printf("FAIL: cardEffect(adventurer): player 1 deck isn't empty, contains %d cards\n", G.deckCount[0]);
+		printf("FAIL: cardEffect(adventurer): player 1 deck didn't lose 1 card, contains %d cards\n", G.deckCount[0]);
 	}
 
 	//as specified in directions, we need to check the other player in case something weird happened!

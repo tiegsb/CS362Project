@@ -60,6 +60,9 @@ void test_card_great_hall(){
 	
 	// first set player to player 1
 	G.whoseTurn = 0;
+	// set actions to 0 so we can predict the +1 actions
+	G.numActions = 0;
+	int actions_p1 = G.numActions;
 	// first check return of 0 for success
 	if(cardEffect(great_hall, 0, 0, 0, &G, 1, 0)){
 		printf("FAIL: cardEffect(great_hall): function returned non-zero!\n");	
@@ -68,12 +71,12 @@ void test_card_great_hall(){
 		printf("PASS: cardEffect(great_hall): function returned zero!\n");	
 	}
 
-	//next check for 3 cards drawn (player 1)
-	if(G.handCount[0] != 5){	
-		printf("FAIL: cardEffect(great_hall): player 1 gained 3 cards!\n");	
+	//next check for 1 cards drawn (player 1)
+	if(G.handCount[0] == 4){	
+		printf("PASS: cardEffect(great_hall): player 1 gained 1 cards!\n");	
 	}
 	else{
-		printf("FAIL: cardEffect(great_hall): player 1 did not gain 3 cards!\n");	
+		printf("FAIL: cardEffect(great_hall): player 1 did not gain 1 cards! has %d cards in hand\n", G.handCount[0]);	
 	}
 
 	//check for discarded card!
@@ -84,12 +87,20 @@ void test_card_great_hall(){
 		printf("FAIL: cardEffect(great_hall): player 1 discarded count != 4, = %d\n", G.discardCount[0]);
 	}
 
-	//check for 3 cards drawn from deck (player 1)
-	if(G.deckCount[0] != 0){
-		printf("PASS: cardEffect(great_hall): player 1 deck gained 3 cards!\n");
+	//check for 1 cards drawn from deck (player 1)
+	if(G.deckCount[0] == 2){
+		printf("PASS: cardEffect(great_hall): player 1 deck gained 1 cards!\n");
 	}
 	else{
-		printf("FAIL: cardEffect(great_hall): player 1 deck isn't empty, contains %d cards\n", G.deckCount[0]);
+		printf("FAIL: cardEffect(great_hall): player 1 deck isn't correct, contains %d cards\n", G.deckCount[0]);
+	}
+
+	//check for actions
+	if(G.numActions == (actions_p1 + 1)){
+		printf("PASS: cardEffect(great_hall): player 1 gained 2 actions!\n");
+	}
+	else{
+		printf("FAIL: cardEffect(great_hall): player 1 didn't gain one action, has %d actions\n", G.numActions);
 	}
 
 	//as specified in directions, we need to check the other player in case something weird happened!

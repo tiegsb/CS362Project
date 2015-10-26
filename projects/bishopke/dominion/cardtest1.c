@@ -11,6 +11,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+//smithy = +3 cards
+
 void test_card_smithy(){
 	int seed = 1000;
 	int numPlayer = 2; //2 players
@@ -69,11 +71,11 @@ void test_card_smithy(){
 	}
 
 	//next check for 3 cards drawn (player 1)
-	if(G.handCount[0] != 5){	
-		printf("FAIL: cardEffect(smithy): player 1 gained 3 cards!\n");	
+	if(G.handCount[0] == 5){	
+		printf("PASS: cardEffect(smithy): player 1 gained 3 cards!\n");	
 	}
 	else{
-		printf("FAIL: cardEffect(smithy): player 1 did not gain 3 cards!\n");	
+		printf("FAIL: cardEffect(smithy): player 1 did not gain 3 cards! hand count = %d\n", G.handCount[0]);	
 	}
 
 	//check for discarded card!
@@ -85,7 +87,7 @@ void test_card_smithy(){
 	}
 
 	//check for 3 cards drawn from deck (player 1)
-	if(G.deckCount[0] != 0){
+	if(G.deckCount[0] == 3){
 		printf("PASS: cardEffect(smithy): player 1 deck gained 3 cards!\n");
 	}
 	else{
