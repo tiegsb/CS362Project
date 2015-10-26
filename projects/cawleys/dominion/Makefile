@@ -1,4 +1,6 @@
-CFLAGS = -Wall -fpic -coverage -lm
+
+INCLUDES = -I./ -I./hw3Test
+CFLAGS = -Wall -Wfatal-errors -fpic -coverage -lm $(INCLUDES)
 
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
@@ -35,5 +37,10 @@ player: player.c interface.o
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
-clean:
+clean: clean_test
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
+
+clean_test:
+	rm -f hw3test.out hw3Test/*.o hw3Test/*.gcov hw3Test/*.gcda hw3Test/*.gcno
+
+include Makefile.test

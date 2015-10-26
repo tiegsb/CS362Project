@@ -88,17 +88,17 @@ unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c
 	echo "cardtest2.c:" >> unittestresults.out
 	gcc -o cardtest2 rngs.o dominion.o cardtest2.c $(CFLAGS)
 	./cardtest2 >> unittestresults.out
-	gcov dominion.c >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
 	
 	echo "cardtest3.c:" >> unittestresults.out
 	gcc -o cardtest3 rngs.o dominion.o cardtest3.c $(CFLAGS)
 	./cardtest3 >> unittestresults.out
-	gcov dominion.c >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
 	
 	echo "cardtest4.c:" >> unittestresults.out
 	gcc -o cardtest4 rngs.o dominion.o cardtest4.c $(CFLAGS)
 	./cardtest4 >> unittestresults.out
-	gcov dominion.c >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
 
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard

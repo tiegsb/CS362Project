@@ -206,7 +206,7 @@ int checkCouncil(int p, struct gameState *post, int handPos) {
      councilAction(p, post, handPos);
      
      //expected hand count
-     printf("Hand Count\t Expected: %d\t Result:%d\n", pre.handCount[p]+2, post->handCount[p]);    
+     printf("Hand Count\t Expected: %d\t Result:%d\n", pre.handCount[p]+3, post->handCount[p]);    
      //check deck count
      printf("Deck Count\t Expected: %d\t Result:%d\n", pre.deckCount[p]-4, post->deckCount[p]);
      //check expected cards added to hand
