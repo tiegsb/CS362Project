@@ -301,5 +301,7 @@ Overall - Reflection
 		investigation it was due to a large comparison function with many error indicating return values
 		not being called since their associated errors were not present (or caught). In the future I would like
 		to combine all of my unit tests into one large program and see how they all perform together and then
-		view the line and branch coverage of dominion.c to see my overall coverage.
+		view the line and branch coverage of dominion.c to see my overall coverage. To improve my coverage of dominion.c
+		I would/intend to write a unit test for every card and function that is not inlcuded in the unit tests above.
+		After doing so I would consider 95% line and branch coverage a success from dominion.c as a whole.
 
