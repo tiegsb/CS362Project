@@ -4,9 +4,9 @@
  * Based on my coverage metrics, my unit/card tests do a good job of hitting
  * certain basic functions. Most of my statement coverage percentage comes from
  * the initializeGame function, which I called uniformly to test other options.
- * This skewed results somewhat, as my other tests generally were less than 100
- * lines of the ~1000 lines in dominion.c; between all of my tests, though, I
- * achieved good coverage of the basic utility functions. To improve my work in
+ * This skewed results somewhat, as my other tests generally were less than 50
+ * lines of the ~500 lines in dominion.c; between all of my tests, though, I
+ * achieved moderate coverage of the basic utility functions. To improve my work in
  * the time to come, it will be necessary for me to target those functions that
  * I haven't hit yet, mainly contained within playCard.
  *
