@@ -736,7 +736,7 @@ int mineCard(int currentPlayer, struct gameState *state, int handPos, int choice
     return -1;
   }
 
-    // printf("difference is %i and %i \n", getCost(state->hand[currentPlayer][choice1]) + 3, getCost(choice2));
+    printf("difference is %i and %i \n", getCost(state->hand[currentPlayer][choice1]) + 3, getCost(choice2));
 
       if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
   {

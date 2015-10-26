@@ -1,13 +1,25 @@
+//
+// *****************************************************************************
+// 
+// Author:    Erik Ratcliffe
+// Date:      October 25, 2015
+// Project:   Assignment 3 - Unit Tests
+// Filename:  unittest_helpers.c
+// Class:     CS 362 (Fall 2015)
+//
+// *****************************************************************************
+//
+
 #include <stdio.h>
 #include "dominion.h"
+
 
 // Walk through the new game state and see what changed compared to
 // original game state
 //
 int whatChanged(struct gameState *origState, struct gameState *state)
 {
-    int idx1, idx2;
-    int i;
+    int idx1, idx2, idx3;  // loop iterators
 
     printf("\n>>> STATE CHANGES: for all players:\n");
 
@@ -44,28 +56,28 @@ int whatChanged(struct gameState *origState, struct gameState *state)
             printf("embargoTokens[%d] changed! Orig: %d, New: %d\n", idx1, origState->embargoTokens[idx1], state->embargoTokens[idx1]);
     }
 
-    for(i = 0; i < state->numPlayers; i++)
+    for(idx3 = 0; idx3 < state->numPlayers; idx3++)
     {
-        printf("\n>>> STATE CHANGES: specific to player %d:\n", i);
-        if(origState->handCount[i] != state->handCount[i])
-            printf("handCount[%d] changed! Orig: %d, New: %d\n", i, origState->handCount[i], state->handCount[i]);
-        if(origState->deckCount[i] != state->deckCount[i])
-            printf("deckCount[%d] changed! Orig: %d, New: %d\n", i, origState->deckCount[i], state->deckCount[i]);
-        if(origState->discardCount[i] != state->discardCount[i])
-            printf("discardCount[%d] changed! Orig: %d, New: %d\n", i, origState->discardCount[i], state->discardCount[i]);
+        printf("\n>>> STATE CHANGES: specific to player %d:\n", idx3);
+        if(origState->handCount[idx3] != state->handCount[idx3])
+            printf("handCount[%d] changed! Orig: %d, New: %d\n", idx3, origState->handCount[idx3], state->handCount[idx3]);
+        if(origState->deckCount[idx3] != state->deckCount[idx3])
+            printf("deckCount[%d] changed! Orig: %d, New: %d\n", idx3, origState->deckCount[idx3], state->deckCount[idx3]);
+        if(origState->discardCount[idx3] != state->discardCount[idx3])
+            printf("discardCount[%d] changed! Orig: %d, New: %d\n", idx3, origState->discardCount[idx3], state->discardCount[idx3]);
 
         for(idx2 = 0; idx2 < MAX_HAND; idx2++)
         {
-            if(origState->hand[i][idx2] != state->hand[i][idx2])
-                printf("hand[%d][%d] changed! Orig: %d, New: %d\n", i, idx2, origState->hand[i][idx2], state->hand[i][idx2]);
+            if(origState->hand[idx3][idx2] != state->hand[idx3][idx2])
+                printf("hand[%d][%d] changed! Orig: %d, New: %d\n", idx3, idx2, origState->hand[idx3][idx2], state->hand[idx3][idx2]);
         }
 
         for(idx2 = 0; idx2 < MAX_DECK; idx2++)
         {
-            if(origState->deck[i][idx2] != state->deck[i][idx2])
-                printf("deck[%d][%d] changed! Orig: %d, New: %d\n", i, idx2, origState->deck[i][idx2], state->deck[i][idx2]);
-            if(origState->discard[i][idx2] != state->discard[i][idx2])
-                printf("discard[%d][%d] changed! Orig: %d, New: %d\n", i, idx2, origState->discard[i][idx2], state->discard[i][idx2]);
+            if(origState->deck[idx3][idx2] != state->deck[idx3][idx2])
+                printf("deck[%d][%d] changed! Orig: %d, New: %d\n", idx3, idx2, origState->deck[idx3][idx2], state->deck[idx3][idx2]);
+            if(origState->discard[idx3][idx2] != state->discard[idx3][idx2])
+                printf("discard[%d][%d] changed! Orig: %d, New: %d\n", idx3, idx2, origState->discard[idx3][idx2], state->discard[idx3][idx2]);
         }
     }
 
@@ -79,7 +91,8 @@ struct gameState *copyState(struct gameState *state)
 {
     int idx1, idx2;               // loop index vars
     struct gameState *origState;  // copy of game state
-    origState = newGame();
+
+    origState = newGame();        // set up the new game state struct
 
     // Make a copy of the game state
     //

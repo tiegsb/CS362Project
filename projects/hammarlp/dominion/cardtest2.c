@@ -1,0 +1,51 @@
+#include "dominion.h"
+#include "dominion_helpers.h"
+#include <string.h>
+#include <stdio.h>
+#include <assert.h>
+#include "rngs.h"
+#include <stdlib.h>
+
+void testSmithyCard(){
+	struct gameState* state = malloc(sizeof(struct gameState));
+	
+	state->numPlayers = 2;
+
+	//set player hands
+	int playerHand[MAX_HAND] = {duchy, smithy, gold};
+	int playerDiscard[MAX_DECK] = {curse, province};
+	int playerDeck[MAX_DECK] = {silver, great_hall, copper, estate, gold};
+	
+	//copy player hand into the game state
+	memcpy(state->hand[0], playerHand, sizeof(int)*MAX_HAND);
+	memcpy(state->discard[0], playerDiscard, sizeof(int)*MAX_DECK);
+	memcpy(state->deck[0], playerDeck, sizeof(int)*MAX_DECK);
+
+	//update count
+	state->handCount[0] = 3;
+	state->discardCount[0] = 2;
+	state->deckCount[0] = 5;
+
+	smithyCard(state, 1);
+
+	//total cards in hand should be 5. 3 initial, draw 3 and discard 1. 3+3-1=5
+	if( state->handCount[0] == 5 ){
+		printf("Test passed. Correct final number cards in hand\n");
+	} else {
+		printf("Test failed. Wrong final number cards in hand\n");
+	}
+
+	//printf("hand count %d\n", state->handCount[0]);
+
+
+}
+
+int main(){
+	printf("cardtest3 - Testing smithy card\n");
+
+	testSmithyCard();
+
+	//printf(" test passed\n");
+
+	return 0;
+}

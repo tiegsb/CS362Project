@@ -1,0 +1,249 @@
+Function and card test results:
+************************************************************************
+unittest1.c:
+Testing isGameOver:
+Random method
+All assertion tests are successful
+
+File 'dominion.c'
+Lines executed:1.71% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+************************************************************************
+unittest2.c:
+Testing updatesCoins:
+Random method
+All assertion tests are successful
+
+File 'dominion.c'
+Lines executed:3.58% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+************************************************************************
+unittest3.c:
+Testing buyCard:
+All assertion tests are successful
+
+File 'dominion.c'
+Lines executed:27.13% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+************************************************************************
+unittest4.c:
+Testing getCost:
+Random method
+All assertion tests are successful
+
+File 'dominion.c'
+Lines executed:27.13% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+************************************************************************
+cardtest1.c:
+Testing smithyCard function:
+
+Testing player 1
+Playing smithy card...
+Confirmed removal of smithy card: PASS
+Confirmed 3 cards drawn in hand: 2 - FAIL
+Confirmed smithy card (13) in played pile: 13 - PASS
+
+Testing player 2
+Playing smithy card...
+Confirmed removal of smithy card: PASS
+Confirmed 3 cards drawn in hand: 2 - FAIL
+Confirmed smithy card (13) in played pile: 13 - PASS
+
+Testing player 3
+Playing smithy card...
+Confirmed removal of smithy card: PASS
+Confirmed 3 cards drawn in hand: 2 - FAIL
+Confirmed smithy card (13) in played pile: 13 - PASS
+
+Testing player 4
+Playing smithy card...
+Confirmed removal of smithy card: PASS
+Confirmed 3 cards drawn in hand: 2 - FAIL
+Confirmed smithy card (13) in played pile: 13 - PASS
+
+Testing complete...
+
+File 'dominion.c'
+Lines executed:31.40% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+************************************************************************
+cardtest2.c:
+Testing adventurerCard function:
+
+Test number 1
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 3 - FAIL
+Position 1 is: 7
+Position 2 is: 4
+Position 3 is: 6
+
+Test number 2
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 0 - FAIL
+Position 1 is: 7
+Position 2 is: 6
+Position 3 is: 6
+
+Test number 3
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 0 - FAIL
+Position 1 is: 7
+Position 2 is: 6
+Position 3 is: 4
+
+Test number 4
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 0 - FAIL
+Position 1 is: 7
+Position 2 is: 6
+Position 3 is: 6
+
+Test number 5
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 6 - FAIL
+Position 1 is: 7
+Position 2 is: 6
+Position 3 is: 6
+
+Test number 6
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 19 - FAIL
+Position 1 is: 7
+Position 2 is: 4
+Position 3 is: 4
+
+Test number 7
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 4 - FAIL
+Position 1 is: 7
+Position 2 is: 4
+Position 3 is: 6
+
+Test number 8
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 2 - FAIL
+Position 1 is: 7
+Position 2 is: 4
+Position 3 is: 6
+
+Test number 9
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 5 - FAIL
+Position 1 is: 7
+Position 2 is: 6
+Position 3 is: 4
+
+Test number 10
+Playing adventurer card...
+Confirmed removal of adventurer card: FAIL
+Confirmed total cards on hand is 2: 6 - FAIL
+Position 1 is: 7
+Position 2 is: 6
+Position 3 is: 6
+
+Number of bronze coins selected from test: 4
+Number of silver coins selected from test: 0
+Number of gold coins selected from test: 6
+
+Testing complete...
+
+File 'dominion.c'
+Lines executed:34.47% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+************************************************************************
+cardtest3.c:
+Testing councilRoomCard function:
+
+Testing player 1
+Playing council room card...
+Confirmed removal of council room card: PASS
+Confirmed 4 card drawn in hand: 3 - FAIL
+Confirmed 1 number of buy added: 1 - PASS
+Confirmed 1 card drawn from player 2: 1 - PASS
+Confirmed 1 card drawn from player 3: 1 - PASS
+Confirmed 1 card drawn from player 4: 1 - PASS
+
+Testing player 2
+Playing council room card...
+Confirmed removal of council room card: PASS
+Confirmed 4 card drawn in hand: 3 - FAIL
+Confirmed 1 number of buy added: 1 - PASS
+Confirmed 1 card drawn from player 1: 1 - PASS
+Confirmed 1 card drawn from player 3: 1 - PASS
+Confirmed 1 card drawn from player 4: 1 - PASS
+
+Testing player 3
+Playing council room card...
+Confirmed removal of council room card: PASS
+Confirmed 4 card drawn in hand: 3 - FAIL
+Confirmed 1 number of buy added: 1 - PASS
+Confirmed 1 card drawn from player 1: 1 - PASS
+Confirmed 1 card drawn from player 2: 1 - PASS
+Confirmed 1 card drawn from player 4: 1 - PASS
+
+Testing player 4
+Playing council room card...
+Confirmed removal of council room card: PASS
+Confirmed 4 card drawn in hand: 3 - FAIL
+Confirmed 1 number of buy added: 1 - PASS
+Confirmed 1 card drawn from player 1: 1 - PASS
+Confirmed 1 card drawn from player 2: 1 - PASS
+Confirmed 1 card drawn from player 3: 1 - PASS
+
+Testing complete...
+
+File 'dominion.c'
+Lines executed:36.18% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+************************************************************************
+cardtest4.c:
+Testing villageCard function:
+
+Testing player 1
+Playing village card...
+Confirmed removal of village card: PASS
+Confirmed 1 card drawn in hand: 1 - PASS
+Confirmed 2 actions added: 3 - FAIL
+
+Testing player 2
+Playing village card...
+Confirmed removal of village card: PASS
+Confirmed 1 card drawn in hand: 1 - PASS
+Confirmed 2 actions added: 3 - FAIL
+
+Testing player 3
+Playing village card...
+Confirmed removal of village card: PASS
+Confirmed 1 card drawn in hand: 1 - PASS
+Confirmed 2 actions added: 3 - FAIL
+
+Testing player 4
+Playing village card...
+Confirmed removal of village card: PASS
+Confirmed 1 card drawn in hand: 1 - PASS
+Confirmed 2 actions added: 3 - FAIL
+
+Testing complete...
+
+File 'dominion.c'
+Lines executed:37.20% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+************************************************************************

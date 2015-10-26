@@ -1,3 +1,15 @@
+//
+// *****************************************************************************
+// 
+// Author:    Erik Ratcliffe
+// Date:      October 25, 2015
+// Project:   Assignment 3 - Unit Tests
+// Filename:  unittest2.c
+// Class:     CS 362 (Fall 2015)
+//
+// *****************************************************************************
+//
+
 #include <stdio.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
@@ -19,8 +31,8 @@
 //
 int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
 {
+    int supplyCountRet = 0;       // holds return value from supplyCount()
     struct gameState *origState;  // copy of game state
-    int supplyCountRet = 0;
     
     // Make a copy of the original game state
     //
@@ -41,13 +53,9 @@ int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
     {
         // Enough cards exist. Continue with testing card movement
         // results.
-
+        //
         if(toFlag == 1)
         {
-            /*
-            state->deck[ player ][ state->deckCount[player] ] = supplyPos;
-            state->deckCount[player]++;
-            */
             if(state->deck[player][origState->deckCount[player]] == supplyPos)
             {
                 printf("gainCard: PASS card added to player deck\n");
@@ -57,6 +65,8 @@ int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
                 printf("gainCard FAIL card not added to player deck\n");
             }
 
+            // Was deckCount incremented?
+            //
             if(state->deckCount[player] == origState->deckCount[player]+1)
             {
                 printf("gainCard: PASS player deck count incremented\n");
@@ -68,10 +78,6 @@ int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
         }
         else if(toFlag == 2)
         {
-            /*
-            state->hand[ player ][ state->handCount[player] ] = supplyPos;
-            state->handCount[player]++;
-            */
             if(state->hand[player][origState->handCount[player]] == supplyPos)
             {
                 printf("gainCard: PASS card added to player hand\n");
@@ -92,10 +98,6 @@ int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
         }
         else if(toFlag == 0)
         {
-            /*
-            state->discard[player][ state->discardCount[player] ] = supplyPos;
-            state->discardCount[player]++;
-            */
             if(state->discard[player][origState->discardCount[player]] == supplyPos)
             {
                 printf("gainCard: PASS card added to player discard\n");
@@ -149,13 +151,13 @@ int testGainCard(int supplyPos, struct gameState *state, int toFlag, int player)
 
 int main(int argc, char *argv[])
 {
-    int numPlayers = 2;
+    int numPlayers = 2;      // default number of players
+    int randomSeed = 100;    // random seed for the game
+    int supplyPos  = feast;  // Just a placeholder, can be changed later
+    int player     = 0;      // Just a placeholder, can be changed later
+    int toFlag;              // Where to put the card (0 = discard, 1 = deck, 2 = hand)
+    struct gameState *state; // holds the new game state
     int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
-    int randomSeed = 10;
-    int supplyPos = feast; // Just a placeholder, can be changed later
-    int toFlag;            // Where to put the card (0 = discard, 1 = deck, 2 = hand)
-    int player = 0;        // Just a placeholder, can be changed later
-    struct gameState *state;
 
     // New game
     //
@@ -191,7 +193,6 @@ int main(int argc, char *argv[])
     toFlag = 1;
     state->supplyCount[supplyPos] = -1;
     testGainCard(supplyPos, state, toFlag, player);
-
 
     return 0;
 }

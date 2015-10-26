@@ -2,7 +2,7 @@
  * Author:  Brian Stamm
  * Title:  unitTest2.c
  * Assignment:  3
- * Date:  10.?.15
+ * Date:  10.25.15
  * Notes:  Test updateCoins().
  * ****************/
 
@@ -45,10 +45,9 @@ void test(){
   }
 
   //Checking only silver, player incremented, and cards increased.
-  //player++;
   test++;
   total = 0;
-  //game->coins = 0;
+  game->coins = 0;
   game->handCount[player] == 50;
 
   for(i = 0; i < 50; i++){
@@ -69,8 +68,7 @@ void test(){
   	printf("updateCoins():  FAIL test 2.\n");
   }  
 
-  //Checking only gold, player incremented, and cards increased to max.
-  //player++;
+  //Checking only gold and cards increased to max.
   test++;
   total = 0;
   game->handCount[player] == 500;
@@ -125,7 +123,6 @@ void test(){
   } 
 
 //Checking bonus with initial amount;
-  //player = 0;
   test++;
   for(i = 0; i < 5; i++){
     game->hand[player][i] = copper;
@@ -148,7 +145,6 @@ void test(){
   } 
 
 //Checking bonus with negative amount;
-  //player = 0;
   test++;
   bonus = -5;
   total = 5;
@@ -166,7 +162,6 @@ void test(){
   } 
 
 //Checking bonus with large amount;
-  //player = 0;
   test++;
   bonus = 2000000000;
   total = 5;
@@ -183,7 +178,6 @@ void test(){
   	printf("updateCoins():  FAIL test 7.\n");
   } 
 //Checking bonus with boundary of positive amount;
-  //player = 0;
   test++;
   bonus = 4294967291;
   total = 5;
