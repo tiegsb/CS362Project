@@ -124,7 +124,7 @@ int main() {
   /* initialize decks */
   testInitializeGame(2, k, &G);
   
-  /* set up hand for Player 1 */
+  /* set up hand for Player 0 */
   G.hand[0][0] = copper;
   G.hand[0][1] = copper;
   G.hand[0][2] = copper;

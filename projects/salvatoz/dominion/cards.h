@@ -42,7 +42,7 @@ void initializeCardData(struct cardData (*data)[NUM_CARDS]);
  * Assumptions: Card numbers are contiguously defined (i.e. there are no "holes"
  * in the range of card numbers).
  */
-inline int cardExists(int c);
+int cardExists(int c);
 
 /** cardDefined
  * Checks whether the given card number is defined in the given array of
@@ -52,7 +52,7 @@ inline int cardExists(int c);
  *    - c[] has been zero initialized so that any undefined cards have a NULL
  *      pointer for effectHandler
  */
-inline int cardDefined(const struct cardData cd[], int c);
+int cardDefined(const struct cardData cd[], int c);
 
 extern struct cardData cardsData[NUM_CARDS];
 #endif

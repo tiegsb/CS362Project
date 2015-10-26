@@ -67,14 +67,22 @@ void testuseSmithy () {
 	}
 	
 	//Set the player hands with cards
-	for (i = 0; i < numPlayers; i++) {
-		G.handCount[i] = 0;
-		G.discardCount[i] = 0;
 		
-		for(j = 0; j < 5; j++) {
-			//Give each player 5 cards coppers only
-			G.hand[i][j] = copper;	
-		}
+	G.handCount[0] = 0;
+	G.discardCount[0] = 0;
+	
+	//Set player 2	
+	int extP2handCount = G.handCount[1] = 0;
+	int extP2discardCount = G.discardCount[1] = 0;
+	for(i = 0; i < 5; i++) {
+		//Give each player 1 5 cards coppers only
+		G.hand[0][i] = copper;	
+	}
+
+	//Give player 2 only silvers
+	for(i=0; i < 5; i++) {
+		//Give player 2 5 silvers
+		G.hand[1][i] = silver;
 	}
 
 	//set embargo tokens to 0 for all supply piles
@@ -86,8 +94,8 @@ void testuseSmithy () {
   	//initialize first player's turn
 	G.outpostPlayed = 0;
   	G.phase = 0;
-  	G.numActions = 1;
-  	G.numBuys = 1;
+  	int extnumActions = G.numActions = 1;
+  	int extnumBuys = G.numBuys = 1;
   	G.playedCardCount = 0;
   	G.whoseTurn = 0;
   	
@@ -130,6 +138,58 @@ void testuseSmithy () {
 		printf("useSmithy(): PASS discardCount correct\n");
 	} else {
 		printf("useSmithy(): FAIL discardCount incorrect. Expected %d, counted %d\n", extDiscardCount, G.discardCount[player]);
+		fail = 1;
+	}
+#if(NOISY_TEST == 1)
+	printf("Testing that no cards are pulled from anywhere other than player's deck.\n");
+#endif
+
+	//Ensure no cards are pulled from the other player's hand
+	for (i = 0; i < G.handCount[player]; i++) {
+		if(G.hand[player][i] == copper) {
+			printf("useSmithy(): PASS, only copper cards detected in player's hand\n");
+		} else {
+			printf("useSmithy(): FAIL, cards pulled from location other than player's deck.\n");
+			fail = 1;
+		}
+	}
+
+#if(NOISY_TEST == 1)
+	printf("Testing that player 2 is not adversly affected\n");
+#endif
+
+	//Ensure Player 2 is not affected
+	
+	if(extP2discardCount == G.discardCount[1]) {
+		printf("useSmithy(): PASS discardCount correct for second player\n");
+	} else {
+		printf("useSmithy(): FAIL discardCount incorrect for second player. Expected %d, counted %d\n", extDiscardCount, G.discardCount[player]);
+		fail = 1;
+	}
+
+	if(extP2handCount == G.handCount[1]) {
+		printf("useSmithy(): PASS Player 2 handCount correct\n");
+	} else {
+		printf("useSmithy(): FAIL Player 2 handcount incorrect. Expected %d, counted %d\n", extHandCount, G.handCount[player]);
+		fail = 1;
+	}
+
+#if(NOISY_TEST == 1)
+	printf("Testing that the game state has not changed.\n");
+#endif
+
+	//Ensure the game state is not changed
+	if (extnumActions == G.numActions) {
+		printf("useSmithy(): PASS, number of actions are not affected.\n");
+	} else {
+		printf("useSmithy(): FAIL, number of actions incorrect.\n");
+		fail = 1;
+	}
+
+	if (extnumBuys == G.numBuys) {
+		printf("useSmithy(): PASS, number of buys are not affected.\n");
+	} else {
+		printf("useSmithy(): FAIL, number of buys incorrect.\n");
 		fail = 1;
 	}
 

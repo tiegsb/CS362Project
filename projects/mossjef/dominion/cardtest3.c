@@ -57,25 +57,36 @@ void testuseVillage() {
 		}
 	}
 	//Set the player decks for 2 players
-	//Set all to copper for simplicity
-	int numPlayers = 2;
-	for (i = 0; i < numPlayers; i++) {
-		G.deckCount[i] = 0;
-		for (j = 0; j < 10; j++) {
-			G.deck[i][j] = copper;
-			G.deckCount[i]++; 
-		}
+	//Set p1 to copper for simplicity and p2 to silver
+		
+	G.deckCount[player] = 0;
+	G.deckCount[1] = 0;
+	for (i = 0; i < 10; i++) {
+			G.deck[player][i] = copper;
+			G.deckCount[player]++; 
 	}
 	
+	for (i = 0; i < 10; i++) {
+			G.deck[1][i] = silver;
+			G.deckCount[1]++; 
+	}
+
 	//Set the player hands with cards
-	for (i = 0; i < numPlayers; i++) {
-		G.handCount[i] = 0;
-		G.discardCount[i] = 0;
+	G.handCount[player] = 0;
+	G.discardCount[player] = 0;
+	G.handCount[1] = 0;
+	G.discardCount[1] = 0;
 		
-		for(j = 0; j < 5; j++) {
-			//Give each player 5 cards coppers only
-			G.hand[i][j] = copper;	
-		}
+	for(i = 0; i < 5; i++) {
+		//Give player 0 5 cards coppers only
+		G.hand[player][i] = copper;
+		G.handCount[player]++;	
+	}
+
+	for(i = 0; i < 5; i++) {
+		//Give player 1 5 cards silver only
+		G.hand[1][i] = silver;
+		G.handCount[1]++;	
 	}
 
 	//set embargo tokens to 0 for all supply piles
@@ -88,7 +99,7 @@ void testuseVillage() {
 	G.outpostPlayed = 0;
   	G.phase = 0;
   	G.numActions = 1;
-  	G.numBuys = 1;
+  	int extNumBuys = G.numBuys = 1;
   	G.playedCardCount = 0;
   	G.whoseTurn = 0;
   	
@@ -97,6 +108,8 @@ void testuseVillage() {
 	int extDiscardCount = G.discardCount[player];
 	int extHand[10];
 	int extNumActions = G.numActions;
+	int extP2discardCount = G.discardCount[1];
+	int extP2handCount = G.handCount[1];
 
 	//Initialize the external values for the player's hand
 	for (i = 0; i < extHandCount; i++) {
@@ -162,6 +175,36 @@ void testuseVillage() {
 		printf("useVillage(): FAIL number of actions expected %d, got %d\n", extNumActions, G.numActions);
 		fail = 1;
 	}
+
+	//Ensure that number of buys are not affected
+	if(extNumBuys == G.numBuys) {
+		printf("useVillage(): PASS, number of buys not affected.\n");
+	} else {
+		printf("useVillage(): FAIL, number of buys expected %d, got %d.\n", extNumBuys, G.numBuys);
+		fail = 1;
+	}
+
+#if(NOISY_TEST == 1)
+	printf("Testing that Player 2 is not affected.\n");
+#endif
+
+	//Test that player 2 hand and discard files are not affected
+	
+	if(extP2discardCount == G.discardCount[1]) {
+		printf("useVillage(): PASS Player 2 discardCount correct\n");
+	} else {
+		printf("useVillage(): FAIL Player 2 discardCount incorrect. Expected %d, counted %d\n", extP2discardCount, G.discardCount[1]);
+		fail = 1;
+	}
+	
+	//Test that player 2 hand is not changed
+	if(extP2handCount == G.handCount[1]) {
+		printf("useVillage(): PASS Player 2 handCount correct\n");
+	} else {
+		printf("useVillage(): FAIL Player 2 handCount incorrect. Expected %d, counted %d\n", extP2handCount, G.handCount[1]);
+		fail = 1;
+	}
+
 	if(fail == 0) {
 		printf("useVillage(): OK - ALL TESTS PASSED\n\n");
 	} else {
