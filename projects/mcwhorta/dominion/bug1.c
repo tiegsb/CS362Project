@@ -1,0 +1,2 @@
+-smithy card will always report failed test (because known bug was inserted)
+-adventurer card will always report failed test (because known bug was inserted)

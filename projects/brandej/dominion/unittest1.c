@@ -103,7 +103,8 @@ int main() {
         printf("All tests passed isGameOver()\n");
     }
     else {
-        printf("At least one test failed on isGameOver()\n\n");
+        printf("%d tests failed on isGameOver()\n\n", testCounter);
     }
+
     return 0;
 }
