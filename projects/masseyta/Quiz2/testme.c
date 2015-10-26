@@ -3,25 +3,27 @@
 #include<stdlib.h>
 #include<time.h>
 
-char inputChar()
-{
-    // function to generate random character to return to testme function
-	int randomNum = rand() % 128; //generates random number between 0 and 127
-	char randomChar = (char) randomNum;
-	
-    return randomChar;
+char inputChar(){
+
+    int n = (rand() % 95) +32;   // 32 through 127 ascii
+    if(n > 64 && n < 91){     // make lower case capital letter
+      n += 32;                // make lower case if capital letter
+    }
+
+    char c = n;               // ascii to char
+    return c;
 }
 
 char *inputString()
 {
-    char *randStringPtr;
-	char array[5];
-	for(int i =0; i<= 4; i++){ //assigns random chars to string
-		array[i] = inputChar(); 
-	}
-	array[5] = '/0'; 
-	randStringPtr = array; //creates pointer to array
-    return randStringPtr;
+    char string[5];
+    int i;
+
+    for (i = 0; i < 5; i++){
+      string[i] = (rand() % 25) +97;   // lower case letters on ascii chart only
+    }
+    string[5] = '\0';               // strings in c, man. 
+    return string;
 }
 
 void testme()
@@ -60,7 +62,6 @@ void testme()
 
 int main(int argc, char *argv[])
 {
-	
     srand(time(NULL));
     testme();
     return 0;
