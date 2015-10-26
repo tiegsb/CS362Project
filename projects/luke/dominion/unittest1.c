@@ -15,6 +15,8 @@ void testCoinFunction(int hand[], int bonus, int handCount, int expectedResult);
 
 int main() {
 
+	printf("Test updateCoins() function:\n");
+
 	int hand1[5];
 	int hand2[6];
 	int hand3[7];
@@ -91,6 +93,9 @@ int main() {
 	printf("Test 5 starting:\n");
 	testCoinFunction(hand5, 2, 9, 20);
 
+		
+	return 0;
+
 }
 
 void testCoinFunction(int hand[], int bonus, int handCount, int expectedResult) {
@@ -119,10 +124,16 @@ void testCoinFunction(int hand[], int bonus, int handCount, int expectedResult) 
 
 	//check coins in gamestate vs expected coins
 
-	assert(G.coins == expectedResult);
 
-	printf("TEST PASSED:\n");
-	printf("G.coins: %d\n", G.coins);
-	printf("Expected Result: %d\n", expectedResult);
+	if(G.coins == expectedResult) {
+		printf("TEST PASSED:\n");
+		printf("Player's Coins: %d\n", G.coins);
+		printf("Expected Result of Coins: %d\n", expectedResult);
+	} else {
+		printf("TEST FAILED:\n");
+		printf("Player's Coins: %d\n", G.coins);
+		printf("Expected Result of Coins: %d\n", expectedResult);
+	}
+
 
 }

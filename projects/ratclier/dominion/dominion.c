@@ -169,7 +169,8 @@ int feastCard(int choice1, struct gameState *state)
 	      printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
 	    }
 
-	    gainCard(choice1, state, 0, currentPlayer);//Gain the card
+      gainCard(choice1, state, 2, currentPlayer);//Gain the card
+      x = 0;//No more buying cards
 
 	    if (DEBUG){
 	      printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);

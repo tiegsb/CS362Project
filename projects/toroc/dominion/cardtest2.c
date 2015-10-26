@@ -1,6 +1,6 @@
 /*
 *	CS362 - Assignment 3 - cardtest2.c
-*	Card Test #2: This program runs the following 6 tests 
+*	Card Test #2: This program runs the following 6 tests
 *		to ensure the Adventurer card implementation is correct:
 *			1. Cards drawn are first two treasure cards
 *			2. Cards drawn belong to player's deck
@@ -31,14 +31,14 @@ int main()
 	/*initialize variables needed*/
 	int	i;
 	int k[10] = { adventurer, council_room, feast, gardens, mine,
-		remodel, Adventurer, village, baron, great_hall };
+		remodel, smithy, village, baron, great_hall };
 	int gameSeed;
 	int numPlayer = 2;
 	struct gameState Game;
 	int currentActions, expectedActions, currentBuys, expectedBuys;
-	int result, currentCards[10], cardsAfter[10], currentNumCards, numCardsAfter, cardType;
+	int result, currentNumCards, numCardsAfter, cardType;
 	const char* cardNames[] = { "curse", "estate", "duchy", "province", "copper", "silver", "gold", "adventurer", "council_room", "feast", "gardens", "mine", "remodel", "Adventurer", "village", "baron", "great_hall", "minion", "steward", "tribute", "ambassador", "cutpurse", "embargo", "outpost", "salvager", "sea_hag", "treasure_map" };
-	
+
 	/*Keep track of P0s deck & hand before & after*/
 	int p_0_deckBeforeAdventurer[MAX_DECK];
 	//int p_0_deckAfterAdventurer[MAX_DECK];
@@ -125,14 +125,14 @@ int main()
 #if (NOISY_TEST==1)
 	if (p_0_handAfterAdventurer[currentNumCards] == p_0_deckBeforeAdventurer[currentNumCards - 1] && p_0_handAfterAdventurer[currentNumCards + 1] == p_0_deckBeforeAdventurer[currentNumCards - 2])
 	{
-		printf("\t Current card = %d, Expected card = %d\n", p_0_handAfterAdventurer[currentNumCards], p_0_deckBeforeAdventurer[currentNumCards - 1]);
-		printf("\t Current card = %d, Expected card = %d\n", p_0_handAfterAdventurer[currentNumCards+1], p_0_deckBeforeAdventurer[currentNumCards - 2]);
+		printf("\t Current card = %s, Expected card = %s\n", cardNames[p_0_handAfterAdventurer[currentNumCards]], cardNames[p_0_deckBeforeAdventurer[currentNumCards - 1]]);
+		printf("\t Current card = %s, Expected card = %s\n", cardNames[p_0_handAfterAdventurer[currentNumCards + 1]], cardNames[p_0_deckBeforeAdventurer[currentNumCards - 2]]);
 		printf(" Test #1 passed. Player received the expected cards\n");
 	}
 	else
 	{
-		printf("\t Current card = %d, Expected card = %d\n", p_0_handAfterAdventurer[currentNumCards], p_0_deckBeforeAdventurer[currentNumCards - 1]);
-		printf("\t Current card = %d, Expected card = %d\n", p_0_handAfterAdventurer[currentNumCards + 1], p_0_deckBeforeAdventurer[currentNumCards - 2]);
+		printf("\t Current card = %s, Expected card = %s\n", cardNames[p_0_handAfterAdventurer[currentNumCards]], cardNames[p_0_deckBeforeAdventurer[currentNumCards - 1]]);
+		printf("\t Current card = %s, Expected card = %s\n", cardNames[p_0_handAfterAdventurer[currentNumCards + 1]], cardNames[p_0_deckBeforeAdventurer[currentNumCards - 2]]);
 		printf(" Test #1 FAILED! Player did not receive expected cards. \n");
 	}
 
@@ -176,7 +176,7 @@ int main()
 	numCardsAfter = (numHandCards(&Game));
 
 	/*Copy the hand after the Adventure was played*/
-	for (i = 0; i < numCardsAfter+2; i++)
+	for (i = 0; i < numCardsAfter + 2; i++)
 	{
 		p_0_handAfterAdventurer[i] = Game.hand[0][i];
 	}
