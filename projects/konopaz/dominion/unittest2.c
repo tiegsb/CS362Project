@@ -69,7 +69,6 @@ int main() {
   gs.whoseTurn = 0;
   int testDiscard1[0];
   memcpy(gs.discard[0], testDiscard1, 0);
-  gs.deckCount[0] = 0;
   gs.discardCount[0] = 0;
 
   success = buyCard(smithy, &gs);
