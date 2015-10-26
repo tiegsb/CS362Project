@@ -36,7 +36,10 @@ cardtest1.c
 
 ADVENTURER CARD
 cardtest2.c
-	
+	Lines executed:7.34% of 586
+	Branches executed:11.75% of 417
+	Taken at least once:4.56% of 417
+	Calls executed:6.12% of 98	
 
 VILLAGE CARD
 cardtest3.c
