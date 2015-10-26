@@ -101,7 +101,7 @@ int main() {
         printf("All tests passed scoreFor()");
     }
     else {
-        printf("At least one test failed on scoreFor()\n\n");
+        printf("%d tests failed on scoreFor()\n\n", counter);
     }
 
     return 0;
