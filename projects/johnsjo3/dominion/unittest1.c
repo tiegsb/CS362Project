@@ -76,7 +76,6 @@ int main() {
 	//new gameState
 	struct gameState * randomState = malloc(sizeof(struct gameState));
 	
-	int i;
 	int numPlayers;
 	int kingdomCards[10];
 	int randomSeed;

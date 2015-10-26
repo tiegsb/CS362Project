@@ -1303,7 +1303,7 @@ int remodelCardPlayed(int choice1, int choice2, struct gameState *state, int han
 	{
 	  if (state->hand[currentPlayer][i] == j)
 	    {
-	      discardCard(i, currentPlayer, state, 0);
+	      discardCard(i, currentPlayer, state, 1);
 	      break;
 	    }
 	}

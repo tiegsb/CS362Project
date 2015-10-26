@@ -1,4 +1,4 @@
-CFLAGS = -Wall -fpic -coverage -lm
+CFLAGS = -Wall -fpic -coverage -lm -std=c99
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard unittest1 unittest2 unittest3
 
