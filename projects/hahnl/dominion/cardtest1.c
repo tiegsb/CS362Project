@@ -39,10 +39,10 @@ int main (int argc, char** argv) {
   //Tests begin
   printf("\n\ncardtest1.c - Test for smithyCard() function:\n\n");
   precard = g.handCount[0];
-  cardEffect(&g, handPos, &bonus, smithy, 1, 2, 3);
+  cardEffect(smithy, 1, 2, 3, &g, handPos, &bonus);
   postcard = g.handCount[0];
-  assert(postcard == precard+2);
-  assert(g.playedCardCount == 2);
+  assert(postcard == precard+3);
+  assert(g.playedCardCount == 1);
   printf("All tests passed.");
 
   return 0;
