@@ -22,7 +22,7 @@ int testAdventurerCard(){
 	
 	/*Kingdom cards in this game*/
 	int k[10] = {adventurer, council_room, feast, gardens, mine
-				, remodel, smithy, Adventurer, baron, great_hall};
+				, remodel, smithy, village, baron, great_hall};
 			   
 	/*starts new game*/
 	struct gameState state;
@@ -82,9 +82,9 @@ int testAdventurerCard(){
 			
 			/*tests if the user correctly recieved 2 treasures*/
 			if(numTreasure == 5)
-				printf ("The player has the correct amount of treasure cards!\n")
+				printf ("The player has the correct amount of treasure cards!\n");
 			else
-				printf ("The player incorrectly has %d treasure cards.", numTreasure)
+				printf ("The player incorrectly has %d treasure cards.", numTreasure);
 		}
 	}
 	else{
