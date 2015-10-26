@@ -16,7 +16,7 @@
 #define NOISY_TEST 1
 
 int main() {
-    printf("Testing adventurer...\n");
+    printf("Testing smithy...\n");
 
     int i;
     int seed = 1000;
