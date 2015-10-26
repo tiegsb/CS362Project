@@ -41,7 +41,7 @@ int main (int argc, char** argv) {
   precard = g.handCount[0];
   predisc = g.discardCount[0];
   prestate = g->numActions;
-  cardEffect(&g, handPos, &bonus, great_hall, 1, 2, 3);
+  cardEffect(great_hall, 1, 2, 3, &g, handPos, &bonus);
   postcard = g.handCount[0];
   postdisc = g.discardCount[0];
   poststate = g->numActions;
