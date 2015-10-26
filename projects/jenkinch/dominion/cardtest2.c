@@ -151,7 +151,7 @@ int testCardEffect(int card) {
         printf("cardEffect(adventurer): FAIL player 0, discardCount unaffected after p1 discard \n");
     
     //Test for unaffected deckCount - player 0
-    if(G.deckCount[0] == 0)
+    if(G.deckCount[0] == p0DeckCount)
         printf("cardEffect(adventurer): PASS player 0, deckCount unaffected after p1 draw \n");
     else
         printf("cardEffect(adventurer): FAIL player 0, deckCount unaffected after p1 draw \n");

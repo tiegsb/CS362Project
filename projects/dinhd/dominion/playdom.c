@@ -1,6 +1,10 @@
 #include "dominion.h"
+#include "dominion_helpers.h"
+#include <string.h>
 #include <stdio.h>
+#include <assert.h>
 #include "rngs.h"
+#include "interface.h"
 #include <stdlib.h>
 
 int main (int argc, char** argv) {
@@ -12,6 +16,8 @@ int main (int argc, char** argv) {
   
   initializeGame(2, k, atoi(argv[1]), &G);
   
+
+
   int money = 0;
   int smithyPos = -1;
   int adventurerPos = -1;
@@ -21,6 +27,7 @@ int main (int argc, char** argv) {
   int numAdventurers = 0;
 
   while (!isGameOver(&G)) {
+
     money = 0;
     smithyPos = -1;
     adventurerPos = -1;
@@ -37,7 +44,8 @@ int main (int argc, char** argv) {
     adventurerPos = i;
     }
 
-    if (whoseTurn(&G) == 0) {
+    if (whoseTurn(&G) == 0) 
+    {
       if (smithyPos != -1) {
         printf("0: smithy played from position %d\n", smithyPos); 
       	playCard(smithyPos, -1, -1, -1, &G); 
@@ -89,6 +97,7 @@ int main (int argc, char** argv) {
 	money = 0;
 	i=0;
 	while(i<numHandCards(&G)){
+
 	  if (handCard(i, &G) == copper){
 	    playCard(i, -1, -1, -1, &G);
 	    money++;         
@@ -122,8 +131,15 @@ int main (int argc, char** argv) {
 	    buyCard(silver, &G);
       }
       printf("1: endTurn\n");
+
+      printHand(0, &G);
+      printHand(1, &G);
       
-      endTurn(&G);      
+
+      endTurn(&G);  
+
+    // printHand(0, &G);
+    // printHand(1, &G);    
     }
   } // end of While
 

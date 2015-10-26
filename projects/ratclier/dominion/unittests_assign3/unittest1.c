@@ -4,6 +4,19 @@
 #include "unittest_helpers.h"
 
 
+// Test the discardCard() function
+//
+// discardCard():
+// Removes card from player's hand and either puts it in the played pile
+// (if not trashed) or not (if trashed).
+//
+// handPos       - enumerated card
+// currentPlayer - the index of the current player
+// state         - holds the game state
+// trashFlag     - determines whether the card is trashed (>= 1) or not (< 1)
+//
+// Always returns 0.
+//
 int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
 {
     struct gameState *origState;  // copy of game state
@@ -115,6 +128,10 @@ int testDiscardCard(int handPos, int currentPlayer, struct gameState *state, int
         }
     }
     
+    // Report what, if anything, changed in the game state
+    //
+    whatChanged(origState, state);
+    printf("\n");
 
     return 0;
 }
@@ -138,11 +155,11 @@ int main(int argc, char *argv[])
     printf("\n");
 
     // Discard a trashed card
-    printf("Testing: Trashed card...\n");
+    printf(">>> TESTING: discardCard(), trashed card...\n");
     trashFlag     = 1;   // trashed
     testDiscardCard(handPos, currentPlayer, state, trashFlag);
 
-    printf("\n");
+    //printf("\n");
 
     // New game
     //
@@ -150,7 +167,7 @@ int main(int argc, char *argv[])
     initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
     // Discard a non-trashed card
-    printf("Testing: Non-trashed card...\n");
+    printf(">>> TESTING: discardCard(), non-trashed card...\n");
     trashFlag     = 0;   // not trashed
     testDiscardCard(handPos, currentPlayer, state, trashFlag);
 

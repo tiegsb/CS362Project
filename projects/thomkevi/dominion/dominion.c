@@ -1302,7 +1302,10 @@ int playCouncilRoom(struct gameState *state, int currentPlayer, int handPos)
   //Each other player draws a card
   for (i = 0; i < state->numPlayers; i++)
   {
-      drawCard(i, state);
+      if (i != currentPlayer)
+      {
+        drawCard(i, state);
+      }
   }
 
   //put played card in played card pile
@@ -1348,7 +1351,7 @@ int playSmithy(struct gameState *state, int currentPlayer, int handPos)
   int i;
 
   //+3 Cards
-  for (i = 0; i > 3; i++)
+  for (i = 0; i < 3; i++)
   {
     drawCard(currentPlayer, state);
   }

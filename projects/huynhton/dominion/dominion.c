@@ -12,11 +12,6 @@
 */
 
 // Testing my commits (10/15/2015)
-int testmethod()
-{
-	t a = 5;
-	return 0;
-}
 
 void adventurer_R(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus){
 	int i;
@@ -35,7 +30,7 @@ void adventurer_R(int card, int choice1, int choice2, int choice3, struct gameSt
   if (nextPlayer > (state->numPlayers - 1)){
     nextPlayer = 0;
   }
-	      while(drawntreasure<1){	// REFACTOR: 2 -> 1
+	      while(drawntreasure<3){	// REFACTOR: 2 -> 3 (10/25/2015) (Issue documented in bug1.c)/////REFACTOR: 2 -> 1
 	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 	  shuffle(currentPlayer, state);
 	}
@@ -53,7 +48,7 @@ void adventurer_R(int card, int choice1, int choice2, int choice3, struct gameSt
 	state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
 	z=z-1;
       }
-      return 0;
+      return;// 0;
 };
 
 void feast_R(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus){
@@ -123,7 +118,7 @@ void feast_R(int card, int choice1, int choice2, int choice3, struct gameState *
       }
       //Reset Hand
 
-      return 0;
+      return;// 0;
 }
 
 void mine_R(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus){
@@ -175,7 +170,7 @@ void mine_R(int card, int choice1, int choice2, int choice3, struct gameState *s
 	    }
 	}
 
-      return 0;
+      return;// 0;
 }
 
 void smithy_R(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus){
@@ -196,14 +191,15 @@ void smithy_R(int card, int choice1, int choice2, int choice3, struct gameState 
     nextPlayer = 0;
   }
 	  //+3 Cards
-      for (i = 0; i < 4; i++)	//REFACTOR: 3 -> 4
+	  //(10/24/2015): It seems that the original code was defective, as the user only drew 2 cards. This is assuming my test is accurate.
+      for (i = 0; i < 4; i++)	//REFACTOR: 3 -> 4 // This now makes the user draws three cards (update on 10/24/2015)
 	{
 	  drawCard(currentPlayer, state);
 	}
 
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+      return;// 0;
 }
 
 void village_R(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus){
@@ -232,7 +228,7 @@ void village_R(int card, int choice1, int choice2, int choice3, struct gameState
 
       //discard played card from hand
       discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+      return;// 0;
 }
 
 
@@ -902,7 +898,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     case adventurer:
       // call out the refactored function for adventurer
 	  adventurer_R(card, choice1, choice2, choice3, state, handPos, bonus);
-
+		return 0;
     case council_room:
       //+4 Cards
       for (i = 0; i < 4; i++)
@@ -930,14 +926,14 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     case feast:
 		// call out the refactored function for feast
       feast_R(card, choice1, choice2, choice3, state, handPos, bonus);
-
+		return 0;
     case gardens:
       return -1;
 
     case mine:
 		// call out the refactored function for mine
       mine_R(card, choice1, choice2, choice3, state, handPos, bonus);
-
+		return 0;
     case remodel:
       j = state->hand[currentPlayer][choice1];  //store card we will trash
 
@@ -967,11 +963,11 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     case smithy:
 		// call out the refactored function for smithy
 		smithy_R(card, choice1, choice2, choice3, state, handPos, bonus);
-
+		return 0;
     case village:
 		 // call out the refactored function for village
 		village_R(card, choice1, choice2, choice3, state, handPos, bonus);
-
+		return 0;
     case baron:
       state->numBuys++;//Increase buys by 1!
       if (choice1 > 0){//Boolean true or going to discard an estate

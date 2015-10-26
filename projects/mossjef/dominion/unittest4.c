@@ -18,14 +18,14 @@
 // set NOISY_TEST to 0 to remove printfs from output
 #define NOISY_TEST 1
 
-void testscoreFor();
+void testgainCard();
 
 int main() {
-	testscoreFor(); 
+	testgainCard(); 
  	return 0;
 }
 
-void testscoreFor() {
+void testgainCard() {
 	struct gameState G;
 	int fail = 0;  
 	G.numPlayers = 2;
@@ -182,6 +182,9 @@ void testscoreFor() {
 	}
 	
 
-	if(fail == 0) 
+	if(fail == 0) { 
 		printf("gainCard(): OK - ALL TESTS PASSED\n\n");
+	} else {
+		printf("gainCard(): ISSUES - AT LEAST ONE TEST FAILED\n\n");
+	}
 }
