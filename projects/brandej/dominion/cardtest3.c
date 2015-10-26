@@ -46,19 +46,19 @@ int main() {
             //test 3 cards added and 1 removed
             //printf("3 cards added test:\n");
             if (prevHandCount == state.handCount[curPlayer]) {   //1 cards added which discounts 1 lost
-                printf("Test Passed 1.1\n");
+                printf("Test Passed\n");
             }
             else {
-                printf("Test Failed 1\n");
+                printf("Test Failed\n");
                 testCounter++;
             }
 
             //printf("prevActions: %d, numActions %d", prevNumActions, state.numActions);
             if (prevNumActions + 2 == state.numActions) {   //2 actions added
-                printf("Test Passed 2\n");
+                printf("Test Passed\n");
             }
             else {
-                printf("Test Failed 2\n");
+                printf("Test Failed\n");
                 testCounter++;
             }
 
