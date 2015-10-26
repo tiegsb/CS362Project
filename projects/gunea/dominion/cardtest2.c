@@ -10,48 +10,37 @@ int main()
 	int seed = 2500;
 	int players = 2;
 	int maxBonus = 20;
-	int c, i, j, k;
+	int c = 0,
+		i = 0,
+		j = 0,
+		k = 0;
 	int failedtests = 0;
-	int playedCount;
+	int playedCount = 0;
 	int hand[10] = { adventurer, embargo, steward, cutpurse, outpost
 		, mine, smithy, remodel, great_hall, feast };
 	struct gameState testState;
-
+	int temphand[MAX_HAND];// moved above the if statement
+	int drawntreasure = 0;
+	int cardDrawn = 0;
 
 	memset(&testState, 23, sizeof(struct gameState));
 	//Initialize the game
 	initializeGame(players, hand, seed, &testState);
 
-	playedCount = testState.playedCardCount;
-
+	int handCount = testState.handCount[i];
 	for (i = 0; i < players; i++)
 	{	
 		printf("------------------------------\n");
-		printf("Player %d | Cards in hand: %d\n", i, numHandCards(&testState));
+		printf("Cards in hand: %d\n", numHandCards(&testState));
 		printf("Number of played cards: %d\n", playedCount);
-		for (c = 0; c < testState.handCount[i]; c++)
-		{
-			if (&testState.hand[i][c] == smithy) {
-				printf("smithy found\n");
-				k = 1;
-			}
-		}
-		if (k != 1)
-		{
-			testState.hand[i][1] = smithy;
-		}
-		for (c = 0; c < testState.handCount[i]; c++)
-		{
-			if (&testState.hand[i][c] == smithy) {
-				printf("smithy found\n");
-				//k = 1;
-			}
-		}
-		printf("Playing Smithy Card\n");
-		smithyFunction(i, &testState, 1, j);
-		k = testState.playedCardCount;
-		printf("Cards in hand: %d\n", i, numHandCards(&testState));
+		printf("Discard count: %d\n", testState.discardCount[i]);
+
+		printf("Playing Adventurer Card\n");
+		adventurerFunction(drawntreasure, i, &testState, c, temphand[handCount], j, k);
+	
+		printf("Cards in hand: %d\n", numHandCards(&testState));
 		printf("Number of played cards: %d\n", playedCount);
+		printf("Discard count: %d\n", testState.discardCount[i]);
 		printf("------------------------------\n");
 		printf("\n");
 	}
