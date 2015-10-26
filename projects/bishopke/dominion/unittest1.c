@@ -1,6 +1,7 @@
-//Keenan Bishop unittest1.c
-//updateCoins() test
-//from template
+// Keenan Bishop unittest1.c
+// unittest1.c
+// updateCoins() test
+// from template
 
 
 
@@ -48,7 +49,7 @@ void test_updateCoins(){
 #if (NOISY_TEST == 1)
                 printf("Test player %d with %d treasure card(s) and %d bonus.\n", p, handCount, bonus);
 #endif
-                memset(&G, 23, sizeof(struct gameState));   // clear the game state
+                memset(&G, 0, sizeof(struct gameState));   // clear the game state
                 r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
                 G.handCount[p] = handCount;                 // set the number of cards on hand
                 memcpy(G.hand[p], coppers, sizeof(int) * handCount); // set all the cards to copper
@@ -58,7 +59,7 @@ void test_updateCoins(){
 #endif
 		
                 if(G.coins == handCount * 1 + bonus){ // check if the number of coins is correct
-			printf("PASS: updateCoins(), copper\n"); 
+			printf("PASS: updateCoins(), copper\t"); 
 		}
 		else{
 			printf("FAIL: updateCoins(), copper\n"); 
@@ -71,7 +72,7 @@ void test_updateCoins(){
 #endif
 
                 if(G.coins == handCount * 2 + bonus){ // check if the number of coins is correct
-			printf("PASS: updateCoins(), silver\n"); 
+			printf("PASS: updateCoins(), silver\t"); 
 		}
 		else{
 			printf("FAIL: updateCoins(), silver\n"); 

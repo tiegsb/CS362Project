@@ -1,9 +1,5 @@
 /*	Unit tests for the Smithy card
 		Tests if the player has the correct number of cards after using smithy
-	
-	Include in makefile:
-	testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
-		gcc -o testSmithyCard -g  testSmithyCard.c dominion.o rngs.o $(CFLAGS)
 */
 
 #include "dominion.h"
@@ -13,12 +9,8 @@
 #include "rngs.h"
 #include "interface.h"
 
-// set NOISY_TEST to 0 to remove printfs from output
-#define NOISY_TEST 1
-
 /*Smithy card unit tests*/
-int testSmithyCard()
-{
+int testSmithyCard(){
 	int numPlayer = 2; //players in the game 2-4
 	int player = 0; //current player
 	int handCount = 5; //Number of cards player starts with
@@ -41,7 +33,7 @@ int testSmithyCard()
 	hand[3] = estate;
 	hand[4] = smithy;
 	
-	printf ("Testing smithy_card():\n");
+	printf ("Testing smithyEffect():\n");
 
 	initializeGame(numPlayer, k, 1000, &state); //initialize a new game
 	state.handCount[player] = handCount; //set the number of cards in hand
@@ -56,22 +48,18 @@ int testSmithyCard()
 		}
 	}
 	
-	if (hasSmithy == 1)
-	{
+	if (hasSmithy == 1){
 		printf ("Player has Smithy\n");
 		printf ("Using Smithy card\n");
 		smithyEffect(player, state, i); //uses smithy card
-		hasSmithy = 0;
-		//Smithy adds 3 cards and discards itself 5+3-1==7*/
-		if (state.handCount[player] == 7){
-			printf ("Player has the correct number of cards!\n")
-		}
-		else{
-			printf("Player has the incorrect number of cards.\n")
-		}
+
+		/*Smithy adds 3 cards and discards itself 5+3-1==7*/
+		if (state.handCount[player] == 7)
+			printf ("Player has the correct number of cards!\n");
+		else
+			printf("Player has the incorrect number of cards.\n");
 	}
-	else
-	{
+	else{
 		printf ("Player does not have Smithy\n");
 	}
 	
