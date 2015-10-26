@@ -1,3 +1,15 @@
+//
+// *****************************************************************************
+// 
+// Author:    Erik Ratcliffe
+// Date:      October 25, 2015
+// Project:   Assignment 3 - Unit Tests
+// Filename:  unittest3.c
+// Class:     CS 362 (Fall 2015)
+//
+// *****************************************************************************
+//
+
 #include <stdio.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
@@ -17,12 +29,11 @@
 //
 // Always returns 0.
 //
-
 int testUpdateCoins(int player, struct gameState *state, int bonus)
 {
+    int coinCount = 0;            // tracks total coins
+    int i;                        // loop iterator
     struct gameState *origState;  // copy of game state
-    int coinCount = 0;
-    int i;
 
     // Make a copy of the original game state
     //
@@ -70,8 +81,9 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
         printf("updateCoins: FAIL game state holds incorrect number of coins (%d)\n", state->coins);
     }
 
+    // Report what, if anything, changed in the game state
+    //
     whatChanged(origState, state);
-
     printf("\n");
     
     return 0;
@@ -80,12 +92,12 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
 
 int main(int argc, char *argv[])
 {
-    int player;
-    int bonus;
-    int numPlayers = 2;
+    int numPlayers = 2;      // default number of players
+    int randomSeed = 100;    // random seed for the game
+    int player;              // current player
+    int bonus;               // optional bonus coins
+    struct gameState *state; // holds the new state of the game
     int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
-    int randomSeed = 100;
-    struct gameState *state;
 
     // New game
     //

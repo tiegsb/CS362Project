@@ -1,65 +1,75 @@
+//
+// *****************************************************************************
+// 
+// Author:    Erik Ratcliffe
+// Date:      October 25, 2015
+// Project:   Assignment 3 - Unit Tests
+// Filename:  unittest4.c
+// Class:     CS 362 (Fall 2015)
+//
+// *****************************************************************************
+//
+
 #include <stdio.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "unittest_helpers.h"
 
 
-// Test the gainCard() function.
+// Test the isGameOver() function.
 //
 // gainCard():
-// Checks for an ample supply of cards first, and if one exists, adds a
-// specific card to a player's hand, deck, or trash.
+// Checks the nunber of provinces or if three supply piles are empty to
+// determine if the game is over.
 //
-// supplyPos - enumerated card
-// state     - holds the game state
-// toFlag    - where to put the card (0 = discard, 1 = deck, 2 = hand)
-// player    - who to give the card to
+// Returns 1 if the game is over.
 //
-// Returns -1 if not enough supply or 0 on success
-//
-int testUpdateCoins(int player, struct gameState *state, int bonus)
+int testIsGameOver(struct gameState *state)
 {
-    struct gameState *origState;  // copy of game state
-    int coinCount = 0;
-    int i;
+    int totalSupplyCount = 0;     // tally of all supplyCounts
+    int isGameOverRet;            // return value from isGameOver()
+    int idx;                      // loop iterator
 
-    // Make a copy of the original game state
+    // Run isGameOver()
     //
-    origState = copyState(state);
+    isGameOverRet = isGameOver(state);
 
-    // Run updateCoins()
-    //
-    updateCoins(player, state, bonus);
-
-    for (i = 0; i < state->handCount[player]; i++)
+    for(idx = 0; idx < treasure_map; idx++)
     {
-        if (state->hand[player][i] == copper)
+        if(state->supplyCount[idx] == 0)
         {
-            coinCount += 1;
+            totalSupplyCount++;
         }
-        else if (state->hand[player][i] == silver)
-        {
-            coinCount += 2;
-        }
-        else if (state->hand[player][i] == gold)
-        {
-            coinCount += 3;
-        }       
-    }   
+    }
     
-    coinCount += bonus;
-
-    if(state->coins == coinCount)
+    // If the criteria for a finished game exists...
+    //
+    if(totalSupplyCount >= 3 || state->supplyCount[province] == 0)
     {
-        printf("updateCoins: PASS game state holds correct number of coins.\n");
+        // Did isGameOver() exit with the correct return value?
+        //
+        if(isGameOverRet == 1)
+        {
+            printf("isGameOver: PASS game ended correctly\n");
+        }
+        else
+        {
+            printf("isGameOver: FAIL game was not recognized as being over\n");
+        }
     }
     else
     {
-        printf("updateCoins: FAIL game state holds incorrect number of coins.\n");
+        // Did isGameOver() exit with the correct return value?
+        //
+        if(isGameOverRet == 1)
+        {
+            printf("isGameOver: FAIL game not over, but isGameOver says it is\n");
+        }
+        else
+        {
+            printf("isGameOver: PASS game is recognized as still going\n");
+        }
     }
-
-    //printf("\nupdateCoins: Changes to game state:\n----------------------------------------\n");
-    whatChanged(origState, state);
 
     printf("\n");
 
@@ -69,12 +79,10 @@ int testUpdateCoins(int player, struct gameState *state, int bonus)
 
 int main(int argc, char *argv[])
 {
-    int player;
-    int bonus;
-    int numPlayers = 2;
+    int numPlayers = 2;      // default number of players
+    int randomSeed = 100;    // random seed for the game
+    struct gameState *state; // holds the new state of the game
     int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
-    int randomSeed = 100;
-    struct gameState *state;
 
     // New game
     //
@@ -83,27 +91,26 @@ int main(int argc, char *argv[])
 
     printf("\n");
 
-    // Discard a trashed card
-    printf(">>> TESTING: updateCoins(), player 0 coins, 5 bonus...\n");
-    player = 0;
-    bonus = 5;
-    testUpdateCoins(player, state, bonus);
+    // Test for a game that should not be over. Game initialization should
+    // automatically set up the cards so the game doesn't end before it
+    // begins.
+    //
+    printf(">>> TESTING: isGameOver(), game should not be over...\n");
+    testIsGameOver(state);
 
-    printf("\n");
+    //printf("\n");
 
     // New game
     //
     state = newGame();
     initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
-    // Discard a non-trashed card
-    printf(">>> TESTING: updateCoins(), player 1 coins, 3 bonus...\n");
-    player = 0;
-    bonus = 5;
-    testUpdateCoins(player, state, bonus);
+    // Test for a legit end of game
+    //
+    printf(">>> TESTING: isGameOver(), game should be over...\n");
+    state->supplyCount[province] = 0;
+    testIsGameOver(state);
 
     return 0;
 }
-
-
 
