@@ -1,0 +1,223 @@
+        -:    0:Source:unittest1.c
+        -:    0:Graph:unittest1.gcno
+        -:    0:Data:unittest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include <string.h>
+        -:    3:#include <stdio.h>
+        -:    4:#include "unittestHelper.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <limits.h>
+        -:    7:
+        -:    8:
+        1:    9:int main()
+        -:   10:{
+        -:   11:	int i;
+        -:   12:
+        1:   13:	int TEST_TIMES= 50;
+        -:   14:	struct gameState testerState;
+        1:   15:	srand(time(0));
+        -:   16:
+        1:   17:	printf("*****************************************************\n");
+        1:   18:	printf("*UNITTEST1 Suite \n");
+        1:   19:	printf("  (tests endTurn() with 50 semi-random state)\n");
+        1:   20:	printf("*****************************************************\n");
+       51:   21:	for(i=0; i<TEST_TIMES; i++)
+        -:   22:	{
+       50:   23:		createRandState(&testerState);
+       50:   24:		unittest1(&testerState);
+        -:   25:	}
+        -:   26:	
+        1:   27:	return 0;
+        -:   28:}
+        -:   29://Test function endTurn()
+       50:   30:unittest1(struct gameState *state)
+        -:   31:{
+       50:   32:	int i, b, length, test[E_playedCardCount+1]= {0};
+        -:   33:
+        -:   34:	int hand[2], //arrays that show how many players may have differences in those attributes after call
+        -:   35:		handCount[2],
+        -:   36:		deck[1],
+        -:   37:		deckCount[1],
+        -:   38:		discard[2],
+        -:   39:		discardCount[2];
+        -:   40:
+        -:   41:	int hLen,
+        -:   42:		hcLen,
+        -:   43:		deLen,
+        -:   44:		decLen,
+        -:   45:		diLen,
+        -:   46:		dicLen;
+        -:   47:
+        -:   48:	struct gameState copyState, afterCopy;		
+        -:   49:	
+        -:   50:	//snapshot of state BEFORE
+       50:   51:	copyState= *state;
+        -:   52:	//makeCopyState(state, &copyState);
+        -:   53:
+       50:   54:	endTurn(state);
+        -:   55:
+        -:   56:	//snapshot of state AFTER
+       50:   57:	afterCopy= *state;
+        -:   58:	
+        -:   59:	//---------------------------------------
+        -:   60:	// Checks all post conditions
+        -:   61:	//---------------------------------------
+        -:   62:
+        -:   63:	//playedCard count should be reset to 0
+       50:   64:	if(afterCopy.playedCardCount == 0);
+        -:   65:		//{printf("Test playedCardCount: PASSED\n");}
+        -:   66:	else
+        -:   67:	{	
+    #####:   68:		printf("Test playedCardCount: FAILED\n");
+    #####:   69:		printf("playedCardCount Before: %d\n", copyState.playedCardCount);
+    #####:   70:		printf("playedCardCount After: %d\n\n", afterCopy.playedCardCount);
+        -:   71:	}	
+        -:   72:
+        -:   73:	//numBuys should be reset to 1
+       50:   74:	if(afterCopy.numBuys == 1);
+        -:   75:		//{printf("Test numBuys: PASSED\n");}
+        -:   76:	else
+        -:   77:	{	
+    #####:   78:		printf("Test numBuys: FAILED\n");
+    #####:   79:		printf("numBuys Before: %d\n", copyState.numBuys);
+    #####:   80:		printf("numBuys After: %d\n\n", afterCopy.numBuys);
+        -:   81:	}
+        -:   82:
+        -:   83:	//numActions should be reset to 1
+       50:   84:	if(afterCopy.numActions == 1);
+        -:   85:		//{printf("Test numActions: PASSED\n");}
+        -:   86:	else
+        -:   87:	{	
+    #####:   88:		printf("Test numActions: FAILED\n");
+    #####:   89:		printf("numActions Before: %d\n", copyState.numActions);
+    #####:   90:		printf("numActions After: %d\n\n", afterCopy.numActions);
+        -:   91:	}
+        -:   92:
+        -:   93:	//phase should be reset to 0
+       50:   94:	if(afterCopy.phase == 0);
+        -:   95:		//{printf("Test phase: PASSED\n");}
+        -:   96:	else
+        -:   97:	{	
+    #####:   98:		printf("Test phase: FAILED\n");
+    #####:   99:		printf("phase Before: %d\n", copyState.phase);
+    #####:  100:		printf("phase After: %d\n\n", afterCopy.phase);
+        -:  101:	}
+        -:  102:
+        -:  103:	//whoseTurn should be previous whoseTurn +1, or 0 if previous whoseTurn was max index
+       50:  104:	if(copyState.whoseTurn >= (copyState.numPlayers-1))
+        -:  105:	{
+       24:  106:		if(afterCopy.whoseTurn != 0)
+        -:  107:		{
+    #####:  108:			printf("Test whoseTurn: Failed\n");
+    #####:  109:			printf("whoseTurn Before: %d\n", copyState.whoseTurn);
+    #####:  110:			printf("whoseTurn After: %d\n", afterCopy.whoseTurn);
+    #####:  111:			printf("numplayers:%d\n\n", copyState.numPlayers);
+        -:  112:		}
+        -:  113:	}
+       26:  114:	else if(afterCopy.whoseTurn != (copyState.whoseTurn + 1))
+        -:  115:	{
+    #####:  116:		printf("Test whoseTurn: Failed\n");
+    #####:  117:		printf("whoseTurn Before: %d\n", copyState.whoseTurn);
+    #####:  118:		printf("whoseTurn After: %d\n", afterCopy.whoseTurn);
+    #####:  119:		printf("numplayers:%d\n\n", copyState.numPlayers);
+        -:  120:	}
+        -:  121:
+        -:  122:	//outpostPlayed should be reset to 0
+       50:  123:	if(afterCopy.outpostPlayed == 0);
+        -:  124:		//{printf("Test outpostPlayed: PASSED\n");}
+        -:  125:	else
+        -:  126:	{	
+    #####:  127:		printf("Test outpostPlayed: FAILED\n");
+    #####:  128:		printf("outpostPlayed Before: %d\n", copyState.outpostPlayed);
+    #####:  129:		printf("outpostPlayed After: %d\n\n", afterCopy.outpostPlayed);
+        -:  130:	}
+        -:  131:
+        -:  132:	//discard count of previous whoseTurn should be increased by previous whoseTurn hand count 
+       50:  133:	if(afterCopy.discardCount[copyState.whoseTurn] == copyState.discardCount[copyState.whoseTurn] + copyState.handCount[copyState.whoseTurn]);
+        -:  134:	//{printf("Test discardCount: PASSED\n");}	
+        -:  135:	else
+        -:  136:	{
+    #####:  137:		printf("Test discardCount: FAILED\n");
+    #####:  138:		printf("discardCount Before: %d\n");
+    #####:  139:		printf("discardCount After: %d\n\n");
+        -:  140:	}
+        -:  141:
+        -:  142:	//discard pile of the previous whoseTurn should include the cards from previous whoseTurn hand, in order
+       50:  143:	b=0;
+      164:  144:	for(i=0; i<copyState.handCount[copyState.whoseTurn]; i++)
+        -:  145:	{
+      114:  146:		if(afterCopy.discard[copyState.whoseTurn][copyState.discardCount[copyState.whoseTurn]+i] != copyState.hand[copyState.whoseTurn][i])
+        -:  147:		{
+    #####:  148:			printf("Test discard: FAILED\n");
+    #####:  149:			printf("Error: last user's hand was not properly put into the discard pile.\n");
+    #####:  150:			printf("Card#%d expected in player#%d's discard pile position#%d\n\n", copyState.hand[copyState.whoseTurn][i], copyState.whoseTurn, copyState.discardCount+i);
+    #####:  151:			b= 1;
+        -:  152:		}
+        -:  153:	}
+        -:  154:	//if(!b){printf("Test discard: PASSED\n");}
+        -:  155:	
+        -:  156:	//current whoseTurn handCount should be 5
+       50:  157:	if(afterCopy.handCount[afterCopy.whoseTurn] != 5)
+        -:  158:	{
+        4:  159:		printf("Test handCount: FAILED\n");
+        4:  160:		printf("Error: current player should have a handCount of 5.\n");
+        4:  161:		printf("Actual handCount: %d\n", afterCopy.handCount[afterCopy.whoseTurn]);
+        4:  162:		printf("stateBefore:%d, stateAfter:%d\n\n",state->handCount[copyState.whoseTurn],
+        4:  163:												 state->handCount[state->whoseTurn]);
+        -:  164:	}
+        -:  165:
+        -:  166:	//previous whoseTurn handCount should be 0
+       50:  167:	if(afterCopy.handCount[copyState.whoseTurn] != 0)
+        -:  168:	{
+    #####:  169:		printf("Test handCount: FAILED\n");
+    #####:  170:		printf("previous player should now have a handCount of 0.\n");
+    #####:  171:		printf("Actual handCount: %d\n\n", afterCopy.handCount[copyState.whoseTurn]);
+        -:  172:	}
+        -:  173:
+        -:  174:
+        -:  175:	//These are state attributes that are expected to change
+        -:  176:	//This array will let the change spotter know to ignore changes to these
+        -:  177:	//attributes
+       50:  178:	test[E_playedCardCount]= 1;
+       50:  179:	test[E_playedCards]= 1;	
+       50:  180:	test[E_numBuys]= 1;
+       50:  181:	test[E_numActions]= 1;
+       50:  182:	test[E_phase]= 1;
+       50:  183:	test[E_whoseTurn]= 1;
+       50:  184:	test[E_outpostPlayed]= 1;
+       50:  185:	test[E_coins]= 1;
+        -:  186:
+        -:  187:	//the hand of the former player is expected change
+       50:  188:	hand[0]= copyState.whoseTurn;	
+        -:  189:	//the hand of the new player is expected to change
+       50:  190:	hand[1]= afterCopy.whoseTurn;
+       50:  191:	hLen= 2;
+        -:  192:				
+       50:  193:	handCount[0]= copyState.whoseTurn;	
+       50:  194:	handCount[1]= afterCopy.whoseTurn;	
+       50:  195:	hcLen= 2;
+        -:  196:
+       50:  197:	discard[0]= copyState.whoseTurn;	
+       50:  198:	discard[1]= afterCopy.whoseTurn;
+       50:  199:	diLen= 2;
+        -:  200:
+       50:  201:	discardCount[0]= copyState.whoseTurn;	
+       50:  202:	discardCount[1]= afterCopy.whoseTurn;
+       50:  203:	dicLen= 2;
+        -:  204:
+       50:  205:	deck[0]= afterCopy.whoseTurn;
+       50:  206:	deLen= 1;
+        -:  207:	
+       50:  208:	deckCount[0]= afterCopy.whoseTurn;
+       50:  209:	decLen= 1;
+        -:  210:
+        -:  211:	//Find all changes to gamestate and print errors if changes were not expected
+       50:  212:	printBadDiffs(&copyState, &afterCopy, test, hand, hLen, handCount, hcLen, discard, diLen, discardCount, dicLen, deck, deLen, deckCount, decLen);	
+        -:  213:		
+       50:  214:	return 0;
+        -:  215:}
+        -:  216:
+        -:  217:
+        -:  218:	
