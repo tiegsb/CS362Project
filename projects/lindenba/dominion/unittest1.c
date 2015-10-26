@@ -52,7 +52,7 @@ int main() {
 #endif
                 memset(&G, 23, sizeof(struct gameState));   // clear the game state
                 r = initializeGame(MAX_PLAYERS, k, seed, &G); // initialize a new game
-                G.handCount[p] = h;                 // set the number of cards in hand
+                G.handCount[p] = h;                 // set the number of cards on hand
                 memcpy(G.hand[p], coppers, sizeof(int) * MAX_HAND); // set all the cards to copper
                 updateCoins(p, &G, b);
 #if (NOISY_TEST == 1)
