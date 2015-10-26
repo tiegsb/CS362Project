@@ -2,4 +2,5 @@
 *.swp
 *.gcda
 *.gcno
+*.gcov
 unittestresults.out
