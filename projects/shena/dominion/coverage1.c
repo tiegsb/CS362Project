@@ -55,4 +55,14 @@ cardtest4.c
 	Taken at least once:14.15% of 417
 	Calls executed:12.24% of 98
 
+Thoughts:
+	As can be seen from the values above: coverage,
+	in general, seems to be pretty low across all 
+	unit tests. In part, I would attribute this to
+	the fact that the number of tests implemented 
+	at this point are quite limited (so far only
+	covering four specific functions and four 
+	cards). Nonetheless, each of the unit tests I 
+	implemented have room for improvement and I
+	think that they can be more comprehensive.
 */
