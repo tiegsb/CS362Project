@@ -4,6 +4,12 @@
  * Purpose: Describes coverage in card tests 1-4 and unit tests 1-4 */
 
 dominion.c:
+  28.37% statement coverage
+  29.26% branch coverage
+  19.42% taken at least once
+  20% calls executed
+  
+  Overall, the coverage for dominion.c is pretty low.  That is because we were only required to write unit tests four eight functions total.  To improve coverage for dominion.c, it would be necessary to write unit tests for all functions.
   
 
 cardtest1.c: smithyEffect()

@@ -1,11 +1,6 @@
 /* -----------------------------------------------------------------------
  * Unit Test for scoreFor()
  *
- * Demonstration of how to write unit tests for dominion-base
- * Include the following lines in your makefile:
- *
- * testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
- *      gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
  * -----------------------------------------------------------------------
  */
 
@@ -15,9 +10,6 @@
 #include <stdio.h>
 #include <assert.h>
 #include "rngs.h"
-
-// set NOISY_TEST to 0 to remove printfs from output
-#define NOISY_TEST 1
 
 int main() {
     int i;
@@ -72,8 +64,8 @@ int main() {
         G.discard[1][2] = estate;
 
         score = scoreFor(1, &G);
-        printf("Expected discard score = 10, Actual discard score = %d\n", score);
-        if (score == 10) {
+        printf("Expected discard score = 3, Actual discard score = %d\n", score);
+        if (score == 3) {
             printf("Discard score TEST PASSED\n\n");
         } else {
             printf("Discard score TEST FAILED\n\n");
@@ -93,8 +85,6 @@ int main() {
         } else {
             printf("Deck score TEST FAILED\n\n");
         }
-
-    	printf("All tests passed!\n");
 
     	return 0;
 	}

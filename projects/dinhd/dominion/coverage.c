@@ -60,7 +60,8 @@ Calls executed:27.27% of 99
 Statement coverage and branch coverage was complete until the functions that involved
 the opposing players hand. I discovered that I could not measure the various
 states of the other player. Either the values were missing or did not exist. As a
-result I could not test those lines of code. 
+result I could not test those lines of code. The result of these shortcomings
+is the way the other methods were built. 
 
 ***********************************  unittest1  ***********************************
 

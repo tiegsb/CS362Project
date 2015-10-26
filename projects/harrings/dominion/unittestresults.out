@@ -1,0 +1,119 @@
+Result for running unit tests:
+unittest1.c
+
+ Running Draw Card Unit Test:
+ Testing draw card with non empty deck.
+PASS deck decrease by 1.
+PASS no illegal deck moves.
+PASS player hand count up by 1.
+
+ Testing draw card with empty deck.
+PASS deck descreased by 1.
+PASS legal deck.
+PASS player hand increased by 1.
+PASS deck was shuffled.
+PASS all cards moved to deck.
+File 'dominion.c'
+Lines executed:18.13% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+unittest2.c
+
+Unit test 2 Discard card
+
+Discarding players 3rd card 
+FAIL discard pile did not increase by 1.
+PASS played pile increased by 1.
+PASS card at end of hand filled in discarded cards spot.
+
+Discarding players 3rd card 
+FAIL discard pile did not increase by 1.
+PASS played pile stayed same with trash flag of 1.
+File 'dominion.c'
+Lines executed:17.62% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+unittest3.c
+
+Unit test of update coins
+Passed test expected 9 coins and got 9 coins
+Passed test expected 14 coins and got 14 coins
+Passed test expected 11 coins and got 11 coins
+Passed test expected 14 coins and got 14 coins
+Passed test expected 12 coins and got 12 coins
+Passed test expected 12 coins and got 12 coins
+Passed test expected 16 coins and got 16 coins
+Passed test expected 16 coins and got 16 coins
+Passed test expected 16 coins and got 16 coins
+Passed test expected 22 coins and got 22 coins
+Passed test expected 19 coins and got 19 coins
+Passed test expected 9 coins and got 9 coins
+Passed test expected 12 coins and got 12 coins
+Passed test expected 10 coins and got 10 coins
+Passed test expected 12 coins and got 12 coins
+Passed test expected 15 coins and got 15 coins
+Passed test expected 17 coins and got 17 coins
+Passed test expected 16 coins and got 16 coins
+Passed test expected 20 coins and got 20 coins
+Passed test expected 15 coins and got 15 coins
+Passed test expected 16 coins and got 16 coins
+Passed test expected 21 coins and got 21 coins
+End of test 2222 tests were run with 2222 successes and 0 failures 
+File 'dominion.c'
+Lines executed:15.89% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+unittest4.c
+
+Unit test of Game Over function
+Checks if game ends when 3 action card stacks are empty. (feast, mine, smithy) 
+Pass game is not over with 1 empty stack (feast).
+Pass game is not over with 2 empty stacks (feast, mine).
+Pass game has ended with 3 empty stacks (feast, mine, smithy) 
+
+Checks if game ends when the 3 currency stacks are empty.
+Pass game is not over with 1 empty stack (gold).
+Pass game is not over with 2 empty stacks (gold, silver).
+Pass game has ended with 3 empty stacks (gold, silver, copper) 
+
+Checks if is over properly ends game when province stack empty
+Pass game is not over with 1 card in province pile.
+Pass game has ended with empty province stack 
+File 'dominion.c'
+Lines executed:17.27% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest1.c
+Testing Adventurer card.
+PASS discard pile increased by same amount deck decreased.
+FAIL hand size did not increase by 1
+Pass last two cards in hand are treasure cards 
+File 'dominion.c'
+Lines executed:20.38% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest2.c
+Testing Smithy card.
+PASS discard pile increased by same amount deck decreased.
+FAIL hand size did not increase by 2 
+File 'dominion.c'
+Lines executed:18.48% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest3.c
+Testing Village card.
+FAIL actions did not increase by 2.
+PASS hand size stayed same.
+File 'dominion.c'
+Lines executed:18.31% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest4.c
+Testing Village card.
+PASS buys increased by 1.
+FAIL hand size did not increase by 3 
+PASS other players hand size increased by 1.
+File 'dominion.c'
+Lines executed:21.24% of 579
+dominion.c:creating 'dominion.c.gcov'
+

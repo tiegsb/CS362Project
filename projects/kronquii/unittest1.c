@@ -1,5 +1,5 @@
 #include <limits.h>
-#include <assert.h>
+#include "notassert.h"
 
 #include "dominion.h"
 

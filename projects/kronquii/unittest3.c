@@ -1,4 +1,4 @@
-#include <assert.h>
+#include "notassert.h"
 #include <string.h>
 #include "dominion.h"
 

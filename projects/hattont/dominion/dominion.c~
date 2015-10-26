@@ -1264,12 +1264,9 @@ int adventurerCard(struct gameState *state, int currentPlayer) {
     //top card of hand is most recently drawn card.
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];
 
-    //If cardDrawn is coin, increment drawntreasure.
     if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
       drawntreasure++;
-
-		//cardDrawn != treasure card, add non-treasure card to temphand.
-    else{ 
+		else{ 
       temphand[z] = cardDrawn; 
 
       //this should just remove the top card (the most recently drawn one).
@@ -1277,8 +1274,7 @@ int adventurerCard(struct gameState *state, int currentPlayer) {
       z++;
     }
   }
-
-  //Discard temp hand
+	// discard all cards in play that have been drawn
   while(z-1 >= 0){
     state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; 
     z=z-1;

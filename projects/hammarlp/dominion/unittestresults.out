@@ -1,0 +1,68 @@
+Running unit and card tests:
+-------unittest1.c:
+unittest1 - Testing kingdomCards
+Test passed. Kingdom cards created correctly
+File 'dominion.c'
+Lines executed:24.78% of 569
+Creating 'dominion.c.gcov'
+
+-------unittest2.c:
+unittest2 - Testing updateCoins
+Test passed. Total is 5. 
+File 'dominion.c'
+Lines executed:24.78% of 569
+Creating 'dominion.c.gcov'
+
+-------unittest3.c:
+unittest3 - Testing 
+Test passed. Score is 9
+File 'dominion.c'
+Lines executed:24.78% of 569
+Creating 'dominion.c.gcov'
+
+-------unittest4.c:
+unittest4 - Testing isGameOver
+Test 1 - game is not over. Province cards not empty.
+Test passed. Game is not over
+Test 2 - game is over. Province cards empty
+Test passed. Game is over
+Test 3 - game is over. At least 3 supply piles are empty
+Test passed. Game is over
+File 'dominion.c'
+Lines executed:24.78% of 569
+Creating 'dominion.c.gcov'
+
+-------cardtest1.c:
+cardtest1 - Testing adventurer card
+Test 1. Player has enough treasure in their hand to go through
+Test passed. Correct final number cards in hand
+Test 2. Player does not have enough cards, so needs to shuffle
+Test passed. Correct final number cards in hand
+File 'dominion.c'
+Lines executed:24.78% of 569
+Creating 'dominion.c.gcov'
+
+-------cardtest2.c:
+cardtest3 - Testing smithy card
+Test failed. Wrong final number cards in hand
+File 'dominion.c'
+Lines executed:24.78% of 569
+Creating 'dominion.c.gcov'
+
+-------cardtest3.c:
+cardtest4 - Testing village card
+Test passed. Correct final number cards in hand
+Test failed. Wrong number of actions
+File 'dominion.c'
+Lines executed:24.78% of 569
+Creating 'dominion.c.gcov'
+
+-------cardtest4.c:
+cardtest4 - Testing embargo card
+Test passed. Correct number of coins
+Test passed. Correct final number cards in hand
+Test passed. Correct final number of tokens
+File 'dominion.c'
+Lines executed:24.78% of 569
+Creating 'dominion.c.gcov'
+
