@@ -1,5 +1,5 @@
 /* 
- * Unit test for fullDeckCount
+ * Unit test for villageEffect
  */
 #include "interface.h"
 #include "dominion.h"
@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "rngs.h"
 
-int main() {
+void testVillageEffect() {
 
   printf("\nStarting tests for villageEffect\n");
   printf("---------------------------------\n");
@@ -25,9 +25,10 @@ int main() {
   gs.whoseTurn = 0;
   gs.numActions = 0;
 
-  int testHand[0];
-  memcpy(gs.hand[0], testHand, 0);
-  gs.handCount[0] = 0;
+  int testHand[1];
+  testHand[0] = village;
+  memcpy(gs.hand[0], testHand, sizeof(int));
+  gs.handCount[0] = 1;
 
   int testDeck[1];
   testDeck[0] = copper;
@@ -38,7 +39,7 @@ int main() {
   memcpy(gs.discard[0], testDiscard, 0);
   gs.discardCount[0] = 0;
   
-  // the second param doesn't seem to be used
+  // the second param doesn't seem to be used ???
   villageEffect(&gs, 0);
 
   printf("Test numActions incremented appropriately...");
@@ -65,15 +66,29 @@ int main() {
     testsFailedCount++;
   }
 
+  printf("Test that the hand only has one card in it...");
+  if (gs.handCount[0] == 1) {
+    printf(" passed\n");
+    testsRunCount++;
+  }
+  else {
+    printf(" FAILED!\n");
+    printf("   found %d instead of 1\n", gs.handCount[0]);
+    testsRunCount++;
+    testsFailedCount++;
+  }
+
   if (testsFailedCount == 0) {
     printf("SUCCESS %d of %d tests passed.\n", testsRunCount, testsRunCount);
-    return 0;
   }
   else {
     printf("FAILURE! %d of %d tests passed.\n", 
       testsRunCount - testsFailedCount, 
       testsRunCount);
-
-    return 1;
   }
+}
+
+int main() {
+  testVillageEffect();
+  return 0;
 }
