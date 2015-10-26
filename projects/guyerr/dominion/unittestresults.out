@@ -1,0 +1,182 @@
+Starting results Now
+______________________________________________________________________________________________________________
+unittest1.c test results:\n
+Test 1:
+	TEST PASSED - Drawcard correctly reduced the player deck from 5 to 4 and added increased the players hand count from 5 to 6.
+	TEST PASSED - The card pulled was at the top of the deck	TEST PASSED - No changes were made to the other player's hand.
+Test 2:
+	TEST PASSED - Drawcard correctly reduced the player deck from 10 to 9 and added increased the players hand count from 0 to 1.
+	TEST FAILED - The card pulled was not the same card that was on the top of the deck	TEST PASSED - No changes were made to the other player's hand.
+Test 3:
+	TEST PASSED - Drawcard correctly returned -1 when a player number not in the initialized game was used.
+	TEST PASSED - No changes were made to the other player's hand.
+Test 4:
+	TEST PASSED - A call to shuffle the discard pile was called and executed correctly. The deck was then reduced by one.
+	After the shuffle, the hand count was correctly increased by 1.
+	TEST PASSED - No changes were made to the other player's hand.
+ 
+File 'dominion.c'
+Lines executed:18.48% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+______________________________________________________________________________________________________________
+unittest2.c test results:\n
+All Tests Passed 
+File 'dominion.c'
+Lines executed:5.18% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+______________________________________________________________________________________________________________
+unittest3.c test results:\n
+TEST PASSED - The correct coin cound of 5 was returned.
+TEST PASSED - The correct coin cound of 10 was returned.
+TEST PASSED - The correct coin cound of 15 was returned.
+TEST PASSED - The correct coin cound of 7 was returned.
+TEST PASSED - The correct coin cound of 1 was returned.
+TEST PASSED - The correct coin cound of 0 was returned.
+TEST PASSED - The correct coin cound of 19 was returned.
+TEST PASSED - The correct coin cound of 0 was returned.
+TEST PASSED - The correct coin cound of 9 was returned.
+TEST PASSED - The correct coin cound of 12 was returned.
+TEST PASSED - The correct coin cound of 9 was returned.
+ 
+File 'dominion.c'
+Lines executed:15.89% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+______________________________________________________________________________________________________________
+unittest4.c test results:\n
+Test 1:
+	Card 0 in pre shuffle hand was 4 and is 4 after the shuffle.
+	Card 1 in pre shuffle hand was 5 and is 4 after the shuffle.
+	Card 2 in pre shuffle hand was 11 and is 6 after the shuffle.
+	Card 3 in pre shuffle hand was 4 and is 11 after the shuffle.
+	Card 4 in pre shuffle hand was 6 and is 5 after the shuffle.
+	TEST PASSED
+Test 2:
+	Card 0 in pre shuffle hand was 0 and is 5 after the shuffle.
+	Card 1 in pre shuffle hand was 4 and is 5 after the shuffle.
+	Card 2 in pre shuffle hand was 5 and is 15 after the shuffle.
+	Card 3 in pre shuffle hand was 15 and is 4 after the shuffle.
+	Card 4 in pre shuffle hand was 5 and is 0 after the shuffle.
+	TEST PASSED
+Test 3:
+	Card 0 in pre shuffle hand was 6 and is 0 after the shuffle.
+	Card 1 in pre shuffle hand was 0 and is 6 after the shuffle.
+	Card 2 in pre shuffle hand was 6 and is 6 after the shuffle.
+	Card 3 in pre shuffle hand was 0 and is 6 after the shuffle.
+	Card 4 in pre shuffle hand was 6 and is 0 after the shuffle.
+	TEST PASSED
+Test 4:
+	Card 0 in pre shuffle hand was 4 and is 5 after the shuffle.
+	Card 1 in pre shuffle hand was 4 and is 0 after the shuffle.
+	Card 2 in pre shuffle hand was 6 and is 4 after the shuffle.
+	Card 3 in pre shuffle hand was 5 and is 4 after the shuffle.
+	TEST PASSED
+Test 5:
+	Card 0 in pre shuffle hand was 4 and is 5 after the shuffle.
+	Card 1 in pre shuffle hand was 5 and is 4 after the shuffle.
+	Card 2 in pre shuffle hand was 5 and is 5 after the shuffle.
+	Card 3 in pre shuffle hand was 4 and is 6 after the shuffle.
+	Card 4 in pre shuffle hand was 6 and is 4 after the shuffle.
+	Card 5 in pre shuffle hand was 5 and is 5 after the shuffle.
+	Card 6 in pre shuffle hand was 6 and is 6 after the shuffle.
+	Card 7 in pre shuffle hand was 6 and is 6 after the shuffle.
+	Card 8 in pre shuffle hand was 4 and is 4 after the shuffle.
+	Card 9 in pre shuffle hand was 4 and is 4 after the shuffle.
+	TEST PASSED
+Test 6:
+	Card 0 in pre shuffle hand was 15 and is 15 after the shuffle.
+	Card 1 in pre shuffle hand was 11 and is 3 after the shuffle.
+	Card 2 in pre shuffle hand was 3 and is 11 after the shuffle.
+	Card 3 in pre shuffle hand was 3 and is 3 after the shuffle.
+	Card 4 in pre shuffle hand was 0 and is 0 after the shuffle.
+	TEST PASSED
+File 'dominion.c'
+Lines executed:15.72% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+______________________________________________________________________________________________________________
+cardtest1.c test results:\n
+Test 1:
+	TEST PASSED - HandCount was increased by 2.
+	TEST PASSED - Smithy card was removed.
+Test 2:
+	TEST PASSED - HandCount was increased by 2.
+	TEST PASSED - Smithy card was removed.
+Test 3:
+	TEST PASSED - HandCount was increased by 2.
+	TEST PASSED - Smithy card was removed.
+Test 4:
+	TEST PASSED - HandCount was increased by 2.
+	TEST FAILED - Smithy card was not removed.
+Test 5:
+	TEST PASSED - HandCount was increased by 2.
+	TEST FAILED - Smithy card was not removed.
+File 'dominion.c'
+Lines executed:20.73% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+______________________________________________________________________________________________________________
+cardtest2.c test results:\n
+Test 1:
+	TEST PASSED - The adventurer card was removed from the hand.
+	TEST PASSED - The mine card was correctly skipped.
+	TEST PASSED - All cards were replaced with valid cards.
+Test 2:
+	TEST PASSED - The adventurer card was removed from the hand.
+	TEST PASSED - The deck was reduced by at least 2 cards.
+	TEST PASSED - All cards were replaced with valid cards.
+Test 3:
+	TEST PASSED - The adventurer card was removed from the hand.
+	TEST FAILED - Not enough treasure cards were added to the hand.
+	TEST PASSED - All cards were replaced with valid cards.
+File 'dominion.c'
+Lines executed:25.04% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+______________________________________________________________________________________________________________
+cardtest3.c test results:\n
+Test 1:
+	TEST PASSED - The council_room card was removed from the hand.
+	TEST PASSED - The hand count for player 1 was increased by 3.
+	TEST PASSED - The hand count for player 2 was increased by 1.
+	TEST PASSED - The deck count for player 1 was reduced by 4.
+	TEST PASSED - The deck count for player 2 was reduced by 1.
+	TEST PASSED - One buy was added for player 1.
+Test 2:
+	TEST PASSED - The council_room card was removed from the hand.
+	TEST PASSED - The hand count for player 1 was increased by 3.
+	TEST PASSED - The hand count for player 2 was increased by 1.
+	TEST PASSED - The deck count for player 1 was reduced by 4.
+	TEST PASSED - The deck count for player 2 was reduced by 1.
+	TEST PASSED - One buy was added for player 1.
+Test 3:
+	TEST PASSED - The council_room card was removed from the hand.
+	TEST PASSED - The hand count for player 1 was increased by 3.
+	TEST PASSED - The hand count for player 2 was increased by 1.
+	TEST PASSED - The deck count for player 1 was reduced by 4.
+	TEST PASSED - The deck count for player 2 was reduced by 1.
+	TEST PASSED - One buy was added for player 1.
+File 'dominion.c'
+Lines executed:20.55% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+______________________________________________________________________________________________________________
+cardtest4.c test results:\n
+Test 1:
+	TEST PASSED - The number of actions has increased by 2.
+	TEST FAILED - The village card altered the number of coins.
+	TEST PASSED - The hand count is the same and the village card has been replaced by another card.
+Test 2:
+	TEST PASSED - The number of actions has increased by 2.
+	TEST FAILED - The village card altered the number of coins.
+	TEST PASSED - The hand count is the same and the village card has been replaced by another card.
+Test 3:
+	TEST PASSED - The number of actions has increased by 2.
+	TEST FAILED - The village card altered the number of coins.
+	TEST PASSED - The hand count is the same and the village card has been replaced by another card.
+File 'dominion.c'
+Lines executed:20.38% of 579
+dominion.c:creating 'dominion.c.gcov'
+
