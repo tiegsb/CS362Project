@@ -18,30 +18,35 @@ struct gameState *state
 
 int main() {
 
-	int score;
-	int card;
+    int score;
+    int card;
     struct gameState G;
     struct gameState D;
 
     printf("* * * * * * * * * * * * * * * * Testint unittest4 scoreFor * * * * * * * * * * * * * * * * \n");
+    
+    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
+    sea_hag, tribute, smithy};
+    initializeGameNoPoints(2, k, 2, &G);
 
     printf ("Test: Empty Game \n");
     score = scoreFor(0, &G);
     //printf ("Score is %i \n", score);
-    
+
+
     assert (score == 0);
 
     printf("Test: one score card found in hand\n");
     for (card = curse; card <= great_hall; card++)
     {
-    	G.supplyCount[card] = 1;
+        G.supplyCount[card] = 1;
     }
 
     gainCard(curse, &G, 2, 0); // -1 pt
     gainCard(estate, &G, 2, 0); // 1 pt
     gainCard(duchy, &G, 2, 0); // 3 pts
     gainCard(province, &G, 2, 0); // 6 pts
- 	gainCard(great_hall, &G, 2, 0); //1 pt
+    gainCard(great_hall, &G, 2, 0); //1 pt
     gainCard(gardens, &G, 2, 0); // 0pt
     //printHand(0, &G);
 
@@ -52,7 +57,7 @@ int main() {
 
     for (card = curse; card <= great_hall; card++)
     {
-    	G.supplyCount[card] = 1;
+        G.supplyCount[card] = 1;
     }   
 
     printf("Test: One of each in deck \n");
@@ -60,7 +65,7 @@ int main() {
     gainCard(estate, &G, 1, 0); // 1 pt
     gainCard(duchy, &G, 1, 0); // 3 pts
     gainCard(province, &G, 1, 0); // 6 pts
- 	gainCard(great_hall, &G, 1, 0); //1 pt
+    gainCard(great_hall, &G, 1, 0); //1 pt
     gainCard(gardens, &G, 1, 0); // 1pt
     //printDeck(0, &G);
 
@@ -74,7 +79,7 @@ int main() {
 
     for (card = curse; card <= great_hall; card++)
     {
-    	G.supplyCount[card] = 1;
+        G.supplyCount[card] = 1;
     }
 
     printf("Test: One of each in discard\n");
@@ -82,7 +87,7 @@ int main() {
     gainCard(estate, &G, 0, 0); // 1 pt
     gainCard(duchy, &G, 0, 0); // 3 pts
     gainCard(province, &G, 0, 0); // 6 pts
- 	gainCard(great_hall, &G, 0, 0); //1 pt
+    gainCard(great_hall, &G, 0, 0); //1 pt
     gainCard(gardens, &G, 0, 0); // 1pt
     
     //printDeck(0, &G);
