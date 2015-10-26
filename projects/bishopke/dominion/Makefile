@@ -58,23 +58,35 @@ cardtest4: cardtest4.c dominion.o rngs.o
 
 #unittestresults.out
 
-unittestresults.out: unittest1 unittest2 unittest3 unittest4 dominion.o rngs.o
+unittestresults.out: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 dominion.o rngs.o
 	echo "Keenan Bishop: Unit Test Results:" >> unittestresults.out
 	#test 1
 	echo "Unit Test 1:" >> unittestresults.out
 	./unittest1 >> unittestresults.out
-	#test 1
+	#test 2
 	echo "Unit Test 2:" >> unittestresults.out
 	./unittest2 >> unittestresults.out
-	#test 1
-	echo "Unit Test 1:" >> unittestresults.out
+	#test 3
+	echo "Unit Test 3:" >> unittestresults.out
 	./unittest3 >> unittestresults.out
-	#test 1
-	echo "Unit Test 1:" >> unittestresults.out
+	#test 4
+	echo "Unit Test 4:" >> unittestresults.out
 	./unittest4 >> unittestresults.out
-
-	#gcov dominion.c >> uniontestsresults.out
-
+	#card test 1
+	echo "Card Test 1:" >> unittestresults.out
+	./cardtest1 >> unittestresults.out
+	#card test 2
+	echo "Card Test 2:" >> unittestresults.out
+	./cardtest4 >> unittestresults.out
+	#card test 3
+	echo "Card Test 3:" >> unittestresults.out
+	./cardtest3 >> unittestresults.out
+	#card test 4
+	echo "Card Test 4:" >> unittestresults.out
+	./cardtest4 >> unittestresults.out
+	echo "gcov output:" >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
