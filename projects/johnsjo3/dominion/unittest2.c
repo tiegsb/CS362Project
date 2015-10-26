@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 
 void fuzzState(struct gameState *);
@@ -25,7 +26,7 @@ char * singleArrayName(char * str, const char * name, int v);
 int compareValues(int a, int b, const char * varName);
 int compareStates(struct gameState * a, struct gameState * b, int playerNum);
 
-main(int argc, char * argv[]){
+int main(int argc, char * argv[]){
 	int unit2_test_trials = 10000;
 	int deckRange = MAX_DECK;			//from 0 to deckRange
 	
@@ -43,7 +44,6 @@ main(int argc, char * argv[]){
 	struct gameState * gs = malloc(sizeof(struct gameState));
 	struct gameState * stateCopy = malloc(sizeof(struct gameState));
 	
-	int i;
 	int trial;
 	int playerNum;
 	int returnValue;

@@ -26,6 +26,9 @@ card in hand. Will need to do that in future testing.
 Boundary coverage:
 ------------------
 
+I think boundary coverage is decent. The discardCard() function operates differently
+when a card is flagged as trashed, and that's covered in the unit test. It doesn't
+get much more complicated than that.
 
 
 unittest2: gainCard()
@@ -51,7 +54,8 @@ address that action will need to be coverd in future unit tests.
 Boundary coverage:
 ------------------
 
-
+The two primary conditions for not gaining a card are insufficient supply of cards 
+and a card not being used in a game. Both are tested in this unit test.
 
 
 unittest3: updateCoins()
@@ -79,6 +83,9 @@ easy in future unit tests.
 Boundary coverage:
 ------------------
 
+The updateCoins() function is quite simple and does not have extreme conditions
+for testing. Coins are set to 0 and then added based on what's in the player's
+hand. I think boundary coverage is fine as is.
 
 
 unittest4: isGameOver()
@@ -91,6 +98,8 @@ No calls
 Statement coverage:
 -------------------
 
+Other than the lines that are not reached when the function exits and returns
+1, statements seem to be covered. I think we're in good shape here.
 
 Branch coverage:
 ----------------
@@ -101,10 +110,11 @@ can prematurely break out of the function by returning 1 so there are going to
 be legitimate situations where branches are not reached). I am not sure what I
 can add to testing to raise that 75%, and I'm not sure that it's even necessary.
 
-
 Boundary coverage:
 ------------------
 
+Both situations that can end a game are tested: all provinces gone, or at least
+3 empty supply piles. I think boundaries are covered.
 
 
 cardtest1: smithyCard()
@@ -151,6 +161,10 @@ should level out testing of the branches.
 Boundary coverage:
 ------------------
 
+I am not sure what boundary needs to be checked here. If the player's hand is
+empty, the discard pile is shuffled and supplies more cards. And it seems 
+impossible to not have any treasure cards, so testing for that seems pointless.
+I am open to suggestions, but I think boundaries are fairly well covered.
 
 
 cardtest3: treasureMapCard()
@@ -179,6 +193,9 @@ taken branches. Future unit tests will have to address this.
 Boundary coverage:
 ------------------
 
+This card is fairly simple in operation: either you have one and discard it and
+get nothing in return or you have two and discard both and get 4 gold cards. 
+Both are tested already.
 
 
 cardtest4: feastCard()
@@ -207,5 +224,7 @@ untaken branches.
 Boundary coverage:
 ------------------
 
+I don't currently test for cards that are < 6 coins in value. That may be a 
+thing to test for in the next round.
 
 
