@@ -20,8 +20,12 @@ void testDrawCard(struct gameState *G) {
     int newDeck = G->deckCount[player];
     if(newHand == hand+1)
         printf("Hand Count test passed \n");
+    else
+        printf("Hand Count test failed \n");
     if(newDeck == deck -1)
         printf("Deck Count test passed \n");
+    else
+        printf("Deck Count test failed \n");
 }
 
 int main(int argc, char *argv[])
