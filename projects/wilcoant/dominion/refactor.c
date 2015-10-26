@@ -9,6 +9,8 @@ smithy:
     made for loop in original dominion.c line 833 i <= 3 when
     originally written as i < 3.  Currently bug is on line
     676 within play_smithy function call. 
+    ***during unit test for play_smithy, I realized that i < 3 was a bug
+    as originally written when I changed it to i <=3 i fixed it accidentally.
     
     
 adventurer:
@@ -54,3 +56,5 @@ village:
     Bugs:
     No bugs introduced at this time, 4 /5 completed for this assignment.
 *******************************************************/
+
+test commit,making sure correct directory

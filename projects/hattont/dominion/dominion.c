@@ -851,16 +851,8 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case great_hall:
-
-  	//+1 Card
-  	drawCard(currentPlayer, state);
-
-  	//+1 Actions
-  	state->numActions++;
-
-  	//discard card from hand
-  	discardCard(handPos, currentPlayer, state, 0);
-  	return 0;
+      greatHallCard(state, currentPlayer, handPos);
+      break;
     
     case minion:
       //+1 action
@@ -1282,7 +1274,7 @@ int adventurerCard(struct gameState *state, int currentPlayer) {
   return 0;
 }
 
-int council_roomCard(struct gameState *state, int currentPlayer, handPos) {
+int council_roomCard(struct gameState *state, int currentPlayer, int handPos) {
   	int i;
 
 	//+4 Cards
@@ -1312,7 +1304,7 @@ int council_roomCard(struct gameState *state, int currentPlayer, handPos) {
 int smithyCard(struct gameState *state, int currentPlayer, int handPos) {
   //+3 Cards
   int i = 0;
-  for (i = 1; i < 3; i)
+  for (i = 1; i < 3; i++)
   {
     drawCard(currentPlayer, state);
   }
@@ -1333,7 +1325,20 @@ int villageCard(struct gameState *state, int currentPlayer, int handPos) {
   discardCard(handPos, currentPlayer, state, 0);
   return 0;
 }
+int greatHallCard(struct gameState *state, int currentPlayer, int handPos){
+	
+		//+1 Card
+  	drawCard(currentPlayer, state);
 
+  	//+1 Actions
+  	state->numActions+2;
+
+  	//discard card from hand
+  	discardCard(handPos, currentPlayer, state, 0);
+  	return 0;
+	
+	
+}
 int cutpurseCard(struct gameState *state, int currentPlayer, int handPos){
   int i;
   int j;

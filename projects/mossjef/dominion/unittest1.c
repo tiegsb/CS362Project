@@ -47,7 +47,7 @@ void testShuffle () {
 	int begDeck[5];
 
 	printf("TESTING shuffle() for 5 iterations: \n");
-
+	int fail = 0;
 	int i;
 	int retVal;
 	//This area will test the shuffle functionality
@@ -67,10 +67,12 @@ void testShuffle () {
 		  //assert the return value is 0 (no error);
 		  assert(retVal == 0);
 
-#if (NOISY_TEST == 1)
-		  if (retVal == 0)
+		  if (retVal == 0) {
 			printf("shuffle(): PASS when return value 0\n");
-#endif
+		  } else {
+			printf("shuffle(): FAIL when return value 1 (expected 0)\n");
+			fail = 1;
+		  }
 		  
 #if (NOISY_TEST == 1)
 		  printf("Ending order: %d, %d, %d, %d, %d\n", G.deck[0][0], G.deck[0][1], G.deck[0][2], G.deck[0][3], G.deck[0][4]);
@@ -78,9 +80,11 @@ void testShuffle () {
 
 		  for (i = 0; i < 5; i++) {
 			if(begDeck[i] == G.deck[0][i]) {
-				if (i == 4)
+				if (i == 4) {
 					printf("shuffle(): FAIL after going through five cards\n");
-			 }  
+					fail = 1;
+				} 
+			}  
 			else {
 				printf("shuffle(): PASS shuffle has occured at %d position!\n", i);
 				break;
@@ -96,12 +100,17 @@ void testShuffle () {
 	//assert return value is -1
 	assert(retVal == -1);
 	
-#if (NOISY_TEST == 1)
-	if (retVal == -1)
+	if (retVal == -1) {
 		printf("shuffle(): PASS when return value is -1 on invalid input\n");
-	else
+	} else {
 		printf("shuffle(): FAIL on improper return value on invalid input\n");
-#endif
+		fail = 1;
+	}
 
+	if(fail == 0) {
+		printf("shuffle(): OK - ALL TESTS PASSED\n\n");
+	} else {
+		printf("shuffle(): ISSUES - AT LEAST ONE TEST FAILED\n\n");
+	}
 
 }

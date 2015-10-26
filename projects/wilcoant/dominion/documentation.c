@@ -6,7 +6,7 @@ smithy:
     unchanged, however future configurations will have conditionals that evaluate the "card" variable and if necessary, 
     a function call to play_smithy is made rather than via switch.  refactor.c will contain documentation for such changes. 
     
-    Actual game functionality of the smith card is to draw three cards. 
+    Actual game functionality of the smithy card is to draw three cards. 
     It will discard the smithy card and add three new cards to the 
     current player's hand.
     Input: (none by player) integer - currentPlayer (integer result from helper: whoseTurn(state), tells whose turn it is)
