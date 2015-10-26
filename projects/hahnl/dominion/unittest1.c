@@ -36,9 +36,9 @@ int main (int argc, char** argv) {
   //Initialize game
   memset(&g, 23, sizeof(struct gameState));
   newGame = initialize(2, k, 1000, &g);
-  g.handCount[0] = 8;
+  g.handCount[0] = 5;
   assert(newGame == 0);
-  
+
   //Tests begin
   printf("\n\nunittest1.c - Test for updateCoins() function:\n\n");
 

@@ -56,39 +56,48 @@ unit4:
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-unittestresults.out:
+unittestresult.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest2.c unittest3.c unittest4.c dominion.c rngs.o interface.o
+	echo "Results from unit tests:" > unittestresult.out
+	
+	echo "======================== unittest1.c" >> unittestresult.out
 	make unit1
-	./unittest1 &> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+	unittest1 >> unittestresult.out
+	gcov dominion.c -b >> unittestresult.out
+	
+	echo "======================== unittest2.c" >> unittestresult.out
 	make unit2
-	./unittest2 >> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+	unittest2 >> unittestresult.out
+	gcov dominion.c -b >> unittestresult.out
+	
+	echo "======================== unittest3.c" >> unittestresult.out
 	make unit3
-	./unittest3 >> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+	unittest3 >> unittestresult.out
+	gcov dominion.c -b >> unittestresult.out
+	
+	echo "======================== unittest4.c" >> unittestresult.out
 	make unit4
-	./unittest4 >> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+	unittest4 >> unittestresult.out
+	gcov dominion.c -b >> unittestresult.out
+	
+	echo "======================== cardtest1.c" >> unittestresult.out
 	make card1
-	./cardtest1 >> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+	cardtest1 >> unittestresult.out
+	gcov dominion.c -b >> unittestresult.out
+	
+	echo "======================== cardtest2.c" >> unittestresult.out
 	make card2
-	./cardtest2 >> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+	cardtest2 >> unittestresult.out
+	gcov dominion.c -b >> unittestresult.out
+	
+	echo "======================== cardtest3.c" >> unittestresult.out
 	make card3
-	./cardtest3 >> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+	cardtest3 >> unittestresult.out
+	gcov dominion.c -b >> unittestresult.out
+	
+	echo "======================== cardtest4.c" >> unittestresult.out
 	make card4
-	./cardtest4 >> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+	cardtest4 >> unittestresult.out
+	gcov dominion.c -b >> unittestresult.out
 	
 all: playdom player testDrawCard testBuyCard badTestDrawCard unit1 unit2 unit3 unit4 card1 card2 card3 card4
 
