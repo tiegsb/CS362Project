@@ -42,7 +42,7 @@ void council_test()
 	after_buys = G.numBuys;
 	after_hand = G.handCount[p_id]; // gets number of cards in hand
 	other_hand_after=G.handCount[1];
-	printf ("Testing Village card.\n");
+	printf ("Testing Council card.\n");
 	
 	if (before_buys+1==after_buys)
 	{
