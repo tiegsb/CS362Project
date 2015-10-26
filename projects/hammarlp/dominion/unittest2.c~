@@ -23,9 +23,9 @@ int testUpdateCoins(){
 	updateCoins(0, state, 1);
 
 	if(state->coins == 5)
-		printf("Test passed. Total is 5. \n");
+		printf("Total is 5. Test passed\n");
 	else
-		printf("Test failed. Total is not 5. \n");
+		printf("Total is not 5. Test failed\n");
 	
 	//printf("total %d\n", state->coins);
 
