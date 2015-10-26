@@ -1,10 +1,16 @@
 // tests updateCoins() function
 // adapted from example code `testUpdateCoins.c` provided by instructor for use as template
 
-#include <stdio.h>
+#include <stdio.h>  // for printf
+#include <string.h> // for memcpy
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
+
+
+/* this function runs a single test on the updateCoins() function. It mainly serves to reduce code redundancy. */
+void testCoins(struct gameState* t, int coins[MAX_HAND], int handCount, int player, int bonus, int multiplier);
+
 
 int main(int argc, char *argv[])
 {
@@ -32,7 +38,7 @@ int main(int argc, char *argv[])
         golds[i] = gold;
     }
 
-    // initialize a new game for testing purposes
+    // initialize a new game for testing purposes (only need to do this once)
     retVal = initializeGame(numPlayers, k, seed, &testState);
 
     if (retVal == 0)
@@ -53,68 +59,51 @@ int main(int argc, char *argv[])
             // test with varying bonus amounts (0 to 10 coins)
             for (bonus = 0; bonus <= maxBonus; bonus++)
             {
-
-                printf("Test player %d with %d treasure card(s) and %d bonus.\n", player, handCount, bonus);
-// memset(&testState, 23, sizeof(struct gameState));   // clear the game state
-// r = initializeGame(numPlayers, k, seed, &testState); // initialize a new game
-
                 // reset coins to zero for each iteration
                 testState.coins = 0;
+
+                printf("Test player %d with %d treasure card(s) and %d bonus.\n", player, handCount, bonus);
 
                 // set the number of cards in hand
                 testState.handCount[player] = handCount;
 
-                // change all the cards in current player's hand to copper treasure cards
-                memcpy(testState.hand[player], coppers, sizeof(int) * handCount);
-                updateCoins(player, &testState, bonus);
+                // call function to run test with copper coins
+                testCoins(&testState, coppers, handCount, player, bonus, 1);
 
-                printf("testState.coins = %d, expected = %d\n", testState.coins, handCount * 1 + bonus);
+                // call function to run test with silver coins
+                testCoins(&testState, silvers, handCount, player, bonus, 2);
 
-                // check if the number of coins is correct - use if / else instead of assert to allow
-                // execution to continue in spite of failing tests
-                if (testState.coins == handCount * 1 + bonus)
-                {
-                    printf("PASS\n");
-                }
-                else
-                {
-                    printf("FAIL\n");
-                }
-
-                // change all the cards in current player's hand to silver treasure cards
-                memcpy(testState.hand[player], silvers, sizeof(int) * handCount);
-                updateCoins(player, &testState, bonus);
-
-                printf("testState.coins = %d, expected = %d\n", testState.coins, handCount * 2 + bonus);
-
-                // check if the number of coins is correct
-                if (testState.coins == handCount * 2 + bonus)
-                {
-                    printf("PASS\n");
-                }
-                else
-                {
-                    printf("FAIL\n");
-                }
-
-                // change all the cards in current player's hand to gold treasure cards
-                memcpy(testState.hand[player], golds, sizeof(int) * handCount);
-                updateCoins(player, &testState, bonus);
-
-                printf("testState.coins = %d, expected = %d\n", testState.coins, handCount * 3 + bonus);
-
-                // check if the number of coins is correct
-                if (testState.coins == handCount * 3 + bonus)
-                {
-                    printf("PASS\n");
-                }
-                else
-                {
-                    printf("FAIL\n");
-                }
+                // call function to run test with gold coins
+                testCoins(&testState, golds, handCount, player, bonus, 3);
             }
         }
     }
 
     return 0;
+}
+
+
+
+void testCoins(struct gameState* t, int coins[MAX_HAND], int handCount, int player, int bonus, int multiplier)
+{
+    // change all the cards in hand to treasure cards of type handed to function (copper, silver, or gold)
+    memcpy(t->hand[player], coins, sizeof(int) * handCount);
+
+    // update the current player's coins to test the function
+    updateCoins(player, t, bonus);
+
+    // display results
+    printf("testState.coins = %d, expected = %d\n", t->coins, handCount * multiplier + bonus);
+
+    // check if the number of coins is correct - use if / else statement instead of assert
+    // in order to allow execution to continue despite failing tests
+    if (t->coins == handCount * multiplier + bonus)
+    {
+        printf("PASS\n");
+    }
+    else
+    {
+        printf("FAIL\n");
+    }
+    return;
 }
