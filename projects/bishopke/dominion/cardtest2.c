@@ -85,7 +85,7 @@ void test_card_adventurer(){
 		printf("FAIL: cardEffect(adventurer): player 1 discarded count != 4, = %d\n", G.discardCount[0]);
 	}
 
-	//check for 3 cards drawn from deck (player 1)
+	//check for cards drawn from deck (player 1)
 	if(G.deckCount[0] == 2){
 		printf("PASS: cardEffect(adventurer): player 1 deck lost 1 cards!\n");
 	}
