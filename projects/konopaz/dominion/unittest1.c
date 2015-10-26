@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "rngs.h"
 
-int main() {
+void testFullDeckCount() {
 
   printf("\nStarting tests for fullDeckCount\n");
   printf("---------------------------------\n");
@@ -101,13 +101,15 @@ int main() {
 
   if (testsFailedCount == 0) {
     printf("SUCCESS %d of %d tests passed.\n", testsRunCount, testsRunCount);
-    return 0;
   }
   else {
     printf("FAILURE! %d of %d tests passed.\n", 
       testsRunCount - testsFailedCount, 
       testsRunCount);
-
-    return 1;
   }
+}
+
+int main() {
+  testFullDeckCount();
+  return 0;
 }
