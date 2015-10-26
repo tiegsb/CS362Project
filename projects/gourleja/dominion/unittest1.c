@@ -31,12 +31,14 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
     printf ("Testing Method  : %s()\n", currentTest);
     printf ("Seed            : %i\n", seed);
 
+    //check new game produces the correct value
     expectedValue = 1;
     if(isGameOver(state) == expectedValue) {
         printf("  TEST FAIL    : Newly initialized game failed\n");
         testsFailed++;
     } else {testsPassed++;}
 
+    //check a lack of province cards produces the correct value
     expectedValue = 0;
     state->supplyCount[province] = 0;
     if(isGameOver(state) == expectedValue) {
@@ -44,7 +46,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
         testsFailed++;
     } else {testsPassed++;}
 
-
+    //check that when 3 supply piles are empty produces the correct value
     expectedValue = 0;
     state->supplyCount[province] = 1;
     for(i=0; i<3; i++){

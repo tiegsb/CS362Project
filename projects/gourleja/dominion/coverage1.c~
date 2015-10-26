@@ -1,113 +1,25 @@
-
-
+Jason Gourley
+gourleja@oregonstate.edu
+CS362-400
+Assignment 3 - coverage1.c
+Description : Coverage results from unit tests
 -------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-Testing Method  : isGameOver()
-Seed            : 10
-    Tests Passed    : 3
-    Tests Failed    : 0
--------------------------------------------------------------------------------
+Coverage findings
 
-File 'unittest1.c'
-Lines executed:82.50% of 40
-unittest1.c:creating 'unittest1.c.gcov'
+After building the unit tests and running them it was interesting to look at the gcov results as well as tracing the calls debugging with ddd.  With this being my first real big dive into using gcov and analyzing the results it seemed like the coverage levels were fairly good.  
 
+For coverage my first step in adding tests was slightly different for the methods verses the cards.  First I started with the methods, which from their names atleast gave a clue to how they should function.  Since there is not documentation for the dominion code included for the methods it took time looking through the code and the branching within the code to determine what game states and variables would need to be in place to test the accuracy of the method.  I tried to break down what I would need to enter each branch of the source code and then added a test for each.  This approach works in the case with access to source code, however I'm not sure how one would go about building test cases while black box testing without relying on random testing to do so.  
 
+Viewing the gcov output was helpful to see where there were cases I was miss handling.  I also used ddd to visualize the debugging process and track variables at run-time.  I found this to be a crucial step to understanding how the code was run on certain calls and what internal calls were made that I didn't realize at first glance.  
 
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-Testing Method  : buyCard()
-Seed            : 10
-    Tests Passed    : 6
-    Tests Failed    : 0
--------------------------------------------------------------------------------
+When I started on the card unit tests my first step was to look at the dominion game documentation as a base.  Without knowing anything about the interals of the program more like black box testing I could create test cases based on the card descriptions to verify whether or not the card's method was producing expected results.  After getting some of these core test cases in place I took a closer look at the implementation to see if there were areas that I was not touching upon in the tests.
 
-File 'unittest2.c'
-Lines executed:81.43% of 70
-unittest2.c:creating 'unittest2.c.gcov'
+I do believe the unit tests do a good job of testing the statements and branches within the code I don't know that I have much for good coverage for boundry cases.  Having an understanding of the cards being tested and how they should affect the game state is fairly straight forward.  This made figuring out base test cases relatively easy.  As far as the boundry cases were concerned it was difficult.  Esspecially in areas where additional method calls were being made by the tested method, which could also be making adjustments to the game state that were out of my control simply with unit tests.
 
 
 
 -------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-Testing Method  : playCard()
-Seed            : 10
-  TEST FAIL    : Coin increment check failed
-    Tests Passed    : 4
-    Tests Failed    : 1
--------------------------------------------------------------------------------
-
-File 'unittest3.c'
-Lines executed:84.13% of 63
-unittest3.c:creating 'unittest3.c.gcov'
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-Testing Method  : endTurn()
-Seed            : 10
-    Tests Passed    : 8
-    Tests Failed    : 0
--------------------------------------------------------------------------------
-
-File 'unittest4.c'
-Lines executed:76.71% of 73
-unittest4.c:creating 'unittest4.c.gcov'
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-Testing Method  : smithy()
-Seed            : 10
-  TEST FAIL    : Smithy card added correct number of cards failed
-    Tests Passed    : 0
-    Tests Failed    : 1
--------------------------------------------------------------------------------
-
-File 'cardtest1.c'
-Lines executed:92.59% of 27
-cardtest1.c:creating 'cardtest1.c.gcov'
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-Testing Method  : adventurer()
-Seed            : 10
-  TEST FAIL    : Adventurer no treasure available but cards to hand failed
-    Tests Passed    : 2
-    Tests Failed    : 1
--------------------------------------------------------------------------------
-
-File 'cardtest2.c'
-Lines executed:87.50% of 48
-cardtest2.c:creating 'cardtest2.c.gcov'
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-Testing Method  : great_hall()
-Seed            : 10
-    Tests Passed    : 2
-    Tests Failed    : 0
--------------------------------------------------------------------------------
-
-File 'cardtest3.c'
-Lines executed:85.29% of 34
-cardtest3.c:creating 'cardtest3.c.gcov'
-
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-Testing Method  : minion()
-Seed            : 10
-    Tests Passed    : 5
-    Tests Failed    : 0
--------------------------------------------------------------------------------
+Unit Test gcov results:
 
 File 'cardtest4.c'
 Lines executed:78.95% of 57

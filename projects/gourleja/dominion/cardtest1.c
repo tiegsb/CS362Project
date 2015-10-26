@@ -3,7 +3,7 @@
  * gourleja@oregonstate.edu
  * CS362-400
  * Assignment 3 - cardtest1.c
- * Description : Unit tests for Smithy card
+ * Description : Unit tests for smithy card
  */
 
 #include <stdio.h>

@@ -32,6 +32,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
     printf ("Testing Method  : %s()\n", currentTest);
     printf ("Seed            : %i\n", seed);
 
+    //check that the current players hand count is reset after method call
     expectedValue = 0;
     state->whoseTurn = 0;
     endTurn(state);
@@ -40,6 +41,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
         testsFailed++;
     } else {testsPassed++;}
 
+    //check that the outposts played is reset after method call
     expectedValue = 0;
     endTurn(state);
     if(state->outpostPlayed != expectedValue) {
@@ -47,6 +49,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
         testsFailed++;
     } else {testsPassed++;}
 
+    //check that the phase value is reset after method call
     expectedValue = 0;
     endTurn(state);
     if(state->phase != expectedValue) {
@@ -54,6 +57,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
         testsFailed++;
     } else {testsPassed++;}
 
+    //check that the number of actions is reset after method call
     expectedValue = 1;
     endTurn(state);
     if(state->numActions != expectedValue) {
@@ -61,6 +65,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
         testsFailed++;
     } else {testsPassed++;}
 
+    //check that the number of buys available is reset after method call
     expectedValue = 1;
     endTurn(state);
     if(state->numBuys != expectedValue) {
@@ -68,6 +73,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
         testsFailed++;
     } else {testsPassed++;}
 
+    //check that the current players card count is reset after method call
     expectedValue = 0;
     endTurn(state);
     if(state->playedCardCount != expectedValue) {
@@ -75,6 +81,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
         testsFailed++;
     } else {testsPassed++;}
 
+    //check that the next player is correctly given control after method call, using first player
     state->whoseTurn = 0;
     expectedValue = 1;
     endTurn(state);
@@ -83,6 +90,7 @@ int testMethod(char* currentTest, int seed, struct gameState *state)
         testsFailed++;
     } else {testsPassed++;}
 
+    //check that the next player is correctly given control after method call, using last player
     state->whoseTurn = 1;
     expectedValue = 0;
     endTurn(state);

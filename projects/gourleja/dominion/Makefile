@@ -60,7 +60,7 @@ all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 allUnitTests: unitTest1 unitTest2 unitTest3 unitTest4 cardTest1 cardTest2 cardTest3 cardTest4
 
-runUnitTests: clean all allUnitTests
+unittestresults.out: clean all allUnitTests
 	# Run Programs and save results
 	./unittest1 2>&1 |cat > unittestresults.out
 	gcov unittest1.c >> unittestresults.out
@@ -78,8 +78,15 @@ runUnitTests: clean all allUnitTests
 	gcov cardtest3.c >> unittestresults.out
 	./cardtest4 >> unittestresults.out
 	gcov cardtest4.c >> unittestresults.out
-	# Save full coverage results
-	#cat unittest1.c.gcov >> unittestresults.out
+	# Append full coverage results
+	cat unittest1.c.gcov >> unittestresults.out
+	cat unittest2.c.gcov >> unittestresults.out
+	cat unittest3.c.gcov >> unittestresults.out
+	cat unittest4.c.gcov >> unittestresults.out
+	cat cardtest1.c.gcov >> unittestresults.out
+	cat cardtest2.c.gcov >> unittestresults.out
+	cat cardtest3.c.gcov >> unittestresults.out
+	cat cardtest4.c.gcov >> unittestresults.out
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe badTestDrawCard badTestDrawCard.exe testDrawCard testDrawCard.exe testInit testInit.exe unittest1 unittest1.exe unittest2 unittest2.exe unittest3 unittest3.exe unittest4 unittest4.exe cardtest1 cardtest1.exe cardtest2 cardtest2.exe cardtest3 cardtest3.exe cardtest4 cardtest4.exe *.gcov *.gcda *.gcno *.so
