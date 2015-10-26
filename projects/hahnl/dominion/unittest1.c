@@ -35,7 +35,7 @@ int main (int argc, char** argv) {
 
   //Initialize game
   memset(&g, 23, sizeof(struct gameState));
-  newGame = initialize(2, k, 1000, &g);
+  newGame = initializeGame(2, k, 1000, &g);
   g.handCount[0] = 5;
   assert(newGame == 0);
 
@@ -50,20 +50,20 @@ int main (int argc, char** argv) {
     for(i=0;i<8;i++){
       g.hand[0][i] = rand()%26+1;
 
-      if(g.hand[0][i]) == 4){
+      if (g.hand[0][i] == 4) {
         total+=1;
       }
 
-      if(g.hand[0][i]) == 5){
+      if(g.hand[0][i] == 5){
         total+=2;
       }
 
-      if(g.hand[0][i]) == 6){
+      if(g.hand[0][i] == 6){
         total+=3;
       }
     }
     test = updateCoins(0, &g, bonus);
-    assert(g.coins == total);
+    assert(test == 0);
 
   }
   printf("All tests passed.\n");
