@@ -1,13 +1,10 @@
 CFLAGS = -Wall -fpic -coverage -lm
 
-refactor.o: refactor.c
-	gcc -c refactor.c -g -o refactor.o
-
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
 
-dominion.o: dominion.h dominion.c rngs.o refactor.o
-	gcc -c dominion.c -g refactor.o  $(CFLAGS)
+dominion.o: dominion.h dominion.c rngs.o
+	gcc -c dominion.c -g  $(CFLAGS)
 
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
@@ -45,9 +42,12 @@ unittest1: unittest1.c dominion.o rngs.o
 unittest2: unittest2.c dominion.o rngs.o
 	gcc -o unittest2 -g unittest2.c dominion.o rngs.o $(CFLAGS)
 
+unittest3: unittest3.c dominion.o rngs.o
+	gcc -o unittest3 -g unittest3.c dominion.o rngs.o $(CFLAGS)
+
 unittestresults.out: all testUpdateCoins
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard unittest1 unittest2
+all: playdom player testDrawCard testBuyCard badTestDrawCard unittest1 unittest2 unittest3
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so unittest1 unittest2 unittestresult.out
@@ -55,4 +55,5 @@ clean:
 unittestresults.out: clean all
 	unittest1 > unittestresult.out
 	unittest2 >> unittestresult.out
+	unittest3 >> unittestresult.out
 	gcov dominion.c >> unittestresult.out
