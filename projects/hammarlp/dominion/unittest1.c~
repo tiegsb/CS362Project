@@ -29,7 +29,7 @@ int main(){
 
 	testKingdomCards();
 
-	printf("Test passed. Kingdom cards created correctly\n");
+	printf("kingdom test passed\n");
 	
 
 	return 0;
