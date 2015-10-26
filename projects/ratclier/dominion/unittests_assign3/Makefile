@@ -42,7 +42,7 @@ tests.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2
 	gcc -o unittest1 -g unittest1.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./unittest1 >> ../unittestresults.out
 	echo "Coverage: unittest1:" >> ../unittestresults.out
-	gcov dominion.c >> ../unittestresults.out
+	gcov -fb dominion.c >> ../unittestresults.out
 	echo ">>> END OF unittest1.c\n" >> ../unittestresults.out
 	echo "\n" >> ../unittestresults.out
 
@@ -50,7 +50,7 @@ tests.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2
 	gcc -o unittest2 -g unittest2.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./unittest2 >> ../unittestresults.out
 	echo "Coverage: unittest2:" >> ../unittestresults.out
-	gcov dominion.c >> ../unittestresults.out
+	gcov -fb dominion.c >> ../unittestresults.out
 	echo ">>> END OF unittest2.c\n" >> ../unittestresults.out
 	echo "\n" >> ../unittestresults.out
 
@@ -58,7 +58,7 @@ tests.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2
 	gcc -o unittest3 -g unittest3.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./unittest3 >> ../unittestresults.out
 	echo "Coverage: unittest3:" >> ../unittestresults.out
-	gcov dominion.c >> ../unittestresults.out
+	gcov -fb dominion.c >> ../unittestresults.out
 	echo ">>> END OF unittest3.c\n" >> ../unittestresults.out
 	echo "\n" >> ../unittestresults.out
 
@@ -66,7 +66,7 @@ tests.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2
 	gcc -o unittest4 -g unittest4.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./unittest4 >> ../unittestresults.out
 	echo "Coverage: unittest4:" >> ../unittestresults.out
-	gcov dominion.c >> ../unittestresults.out
+	gcov -fb dominion.c >> ../unittestresults.out
 	echo ">>> END OF unittest4.c\n" >> ../unittestresults.out
 	echo "\n" >> ../unittestresults.out
 
@@ -74,7 +74,7 @@ tests.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2
 	gcc -o cardtest1 -g cardtest1.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./cardtest1 >> ../unittestresults.out
 	echo "Coverage: cardtest1:" >> ../unittestresults.out
-	gcov dominion.c >> ../unittestresults.out
+	gcov -fb dominion.c >> ../unittestresults.out
 	echo ">>> END OF cardtest1.c\n" >> ../unittestresults.out
 	echo "\n" >> ../unittestresults.out
 
@@ -82,7 +82,7 @@ tests.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2
 	gcc -o cardtest2 -g cardtest2.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./cardtest2 >> ../unittestresults.out
 	echo "Coverage: cardtest2:" >> ../unittestresults.out
-	gcov dominion.c >> ../unittestresults.out
+	gcov -fb dominion.c >> ../unittestresults.out
 	echo ">>> END OF cardtest2.c\n" >> ../unittestresults.out
 	echo "\n" >> ../unittestresults.out
 
@@ -90,7 +90,7 @@ tests.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2
 	gcc -o cardtest3 -g cardtest3.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./cardtest3 >> ../unittestresults.out
 	echo "Coverage: cardtest3:" >> ../unittestresults.out
-	gcov dominion.c >> ../unittestresults.out
+	gcov -fb dominion.c >> ../unittestresults.out
 	echo ">>> END OF cardtest3.c\n" >> ../unittestresults.out
 	echo "\n" >> ../unittestresults.out
 
@@ -98,7 +98,7 @@ tests.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2
 	gcc -o cardtest4 -g cardtest4.c unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./cardtest4 >> ../unittestresults.out
 	echo "Coverage: cardtest4:" >> ../unittestresults.out
-	gcov dominion.c >> ../unittestresults.out
+	gcov -fb dominion.c >> ../unittestresults.out
 	echo ">>> END OF cardtest4.c\n" >> ../unittestresults.out
 
 clean:
