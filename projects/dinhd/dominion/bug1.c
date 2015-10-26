@@ -44,4 +44,7 @@ smithyCard:
 
 	1) This bug was introduced by me. 3 cards are discarded instead of 1.
 
-adventureCard: line 684: 1 more card gets discarded but doesn't get removed from the hand.
+adventureCard: 
+
+	1)	This bug was introduced by me. Line 684: 1 more card gets discarded but 
+		doesn't get removed from the hand.

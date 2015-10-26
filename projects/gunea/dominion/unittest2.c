@@ -113,7 +113,7 @@ int main()
 	printf("\n");
 	printf("-----------------------------------------\n");
 	printf("Testing when not enough of that card are left\n");
-	//test when no coins left
+	//test when not enough cards left
 	for (i = 0; i < players; i++)
 	{
 		/*memset(&testState, 23, sizeof(struct gameState));
