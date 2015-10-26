@@ -227,7 +227,7 @@ int main(){
     if(g.supplyCount[silver] != testState.supplyCount[silver])
       printf("FAILED. Silver Count Mismatch. Expected: %d  Received: %d\n", g.supplyCount[silver], testState.supplyCount[silver]);
     if(g.supplyCount[gold] != testState.supplyCount[gold])
-      printf("FAILED. Silver Count Mismatch. Expected: %d  Received: %d\n", g.supplyCount[gold], testState.supplyCount[gold]);
+      printf("FAILED. Gold Count Mismatch. Expected: %d  Received: %d\n", g.supplyCount[gold], testState.supplyCount[gold]);
     else
       printf("Passed. Supply counts for treasure cards are the same\n");
 
