@@ -109,6 +109,8 @@ void testShuffle () {
 
 	if(fail == 0) {
 		printf("shuffle(): OK - ALL TESTS PASSED\n\n");
+	} else {
+		printf("shuffle(): ISSUES - AT LEAST ONE TEST FAILED\n\n");
 	}
 
 }

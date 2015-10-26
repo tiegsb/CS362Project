@@ -1,12 +1,15 @@
 /* -----------------------------------------------------------------------
- * Demonstration of how to write unit tests for dominion-base
- * Include the following lines in your makefile:
- *
- * testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
- *      gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
- * -----------------------------------------------------------------------
+ Anthony Wilcox
+CS362 
+Fall 2015
+ * unit test for get cost, check values passed through 
+ for loop as integers returning correct return values for cost 
+ and negative one for non enumerated values.
+ -----------------------------------------------------------------------
  */
-//used provided testUpdateCoins.c shell provided in OSU Fall CS362 
+//used provided testUpdateCoins.c shell provided in OSU Fall CS362
+//modified some initialation variables to test boundaries more completely
+ 
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <string.h>
@@ -15,68 +18,132 @@
 #include "rngs.h"
 
 // set NOISY_TEST to 0 to remove printfs from output
-#define NOISY_TEST 1
+#define NOISY_TEST 0
 
 int main() {
+    printf ("TESTING getCost:\n");
     int i;
-    int seed = 1000;
-    int numPlayer = 2;
-    int maxBonus = 10;
-    int p, r, handCount;
-    int bonus;
-    int k[10] = {adventurer, council_room, feast, gardens, mine
-               , remodel, smithy, village, baron, great_hall};
-    struct gameState G;
-    int maxHandCount = 5;
-    // arrays of all coppers, silvers, and golds
-    int coppers[MAX_HAND];
-    int silvers[MAX_HAND];
-    int golds[MAX_HAND];
-    for (i = 0; i < MAX_HAND; i++)
-    {
-        coppers[i] = copper;
-        silvers[i] = silver;
-        golds[i] = gold;
-    }
-
-    printf ("TESTING updateCoins():\n");
-    for (p = 0; p < numPlayer; p++)
-    {
-        for (handCount = 1; handCount <= maxHandCount; handCount++)
+    for(i = 0; i < treasure_map + 2; i++)
+    {//assert proper return value based on enueration in switch when 
+    //passed as integer as it will ultimately be
+        if(i == 0)//curse
         {
-            for (bonus = 0; bonus <= maxBonus; bonus++)
-            {
-#if (NOISY_TEST == 1)
-                printf("Test player %d with %d treasure card(s) and %d bonus.\n", p, handCount, bonus);
-#endif
-                memset(&G, 23, sizeof(struct gameState));   // clear the game state
-                r = initializeGame(numPlayer, k, seed, &G); // initialize a new game
-                G.handCount[p] = handCount;                 // set the number of cards on hand
-                memcpy(G.hand[p], coppers, sizeof(int) * handCount); // set all the cards to copper
-                updateCoins(p, &G, bonus);
-#if (NOISY_TEST == 1)
-                printf("G.coins = %d, expected = %d\n", G.coins, handCount * 1 + bonus);
-#endif
-                assert(G.coins == handCount * 1 + bonus); // check if the number of coins is correct
-
-                memcpy(G.hand[p], silvers, sizeof(int) * handCount); // set all the cards to silver
-                updateCoins(p, &G, bonus);
-#if (NOISY_TEST == 1)
-                printf("G.coins = %d, expected = %d\n", G.coins, handCount * 2 + bonus);
-#endif
-                assert(G.coins == handCount * 2 + bonus); // check if the number of coins is correct
-
-                memcpy(G.hand[p], golds, sizeof(int) * handCount); // set all the cards to gold
-                updateCoins(p, &G, bonus);
-#if (NOISY_TEST == 1)
-                printf("G.coins = %d, expected = %d\n", G.coins, handCount * 3 + bonus);
-#endif
-                assert(G.coins == handCount * 3 + bonus); // check if the number of coins is correct
-            }
+            assert(getCost(i) == 0);
+        }
+        if(i == 1)//estate
+        {
+            assert(getCost(i) == 2);
+        }
+        if(i == 2)//duchy
+        {
+            assert(getCost(i) == 5);
+        }
+        if(i == 3)//province
+        {
+            assert(getCost(i) == 8);
+        }
+        if(i == 4)//copper
+        {
+            assert(getCost(i) == 0);
+        }
+        if(i == 5)//silver
+        {
+            assert(getCost(i) == 3);
+        }
+        if(i == 6)//gold 
+        {
+            assert(getCost(i) == 6);
+        }
+        if(i == 7)//adventurer
+        {
+            assert(getCost(i) == 6);
+        }
+        if(i == 8)//council_room
+        {
+            assert(getCost(i) == 5);
+        }
+        if(i == 9)//feast
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i == 10)//gardens
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i == 11)//mine
+        {
+            assert(getCost(i) == 5);
+        }
+        if(i == 12)//remodel
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i == 13)//smithy
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i == 14)//village
+        {
+            assert(getCost(i) == 3);
+        }
+        if(i == 15)//baron
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i == 16)//great_hall
+        {
+            assert(getCost(i) == 3);
+        }
+        if(i == 17)//minion
+        {
+            assert(getCost(i) == 5);
+        }
+        if(i == 18)//steward
+        {
+            assert(getCost(i) == 3);
+        }
+        if(i == 19)//tribute
+        {
+            assert(getCost(i) == 5);
+        }
+        if(i == 20)//ambassador
+        {
+            assert(getCost(i) == 3);
+        }
+        if(i == 21)//cutpurse
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i == 22)//embargo
+        {
+            assert(getCost(i) == 2);
+        }
+        if(i == 23)//outpost
+        {
+            assert(getCost(i) == 5);
+        }
+        if(i == 24)//salvager
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i == 25)//sea_hag
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i == 26)//treasure_map
+        {
+            assert(getCost(i) == 4);
+        }
+        if(i > 26)
+        { //returns negative one for all non enumerated card values
+            assert(getCost(i) == -1);
         }
     }
+    
+    
 
-    printf("All tests passed!\n");
+
+    printf("All tests passed! Expected results were assertions\nfor each card value value\n\n\n");
 
     return 0;
 }

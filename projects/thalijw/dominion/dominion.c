@@ -6,11 +6,11 @@
 #include <stdlib.h>
 
 // Function prototypes 
-adventurer_refactor( int drawntreasure, struct gameState *state, int temphand[], int z, int cardDrawn, int currentPlayer );
-smithy_refactor(int currentPlayer, struct gameState *state, int handPos);
-steward_refactor(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int choice3 );
-council_room_refactor(int currentPlayer, struct gameState *state, int handPos);
-remodel_refactor(int currentPlayer, struct gameState *state, int choice1, int choice2, int handPos );
+int adventurer_refactor( int drawntreasure, struct gameState *state, int temphand[], int z, int cardDrawn, int currentPlayer );
+int smithy_refactor(int currentPlayer, struct gameState *state, int handPos);
+int steward_refactor(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int choice3 );
+int council_room_refactor(int currentPlayer, struct gameState *state, int handPos);
+int remodel_refactor(int currentPlayer, struct gameState *state, int choice1, int choice2, int handPos );
 
 int compare(const void* a, const void* b) {
   if (*(int*)a > *(int*)b)
@@ -663,7 +663,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   int tributeRevealedCards[2] = {-1, -1};
   int temphand[MAX_HAND];// moved above the if statement
   int drawntreasure=0;
-  int cardDrawn;
+  int cardDrawn = 0;
   int z = 0;// this is the counter for the temp hand
   if (nextPlayer > (state->numPlayers - 1)){
     nextPlayer = 0;
@@ -1255,8 +1255,9 @@ for these cards to be inside functions, and I called the apropriate fucntion in 
 
 *********************************************************************************************/
 
-adventurer_refactor( int drawntreasure, struct gameState *state, int temphand[], int z, int cardDrawn, int currentPlayer ) {
+int adventurer_refactor( int drawntreasure, struct gameState *state, int temphand[], int z, int cardDrawn, int currentPlayer ) {
 
+ // while(drawntreasure<2){
   while(drawntreasure<3){
     if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
       shuffle(currentPlayer, state);
@@ -1278,7 +1279,7 @@ adventurer_refactor( int drawntreasure, struct gameState *state, int temphand[],
       return 0;
 }
 
-smithy_refactor(int currentPlayer, struct gameState *state, int handPos) {
+int smithy_refactor(int currentPlayer, struct gameState *state, int handPos) {
   //+3 Cards
   int i;
   for (i = 0; i < 3; i++)
@@ -1287,11 +1288,12 @@ smithy_refactor(int currentPlayer, struct gameState *state, int handPos) {
   }
       
   //discard card from hand
+  //discardCard(handPos, currentPlayer, state, 0);
   discardCard(handPos, currentPlayer, state, 1);
   return 0;
 }
 
-steward_refactor(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int choice3 ) {
+int steward_refactor(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int choice3 ) {
 
   if (choice1 == 1)
   {
@@ -1303,6 +1305,7 @@ steward_refactor(int currentPlayer, struct gameState *state, int handPos, int ch
   {
     //-2 coins
     state->coins = state->coins - 2;
+    //state->coins = state->coins + 2;
   }
     else
   {
@@ -1315,7 +1318,7 @@ steward_refactor(int currentPlayer, struct gameState *state, int handPos, int ch
     discardCard(handPos, currentPlayer, state, 0);
     return 0;
 }
-council_room_refactor(int currentPlayer, struct gameState *state, int handPos) {
+int council_room_refactor(int currentPlayer, struct gameState *state, int handPos) {
 
   int i;
   //+4 Cards
@@ -1330,7 +1333,7 @@ council_room_refactor(int currentPlayer, struct gameState *state, int handPos) {
   //Each other player draws a card
   for (i = 0; i < state->numPlayers; i++)
   {
-    if ( i == currentPlayer )
+    if ( i != currentPlayer ) //( i == currentPlayer )
       {
         drawCard(i, state);
       }
@@ -1342,12 +1345,13 @@ council_room_refactor(int currentPlayer, struct gameState *state, int handPos) {
   return 0;
 }
 
-remodel_refactor(int currentPlayer, struct gameState *state, int choice1, int choice2, int handPos ) {
+int remodel_refactor(int currentPlayer, struct gameState *state, int choice1, int choice2, int handPos ) {
 
   int j, i;
   j = state->hand[currentPlayer][choice1];  //store card we will trash
 
-  if ( (getCost(state->hand[currentPlayer][choice1]) + 2) < getCost(choice2) )
+  //if ( (getCost(state->hand[currentPlayer][choice1]) + 2) < getCost(choice2) )
+  if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
   {
     return -1;
   }
