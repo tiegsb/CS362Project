@@ -23,6 +23,12 @@ Taken at least once:6.71% of 417
 Calls executed:0.00% of 95
 dominion.c:creating 'dominion.c.gcov'
 ----------
+Test each switch statement in the cost. Also tests negative values, 
+out-of-bounds values, and large numbers.
+The branching in unittest1.c is due to the if/else for the tests passing or
+failing.
+This unit test only covers a small part of dominion.c (just the getCost()
+function), which does not call on other functions.
 
 --------------------
 unittest2.c: isGameOver()
@@ -41,9 +47,16 @@ Taken at least once:14.87% of 417
 Calls executed:7.37% of 95
 dominion.c:creating 'dominion.c.gcov'
 ----------
+This tests the conditions for game over; tests if game over is set at the
+start of the game, if all province cards are gone, and a few combinations of
+the three-pile ending (3 treasure piles gone, 3 kingdom piles gone, and 3
+kingdom and treasure piles gone).
+Branching in unittest2.c is due to the if/else for the tests passing or
+failing.
+The coverage here is higher because the game is initialized to test gameOver(). 
 
 --------------------
-unittest2.c: fullDeckCount()
+unittest3.c: fullDeckCount()
 --------------------
 File 'unittest3.c'
 Lines executed:75.73% of 103
@@ -59,6 +72,11 @@ Taken at least once:15.83% of 417
 Calls executed:7.37% of 95
 dominion.c:creating 'dominion.c.gcov'
 ----------
+Tests the fullDeckCount() function for various cards in a set deck. Tests
+different combinations of cards (in deck, hand, and/or discard), as well as
+cards not present and cards not in the list of kingdom cards.
+Covers more than unittest1.c because the game is initialized to test
+fullDeckCount().
 
 --------------------
 unittest4.c: scoreFor()
@@ -77,6 +95,12 @@ Taken at least once:24.46% of 417
 Calls executed:10.53% of 95
 dominion.c:creating 'dominion.c.gcov'
 ----------
+Tests the scoreFor() function for various combinations of cards in a deck.
+Tests empty decks, decks with garden cards and treasure cards, decks with
+garden cards and kingdom cards, and decks with all estate, duchy, province, or
+curse cards.
+Coverage is higher because the game is initialized to test scoreFor(), and the
+function itself calls another function.
 
 --------------------
 cardtest1.c: Smithy card
@@ -95,6 +119,11 @@ Taken at least once:14.63% of 417
 Calls executed:11.58% of 95
 dominion.c:creating 'dominion.c.gcov'
 ----------
+Tests a 2-player game for deck, hand, and discard counts after the smithy card
+is played.
+Verifies that the other player's cards are not altered.
+A game is initialized and the cardEffect() function calls another function,
+giving slightly higher coverage than the other unit tests.
 
 --------------------
 cardtest2.c: Adventurer card
@@ -112,6 +141,12 @@ Branches executed:23.74% of 417
 Taken at least once:14.87% of 417
 Calls executed:10.53% of 95
 dominion.c:creating 'dominion.c.gcov'
+----------
+Tests a 2-player game for deck, hand, and discard counts after the adventurer
+card is played.
+Verifies that the other player's cards are not altered.
+A game is initialized and the cardEffect() function calls another function,
+giving slightly higher coverage than the other unit tests.
 
 --------------------
 cardtest3.c: Village card
@@ -130,6 +165,11 @@ Taken at least once:14.15% of 417
 Calls executed:11.58% of 95
 dominion.c:creating 'dominion.c.gcov'
 ----------
+Tests a 2-player game for deck, hand, and discard counts after the village
+card is played. Also tests the player's action count.
+Verifies that the other player's cards are not altered.
+A game is initialized and the cardEffect() function calls another function,
+giving slightly higher coverage than the other unit tests.
 
 --------------------
 cardtest4.c: Council Room card
@@ -148,6 +188,11 @@ Taken at least once:15.59% of 417
 Calls executed:12.63% of 95
 dominion.c:creating 'dominion.c.gcov'
 ----------
+Tests a 2-player game for deck, hand, and discard counts after the adventurer
+card is played. Also tests the player's buy count.
+Verifies that the other player's cards are altered.
+A game is initialized and the cardEffect() function calls another function,
+giving slightly higher coverage than the other unit tests.
 
 
 ******************************************************************************/
