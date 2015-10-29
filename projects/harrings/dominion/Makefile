@@ -102,6 +102,12 @@ cardtest3: cardtest3.c dominion.o rngs.o interface.o
 	
 cardtest4: cardtest4.c dominion.o rngs.o interface.o
 	gcc -o cardtest4 cardtest4.c -g dominion.o rngs.o interface.o $(CFLAGS)
+	
+random1: randomadventure.c dominion.o rngs.o interface.o
+	gcc -o randomadventure randomadventure.c -g dominion.o rngs.o interface.o $(CFLAGS)
+
+random2: randomcard.c dominion.o rngs.o interface.o
+	gcc -o randomcard randomcard.c -g dominion.o rngs.o interface.o $(CFLAGS)
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
