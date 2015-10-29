@@ -1,0 +1,120 @@
+        -:    0:Source:unittest3.c
+        -:    0:Graph:unittest3.gcno
+        -:    0:Data:unittest3.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include <string.h>
+        -:    3:#include <stdio.h>
+        -:    4:#include "unittestHelper.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <limits.h>
+        -:    7:
+        -:    8:
+        1:    9:int main()
+        -:   10:{
+        -:   11:  int i;
+        1:   12:  int TEST_TIMES= 100;
+        -:   13:  struct gameState testerState;
+        1:   14:  srand(time(0));
+        -:   15:
+        1:   16:  printf("*****************************************************\n");
+        1:   17:  printf("*UNITTEST3 Suite \n");
+        1:   18:  printf("  (tests discardCard() with 100 semi-random state)\n");
+        1:   19:  printf("*****************************************************\n");
+      101:   20:  for(i=0; i<TEST_TIMES; i++)
+        -:   21:  {
+      100:   22:    createRandState(&testerState);
+      100:   23:    testerState.handCount[testerState.whoseTurn]= rand() % 13 +1;
+      100:   24:    unittest2(&testerState);
+        -:   25:  }
+        -:   26:  
+        1:   27:  return 0;
+        -:   28:}
+        -:   29:  
+        -:   30://Tests drawCard()
+      100:   31:unittest2(struct gameState *state)
+        -:   32:{
+      100:   33:  int i, b, test[E_playedCardCount+1]= {0};
+      100:   34:  int handPos=0;
+      100:   35:  int trashFlag=0;
+        -:   36:
+        -:   37:  int hand[1], //arrays that show how many players may have differences in those attributes after call
+        -:   38:    handCount[1],
+      100:   39:    deck[1]={-1},
+      100:   40:    deckCount[1]={-1},
+      100:   41:    discard[1]={-1},
+      100:   42:    discardCount[1]={-1};
+        -:   43:
+        -:   44:
+      100:   45:  int hLen=1,
+      100:   46:    hcLen=1,
+      100:   47:    deLen=1,
+      100:   48:    decLen=1,
+      100:   49:    diLen=1,
+      100:   50:    dicLen=1;
+        -:   51:
+      100:   52:  hand[0]= state->whoseTurn;
+      100:   53:  handCount[0]= state->whoseTurn;
+        -:   54:
+        -:   55:  struct gameState copyState, afterCopy;
+        -:   56:  
+        -:   57:  
+        -:   58:  //snapshot of state BEFORE
+      100:   59:  copyState= *state;
+        -:   60:
+      100:   61:  if(copyState.handCount[copyState.whoseTurn]== 0)
+        -:   62:  {
+    #####:   63:    printf("Skipping this random state: Random handCount assigned 0.\n\n");
+    #####:   64:    return 0;
+        -:   65:  }
+        -:   66:  else
+        -:   67:  {
+      100:   68:    handPos= rand() % copyState.handCount[copyState.whoseTurn];
+        -:   69:  }
+      100:   70:  trashFlag= rand() % 2;
+      100:   71:  discardCard(handPos, copyState.whoseTurn, state, trashFlag);
+        -:   72:
+        -:   73:  //snapshot of state AFTER
+      100:   74:  afterCopy= *state;
+        -:   75:
+        -:   76:  
+        -:   77:  //If trash was not set, then playedCardCount should increase by 1 and the card at handPos
+        -:   78:  //should now be in the playedCards set at the end.
+        -:   79:  //else playedCardCount and playedCards should stay the same
+      100:   80:  if(trashFlag==0)
+        -:   81:  {
+       46:   82:    if(afterCopy.playedCardCount!= copyState.playedCardCount+1)
+        -:   83:    {
+    #####:   84:      printf("Test playedCardCount with no trash: FAILED\n");
+    #####:   85:      printf("playedCardCount Before: %d\n", copyState.playedCardCount);
+    #####:   86:      printf("playedCardCount After: %d\n\n", afterCopy.playedCardCount);    
+        -:   87:    }
+       46:   88:    if(afterCopy.playedCards[copyState.playedCardCount]!= copyState.hand[copyState.whoseTurn][handPos])
+        -:   89:    {
+    #####:   90:      printf("Test playedCards with no trash: FAILED\n");
+    #####:   91:      printf("playedCards last card Before: %d\n", copyState.playedCards[copyState.playedCardCount]);
+    #####:   92:      printf("playedCards last card After: %d\n\n", afterCopy.playedCards[afterCopy.playedCardCount-1]);
+        -:   93:    }
+        -:   94:
+        -:   95:    //have difference finder at end of function allow changes to these attributes
+       46:   96:    test[E_playedCardCount]= 1;
+       46:   97:    test[E_playedCards]= 1;
+        -:   98:  }
+        -:   99:  else
+        -:  100:  {
+        -:  101:
+       54:  102:    if(afterCopy.playedCardCount!= copyState.playedCardCount)
+        -:  103:    {
+    #####:  104:      printf("Test playedCardCount with trash set: FAILED\n");
+    #####:  105:      printf("playedCardCount Before: %d\n", copyState.playedCardCount);
+    #####:  106:      printf("playedCardCount After: %d\n\n", afterCopy.playedCardCount);    
+        -:  107:    }
+        -:  108:  }
+        -:  109:
+        -:  110:  //Find all changes to gamestate and print errors if changes were not expected
+      100:  111:  printBadDiffs(&copyState, &afterCopy, test, hand, hLen, handCount, hcLen, discard, diLen, discardCount, dicLen, deck, deLen, deckCount, decLen);  
+        -:  112:
+      100:  113:  return 0;
+        -:  114:}
+        -:  115:

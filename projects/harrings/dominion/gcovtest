@@ -1,0 +1,56 @@
+File 'unittest1.c'
+Lines executed:87.30% of 63
+Branches executed:100.00% of 18
+Taken at least once:50.00% of 18
+Calls executed:66.67% of 24
+unittest1.c:creating 'unittest1.c.gcov'
+
+File 'unittest2.c'
+Lines executed:89.36% of 47
+Branches executed:100.00% of 10
+Taken at least once:50.00% of 10
+Calls executed:70.59% of 17
+unittest2.c:creating 'unittest2.c.gcov'
+
+File 'unittest3.c'
+Lines executed:91.67% of 48
+Branches executed:100.00% of 16
+Taken at least once:93.75% of 16
+Calls executed:80.00% of 10
+unittest3.c:creating 'unittest3.c.gcov'
+
+File 'unittest4.c'
+Lines executed:86.21% of 58
+Branches executed:100.00% of 16
+Taken at least once:50.00% of 16
+Calls executed:75.00% of 32
+unittest4.c:creating 'unittest4.c.gcov'
+
+File 'cardtest1.c'
+Lines executed:91.67% of 36
+Branches executed:87.50% of 16
+Taken at least once:43.75% of 16
+Calls executed:70.00% of 10
+cardtest1.c:creating 'cardtest1.c.gcov'
+
+File 'cardtest2.c'
+Lines executed:92.31% of 26
+Branches executed:100.00% of 4
+Taken at least once:50.00% of 4
+Calls executed:75.00% of 8
+cardtest2.c:creating 'cardtest2.c.gcov'
+
+File 'cardtest3.c'
+Lines executed:91.67% of 24
+Branches executed:100.00% of 4
+Taken at least once:50.00% of 4
+Calls executed:75.00% of 8
+cardtest3.c:creating 'cardtest3.c.gcov'
+
+File 'cardtest4.c'
+Lines executed:90.00% of 30
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+Calls executed:70.00% of 10
+cardtest4.c:creating 'cardtest4.c.gcov'
+

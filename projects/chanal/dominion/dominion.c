@@ -671,7 +671,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 			
     case council_room:
-	  councilRoomCard(i, currentPlayer, state, handPos); //function call
+	  councilRoomCard(currentPlayer, state, handPos); //function call
       return 0;
 			
     case feast:
@@ -792,7 +792,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case smithy:
-	  smithyCard(i, currentPlayer, state, handPos); //function call
+	  smithyCard(currentPlayer, state, handPos); //function call
       return 0;
 		
     case village:
@@ -1266,9 +1266,9 @@ int updateCoins(int player, struct gameState *state, int bonus)
 }
 
 //Refactored code Adventurer card effects
-void adventurerCard (int drawntreasure, struct gameState* state, int currentPlayer, int cardDrawn, int temphand[], int z) {
+int adventurerCard (int drawntreasure, struct gameState* state, int currentPlayer, int cardDrawn, int temphand[], int z) {
       while(drawntreasure<=2){
-	if (state->deckCount[currentPlayer] <=1){//if the deck is empty we need to shuffle discard and add to deck
+	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 	  shuffle(currentPlayer, state);
 	}
 	drawCard(currentPlayer, state);
@@ -1285,12 +1285,13 @@ void adventurerCard (int drawntreasure, struct gameState* state, int currentPlay
 	state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
 	z=z-1;
       }
-	  return;
+	  return 0;
 }
 
 //Refactored code Council Room card effects
-void councilRoomCard (int i, int currentPlayer, struct gameState* state, int handPos){
+int councilRoomCard (int currentPlayer, struct gameState* state, int handPos){
       //+4 Cards
+	  int i;
       for (i = 0; i <= 4; i++)
 	{
 	  drawCard(currentPlayer, state);
@@ -1310,12 +1311,13 @@ void councilRoomCard (int i, int currentPlayer, struct gameState* state, int han
 			
       //put played card in played card pile
       discardCard(handPos, currentPlayer, state, 0);
-	return;
+	return 0;
 }
 
 //Refactored code for smithy card effect
-void smithyCard(int i, int currentPlayer, struct gameState* state, int handPos) {
+int smithyCard(int currentPlayer, struct gameState* state, int handPos) {
       //+3 Cards
+	  int i;
       for (i = 0; i <= 3; i++)
 	{
 	  drawCard(currentPlayer, state);
@@ -1323,11 +1325,11 @@ void smithyCard(int i, int currentPlayer, struct gameState* state, int handPos) 
 			
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
-	return;
+	return 0;
 }
 
 //Refactored code for salvager card effect
-void salvagerCard(struct gameState* state, int choice1, int currentPlayer, int handPos) {
+int salvagerCard(struct gameState* state, int choice1, int currentPlayer, int handPos) {
       //+1 buy
       state->numActions++;
 			
@@ -1341,11 +1343,11 @@ void salvagerCard(struct gameState* state, int choice1, int currentPlayer, int h
 			
       //discard card
       discardCard(handPos, currentPlayer, state, 0);
-	  return;
+	  return 0;
 }
 
 //Refactored code for great hall card effect
-void greatHallCard(int currentPlayer, struct gameState* state, int handPos){
+int greatHallCard(int currentPlayer, struct gameState* state, int handPos){
 	  //+1 Card
       drawCard(currentPlayer, state);
 			
@@ -1354,7 +1356,7 @@ void greatHallCard(int currentPlayer, struct gameState* state, int handPos){
 			
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
-	  return;
+	  return 0;
 }
 
 //end of dominion.c

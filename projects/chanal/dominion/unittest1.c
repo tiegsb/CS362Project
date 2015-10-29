@@ -42,7 +42,7 @@ int main() {
 
 /******** First test ************/
 #if (NOISY_TEST == 1)
-	printf("Test #1, handcount 5, no coins, no bonus\n");
+	printf("Test #1, Handcount 5, no coins, no bonus\n");
 #endif
 
 	/*Set handcount*/
@@ -73,16 +73,19 @@ int main() {
 	updateCoins(p, &G, bonus);
 
 	/*Expected coins to be 0*/
-	assert(G.coins == 0);
 
 #if (NOISY_TEST == 1)
 	printf("Expected coins=%d Actual coins=%d \n", 0, G.coins);
-	printf("Test #1 passed \n\n");
+	if(G.coins == 0){
+		printf("Test #1 PASSED \n\n");
+	} else {
+		printf("Test #1 FAILED\n\n");
+	}
 #endif
 
 /********** Second test ***********/
 #if (NOISY_TEST == 1)
-	printf("Test #2, handcount of 5 cards, one copper, one silver, one gold, no bonus\n");
+	printf("Test #2, Handcount of 5 cards, one copper, one silver, one gold, no bonus\n");
 #endif
 
 	/*Set handcount*/
@@ -114,17 +117,22 @@ int main() {
 	updateCoins(p, &G, bonus);
 
 	/*Expected coins to be 6 (copper + silver + gold)*/
-	assert(G.coins == 6);
+
 
 #if (NOISY_TEST == 1)
 	printf("Expected coins=%d Actual coins=%d \n", 6, G.coins);
-	printf("Test #2 passed \n\n");
+	
+	if(G.coins == 6){
+		printf("Test #2 PASSED \n\n");
+	} else {
+		printf("Test #2 FAILED\n\n");
+	}	
 #endif
 
 
 /******** Third test *************/
 #if (NOISY_TEST == 1)
-	printf("Test #3, handcount of 7 cards, one copper, two silver, 4 bonus\n");
+	printf("Test #3, Handcount of 7 cards, one copper, two silver, 4 bonus\n");
 #endif
 
 	/*Set handcount*/
@@ -158,11 +166,15 @@ int main() {
 	updateCoins(p, &G, bonus);
 
 	/*Expected coins to be 9 (copper + silver + silver + 4 bonus)*/
-	assert(G.coins == 9);
 
 #if (NOISY_TEST == 1)
 	printf("Expected coins=%d Actual coins=%d \n", 9, G.coins);
-	printf("Test #3 passed \n\n");
+	
+	if(G.coins == 9){
+		printf("Test #3 PASSED \n\n");
+	} else {
+		printf("Test #3 FAILED\n\n");
+	}	
 #endif
   
 
@@ -201,12 +213,16 @@ int main() {
 	/*Update coins in hand*/
 	updateCoins(p, &G, bonus);
 
-	/*Expected coins to be 10*/
-	assert(G.coins == 10);
+	/*Expected coins to be 10 (silver + silver, + gold + gold)*/
 
 #if (NOISY_TEST == 1)
 	printf("Expected coins=%d Actual coins=%d \n", 10, G.coins);
-	printf("Test #4 passed \n\n");
+	
+	if(G.coins == 10){
+		printf("Test #4 PASSED \n\n");
+	} else {
+		printf("Test #4 FAILED\n\n");
+	}	
 #endif
 
 /********** Fifth test **********/
@@ -245,11 +261,14 @@ int main() {
 	updateCoins(p, &G, bonus);
 
 	/*Expected coins to be 2 (2 bonus)*/
-	assert(G.coins == 2);
 
 #if (NOISY_TEST == 1)
 	printf("Expected coins=%d Actual coins=%d \n", 2, G.coins);
-	printf("Test #5 passed \n\n");
+	if(G.coins == 2){
+		printf("Test #5 PASSED \n\n");
+	} else {
+		printf("Test #5 FAILED\n\n");
+	}	
 #endif
 
 	return 0;
