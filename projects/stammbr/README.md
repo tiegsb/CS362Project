@@ -9,6 +9,9 @@ the needed dominion/rngs files.  Also, a newer version of refactor.c can be foun
 there and the coverage1.c file.  Both give detailed explanations of what I discovered
 through this assignment.
 
+Assignment 4 - All files for this program are saved in the file named "Assignment4" under the
+parent file "dominion".
+
 Quiz 2 - All files needed for quiz 2 are in the folder named "Quiz2".  There is no makefile for 
 it, but can be easily compiled with gcc testme.c -o briansawesomeprogram.  Remember, it has to
 be "briansawesomeprogram" to run correctly.  If not, I cannot be responsible for any issues.

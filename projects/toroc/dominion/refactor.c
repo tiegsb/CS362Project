@@ -18,7 +18,12 @@ int council_roomCard(struct gameState* state, int currentPlayer, int handPos);
 Smithy Card: The smithy card continues to draw 3 cards, but if third card
 drawn is a gold treasure card, the smithy will grant an additional action.
 
-Adventurer Card: Anytime a silver treasure card is drawn, it gets added into 
+Adventurer Card: The bug I had introduced into the implementation of the
+Adventurer never gets triggered as it was introduced as an else if statement
+following the if when a treasure card is found. I have now replace the old
+bug with the following new bug:
+If the treasure card drawn is copper, the user's buys are decremented.
+OLD BUG: Anytime a silver treasure card is drawn, it gets added into 
 the temp hand instead of the player's hand. The drawn treasure is also 
 decremented so that it still appears that the Adventure card is drawing up
 two treasure cards.
