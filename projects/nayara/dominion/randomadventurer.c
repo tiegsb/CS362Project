@@ -69,15 +69,7 @@ int main()
         G.deckCount[p] = floor(Random() * MAX_DECK);
         G.discardCount[p] = floor(Random() * MAX_DECK);
         G.handCount[p] = floor(Random() * MAX_HAND);
-        for (j = 0; j< G.deckCount[p]; j++)
-        {
-            G.deck[p][j] = floor(Random() * 9);
-        }
-        for (j = 0; j< G.handCount[p]; j++)
-        {
-            G.hand[p][j] = floor(Random() * 9);
-        }
-        checkAdventurer(p, &G);
+`       checkAdventurer(p, &G);
         
     }
     
