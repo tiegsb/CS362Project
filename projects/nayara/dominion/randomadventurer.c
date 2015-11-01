@@ -11,47 +11,46 @@
 int checkAdventurer(int p, struct gameState *post) {
     
     struct gameState pre;
+    int i;
     memcpy (&pre, post, sizeof(struct gameState));
     
     int r = adventurerEffect(p, post);
-    //printf("Copper is %d, silver is %d, gold is %d\n", copper, silver, gold);
+    
+
     if(post->handCount[p] != pre.handCount[p] + 2)
     {
-        printf("Hand count pre: %d, Hand count post: %d\n", pre.handCount[p],post->handCount[p] );
+        
+        printf("FAILURE: Hand count must be increased by exactly 2. Hand count pre: %d, Hand count post: %d\n", pre.handCount[p],post->handCount[p] );
     }
-    
-    // post - pre: start index
-    // post should have no copper, silver, or gold
-    // last two hand cards should be copper, silver, or gold.
-    if(post->discardCount[p] == pre.discardCount[p])
-    {
-        //printf("Discard count pre: %d, discard count post: %d\n", pre.discardCount[p],post->discardCount[p] );
-    }
-    int i;
 
     for(i=0;i<post->discardCount[p];i++)
     {
         
         if (post->discard[p][i] == copper )
         {
-            //printf("Copper: %d\n", post->discard[p][i]);
+            printf("FAILURE: Copper card found in discard pile\n");
         }
         else if (post->discard[p][i] == silver )
         {
-            printf("Silver: %d\n", post->discard[p][i]);
+            printf("FAILURE: Silver card found in discard pile\n");
         }
 
         else if (post->discard[p][i] == gold )
         {
-            printf("Gold: %d\n", post->discard[p][i]);
+            printf("FAILURE: Gold card found in discard pile\n");
         }
 
     }
-    for(i=0;i<post->handCount[p];i++)
+
+    if (post->hand[p][post->handCount[p]-1] != silver && post->hand[p][post->handCount[p]-1] != gold && post->hand[p][post->handCount[p]-1] != copper  )
     {
-        printf("Card[%d][%d]: %d\n", p,i, post->hand[p][i]);
+        printf("FAILURE: Last card must be a copper, silver, or gold. Last card was: %d\n", post->hand[p][post->handCount[p]-1]);
     }
-    printf("\n");
+    if (post->hand[p][post->handCount[p]-2] != silver && post->hand[p][post->handCount[p]-2] != gold && post->hand[p][post->handCount[p]-2] != copper  )
+    {
+        printf("FAILURE: Last card must be a copper, silver, or gold. Last card was: %d\n", post->hand[p][post->handCount[p]-2]);
+    }
+    
     return 0;
 }
 
@@ -59,9 +58,6 @@ int main()
 {
 
     int i, j, n, p;
-    int k[10] = {adventurer, council_room, feast, gardens, mine,
-	       remodel, smithy, village, baron, great_hall};
-    
     struct gameState G;
     for (n = 0; n < 2000; n++)
     {
@@ -76,17 +72,11 @@ int main()
         for (j = 0; j< G.deckCount[p]; j++)
         {
             G.deck[p][j] = floor(Random() * 9);
-            //printf("Deck is: %d\n", G.deck[p][j]);
         }
         for (j = 0; j< G.handCount[p]; j++)
         {
             G.hand[p][j] = floor(Random() * 9);
-            //printf("Hand is: %d\n", G.hand[p][j]);
         }
-
-        //printf("Hand count: %d\n", G.deckCount[p]);
-        //printf("Discard count: %d\n", G.deckCount[p]);
-        //printf("Deck count: %d\n", G.deckCount[p]);
         checkAdventurer(p, &G);
         
     }
