@@ -53,7 +53,7 @@ void checkAdventurer(int player, struct gameState *post, int *fail) {
 	//This assert failed
 	//assert(pre.playedCardCount+1 == post->playedCardCount);
 	if (pre.playedCardCount+1 != post->playedCardCount) {
-		printf("FAIL: playedCardCount. Expected %d, got %d", pre.playedCardCount+1, post->playedCardCount);
+		printf("FAIL: playedCardCount. Expected %d, got %d\n", pre.playedCardCount+1, post->playedCardCount);
 		*fail = 1;
 	}
 
