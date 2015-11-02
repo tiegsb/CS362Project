@@ -82,6 +82,12 @@ randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
 	randomtestadventurer >> randomtestadventurer.out
 	gcov -b dominion.c >> randomtestadventurer.out
 
+randomtestcard.out: randomtestcard.c dominion.o rngs.o
+	echo "randomtestcard.out:" > randomtestcard.out
+	gcc -o randomtestcard -g randomtestcard.c dominion.o rngs.o $(CFLAGS)
+	randomtestcard >> randomtestcard.out
+	gcov -b dominion.c >> randomtestcard.out
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 
