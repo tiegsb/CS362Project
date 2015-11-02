@@ -1321,13 +1321,10 @@ int adventurerCard(struct gameState* state, int currentPlayer)
 		cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
 	
 		if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-		  drawntreasure++;
-		else if (cardDrawn == silver)
 		{
-			drawntreasure--;
-			temphand[z]=cardDrawn;
-			state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
-			z++;
+			drawntreasure++;
+			if (drawntreasure == 2 && cardDrawn == gold)
+				state->numBuys--;
 		}
 		else
 		{
