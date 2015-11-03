@@ -14,9 +14,8 @@ int checkAdventurer(int p, struct gameState *post) {
     int i;
 
     memcpy (&pre, post, sizeof(struct gameState));
-    printf("Got here\n");
+
     adventurerEffect(p, post);
-    printf("Got here post\n");
 
     if(post->handCount[p] != pre.handCount[p] + 2)
     {
