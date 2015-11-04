@@ -10,19 +10,21 @@
 
 //number of tests the user wants to run
 const int numTestRuns = 1000;
+const int Max_Deck_Size = 500;
 
 int main() {
 
+printf("* * * * * * * * * * * * * * * * randomtestadventurer * * * * * * * * * * * * * * * * \n");
     int i;
     int j;
     struct gameState G;
+    struct gameState D;
 
     int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
     sea_hag, tribute, smithy};
     initializeGame(2, k, 2, &G);
 
     //default gamestate.
-    struct gameState D;
     srand(time(NULL));
     int card;
     G.deckCount[0] = 0;
@@ -36,50 +38,51 @@ int main() {
     int expectedHandSize;
     int expectedMoney;
     int actualMoney;
+    int deckSize; 
 
-
-
-    //fill deck with random cards
-    for (i = 0; i < 30; i++)
-    {
-    	deckCounter = G.deckCount[0];
-    	card = rand() % 27; 
-    	G.deck[0][deckCounter] = card;
-    	G.deckCount[0]++;
-    }
-
-    // add some coins
-    for ( i = 0; i < 15; i++)
-    {
-    	deckCounter = G.deckCount[0];
-    	card = rand() % 3 + 4;
-    	G.deck[0][deckCounter] = card;
-    	G.deckCount[0]++;
-
-
-    }
-
-    //fill hand with adventurer cards
-    for (i = 0; i < numHandCards(&G); i++)
-    {
-    	G.hand[0][i] = adventurer;
-    }
-
-    shuffle(0, &G);
+    
+    int handPlayed;
 
     D = G;
 
+
     for (i = 0; i < numTestRuns; i++)
     {
-    	// printf("Running test # %i \n", i);
-    	G = D;
+        G= D;
+        deckSize = rand() % MAX_DECK + 1;
+        //fill deck with random cards
+        for (j = 0; j < deckSize; j++)
+        {
+            deckCounter = G.deckCount[0];
+            card = rand() % 27; 
+            G.deck[0][deckCounter] = card;
+            G.deckCount[0]++;
+        }
+
+        //this makes the deckCount artificially small so that the shuffle function gets called
+        // G.deckCount[0] = rand() % 10;
+
+
+
+        //fill hand with adventurer cards - We're not testing the playcard function so we're not checking to 
+        //see if it's played or not
+        for (j = 0; j < numHandCards(&G); j++)
+        {
+            G.hand[0][j] = adventurer;
+        }
+
+ 
+        printf("Running test # %i \n", i);
+        //printHand(0, &G);
+
     	shuffle(0, &G);
     	cardsDrawnCount = 0;
     	treasureCardCount = 0; 
-    	expectedHandSize = numHandCards(&G) + 2;
+    	expectedHandSize = numHandCards(&G) + 1;
     	expectedMoney =  0;  
     	actualMoney = 0; 
     	expectedDiscardCount = 0;
+
 
     	// printf("%i vs %i on run %i \n", expectedDiscardCount, G.discardCount[0], i);
 
@@ -101,19 +104,19 @@ int main() {
     		// printf("drew card #: %i on deckcount %i \n", cardsDrawnCount, j);
     		if (G.deck[0][j] == copper)
     		{
-    			//printf("found copper\n");
+    			// printf("found copper\n");
     			treasureCardCount++;
     			expectedMoney++;
     		}
     		else if (G.deck[0][j] == silver)
     		{
-    			//printf("found silver\n");
+    			// printf("found silver\n");
     			treasureCardCount++;
     			expectedMoney += 2;
     		}
     		else if (G.deck[0][j] == gold)
     		{
-    			//printf("Found gold\n");
+    			// printf("Found gold\n");
     			treasureCardCount++;
     			expectedMoney += 3;
     		}	
@@ -124,13 +127,16 @@ int main() {
     		//printf("*******expected money %i /n", expectedMoney);
     		if(treasureCardCount == 2){
     			// printf("Drew %i cards\n", cardsDrawnCount);
+                // printf("expected treasure found is %i \n", expectedMoney );
     			break;
     		}
     	}
 
-    	expectedDiscardCount = cardsDrawnCount -1;
+        //acount for the two treasure cards being kept and the adventurer card being discarded
+    	expectedDiscardCount = cardsDrawnCount-1;
 
-    	playCard(0, -1, -1, -1, &G);
+        handPlayed = rand() % numHandCards(&G);
+    	int status = playCard(handPlayed, -1, -1, -1, &G);
 
     	for (j = 0; j < numHandCards(&G); j++) {
 	      if (handCard(j, &G) == copper)
@@ -141,20 +147,32 @@ int main() {
 	      	actualMoney += 3;
 	  	}
 
+         // printf("actual treasure found is %i \n", actualMoney );
+
 	  	// printf("actual money %i\n", actualMoney);
 
 	  	//make sure that the hand, discard and money count are all accurate.
-    	assert (numHandCards(&G) == expectedHandSize);
+    	if (numHandCards(&G) != expectedHandSize)
+        {
+            printf ("************* Error: expected hand size is wrong because adventurer not discarded. ************* \n");
+
+        }
 
     	// printf("expected discard %i, discard count % i \n", expectedDiscardCount, G.discardCount[0] );
-    	assert (expectedDiscardCount == G.discardCount[0]);
-    	assert (actualMoney == expectedMoney);
+    	if (expectedDiscardCount != G.discardCount[0])
+        {
+            printf ("************* Error: played card (adventurer) was not discarded after use. ************* \n");
+
+        }
+
+    	if (actualMoney != expectedMoney)
+        {
+            printf ("*************  Error: Total treasure (%i) did not match expected (%i). ************* \n", actualMoney, expectedMoney);
+        }
+
+
 
     }
-
-    //fill hand with random cards
-
-
 
 
     return 0;

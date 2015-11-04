@@ -1,518 +1,3 @@
-* * * * * * * * * * * * * * * *  Testing village card.* * * * * * * * * * * * * * * * 
-played card 
-All tests passed!
-File 'dominion.c'
-Lines executed:20.66% of 639
-Branches executed:22.68% of 463
-Taken at least once:13.61% of 463
-Calls executed:15.38% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * Testing adventurer card * * * * * * * * * * * * * * * * 
-################################################### 
- Error: played card (adventurer) was not discarded after use. 
- ################################################### 
-################################################### 
- Error: played card (adventurer) was not discarded after use. 
- ################################################### 
-################################################### 
- Error: played card (adventurer) was not discarded after use. 
- ################################################### 
-################################################### 
- Error: played card (adventurer) was not discarded after use. 
- ################################################### 
-################################################### 
- Error: played card (adventurer) was not discarded after use. 
- ################################################### 
-All tests passed!
-File 'dominion.c'
-Lines executed:22.38% of 639
-Branches executed:24.41% of 463
-Taken at least once:15.12% of 463
-Calls executed:17.31% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * Testing smithy card * * * * * * * * * * * * * * * * 
-################################################### 
- Error: incorrect number of cards in hand left after Smithy played. 
- ################################################### 
-All tests passed!
-File 'dominion.c'
-Lines executed:23.32% of 639
-Branches executed:24.84% of 463
-Taken at least once:15.77% of 463
-Calls executed:20.19% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * Testing mineCard card* * * * * * * * * * * * * * * * 
-Testing swapping position 0 for Copper 
-difference is 3 and 0 
-code returned: -1 
-cost of choice1 is 0 
-affordable 
-################################################### 
- Error: Expected coin in hand location 0. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-Testing swapping position 0 for Silver 
-difference is 3 and 3 
-code returned: 0 
-cost of choice1 is 3 
-affordable 
-################################################### 
- Error: Expected coin in hand location 0. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-Testing swapping position 0 for Gold 
-difference is 3 and 6 
-code returned: 0 
-cost of choice1 is 6 
-affordable 
-################################################### 
- Error: Expected coin in hand location 0. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-Testing swapping position 1 for Copper 
-difference is 6 and 0 
-code returned: -1 
-cost of choice1 is 3 
-affordable 
-################################################### 
- Error: Expected coin in hand location 1. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-Testing swapping position 1 for Silver 
-difference is 6 and 3 
-code returned: -1 
-cost of choice1 is 3 
-affordable 
-################################################### 
- Error: Expected coin in hand location 1. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-Testing swapping position 1 for Gold 
-difference is 6 and 6 
-code returned: 0 
-cost of choice1 is 6 
-affordable 
-################################################### 
- Error: Expected coin in hand location 1. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-Testing swapping position 2 for Copper 
-difference is 9 and 0 
-code returned: -1 
-cost of choice1 is 6 
-affordable 
-################################################### 
- Error: Expected coin in hand location 2. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-Testing swapping position 2 for Silver 
-difference is 9 and 3 
-code returned: -1 
-cost of choice1 is 6 
-affordable 
-################################################### 
- Error: Expected coin in hand location 2. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-Testing swapping position 2 for Gold 
-difference is 9 and 6 
-code returned: -1 
-cost of choice1 is 6 
-affordable 
-################################################### 
- Error: Expected coin in hand location 2. 
- ################################################### 
-################################################### 
- Error: expected non-mine card in hand location 4. 
- ################################################### 
-################################################### 
- Error: expected mine card in played area. 
- ################################################### 
-################################################### 
- Error: expected a coin card in played area. 
- ################################################### 
-################################################### 
- Error: allows user to choose a non treasure card to buy. 
- ################################################### 
-All tests passed!
-File 'dominion.c'
-Lines executed:28.64% of 639
-Branches executed:35.21% of 463
-Taken at least once:20.09% of 463
-Calls executed:29.81% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * Testing minionCard * * * * * * * * * * * * * * * *
-Testing minion card choice 1
-################################################### 
- Error: bonus coins not updated to + 2. 
-################################################### 
-Testing minion card choice 2
-################################################### 
- Error: expected 10 discard cards played between player 1 and 2 received 1. 
- ################################################### 
-All tests passed!
-File 'dominion.c'
-Lines executed:31.14% of 639
-Branches executed:38.23% of 463
-Taken at least once:23.33% of 463
-Calls executed:34.62% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * TESTING unittest1 gainCard():* * * * * * * * * * * * * * * * 
-Test: Card Adventurer added with no supply with flag 1 for player 0 
-Test: Card Council Room added with no supply with flag 1 for player 0 
-Test: Card Feast added with no supply with flag 1 for player 0 
-Test: Card Gardens added with no supply with flag 1 for player 0 
-Test: Card Mine added with no supply with flag 1 for player 0 
-Test: Card Remodel added with no supply with flag 1 for player 0 
-Test: Card Smithy added with no supply with flag 1 for player 0 
-Test: Card Village added with no supply with flag 1 for player 0 
-Test: Card Baron added with no supply with flag 1 for player 0 
-Test: Card Great Hall added with no supply with flag 1 for player 0 
-Test: Card Adventurer added with no supply with flag 2 for player 0 
-Test: Card Council Room added with no supply with flag 2 for player 0 
-Test: Card Feast added with no supply with flag 2 for player 0 
-Test: Card Gardens added with no supply with flag 2 for player 0 
-Test: Card Mine added with no supply with flag 2 for player 0 
-Test: Card Remodel added with no supply with flag 2 for player 0 
-Test: Card Smithy added with no supply with flag 2 for player 0 
-Test: Card Village added with no supply with flag 2 for player 0 
-Test: Card Baron added with no supply with flag 2 for player 0 
-Test: Card Great Hall added with no supply with flag 2 for player 0 
-Test: Card Adventurer added with no supply with flag 3 for player 0 
-Test: Card Council Room added with no supply with flag 3 for player 0 
-Test: Card Feast added with no supply with flag 3 for player 0 
-Test: Card Gardens added with no supply with flag 3 for player 0 
-Test: Card Mine added with no supply with flag 3 for player 0 
-Test: Card Remodel added with no supply with flag 3 for player 0 
-Test: Card Smithy added with no supply with flag 3 for player 0 
-Test: Card Village added with no supply with flag 3 for player 0 
-Test: Card Baron added with no supply with flag 3 for player 0 
-Test: Card Great Hall added with no supply with flag 3 for player 0 
-Test: Card Adventurer was added to deck for player 0 
-Test: Card Council Room was added to deck for player 0 
-Test: Card Feast was added to deck for player 0 
-Test: Card Gardens was added to deck for player 0 
-Test: Card Mine was added to deck for player 0 
-Test: Card Remodel was added to deck for player 0 
-Test: Card Smithy was added to deck for player 0 
-Test: Card Village was added to deck for player 0 
-Test: Card Baron was added to deck for player 0 
-Test: Card Great Hall was added to deck for player 0 
-Test: Card Adventurer was added to hand for player 0 
-Test: Card Council Room was added to hand for player 0 
-Test: Card Feast was added to hand for player 0 
-Test: Card Gardens was added to hand for player 0 
-Test: Card Mine was added to hand for player 0 
-Test: Card Remodel was added to hand for player 0 
-Test: Card Smithy was added to hand for player 0 
-Test: Card Village was added to hand for player 0 
-Test: Card Baron was added to hand for player 0 
-Test: Card Great Hall was added to hand for player 0 
-Test: Card Adventurer was added to discard for player 0 
-Test: Card Council Room was added to discard for player 0 
-Test: Card Feast was added to discard for player 0 
-Test: Card Gardens was added to discard for player 0 
-Test: Card Mine was added to discard for player 0 
-Test: Card Remodel was added to discard for player 0 
-Test: Card Smithy was added to discard for player 0 
-Test: Card Village was added to discard for player 0 
-Test: Card Baron was added to discard for player 0 
-Test: Card Great Hall was added to discard for player 0 
-Test: Card Adventurer added with no supply with flag 1 for player 1 
-Test: Card Council Room added with no supply with flag 1 for player 1 
-Test: Card Feast added with no supply with flag 1 for player 1 
-Test: Card Gardens added with no supply with flag 1 for player 1 
-Test: Card Mine added with no supply with flag 1 for player 1 
-Test: Card Remodel added with no supply with flag 1 for player 1 
-Test: Card Smithy added with no supply with flag 1 for player 1 
-Test: Card Village added with no supply with flag 1 for player 1 
-Test: Card Baron added with no supply with flag 1 for player 1 
-Test: Card Great Hall added with no supply with flag 1 for player 1 
-Test: Card Adventurer added with no supply with flag 2 for player 1 
-Test: Card Council Room added with no supply with flag 2 for player 1 
-Test: Card Feast added with no supply with flag 2 for player 1 
-Test: Card Gardens added with no supply with flag 2 for player 1 
-Test: Card Mine added with no supply with flag 2 for player 1 
-Test: Card Remodel added with no supply with flag 2 for player 1 
-Test: Card Smithy added with no supply with flag 2 for player 1 
-Test: Card Village added with no supply with flag 2 for player 1 
-Test: Card Baron added with no supply with flag 2 for player 1 
-Test: Card Great Hall added with no supply with flag 2 for player 1 
-Test: Card Adventurer added with no supply with flag 3 for player 1 
-Test: Card Council Room added with no supply with flag 3 for player 1 
-Test: Card Feast added with no supply with flag 3 for player 1 
-Test: Card Gardens added with no supply with flag 3 for player 1 
-Test: Card Mine added with no supply with flag 3 for player 1 
-Test: Card Remodel added with no supply with flag 3 for player 1 
-Test: Card Smithy added with no supply with flag 3 for player 1 
-Test: Card Village added with no supply with flag 3 for player 1 
-Test: Card Baron added with no supply with flag 3 for player 1 
-Test: Card Great Hall added with no supply with flag 3 for player 1 
-Test: Card Adventurer was added to deck for player 1 
-Test: Card Council Room was added to deck for player 1 
-Test: Card Feast was added to deck for player 1 
-Test: Card Gardens was added to deck for player 1 
-Test: Card Mine was added to deck for player 1 
-Test: Card Remodel was added to deck for player 1 
-Test: Card Smithy was added to deck for player 1 
-Test: Card Village was added to deck for player 1 
-Test: Card Baron was added to deck for player 1 
-Test: Card Great Hall was added to deck for player 1 
-Test: Card Adventurer was added to hand for player 1 
-Test: Card Council Room was added to hand for player 1 
-Test: Card Feast was added to hand for player 1 
-Test: Card Gardens was added to hand for player 1 
-Test: Card Mine was added to hand for player 1 
-Test: Card Remodel was added to hand for player 1 
-Test: Card Smithy was added to hand for player 1 
-Test: Card Village was added to hand for player 1 
-Test: Card Baron was added to hand for player 1 
-Test: Card Great Hall was added to hand for player 1 
-Test: Card Adventurer was added to discard for player 1 
-Test: Card Council Room was added to discard for player 1 
-Test: Card Feast was added to discard for player 1 
-Test: Card Gardens was added to discard for player 1 
-Test: Card Mine was added to discard for player 1 
-Test: Card Remodel was added to discard for player 1 
-Test: Card Smithy was added to discard for player 1 
-Test: Card Village was added to discard for player 1 
-Test: Card Baron was added to discard for player 1 
-Test: Card Great Hall was added to discard for player 1 
-All tests passed!
-File 'dominion.c'
-Lines executed:31.92% of 639
-Branches executed:38.23% of 463
-Taken at least once:23.97% of 463
-Calls executed:34.62% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * TESTING unittest2 fullDeckCount():* * * * * * * * * * * * * * * * 
-Test: No Adventurer's in for player 0 
-Test: One Adventurer in deck for player 0 
-Test: One Adventurer in hand and deck for player 0 
-Test: One Adventurer in discard, hand and deck for player 0 
-Test: No Adventurer's in for player 1 
-Test: One Adventurer in deck for player 1 
-Test: One Adventurer in hand and deck for player 1 
-Test: One Adventurer in discard, hand and deck for player 1 
-Test: No Council Room's in for player 0 
-Test: One Council Room in deck for player 0 
-Test: One Council Room in hand and deck for player 0 
-Test: One Council Room in discard, hand and deck for player 0 
-Test: No Council Room's in for player 1 
-Test: One Council Room in deck for player 1 
-Test: One Council Room in hand and deck for player 1 
-Test: One Council Room in discard, hand and deck for player 1 
-Test: No Feast's in for player 0 
-Test: One Feast in deck for player 0 
-Test: One Feast in hand and deck for player 0 
-Test: One Feast in discard, hand and deck for player 0 
-Test: No Feast's in for player 1 
-Test: One Feast in deck for player 1 
-Test: One Feast in hand and deck for player 1 
-Test: One Feast in discard, hand and deck for player 1 
-Test: No Gardens's in for player 0 
-Test: One Gardens in deck for player 0 
-Test: One Gardens in hand and deck for player 0 
-Test: One Gardens in discard, hand and deck for player 0 
-Test: No Gardens's in for player 1 
-Test: One Gardens in deck for player 1 
-Test: One Gardens in hand and deck for player 1 
-Test: One Gardens in discard, hand and deck for player 1 
-Test: No Mine's in for player 0 
-Test: One Mine in deck for player 0 
-Test: One Mine in hand and deck for player 0 
-Test: One Mine in discard, hand and deck for player 0 
-Test: No Mine's in for player 1 
-Test: One Mine in deck for player 1 
-Test: One Mine in hand and deck for player 1 
-Test: One Mine in discard, hand and deck for player 1 
-Test: No Remodel's in for player 0 
-Test: One Remodel in deck for player 0 
-Test: One Remodel in hand and deck for player 0 
-Test: One Remodel in discard, hand and deck for player 0 
-Test: No Remodel's in for player 1 
-Test: One Remodel in deck for player 1 
-Test: One Remodel in hand and deck for player 1 
-Test: One Remodel in discard, hand and deck for player 1 
-Test: No Smithy's in for player 0 
-Test: One Smithy in deck for player 0 
-Test: One Smithy in hand and deck for player 0 
-Test: One Smithy in discard, hand and deck for player 0 
-Test: No Smithy's in for player 1 
-Test: One Smithy in deck for player 1 
-Test: One Smithy in hand and deck for player 1 
-Test: One Smithy in discard, hand and deck for player 1 
-Test: No Village's in for player 0 
-Test: One Village in deck for player 0 
-Test: One Village in hand and deck for player 0 
-Test: One Village in discard, hand and deck for player 0 
-Test: No Village's in for player 1 
-Test: One Village in deck for player 1 
-Test: One Village in hand and deck for player 1 
-Test: One Village in discard, hand and deck for player 1 
-Test: No Baron's in for player 0 
-Test: One Baron in deck for player 0 
-Test: One Baron in hand and deck for player 0 
-Test: One Baron in discard, hand and deck for player 0 
-Test: No Baron's in for player 1 
-Test: One Baron in deck for player 1 
-Test: One Baron in hand and deck for player 1 
-Test: One Baron in discard, hand and deck for player 1 
-Test: No Great Hall's in for player 0 
-Test: One Great Hall in deck for player 0 
-Test: One Great Hall in hand and deck for player 0 
-Test: One Great Hall in discard, hand and deck for player 0 
-Test: No Great Hall's in for player 1 
-Test: One Great Hall in deck for player 1 
-Test: One Great Hall in hand and deck for player 1 
-Test: One Great Hall in discard, hand and deck for player 1 
-All tests passed!
-File 'dominion.c'
-Lines executed:33.33% of 639
-Branches executed:40.82% of 463
-Taken at least once:26.13% of 463
-Calls executed:34.62% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * TESTING unittest3 isGameOver():* * * * * * * * * * * * * * * * 
-Testing with all supply gone 
-Testing with two supply gone 
-Test: remove Duchy + Curse + Estate triggers end. 
-Test: remove Province + Curse + Estate triggers end. 
-Test: remove Copper + Curse + Estate triggers end. 
-Test: remove Silver + Curse + Estate triggers end. 
-Test: remove Gold + Curse + Estate triggers end. 
-Test: remove Adventurer + Curse + Estate triggers end. 
-Test: remove Council Room + Curse + Estate triggers end. 
-Test: remove Feast + Curse + Estate triggers end. 
-Test: remove Gardens + Curse + Estate triggers end. 
-Test: remove Mine + Curse + Estate triggers end. 
-Test: remove Remodel + Curse + Estate triggers end. 
-Test: remove Smithy + Curse + Estate triggers end. 
-Test: remove Village + Curse + Estate triggers end. 
-Test: remove Baron + Curse + Estate triggers end. 
-Test: remove Great Hall + Curse + Estate triggers end. 
-Test: remove Minion + Curse + Estate triggers end. 
-Test: remove Steward + Curse + Estate triggers end. 
-Test: remove Tribute + Curse + Estate triggers end. 
-Test: remove Ambassador + Curse + Estate triggers end. 
-Test: remove Cutpurse + Curse + Estate triggers end. 
-Test: remove Embargo + Curse + Estate triggers end. 
-Test: remove Outpost + Curse + Estate triggers end. 
-Test: remove Salvager + Curse + Estate triggers end. 
-Test: remove Sea Hag + Curse + Estate triggers end. 
-**********************************************************  
- Removing Seahag or Treasuremap in addition 2 other cards does not trigger end of game 
- ********************************************************** 
-Test: remove Treasure Map + Curse + Estate triggers end. 
-**********************************************************  
- Removing Seahag or Treasuremap in addition 2 other cards does not trigger end of game 
- ********************************************************** 
-All tests passed!
-File 'dominion.c'
-Lines executed:34.74% of 639
-Branches executed:42.55% of 463
-Taken at least once:27.65% of 463
-Calls executed:34.62% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * Testint unittest4 scoreFor * * * * * * * * * * * * * * * * 
-Test: Empty Game 
-score after deck: 0 
- 
-Test: one score card found in hand
-score after deck: 10 
- 
-Test: One of each in deck 
-score after deck: 0 
- 
-################################################### 
- Error: iterator for deck count cycles through i = discardCount istead of deckCount 
- ################################################### 
-Test: One of each in discard
-score after deck: 4 
- 
-################################################### 
- Error: iterator for deck count cycles through i = discardCount istead of deckCount 
- ################################################### 
-All tests passed!
-File 'dominion.c'
-Lines executed:46.95% of 639
-Branches executed:61.12% of 463
-Taken at least once:43.84% of 463
-Calls executed:42.31% of 104
-dominion.c:creating 'dominion.c.gcov'
-
 * * * * * * * * * * * * * * * * randomtestadventurer * * * * * * * * * * * * * * * * 
 Running test # 0 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -548,6 +33,7 @@ Running test # 10
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 11 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 12 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -598,7 +84,6 @@ Running test # 27
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 28 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 29 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -616,8 +101,8 @@ Running test # 33
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 34 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
+*************  Error: Total treasure (3) did not match expected (0). ************* 
 Running test # 35 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -640,6 +125,7 @@ Running test # 41
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 42 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 43 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -681,7 +167,6 @@ Running test # 55
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 56 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 57 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -720,7 +205,6 @@ Running test # 68
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 69 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 70 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -795,8 +279,8 @@ Running test # 93
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 94 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
-*************  Error: Total treasure (2) did not match expected (0). ************* 
 Running test # 95 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -816,6 +300,7 @@ Running test # 100
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 101 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 102 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -1034,6 +519,7 @@ Running test # 173
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 174 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 175 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -1159,8 +645,8 @@ Running test # 215
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 216 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
+*************  Error: Total treasure (2) did not match expected (0). ************* 
 Running test # 217 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -1297,7 +783,6 @@ Running test # 261
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 262 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 263 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -1343,7 +828,7 @@ Running test # 276
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 277 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
-*************  Error: Total treasure (4) did not match expected (1). ************* 
+************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 278 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -1417,7 +902,6 @@ Running test # 301
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 302 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 303 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -1459,6 +943,7 @@ Running test # 315
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 316 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 317 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -1476,7 +961,6 @@ Running test # 321
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 322 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 323 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -1545,6 +1029,7 @@ Running test # 344
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 345 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 346 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -1583,6 +1068,7 @@ Running test # 357
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 358 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 359 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -1940,7 +1426,7 @@ Running test # 476
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 477 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
-************* Error: played card (adventurer) was not discarded after use. ************* 
+*************  Error: Total treasure (5) did not match expected (2). ************* 
 Running test # 478 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -1990,7 +1476,6 @@ Running test # 493
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 494 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 495 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2029,6 +1514,7 @@ Running test # 506
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 507 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 508 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2049,6 +1535,7 @@ Running test # 513
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 514 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 515 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2060,7 +1547,6 @@ Running test # 517
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 518 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 519 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2103,7 +1589,7 @@ Running test # 531
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 532 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
-*************  Error: Total treasure (5) did not match expected (2). ************* 
+************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 533 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -2123,6 +1609,7 @@ Running test # 538
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 539 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 540 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2332,7 +1819,6 @@ Running test # 608
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 609 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 610 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2443,7 +1929,6 @@ Running test # 645
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 646 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 647 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2458,6 +1943,7 @@ Running test # 650
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 651 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 652 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2478,10 +1964,11 @@ Running test # 657
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 658 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 659 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
-*************  Error: Total treasure (3) did not match expected (1). ************* 
+************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 660 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -2648,7 +2135,6 @@ Running test # 714
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 715 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 716 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2678,6 +2164,7 @@ Running test # 724
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 725 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 726 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -2887,8 +2374,8 @@ Running test # 794
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 795 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
+*************  Error: Total treasure (3) did not match expected (0). ************* 
 Running test # 796 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -2992,6 +2479,7 @@ Running test # 829
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 830 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 831 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -3024,6 +2512,7 @@ Running test # 840
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 841 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 842 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -3050,6 +2539,7 @@ Running test # 849
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 850 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 851 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -3110,7 +2600,7 @@ Running test # 869
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 870 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
-************* Error: played card (adventurer) was not discarded after use. ************* 
+*************  Error: Total treasure (3) did not match expected (1). ************* 
 Running test # 871 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -3154,6 +2644,7 @@ Running test # 884
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 885 
+************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 886 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
@@ -3222,8 +2713,8 @@ Running test # 907
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 908 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
+*************  Error: Total treasure (1) did not match expected (0). ************* 
 Running test # 909 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -3301,7 +2792,7 @@ Running test # 933
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 934 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
-*************  Error: Total treasure (4) did not match expected (2). ************* 
+************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 935 
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
@@ -3495,216 +2986,8 @@ Running test # 998
 ************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
 Running test # 999 
-************* Error: expected hand size is wrong because adventurer not discarded. ************* 
 ************* Error: played card (adventurer) was not discarded after use. ************* 
-File 'dominion.c'
-Lines executed:49.77% of 639
-Branches executed:62.85% of 463
-Taken at least once:46.22% of 463
-Calls executed:44.23% of 104
-dominion.c:creating 'dominion.c.gcov'
-
-* * * * * * * * * * * * * * * * randomtestcard * * * * * * * * * * * * * * * * 
-Run number 0 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 1 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 2 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 3 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 4 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 5 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 6 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 7 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 8 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 9 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 10 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 11 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 12 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 13 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 14 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 15 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 16 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 17 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 18 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 19 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 20 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 21 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 22 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 23 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 24 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 25 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 26 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 27 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 28 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 29 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 30 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 31 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 32 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 33 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 34 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 35 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 36 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 37 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 38 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 39 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 40 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 41 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 42 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 43 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 44 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 45 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 46 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 47 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 48 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
-Run number 49 
-################################################### 
- Error: played card (smithy) was not discarded after use. 
- ################################################### 
+*************  Error: Total treasure (2) did not match expected (0). ************* 
 File 'dominion.c'
 Lines executed:49.77% of 639
 Branches executed:62.85% of 463
