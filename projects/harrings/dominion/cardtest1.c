@@ -20,7 +20,7 @@ void adventurer_test()
 	int rando = 512; //seed for random numbers I have heard base 2 is best
     
     int p_id = 0; //player id, 2 player game so ids are 0 and 1	   
-	int playercount = 2; 
+	int playercount = 5; 
 	int handCount = 5;
     int test_h[handCount];
 	test_h[0] = copper;
@@ -35,7 +35,9 @@ void adventurer_test()
 	
 	struct gameState G;  //sets up new game
 	initializeGame(playercount, k, rando, &G); //sets up new game
-	
+	for (i=0;i<1000; i++)
+	{
+		
     before_deck = G.deckCount[p_id];// initializes number of cards in deck
 	before_hand = G.handCount[p_id]; // initializes number of cards in hand 
 	before_discard = G.discardCount[p_id];//intializes number of cards in discard before dc

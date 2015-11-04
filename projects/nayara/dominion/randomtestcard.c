@@ -14,7 +14,7 @@ int checkCouncil(int p, int handPos, struct gameState *post) {
     memcpy (&pre, post, sizeof(struct gameState));
     //printf("PRE: numBuys was not increased by one: pre.numBuys: %d, post.numBuys: %d\n", pre.numBuys, post->numBuys);
     
-    int r = councilEffect(p, handPos, post);
+    councilEffect(p, handPos, post);
 
     // Check if card in hand is discarded
     if (pre.hand[p][handPos] == post->hand[p][handPos])
