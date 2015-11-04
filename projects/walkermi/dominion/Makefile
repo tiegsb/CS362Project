@@ -48,6 +48,38 @@ cardtest3: cardtest3.c dominion.o rngs.o
 cardtest4: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest4 -g  cardtest4.c dominion.o rngs.o $(CFLAGS)
 
+randomtestcard: randomtestcard.c dominion.o rngs.o
+	gcc -o randomtestcard -g  randomtestcard.c dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomtestadventurer -g  randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard.out: randomtestcard.c dominion.c dominion.h dominion.o rngs.o
+	rm -f dominion.o
+	echo “Random Test - Smithy Card: Results” > randomtestcard.out
+	echo >> randomtestcard.out
+	make randomtestcard
+	randomtestcard >> randomtestcard.out
+	echo >> randomtestcard.out
+	echo “Random Test - Smithy Card: randomtestcard.c gcov:” >> randomtestcard.out
+	gcov -b randomtestcard.c >> randomtestcard.out
+	echo >> randomtestcard.out
+	echo “Random Test - Smithy Card: dominion.c gcov:” >> randomtestcard.out
+	gcov -b dominion.c >> randomtestcard.out
+
+randomtestadventurer.out: randomtestadventurer.c dominion.c dominion.h dominion.o rngs.o
+	rm -f dominion.o
+	echo “Random Test - Adventurer Card: Results” > randomtestadventurer.out
+	echo >> randomtestadventurer.out
+	make randomtestadventurer
+	randomtestadventurer >> randomtestadventurer.out
+	echo >> randomtestadventurer.out
+	echo “Random Test - Adventurer Card: randomtestadventurer.c gcov:” >> randomtestadventurer.out
+	gcov -b randomtestadventurer.c >> randomtestadventurer.out
+	echo >> randomtestadventurer.out
+	echo “Random Test - Adventurer Card: dominion.c gcov:” >> randomtestadventurer.out
+	gcov -b dominion.c >> randomtestadventurer.out
+
 unittestresults.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2.c unittest3.c unittest4.c dominion.c dominion.h dominion.o rngs.o
 	echo “Unit Test Results:” > unittestresults.out
 	echo >> unittestresults.out
