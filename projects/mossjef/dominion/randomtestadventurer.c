@@ -49,7 +49,13 @@ void checkAdventurer(int player, struct gameState *post, int *fail) {
 	assert(pre.numActions == post->numActions);
 	assert(pre.coins == post->coins);
 	assert(pre.numBuys == post->numBuys);
-	assert(pre.playedCardCount == post->playedCardCount);
+	//This assert ensures that a card has been played
+	//This assert failed
+	//assert(pre.playedCardCount+1 == post->playedCardCount);
+	if (pre.playedCardCount+1 != post->playedCardCount) {
+		printf("FAIL: playedCardCount. Expected %d, got %d\n", pre.playedCardCount+1, post->playedCardCount);
+		*fail = 1;
+	}
 
 #if(NOISY_TEST == 1)
 	printf("Checking that other players are not affected.\n");
@@ -102,7 +108,7 @@ void checkAdventurer(int player, struct gameState *post, int *fail) {
 	//Above assertion failed, but not sure why. The expressions should be equal.
 	//The following if test verifies.
 	if(post->deckCount[player] != postdeckcount) { 
-		printf("Assert failed, postDeckCount change does not match postDicardCount and postHandCount change.\n");
+		printf("FAIL: postDeckCount change does not match postDicardCount and postHandCount change.\n");
 		*fail = 1;
 	}
 

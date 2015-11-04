@@ -1,0 +1,4324 @@
+Results for running random tests:
+randomtestadventurer.c
+
+Starting random testing for adventurer card effects...
+
+Testing iteration: 0...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 2...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 3...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 4...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 5...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 6...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 7...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 8...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 9...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 10...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 11...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 12...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 13...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 14...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 15...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 16...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 17...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 18...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 19...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 20...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 21...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 22...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 23...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 24...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 25...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 26...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 27...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 28...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 29...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 30...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 31...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 32...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 33...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 34...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 35...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 36...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 37...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 38...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 39...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 40...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 41...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 42...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 43...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 44...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 45...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 46...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 47...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 48...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 49...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 50...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 51...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 52...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 53...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 54...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 55...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 56...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 57...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 58...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 59...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 60...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 61...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 62...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 63...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 64...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 65...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 66...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 67...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 68...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 69...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 70...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 71...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 72...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 73...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 74...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 75...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 76...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 77...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 78...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 79...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 80...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 81...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 82...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 83...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 84...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 85...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 86...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 87...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 88...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 89...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 90...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 91...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 92...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 93...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 94...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 95...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 96...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 97...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 98...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 99...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 100...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 101...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 102...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 103...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 104...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 105...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 106...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 107...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 108...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 109...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 110...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 111...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 112...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 113...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 114...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 115...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 116...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 117...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 118...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 119...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 120...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 121...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 122...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 123...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 124...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 125...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 126...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 127...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 128...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 129...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 130...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 131...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 132...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 133...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 134...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 135...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 136...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 137...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 138...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 139...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 140...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 141...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 142...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 143...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 144...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 145...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 146...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 147...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 148...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 149...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 150...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 151...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 152...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 153...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 154...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 155...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 156...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 157...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 158...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 159...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 160...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 161...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 162...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 163...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 164...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 165...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 166...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 167...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 168...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 169...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 170...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 171...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 172...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 173...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 174...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 175...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 176...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 177...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 178...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 179...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 180...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 181...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 182...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 183...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 184...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 185...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 186...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 187...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 188...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 189...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 190...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 191...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 192...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 193...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 194...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 195...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 196...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 197...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 198...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 199...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 200...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 201...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 202...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 203...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 204...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 205...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 206...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 207...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 208...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 209...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 210...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 211...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 212...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 213...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 214...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 215...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 216...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 217...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 218...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 219...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 220...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 221...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 222...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 223...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 224...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 225...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 226...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 227...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 228...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 229...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 230...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 231...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 232...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 233...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 234...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 235...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 236...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 237...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 238...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 239...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 240...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 241...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 242...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 243...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 244...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 245...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 246...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 247...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 248...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 249...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 250...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 251...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 252...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 253...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 254...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 255...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 256...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 257...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 258...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 259...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 260...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 261...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 262...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 263...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 264...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 265...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 266...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 267...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 268...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 269...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 270...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 271...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 272...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 273...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 274...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 275...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 276...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 277...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 278...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 279...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 280...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 281...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 282...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 283...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 284...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 285...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 286...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 287...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 288...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 289...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 290...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 291...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 292...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 293...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 294...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 295...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 296...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 297...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 298...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 299...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 300...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 301...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 302...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 303...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 304...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 305...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 306...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 307...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 308...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 309...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 310...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 311...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 312...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 313...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 314...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 315...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 316...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 317...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 318...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 319...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 320...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 321...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 322...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 323...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 324...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 325...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 326...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 327...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 328...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 329...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 330...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 331...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 332...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 333...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 334...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 335...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 336...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 337...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 338...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 339...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 340...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 341...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 342...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 343...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 344...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 345...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 346...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 347...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 348...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 349...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 350...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 351...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 352...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 353...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 354...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 355...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 356...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 357...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 358...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 359...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 360...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 361...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 362...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 363...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 364...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 365...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 366...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 367...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 368...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 369...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 370...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 371...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 372...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 373...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 374...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 375...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 376...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 377...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 378...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 379...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 380...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 381...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 382...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 383...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 384...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 385...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 386...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 387...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 388...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 389...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 390...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 391...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 392...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 393...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 394...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 395...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 396...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 397...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 398...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 399...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 400...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 401...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 402...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 403...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 404...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 405...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 406...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 407...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 408...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 409...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 410...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 411...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 412...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 413...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 414...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 415...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 416...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 417...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 418...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 419...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 420...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 421...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 422...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 423...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 424...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 425...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 426...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 427...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 428...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 429...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 430...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 431...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 432...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 433...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 434...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 435...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 436...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 437...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 438...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 439...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 440...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 441...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 442...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 443...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 444...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 445...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 446...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 447...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 448...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 449...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 450...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 451...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 452...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 453...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 454...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 455...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 456...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 457...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 458...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 459...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 460...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 461...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 462...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 463...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 464...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 465...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 466...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 467...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 468...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 469...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 470...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 471...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 472...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 473...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 474...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 475...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 476...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 477...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 478...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 479...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 480...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 481...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 482...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 483...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 484...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 485...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 486...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 487...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 488...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 489...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 490...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 491...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 492...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 493...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 494...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 495...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 496...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 497...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 498...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 499...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 500...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 501...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 502...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 503...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 504...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 505...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 506...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 507...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 508...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 509...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 510...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 511...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 512...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 513...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 514...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 515...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 516...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 517...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 518...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 519...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 520...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 521...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 522...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 523...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 524...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 525...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 526...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 527...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 528...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 529...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 530...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 531...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 532...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 533...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 534...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 535...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 536...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 537...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 538...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 539...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 540...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 541...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 542...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 543...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 544...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 545...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 546...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 547...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 548...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 549...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 550...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 551...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 552...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 553...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 554...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 555...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 556...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 557...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 558...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 559...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 560...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 561...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 562...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 563...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 564...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 565...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 566...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 567...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 568...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 569...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 570...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 571...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 572...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 573...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 574...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 575...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 576...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 577...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 578...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 579...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 580...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 581...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 582...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 583...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 584...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 585...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 586...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 587...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 588...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 589...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 590...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 591...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 592...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 593...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 594...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 595...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 596...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 597...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 598...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 599...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 600...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 601...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 602...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 603...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 604...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 605...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 606...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 607...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 608...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 609...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 610...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 611...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 612...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 613...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 614...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 615...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 616...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 617...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 618...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 619...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 620...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 621...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 622...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 623...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 624...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 625...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 626...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 627...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 628...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 629...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 630...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 631...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 632...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 633...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 634...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 635...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 636...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 637...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 638...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 639...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 640...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 641...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 642...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 643...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 644...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 645...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 646...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 647...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 648...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 649...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 650...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 651...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 652...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 653...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 654...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 655...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 656...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 657...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 658...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 659...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 660...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 661...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 662...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 663...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 664...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 665...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 666...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 667...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 668...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 669...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 670...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 671...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 672...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 673...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 674...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 675...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 676...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 677...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 678...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 679...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 680...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 681...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 682...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 683...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 684...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 685...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 686...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 687...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 688...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 689...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 690...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 691...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 692...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 693...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 694...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 695...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 696...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 697...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 698...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 699...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 700...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 701...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 702...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 703...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 704...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 705...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 706...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 707...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 708...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 709...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 710...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 711...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 712...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 713...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 714...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 715...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 716...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 717...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 718...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 719...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 720...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 721...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 722...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 723...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 724...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 725...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 726...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 727...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 728...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 729...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 730...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 731...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 732...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 733...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 734...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 735...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 736...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 737...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 738...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 739...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 740...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 741...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 742...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 743...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 744...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 745...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 746...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 747...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 748...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 749...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 750...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 751...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 752...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 753...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 754...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 755...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 756...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 757...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 758...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 759...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 760...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 761...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 762...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 763...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 764...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 765...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 766...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 767...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 768...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 769...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 770...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 771...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 772...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 773...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 774...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 775...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 776...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 777...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 778...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 779...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 780...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 781...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 782...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 783...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 784...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 785...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 786...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 787...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 788...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 789...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 790...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 791...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 792...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 793...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 794...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 795...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 796...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 797...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 798...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 799...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 800...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 801...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 802...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 803...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 804...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 805...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 806...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 807...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 808...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 809...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 810...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 811...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 812...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 813...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 814...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 815...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 816...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 817...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 818...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 819...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 820...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 821...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 822...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 823...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 824...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 825...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 826...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 827...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 828...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 829...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 830...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 831...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 832...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 833...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 834...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 835...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 836...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 837...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 838...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 839...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 840...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 841...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 842...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 843...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 844...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 845...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 846...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 847...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 848...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 849...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 850...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 851...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 852...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 853...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 854...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 855...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 856...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 857...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 858...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 859...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 860...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 861...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 862...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 863...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 864...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 865...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 866...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 867...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 868...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 869...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 870...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 871...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 872...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 873...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 874...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 875...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 876...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 877...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 878...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 879...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 880...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 881...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 882...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 883...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 884...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 885...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 886...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 887...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 888...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 889...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 890...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 891...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 892...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 893...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 894...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 895...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 896...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 897...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 898...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 899...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 900...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 901...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 902...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 903...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 904...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 905...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 906...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 907...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 908...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 909...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 910...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 911...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 912...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 913...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 914...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 915...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 916...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 917...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 918...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 919...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 920...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 921...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 922...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 923...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 924...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 925...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 926...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 927...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 928...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 929...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 930...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 931...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 932...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 933...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 934...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 935...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 936...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 937...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 938...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 939...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 940...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 941...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 942...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 943...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 944...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 945...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 946...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 947...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 948...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 949...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 950...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 951...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 952...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 953...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 954...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 955...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 956...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 957...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 958...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 959...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 960...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 961...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 962...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 963...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 964...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 965...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 966...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 967...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 968...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 969...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 970...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 971...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 972...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 973...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 974...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 975...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 976...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 977...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 978...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 979...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 980...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 981...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 982...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 983...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 984...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 985...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 986...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 987...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 988...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 989...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 990...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 991...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 992...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 993...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 994...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 995...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 996...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 997...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 998...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 999...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1000...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1001...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1002...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1003...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1004...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1005...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1006...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1007...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1008...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1009...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1010...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1011...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1012...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1013...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1014...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1015...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1016...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1017...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1018...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1019...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1020...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1021...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1022...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1023...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1024...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1025...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1026...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1027...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1028...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1029...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1030...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1031...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1032...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1033...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1034...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1035...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1036...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1037...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1038...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1039...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1040...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1041...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1042...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1043...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1044...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1045...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1046...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1047...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1048...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1049...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1050...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1051...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1052...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1053...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1054...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1055...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1056...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1057...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1058...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1059...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1060...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1061...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1062...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1063...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1064...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1065...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1066...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1067...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1068...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1069...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1070...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1071...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1072...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1073...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1074...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1075...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1076...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Testing iteration: 1077...
+TEST FAILED - Adventurer card is not discarded from hand
+TEST FAILED - drawntreasure count is inccorect
+
+Error count for adventurer card in hand and not discarded: 1078 of 1078 tests
+Error count for incorrect drawntreasure in hand: 1078 of 1078 tests
+
+File 'dominion.c'
+Lines executed:17.93% of 580
+dominion.c:creating 'dominion.c.gcov'
+

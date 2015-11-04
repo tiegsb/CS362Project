@@ -1,0 +1,39 @@
+﻿CS-362
+Casey Balza
+Nickolas Jurczak
+Zane Salvatore
+
+
+Project part a:
+
+
+#Explain testIsValid()
+#* How many URLs it is testing
+#* How is it building the URLs
+#* Give example of a valid URL being tested
+#* Give example of a non valid URL being tested.
+
+
+testIsValid() works by iterating over permutations of the arrays testUrlScheme, testUrlAuthority, testUrlPort, testPath, and 
+testUrlQuery that contain ResultPair objects, which store a string containing a URL component and a boolean variable that is true
+if the component is valid or false if not. testIsValid() iteratively assembles these components into URL strings. Each assembled
+string is passed to the URLValidator.isValid() method. If all components of a test URL are valid, it expects isValid() to return true,
+and otherwise it expects false. This tests a total of 31920 URL strings. 
+
+
+An example of a valid URL it tests is
+ http://www.google.com:80/test1?action=view. 
+
+
+An invalid URL it tests is
+ ://:65a/test1//file.
+
+
+#Do you think that a real world test (URL Validator’s testIsValid() test in this case) is very different than the unit tests and card 
+#tests that we wrote (in terms of concepts and complexity)? Explain in a few lines.
+
+
+This test is substantially similar to the tests we wrote in class. It makes use of input domain partitioning to find possibles errors in 
+URLValidator. It is not a random tester, but it does effectively generate tests for a predefined domain (the permutations of given URL 
+components).  One major difference is that this test only checks the return value of the isValid() function, whereas in the unit test we 
+had to check not only the return value of the function, but also other changes it made to the gameState.

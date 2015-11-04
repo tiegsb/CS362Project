@@ -1,0 +1,6 @@
+Random Adventurer Card Tests------------------------ 
+
+HandCount Failures: 1000/1000	 HandCount Passes: 0/1000
+DeckCount Failures: 3/1000	 DeckCount Passes: 997/1000
+PlayedCardCount Failures: 1000/1000	 PlayedCardCount Passes: 0/1000
+Resulting Cards Failures: 980/980	 Resulting Cards Passes: 0/980

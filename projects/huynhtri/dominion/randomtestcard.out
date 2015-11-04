@@ -1,0 +1,12 @@
+Smithy card random test results:
+Testing smithyCard function:
+Random test running 2000 times...
+Removal errors are: 0
+Draw errors are: 2000
+Draw errors are: 0
+
+Testing complete...
+File 'dominion.c'
+Lines executed:18.94% of 586
+dominion.c:creating 'dominion.c.gcov'
+
