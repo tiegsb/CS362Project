@@ -132,16 +132,27 @@ int main ()
     	{
     		cardNumToName(j, name);
     		//printf("card %s actual: %i expected: %i\n", name, actualcardsDrawn[j], cardsDrawn[j]);
-    		assert (actualcardsDrawn[j] == cardsDrawn[j]);
+    		if  (actualcardsDrawn[j] != cardsDrawn[j])
+            {
+                printf("********* Error: expected cards in hand and actual cards in hand do not match\n");
+            }
     	}
 
     	//make sure that the card in discard is 1 and it's smithy
     	//printDiscard(0, &G);
-    	assert (expectedDiscardCount == G.playedCardCount);
-    	//assert (expectedDiscardCount == G.discardCount[0]);
-    	printf ("################################################### \n Error: played card (smithy) was not discarded after use. \n ################################################### \n");
+    	if (expectedDiscardCount != G.playedCardCount)
+        {
+            printf("******* error: expected played and actual played does not match\n");
+        }
+    	if (expectedDiscardCount != G.discardCount[0])
+        {
+            printf("******* Error: played card (smithy) was not discarded after use. *******\n");
+        }
 
-    	assert (numHandCards(&G) == expectedHandSize);
+    	if  (numHandCards(&G) != expectedHandSize)
+        {
+            printf("********* Error: expected hand size and actual hand size do not match\n");
+        }
 
     }
 

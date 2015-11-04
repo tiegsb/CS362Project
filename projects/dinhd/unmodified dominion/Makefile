@@ -32,10 +32,7 @@ runtests: testDrawCard
 rdm1: randomtestadventurer.o interface.o dominion.o rngs.o
 	gcc -o rdm1 randomtestadventurer.o -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-rdm1.o: rdm1.c rngs.o
-	gcc -c randomtestadventurer.c -g $(CFLAGS)
-
-rdm2: randomtestcard.c interface.o
+rdm2: randomtestcard.c interface.o dominion.o rngs.o
 	gcc -o randomtestcard -g randomtestcard.c dominion.o rngs.o interface.o $(CFLAGS)
 
 testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
@@ -71,7 +68,7 @@ ctest4: cardtest4.c interface.o
 ctest5: cardtest5.c interface.o
 	gcc -o cardtest5 -g cardtest5.c dominion.o rngs.o interface.o $(CFLAGS)
 
-randomtestcard.out: all
+randomtestcard.out: rdm2 dominion.o rngs.o interface.o
 
 	rdm2 > randomtestcard.out
 	gcov -b dominion.c >> randomtestcard.out
