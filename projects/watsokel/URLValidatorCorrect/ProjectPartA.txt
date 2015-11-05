@@ -3,8 +3,8 @@ Group Members:
     Dustin Dinh
     Jason Flaig
     Kelvin Watson
+===============================================================================================
 
-************************************************************************************************
 Explanation of testIsValid() function:
 ************************************************************************************************
 First, an object of the UrlValidator class is instantiated by calling a 
@@ -23,7 +23,7 @@ On line 87 and 88, the assertTrue method is called on the urlVal.isValid() metho
 
 ************************************************************************************************
 Creating URLs to Test isValid():
-************************************************************************************************
+
 The FOR loop beginning on line 97 combines 5 strings from the testObjects array to form a URL string. Each of these 5 strings is drawn from array of values to be tested. For example testUrlScheme array contains “http://”, “ftp://”, “3htp”. These 5 arrays are stored in an object called testObjects. The following is a list of each url component stored in testObjects: 
 
 testObjects[0] = testUrlScheme array
@@ -44,7 +44,7 @@ The “part” variable is assigned the testUrlAuthority array, so so part[index].it
 On line 100, the first element of the testUrlAuthority (“www.google.com”) is appended to the testBuffer. As a result, testBuffer holds “http://www.google.com”. 
 Again the variable “expected” is bitwise AND’d to part[0].valid, which is the corresponding boolean value of part[0] (the first element of testUrlAuthority array). “expected” does not change to false because www.google.com is true. 
 
-This continues until the first part (element 0) of every string array (testUrlScheme, testURLAuthority etc), has been appended to testBuffer. Upon termination of the FOR loop, the string “http://www.google.com:80/test1?action=view” being stored in testBuffer.
+This continues until the first part (element 0) of every string array (testUrlScheme, testURLAuthority etc), has been appended to testBuffer. Upon termination of the FOR loop, the string “http://www.google.com:80/test1?action=view” is stored in testBuffer.
 
 After the testBuffer has been populated, the buffer is converted to a string and stored in the variable url on line 104. Thus, after all concatenations within the previous for loop, the “url” contains “http://www.google.com:80/test1/?action=view”. Lines 107 and 108 print the url only if the isValid() method returns true. The assertion on line 109 determines whether the expected value (determined in the for loop) is the same as the result of the call to isValid().
 
@@ -59,7 +59,7 @@ Upon termination of the for loop, every combination of strings (i.e. the testUrl
 ************************************************************************************* 
 Do you think the real world test is very different than the card tests we ran?
 *************************************************************************************
-This real world test is not too much different from the card tests that we ran for dominion.c. This test uses combinatorial testing to test all of the possible combinations of the schemes, authorities, ports, paths and queries in a brute-force fashion. Since the ordering of the elements of each URL matters, we can compute the permutation of all of these combinations to make up the URLs:  9 schemes * 19 authorities * 7 ports * 10 paths * 3 queries  = 35910 possible URL combinations being tested. Like the unit tests that we wrote for dominion.c, these UrlValidator tests are somewhat limited as they only test a small portion of the input domain space, due to the lack of random inputs. 
+This real world test is not too much different from the card tests that we ran for dominion.c. This test uses combinatorial testing to test all of the possible combinations of the schemes, authorities, ports, paths and queries in a brute-force fashion. Since the ordering of the elements of each URL matters, we can compute the permutation of all of these combinations to make up the URLs:  9 schemes * 19 authorities * 7 ports * 10 paths * 3 queries  = 35910 possible URL combinations being tested. Of note, the tests prematurely terminate after 31920 tests. Specifically, when all of the schemes have been exhausted, the tests do not proceed further as the tests would continue with an empty scheme. Once all of the schemes have been exhausted, there are 19 authorities * 7 ports * 10 paths * 3 queries= 3990 tests that are omitted, resulting in an actual test count of 31920. Like the unit tests that we wrote for dominion.c, these UrlValidator tests are somewhat limited as they only test a small portion of the input domain space, due to the lack of random inputs. 
 
 
 Sources:
