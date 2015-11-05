@@ -113,6 +113,16 @@ int testInitializeGame(int numPlayers, int kingdomCards[10], struct gameState *s
   return 0;
 }
 
+int generateNumPlayers() {
+  /* generate random numbers of players */
+  int numPlayers = 2;
+  
+  /* check numPlayers within limits */
+  assert(numPlayers >= 2 && numPlayers <= MAX_PLAYERS)
+  
+  return numPlayers;
+}
+
 int consistencyCheck(int numPlayers, int kingdomCards[10], struct gameState *currentState, struct gameState *saveState) {
   printf("numPlayers: %d\n", numPlayers);
   return 0;
