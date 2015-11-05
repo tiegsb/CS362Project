@@ -18,7 +18,6 @@ Branches executed:31.89% of 417
 Taken at least once:22.30% of 417
 Calls executed:27.27% of 99
 
-
 Two branches were not covered. As a result 4 statements were not executed. 
 The first branch contained 1 statement that checked to see if the deck needed
 to be reshuffled. The second depended on not drawing a treasure card. Both of these

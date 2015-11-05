@@ -1,0 +1,21 @@
+End of test of Buys results 20000 tests were run with 20000 successes and 0 failures 
+End of test for PLayers handsize results 20000 tests were run with 0 successes and 20000 failures 
+End of test Other players hand size results 39910 tests were run with 39910 successes and 0 failures 
+File 'dominion.c'
+Lines executed:26.08% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+End of test of Buys results 20000 tests were run with 20000 successes and 0 failures 
+End of test for PLayers handsize results 20000 tests were run with 0 successes and 20000 failures 
+End of test Other players hand size results 39910 tests were run with 39910 successes and 0 failures 
+File 'dominion.c'
+Lines executed:26.08% of 579
+dominion.c:creating 'dominion.c.gcov'
+
+File 'randomtestcard.c'
+Lines executed:90.32% of 62
+Branches executed:100.00% of 20
+Taken at least once:85.00% of 20
+Calls executed:100.00% of 9
+randomtestcard.c:creating 'randomtestcard.c.gcov'
+
