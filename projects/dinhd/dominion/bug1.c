@@ -13,6 +13,8 @@ CS 362 Assignment 3
 		deck only goes through the deck based on the number of cards in the discard 
 		pile, not the actual deck. 
 
+	3) There is a bug with discard. It only places cards in the played pile, not the discard pile.
+
 ***********************************  Card Bugs  ***********************************
 mineCard:
 
@@ -48,3 +50,5 @@ adventureCard:
 
 	1)	This bug was introduced by me. Line 684: 1 more card gets discarded but 
 		doesn't get removed from the hand.
+
+	2) The adventurerCard doesn't discard itself. 
