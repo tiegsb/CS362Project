@@ -136,7 +136,7 @@ printf("* * * * * * * * * * * * * * * * randomtestadventurer * * * * * * * * * *
     	expectedDiscardCount = cardsDrawnCount-1;
 
         handPlayed = rand() % numHandCards(&G);
-    	int status = playCard(handPlayed, -1, -1, -1, &G);
+    	playCard(handPlayed, -1, -1, -1, &G);
 
     	for (j = 0; j < numHandCards(&G); j++) {
 	      if (handCard(j, &G) == copper)
@@ -163,6 +163,11 @@ printf("* * * * * * * * * * * * * * * * randomtestadventurer * * * * * * * * * *
         {
             printf ("************* Error: played card (adventurer) was not discarded after use. ************* \n");
 
+        }
+
+        if (expectedDiscardCount != G.playedCardCount)
+        {
+            printf("************* Error: expected played card count does not match actual playedcard count ***********\n");
         }
 
     	if (actualMoney != expectedMoney)

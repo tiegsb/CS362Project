@@ -100,6 +100,10 @@ int main ()
     		cardsDrawn[card] = cardsDrawn[card] + 1;
     		cardsDrawnCount++;
     		peekIndex--;
+            if (peekIndex < 0)
+            {
+                break;
+            }
     	}
 
     	//add the other 4 smithy cards not played
@@ -131,17 +135,29 @@ int main ()
     	for (j = 0; j < 27; j++)
     	{
     		cardNumToName(j, name);
-    		//printf("card %s actual: %i expected: %i\n", name, actualcardsDrawn[j], cardsDrawn[j]);
-    		assert (actualcardsDrawn[j] == cardsDrawn[j]);
+    		
+    		if  (actualcardsDrawn[j] != cardsDrawn[j])
+            {
+                printf("card %s actual: %i expected: %i\n", name, actualcardsDrawn[j], cardsDrawn[j]);
+            }            }
     	}
 
     	//make sure that the card in discard is 1 and it's smithy
     	//printDiscard(0, &G);
-    	assert (expectedDiscardCount == G.playedCardCount);
-    	//assert (expectedDiscardCount == G.discardCount[0]);
-    	printf ("################################################### \n Error: played card (smithy) was not discarded after use. \n ################################################### \n");
+    	if (expectedDiscardCount != G.playedCardCount)
+        {
+            printf("************** Error: expected discard count and played count different ***************\n");
+        }
+    	if (expectedDiscardCount == G.discardCount[0])
+        {
+            printf ("************** Error: expected played and played count different. ************** \n");
 
-    	assert (numHandCards(&G) == expectedHandSize);
+        }
+
+    	if (numHandCards(&G) != expectedHandSize)
+        {
+            printf("************** Error: expected hand size does not match actual hand size **************\n");
+        }
 
     }
 
