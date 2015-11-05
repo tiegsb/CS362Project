@@ -66,7 +66,11 @@ Total testUrlPartsOptions[] strings:
 ************************/
 It’s iterating through each index for each result pair (testURLScheme, 
 testUrlAuthority, testURLPort, testPath OR testUrlPathOptions, testUrlQuery) 
-and creating complete URLs to test.  
+and creating complete URLs to test.  It uses the incrementTestPartsIndex() 
+method to set an appropriate index for each result pair (up to the length of
+each result pair array).  After setting the array of indices, it appends 
+the value at each result pair's stated index to the test string.  In this way, 
+every combination of each result pair is used in a complete test string. 
  
 
 /**********************
