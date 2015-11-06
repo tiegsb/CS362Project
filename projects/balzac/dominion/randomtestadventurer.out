@@ -1,0 +1,2242 @@
+Result for running random test on adventurer_card():
+randomtestadventurer.c
+Testing adventurer_card().
+RANDOM TESTS.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -498 DeC 0 DiC 507
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 1 DeC 0 DiC 8
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 8
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 8
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 8
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -498 DeC 0 DiC 508
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 4 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 8
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 506
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 506
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 507
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 506
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 507
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 506
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 509
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 4 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 8
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 506
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 8
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 507
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 506
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -497 DeC 0 DiC 506
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -498 DeC 0 DiC 507
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 7
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 2 DeC 0 DiC 7
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 3 DeC 0 DiC 6
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 506
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -496 DeC 0 DiC 505
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 0 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - deckCount still 0, did not shuffle
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 505
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 2 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 6
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 0 HC 4 DeC 0 DiC 5
+adventurer_card() POST: p 0 HC 4 DeC 0 DiC 5
+FAIL - deckCount still 0, did not shuffle
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 0 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC 3 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 7
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Two treasure cards were NOT added to hand.
+FAIL - Player 1 has not received the proper amount of cards.
+adventurer_card() PRE: p 1 HC 4 DeC 1 DiC 5
+adventurer_card() POST: p 1 HC 5 DeC 0 DiC 5
+FAIL - Two treasure cards were NOT added to hand.
+adventurer_card() PRE: p 1 HC 4 DeC -1 DiC 5
+adventurer_card() POST: p 1 HC -495 DeC 0 DiC 504
+FAIL - Player 1 has not received the proper amount of cards.
+967 out of 300000 Tests failed
+File 'dominion.c'
+Lines executed:21.14% of 577
+dominion.c:creating 'dominion.c.gcov'
+

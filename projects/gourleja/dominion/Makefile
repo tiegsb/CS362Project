@@ -56,6 +56,12 @@ cardTest4: dominion.o cardtest4.c
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
+randomtestcard: dominion.o randomtestcard.c
+	gcc -o randomtestcard randomtestcard.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer: dominion.o randomtestadventurer.c
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 allUnitTests: unitTest1 unitTest2 unitTest3 unitTest4 cardTest1 cardTest2 cardTest3 cardTest4
@@ -78,6 +84,7 @@ unittestresults.out: clean all allUnitTests
 	gcov cardtest3.c >> unittestresults.out
 	./cardtest4 >> unittestresults.out
 	gcov cardtest4.c >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
 	# Append full coverage results
 	cat unittest1.c.gcov >> unittestresults.out
 	cat unittest2.c.gcov >> unittestresults.out
@@ -87,6 +94,23 @@ unittestresults.out: clean all allUnitTests
 	cat cardtest2.c.gcov >> unittestresults.out
 	cat cardtest3.c.gcov >> unittestresults.out
 	cat cardtest4.c.gcov >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
+
+randomtestcard.out: clean all randomtestcard
+	# Run Programs and save results
+	./randomtestcard 2>&1 |cat > randomtestcard.out
+	gcov randomtestcard.c >> randomtestcard.out
+	gcov dominion.c >> randomtestcard.out
+	cat randomtestcard.c.gcov >> randomtestcard.out
+	cat dominion.c.gcov >> randomtestcard.out
+
+randomtestadventurer.out: clean all randomtestadventurer
+	# Run Programs and save results
+	./randomtestadventurer 2>&1 |cat > randomtestadventurer.out
+	gcov randomtestadventurer.c >> randomtestadventurer.out
+	gcov dominion.c >> randomtestadventurer.out
+	cat randomtestadventurer.c.gcov >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe badTestDrawCard badTestDrawCard.exe testDrawCard testDrawCard.exe testInit testInit.exe unittest1 unittest1.exe unittest2 unittest2.exe unittest3 unittest3.exe unittest4 unittest4.exe cardtest1 cardtest1.exe cardtest2 cardtest2.exe cardtest3 cardtest3.exe cardtest4 cardtest4.exe *.gcov *.gcda *.gcno *.so

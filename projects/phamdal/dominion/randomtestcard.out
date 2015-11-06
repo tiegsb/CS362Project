@@ -1,0 +1,8 @@
+Random Sea Hag Card Tests------------------------ 
+
+Played Pile Failures: 1000/1000	 Played Pile Passes: 0/1000
+Top Deck Failures: 996/1000	 Top Deck Passes: 4/1000
+Deck Count Failures: 0/1000	 Deck Count Count Passes: 1000/1000
+HandCount Failures: 1000/1000	 HandCount Passes: 0/1000
+Opp. Deck Count Failures: 1000/1000	 Opp. Deck Count Passes: 0/1000
+Top Card Failures: 990/1000	 Top CardPasses: 10/1000
