@@ -24,7 +24,7 @@ int main (int argc, char** argv) {
   assert(cost == 5);
   cost = getCost(province);
   assert(cost == 8);
-  cost = getCost(cooper);
+  cost = getCost(copper);
   assert(cost == 0);
   cost = getCost(silver);
   assert(cost == 3);

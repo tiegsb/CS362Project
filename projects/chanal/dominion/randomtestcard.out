@@ -1,0 +1,4268 @@
+Results for running randomtestcard:
+randomtestcard.c
+
+Starting random testing for Smithy card effects...
+
+Testing iteration: 0...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 2...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 3...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 4...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 5...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 6...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 7...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 8...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 9...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 10...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 11...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 12...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 13...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 14...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 15...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 16...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 17...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 18...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 19...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 20...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 21...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 22...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 23...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 24...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 25...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 26...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 27...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 28...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 29...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 30...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 31...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 32...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 33...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 34...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 35...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 36...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 37...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 38...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 39...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 40...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 41...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 42...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 43...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 44...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 45...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 46...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 47...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 48...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 49...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 50...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 51...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 52...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 53...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 54...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 55...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 56...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 57...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 58...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 59...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 60...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 61...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 62...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 63...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 64...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 65...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 66...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 67...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 68...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 69...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 70...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 71...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 72...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 73...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 74...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 75...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 76...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 77...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 78...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 79...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 80...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 81...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 82...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 83...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 84...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 85...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 86...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 87...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 88...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 89...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 90...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 91...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 92...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 93...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 94...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 95...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 96...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 97...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 98...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 99...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 100...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 101...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 102...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 103...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 104...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 105...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 106...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 107...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 108...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 109...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 110...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 111...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 112...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 113...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 114...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 115...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 116...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 117...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 118...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 119...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 120...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 121...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 122...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 123...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 124...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 125...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 126...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 127...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 128...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 129...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 130...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 131...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 132...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 133...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 134...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 135...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 136...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 137...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 138...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 139...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 140...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 141...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 142...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 143...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 144...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 145...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 146...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 147...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 148...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 149...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 150...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 151...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 152...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 153...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 154...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 155...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 156...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 157...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 158...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 159...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 160...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 161...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 162...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 163...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 164...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 165...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 166...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 167...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 168...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 169...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 170...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 171...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 172...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 173...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 174...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 175...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 176...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 177...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 178...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 179...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 180...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 181...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 182...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 183...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 184...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 185...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 186...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 187...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 188...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 189...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 190...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 191...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 192...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 193...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 194...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 195...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 196...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 197...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 198...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 199...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 200...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 201...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 202...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 203...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 204...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 205...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 206...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 207...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 208...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 209...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 210...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 211...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 212...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 213...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 214...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 215...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 216...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 217...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 218...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 219...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 220...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 221...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 222...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 223...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 224...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 225...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 226...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 227...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 228...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 229...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 230...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 231...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 232...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 233...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 234...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 235...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 236...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 237...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 238...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 239...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 240...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 241...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 242...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 243...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 244...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 245...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 246...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 247...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 248...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 249...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 250...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 251...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 252...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 253...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 254...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 255...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 256...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 257...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 258...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 259...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 260...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 261...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 262...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 263...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 264...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 265...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 266...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 267...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 268...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 269...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 270...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 271...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 272...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 273...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 274...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 275...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 276...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 277...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 278...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 279...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 280...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 281...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 282...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 283...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 284...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 285...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 286...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 287...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 288...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 289...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 290...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 291...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 292...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 293...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 294...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 295...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 296...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 297...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 298...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 299...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 300...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 301...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 302...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 303...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 304...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 305...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 306...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 307...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 308...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 309...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 310...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 311...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 312...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 313...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 314...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 315...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 316...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 317...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 318...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 319...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 320...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 321...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 322...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 323...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 324...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 325...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 326...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 327...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 328...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 329...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 330...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 331...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 332...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 333...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 334...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 335...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 336...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 337...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 338...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 339...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 340...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 341...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 342...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 343...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 344...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 345...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 346...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 347...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 348...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 349...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 350...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 351...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 352...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 353...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 354...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 355...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 356...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 357...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 358...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 359...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 360...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 361...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 362...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 363...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 364...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 365...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 366...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 367...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 368...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 369...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 370...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 371...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 372...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 373...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 374...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 375...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 376...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 377...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 378...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 379...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 380...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 381...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 382...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 383...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 384...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 385...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 386...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 387...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 388...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 389...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 390...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 391...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 392...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 393...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 394...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 395...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 396...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 397...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 398...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 399...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 400...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 401...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 402...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 403...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 404...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 405...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 406...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 407...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 408...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 409...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 410...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 411...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 412...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 413...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 414...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 415...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 416...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 417...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 418...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 419...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 420...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 421...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 422...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 423...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 424...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 425...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 426...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 427...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 428...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 429...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 430...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 431...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 432...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 433...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 434...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 435...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 436...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 437...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 438...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 439...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 440...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 441...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 442...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 443...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 444...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 445...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 446...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 447...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 448...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 449...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 450...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 451...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 452...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 453...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 454...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 455...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 456...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 457...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 458...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 459...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 460...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 461...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 462...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 463...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 464...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 465...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 466...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 467...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 468...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 469...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 470...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 471...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 472...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 473...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 474...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 475...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 476...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 477...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 478...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 479...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 480...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 481...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 482...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 483...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 484...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 485...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 486...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 487...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 488...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 489...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 490...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 491...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 492...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 493...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 494...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 495...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 496...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 497...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 498...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 499...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 500...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 501...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 502...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 503...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 504...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 505...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 506...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 507...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 508...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 509...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 510...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 511...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 512...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 513...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 514...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 515...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 516...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 517...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 518...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 519...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 520...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 521...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 522...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 523...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 524...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 525...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 526...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 527...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 528...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 529...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 530...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 531...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 532...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 533...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 534...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 535...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 536...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 537...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 538...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 539...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 540...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 541...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 542...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 543...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 544...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 545...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 546...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 547...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 548...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 549...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 550...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 551...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 552...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 553...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 554...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 555...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 556...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 557...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 558...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 559...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 560...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 561...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 562...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 563...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 564...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 565...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 566...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 567...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 568...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 569...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 570...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 571...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 572...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 573...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 574...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 575...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 576...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 577...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 578...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 579...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 580...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 581...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 582...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 583...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 584...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 585...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 586...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 587...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 588...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 589...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 590...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 591...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 592...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 593...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 594...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 595...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 596...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 597...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 598...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 599...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 600...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 601...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 602...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 603...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 604...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 605...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 606...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 607...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 608...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 609...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 610...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 611...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 612...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 613...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 614...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 615...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 616...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 617...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 618...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 619...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 620...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 621...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 622...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 623...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 624...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 625...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 626...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 627...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 628...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 629...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 630...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 631...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 632...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 633...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 634...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 635...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 636...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 637...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 638...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 639...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 640...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 641...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 642...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 643...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 644...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 645...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 646...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 647...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 648...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 649...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 650...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 651...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 652...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 653...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 654...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 655...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 656...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 657...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 658...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 659...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 660...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 661...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 662...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 663...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 664...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 665...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 666...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 667...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 668...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 669...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 670...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 671...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 672...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 673...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 674...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 675...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 676...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 677...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 678...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 679...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 680...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 681...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 682...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 683...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 684...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 685...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 686...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 687...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 688...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 689...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 690...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 691...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 692...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 693...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 694...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 695...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 696...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 697...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 698...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 699...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 700...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 701...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 702...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 703...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 704...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 705...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 706...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 707...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 708...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 709...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 710...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 711...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 712...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 713...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 714...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 715...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 716...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 717...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 718...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 719...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 720...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 721...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 722...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 723...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 724...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 725...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 726...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 727...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 728...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 729...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 730...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 731...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 732...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 733...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 734...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 735...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 736...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 737...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 738...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 739...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 740...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 741...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 742...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 743...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 744...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 745...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 746...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 747...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 748...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 749...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 750...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 751...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 752...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 753...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 754...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 755...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 756...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 757...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 758...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 759...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 760...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 761...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 762...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 763...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 764...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 765...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 766...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 767...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 768...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 769...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 770...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 771...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 772...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 773...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 774...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 775...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 776...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 777...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 778...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 779...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 780...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 781...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 782...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 783...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 784...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 785...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 786...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 787...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 788...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 789...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 790...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 791...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 792...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 793...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 794...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 795...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 796...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 797...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 798...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 799...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 800...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 801...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 802...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 803...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 804...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 805...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 806...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 807...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 808...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 809...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 810...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 811...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 812...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 813...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 814...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 815...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 816...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 817...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 818...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 819...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 820...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 821...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 822...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 823...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 824...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 825...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 826...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 827...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 828...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 829...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 830...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 831...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 832...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 833...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 834...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 835...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 836...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 837...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 838...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 839...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 840...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 841...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 842...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 843...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 844...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 845...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 846...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 847...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 848...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 849...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 850...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 851...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 852...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 853...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 854...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 855...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 856...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 857...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 858...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 859...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 860...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 861...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 862...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 863...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 864...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 865...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 866...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 867...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 868...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 869...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 870...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 871...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 872...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 873...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 874...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 875...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 876...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 877...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 878...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 879...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 880...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 881...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 882...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 883...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 884...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 885...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 886...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 887...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 888...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 889...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 890...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 891...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 892...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 893...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 894...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 895...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 896...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 897...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 898...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 899...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 900...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 901...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 902...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 903...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 904...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 905...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 906...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 907...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 908...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 909...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 910...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 911...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 912...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 913...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 914...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 915...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 916...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 917...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 918...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 919...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 920...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 921...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 922...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 923...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 924...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 925...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 926...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 927...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 928...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 929...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 930...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 931...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 932...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 933...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 934...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 935...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 936...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 937...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 938...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 939...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 940...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 941...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 942...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 943...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 944...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 945...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 946...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 947...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 948...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 949...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 950...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 951...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 952...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 953...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 954...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 955...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 956...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 957...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 958...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 959...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 960...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 961...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 962...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 963...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 964...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 965...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 966...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 967...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 968...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 969...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 970...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 971...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 972...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 973...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 974...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 975...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 976...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 977...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 978...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 979...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 980...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 981...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 982...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 983...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 984...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 985...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 986...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 987...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 988...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 989...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 990...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 991...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 992...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 993...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 994...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 995...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 996...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 997...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 998...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 999...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1000...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1001...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1002...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1003...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1004...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1005...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1006...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1007...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1008...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1009...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1010...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1011...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1012...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1013...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1014...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1015...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1016...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1017...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1018...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1019...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1020...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1021...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1022...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1023...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1024...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1025...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1026...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1027...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1028...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1029...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1030...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1031...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1032...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1033...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1034...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1035...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1036...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1037...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1038...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1039...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1040...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1041...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1042...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1043...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1044...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1045...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1046...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1047...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1048...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1049...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1050...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1051...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1052...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1053...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1054...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1055...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1056...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1057...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1058...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1059...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1060...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1061...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1062...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Testing iteration: 1063...
+TEST FAILED - did not obtain correct number of cards 4
+TEST PASSED - smithy is discarded from hand
+
+Test1 error count: incorrect number of cards drawn 1064 of 1064 tests
+All 1064 test2 passed, smithy was discarded from hand
+
+File 'dominion.c'
+Lines executed:20.69% of 580
+dominion.c:creating 'dominion.c.gcov'
+

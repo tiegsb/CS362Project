@@ -17,6 +17,12 @@ int adventurerEffect(struct gameState *state, int currentPlayer);
 /* Draws cards until two Treasure cards drawn. Adds the two Treasure cards to hand, 
 and discards non-Treasure cards */
 
+int adventurerEffect2(struct gameState *state, int currentPlayer); 
+/* Draws cards until two Treasure cards drawn. Adds the two Treasure cards to hand, 
+and discards non-Treasure cards (bug introduced) 
+I needed to write a new adventurerEffect() method because my previous buggy version
+creates an infinite loop */
+
 int councilRoomEffect(int currentPlayer, struct gameState *state, int handPos); 
 /* Draws 4 cards, addes 1 buy, other players draw 1 card */ 
 

@@ -86,5 +86,19 @@ unittestresults.out:
 	gcov dominion.c >> unittestresults.out
 	
 
+randomtestcard.out:
+	echo "randomtestcard.c:" >> randomtestcard.out
+	gcc  dominion.c  rngs.c randomtestcard.c -o randomtestcard.out $(CFLAGS)
+	./randomtestcard.out >> randomtestresults.out
+	echo "coverage for randomtestcard.c:" >> randomtestresults.out
+	gcov dominion.c >> randomtestresults.out
+
+randomtestadventurer.out:
+	echo "randomtestadventurer.c:" >> randomtestadventurer.out
+	gcc  dominion.c  rngs.c randomtestadventurer.c -o randomtestadventurer.out $(CFLAGS)
+	./randomtestadventurer.out >> randomtestresults.out
+	echo "coverage for randomtestadventurer.c:" >> randomtestresults.out
+	gcov dominion.c >> randomtestresults.out
+
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.out

@@ -80,9 +80,22 @@ unittestresults.out: unittests cardtests
 	gcov dominion.c >> unittestresults.out
 	gcov dominion.c -f >> unittestresults.out
 
+randomtestcard.out: dominion.o rngs.o randomtestcard.c dominion.o
+	gcc randomtestcard.c -o randomtestcard -g dominion.o rngs.o $(CFLAGS)
+	echo "Results from testing randomtestcard.c" &> randomtestcard.out
+	./randomtestcard >> randomtestcard.out
+	gcov dominion.c >> randomtestcard.out
+
+randomtestadventurer.out: dominion.o rngs.o randomtestadventurer.c dominion.o
+	gcc randomtestadventurer.c -o randomtestadventurer -g dominion.o rngs.o $(CFLAGS)
+	echo "Results from testing randomtestadventurer.c" &> randomtestadventurer.out
+	./randomtestadventurer >> randomtestadventurer.out
+	gcov dominion.c >> randomtestadventurer.out
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit \
 	testInit.exe testDrawCard badTestDrawCard unittest1 unittest2 unittest3 \
-	unittest4 cardtest1 cardtest2 cardtest3 cardtest4 *.gcov *.gcda *.gcno *.so
+	unittest4 cardtest1 cardtest2 cardtest3 cardtest4 randomtestcard \
+	randomtestadventurer *.gcov *.gcda *.gcno *.so

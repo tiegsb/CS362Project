@@ -20,4 +20,13 @@ unittest3:
 unittest4:
 	23.46% lines covered
 	scoreFor is 39 lines with few newlines; the unit test adequately reflects that
+
+cardtest1:
+	24.83% lines covered
+	buggySmithy() is a tiny function, so this is not unexpected
+
+cardtest2:
+	29.79% lines covered
+	Though this looks like it would cover the function well, I didn't
+	test if any card in the deck is not a treasure card
 */
