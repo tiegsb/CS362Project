@@ -3,7 +3,7 @@ Group Members:
     Dustin Dinh
     Jason Flaig
     Kelvin Watson
-===============================================================================================
+========================================================================
 
 Explanation of testIsValid() function:
 ************************************************************************************************
@@ -56,10 +56,12 @@ http://www.google.com:80/test1/action=edit&mode=up since “?action=edit&mode=up” 
 
 Upon termination of the for loop, every combination of strings (i.e. the testUrlScheme, testUrlAuthority, testUrlPort, testPath, testUrlQuery) would have been tested/exhausted.
 
+Of note, the tests seem to prematurely terminate after 31920 tests. Specifically, when the scheme is an empty string, the tests do not proceed further. In addition, several tests are also omitted due to truncation. This results in 19 authorities * 7 ports * 10 paths * 3 queries = 3990 tests that are omitted, resulting in an actual test count of 31920, rather than 35910. We are uncertain whether this is intentional or not, but it results in truncation of probably intended test cases. 
+
 ************************************************************************************* 
 Do you think the real world test is very different than the card tests we ran?
 *************************************************************************************
-This real world test is not too much different from the card tests that we ran for dominion.c. This test uses combinatorial testing to test all of the possible combinations of the schemes, authorities, ports, paths and queries in a brute-force fashion. Since the ordering of the elements of each URL matters, we can compute the permutation of all of these combinations to make up the URLs:  9 schemes * 19 authorities * 7 ports * 10 paths * 3 queries  = 35910 possible URL combinations being tested. Of note, the tests prematurely terminate after 31920 tests. Specifically, when all of the schemes have been exhausted, the tests do not proceed further as the tests would continue with an empty scheme. Once all of the schemes have been exhausted, there are 19 authorities * 7 ports * 10 paths * 3 queries= 3990 tests that are omitted, resulting in an actual test count of 31920. Like the unit tests that we wrote for dominion.c, these UrlValidator tests are somewhat limited as they only test a small portion of the input domain space, due to the lack of random inputs. 
+This real world test is not too much different from the card tests that we ran for dominion.c. This test uses combinatorial testing to test all of the possible combinations of the schemes, authorities, ports, paths and queries in a brute-force fashion. Since the ordering of the elements of each URL matters, we can compute the permutation of all of these combinations to make up the URLs:  9 schemes * 19 authorities * 7 ports * 10 paths * 3 queries  = 35910 possible URL combinations being tested (*actually only 31920 tests are actually run as noted above).  Like the unit tests that we wrote for dominion.c, these UrlValidator tests are somewhat limited as they only test a small portion of the input domain space, due to the lack of random inputs. 
 
 
 Sources:
