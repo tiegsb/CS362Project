@@ -1,6 +1,6 @@
 CFLAGS = -Wall -fpic -coverage -lm
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard cardtest1 cardtest2 cardtest3 unittest1 unittest2 unittest3 unittest4 unittestresults.out
+all: playdom player testDrawCard testBuyCard badTestDrawCard cardtest1 cardtest2 cardtest3 unittest1 unittest2 unittest3 unittest4 randomtestadventurer unittestresults.out
 
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
@@ -54,6 +54,9 @@ cardtest2: cardtest2.c dominion.o rngs.o interface.o
 
 cardtest3: cardtest3.c dominion.o rngs.o interface.o
 	gcc -o cardtest3 cardtest3.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o interface.o
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
 
 unittestresults.out: cardtest1.c cardtest2.c cardtest3 unittest1.c unittest2.c unittest3.c unittest4.c dominion.c rngs.o interface.o
 	echo "Test Results:" > unittestresults.out
