@@ -37,9 +37,11 @@ int checkCouncil(int p, int handPos, struct gameState *post) {
     }
     
     // Check if current hand count increases by 4
-    if (pre.handCount[p]+4 != post->handCount[p])
+    // We check for 3 because the council card is discarded (-1)
+    // But 4 cards are added (+4)
+    if (pre.handCount[p]+3 != post->handCount[p])
     {
-        printf("FAILURE: Hand count was not increased by 4: pre.handCount: %d, post.handCount: %d\n", pre.handCount[p], post->handCount[p]);
+        printf("FAILURE: Hand count was not increased by 3: pre.handCount: %d, post.handCount: %d\n", pre.handCount[p], post->handCount[p]);
     }
     
     // Get the other player
@@ -125,7 +127,7 @@ int main()
         // Add random cards to played card deck
         for (j = 0; j< G.playedCardCount; j++)
         {
-            G.playedCards[j] =floor(Random() * 6);
+            G.playedCards[j] = floor(Random() * 6);
         }
 
         // Set the number of players and whose turn it is
