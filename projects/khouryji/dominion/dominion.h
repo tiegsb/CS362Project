@@ -10,6 +10,7 @@
 
 #define DEBUG 0
 
+
 /* http://dominion.diehrstraits.com has card texts */
 /* http://dominion.isotropic.org has other stuff */
 
@@ -51,6 +52,7 @@ enum CARD
    sea_hag,
    treasure_map
   };
+
 
 struct gameState {
   int numPlayers; //number of players

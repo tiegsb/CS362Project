@@ -1,0 +1,11 @@
+-------------------------Testing Card: Adventurer-------------------------
+
+At least 1 test failed.  Define NOISY_TEST to 1 for more information
+File 'randomtestadventurer.c'
+Lines executed:90.91% of 77
+randomtestadventurer.c:creating 'randomtestadventurer.c.gcov'
+
+File 'dominion.c'
+Lines executed:27.04% of 577
+dominion.c:creating 'dominion.c.gcov'
+

@@ -1,0 +1,126 @@
+testIsValid();
+    This function uses several objects with arrays of objects and then an
+    array of arrays of objects to iterate over the complete set of
+    possible combinations of objects to creat URL's and test them for
+    validity.  The objects themselves contain a string which is a portion
+    of a URL and a boolean value to say whether that portion is valid or
+    invalid (true for valid, false for invalid).
+    
+    The for loop in the testIsValid function uses the testpartsindex array
+    which is initialized to 0 at each index (array of 5 zeros). It then 
+    starts to build a string going over the array of objects in the 
+    testUrlParts array.  The testUrlParts array is an array of arrays of
+    ResultPair objects.  Since testpartsindex is intitialized to zero,
+    the for loop uses those indices to track it's location inside each of
+    the object arrays.  The first loop iteration would be the zero
+    indexed ResultPair object in each of the arrays in the testUrlParts
+    array.  The function concatenates the string from each index it
+    reaches and then sends it to the isValid function.  This for loop is
+    inside of a do while loop.  
+    
+    Loop control for the do while loop is done with
+    the incrementTestPartsIndex function.  It gets both the 
+    testpartsindex array and the testUrlParts (passed as testObjects) arrays.
+    This loop counts down from index 4 to 0 and increments the index of 
+    ONE object array once until all object arrays have iterated over 
+    all indicies.  It will return false when all indeces of object arrays
+    have reached their highest value (all values have been tested).
+    See below for better illustration:
+    
+    The ResultPair [] arrays that are used to build the URLs consist of: 
+    {testUrlScheme, testUrlAuthority, testUrlPort, testPath, testUrlQuery};
+    testUrlScheme example: ("http://", true) total of 9 options, 4 of them are "true"
+    testUrlAuthority example: ("www.google.com", true) total of 19 options, 7 are true.
+    testUrlPort example: (":80", true), total of 7, 5 are true.
+    testPath example: ("/test1", true), total of 10, 6 of them are true.
+    testUrlQuery example:("?action=view", true), total of 3, all are true.
+    
+    the testpartsindex array is initialized as such:
+    {0, 0, 0, 0, 0}  each field corresponds to one in the testUrlParts 
+    array to track its index.  
+    
+    So the initial for loop in testIsValid will take the 0 index of each 
+    object array from testUrlParts.  Really this looks like this:
+    {testUrlScheme[0], testUrlAuthority[0], testUrlPort[0], testPath[0], testUrlQuery[0]}
+    So each object (not the bool, just the string) gets concatenated to 
+    make a URL and gets sent to isValid, if true is returned, then it
+    prints to the screen.  It then goes to incrementTestPartsIndex which
+    will increment the testpartsindex array as such {0, 0, 0, 0, 1}.  The
+    testpartsindex array will end up looking like this: {8, 18, 6, 9, 2},
+    notice these are one less than the number of values in the object
+    arrays because the arrays are 0 indexed.  
+    For example, the value returned by the first for loop iteration
+    will evaluate to true and be valid since each portion is valid and
+    "true".
+    
+    testUrlScheme[0] = "http://", true
+    testUrlAuthority[0] = "www.google.com", true
+    testUrlPort[0] = ":80", true
+    testPath[0] = "/test1", true
+    testUrlQuery[0] = "?action=view", true
+    
+    The built string is: http:// + www.google.com + :80 + /test1 + ?action=view
+    which is: http://www.google.com:80/test1?action=view
+    This is a valid url so it returns true, there is also an assertion
+    that "expected" = "result".  "result" is the result that comes back
+    from isValid, "expected" gets updated with each object so if it is
+    false, then we assert result and url should also be false 
+    (the converse is true for "true").
+    Since the first one is true it gets printed to the screen and would be
+    the top result you'd see if you ran this test.
+    
+    when you get to testpartsindex being {7, 0, 0, 0, 0} the url is 
+    invalid:
+    testUrlScheme[7] = "://", false
+    testUrlAuthority[0] = "www.google.com", true
+    testUrlPort[0] = ":80", true
+    testPath[0] = "/test1", true
+    testUrlQuery[0] = "?action=view", true
+    
+    The built string is: :// + www.google.com + :80 + /test1 + ?action=view
+    which is: ://www.google.com:80/test1?action=view
+    which is invalid. 
+    notice, that when you get here, testUrlScheme is false, and as we 
+    expected, the url is also false. 
+    
+    The total number of URL's being tested SHOULD be: 
+    9*19*7*10*3 which is 35910 (this is the total number of objects
+    in each object array multiplied by each other, basically nested
+    for loop behavior)
+    In reality, it's only testing 31920
+    That number is the result of:
+    8*19*7*10*3 
+    This is because of the way the maxindex number is controlled in
+    the incrementTestPartsIndex function, it may be a bug in the function.
+    The same dynamic can be seen when just looking at all the true 
+    values:
+    The amount of "true" values in the ResultPair objects are:
+    4, 7, 5, 6, 3, so 4*7*5*6*3 = 2520
+    however, only 1890 good url's get printed. The number 1890 is:
+    3*7*5*6*3  
+    Again, the testUrlScheme object is not running the full 9 times 
+    because of the way the loop control is working 
+    (the 9th value in the array is true so that last run would have
+    produced valid urls giving us 2520 urls, not 1890), again, it's a
+    possible bug.
+    
+    I don't feel that this is very "different" from our tests in terms
+    of complexity as far as logic is concerned.  If we refer to 
+    complexity in terms of asymptotic analysis, i'd venture to guess
+    most tests run minimally in polynomial complexity and likely
+    exponential as is the intended case here.  I'm not certain that can
+    be avoided if we intend to make a robust test suite.  
+        I would say that in terms of the game state for our cards, when
+    we check how each card has affected the gamestate, our tests become
+    a bit more complex. This code is just concatenating strings and 
+    passing it to a function.  We have to come up with logical boundaries
+    for the gamestate and what the second and third order affects could
+    possibly be on anything in the game state once a card is played. 
+    This for me has really highlighted the importance of good
+    documentation.  Testing would be much better if we had well defined
+    preconditions, postconditions, and variables affected.  This way we
+    could verify each with a test and then check the "unaffected"
+    variables to make sure they remain that way.  We could then check the
+    "affected" variables to make sure they were affected in the way we 
+    intended, and verify pre and post conditions. 
+    

@@ -32,7 +32,28 @@ runtests: testDrawCard
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-unittestresults.out: rngs.o dominion.o unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c
+randomtestcard.out: randomtestcard.c dominion.h dominion.c rngs.h rngs.c
+	gcc -c rngs.c -g  $(CFLAGS)
+	gcc -c dominion.c -g  $(CFLAGS)
+
+	echo "Smithy card random test results:" > randomtestcard.out
+	gcc -o randomtestcard -g randomtestcard.c dominion.o rngs.o $(CFLAGS)
+	./randomtestcard >> randomtestcard.out
+	gcov dominion.c >> randomtestcard.out
+
+randomtestadventurer.out: randomtestadventurer.c dominion.h dominion.c rngs.h rngs.c
+	gcc -c rngs.c -g  $(CFLAGS)
+	gcc -c dominion.c -g  $(CFLAGS)
+
+	echo "Adventurer card random test results:" > randomtestadventurer.out
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+	./randomtestadventurer >> randomtestadventurer.out
+	gcov dominion.c >> randomtestadventurer.out
+
+unittestresults.out: rngs.c dominion.c rngs.h dominion.h unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c
+	gcc -c rngs.c -g  $(CFLAGS)
+	gcc -c dominion.c -g  $(CFLAGS)
+
 	echo "Function and card test results:" > unittestresults.out
 	echo "************************************************************************" >> unittestresults.out
 
@@ -84,9 +105,7 @@ unittestresults.out: rngs.o dominion.o unittest1.c unittest2.c unittest3.c unitt
 	gcov dominion.c >> unittestresults.out
 	echo "************************************************************************" >> unittestresults.out
 
-
-
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so unittestresults.out randomtestcard.out randomtestadventurer.out
