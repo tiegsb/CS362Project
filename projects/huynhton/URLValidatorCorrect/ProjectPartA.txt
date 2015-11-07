@@ -1,0 +1,12 @@
+Tony Huynh	CS 362 Fall 2015	Project Part A
+
+This is my first exposure to Java and first time looking at a URLValidator test.  I Will try to answer the questions to the best of my abilities given my other programmming experience.
+
+First, there seems to be two testIsValid functions, each with different arguments.  The one with no arguments calls upon the testIsValid function that takes in two arguments.  Following that, it calls the setUp function, which seems to initialize some test parts.
+
+Looking at the testIsValid that takes in arguments, it takes in the object to be tested and takes in an option argument.  In that testIsValid function, there are two URLs that are being tested: "http://www.google.com" and "http://www.google.com/".  The URLs are manually typed in as strings and passed through an urlVal.isValid() function.
+
+When you pass in a valid url, its string gets tested.  The function would iterate through each character, and it seems to check them individually and as a group. If it is tested correctly, the testIsValid function outputs a '.'.  If the input string does not meet the expected result, it outputs an 'X'.  From the testValidators, one example of a valid URL is "http://hostname", and one invalid URL is "http://broke.my-test/test/index.html"
+
+In terms of concepts, I can see some similarities. From one of the lines in the testIsValid function, we have the command "assertEquals(url, expected, result);".  Without knowing in great detail what is going on, I can see the variables "url" and "expected."  In the tests that I have made so far in this class, I have received actual results (comparable to the input url) and compared them to expected values (comparable to the "expected" variable).  From this I can conclude that our concepts must share some similarities.  As far as complexity goes, I believe that depends on the student.  For me, I have kept my tests simple in assignment 3.  I only slightly increased its complexity in assignment 4 by trying to add on a random element to testing.  The URLValidatorTest is on a higher level of complexity.  It seems to check expected results in much greater detail. 
+
