@@ -2,8 +2,9 @@
 Anthony Wilcox
 CS362 
 Fall 2015
+Assignment 4 
 -----------------------------------------------------------------------
- * card test for adventurer -----------------------------------------------------------------------
+ * random card test for adventurer -----------------------------------------------------------------------
  */
 //used cardsolution from assignment3 solution CS362 Fall2015 for 
 //improvement to base cardtest, then generated random tests from 
