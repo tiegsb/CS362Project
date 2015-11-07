@@ -1,8 +1,7 @@
 /* Rachael McConnell
  * CS362 Fall 2015
- * Random Test Card: Council Room Card 
- * Player should receive 4 cards and 1 buy
- * All other players should draw 1 card
+ * Random Test Card: Council Room Card
+ * Assignment 4 
  */
 
 #include "dominion.h"
@@ -16,7 +15,6 @@
 #include <time.h>
 
 int testCouncilRoomCard(struct gameState *after, int temphand[], int currentPlayer, int numPlayers) {
-  //int z = 0;
   int i=0, k=0;
   int inHandBefore = 0;
   int inHandAfter = 0;
@@ -24,6 +22,7 @@ int testCouncilRoomCard(struct gameState *after, int temphand[], int currentPlay
   struct gameState before;
   memcpy(&before, after, sizeof(struct gameState));
   int failedTests = 0;
+  int failedTestsOthers = 0;
 
   for(i=0;i<before.handCount[currentPlayer];i++){
     if(before.hand[currentPlayer][i] == council_room)
@@ -34,10 +33,7 @@ int testCouncilRoomCard(struct gameState *after, int temphand[], int currentPlay
   //call council_roomCard
   council_roomCard(currentPlayer, after, handPos);
 
-  //printf("Num Buys before: %d\n", before.numBuys);
-  //printf("Num Buys after: %d\n", after->numBuys);
-
-  
+    
   for(i=0;i<after->handCount[currentPlayer];i++){
     if(after->hand[currentPlayer][i] == council_room)
       inHandAfter = 1;
@@ -50,12 +46,16 @@ int testCouncilRoomCard(struct gameState *after, int temphand[], int currentPlay
 
     if(before.deckCount[currentPlayer]-4 >= after->deckCount[currentPlayer]){
       printf("PASS: deckCount decreased by 4 cards\n");
+    }else if(before.deckCount[currentPlayer] < 4){
+      printf("N/A: deckCount started at less than 4 and therefore could not decrease by 4.\n");
     }else{
       printf("FAIL: deckCount did not decrease by 4 cards.\n");
       failedTests++;
     }
     if(before.handCount[currentPlayer]+3 == after->handCount[currentPlayer]){
       printf("PASS: handCount increased by 3\n");
+    }else if(before.deckCount[currentPlayer] < 4){
+      printf("N/A: deckCount started at less than 3 so handCount could not increase by 3.");
     }else{
       printf("FAIL: handCount did not increase by 3.\n");
       failedTests++;
@@ -80,34 +80,48 @@ int testCouncilRoomCard(struct gameState *after, int temphand[], int currentPlay
     }
 
 
+  if(before.playedCardCount + 1 == after->playedCardCount){
+    printf("PASS: playedCardCount increased by 1.\n");
+  }else{
+    printf("FAIL: playedCardCount before: %d, after %d\n", before.playedCardCount, after->playedCardCount);
+    failedTests++;
+  }
 
   //ensure that the other players' # of cards in discard pile did not change 
   // ensure that other players' # of cards in their hand increased by 1, and deck decreased by 1
   for(k=0;k<numPlayers;k++){
     if(k != currentPlayer){
+
     printf("For player %d:\n", k);
     printf("Before: deck=%d, hand=%d, discard=%d\n", before.deckCount[k], before.handCount[k], before.discardCount[k]);
     printf("After:  deck=%d, hand=%d, discard=%d\n", after->deckCount[k], after->handCount[k], after->discardCount[k]);
 
     if(before.deckCount[k]-1 == after->deckCount[k] && before.handCount[k]+1 == after->handCount[k] && before.discardCount[k] == after->discardCount[k]){
       printf("PASS: Discard pile remains the same. Cards in hand have increased by 1. Cards in deck decreased by 1.\n");
+    }else if(before.deckCount[k] == 0){
+      printf("N/A: Deck count started at 0,");
     }else{
       printf("FAIL: At least one of the card piles is WRONG.\n");
-      failedTests++;
+      failedTestsOthers++;
     }  
     }
   }
-  printf("Failed Tests: %d\n", failedTests);
+
+  //count other players tests as one test
+  if(failedTestsOthers > 0)
+    failedTests++;
+  
+  //printf("Failed Tests: %d\n", failedTests);
 
   if(failedTests == 0)
     return 0;
   else
-    return 1;
+    return failedTests;
 
 }
 
 int main(){
-	int numTests = 100;	
+	int numTests = 1000;	
 	int i;
 	int kingdom[10]= { adventurer, council_room, feast, gardens, mine, remodel, smithy, village, baron, great_hall };
 	int numPlayers;
@@ -128,24 +142,24 @@ int main(){
 	for(i=0;i<numTests;i++){
 		printf("\nTest #%d\n", i+1);
 		
-		//set number of players
-		numPlayers = rand() % 2 + 2;
+		// Set number of players
+		numPlayers = rand() % 2 + 2; /* 2-4 */
 		GS.numPlayers = numPlayers;
 		GS.playedCardCount = 0;
-		//get current player
+		// Get current player
 		currentPlayer=rand() % numPlayers;
 		
 		initializeGame(numPlayers, kingdom, randomSeed, &GS);
-		//get deckCount and handCount for each player
+		// Get deckCount and handCount for each player
 		for(j=0;j<numPlayers;j++){
-			deckCount = (rand()% 70)+30;  /*deckCount can be between 30-100 */
-			handCount = 5;  /*handCount starts at 5 */
-			GS.deckCount[j] = deckCount - handCount;
+			deckCount = (rand()% 100);  /*deckCount can be between 0-100 */
+			handCount = (rand()% 50)+1;  /*handCount is between 1 and 50 */
+			GS.deckCount[j] = deckCount;
 			GS.handCount[j] = handCount;
 			GS.numBuys = 0;
 		}
 
-		//assign cards to hand and deck
+		// Assign cards to hand and deck
 		int card;
 		int k, a;
 		for(j=0;j<numPlayers;j++){
@@ -163,16 +177,16 @@ int main(){
 				}	
 			}
 		}
-		
-		testReturn = testCouncilRoomCard(&GS, temphand, currentPlayer, numPlayers);
+		// Call the test function
+		testReturn += testCouncilRoomCard(&GS, temphand, currentPlayer, numPlayers);
 		memset(&GS, 23, sizeof(struct gameState));
 		
 	}
 
   if(testReturn == 0)
-    printf("\nAll tests passed!\n");
+    printf("\nAll tests passed!\n\n");
   else
-    printf("\nSome tests failed.\n");
+    printf("\nSome tests failed: %d tests failed out of %d.\n\n", testReturn, numTests*7);
 
   return 0;
 }

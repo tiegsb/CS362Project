@@ -19,7 +19,12 @@ COVERAGE:
 	estate, duchy, province, copper, silver and gold) are always in the 
 	game. In my random test, I randomized choice1 to be any card between the 
 	enumerated type card (0 through 26) to allow both valid and invalid 
-	cards to be used in the test. 
+	cards to be used in the test. This was done in order to shift the
+	probability space to ensure that the important inputs were covered by
+	the random test. This adjustment of the random inputs was necessary to 
+	produce card values for the decks, hands and discard piles in order for 
+	the tests to run properly (otherwise, the test would cause  
+	segmentation faults).
 	
 	*** Branch Coverage ***	
 

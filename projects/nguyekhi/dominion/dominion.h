@@ -68,8 +68,8 @@ struct gameState {
   int deck[MAX_PLAYERS][MAX_DECK];
   int deckCount[MAX_PLAYERS];
   int discard[MAX_PLAYERS][MAX_DECK];
-  int discardCount[MAX_PLAYERS];
-  int playedCards[MAX_DECK];
+  int discardCount[MAX_PLAYERS];    //so this is really a discard pile for trash card
+  int playedCards[MAX_DECK];        //this pile is for played card and will shuffle back into deck when deck is empty
   int playedCardCount;
 };
 

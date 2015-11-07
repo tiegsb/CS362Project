@@ -1,3 +1,9 @@
+/* Author: Ashok Nayar
+ * cs362, Fall 2015
+ * Assignment 4: Random Testing
+ * randomtestcard.c (Testing Council Card)
+ */
+
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <string.h>
@@ -10,10 +16,12 @@
 
 int checkCouncil(int p, int handPos, struct gameState *post) {
 
+    // Copy the game state to compare to
+    // after calling the council function
     struct gameState pre;
     memcpy (&pre, post, sizeof(struct gameState));
-    //printf("PRE: numBuys was not increased by one: pre.numBuys: %d, post.numBuys: %d\n", pre.numBuys, post->numBuys);
     
+    // Call council card
     councilEffect(p, handPos, post);
 
     // Check if card in hand is discarded
@@ -29,10 +37,14 @@ int checkCouncil(int p, int handPos, struct gameState *post) {
     }
     
     // Check if current hand count increases by 4
-    if (pre.handCount[p]+4 != post->handCount[p])
+    // We check for 3 because the council card is discarded (-1)
+    // But 4 cards are added (+4)
+    if (pre.handCount[p]+3 != post->handCount[p])
     {
-        printf("FAILURE: Hand count was not increased by 4: pre.handCount: %d, post.handCount: %d\n", pre.handCount[p], post->handCount[p]);
+        printf("FAILURE: Hand count was not increased by 3: pre.handCount: %d, post.handCount: %d\n", pre.handCount[p], post->handCount[p]);
     }
+    
+    // Get the other player
     int other_player = 0;
     if (p == 0)
     {
@@ -51,9 +63,10 @@ int checkCouncil(int p, int handPos, struct gameState *post) {
 int main()
 {
     int i, j, n, p;
-    int k[10] = {adventurer, council_room, feast, gardens, mine,
-	       remodel, smithy, village, baron, great_hall};
-    
+//    int k[10] = {adventurer, council_room, feast, gardens, mine,
+//	       remodel, smithy, village, baron, great_hall};
+
+    // Create game state
     struct gameState G;
     for (n = 0; n < 2000; n++)
     {
@@ -61,24 +74,27 @@ int main()
         {
             ((char*)&G)[i] = floor(Random() * 256);
         }
+        // Get random player
         p = floor(Random() * 2);
         
+        // Set random values for deck sizes
         G.deckCount[p] = floor(Random() * MAX_DECK);
         G.discardCount[p] = floor(Random() * MAX_DECK);
         G.handCount[p] = floor(Random() * MAX_HAND);
         
-        //printf("NUMBUYS: %d\n", G.numBuys);
+
+        // Set other player
         int other_player = 1;
-        
-        
         if (p == 1)
         {
             other_player = 0;
         }
+        // Set deck sizes for other player
         G.deckCount[other_player] = floor(Random() * MAX_DECK);
         G.discardCount[other_player] = floor(Random() * MAX_DECK);
         G.handCount[other_player] = floor(Random() * MAX_HAND);
         
+        // Provide random cards to the deck
         for (j = 0; j< G.deckCount[p]; j++)
         {
             G.deck[p][j] = floor(Random() * 6);
@@ -98,19 +114,27 @@ int main()
         }
         
         
-        
+        // Explicitly set the council card to a random
+        // place in the current player's hand
         int council_pos = floor(Random() * G.handCount[p]);
         G.hand[p][council_pos] = council_room;
+        
+        // Set action count, buy count, and played card counts
         G.numActions = floor(Random() *10);
         G.numBuys = floor(Random() * 5);
         G.playedCardCount =  floor(Random() * MAX_DECK);
+        
+        // Add random cards to played card deck
         for (j = 0; j< G.playedCardCount; j++)
         {
-            G.playedCards[j] =floor(Random() * 6);
+            G.playedCards[j] = floor(Random() * 6);
         }
 
+        // Set the number of players and whose turn it is
         G.numPlayers = p +1;
         G.whoseTurn = p;
+        
+        // Call the council card test function
         checkCouncil(p, council_pos, &G);
 
     }
