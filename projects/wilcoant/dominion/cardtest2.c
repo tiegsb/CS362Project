@@ -67,10 +67,13 @@ int main() {
                 cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
                 //check that the deck count was properly incremented
                 //
-                printf("deck count = %d, expected = %d\n", testG.deckCount[j], i); //i is where you are in the deck 
+                printf("TEST 1: Deck count after card played should be the original amount less \nthe number of cards drawn\n");
+                
+                printf("deck count = %d, expected = %d\n\n", testG.deckCount[j], i); //i is where you are in the deck 
                 
                 //check that the discard pile was properly changed 
-                printf("discard count = %d, expected = %d\n", testG.discardCount[j], G.discardCount[j] + (i - tcoins) );
+                printf("TEST 2: Discard count after card played should be original less \nthe number of cards drawn that aren't treasure cards.\n");
+                printf("discard count = %d, expected = %d\n\n", testG.discardCount[j], G.discardCount[j] + (i - tcoins) );
                 
                 //test that number of coin cards was properly added 
                 for(m = 0; m < G.handCount[j]; m++)
@@ -106,8 +109,10 @@ int main() {
                     }
                     
                 }
-                printf("treasure cards = %d, expected = %d\n", ahandcoins, tcoins);
-                printf("value of cards = %d, expected = %d\n", ahandval, val + bhandval);  
+                printf("TEST 3: Number of treasure coins in player hand should be equal to the \nnumber in the hand plus the number drawn\n");
+                printf("treasure cards = %d, expected = %d\n\n", ahandcoins, tcoins + bhandcoins);
+                printf("TEST 4: Value of cards in hand should be value of treasure cards in \nhand before + value added from treasure cards\n");
+                printf("value of cards = %d, expected = %d\n\n", ahandval, val + bhandval);  
                 bhandcoins = 0; //reset pregame hand count for other player 
                 ahandcoins = 0; //reset handcount 
                 ahandval = 0; //reset handval 
