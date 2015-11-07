@@ -17,7 +17,7 @@
 #define DEBUG 0
 #define NOISY_TEST 1
 
-void checkAdventurer(int player, struct gameState *post, int fail) {
+void checkAdventurer(int player, struct gameState *post, int *fail) {
 	struct gameState pre;
 	
 	//Copy gamestate to pre, before execution of function
@@ -49,7 +49,13 @@ void checkAdventurer(int player, struct gameState *post, int fail) {
 	assert(pre.numActions == post->numActions);
 	assert(pre.coins == post->coins);
 	assert(pre.numBuys == post->numBuys);
-	assert(pre.playedCardCount == post->playedCardCount);
+	//This assert ensures that a card has been played
+	//This assert failed
+	//assert(pre.playedCardCount+1 == post->playedCardCount);
+	if (pre.playedCardCount+1 != post->playedCardCount) {
+		printf("FAIL: playedCardCount. Expected %d, got %d\n", pre.playedCardCount+1, post->playedCardCount);
+		*fail = 1;
+	}
 
 #if(NOISY_TEST == 1)
 	printf("Checking that other players are not affected.\n");
@@ -97,18 +103,21 @@ void checkAdventurer(int player, struct gameState *post, int fail) {
 	
 	int deckChange = 2 + post->discardCount[player] - pre.discardCount[player];
 	int postdeckcount = pre.deckCount[player] - deckChange;	
-	assert(post->deckCount[player] == postdeckcount);
-	//This assert failed
-	if(post->deckCount[player] != (pre.deckCount[player] - deckChange)) { 
-		printf("Assert failed, postDeckCount change does not match postDicardCount and postHandCount change.\n");
-		fail = 1;
+	
+	//assert(post->deckCount[player] == postdeckcount);
+	//Above assertion failed, but not sure why. The expressions should be equal.
+	//The following if test verifies.
+	if(post->deckCount[player] != postdeckcount) { 
+		printf("FAIL: postDeckCount change does not match postDicardCount and postHandCount change.\n");
+		*fail = 1;
 	}
 
 }
 
 int main () {
 
-	int i, n, player, fail = 0;
+	int i, n, player;
+	int fail = 0;
 
 	//Set kingdom cards
 	int k[10] = {adventurer, council_room, feast, gardens, mine,
@@ -134,12 +143,14 @@ int main () {
 		//choose random number of players between 2 and 4
 		numPlayers = floor(Random() * (MAX_PLAYERS-2)) + 2;
 		
-		player = floor(Random() * numPlayers);
-		initStatus = initializeGame(numPlayers, k, 1, &G); 
-		checkAdventurer(player, &G, fail);
 #if(NOISY_TEST == 1)
 		printf("Random test %d\n", n);
 #endif
+
+		player = floor(Random() * numPlayers);
+		initStatus = initializeGame(numPlayers, k, 1, &G); 
+		checkAdventurer(player, &G, &fail);
+
 	}
 
 	if (fail == 0) {

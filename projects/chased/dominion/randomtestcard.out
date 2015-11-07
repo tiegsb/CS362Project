@@ -1,0 +1,22 @@
+Random card test results (Smithy):
+randomtestcard.c:
+
+Starting to test Smithy card...
+
+Error type 0 is hand count incorrect.
+
+Error type 1 is discard count incorrect.
+
+Error type 2 is smithy is in hand but shouldn't be.
+
+Error count 0 is: 3000
+
+Error count 1 is: 0
+
+Error count 2 is: 0
+
+Testing of smithy card complete.
+File 'dominion.c'
+Lines executed:18.94% of 586
+dominion.c:creating 'dominion.c.gcov'
+

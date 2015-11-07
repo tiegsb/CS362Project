@@ -24,7 +24,7 @@ TESTING ScoreFor():
 TEST RESULT #1: PASSED- ScoreFor scored correctly.
 	Player 1:  Expected: 11	Actual: 11
 TEST RESULT #2: PASSED- ScoreFor scored correctly.
-	Player 2:  Expected: 16	Actual: 16
+	Player 2:  Expected: 7	Actual: 7
 File 'dominion.c'
 Lines executed:18.51% of 616
 Branches executed:21.08% of 427
@@ -37,11 +37,11 @@ TESTING getCost():
 TEST RESULT #1: PASSED- cost of cards is correct.
 	First cost test:  Calculated: 19	Actual: 19
 TEST RESULT #2: PASSED- Cost remained correct from random test.
-Second cost test:  Calculated: 35	Actual: 35
+Second cost test:  Calculated: 10	Actual: 10
 File 'dominion.c'
-Lines executed:17.53% of 616
+Lines executed:16.40% of 616
 Branches executed:22.01% of 427
-Taken at least once:15.93% of 427
+Taken at least once:14.29% of 427
 Calls executed:6.93% of 101
 dominion.c:creating 'dominion.c.gcov'
 
