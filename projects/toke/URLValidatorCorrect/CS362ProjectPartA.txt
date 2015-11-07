@@ -1,0 +1,38 @@
+﻿CS362 Project Part A
+Group Members:
+Kevin To <toke@oregonstate.edu>
+Sean Harrington <harrings@oregonstate.edu>
+Carol Toro <toroc@oregonstate.edu>
+
+---------------------Total Urls being tested:--------------------------
+According to test url parts there are 5 basic pieces that are cycled through to create various urls to be tested. I am going off of testurlpartsoptions as it includes testpath options rather than just testpath
+1.       url scheme total=9
+2.       testurlauthority=19
+3.       testurl port=7
+4.       testurlparthoptions=15
+5.       testurlquery=3
+So our total number of urls being tested is 9*19*7*15*3=53865 total urls are being tested.
+
+----------------------Valid URL & Invalid URL:-----------------------
+Valid URL: http://go.au:0/t123?action=view
+Invalid URL: http:1.2.3.4.:65535/t123
+The URL would be considered invalid since both the scheme and authority are incorrect.
+
+
+----------------------Build of URLs:-----------------------
+	When the URLValidatorTest class gets instantiated, it sets up various class properties like testUrlParts, testUrlScheme, testUrlAuthority, testUrlPort, testPath, testUrlPathOptions, testUrlQuery. testUrlParts is an object array that contains  testUrlScheme, testUrlAuthority, testUrlPort, testPath, testUrlQuery. Essentially testUrlParts holds all the components needed to make a large amount of URLs. Each component has multiple variations. For example, testUrlAuthority contains 19 different url authorities. 
+	Looking at the test, testIsValid(), there is a do-while loop that iterates through all the combinations of URLs and checks their validity. How does the loop go through all the combinations in an orderly manner? It uses testPartsIndex to keep track which which component it's on. Remember all the components are contained within testUrlParts. testUrlParts holds all our test data and testPartsIndex keeps track of which combination we are on.
+	In what manner does testPartsIndex keep track of the combinations? There is a method that does this called incrementTestPartsIndex(). This method iterates testPartsIndex starting from the last element to the first. Starting from the last element in testPartsIndex, it checks if that index is less than number elements in the component. If it is then it increments that element, then finishes. Once that rightmost element gets to the max (remember the max is equal to the number of elements in that component), it resets to 0, and increments the element on the left by 1. The element to the right of the incremented to the max again, then that left element is incremented again till it goes to max. 
+This is better explained with an example:
+[0, 0, 0, 0, 0] ... increment rightmost to max (remember each increment gets validated)
+[0, 0, 0, 0, max] … increment the right neighbor and reset max
+[0, 0, 0, 1, 0] … increment to max again for the rightmost
+[0, 0, 0, 1, max] … increment left of max again and reset max
+[0, 0, 0, 2, 0]  .... increment to max again for the rightmost
+[0, 0, 0, 2, max] .... goes on still the leftmost element
+
+
+As you can see, we increment each element in testPartsIndex methodically to get all the possible combinations of URLs. 
+
+----------Concepts & Complexity of testIsValid() test, unit tests, and card tests--------------
+This real world test URL Validator’s testIsValid() is very similar to the unit tests and card test that we wrote in terms of concept as the test writer was aware of the various components of a URL that could be evaluated to false or true. For our unit tests, we had expectations of what should evaluate to false as well as to what should evaluate to true and used those assumptions to test the various cards and functions implemented in dominion.c. In terms of complexity, testIsValid() carries out far more test combinations for validating all 4 parts of a URL in order to gain thorough test coverage.
