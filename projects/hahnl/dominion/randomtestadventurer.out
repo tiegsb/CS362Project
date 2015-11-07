@@ -1,0 +1,83 @@
+Results:
+randomtestadventurer.c
+
+
+--------------------------------------
+randomtestadventurer.c -- Tests Begin
+--------------------------------------
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 2505 cards.
+-- FAIL: Too FEW treasure cards.
+---- Target: 2 cards. Actual: 1 cards.
+^^^^^^^ Test Number 1 out of 10 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 2505 cards.
+^^^^^^^ Test Number 2 out of 10 ^^^^^^^
+
+-- FAIL: Adventurer card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 51 cards.
+-- FAIL: Too MANY treasure cards.
+---- Target: 2 cards. Actual: 52 cards.
+^^^^^^^ Test Number 3 out of 10 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 2505 cards.
+-- FAIL: Too MANY treasure cards.
+---- Target: 2 cards. Actual: 53 cards.
+^^^^^^^ Test Number 4 out of 10 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 2505 cards.
+-- FAIL: Too MANY treasure cards.
+---- Target: 2 cards. Actual: 54 cards.
+^^^^^^^ Test Number 5 out of 10 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 2505 cards.
+-- FAIL: Too MANY treasure cards.
+---- Target: 2 cards. Actual: 55 cards.
+^^^^^^^ Test Number 6 out of 10 ^^^^^^^
+
+-- FAIL: Adventurer card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 51 cards.
+-- FAIL: Too MANY treasure cards.
+---- Target: 2 cards. Actual: 105 cards.
+^^^^^^^ Test Number 7 out of 10 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 2505 cards.
+-- FAIL: Too MANY treasure cards.
+---- Target: 2 cards. Actual: 106 cards.
+^^^^^^^ Test Number 8 out of 10 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 2505 cards.
+-- FAIL: Too MANY treasure cards.
+---- Target: 2 cards. Actual: 107 cards.
+^^^^^^^ Test Number 9 out of 10 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 2 cards. Actual: 2505 cards.
+-- FAIL: Too MANY treasure cards.
+---- Target: 2 cards. Actual: 108 cards.
+^^^^^^^ Test Number 10 out of 10 ^^^^^^^
+
+
+****************************************
+  ---- TEST FAILURE STATUS REPORT ----
+  ----       Adventurer Card      ----
+****************************************
+Total Test Failures:      10/10
+Discard Card Errors:      2
+Draw Card Errors:         10
+Treasure Card Errors:     9
+****************************************
+
+File 'dominion.c'
+Lines executed:19.93% of 582
+dominion.c:creating 'dominion.c.gcov'
+
