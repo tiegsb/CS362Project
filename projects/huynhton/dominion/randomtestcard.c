@@ -35,6 +35,8 @@ int main() {
 	int initDeckCount;	// initial number of deck count
 	int expectedDkCnt;	// the expected deck count based on amount of village card drawn and played
 	int actualDeckCnt;	// after test has been run, check the deck count
+	int fullDeckCntFn1;	// using the full deck count to check the copper amount at beginning
+	int fullDeckCntFn2;	// using the full deck count to check the copper amount at end
 	
 	/// CHANGE RANDOM ITERATION BELOW
 	
@@ -47,6 +49,7 @@ int main() {
     memset(&G, 23, sizeof(struct gameState));   // clear the game state
     r = initializeGame(numPlayer, k, seed, &G); // initialize a new game	
 	
+	fullDeckCntFn1 = fullDeckCount(0, 4, &G);	// getting initial copper amount in deck
 	
 	// prepare information before playing village
 	currentCardNum = G.handCount[0];	// hand count of the current player
@@ -96,6 +99,9 @@ int main() {
 		}
 	}
 	
+	//gainCard(copper, &G, 2, currentPlayer);
+	fullDeckCntFn2 = fullDeckCount(0, 4, &G);	// getting end copper amount in deck;
+	
 	// get actual deck count at end of test and compare to expected result
 	actualDeckCnt = G.deckCount[0];
 	if(expectedDkCnt == actualDeckCnt)
@@ -103,6 +109,12 @@ int main() {
 	else
 		printf("TEST RESULT- DECK COUNT: FAILED- Expected deck amount (%d) different from actual deck amount (%d)\n", expectedDkCnt, actualDeckCnt);
 	
+	if(fullDeckCntFn1 == fullDeckCntFn2){
+		printf("TEST RESULT: PASSED- Initial copper amount = end copper ammount.\n\tInitial: %d\tEnd:%d\n",fullDeckCntFn1,fullDeckCntFn2);
+	}
+	else{
+		printf("TEST RESULT: FAILED- Initial copper amount ~= end copper ammount.\n\tInitial: %d\tEnd:%d\n",fullDeckCntFn1,fullDeckCntFn2);
+	}
 	
     return 0;
 }

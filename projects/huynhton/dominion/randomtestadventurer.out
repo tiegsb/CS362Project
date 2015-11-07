@@ -2,12 +2,16 @@ Results from random testing Adventurer card:
 randomtestadventurer.c:
 TESTING adventurer():
 TEST RESULT #1: FAILED- Adventurer did not provide two cards.
-	Expected cardNum: 8
-	Actual cardNum: 10
+	Expected cardNum: 9
+	Actual cardNum: 11
 TEST RESULT #2: FAILED- Adventurer did not provide two cards.
-	Expected cardNum: 8
-	Actual cardNum: 10
+	Expected cardNum: 9
+	Actual cardNum: 11
+TEST RESULT #3: FAILED- Adventurer did not provide two cards.
+	Expected cardNum: 9
+	Actual cardNum: 11
 TEST RESULT: PASSED- last two card in hand are treasures.
+TEST RESULT: FAILED- Adventurer did not provide expected card (or you do not have enough coins). Expected: 10	Actual: 7
 File 'dominion.c'
 Lines executed:23.21% of 616
 Branches executed:26.93% of 427

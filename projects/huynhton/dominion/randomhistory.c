@@ -22,6 +22,21 @@ Branches executed:26.93% of 427
 Taken at least once:16.39% of 427
 Calls executed:16.83% of 101
 
+(11/6/2015)
+Random test stats
+card: (village)
+Lines executed:27.60% of 616
+Branches executed:29.74% of 427
+Taken at least once:18.97% of 427
+Calls executed:19.80% of 101
+
+adventurer:
+Lines executed:23.05% of 616
+Branches executed:26.93% of 427
+Taken at least once:16.39% of 427
+Calls executed:16.83% of 101
+
+
 (11/5/2015)
 Random test stats
 card: (village)
@@ -36,7 +51,12 @@ Branches executed:26.93% of 427
 Taken at least once:16.63% of 427
 Calls executed:16.83% of 101
 ----------
+(11/6/2015)
+Today, I added on a few other simple checks to both the randomVillage and randomAdventurer. This was done based on a suggestion I read by Mr. Christi Arpit on Piazza.  Fortunately, a simple addition of a check increased the coverage of the random village.  All I did was check to see if the initial copper amount a player had equaled the end copper amount the player should have.  
+I tried to add on a supplyCount test for randomAdventurer to check the supply of copper.  Oddly, this resulted in reverting the improvements of its coverage.  As such, I commented out the supplyCount portion of the test and maintained the original test from yesterday.  Based on my results from the improved randomVillage, I thought calling more functions would help to increase coverage.  Unfortunately, as we can see, that wasn't the case. 
 
+
+(11/5/2015)
 Looking at the code above, my new village test doesn't cover anything new compared to the old test. 
 For my adventurer test, we can see slight improvements. There is a small percentage increase for the percentage of lines executed and the "taken at least once" section.  While the increase is seemingly small, I believe this is at least an improvement of my coverage.
 

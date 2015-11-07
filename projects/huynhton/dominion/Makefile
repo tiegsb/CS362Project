@@ -55,7 +55,12 @@ testVillage: cardtest3.c dominion.o rngs.o
 testCouncilRoom: cardtest4.c dominion.o rngs.o
 	gcc -o testCouncilRoom -g  cardtest4.c dominion.o rngs.o $(CFLAGS)
 
+# HW 4 - random tests
+randomVillage: randomtestcard.c dominion.o rngs.o
+	gcc -o randomVillage -g  randomtestcard.c dominion.o rngs.o $(CFLAGS)
 	
+randomAdventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomAdventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
 
 	
 # Make gcov tests
@@ -110,8 +115,27 @@ unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c
 	gcc -fprofile-arcs -ftest-coverage dominion.c cardtest4.c rngs.c -o testCouncilRoom -lm -g $(CFLAGS)
 	testCouncilRoom >> unittestresults.out
 	gcov dominion.c -b >> unittestresults.out
+
 	
+# Assignment 4- make randomtestcard.out and randomtestadventurer.out
+#
+randomtestcard.out: randomtestcard.c dominion.o rngs.o
+	echo "Results from random testing Village card:" > randomtestcard.out
 	
+	echo "randomtestcard.c:" >> randomtestcard.out
+	gcc -fprofile-arcs -ftest-coverage dominion.c randomtestcard.c rngs.c -o randomVillage -lm -g $(CFLAGS)
+	randomVillage >> randomtestcard.out
+	gcov dominion.c -b >> randomtestcard.out
+	
+randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
+	echo "Results from random testing Adventurer card:" > randomtestadventurer.out
+	
+	echo "randomtestadventurer.c:" >> randomtestadventurer.out
+	gcc -fprofile-arcs -ftest-coverage dominion.c randomtestadventurer.c rngs.c -o randomAdventurer -lm -g $(CFLAGS)
+	randomAdventurer >> randomtestadventurer.out
+	gcov dominion.c -b >> randomtestadventurer.out
+
+
 	
 	
 testAll: dominion.o testSuite.c
@@ -129,7 +153,7 @@ runtests: testDrawCard
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins testGainCard testDiscardCard testScoreFor testGetCost testSmithy testAdventurer testVillage testCouncilRoom unittestresults.out
+all: playdom player testDrawCard testBuyCard badTestDrawCard testUpdateCoins testGainCard testDiscardCard testScoreFor testGetCost testSmithy testAdventurer testVillage testCouncilRoom randomVillage randomAdventurer unittestresults.out
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe unittestresults.out *.gcov *.gcda *.gcno *.so
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe unittestresults.out randomtestcard.out randomtestadventurer.out *.gcov *.gcda *.gcno *.so
