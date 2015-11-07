@@ -1,0 +1,17 @@
+Results from random testing Village card:
+randomtestcard.c:
+TESTING Village():
+TEST RESULT #1.6: FAILED- Village did not provide one card.
+	Expected cardNum: 5
+	Actual cardNum: 7
+TEST RESULT #2.6: FAILED- Village did not provide two extra turns.
+	Expected actionNum: 2
+	Actual actionNum: 1
+TEST RESULT- DECK COUNT: PASSED- Expected deck amount (3) equals actual deck amount (3)
+File 'dominion.c'
+Lines executed:24.35% of 616
+Branches executed:26.46% of 427
+Taken at least once:15.93% of 427
+Calls executed:18.81% of 101
+dominion.c:creating 'dominion.c.gcov'
+
