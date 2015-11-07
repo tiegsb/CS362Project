@@ -642,10 +642,10 @@ int getCost(int cardNumber)
 	
   return -1;
 }
-int play_adventurer(struct gameState *state, int currentPlayer, int *temphand)
+int play_adventurer(struct gameState *state, int drawntreasure, int currentPlayer, int temphand[MAX_HAND], int cardDrawn)
 {
-    int drawntreasure = 0; //counter for treasure cards 
-    int cardDrawn; //temp card drawn var 
+    //int drawntreasure = 0; //counter for treasure cards 
+    //int cardDrawn; //temp card drawn var 
     int z = 0; //counter for temp hand 
     int y = 0; //test counter var 
     //int k[10] = {&z, &drawntreasure, &y}; //counters for testing
@@ -655,7 +655,6 @@ int play_adventurer(struct gameState *state, int currentPlayer, int *temphand)
 	  shuffle(currentPlayer, state);
 	}
 	drawCard(currentPlayer, state);
-    y++; //test counter var 
 	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
 	if (cardDrawn == copper || (cardDrawn == silver && cardDrawn == gold))
 	  drawntreasure++;
@@ -669,7 +668,7 @@ int play_adventurer(struct gameState *state, int currentPlayer, int *temphand)
 	state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
 	z=z-1;
       }
-      return (z + drawntreasure) - y; //return 0 if not testing 
+      return 0; //return 0 if not testing 
 }
 int play_smithy(int currentPlayer, struct gameState *state, int handPos)
 {
@@ -765,9 +764,11 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   int x;
   int index;
   int currentPlayer = whoseTurn(state);
+  int drawntreasure = 0; //will pass this manually from main test fn 
   int nextPlayer = currentPlayer + 1;
   int temphand[MAX_HAND];// moved above the if statement
   int tributeRevealedCards[2] = {-1, -1};
+  int cardDrawn;
  
   
   if (nextPlayer > (state->numPlayers - 1)){
@@ -780,7 +781,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
    }
    if (card == adventurer)
    {
-       play_adventurer(state, currentPlayer, temphand);
+       play_adventurer(state, drawntreasure, currentPlayer, temphand, cardDrawn);
    }
    if (card == remodel)
    {
