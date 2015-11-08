@@ -3,13 +3,12 @@
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 Testing Method  : minion()
-Seed            : 10
     Tests Passed    : 2500
     Tests Failed    : 0
 -------------------------------------------------------------------------------
 
 File 'randomtestcard.c'
-Lines executed:85.56% of 90
+Lines executed:85.39% of 89
 randomtestcard.c:creating 'randomtestcard.c.gcov'
 
 File 'dominion.c'
@@ -52,25 +51,25 @@ dominion.c:creating 'dominion.c.gcov'
     25000:   29:    for (i = 1; i<setupSize; i++)
         -:   30:    {
     22500:   31:        int cardCheck = 0;
-    73864:   32:        while(cardCheck == 0)
+    73879:   32:        while(cardCheck == 0)
         -:   33:        {
-    28864:   34:            int testCard = rand()%20 + 7; // 20 kingdom cards available starting at the seventh position
-    28864:   35:            if (testCard == CARDNAME) // Check for duplication of the card under test
+    28879:   34:            int testCard = rand()%20 + 7; // 20 kingdom cards available starting at the seventh position
+    28879:   35:            if (testCard == CARDNAME) // Check for duplication of the card under test
         -:   36:            {
     #####:   37:                cardCheck = 0;
         -:   38:            } else // Check cards that are already pulled into the available set
         -:   39:            {
-    28864:   40:                kingdomCards[i] = testCard;
+    28879:   40:                kingdomCards[i] = testCard;
         -:   41:                int j;
-   163532:   42:                for (j = 0; j < i; j++)
+   163800:   42:                for (j = 0; j < i; j++)
         -:   43:                {
-   141032:   44:                    if(kingdomCards[j] == testCard)
+   141300:   44:                    if(kingdomCards[j] == testCard)
         -:   45:                    {
-     6364:   46:                        cardCheck = 0;
-     6364:   47:                        break;
+     6379:   46:                        cardCheck = 0;
+     6379:   47:                        break;
         -:   48:                    } else
         -:   49:                    {
-   134668:   50:                        cardCheck = 1;
+   134921:   50:                        cardCheck = 1;
         -:   51:                    }
         -:   52:                }
         -:   53:            }
@@ -113,109 +112,107 @@ dominion.c:creating 'dominion.c.gcov'
         1:   90:    printf ("\n\n-------------------------------------------------------------------------------\n");
         1:   91:    printf ("-------------------------------------------------------------------------------\n");
         1:   92:    printf ("Testing Method  : %s()\n", currentTest);
-        1:   93:    printf ("Seed            : %i\n", seed);
-        -:   94:
-        -:   95:
-      501:   96:    for (i=0; i<TESTNUMBER;i++){
-      500:   97:        randomGame(state);
-        -:   98:
-        -:   99:        //Check increase of cards in hand
-      500:  100:        expectedValue = state->numActions + 1;
-      500:  101:        cardEffect(minion,0,0,0,state, 0, 0);
-      500:  102:        if(state->numActions != expectedValue) {
-    #####:  103:            printf("  TEST FAIL    : minion card add action failed\n");
-    #####:  104:            testsFailed++;
-      500:  105:        } else {testsPassed++;}
-        -:  106:    }
-        -:  107:
-        -:  108:
-      501:  109:    for (i=0; i<TESTNUMBER;i++){
-      500:  110:        randomGame(state);
-        -:  111:
-        -:  112:        //Check increase of coins for player
-      500:  113:        expectedValue = state->coins + 2;
-      500:  114:        cardEffect(minion,1,0,0,state, 0, &bonus);
-      500:  115:        if(state->coins != expectedValue) {
-    #####:  116:            printf("  TEST FAIL    : minion card add coins failed\n");
-    #####:  117:            testsFailed++;
-      500:  118:        } else {testsPassed++;}
-        -:  119:    }
-        -:  120:
-      501:  121:    for (i=0; i<TESTNUMBER;i++){
-      500:  122:        randomGame(state);
-        -:  123:
-        -:  124:        //Check size of players hand after call is correct
-      500:  125:        expectedValue = 4;
-      500:  126:        cardEffect(minion,0,1,0,state, 0, &bonus);
-      500:  127:        if(state->handCount[state->whoseTurn] != expectedValue) {
-    #####:  128:            printf("  TEST FAIL    : minion redraw hand size failed\n");
-    #####:  129:            testsFailed++;
-      500:  130:        } else {testsPassed++;}
-        -:  131:    }
-        -:  132:
-      501:  133:    for (i=0; i<TESTNUMBER;i++){
-      500:  134:        randomGame(state);
-        -:  135:
-        -:  136:        //Check size of opponents hand after call is correct, over 5 in hand
-      500:  137:        expectedValue = 4;
-      500:  138:        state->whoseTurn = 0;
-      500:  139:        state->handCount[1] = 5;
-      500:  140:        cardEffect(minion,0,1,0,state, 0, &bonus);
-      500:  141:        if(state->handCount[1] != expectedValue) {
-    #####:  142:            printf("  TEST FAIL    : minion redraw opponents hand size failed\n");
-    #####:  143:            testsFailed++;
-      500:  144:        } else {testsPassed++;}
-        -:  145:    }
-        -:  146:
-      501:  147:    for (i=0; i<TESTNUMBER;i++){
-      500:  148:        randomGame(state);
-        -:  149:
-        -:  150:        //Check size of opponents hand after call is correct, less than 5 in hand
-      500:  151:        expectedValue = 4;
-      500:  152:        state->whoseTurn = 0;
-      500:  153:        state->handCount[1] = 4;
-      500:  154:        cardEffect(minion,0,1,0,state, 0, &bonus);
-      500:  155:        if(state->handCount[1] != expectedValue) {
-    #####:  156:            printf("  TEST FAIL    : minion add cards to opponents hand size failed\n");
-    #####:  157:            printf("hand count %i\n", state->handCount[1]);
-    #####:  158:            testsFailed++;
-      500:  159:        } else {testsPassed++;}
-        -:  160:    }
-        -:  161:
-        1:  162:    printf ("    Tests Passed    : %i\n", testsPassed);
-        1:  163:    printf ("    Tests Failed    : %i\n", testsFailed);
-        1:  164:    printf ("-------------------------------------------------------------------------------\n\n");
-        -:  165:
-        1:  166:    return 0;
-        -:  167:}
-        -:  168:
-        -:  169:
-        -:  170:/*
-        -:  171: * Preconditions:   The user can pass a seed value for testing or it defaults to a set value
-        -:  172: * Postconditions:  Exit the test program normally
-        -:  173: */
-        1:  174:int main (int argc, char** argv)
-        -:  175:{
-        -:  176:
-        -:  177:    // Setup Game Seed
-        1:  178:    srand(time(NULL));
-        -:  179:    int seed;
-        1:  180:    char* currentTest = CARDNAME;
-        1:  181:    if(argv[1]) {
-    #####:  182:        seed = atoi(argv[1]);
-        -:  183:    } else {
-        1:  184:        seed = BASESEED;
-        -:  185:    }
-        -:  186:
-        -:  187:    // Initialize Game State
-        -:  188:    struct gameState G;
-        1:  189:    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
-        1:  190:    initializeGame(2, k, seed, &G);
+        -:   93:
+      501:   94:    for (i=0; i<TESTNUMBER;i++){
+      500:   95:        randomGame(state);
+        -:   96:
+        -:   97:        //Check increase of cards in hand
+      500:   98:        expectedValue = state->numActions + 1;
+      500:   99:        cardEffect(minion,0,0,0,state, 0, 0);
+      500:  100:        if(state->numActions != expectedValue) {
+    #####:  101:            printf("  TEST FAIL    : minion card add action failed\n");
+    #####:  102:            testsFailed++;
+      500:  103:        } else {testsPassed++;}
+        -:  104:    }
+        -:  105:
+        -:  106:
+      501:  107:    for (i=0; i<TESTNUMBER;i++){
+      500:  108:        randomGame(state);
+        -:  109:
+        -:  110:        //Check increase of coins for player
+      500:  111:        expectedValue = state->coins + 2;
+      500:  112:        cardEffect(minion,1,0,0,state, 0, &bonus);
+      500:  113:        if(state->coins != expectedValue) {
+    #####:  114:            printf("  TEST FAIL    : minion card add coins failed\n");
+    #####:  115:            testsFailed++;
+      500:  116:        } else {testsPassed++;}
+        -:  117:    }
+        -:  118:
+      501:  119:    for (i=0; i<TESTNUMBER;i++){
+      500:  120:        randomGame(state);
+        -:  121:
+        -:  122:        //Check size of players hand after call is correct
+      500:  123:        expectedValue = 4;
+      500:  124:        cardEffect(minion,0,1,0,state, 0, &bonus);
+      500:  125:        if(state->handCount[state->whoseTurn] != expectedValue) {
+    #####:  126:            printf("  TEST FAIL    : minion redraw hand size failed\n");
+    #####:  127:            testsFailed++;
+      500:  128:        } else {testsPassed++;}
+        -:  129:    }
+        -:  130:
+      501:  131:    for (i=0; i<TESTNUMBER;i++){
+      500:  132:        randomGame(state);
+        -:  133:
+        -:  134:        //Check size of opponents hand after call is correct, over 5 in hand
+      500:  135:        expectedValue = 4;
+      500:  136:        state->whoseTurn = 0;
+      500:  137:        state->handCount[1] = 5;
+      500:  138:        cardEffect(minion,0,1,0,state, 0, &bonus);
+      500:  139:        if(state->handCount[1] != expectedValue) {
+    #####:  140:            printf("  TEST FAIL    : minion redraw opponents hand size failed\n");
+    #####:  141:            testsFailed++;
+      500:  142:        } else {testsPassed++;}
+        -:  143:    }
+        -:  144:
+      501:  145:    for (i=0; i<TESTNUMBER;i++){
+      500:  146:        randomGame(state);
+        -:  147:
+        -:  148:        //Check size of opponents hand after call is correct, less than 5 in hand
+      500:  149:        expectedValue = 4;
+      500:  150:        state->whoseTurn = 0;
+      500:  151:        state->handCount[1] = 4;
+      500:  152:        cardEffect(minion,0,1,0,state, 0, &bonus);
+      500:  153:        if(state->handCount[1] != expectedValue) {
+    #####:  154:            printf("  TEST FAIL    : minion add cards to opponents hand size failed\n");
+    #####:  155:            printf("hand count %i\n", state->handCount[1]);
+    #####:  156:            testsFailed++;
+      500:  157:        } else {testsPassed++;}
+        -:  158:    }
+        -:  159:
+        1:  160:    printf ("    Tests Passed    : %i\n", testsPassed);
+        1:  161:    printf ("    Tests Failed    : %i\n", testsFailed);
+        1:  162:    printf ("-------------------------------------------------------------------------------\n\n");
+        -:  163:
+        1:  164:    return 0;
+        -:  165:}
+        -:  166:
+        -:  167:
+        -:  168:/*
+        -:  169: * Preconditions:   The user can pass a seed value for testing or it defaults to a set value
+        -:  170: * Postconditions:  Exit the test program normally
+        -:  171: */
+        1:  172:int main (int argc, char** argv)
+        -:  173:{
+        -:  174:
+        -:  175:    // Setup Game Seed
+        1:  176:    srand(time(NULL));
+        -:  177:    int seed;
+        1:  178:    char* currentTest = CARDNAME;
+        1:  179:    if(argv[1]) {
+    #####:  180:        seed = atoi(argv[1]);
+        -:  181:    } else {
+        1:  182:        seed = BASESEED;
+        -:  183:    }
+        -:  184:
+        -:  185:    // Initialize Game State
+        -:  186:    struct gameState G;
+        1:  187:    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        1:  188:    initializeGame(2, k, seed, &G);
+        -:  189:
+        1:  190:    testCard(currentTest,seed, &G);
         -:  191:
-        1:  192:    testCard(currentTest,seed, &G);
-        -:  193:
-        1:  194:    return 0;
-        -:  195:}
+        1:  192:    return 0;
+        -:  193:}
         -:    0:Source:dominion.c
         -:    0:Graph:dominion.gcno
         -:    0:Data:dominion.gcda
@@ -228,12 +225,12 @@ dominion.c:creating 'dominion.c.gcov'
         -:    5:#include <math.h>
         -:    6:#include <stdlib.h>
         -:    7:
-    93840:    8:int compare(const void* a, const void* b) {
-    93840:    9:  if (*(int*)a > *(int*)b)
+    93480:    8:int compare(const void* a, const void* b) {
+    93480:    9:  if (*(int*)a > *(int*)b)
     #####:   10:    return 1;
-    93840:   11:  if (*(int*)a < *(int*)b)
-    25024:   12:    return -1;
-    68816:   13:  return 0;
+    93480:   11:  if (*(int*)a < *(int*)b)
+    24928:   12:    return -1;
+    68552:   13:  return 0;
         -:   14:}
         -:   15:
     #####:   16:struct gameState* newGame() {
@@ -295,11 +292,11 @@ dominion.c:creating 'dominion.c.gcov'
         -:   72:  //set number of Curse cards
      2501:   73:  if (numPlayers == 2)
         -:   74:    {
-     1247:   75:      state->supplyCount[curse] = 10;
+     1271:   75:      state->supplyCount[curse] = 10;
         -:   76:    }
-     1254:   77:  else if (numPlayers == 3)
+     1230:   77:  else if (numPlayers == 3)
         -:   78:    {
-     1254:   79:      state->supplyCount[curse] = 20;
+     1230:   79:      state->supplyCount[curse] = 20;
         -:   80:    }
         -:   81:  else
         -:   82:    {
@@ -309,15 +306,15 @@ dominion.c:creating 'dominion.c.gcov'
         -:   86:  //set number of Victory cards
      2501:   87:  if (numPlayers == 2)
         -:   88:    {
-     1247:   89:      state->supplyCount[estate] = 8;
-     1247:   90:      state->supplyCount[duchy] = 8;
-     1247:   91:      state->supplyCount[province] = 8;
+     1271:   89:      state->supplyCount[estate] = 8;
+     1271:   90:      state->supplyCount[duchy] = 8;
+     1271:   91:      state->supplyCount[province] = 8;
         -:   92:    }
         -:   93:  else
         -:   94:    {
-     1254:   95:      state->supplyCount[estate] = 12;
-     1254:   96:      state->supplyCount[duchy] = 12;
-     1254:   97:      state->supplyCount[province] = 12;
+     1230:   95:      state->supplyCount[estate] = 12;
+     1230:   96:      state->supplyCount[duchy] = 12;
+     1230:   97:      state->supplyCount[province] = 12;
         -:   98:    }
         -:   99:
         -:  100:  //set number of Treasure cards
@@ -335,14 +332,14 @@ dominion.c:creating 'dominion.c.gcov'
         -:  112:          //check if card is a 'Victory' Kingdom card
     22510:  113:          if (kingdomCards[j] == great_hall || kingdomCards[j] == gardens)
         -:  114:        {
-     4472:  115:          if (numPlayers == 2){
-     1104:  116:            state->supplyCount[i] = 8;
+     4418:  115:          if (numPlayers == 2){
+     1096:  116:            state->supplyCount[i] = 8;
         -:  117:          }
-     1132:  118:          else{ state->supplyCount[i] = 12; }
+     1113:  118:          else{ state->supplyCount[i] = 12; }
         -:  119:        }
         -:  120:          else
         -:  121:        {
-    20274:  122:          state->supplyCount[i] = 10;
+    20301:  122:          state->supplyCount[i] = 10;
         -:  123:        }
     22510:  124:          break;
         -:  125:        }
@@ -358,36 +355,36 @@ dominion.c:creating 'dominion.c.gcov'
         -:  135:  //supply intilization complete
         -:  136:
         -:  137:  //set player decks
-     8757:  138:  for (i = 0; i < numPlayers; i++)
+     8733:  138:  for (i = 0; i < numPlayers; i++)
         -:  139:    {
-     6256:  140:      state->deckCount[i] = 0;
-    25024:  141:      for (j = 0; j < 3; j++)
+     6232:  140:      state->deckCount[i] = 0;
+    24928:  141:      for (j = 0; j < 3; j++)
         -:  142:    {
-    18768:  143:      state->deck[i][j] = estate;
-    18768:  144:      state->deckCount[i]++;
+    18696:  143:      state->deck[i][j] = estate;
+    18696:  144:      state->deckCount[i]++;
         -:  145:    }
-    50048:  146:      for (j = 3; j < 10; j++)
+    49856:  146:      for (j = 3; j < 10; j++)
         -:  147:    {
-    43792:  148:      state->deck[i][j] = copper;
-    43792:  149:      state->deckCount[i]++;
+    43624:  148:      state->deck[i][j] = copper;
+    43624:  149:      state->deckCount[i]++;
         -:  150:    }
         -:  151:    }
         -:  152:
         -:  153:  //shuffle player decks
-     8757:  154:  for (i = 0; i < numPlayers; i++)
+     8733:  154:  for (i = 0; i < numPlayers; i++)
         -:  155:    {
-     6256:  156:      if ( shuffle(i, state) < 0 )
+     6232:  156:      if ( shuffle(i, state) < 0 )
         -:  157:    {
     #####:  158:      return -1;
         -:  159:    }
         -:  160:    }
         -:  161:
         -:  162:  //draw player hands
-     8757:  163:  for (i = 0; i < numPlayers; i++)
+     8733:  163:  for (i = 0; i < numPlayers; i++)
         -:  164:    {
         -:  165:      //initialize hand size to zero
-     6256:  166:      state->handCount[i] = 0;
-     6256:  167:      state->discardCount[i] = 0;
+     6232:  166:      state->handCount[i] = 0;
+     6232:  167:      state->discardCount[i] = 0;
         -:  168:      //draw 5 cards
         -:  169:      // for (j = 0; j < 5; j++)
         -:  170:      //    {
@@ -421,34 +418,34 @@ dominion.c:creating 'dominion.c.gcov'
      2501:  198:  return 0;
         -:  199:}
         -:  200:
-     6256:  201:int shuffle(int player, struct gameState *state) {
+     6232:  201:int shuffle(int player, struct gameState *state) {
         -:  202:
         -:  203:
         -:  204:  int newDeck[MAX_DECK];
-     6256:  205:  int newDeckPos = 0;
+     6232:  205:  int newDeckPos = 0;
         -:  206:  int card;
         -:  207:  int i;
         -:  208:
-     6256:  209:  if (state->deckCount[player] < 1)
+     6232:  209:  if (state->deckCount[player] < 1)
     #####:  210:    return -1;
-     6256:  211:  qsort ((void*)(state->deck[player]), state->deckCount[player], sizeof(int), compare);
+     6232:  211:  qsort ((void*)(state->deck[player]), state->deckCount[player], sizeof(int), compare);
         -:  212:  /* SORT CARDS IN DECK TO ENSURE DETERMINISM! */
         -:  213:
-    75072:  214:  while (state->deckCount[player] > 0) {
-    62560:  215:    card = floor(Random() * state->deckCount[player]);
-    62560:  216:    newDeck[newDeckPos] = state->deck[player][card];
-    62560:  217:    newDeckPos++;
-   204137:  218:    for (i = card; i < state->deckCount[player]-1; i++) {
-   141577:  219:      state->deck[player][i] = state->deck[player][i+1];
+    74784:  214:  while (state->deckCount[player] > 0) {
+    62320:  215:    card = floor(Random() * state->deckCount[player]);
+    62320:  216:    newDeck[newDeckPos] = state->deck[player][card];
+    62320:  217:    newDeckPos++;
+   203977:  218:    for (i = card; i < state->deckCount[player]-1; i++) {
+   141657:  219:      state->deck[player][i] = state->deck[player][i+1];
         -:  220:    }
-    62560:  221:    state->deckCount[player]--;
+    62320:  221:    state->deckCount[player]--;
         -:  222:  }
-    68816:  223:  for (i = 0; i < newDeckPos; i++) {
-    62560:  224:    state->deck[player][i] = newDeck[i];
-    62560:  225:    state->deckCount[player]++;
+    68552:  223:  for (i = 0; i < newDeckPos; i++) {
+    62320:  224:    state->deck[player][i] = newDeck[i];
+    62320:  225:    state->deckCount[player]++;
         -:  226:  }
         -:  227:
-     6256:  228:  return 0;
+     6232:  228:  return 0;
         -:  229:}
         -:  230:
     #####:  231:int playCard(int handPos, int choice1, int choice2, int choice3, struct gameState *state)
@@ -1073,11 +1070,11 @@ dominion.c:creating 'dominion.c.gcov'
         -:  850:        }
         -:  851:
         -:  852:      //other players discard hand and redraw if hand size > 4
-     5263:  853:      for (i = 0; i < state->numPlayers; i++)
+     5251:  853:      for (i = 0; i < state->numPlayers; i++)
         -:  854:        {
-     3763:  855:          if (i != currentPlayer)
+     3751:  855:          if (i != currentPlayer)
         -:  856:        {
-     2263:  857:          if ( state->handCount[i] > 4 )
+     2251:  857:          if ( state->handCount[i] > 4 )
         -:  858:            {
         -:  859:              //discard hand
      3500:  860:              while( state->handCount[i] > 0 )
@@ -1433,13 +1430,13 @@ dominion.c:creating 'dominion.c.gcov'
         -: 1210:    {
     12505: 1211:      if (state->hand[player][i] == copper)
         -: 1212:    {
-     8869: 1213:      state->coins += 1;
+     8868: 1213:      state->coins += 1;
         -: 1214:    }
-     3636: 1215:      else if (state->hand[player][i] == silver)
+     3637: 1215:      else if (state->hand[player][i] == silver)
         -: 1216:    {
     #####: 1217:      state->coins += 2;
         -: 1218:    }
-     3636: 1219:      else if (state->hand[player][i] == gold)
+     3637: 1219:      else if (state->hand[player][i] == gold)
         -: 1220:    {
     #####: 1221:      state->coins += 3;
         -: 1222:    }

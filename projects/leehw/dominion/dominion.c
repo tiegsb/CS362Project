@@ -531,7 +531,6 @@ int drawCard(int player, struct gameState *state)
 {	int count;
   int deckCounter;
   if (state->deckCount[player] <= 0){//Deck is empty
-    
     //Step 1 Shuffle the discard pile back into a deck
     int i;
     //Move discard to deck
@@ -1268,7 +1267,6 @@ int adventurerAction(int player, struct gameState *state, int temphand[]){
       z = z++;
     }
   }
-  
   while(z-1>=0){
     state->discard[player][state->discardCount[player]++]=temphand[z-1]; // discard all cards in play that have been drawn
     z=z-1;
@@ -1279,7 +1277,6 @@ int adventurerAction(int player, struct gameState *state, int temphand[]){
 
 int councilAction(int player, struct gameState *state, int handPos){
   int i = 0;
-
   //+4 Cards
   for (i = 0; i < 4; i++){
 	  drawCard(player, state);

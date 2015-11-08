@@ -15,12 +15,12 @@ randomtestadventurer: randomtestadventurer.c unittest_helpers.o dominion.o rngs.
 	gcc -o randomtestadventurer -g randomtestadventurer.c unittest_helpers.o dominion.o rngs.o $(CFLAGS)
 
 tests.out: randomtestadventurer.c ../dominion.c ../rngs.c
-	echo "Result for running adventurer card random tests:\n" > ../randomtestadventurer.out
+	echo "RESULTS FOR RUNNING ADVENTURER CARD RANDOM TESTS:\n\n" > ../randomtestadventurer.out
 
 	echo ">>> START OF randomtestadventurer.c:" >> ../randomtestadventurer.out
 	gcc -o randomtestadventurer -g randomtestadventurer.c ../unittests_assign3/unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./randomtestadventurer >> ../randomtestadventurer.out
-	echo ">>> COVERAGE: dominion.c after randomtestadventurer:" >> ../unittestresults.out
+	echo "\n\n>>> COVERAGE: dominion.c after randomtestadventurer:\n" >> ../randomtestadventurer.out
 	gcov -fb dominion.c >> ../randomtestadventurer.out
 	echo ">>> END OF randomtestadventurer.c\n" >> ../randomtestadventurer.out
 	echo "\n" >> ../randomtestadventurer.out
@@ -29,5 +29,5 @@ clean:
 	rm ../randomtestadventurer.out
 
 cleanall: 
-	rm ../randomtestadventurer.out randomtestadventurer *.gcda *.gcno *.gcov *.o
+	rm ../randomtestadventurer.out randomtestadventurer *.gcda *.gcno *.gcov
 
