@@ -1308,7 +1308,7 @@ int villageCard(int currentPlayer, int handPos, struct gameState *state)
 
 	//BUG: +3 Actions
       //+2 Actions
-      state->numActions = state->numActions + 3;
+      state->numActions = state->numActions + 2;
 			
       //discard played card from hand
       discardCard(handPos, currentPlayer, state, 0);

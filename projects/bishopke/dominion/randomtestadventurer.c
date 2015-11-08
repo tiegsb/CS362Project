@@ -1,4 +1,4 @@
-//assignment 4
+//assignment 4 adventurer random card test
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
@@ -9,7 +9,7 @@
 #include <time.h>
 
 //variable for number of tests run
-#define TESTS 10000
+#define TESTS 100000
 
 
 void random_test_card_adventurer(){
@@ -40,7 +40,7 @@ void random_test_card_adventurer(){
 	//struct gameState G;
 
 
-	printf ("RANDOM TESTING adventurer card, %d iterations!:\n", TESTS);
+	printf ("RANDOM TESTING ADVENTURER CARD, %d iterations!:\n", TESTS);
 	//start for loop for amount of tests	
 	for(i = 0; i < TESTS; i++){
 		//make random seed
@@ -167,7 +167,7 @@ void random_test_card_adventurer(){
 	}
 
 
-	printf("R_ADV: PASS = %d\tFAIL = %d\tTOTAL POSSIBLE = %d\n", pass, fail, TESTS);
+	printf("RAND_ADVENTURER: PASS = %d\tFAIL = %d\tTOTAL POSSIBLE = %d\n", pass, fail, TESTS);
 }
 
 int main(){
