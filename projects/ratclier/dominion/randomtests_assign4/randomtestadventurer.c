@@ -17,6 +17,7 @@
 #include "dominion_helpers.h"
 #include "unittest_helpers.h"
 
+#define testRuns 13000
 
 // Test the adventurer card
 //
@@ -61,7 +62,7 @@ int testAdventurerCard(struct gameState *state)
     int idx;                      // loop iterator
     int diffDeckCount;            // difference between orig and new deck count
     int diffDiscardCount;         // difference between orig and new discard count
-    int passFlag      = 1;        // flag for testing proper gain of gold cards
+    int passFlag = 1;             // signals whether or not a test passed (default: true)
     int currentPlayer = state->whoseTurn;
 
     // Make a copy of the original game state
@@ -100,6 +101,7 @@ int testAdventurerCard(struct gameState *state)
     else 
     {
         printf("adventurerCard: FAIL two new cards not added to hand\n");
+        passFlag = 0;
     }
 
     // See if the number of discarded cards is correct
@@ -113,10 +115,14 @@ int testAdventurerCard(struct gameState *state)
     else 
     {
         printf("adventurerCard: FAIL incorrect number of cards discarded\n");
+        passFlag = 0;
     } 
     // Report what, if anything, changed in the game state
     //
-    whatChanged(origState, state);
+    if(passFlag == 0)
+    {
+        whatChanged(origState, state);
+    }
     printf("\n");
 
     return 0;
@@ -129,180 +135,185 @@ int main(int argc, char *argv[])
     // - number of players (numPlayers, 2-MAX_PLAYERS)
     // - current player (state->whoseTurn)
     // - kingdom cards?
-    //int minPlayers = 2;
     int numPlayers = 2;         // number of players
     int randomSeed = 1000;      // random seed for the game
+    struct gameState *state;    // holds the updated game state
+    int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
     int idx = 0;                // loop iterator
     int idx2 = 0;               // loop iterator, misc value holder
     int card = 0;
     int treasureCardCount = 0;
     int deckSize = 0;
-    struct gameState *state;    // holds the updated game state
-    int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+    int testRunNum = 0;
 
     // Randomize
     //
     srand(time(NULL));
-
-    // Generate a random number of players between minPlayers and MAX_PLAYERS
-    //
-    //numPlayers = randomByRange(minPlayers, MAX_PLAYERS);
-    //numPlayers = randomByRange(minPlayers, 3);
-
-    //currentPlayer = randomByRange(0, numPlayers - 1);
-
-    // New game
-    //
-    state = newGame();
-    initializeGame(numPlayers, kingdomCards, randomSeed, state);
-
-    // Set up a random deck size from normal (10, which needs to be
-    // changed to 9 because it's 0 indexed) and MAX_DECK (which also
-    // needs to be reduced by 1)
-    //
-    deckSize = randomByRange(9, MAX_DECK - 1);
-
-    printf("\n");
-
-    // TEST 1: random deck size up to MAX_DECK, no treasure cards
-    //
-    for(idx = 0; idx < numPlayers; idx++)
+    
+    for(testRunNum = 1; testRunNum <= testRuns; testRunNum++)
     {
-        // Test adventurer card for a player
+        // Generate a random number of players between minPlayers and MAX_PLAYERS
         //
-        state->whoseTurn = idx;
+        //numPlayers = randomByRange(minPlayers, MAX_PLAYERS);
+        //numPlayers = randomByRange(minPlayers, 3);
+
+        //currentPlayer = randomByRange(0, numPlayers - 1);
+
+        // New game
+        //
+        state = newGame();
+        initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
         // Set up a random deck size from normal (10, which needs to be
         // changed to 9 because it's 0 indexed) and MAX_DECK (which also
         // needs to be reduced by 1)
         //
-//        deckSize = randomByRange(9, MAX_DECK - 1);
+        deckSize = randomByRange(9, MAX_DECK - 1);
 
-        state->deckCount[idx] = deckSize;
+        printf("\n");
 
-        // Fill the deck with random non-treasure cards. 27
-        // cards total, so get a number from 0 to 26
+        // TEST 1: random deck size up to MAX_DECK, no treasure cards
         //
-        for(idx2 = 0; idx2 < state->deckCount[idx2]; idx2++)
+        for(idx = 0; idx < numPlayers; idx++)
         {
-            while(card >= copper && card <= gold)
+            printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+            printf(">>> TEST 1 RUN %d: deck size %d, player %d, no treasure cards...\n", testRunNum, deckSize, idx);
+            printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+
+            // Test adventurer card for a player
+            //
+            state->whoseTurn = idx;
+
+            // Set up a random deck size from normal (10, which needs to be
+            // changed to 9 because it's 0 indexed) and MAX_DECK (which also
+            // needs to be reduced by 1)
+            //
+//            deckSize = randomByRange(9, MAX_DECK - 1);
+
+            state->deckCount[idx] = deckSize;
+
+            // Fill the deck with random non-treasure cards. 27
+            // cards total, so get a number from 0 to 26
+            //
+            for(idx2 = 0; idx2 < state->deckCount[idx2]; idx2++)
             {
-                card = randomByRange(0, treasure_map - 1);
-            }
-            state->deck[idx][idx2] = card;
-        }
-
-        printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
-        printf(">>> TEST 1: deck size %d, player %d, no treasure cards...\n", deckSize, idx);
-        printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
-        testAdventurerCard(state);
-    }
-
-    // New game
-    //
-    state = newGame();
-    initializeGame(numPlayers, kingdomCards, randomSeed, state);
-
-    // Set up a random deck size from normal (10, which needs to be
-    // changed to 9 because it's 0 indexed) and MAX_DECK (which also
-    // needs to be reduced by 1)
-    //
-    deckSize = randomByRange(9, MAX_DECK - 1);
-
-    // TEST 2: random deck size up to MAX_DECK, one treasure card
-    //
-    for(idx = 0; idx < numPlayers; idx++)
-    {
-        // Test adventurer card for a player
-        //
-        state->whoseTurn = idx;
-
-        // Set up a random deck size from normal (10, which needs to be
-        // changed to 9 because it's 0 indexed) and MAX_DECK (which also
-        // needs to be reduced by 1)
-        //
-//        deckSize = randomByRange(9, MAX_DECK - 1);
-
-        state->deckCount[idx] = deckSize;
-
-        // Fill the deck with random non-treasure cards. 27
-        // cards total, so get a number from 0 to 26
-        //
-        for(idx2 = 0; idx2 < state->deckCount[idx2]; idx2++)
-        {
-            while(card >= copper && card <= gold)
-            {
-                card = randomByRange(0, treasure_map - 1);
-            }
-            state->deck[idx][idx2] = card;
-        }
-
-        // Slip in one random treasure card at a random location in the deck
-        //
-        card = randomByRange(copper, gold);
-        idx2 = randomByRange(0, deckSize);
-        state->deck[idx][idx2] = card;
-
-        printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
-        printf(">>> TEST 2: deck size %d, player %d, one treasure card...\n", deckSize, idx);
-        printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
-        testAdventurerCard(state);
-    }
-
-    // New game
-    //
-    state = newGame();
-    initializeGame(numPlayers, kingdomCards, randomSeed, state);
-
-    deckSize = randomByRange(0, 9);
-
-    // TEST 3: tiny deck size, random cards in deck
-    //
-    for(idx = 0; idx < numPlayers; idx++)
-    {
-        printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
-        printf(">>> TEST 3: tiny deck size %d, player %d, random cards...\n", deckSize, idx);
-        printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
-
-        // Test adventurer card for a player
-        //
-        state->whoseTurn = idx;
-
-        //deckSize = randomByRange(0, MAX_DECK - 1);
-
-        state->deckCount[idx] = deckSize;
-
-        // Fill the deck with random non-treasure cards. 27
-        // cards total, so get a number from 0 to 26
-        //
-        treasureCardCount = 0;
-        for(idx2 = 0; idx2 < state->deckCount[idx2]; idx2++)
-        {
-            card = randomByRange(0, treasure_map - 1);
-            if(card >= copper && card <= gold)
-            {
-                printf(">>> NOTE: Treasure card added: ");
-                switch(card)
+                while(card >= copper && card <= gold)
                 {
-                    case copper:
-                        printf("copper\n");
-                        break;
-                    case silver:
-                        printf("silver\n");
-                        break;
-                    case gold:
-                        printf("gold\n");
+                    card = randomByRange(0, treasure_map - 1);
                 }
-                treasureCardCount++;
+                state->deck[idx][idx2] = card;
             }
-            state->deck[idx][idx2] = card;
-        }
-        if(treasureCardCount == 0)
-        {
-            printf(">>> NOTE: No treasure cards in deck!\n");
+
+            testAdventurerCard(state);
         }
 
-        testAdventurerCard(state);
+        // New game
+        //
+        state = newGame();
+        initializeGame(numPlayers, kingdomCards, randomSeed, state);
+
+        // Set up a random deck size from normal (10, which needs to be
+        // changed to 9 because it's 0 indexed) and MAX_DECK (which also
+        // needs to be reduced by 1)
+        //
+        deckSize = randomByRange(9, MAX_DECK - 1);
+
+        // TEST 2: random deck size up to MAX_DECK, one treasure card
+        //
+        for(idx = 0; idx < numPlayers; idx++)
+        {
+            printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+            printf(">>> TEST 2 RUN %d: deck size %d, player %d, one treasure card...\n", testRunNum, deckSize, idx);
+            printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+
+            // Test adventurer card for a player
+            //
+            state->whoseTurn = idx;
+
+            // Set up a random deck size from normal (10, which needs to be
+            // changed to 9 because it's 0 indexed) and MAX_DECK (which also
+            // needs to be reduced by 1)
+            //
+//            deckSize = randomByRange(9, MAX_DECK - 1);
+
+            state->deckCount[idx] = deckSize;
+
+            // Fill the deck with random non-treasure cards. 27
+            // cards total, so get a number from 0 to 26
+            //
+            for(idx2 = 0; idx2 < state->deckCount[idx2]; idx2++)
+            {
+                while(card >= copper && card <= gold)
+                {
+                    card = randomByRange(0, treasure_map - 1);
+                }
+                state->deck[idx][idx2] = card;
+            }
+
+            // Slip in one random treasure card at a random location in the deck
+            //
+            card = randomByRange(copper, gold);
+            idx2 = randomByRange(0, deckSize);
+            state->deck[idx][idx2] = card;
+
+            testAdventurerCard(state);
+        }
+
+        // New game
+        //
+        state = newGame();
+        initializeGame(numPlayers, kingdomCards, randomSeed, state);
+
+        deckSize = randomByRange(0, 9);
+
+        // TEST 3: tiny deck size, random cards in deck
+        //
+        for(idx = 0; idx < numPlayers; idx++)
+        {
+            printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+            printf(">>> TEST 3 RUN %d: tiny deck size %d, player %d, random cards...\n", testRunNum, deckSize, idx);
+            printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+
+            // Test adventurer card for a player
+            //
+            state->whoseTurn = idx;
+
+            //deckSize = randomByRange(0, MAX_DECK - 1);
+
+            state->deckCount[idx] = deckSize;
+
+            // Fill the deck with random non-treasure cards. 27
+            // cards total, so get a number from 0 to 26
+            //
+            treasureCardCount = 0;
+            for(idx2 = 0; idx2 < state->deckCount[idx2]; idx2++)
+            {
+                card = randomByRange(0, treasure_map - 1);
+                if(card >= copper && card <= gold)
+                {
+                    printf(">>> NOTE: Treasure card added: ");
+                    switch(card)
+                    {
+                        case copper:
+                            printf("copper\n");
+                            break;
+                        case silver:
+                            printf("silver\n");
+                            break;
+                        case gold:
+                            printf("gold\n");
+                    }
+                    treasureCardCount++;
+                }
+                state->deck[idx][idx2] = card;
+            }
+            if(treasureCardCount == 0)
+            {
+                printf(">>> NOTE: No treasure cards in deck!\n");
+            }
+
+            testAdventurerCard(state);
+        }
     }
 
 

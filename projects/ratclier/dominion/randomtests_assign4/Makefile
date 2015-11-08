@@ -20,7 +20,7 @@ tests.out: randomtestadventurer.c ../dominion.c ../rngs.c
 	echo ">>> START OF randomtestadventurer.c:" >> ../randomtestadventurer.out
 	gcc -o randomtestadventurer -g randomtestadventurer.c ../unittests_assign3/unittest_helpers.c ../dominion.c ../rngs.c $(CFLAGS)
 	./randomtestadventurer >> ../randomtestadventurer.out
-	echo ">>> COVERAGE: dominion.c after randomtestadventurer:" >> ../unittestresults.out
+	echo ">>> COVERAGE: dominion.c after randomtestadventurer:" >> ../randomtestadventurer.out
 	gcov -fb dominion.c >> ../randomtestadventurer.out
 	echo ">>> END OF randomtestadventurer.c\n" >> ../randomtestadventurer.out
 	echo "\n" >> ../randomtestadventurer.out
@@ -29,5 +29,5 @@ clean:
 	rm ../randomtestadventurer.out
 
 cleanall: 
-	rm ../randomtestadventurer.out randomtestadventurer *.gcda *.gcno *.gcov *.o
+	rm ../randomtestadventurer.out randomtestadventurer *.gcda *.gcno *.gcov
 
