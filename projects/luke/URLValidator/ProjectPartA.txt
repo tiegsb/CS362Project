@@ -5,7 +5,10 @@ Kenny Lu (luke)
 
 Explain testIsValid Function of UrlValidator test code. 
 
-This function goes through the for loop and puts together the parts from the ResultPair objects testUrlScheme, testUrlAuthority, testUrlPort, testPath, testUrlPathOptions and testUrlQuery in every possible combination.  Then converts the combination to a string to become the URL that is tested.  That URL is then passed to the isValid() function.  If all parts of the URL are valid, the function isValid() returns true otherwise it returns false.
+This function goes through the for loop and puts together the parts from the ResultPair objects testUrlScheme,
+ testUrlAuthority, testUrlPort, testPath, testUrlPathOptions and testUrlQuery in every possible combination.  
+ Then converts the combination to a string to become the URL that is tested.  That URL is then passed to the 
+ isValid() function.  If all parts of the URL are valid, the function isValid() returns true otherwise it returns false.
 
 Give how many total number of urls it is testing. Also, explain how it is building all the urls. 
 
@@ -18,17 +21,25 @@ Each of these URL parts contain:
 10 path parts
 3 query parts
 
-Each of these URL parts are being connected to each other through the testIsValid() functions first for loop.  This should result in 9*19*7*10*3 = 35,910 URLs being tested. But since the do while loop is dependent on incrementing the test parts, the first part it runs through is the scheme. Since there are only 9 schemes, once it gets to the final one, the do while loop will end. This means we may not have tested all of the possible parts of the other pairs, so we would have 19*7*10*3 = 3990 not tested. We subtract this off of 35,910 to get 31920 total URLs that have been tested.
+Each of these URL parts are being connected to each other through the testIsValid() functions first for loop.  This should
+ result in 9*19*7*10*3 = 35,910 URLs being tested. But since the do while loop is dependent on incrementing the test parts, 
+ the first part it runs through is the scheme. Since there are only 9 schemes, once it gets to the final one, the do while 
+ loop will end. This means we may not have tested all of the possible parts of the other pairs, so we would have 19*7*10*3 = 3990 
+ not tested. We subtract this off of 35,910 to get 31920 total URLs that have been tested.
 
 
-Give an example of valid url being tested and an invalid url being tested by testIsValid() method.  UrlValidator code is a direct copy paste of apache commons url validator code. The test file/code is also direct copy paste of apache commons test code.
+Give an example of valid url being tested and an invalid url being tested by testIsValid() method.  UrlValidator code is a 
+direct copy paste of apache commons url validator code. The test file/code is also direct copy paste of apache commons test code.
  
 A valid url is: http://go.au:80/test1/file?action=view
 
 An invalid url is: 3ht://www.google.com:0/../?action=view
 
-Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)? Explain in few lines. 
+Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and 
+card tests that we wrote (in terms of concepts & complexity)? Explain in few lines. 
 
-The concepts are the same, but the complexity and depth of the testing is bigger.  Both have the same goal of testing specific functionality within the code.  Where our tests have fewer pieces to verify are correct, where this real world example has many pieces to try and verify.
+The concepts are the same, but the complexity and depth of the testing is bigger.  Both have the same goal of testing specific 
+functionality within the code.  Where our tests have fewer pieces to verify are correct, where this real world example has many 
+pieces to try and verify.
 
 
