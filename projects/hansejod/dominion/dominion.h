@@ -131,7 +131,7 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 int callSmithy(int currentPlayer_, int handPos_, struct gameState *state);
 /* Cals drawCard() three times. */
 
-int callAdventurer(int currentPlayer_, int cardDrawn_, int *temphand, struct gameState *state);
+int callAdventurer(int currentPlayer_, struct gameState *state);
 /* Reset's the players hand to hold two treasure cards drawn from the deck */
 
 int callCouncilRoom(int currentPlayer_, int handPos_, struct gameState *state);

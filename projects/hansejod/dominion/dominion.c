@@ -526,7 +526,6 @@ int drawCard(int player, struct gameState *state)
 {	int count;
   int deckCounter;
   if (state->deckCount[player] <= 0){//Deck is empty
-    
     //Step 1 Shuffle the discard pile back into a deck
     int i;
     //Move discard to deck
@@ -572,6 +571,7 @@ int drawCard(int player, struct gameState *state)
     }
 
     deckCounter = state->deckCount[player];//Create holder for the deck count
+
     state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
     state->deckCount[player]--;
     state->handCount[player]++;//Increment hand count
@@ -666,7 +666,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   switch( card ) 
     {
     case adventurer:
-        callAdventurer(currentPlayer, cardDrawn, &temphand, state);
+        callAdventurer(currentPlayer, state);
     
     case council_room:
         callCouncilRoom(currentPlayer, handPos, state);
@@ -1233,10 +1233,12 @@ int callSmithy(int currentPlayer_, int handPos_, struct gameState *state_){
 }
 
 
-int callAdventurer(int currentPlayer_, int cardDrawn_, int *temphand, struct gameState *state){
+int callAdventurer(int currentPlayer_, struct gameState *state){
 
     int z=0;
     int drawntreasure=0;
+    int temphand[MAX_HAND];
+    int cardDrawn_;
     
     while(drawntreasure<=2){
         if (state->deckCount[currentPlayer_] <1){//if the deck is empty we need to shuffle discard and add to deck
