@@ -1,0 +1,42 @@
+James Taylor
+Khiem Ngyuen
+Tony Liang
+Final Project part A
+
+
+Explain testIsValid function of UrlValidator test code
+	UrlValidator is called setting up the parameters to be used for comparing parts of testObjects when iterating through the testUrl*** arrays.
+	Two assertions are made using http://www.google.com and http://www.google.com/ to testing successful instantiation of UrlValidator and its isValid() method.
+	It then iterates through  all combinations of scheme, authority, port, testpath and query and evaluates the result pairs as it builds. Urls found to be valid get printed to the console.
+	
+How many total urls is being tested.
+ 	31,920 total possible combinations are being tested. 
+	9 schemes * 19 authorities * 7 ports * 10 paths * 3 queries = 35,910 – 1 scheme(3990) = 31,920
+	There seems to be some discussion of whether the “” string in schemes gets tested. If not, that reduces the number of combinations to 31,920. 
+	This seems to be true as the testUrlScheme resultpair (“”, true) never gets printed. We tested this by changing other pairs from true to false and eclipse threw assertion errors
+	while ["", True] did not. We also tried moving "" to the first element of schemes[] and it threw errors when set to True, and passed when set to False. The loop that iterates through the schemes 
+	object appears to never reach the last element. 
+
+Explain how it is building all the urls:
+	TestIsValid evaluates each testPartsIndex for each combination ResultPair[]’s. A string is built using the ResultPair[] arrays with the true/false evaluation going into testPartIndex. 
+	If all elements of testPartIndex true, the string url is printed to the console. 
+	Combinations are built: 
+	testUrlScheme[item] + testUrlAuthority[item] + testUrlPort[item] + testPath[item] + testUrlQueries[ite] 
+
+Give example of valid and invalid Url being tested by testIsValid()
+	Valid Urls:
+	http://www.google.com:80/test1?action=view  : true validations for each component of testUrlParts
+	ftp://go.com/test1/file : true validations for components including empty options for port and queries
+	Invalid Urls:
+	http/go.com : http/ is invalid and returns false
+	http://go.a  : go.a returns false
+	
+	
+Is a real world test like URL Validator’s testIsValid() very different than the unit test and card tests for dominion?
+
+	When comparing the testing methods implemented in UrlValidator and the testing being done with our unit tests the concepts are the same. Concepts like code coverage, unit testing and 
+	testing strategies/metrics are all part of both testIsValid() and the various tests we are implementing in class. 
+	The complexity of the testing will be determined by the software being tested, its number of components and interactions and the expected range of inputs. 
+	The components of UrlValidator are fairly straightforward, as are the components of the dominion software. The interactions between components and the rules that need to be tested are much more complicated with Dominion
+	but the infinite number of potential inputs for a URLValidator are a different kind of complexity.
+	Overall complexity of testing each piece of software ultimately comes down to the chosen methodology or testing strategies implemented as well as the complexity of the software itself.
