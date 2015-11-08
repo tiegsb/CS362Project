@@ -3,21 +3,21 @@ Running unit and card tests:
 unittest1 - Testing kingdomCards
 Test passed. Kingdom cards created correctly
 File 'dominion.c'
-Lines executed:24.78% of 569
+Lines executed:2.28% of 569
 Creating 'dominion.c.gcov'
 
 -------unittest2.c:
 unittest2 - Testing updateCoins
 Test passed. Total is 5. 
 File 'dominion.c'
-Lines executed:24.78% of 569
+Lines executed:4.04% of 569
 Creating 'dominion.c.gcov'
 
 -------unittest3.c:
 unittest3 - Testing 
 Test passed. Score is 9
 File 'dominion.c'
-Lines executed:24.78% of 569
+Lines executed:8.26% of 569
 Creating 'dominion.c.gcov'
 
 -------unittest4.c:
@@ -29,7 +29,7 @@ Test passed. Game is over
 Test 3 - game is over. At least 3 supply piles are empty
 Test passed. Game is over
 File 'dominion.c'
-Lines executed:24.78% of 569
+Lines executed:9.67% of 569
 Creating 'dominion.c.gcov'
 
 -------cardtest1.c:
@@ -39,14 +39,14 @@ Test passed. Correct final number cards in hand
 Test 2. Player does not have enough cards, so needs to shuffle
 Test passed. Correct final number cards in hand
 File 'dominion.c'
-Lines executed:24.78% of 569
+Lines executed:19.51% of 569
 Creating 'dominion.c.gcov'
 
 -------cardtest2.c:
 cardtest3 - Testing smithy card
 Test failed. Wrong final number cards in hand
 File 'dominion.c'
-Lines executed:24.78% of 569
+Lines executed:22.50% of 569
 Creating 'dominion.c.gcov'
 
 -------cardtest3.c:
@@ -54,7 +54,7 @@ cardtest4 - Testing village card
 Test passed. Correct final number cards in hand
 Test failed. Wrong number of actions
 File 'dominion.c'
-Lines executed:24.78% of 569
+Lines executed:23.55% of 569
 Creating 'dominion.c.gcov'
 
 -------cardtest4.c:
