@@ -1,4 +1,4 @@
-CFLAGS = -Wall -fpic -coverage -lm
+CFLAGS = -Wall -fpic -coverage -lm -g
 CC=gcc
 
 
@@ -78,6 +78,25 @@ unittestresults.out: runTests dominion.o
 
 player: player.c interface.o
 	$(CC) -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
+
+randomtestcard: dominion.o randomtestcard.c
+	$(CC) -o randomtestcard dominion.o rngs.o randomtestcard.c ${CFLAGS}
+
+randomtestadventurer: dominion.o randomtestadventurer.c
+	$(CC) -o randomtestadventurer dominion.o rngs.o randomtestadventurer.c ${CFLAGS}
+
+randomtestcard.out: randomtestcard
+	./randomtestcard &> randomtestcard.out
+	gcov dominion.c >> randomtestcard.out
+	cat dominion.c.gcov >> randomtestcard.out
+
+randomtestadventurer.out: randomtestadventurer
+	./randomtestadventurer &> randomtestadventurer.out
+	gcov dominion.c >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out
+
+
+
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
