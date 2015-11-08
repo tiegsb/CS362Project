@@ -1,0 +1,4052 @@
+Results:
+randomtestcard.c
+
+
+--------------------------------------
+randomtestcard.c -- Tests Begin
+--------------------------------------
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 1 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 2 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 3 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 4 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 5 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 6 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 7 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 8 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 9 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 10 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 11 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 12 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 13 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 14 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 15 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 16 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 17 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 18 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 19 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 20 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 21 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 22 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 23 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 24 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 25 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 26 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 27 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 28 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 29 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 30 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 31 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 32 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 33 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 34 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 35 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 36 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 37 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 38 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 39 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 40 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 41 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 42 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 43 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 44 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 45 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 46 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 47 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 48 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 49 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 50 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 51 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 52 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 53 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 54 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 55 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 56 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 57 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 58 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 59 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 60 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 61 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 62 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 63 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 64 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 65 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 66 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 67 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 68 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 69 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 70 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 71 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 72 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 73 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 74 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 75 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 76 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 77 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 78 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 79 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 80 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 81 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 82 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 83 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 84 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 85 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 86 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 87 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 88 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 89 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 90 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 91 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 92 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 93 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 94 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 95 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 96 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 97 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 98 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 99 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 100 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 101 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 102 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 103 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 104 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 105 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 106 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 107 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 108 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 109 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 110 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 111 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 112 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 113 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 114 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 115 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 116 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 117 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 118 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 119 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 120 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 121 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 122 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 123 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 124 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 125 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 126 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 127 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 128 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 129 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 130 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 131 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 132 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 133 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 134 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 135 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 136 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 137 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 138 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 139 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 140 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 141 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 142 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 143 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 144 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 145 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 146 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 147 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 148 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 149 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 150 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 151 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 152 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 153 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 154 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 155 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 156 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 157 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 158 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 159 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 160 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 161 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 162 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 163 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 164 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 165 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 166 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 167 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 168 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 169 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 170 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 171 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 172 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 173 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 174 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 175 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 176 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 177 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 178 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 179 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 180 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 181 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 182 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 183 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 184 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 185 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 186 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 187 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 188 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 189 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 190 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 191 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 192 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 193 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 194 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 195 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 196 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 197 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 198 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 199 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 200 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 201 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 202 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 203 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 204 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 205 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 206 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 207 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 208 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 209 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 210 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 211 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 212 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 213 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 214 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 215 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 216 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 217 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 218 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 219 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 220 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 221 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 222 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 223 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 224 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 225 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 226 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 227 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 228 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 229 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 230 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 231 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 232 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 233 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 234 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 235 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 236 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 237 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 238 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 239 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 240 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 241 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 242 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 243 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 244 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 245 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 246 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 247 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 248 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 249 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 250 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 251 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 252 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 253 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 254 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 255 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 256 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 257 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 258 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 259 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 260 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 261 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 262 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 263 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 264 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 265 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 266 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 267 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 268 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 269 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 270 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 271 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 272 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 273 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 274 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 275 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 276 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 277 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 278 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 279 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 280 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 281 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 282 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 283 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 284 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 285 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 286 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 287 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 288 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 289 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 290 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 291 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 292 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 293 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 294 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 295 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 296 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 297 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 298 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 299 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 300 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 301 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 302 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 303 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 304 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 305 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 306 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 307 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 308 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 309 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 310 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 311 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 312 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 313 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 314 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 315 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 316 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 317 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 318 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 319 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 320 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 321 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 322 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 323 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 324 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 325 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 326 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 327 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 328 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 329 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 330 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 331 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 332 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 333 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 334 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 335 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 336 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 337 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 338 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 339 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 340 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 341 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 342 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 343 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 344 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 345 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 346 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 347 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 348 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 349 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 350 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 351 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 352 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 353 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 354 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 355 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 356 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 357 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 358 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 359 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 360 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 361 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 362 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 363 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 364 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 365 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 366 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 367 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 368 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 369 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 370 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 371 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 372 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 373 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 374 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 375 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 376 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 377 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 378 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 379 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 380 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 381 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 382 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 383 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 384 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 385 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 386 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 387 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 388 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 389 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 390 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 391 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 392 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 393 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 394 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 395 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 396 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 397 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 398 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 399 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 400 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 401 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 402 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 403 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 404 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 405 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 406 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 407 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 408 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 409 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 410 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 411 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 412 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 413 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 414 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 415 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 416 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 417 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 418 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 419 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 420 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 421 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 422 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 423 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 424 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 425 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 426 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 427 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 428 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 429 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 430 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 431 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 432 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 433 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 434 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 435 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 436 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 437 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 438 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 439 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 440 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 441 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 442 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 443 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 444 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 445 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 446 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 447 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 448 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 449 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 450 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 451 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 452 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 453 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 454 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 455 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 456 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 457 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 458 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 459 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 460 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 461 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 462 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 463 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 464 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 465 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 466 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 467 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 468 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 469 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 470 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 471 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 472 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 473 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 474 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 475 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 476 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 477 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 478 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 479 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 480 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 481 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 482 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 483 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 484 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 485 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 486 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 487 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 488 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 489 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 490 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 491 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 492 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 493 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 494 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 495 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 496 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 497 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 498 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 499 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 500 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 501 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 502 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 503 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 504 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 505 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 506 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 507 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 508 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 509 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 510 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 511 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 512 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 513 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 514 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 515 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 516 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 517 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 518 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 519 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 520 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 521 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 522 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 523 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 524 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 525 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 526 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 527 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 528 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 529 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 530 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 531 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 532 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 533 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 534 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 535 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 536 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 537 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 538 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 539 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 540 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 541 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 542 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 543 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 544 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 545 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 546 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 547 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 548 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 549 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 550 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 551 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 552 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 553 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 554 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 555 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 556 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 557 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 558 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 559 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 560 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 561 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 562 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 563 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 564 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 565 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 566 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 567 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 568 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 569 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 570 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 571 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 572 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 573 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 574 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 575 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 576 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 577 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 578 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 579 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 580 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 581 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 582 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 583 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 584 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 585 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 586 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 587 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 588 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 589 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 590 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 591 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 592 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 593 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 594 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 595 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 596 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 597 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 598 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 599 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 600 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 601 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 602 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 603 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 604 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 605 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 606 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 607 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 608 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 609 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 610 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 611 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 612 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 613 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 614 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 615 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 616 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 617 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 618 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 619 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 620 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 621 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 622 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 623 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 624 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 625 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 626 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 627 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 628 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 629 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 630 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 631 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 632 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 633 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 634 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 635 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 636 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 637 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 638 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 639 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 640 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 641 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 642 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 643 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 644 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 645 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 646 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 647 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 648 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 649 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 650 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 651 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 652 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 653 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 654 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 655 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 656 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 657 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 658 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 659 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 660 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 661 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 662 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 663 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 664 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 665 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 666 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 667 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 668 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 669 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 670 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 671 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 672 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 673 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 674 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 675 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 676 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 677 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 678 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 679 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 680 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 681 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 682 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 683 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 684 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 685 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 686 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 687 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 688 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 689 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 690 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 691 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 692 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 693 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 694 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 695 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 696 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 697 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 698 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 699 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 700 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 701 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 702 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 703 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 704 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 705 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 706 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 707 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 708 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 709 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 710 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 711 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 712 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 713 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 714 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 715 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 716 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 717 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 718 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 719 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 720 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 721 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 722 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 723 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 724 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 725 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 726 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 727 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 728 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 729 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 730 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 731 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 732 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 733 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 734 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 735 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 736 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 737 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 738 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 739 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 740 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 741 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 742 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 743 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 744 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 745 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 746 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 747 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 748 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 749 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 750 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 751 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 752 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 753 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 754 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 755 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 756 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 757 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 758 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 759 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 760 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 761 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 762 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 763 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 764 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 765 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 766 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 767 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 768 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 769 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 770 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 771 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 772 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 773 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 774 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 775 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 776 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 777 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 778 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 779 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 780 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 781 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 782 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 783 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 784 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 785 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 786 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 787 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 788 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 789 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 790 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 791 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 792 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 793 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 794 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 795 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 796 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 797 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 798 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 799 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 800 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 801 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 802 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 803 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 804 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 805 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 806 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 807 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 808 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 809 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 810 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 811 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 812 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 813 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 814 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 815 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 816 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 817 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 818 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 819 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 820 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 821 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 822 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 823 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 824 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 825 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 826 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 827 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 828 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 829 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 830 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 831 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 832 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 833 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 834 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 835 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 836 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 837 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 838 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 839 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 840 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 841 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 842 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 843 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 844 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 845 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 846 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 847 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 848 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 849 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 850 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 851 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 852 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 853 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 854 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 855 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 856 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 857 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 858 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 859 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 860 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 861 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 862 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 863 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 864 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 865 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 866 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 867 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 868 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 869 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 870 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 871 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 872 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 873 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 874 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 875 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 876 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 877 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 878 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 879 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 880 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 881 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 882 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 883 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 884 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 885 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 886 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 887 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 888 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 889 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 890 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 891 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 892 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 893 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 894 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 895 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 896 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 897 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 898 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 899 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 900 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 901 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 902 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 903 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 904 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 905 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 906 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 907 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 908 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 909 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 910 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 911 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 912 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 913 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 914 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 915 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 916 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 917 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 918 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 919 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 920 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 921 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 922 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 923 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 924 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 925 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 926 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 927 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 928 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 929 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 930 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 931 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 932 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 933 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 934 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 935 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 936 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 937 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 938 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 939 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 940 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 941 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 942 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 943 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 944 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 945 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 946 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 947 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 948 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 949 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 950 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 951 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 952 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 953 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 954 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 955 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 956 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 957 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 958 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 959 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 960 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 961 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 962 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 963 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 964 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 965 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 966 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 967 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 968 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 969 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 970 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 971 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 972 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 973 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 974 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 975 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 976 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 977 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 978 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 979 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 980 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 981 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 982 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 983 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 984 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 985 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 986 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 987 out of 1000 ^^^^^^^
+
+-- FAIL: Smithy card not discarded.
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 988 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 989 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 990 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 991 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 992 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 993 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 994 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 995 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 996 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 997 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 998 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 999 out of 1000 ^^^^^^^
+
+-- FAIL: Too MANY cards drawn.
+---- Target: 3 cards. Actual: 4 cards.
+^^^^^^^ Test Number 1000 out of 1000 ^^^^^^^
+
+
+****************************************
+  ---- TEST FAILURE STATUS REPORT ----
+  ----        Smithy Card         ----
+****************************************
+Total Test Failures:      1000/1000
+Discard Card Errors:      29
+Draw Card Errors:         1000
+Played Card Errors:       0
+****************************************
+
+File 'dominion.c'
+Lines executed:20.45% of 582
+dominion.c:creating 'dominion.c.gcov'
+

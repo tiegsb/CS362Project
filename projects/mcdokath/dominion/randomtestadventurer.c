@@ -7,6 +7,8 @@
 #include "dominion_helpers.h"
 #include "rngs.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include <assert.h>
 
 // how many times the tester should run
@@ -114,17 +116,124 @@ int testInitializeGame(int numPlayers, int kingdomCards[10], struct gameState *s
 }
 
 int generateNumPlayers() {
-  /* generate random numbers of players */
-  int numPlayers = 2;
+  /* generate random numbers of players from 2 to 4 */
+  int numPlayers = rand() % 2 + 2;
   
   /* check numPlayers within limits */
-  assert(numPlayers >= 2 && numPlayers <= MAX_PLAYERS)
+  assert(numPlayers >= 2 && numPlayers <= MAX_PLAYERS);
   
   return numPlayers;
 }
 
-int consistencyCheck(int numPlayers, int kingdomCards[10], struct gameState *currentState, struct gameState *saveState) {
+int choosePlayer(int numPlayers) {
+  int player = -1;
+  
+  if (numPlayers == 2) {
+    player = rand() % 1;
+  }
+  else if (numPlayers == 3) {
+    player = rand() % 2;
+  }
+  else if (numPlayers == 4) {
+    player = rand() % 3;
+  }
+  else {
+    assert(numPlayers >= 2 && numPlayers <= MAX_PLAYERS);
+  }
+  
+  return player;
+}
+
+int generateHand(struct gameState *state, int player, int maxHandCount) {
+  int i;
+  
+  /* randomly generate all cards in hand */
+  for (i = 0; i < maxHandCount; i++) {
+    int cardNum = rand() % 16;
+    switch(cardNum) {
+      case 0:
+	state->hand[player][i] = adventurer;
+	break;
+      case 1:
+	state->hand[player][i] = council_room;
+	break;
+      case 2:
+	state->hand[player][i] = feast;
+	break;
+      case 3:
+	state->hand[player][i] = gardens;
+	break;
+      case 4:
+	state->hand[player][i] = mine;
+	break;
+      case 5:
+	state->hand[player][i] = remodel;
+	break;
+      case 6:
+	state->hand[player][i] = smithy;
+	break;
+      case 7:
+	state->hand[player][i] = village;
+	break;
+      case 8:
+	state->hand[player][i] = baron;
+	break;
+      case 9:
+	state->hand[player][i] = great_hall;
+	break;
+      case 10:
+	state->hand[player][i] = copper;
+	break;
+      case 11:
+	state->hand[player][i] = silver;
+	break;
+      case 12:
+	state->hand[player][i] = gold;
+	break;
+      case 13:
+	state->hand[player][i] = estate;
+	break;
+      case 14:
+	state->hand[player][i] = duchy;
+	break;
+      case 15:
+	state->hand[player][i] = province;
+	break;
+      default:
+	assert(cardNum >= 0 && cardNum <= 15);
+	return -1;
+    }
+ }
+ 
+ return 0;
+}
+
+int checkAdventurer(struct gameState *state, int player, int maxHandCount, int *adventurerPos) {
+  int i;
+  
+  /* see if player has adventurer card */
+  for (i = 0; i < maxHandCount; i++) {
+   if (state->hand[player][i] == adventurer) {
+     *adventurerPos = i;
+     return 0;
+   }
+  }
+  
+  /* return 1 if no adventurer card found */
+  return 1;
+}
+
+void insertAdventurer(struct gameState *state, int player, int maxHandCount, int *adventurerPos) {
+ int handPos = rand() % maxHandCount;
+
+  /* insert adventurer card into random hand position */
+  state->hand[player][handPos] = adventurer;
+  *adventurerPos = handPos;
+}
+
+int consistencyCheck(int numPlayers, int testedPlayer, int kingdomCards[10], struct gameState *currentState, struct gameState *saveState) {
   printf("numPlayers: %d\n", numPlayers);
+  printf("tested Player: %d\n", testedPlayer);
   return 0;
 }
 
@@ -132,29 +241,46 @@ int main() {
   
   /* set up game state */
   int i;
-  int handCount;
+  int adventurerPos = -1;
   int k[10] = {adventurer, council_room, feast, gardens, mine, 
     remodel, smithy, village, baron, great_hall};
   struct gameState G;
+  struct gameState Save;
   int maxHandCount = 5;
   
+  /* set random seed */
+  time_t t;
+  srand((unsigned) time(&t));
+  
   /* randomly generate amount of players */
-  int numPlayers;
+  int numPlayers = generateNumPlayers();
   
   /* initialize decks */
   testInitializeGame(numPlayers, k, &G);
   
   /* randomly generate which player to test */
-  int testedPlayer;
+  int testedPlayer = choosePlayer(numPlayers);
+  
+  /* set the turn to that player */
+  G.whoseTurn = testedPlayer;
   
   /* randomly generate a hand */
+  int result = generateHand(&G, testedPlayer, maxHandCount);
+  assert(result == 0);
   
   /* randomly include adventurer card in one of the hand positions */
+  if (checkAdventurer(&G, testedPlayer, maxHandCount, &adventurerPos) != 0) {
+    insertAdventurer(&G, testedPlayer, maxHandCount, &adventurerPos);
+  }
+  
+  /* save game state */
   
   /* play adventurer card */
+  result = playCard(adventurerPos, -1, -1, -1, &G);
+  assert(result == 0);
   
   /* check consistency */
-  int testState = consistencyCheck(numPlayers, k, &G, &Save);
+  int testState = consistencyCheck(numPlayers, testedPlayer, k, &G, &Save);
   
   /* report */
   if (testState == 0) {

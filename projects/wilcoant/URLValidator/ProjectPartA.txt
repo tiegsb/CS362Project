@@ -107,9 +107,9 @@ testIsValid();
     I don't feel that this is very "different" from our tests in terms
     of complexity as far as logic is concerned.  If we refer to 
     complexity in terms of asymptotic analysis, i'd venture to guess
-    most tests run minimally in polynomial complexity and likely factorial
-    as is the intended case here.  I'm not certain that can be avoided
-    if we intend to make a robust test suite.  
+    most tests run minimally in polynomial complexity and likely
+    exponential as is the intended case here.  I'm not certain that can
+    be avoided if we intend to make a robust test suite.  
         I would say that in terms of the game state for our cards, when
     we check how each card has affected the gamestate, our tests become
     a bit more complex. This code is just concatenating strings and 
