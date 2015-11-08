@@ -25,7 +25,7 @@
 #include "dominion_helpers.h"
 //#include "rngs.h"
 
-#define NUM_TESTS 2000; // number of tests to run
+#define NUM_TESTS 2000 // number of tests to run
 
 
 
@@ -85,10 +85,10 @@ int main(int argc, char *argv[])
         // testSmithyEffect(player, &testState);
     }
 
-    printf("%d tests run. All tests passed unless noted above.", i);
+    printf("%d tests run. All tests passed unless noted above.\n", i);
 
     exit(0);
-
+}
 
 
 
@@ -112,4 +112,4 @@ int randInt(int min, int max)
     //     printf("Smithy card: FAIL\n");
     // }
     // return 0;
-}
+//}
