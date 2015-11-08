@@ -20,7 +20,6 @@
 #include <stdio.h>
 #include <stdlib.h>    // for rand and srand
 #include <time.h>      // for time
-// #include <math.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
 //#include "rngs.h"
@@ -40,6 +39,17 @@
  *****************************************************************************/
 int randInt(int min, int max);
 
+
+
+/*****************************************************************************
+ ** Function:         testSmithyEffect()
+ ** Description:      This function 
+ ** Parameters:       
+ ** Pre-Conditions:   
+ ** Post-Conditions:  
+ **
+ *****************************************************************************/
+int testSmithyEffect(int playerNumber, gameState &testState);
 
 
 
@@ -73,21 +83,31 @@ int main(int argc, char *argv[])
         testState.discardCount[playerNumber] = randInt(0, MAX_DECK);
         // random number of cards in current player's hand
         testState.handCount[playerNumber] = randInt(0, MAX_HAND);
-        // playerNumber = floor(Random() * 2); // can this go to 4 players?
-        // // random number of cards in current player's deck
-        // testState.deckCount[playerNumber] = floor(Random() * MAX_DECK);
-        // // random number of cards in current player's discard pile
-        // testState.discardCount[playerNumber] = floor(Random() * MAX_DECK);
-        // // random number of cards in current player's hand
-        // testState.handCount[playerNumber] = floor(Random() * MAX_HAND);
 
         // call test oracle function and pass it these parameters
-        // testSmithyEffect(player, &testState);
+        int retVal = testSmithyEffect(playerNumber, &testState);
+
+        // check return value for failure / crash
+        if (retVal < 0)
+        {
+            printf("Test #%d Smithy card: FAIL\n", i);
+        }
     }
 
     printf("%d tests run. All tests passed unless noted above.\n", i);
 
     exit(0);
+}
+
+
+
+int testSmithyEffect(int playerNumber, gameState &testState)
+{
+    // call smithyEffect function
+    //smithyEffect
+
+    // return zero if smithyEffect did not crash
+    return 0;
 }
 
 
@@ -99,17 +119,3 @@ int randInt(int min, int max)
     // + min sets the bottom of the range
     return rand() % (max - min + 1) + min;
 }
-
-
-
-    // int retVal = smithyEffect(0, &testState, 0);
-    // if (retVal == 0)
-    // {
-    //     printf("Smithy card: PASS\n");
-    // }
-    // else
-    // {
-    //     printf("Smithy card: FAIL\n");
-    // }
-    // return 0;
-//}
