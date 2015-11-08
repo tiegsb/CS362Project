@@ -35,13 +35,15 @@ int main() {
 	int initDeckCount;	// initial number of deck count
 	int expectedDkCnt;	// the expected deck count based on amount of village card drawn and played
 	int actualDeckCnt;	// after test has been run, check the deck count
+	int coinCount1, coinCount2;		// check amount of coin in game
 	
 	/// CHANGE RANDOM ITERATION BELOW
 	
 	// keeping random test simple with a max of three cards. We can change this to get a higher value
 	int randDraw = rand()%3 + 1;	// initialize the random number of times adventurer will draw
-
+	
 	/// CHANGE RANDOM ITERATION ABOVE
+	
 	
     // initialize game state
 	printf ("TESTING adventurer():\n");
@@ -51,6 +53,8 @@ int main() {
 	// CHECK: deck count
 	// get initial deck count, calculate expected, then get actual at the end
 	initDeckCount = G.deckCount[0];
+	coinCount1 = supplyCount(4, &G);
+	coinCount1 = G.coins;	// reorder this if wanting to test supplyCount
 	
 	// calculate the expected deck count
 	
@@ -83,6 +87,9 @@ int main() {
 	
 	//gainCard(estate, &G, 2, currentPlayer);	// testing if the check below works. uncommenting gainCard leads to fail. (good)
 	
+	coinCount2 = supplyCount(4, &G);
+	coinCount2 = G.coins;	// reorder this if wanting to test supplyCount
+	
 	// CHECK: last two card in hands- are they treasures?
 	if(handCard(numHandCards(&G)-1, &G) < 7 && handCard(numHandCards(&G)-1, &G) > 3 && handCard(numHandCards(&G)-2, &G) < 7 && handCard(numHandCards(&G)-2, &G) > 3){
 					printf("TEST RESULT: PASSED- last two card in hand are treasures.\n");
@@ -90,6 +97,18 @@ int main() {
 	else{
 		printf("TEST RESULT: FAILED- at least one of last two card in hand are NOT treasures.\n");
 	}
+	
+	// CHECK: Status of coin.  Should go hand-in-hand with checking treasure cards
+	// This results in less coverage //
+	//printf("TEST RESULT: CHECK- Copper supply- Initial vs End: %d\t%d\n", coinCount1, coinCount2);
+	
+	if(coinCount1 + 2*randDraw == coinCount2){
+		printf("TEST RESULT: PASSED- Adventurer provided expected coins: %d\t(Actual: %d)\n", coinCount1 + 2*randDraw, coinCount2);
+	}
+	else{
+		printf("TEST RESULT: FAILED- Adventurer did not provide expected card (or you do not have enough coins). Expected: %d\tActual: %d\n", coinCount1 + 2*randDraw, coinCount2);
+	}
+	
 	
     return 0;
 }

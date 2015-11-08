@@ -21,12 +21,12 @@
 
 int main(){
     srand(time(NULL));
-    int gameSeed = rand() % 1000 + 1;
+    int gameSeed = rand();
     int p;
-    int numPlayer = 2;
+    int numPlayer = 4;
     int i = 0, n;
     int error1 = 0, error2 = 0;
-    int randomIt = (rand() % 100) + 1001;  
+    int randomIt = (rand() % 10000) + 20001;  
     int k[10] = {adventurer, council_room, feast, gardens, mine,
                 remodel, smithy, village, baron, great_hall};
     int iteration = 0;
@@ -36,13 +36,20 @@ int main(){
     printf("\nStarting random testing for Smithy card effects...\n");
 
     for(n = 0; n < randomIt; n++){
-    
-        p = floor(Random() * 2);
+        int randNum = rand() %3;
+        p = floor(Random() * 4);
 
         memset(&G, 23, sizeof(struct gameState));   //clear game state
         initializeGame(numPlayer, k, gameSeed, &G); //initialize game
 
-        G.deckCount[p] = floor(Random() * MAX_DECK);
+        /*Randomly choose a deckcount from 0, -1, to MAX_DECK to induce shuffling*/
+        if(randNum == 0){
+            G.deckCount[p] = 0;
+        } else if(randNum == 1) {
+            G.deckCount[p] = -1;
+        } else {
+            G.deckCount[p] = floor(Random() * MAX_DECK);
+        }
         G.discardCount[p] = floor(Random() * MAX_DECK);
         G.playedCardCount = floor(Random() * MAX_DECK);
 

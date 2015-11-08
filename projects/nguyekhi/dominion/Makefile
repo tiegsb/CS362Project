@@ -103,5 +103,32 @@ unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c
 	gcov dominion.c -b >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
 
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -fprofile-arcs -ftest-coverage -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
+	echo "Result for running random test on CEadventurer():" > randomtestadventurer.out
+	
+	echo "randomtestadventurer.c" >> randomtestadventurer.out
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
+	randomtestadventurer >> randomtestadventurer.out
+	gcov dominion.c -b >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out
+	
+randomtestcard: randomtestcard.c dominion.o rngs.o
+	gcc -fprofile-arcs -ftest-coverage -o randomtestcard randomtestcard.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestcard.out: randomtestcard.c dominion.o rngs.o
+	echo "Result for running random test on CEsteward():" > randomtestcard.out
+	
+	echo "randomtestcard.c" >> randomtestcard.out
+	gcc -o randomtestcard randomtestcard.c -g dominion.c rngs.o $(CFLAGS)
+	randomtestcard >> randomtestcard.out
+	gcov dominion.c -b >> randomtestcard.out
+	cat dominion.c.gcov >> randomtestcard.out
+
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe
+	cardtest1.exe cardtest1 cardtest2.exe cardtest2 cardtest3.exe cardtest3 cardtest4.exe cardtest4
+	unittest1.exe unittest1 unittest2.exe unittest2 unittest3.exe unittest3 unittest4.exe unittest4
+	*.gcov *.gcda *.gcno *.so

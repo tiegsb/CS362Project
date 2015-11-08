@@ -56,6 +56,14 @@ cardtest3: cardtest3.c rngs.o
 cardtest4: cardtest4.c rngs.o
 	gcc -o cardtest4 -g cardtest4.c dominion.c rngs.c $(CFLAGS)
 
+#random tests
+
+randomtestadventurer: randomtestadventurer.c rngs.o
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.c rngs.c $(CFLAGS)
+
+randomtestcard: randomtestcard.c rngs.o
+	gcc -o randomtestcard -g randomtestcard.c dominion.c rngs.c $(CFLAGS)
+
 #unittestresults.out
 
 #unittestresults.out: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 dominion.o rngs.o
@@ -103,10 +111,27 @@ unittestresults.out: unittest1.c dominion.o rngs.o
 	gcov -b dominion.c >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
 
+#random tests out
+#adventurer
+randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
+	echo "Random Card Test: Adventurer:" >> randomtestadventurer.out
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.c rngs.c $(CFLAGS)
+	./randomtestadventurer >> randomtestadventurer.out
+	gcov -b dominion.c >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out
+
+#random card (village)
+randomtestcard.out: randomtestcard.c dominion.o rngs.o
+	echo "Random Card Test: Adventurer:" >> randomtestcard.out
+	gcc -o randomtestcard -g randomtestcard.c dominion.c rngs.c $(CFLAGS)
+	./randomtestcard >> randomtestcard.out
+	gcov -b dominion.c >> randomtestcard.out
+	cat dominion.c.gcov >> randomtestcard.out
+
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so testDrawCard badTestDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 unittestresults.out
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so testDrawCard badTestDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 unittestresults.out randomtestadventurer.out randomtestadventurer randomtestcard randomtestcard.out

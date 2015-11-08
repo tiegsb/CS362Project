@@ -76,6 +76,14 @@ randomtestcard.out: dominion.c rngs.o interface.o
 	randomtestcard >> randomtestcard.out
 	gcov -b randomtestcard.c >> randomtestcard.out
 	gcov -b dominion.c >> randomtestcard.out
+	
+randomtestadventurer.out: dominion.c rngs.o interface.o
+	echo "Result for random test card:" > randomtestcard.out
+	
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.c rngs.o interface.o $(CFLAGS)
+	randomtestadventurer >> randomtestadventurer.out
+	gcov -b randomtestadventurer.c >> randomtestadventurer.out
+	gcov -b dominion.c >> randomtestadventurer.out	
 
 testAll: dominion.o testSuite.c
 	gcc -o testSuite testSuite.c -g  dominion.o rngs.o $(CFLAGS)

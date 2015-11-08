@@ -1,0 +1,49 @@
+Project. Part A.
+Group members: 
+	Rob Tan
+	Hampus Hammarlund
+	Joe Sibaila
+For Part a, You will be provided a correctly working version of URL Validator. Go through instructor video of explaining URL Validation testing.
+
+-- Explain testIsValid Function of UrlValidator test code
+The testIsValid() checks variable testUrlParts using all settings allowed by UrlValidator.ALLOW_ALL_SCHEMES, calling testIsValid(…).
+ 
+In the testIsValid(…) it checks www.google.com and www.google.com/.
+Then it uses a loop to do the following in order:
+        	Form The full URL link
+        	Test the URL link
+Printing the current URL if it works if variable printStatus is true
+For all URL link combinations allowed.
+
+-- Give how many total number of urls it is testing.
+4/9 prefixes
+6/19 domains
+5/7 ports
+6/10 paths
+9/15 path options
+3/3 queries
+ 
+19,440 URL tests are made.
+There are 538,650 testing possibilities
+
+-- Also, explain how it is building all the urls.
+It forms the base URLs using six arrays, each representing a different aspect of a URL.
+One array is for the ‘prefix’ or scheme.
+One array is for the domains.
+One array for the paths
+One array for the path options
+One array for queries
+Each array contains a string and a Boolean. If the Boolean is true, then it will check for that part of the URL. If it is false, it does not.
+In testIsValid(…) , it builds the URLs from the arrays. If it is to be tested, the said ‘string’ will be added if the corresponding Boolean is true.
+incrementTestPartsIndex(…) keeps track of all the URLs made and sets the next URL link combinations from the arrays.
+
+-- Give an example of valid url being tested and an invalid url being tested by testIsValid() method.  
+One valid URL being tested is “htttp://www.google.com:80/test1?action=view”
+One invalid URL being tested is http://www.google.com:80/$23/file”
+        	“$23/file” path options failed
+        	“/test1//file” path options also failed
+
+-- Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)?  Explain in few lines.
+I believe it is. The scope is completely different (at least for mine). Also, testing validity is different from testing to check if something is acting as expected.
+Submit a file called ProjectPartA.txt with your writeup. You can submit the file under the folder URLValidator within on ONID directory. (How to setup this folder will be explained soon.)
+
