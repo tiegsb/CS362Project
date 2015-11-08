@@ -14,6 +14,8 @@
 // (check - Doesn't recycle + reshuffle discard pile if deck empty,
 //  if so could have less)
 
+// adapted from examples in week 3 lecture "How to Write a Simple Random Tester"
+
 #include <stdio.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
