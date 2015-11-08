@@ -253,7 +253,7 @@ int consistencyCheck(int numPlayers, int testedPlayer, int kingdomCards[10], str
     printf("----------\nERROR: handCount\n");
     return -1;
   }
-  if (!(currentState->deckCount[testedPlayer] == saveState->deckCount[testedPlayer] - 1)) {
+  if (!(currentState->deckCount[testedPlayer] == saveState->deckCount[testedPlayer] - 2)) {
     printf("----------\nERROR: deckCount\n");
     return -1;
   }
