@@ -3,6 +3,10 @@
 
 // test / assert against state of game before and after smithy is played
 
+// hand will have 3 more cards in post than in pre
+
+// discard pile will either have 1 more card in post than in pre
+// or will have 1 card (in case of empty deck during draw)
 
 #include <stdio.h>
 #include "dominion.h"
