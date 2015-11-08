@@ -49,7 +49,7 @@ int randInt(int min, int max);
  ** Post-Conditions:  
  **
  *****************************************************************************/
-int testSmithyEffect(int playerNumber, gameState &testState);
+int testSmithyEffect(int playerNumber, struct gameState *testState);
 
 
 
@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
 
 
 
-int testSmithyEffect(int playerNumber, gameState &testState)
+int testSmithyEffect(int playerNumber, struct gameState *post)
 {
     // call smithyEffect function
     //smithyEffect
