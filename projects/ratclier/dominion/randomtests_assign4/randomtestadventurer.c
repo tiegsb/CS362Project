@@ -17,7 +17,7 @@
 #include "dominion_helpers.h"
 #include "unittest_helpers.h"
 
-#define testRuns 13000
+#define testRuns 30000
 
 // Test the adventurer card
 //
@@ -125,19 +125,19 @@ int testAdventurerCard(struct gameState *state)
     }
     printf("\n");
 
+    // Free up origState pointer
+    //
+    free(origState);
+
     return 0;
 }
 
 
 int main(int argc, char *argv[])
 {
-    // Things to randomize:
-    // - number of players (numPlayers, 2-MAX_PLAYERS)
-    // - current player (state->whoseTurn)
-    // - kingdom cards?
     int numPlayers = 2;         // number of players
     int randomSeed = 1000;      // random seed for the game
-    struct gameState *state;    // holds the updated game state
+    //struct gameState *state;    // holds the updated game state
     int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
     int idx = 0;                // loop iterator
     int idx2 = 0;               // loop iterator, misc value holder
@@ -146,21 +146,48 @@ int main(int argc, char *argv[])
     int deckSize = 0;
     int testRunNum = 0;
 
-    // Randomize
+    // Seed the randomizer
     //
     srand(time(NULL));
     
     for(testRunNum = 1; testRunNum <= testRuns; testRunNum++)
     {
-        // Generate a random number of players between minPlayers and MAX_PLAYERS
         //
-        //numPlayers = randomByRange(minPlayers, MAX_PLAYERS);
-        //numPlayers = randomByRange(minPlayers, 3);
-
-        //currentPlayer = randomByRange(0, numPlayers - 1);
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // >>> TEST 0: no adjustments, just a straight run-through...
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        //
 
         // New game
         //
+        struct gameState *state;    // holds the updated game state
+        state = newGame();
+        initializeGame(numPlayers, kingdomCards, randomSeed, state);
+
+        printf("\n");
+
+        for(idx = 0; idx < numPlayers; idx++)
+        {
+            printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+            printf(">>> TEST 0 RUN %d: no adjustments, player %d, just a straight run-through...\n", testRunNum, idx);
+            printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+
+            // Set the current player
+            //
+            state->whoseTurn = idx;
+
+            testAdventurerCard(state);
+        }
+
+        //
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // >>> TEST 1: random deck size, no treasure cards...
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        //
+
+        // New game
+        //
+        free(state);
         state = newGame();
         initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
@@ -172,24 +199,18 @@ int main(int argc, char *argv[])
 
         printf("\n");
 
-        // TEST 1: random deck size up to MAX_DECK, no treasure cards
-        //
         for(idx = 0; idx < numPlayers; idx++)
         {
             printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
             printf(">>> TEST 1 RUN %d: deck size %d, player %d, no treasure cards...\n", testRunNum, deckSize, idx);
             printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
 
-            // Test adventurer card for a player
+            // Set the current player
             //
             state->whoseTurn = idx;
 
-            // Set up a random deck size from normal (10, which needs to be
-            // changed to 9 because it's 0 indexed) and MAX_DECK (which also
-            // needs to be reduced by 1)
+            // Set the new deck size
             //
-//            deckSize = randomByRange(9, MAX_DECK - 1);
-
             state->deckCount[idx] = deckSize;
 
             // Fill the deck with random non-treasure cards. 27
@@ -207,8 +228,15 @@ int main(int argc, char *argv[])
             testAdventurerCard(state);
         }
 
+        //
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // >>> TEST 2: random deck size, only one treasure card...
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        //
+
         // New game
         //
+        free(state);
         state = newGame();
         initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
@@ -226,16 +254,12 @@ int main(int argc, char *argv[])
             printf(">>> TEST 2 RUN %d: deck size %d, player %d, one treasure card...\n", testRunNum, deckSize, idx);
             printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
 
-            // Test adventurer card for a player
+            // Set the current player
             //
             state->whoseTurn = idx;
 
-            // Set up a random deck size from normal (10, which needs to be
-            // changed to 9 because it's 0 indexed) and MAX_DECK (which also
-            // needs to be reduced by 1)
+            // Set the new deck size
             //
-//            deckSize = randomByRange(9, MAX_DECK - 1);
-
             state->deckCount[idx] = deckSize;
 
             // Fill the deck with random non-treasure cards. 27
@@ -259,8 +283,15 @@ int main(int argc, char *argv[])
             testAdventurerCard(state);
         }
 
+        //
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // >>> TEST 3: random tiny deck size, random cards...
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        //
+        
         // New game
         //
+        free(state);
         state = newGame();
         initializeGame(numPlayers, kingdomCards, randomSeed, state);
 
@@ -274,12 +305,12 @@ int main(int argc, char *argv[])
             printf(">>> TEST 3 RUN %d: tiny deck size %d, player %d, random cards...\n", testRunNum, deckSize, idx);
             printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
 
-            // Test adventurer card for a player
+            // Set the current player
             //
             state->whoseTurn = idx;
 
-            //deckSize = randomByRange(0, MAX_DECK - 1);
-
+            // Set the new deck size
+            //
             state->deckCount[idx] = deckSize;
 
             // Fill the deck with random non-treasure cards. 27
@@ -314,10 +345,11 @@ int main(int argc, char *argv[])
 
             testAdventurerCard(state);
         }
+
+        // We still have a state pointer to free up...
+        //
+        free(state);
     }
-
-
-
 
     return 0;
 }
