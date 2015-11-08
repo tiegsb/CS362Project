@@ -26,7 +26,7 @@ int main()
 
 	for (i = 0; i < players; i++)
 	{	
-		printf("------------------------------");
+		printf("------------------------------\n");
 		printf("Player %d | Cards in hand: %d\n", i, numHandCards(&testState));
 		printf("Number of played cards: %d\n", playedCount);
 		for (c = 0; c < testState.handCount[i]; c++)
@@ -52,7 +52,7 @@ int main()
 		k = testState.playedCardCount;
 		printf("Cards in hand: %d\n", i, numHandCards(&testState));
 		printf("Number of played cards: %d\n", playedCount);
-		printf("------------------------------");
+		printf("------------------------------\n");
 		printf("\n");
 	}
 	return 0;

@@ -34,7 +34,7 @@ void test_card_adventurer(){
 	// need empty to check adventurer's shuffle function
 	int deck_p1[MAX_DECK] = {copper, silver, gold};
 	int deck_p2[MAX_DECK] = {copper, silver, gold}; 
-	int deck_empty[MAX_DECK] = {};
+	//int deck_empty[MAX_DECK] = {};
 	//copy hands to gamestate
 	G.handCount[0] = 3;
 	G.discardCount[0] = 3;

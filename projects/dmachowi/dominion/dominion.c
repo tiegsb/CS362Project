@@ -530,6 +530,7 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state) {
 int drawCard(int player, struct gameState *state)
 {	int count;
     int deckCounter;
+    //printf("THIS IS PLAYER %d\n",player );
     if (state->deckCount[player] <= 0){//Deck is empty
         
         //Step 1 Shuffle the discard pile back into a deck
@@ -570,7 +571,8 @@ int drawCard(int player, struct gameState *state)
     }
     
     else{
-        int count = state->handCount[player];//Get current hand count for player
+        //int 
+        count = state->handCount[player];//Get current hand count for player
         int deckCounter;
         if (DEBUG){//Debug statements
             printf("Current hand count: %d\n", count);
@@ -648,41 +650,89 @@ int getCost(int cardNumber)
     return -1;
 }
 
+// void playAdventurer(struct gameState *state) {
+//     //this is mine
+//     int currentPlayer = whoseTurn(state);
+//     int drawntreasure = 0;
+//     int cardDrawn, z = 1;
+//     int temphand[MAX_HAND];
+    
+//     while(drawntreasure<2){
+//         if (state->deckCount[currentPlayer] <=1){//if the deck is empty we need to shuffle discard and add to deck
+//             shuffle(currentPlayer, state);
+//         }
+        
+//         drawCard(currentPlayer, state);
+//         cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+//         currentPlayer++;
+        
+//         if ((cardDrawn = copper) | (cardDrawn = silver) | (cardDrawn = gold))
+//             drawntreasure++;
+//         else{
+//             z++;
+//             temphand[z]=cardDrawn;
+//             state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+//         }
+//     }
+    
+//     while(z-1>=0){
+//         state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+//         z=z-1;
+        
+//     }
+// }
+
 void playAdventurer(struct gameState *state) {
-    
     int currentPlayer = whoseTurn(state);
-    int drawntreasure, cardDrawn, z = 1;
+    int drawntreasure = 0;
+    int cardDrawn, z = 1;
     int temphand[MAX_HAND];
-    
-    while(drawntreasure<2){
-        if (state->deckCount[currentPlayer] <= 1){//if the deck is empty we need to shuffle discard and add to deck
-            shuffle(currentPlayer, state);
+
+    //printf("inits ok\n");
+    while(drawntreasure < 2){
+        //printf("enter while\n");
+        if (state->deckCount[currentPlayer] <=1){//if the deck is empty we need to shuffle discard and add to deck
+          shuffle(currentPlayer, state);
+          //printf("deck was less tahn 0, first if called\n");
         }
-        
+        //printf("CURRENT PLAYER IS %d\n", currentPlayer );
         drawCard(currentPlayer, state);
+        //printf("drawcard called\n");
         cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-        currentPlayer++;
-        
-        if ((cardDrawn = copper) | (cardDrawn = silver) | (cardDrawn = gold))
-            drawntreasure++;
-        else{
-            z++;
-            temphand[z]=cardDrawn;
+        if ((cardDrawn = copper) | (cardDrawn = silver) | (cardDrawn = gold)){
+                  drawntreasure++;
+          //printf("treasure drawn!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \n");
+        } else {
+            //printf("no treasure drawn\n");
+            temphand[z] = cardDrawn;
             state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+            //changed this from previous version because segfaulting
+            z++;
+            //added this break because temp hand was going larger than max hand and segfaulting
+            if (z>= MAX_HAND)
+                break;
         }
-    }
-    
-    while(z-1>=0){
-        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
-        z=z-1;
-        
-    }
+      }
+      //printf("out of  while\n");
+      while(z - 1 >= 0){
+        //printf("discarding\n");
+        state->discard[currentPlayer][state->discardCount[currentPlayer]++] = temphand[z-1]; // discard all cards in play that have been drawn
+        z = z - 1;
+      }
+      //printf("finished\n");
+     // return 0;
 }
 
 
+
 void playSmithy(struct gameState *state, int handPos) {
+    //printf("THIS IS CURRENT PLAYER IN SMITHY1 %d\n", whoseTurn(state));
     int i = 0;
-    int currentPlayer = 0;
+
+    //int currentPlayer = 0;
+    //changed this cuz i was getting segfault
+    int currentPlayer = whoseTurn(state);
+    //printf("THIS IS CURRENT PLAYER IN SMITHY2 %d\n", currentPlayer);
     for (i = 0; i <= 3; i++)
     {
         drawCard(currentPlayer, state);

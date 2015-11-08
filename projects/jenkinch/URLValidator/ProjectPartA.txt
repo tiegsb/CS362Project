@@ -1,0 +1,60 @@
+------------------------------------------------------------------------------------------------
+CS362 - Final Project Part A
+Fall Quarter 2015
+Charles Jenkins (jenkinch), Joseph Barlan (barlanj), Ty Hatton (hattont)
+------------------------------------------------------------------------------------------------
+
+Explain testIsValid Function of UrlValidator test code.    
+    
+    - The function creates a UrlValidator object which it uses to call the isValid function that is responsible 
+      for validating a url string. The function calls isValid on two different versions of the Google home page 
+      URL. Then for each possible URL permutation, a StringBuffer object of the url is formed from subsets 
+      {testUrlScheme, testUrlAuthority, testUrlPort, testPath, testUrlQuery} in the form of 
+      "<scheme>://<authority:port><path>?<query>". This built URL is converted into a string and passed into the 
+      isValid function which validates url strings. The result of the validation is returned as true or false and 
+      if the URL is valid it is printed to the console. An assertion is also performed to ensure the URL's 
+      isValid result matches the expected result.
+    
+    - The rest of the code in the function is used for printing status messages.
+
+Give how many total number of urls it is testing.
+    
+    - The total number of URLs it is testing is 31,920. 
+    
+    - From 9 <scheme>, 19 <authority>, 7 <port>, 10 <path> and 3 <query> we calculate a total of 35,910 possible 
+      permutations. We reduce this by all possible permutations where the <scheme> is missing (in other words 
+      <scheme> is empty, which is represented by "") which is equal to 3,990 permutations. So the overall total 
+      is 35,910 - 3,990 = 31,920         
+        - Note: This subtraction of 3,990 was performed because the empty representation of the <scheme> is not 
+          reached by the do-while loop. The incrementTestPartsIndex function returns false when testPartsIndex 
+          reaches {8, 0, 0, 0, 0}, which is when the URL starts with an empty string for <scheme> list.
+
+Also, explain how it is building all the urls. 
+    
+    - In a for-loop that iterates the number of times equal to the number of parts in the URL (in this case 
+      five, described above), an element of the current subset is picked on each iteration and appended to a 
+      StringBuffer object. After a piece of test data is appended, that piece's individual validity is checked 
+      and the result of this check is logically AND'd with a running expected validity variable for the entire 
+      string. This is used later in the final assertion call to check the result of validating the full URL (a 
+      URL with any single invalid piece is invalid as a whole). After completing all iterations of the for-loop 
+      we have either a valid or invalid URL built.
+
+Give an example of valid url being tested and an invalid url being tested by testIsValid() method.  
+    
+    - Valid Tested URL: http://www.google.com:80/test1?action=view
+    - Invalid Tested URL: http://www.google.com:80/..?action=view
+
+Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)? Explain in few lines. 
+    
+    - Much like our test cases written in class, a specific input domain is used to find possible errors in the 
+      UrlValidatorTest. This is similar to what we wrote for our unit and card tests for Assignment 3, where we 
+      created test cases based on what we expected to be either true or false.
+    
+    - One difference between the complexity of the UrlValidator test and our unit/card test implementations is 
+      that the former uses an assembler to generate all permutations of a group of list elements for testing.  
+      This was most likely done due to the large set of possible URL schema entries--valid and invalid cases. In 
+      our card and unit test cases, we are limited in what we expect to pass and fail. For example, in testing 
+      updateCoins in our unit test cases, there really is only two possible input domains--either you have 
+      treasure cards in your hand to play or you do not, and either you have a bonus or you have none. With only 
+      three types of treasure cards and two options for the bonus, it is easy enough to just directly test all 
+      meaningful hands. Although it certainly is possible to build an assembler for this as well.

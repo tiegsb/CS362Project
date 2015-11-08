@@ -21,7 +21,7 @@ int main(int argc, char **argv){
 		printf("gameState created... Fail.");
 	}
 	int k[10] = {outpost, smithy, embargo, baron, adventurer, village, gardens, mine, great_hall, feast};
-	printf("Initializing Game...\n");
+	printf("\nInitializing Game...\n");
 	initializeGame(2,k,21,s);
 	numCards = s->handCount[s->whoseTurn];
 	if(s->outpostPlayed == 0){
