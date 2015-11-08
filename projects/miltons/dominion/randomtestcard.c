@@ -18,12 +18,30 @@
 
 
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>    // for rand and srand
+#include <time.h>      // for time
+// #include <math.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
 //#include "rngs.h"
 
-#define NUM_TESTS 2000;
+#define NUM_TESTS 2000; // number of tests to run
+
+
+
+/*****************************************************************************
+ ** Function:         randInt()
+ ** Description:      This function generates and returns a psuedo-random number
+ **                   in range from min to max, inclusive.
+ ** Parameters:       two int values: min, max
+ ** Pre-Conditions:   min and max are integer values
+ ** Post-Conditions:  returns the random number
+ **
+ *****************************************************************************/
+int randInt(int min, int max);
+
+
+
 
 int main(int argc, char *argv[])
 {
@@ -32,6 +50,10 @@ int main(int argc, char *argv[])
     int i;
     int j;
     int playerNumber;
+    time_t sysClock;
+
+    // seed the rand() function with system clock to avoid getting same rand #s
+    srand((unsigned) time(&sysClock));
 
     // each iteration of this outer loop runs a test against smithyEffect()
     for (i = 0; i < NUM_TESTS; i++)
@@ -39,26 +61,46 @@ int main(int argc, char *argv[])
         // this loop populates every Byte of the game state with random values
         for (j = 0; j < sizeof(struct gameState); j++)
         {
-            ((char*)&testState)[j] = floor(Random() * 256);
+            ((char*)&testState)[j] = randInt(0, 256);
         }
 
         // generate sensible random values for important preconditions:
         // select a random player
-        playerNumber = floor(Random() * 2); // can this go to 4 players?
+        playerNumber = randInt(1, 2); // can this go to 4 players?
         // random number of cards in current player's deck
-        testState.deckCount[playerNumber] = floor(Random() * MAX_DECK);
+        testState.deckCount[playerNumber] = randInt(0, MAX_DECK);
         // random number of cards in current player's discard pile
-        testState.discardCount[playerNumber] = floor(Random() * MAX_DECK);
+        testState.discardCount[playerNumber] = randInt(0, MAX_DECK);
         // random number of cards in current player's hand
-        testState.handCount[playerNumber] = floor(Random() * MAX_HAND);
+        testState.handCount[playerNumber] = randInt(0, MAX_HAND);
+        // playerNumber = floor(Random() * 2); // can this go to 4 players?
+        // // random number of cards in current player's deck
+        // testState.deckCount[playerNumber] = floor(Random() * MAX_DECK);
+        // // random number of cards in current player's discard pile
+        // testState.discardCount[playerNumber] = floor(Random() * MAX_DECK);
+        // // random number of cards in current player's hand
+        // testState.handCount[playerNumber] = floor(Random() * MAX_HAND);
 
         // call test oracle function and pass it these parameters
         // testSmithyEffect(player, &testState);
     }
 
-    printf("%d tests run. All tests passed.", i);
+    printf("%d tests run. All tests passed unless noted above.", i);
 
     exit(0);
+
+
+
+
+/* uses stdlib.h */
+int randInt(int min, int max)
+{   // returns a random integer between min and max, inclusive
+    // (max - min + 1) is the range
+    // + min sets the bottom of the range
+    return rand() % (max - min + 1) + min;
+}
+
+
 
     // int retVal = smithyEffect(0, &testState, 0);
     // if (retVal == 0)
