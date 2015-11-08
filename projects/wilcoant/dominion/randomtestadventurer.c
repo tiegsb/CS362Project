@@ -87,18 +87,19 @@ int main() {
         int num_randcards = (rand() % 6);//putting between 0 and 5 treasure cards in each player's deck 
         int randindex; //index to put cards in 
         int randval; //type of random card to be put in deck 
+
         printf ("----------------------TESTING adventurer()--------------\n");
         printf ("Additional random cards placed in deck: %d\n", num_randcards);
         printf ("Random number of players: %d\n", numPlayer);
         printf ("Adventurer in k at index: %d\n", r); 
-        
+        //testchange
         for(i = 0; i < numPlayer; i++)
         {
             printf ("------Player %d:\n", i + 1);
             for(j = 0; j < num_randcards; j++)
             {//go through each players deck and put random treasure cards in 
                 randval = rand() % 3; //0, 1 or 2 (copper, silver, gold)
-                randindex = rand() % G.deckCount[i]; //this players deckcount, and index 0 to max 
+                randindex = rand() % (G.deckCount[i] + 1); //this players deckcount, and index 0 to max 
                 printf ("placed at index: %d\n", randindex);
                 if(randval == 0)
                 {
