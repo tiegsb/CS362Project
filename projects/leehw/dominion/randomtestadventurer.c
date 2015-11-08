@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <math.h>
+#include <time.h>
 #include "rngs.h"
 
 struct failures {
@@ -35,7 +36,7 @@ struct failures {
 int initFailures(struct failures *fail);
 void setDeck(struct gameState *G, int numPlayers);
 void setHand(struct gameState *G, int numPlayers);
-int checkAdventurer(int p, struct gameState post, struct failures *fail, int currentPlayer);
+int checkAdventurer(int p, struct gameState post, struct failures *failure, int currentPlayer);
 
 int main(){
 
@@ -52,6 +53,10 @@ int main(){
 
   initFailures(&fail);
 
+  SelectStream(2);
+  PutSeed(3);
+  srand(time(NULL));
+
   //The following random loop was inspired by Lecture 11 CS 362
   for (n = 0; n < 3000; n++){
      //initialize random gamesate
@@ -64,9 +69,10 @@ int main(){
      if (p == 0){
        p = 1;
      }
-    // printf("p before init is: %d\n", p);
+     //printf("\np before init is: %d\n", p);
+     seed = floor(Random() * 5000);
      r = initializeGame(p, k, seed, &G); //initialize game
-     printf("p after init is: %d\n", p);
+     //printf("p after init is: %d\n", p);
      for (i = 0; i < p; i++){
        G.deckCount[i] = floor(Random() * MAX_DECK);
        //printf("deckCount %d\n", G.deckCount[i]);
@@ -75,14 +81,13 @@ int main(){
        G.handCount[i] = floor(Random() * MAX_HAND);
        //printf("handCount %d\n", G.handCount[i]);
      }
-     //set handcount to 0
-     //G.handCount[0] = 0;
      //set cards, set top card in hand to be adventurer card
      setDeck(&G, p);
      setHand(&G, p);
 
      //run check on gamestate for adventurer card
      for (i = 0; i < p; i++){
+       G.coins = floor(Random() * 50);
        checkAdventurer(p, G, &fail, i);
      }
      //clear game state
