@@ -1,5 +1,5 @@
 /*****************************************************************************************
-* Tests the adven function
+* Tests the adven function by randomly choosing a current player of the 4 possibilities
 *1. current player who plays adventure card should have its hand increased by two treasure cards
 *2. The player's deck should decrease by at least 2 cards.
  *****************************************************************************************/
@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include "rngs.h"
 #include <stdlib.h>
+#include<time.h>
 
 void testAdven(int currentPlayer, struct gameState *G){
   
@@ -23,34 +24,40 @@ void testAdven(int currentPlayer, struct gameState *G){
         {
             card =G->hand[player][i];
             if(card!=copper||card!=silver||card!=gold){
-               printf("treasures not added");
+               printf("treasures not added\n");
                break;
             }
             else
-                printf("treasure added test passed");
+                printf("treasure added test passed\n");
         }
     else
-        printf("Two treasures not added. Test failed.");
-     printf("\n\n");
+        printf("Two treasures not added. Test failed.\n");
+    
     
     
     int newDeckCount =G->deckCount[player];
     printf("NewDeck Count %d \n", newDeckCount);
     if(newDeckCount<=deckCount-2)//deck should have been reduced by at least 2
-        printf("Deck reduced properly, passed");
+        printf("Deck reduced properly, passed\n");
     else
         printf("Deck not reduced properly, failed\n");
     }
 
 int main(int argc, char *argv[])
 {
-        printf ("Testing Adven...\n");
+    printf ("Testing Adven...\n");
     struct gameState G;
     int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
         sea_hag, tribute, smithy};
     int seed = 1000;
-    initializeGame(2, k, seed, &G);
-    int player = whoseTurn(&G);
-    testAdven(player, &G);
+    srand(time(NULL));
+    initializeGame(4, k, seed, &G);
+    int i;
+    int player;
+    for(i =0; i <50; i++) {
+		player = rand()%4; //random player
+		printf("\nTest %d with player %d\n", i, player);
+    	testAdven(player, &G);
+    }
     return 0;
 }
