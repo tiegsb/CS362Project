@@ -1,7 +1,20 @@
+//
+// *****************************************************************************
+// 
+// Author:    Erik Ratcliffe
+// Date:      October 25, 2015
+// Project:   Assignment 3 - Unit Tests
+// Filename:  cardtest2.c
+// Class:     CS 362 (Fall 2015)
+//
+// *****************************************************************************
+//
+
 #include <stdio.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "unittest_helpers.h"
+
 
 // Test the adventurer card
 //
@@ -32,21 +45,64 @@
 int testAdventurerCard(struct gameState *state)
 {
     struct gameState *origState;  // copy of game state
+    int lastCard;                 // the last card in the hand
+    int idx;                      // loop iterator
+    int diffDeckCount;            // difference between orig and new deck count
+    int diffDiscardCount;         // difference between orig and new discard count
+    int passFlag      = 1;        // flag for testing proper gain of gold cards
+    int currentPlayer = state->whoseTurn;
 
     // Make a copy of the original game state
     //
     origState = copyState(state);
 
-    printf("Here is where the adventurer card will be tested.\n");
+    // Run the adventurer card function
+    //
+    adventurerCard(state);
 
-    // TO TEST:
+    // See if handCount increased by two cards
     //
-    // - Deck is empty, need to shuffle discard and add to deck
-    // - Deck is not empty
+    if(state->handCount[currentPlayer] == origState->handCount[currentPlayer]+2)
+    {
+        printf("adventurerCard: PASS two new cards added to hand\n");
+
+        // See if last two cards in hand are treasure cards (enum 4-6)
+        //
+        lastCard = state->handCount[currentPlayer];
+        for(idx = 1; idx <=2; idx++)
+        {
+            if((state->hand[currentPlayer][lastCard-idx] <= copper) && (state->hand[currentPlayer][lastCard-idx] >= gold)) 
+            {
+                passFlag = 0;
+            }
+        }
+        if(passFlag == 1)
+        {
+            printf("adventurerCard: PASS last two cards in hand are treasure cards\n");
+        }
+        else 
+        {
+            printf("adventurerCard: FAIL at least one of the last two cards in hand is not a treasure card\n");
+        }
+    }
+    else 
+    {
+        printf("adventurerCard: FAIL two new cards not added to hand\n");
+    }
+
+    // See if the number of discarded cards is correct
     //
-    // - Treasure on top? What happens? (added to 2 treasure cards)
-    // - Treasure not on top? What happens? (goes straight to discard?)
-    
+    diffDeckCount = origState->deckCount[currentPlayer] - state->deckCount[currentPlayer];
+    diffDiscardCount = origState->discardCount[currentPlayer] - state->discardCount[currentPlayer];
+    if(diffDiscardCount + 2 == diffDeckCount)
+    {
+        printf("adventurerCard: PASS correct number of cards discarded\n");
+    }
+    else 
+    {
+        printf("adventurerCard: FAIL incorrect number of cards discarded\n");
+    }
+
     // Report what, if anything, changed in the game state
     //
     whatChanged(origState, state);
@@ -58,10 +114,10 @@ int testAdventurerCard(struct gameState *state)
 
 int main(int argc, char *argv[])
 {
-    int numPlayers = 2;
+    int numPlayers = 2;         // default number of players
+    int randomSeed = 1000;      // random seed for the game
+    struct gameState *state;    // holds the updated game state
     int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
-    int randomSeed = 100;
-    struct gameState *state;
 
     // New game
     //
@@ -70,49 +126,13 @@ int main(int argc, char *argv[])
 
     printf("\n");
 
-    // Discard a trashed card
+    // Test adventurer card for player 0
     //
-    printf(">>> TESTING: adventurer card...\n");
+    printf(">>> TESTING: adventurer card, player 0...\n");
+    state->whoseTurn = 0;
     testAdventurerCard(state);
 
     return 0;
 }
 
 
-/*
-int adventurerCard(struct gameState *state)
-{
-  int currentPlayer = whoseTurn(state);
-  int drawntreasure = 0;
-  int cardDrawn;
-  int temphand[MAX_HAND];
-  int z = 0; // counter for temp hand
-
-  while(drawntreasure<2){
-
-    //if the deck is empty we need to shuffle discard and add to deck
-          if (state->deckCount[currentPlayer] <1){
-            shuffle(currentPlayer, state);
-          }
-          drawCard(currentPlayer, state);
-
-    //top card of hand is most recently drawn card.
-          cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]];
-
-          if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-            drawntreasure++;
-          else{
-            temphand[z]=cardDrawn;
-      //this should just remove the top card (the most recently drawn one).
-            state->handCount[currentPlayer]--; 
-            z++;
-          }
-  }
-  while(z-1>=0){
-    // discard all cards in play that have been drawn
-          state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; 
-          z=z-1;
-  }
-  return 0;
-}
-*/

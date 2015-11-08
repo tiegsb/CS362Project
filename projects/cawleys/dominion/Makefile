@@ -1,5 +1,5 @@
 
-INCLUDES = -I./ -I./hw3Test
+INCLUDES = -I./ -I./hw3Test -I./hw4Random
 CFLAGS = -Wall -Wfatal-errors -fpic -coverage -lm $(INCLUDES)
 
 rngs.o: rngs.h rngs.c
@@ -38,9 +38,10 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean: clean_test
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.out
 
 clean_test:
-	rm -f hw3test.out hw3Test/*.o hw3Test/*.gcov hw3Test/*.gcda hw3Test/*.gcno
+	rm -f hw3test.out hw3Test/*.o hw3Test/*.gcov hw3Test/*.gcda hw3Test/*.gcno hw3Test/*.out
+	rm -f hw4test.out hw4Test/*.o hw4Test/*.gcov hw4Test/*.gcda hw4Test/*.gcno hw4Test/*.out
 
 include Makefile.test

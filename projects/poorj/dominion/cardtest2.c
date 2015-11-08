@@ -10,12 +10,8 @@
 #include "rngs.h"
 #include "interface.h"
 
-// set NOISY_TEST to 0 to remove printfs from output
-#define NOISY_TEST 1
-
 /*Village card unit tests*/
-int testVillageCard()
-{
+int testVillageCard(){
 	int numPlayer = 2; //players in the game 2-4
 	int player = 0; //current player
 	int handCount = 5; //Number of cards player starts with
@@ -47,18 +43,17 @@ int testVillageCard()
 	/*checks if village is in player's hand*/
 	for(i = 0; i < state.handCount[player]; i++){
 		cardNumToName(state.hand[player][i], cardName); //get name from card num
-		printf("%s ", name);
-		if(strcmp(name, "village") == 0){
+		printf("%s ", cardName);
+		if(strcmp(cardName, "village") == 0){
 			hasVillage = 1; //village card is in player's hand
 		}
 	}
 	
-	if (hasVillage == 1)
-	{
+	if (hasVillage == 1){
 		printf ("Player has village\n");
 		printf ("Using village card\n");
-		villageEffect(player, state, i); //uses village card
-		hasVillage = 0;
+		villageEffect(player, &state, i); //uses village card
+		
 		/*Village adds 1 card and discards itself*/
 		if (state.handCount[player] == 5)
 			printf ("Player has the correct number of cards!\n");
@@ -71,8 +66,7 @@ int testVillageCard()
 		else
 			printf("Player has the incorrect number of actions.\n");
 	}
-	else
-	{
+	else{
 		printf ("Player does not have village\n");
 	}
 	

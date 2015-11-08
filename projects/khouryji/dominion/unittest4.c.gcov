@@ -1,0 +1,174 @@
+        -:    0:Source:unittest4.c
+        -:    0:Graph:unittest4.gcno
+        -:    0:Data:unittest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include <string.h>
+        -:    3:#include <stdio.h>
+        -:    4:#include "unittestHelper.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <limits.h>
+        -:    7:
+        -:    8:
+        1:    9:int main()
+        -:   10:{
+        -:   11:  int i;
+        1:   12:  int TEST_TIMES= 100;
+        -:   13:  struct gameState testerState;
+        1:   14:  srand(time(0));
+        -:   15:
+        1:   16:  printf("*****************************************************\n");
+        1:   17:  printf("*UNITTEST4 Suite \n");
+        1:   18:  printf("  (tests gainCard() with 100 semi-random state)\n");
+        1:   19:  printf("*****************************************************\n");
+      101:   20:  for(i=0; i<TEST_TIMES; i++)
+        -:   21:  {    
+      100:   22:    createRandState(&testerState);
+      100:   23:    testerState.handCount[testerState.whoseTurn]= rand() % 13 +1;
+      100:   24:    unittest2(&testerState);
+        -:   25:  }
+        -:   26:  
+        1:   27:  return 0;
+        -:   28:}
+        -:   29:  
+        -:   30://Tests drawCard()
+      100:   31:unittest2(struct gameState *state)
+        -:   32:{
+      100:   33:  int i, b, r, test[E_playedCardCount+1]= {0};
+      100:   34:  int supplyPos=0;
+      100:   35:  int toFlag=0;
+        -:   36:
+      100:   37:  int hand[1]={-1}, //arrays that show how many players may have differences in those attributes after call
+      100:   38:    handCount[1]={-1},
+      100:   39:    deck[1]={-1},
+      100:   40:    deckCount[1]={-1},
+      100:   41:    discard[1]={-1},
+      100:   42:    discardCount[1]={-1};
+        -:   43:
+        -:   44:
+      100:   45:  int hLen=1,
+      100:   46:    hcLen=1,
+      100:   47:    deLen=1,
+      100:   48:    decLen=1,
+      100:   49:    diLen=1,
+      100:   50:    dicLen=1;
+        -:   51:
+        -:   52:  struct gameState copyState, afterCopy;
+        -:   53:  
+        -:   54:  
+        -:   55:  //snapshot of state BEFORE
+      100:   56:  copyState= *state;
+        -:   57:
+      100:   58:  supplyPos= rand() % treasure_map+1;
+      100:   59:  toFlag= rand() % 3;
+      100:   60:  r= gainCard(supplyPos, state, toFlag, copyState.whoseTurn);
+        -:   61:
+        -:   62:  //snapshot of state AFTER
+      100:   63:  afterCopy= *state;
+        -:   64:
+        -:   65:
+        -:   66:
+        -:   67://check if supply pile is empty (0) or card is not used in game (-1) and 
+        -:   68:  //check taht supply count is not changed from 0
+      100:   69:  if(copyState.supplyCount[supplyPos] < 1)
+        -:   70:  {
+        1:   71:    if(r!= -1)
+        -:   72:    {
+    #####:   73:      printf("Test empty supply: FAILED\n");
+    #####:   74:      printf("expected return value: -1\n\n");
+        -:   75:    }
+        1:   76:    if(afterCopy.supplyCount[supplyPos] != copyState.supplyCount[supplyPos])
+        -:   77:    {
+    #####:   78:      printf("Test supplyCount on empty supply: FAILED\n");
+    #####:   79:      printf("supplyCount Before: %d\n", copyState.supplyCount[supplyPos]);
+    #####:   80:      printf("supplyCount After: %d\n\n", afterCopy.supplyCount[supplyPos]);
+        -:   81:    }
+        -:   82:
+        -:   83:  }
+        -:   84:  else
+        -:   85:  {
+       99:   86:    test[E_supplyCount]= 1;
+       99:   87:    if(afterCopy.supplyCount[supplyPos] != copyState.supplyCount[supplyPos]- 1)
+        -:   88:    {
+    #####:   89:      printf("Test supplyCount decrement: FAILED\n");
+    #####:   90:      printf("supplyCount Before: %d\n", copyState.supplyCount[supplyPos]);
+    #####:   91:      printf("supplyCount After: %d\n\n", afterCopy.supplyCount[supplyPos]);
+        -:   92:    }
+        -:   93:
+        -:   94:    // check
+        -:   95:    //added card for [whoseTurn] current player:
+        -:   96:    // toFlag = 0 : add to discard
+        -:   97:    // toFlag = 1 : add to deck
+        -:   98:    // toFlag = 2 : add to hand
+       99:   99:    switch(toFlag)
+        -:  100:    {
+        -:  101:      case 0: 
+       30:  102:        test[E_discard]= 1;
+       30:  103:        test[E_discardCount]= 1;
+       30:  104:        if(afterCopy.discardCount[afterCopy.whoseTurn] != copyState.discardCount[copyState.whoseTurn]+ 1)
+        -:  105:        {
+    #####:  106:          printf("Test discardCount increment: FAILED\n");
+    #####:  107:          printf("discardCount Before: %d\n", copyState.discardCount[copyState.whoseTurn]);
+    #####:  108:          printf("discardCount After: %d\n\n", afterCopy.discardCount[afterCopy.whoseTurn]);
+        -:  109:
+        -:  110:          //tell difference finder at end of function to allow these changes          
+        -:  111:        }
+       30:  112:        if(afterCopy.discard[afterCopy.whoseTurn][afterCopy.discardCount[afterCopy.whoseTurn]-1] != supplyPos)
+        -:  113:        {
+    #####:  114:          printf("Test discard pile gained the right card: FAILED\n");
+    #####:  115:          printf("card selected for gain: %d\n", supplyPos);
+    #####:  116:          printf("discard pile last card Before: %d\n", copyState.discard[copyState.whoseTurn][copyState.discardCount[afterCopy.whoseTurn]-1]);
+    #####:  117:          printf("discard pile last card After: %d\n\n", afterCopy.discard[afterCopy.whoseTurn][afterCopy.discardCount[afterCopy.whoseTurn]-1]);
+        -:  118:        }      
+       30:  119:        break;
+        -:  120:
+        -:  121:      case 1:
+        -:  122:        //tell difference finder at end of function to allow these changes
+       36:  123:        test[E_deck]= 1;
+       36:  124:        test[E_deckCount]= 1;
+       36:  125:        if(afterCopy.deckCount[afterCopy.whoseTurn] != copyState.deckCount[copyState.whoseTurn]+ 1)
+        -:  126:        {
+    #####:  127:          printf("Test deckCount increment: FAILED\n");
+    #####:  128:          printf("deckCount Before: %d\n", copyState.deckCount[copyState.whoseTurn]);
+    #####:  129:          printf("deckCount After: %d\n\n", afterCopy.deckCount[afterCopy.whoseTurn]);          
+        -:  130:          
+        -:  131:        } 
+       36:  132:        if(afterCopy.deck[afterCopy.whoseTurn][afterCopy.deckCount[afterCopy.whoseTurn]-1] != supplyPos)
+        -:  133:        {
+    #####:  134:          printf("Test deck gained the right card: FAILED\n");
+    #####:  135:          printf("card selected for gain: %d\n", supplyPos);
+    #####:  136:          printf("deck pile last card Before: %d\n", copyState.deck[copyState.whoseTurn][copyState.deckCount[afterCopy.whoseTurn]-1]);
+    #####:  137:          printf("deck pile last card After: %d\n\n", afterCopy.deck[afterCopy.whoseTurn][afterCopy.deckCount[afterCopy.whoseTurn]-1]);
+        -:  138:        }
+       36:  139:        break;
+        -:  140:
+        -:  141:      case 2: 
+        -:  142:        //tell difference finder at end of function to allow these changes
+       33:  143:        test[E_hand]= 1;
+       33:  144:        test[E_handCount]= 1;
+       33:  145:        if(afterCopy.handCount[afterCopy.whoseTurn] != copyState.handCount[copyState.whoseTurn]+ 1)
+        -:  146:        {
+    #####:  147:          printf("Test handCount increment: FAILED\n");
+    #####:  148:          printf("handCount Before: %d\n", copyState.handCount[copyState.whoseTurn]);
+    #####:  149:          printf("handCount After: %d\n\n", afterCopy.handCount[afterCopy.whoseTurn]);
+        -:  150:                    
+        -:  151:        } 
+       33:  152:        if(afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-1] != supplyPos)
+        -:  153:        {
+    #####:  154:          printf("Test hand gained the right card: FAILED\n");
+    #####:  155:          printf("card selected for gain: %d\n", supplyPos);
+    #####:  156:          printf("hand pile last card Before: %d\n", copyState.hand[copyState.whoseTurn][copyState.handCount[afterCopy.whoseTurn]-1]);
+    #####:  157:          printf("hand pile last card After: %d\n\n", afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-1]);
+        -:  158:        }
+        -:  159:        break;
+        -:  160:
+        -:  161:    }
+        -:  162:  }
+        -:  163: 
+        -:  164:
+        -:  165:  //Find all changes to gamestate and print errors if changes were not expected
+      100:  166:  printBadDiffs(&copyState, &afterCopy, test, hand, hLen, handCount, hcLen, discard, diLen, discardCount, dicLen, deck, deLen, deckCount, decLen);  
+        -:  167:
+      100:  168:  return 0;
+        -:  169:}

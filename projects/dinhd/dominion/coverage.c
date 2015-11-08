@@ -18,7 +18,6 @@ Branches executed:31.89% of 417
 Taken at least once:22.30% of 417
 Calls executed:27.27% of 99
 
-
 Two branches were not covered. As a result 4 statements were not executed. 
 The first branch contained 1 statement that checked to see if the deck needed
 to be reshuffled. The second depended on not drawing a treasure card. Both of these
@@ -60,7 +59,8 @@ Calls executed:27.27% of 99
 Statement coverage and branch coverage was complete until the functions that involved
 the opposing players hand. I discovered that I could not measure the various
 states of the other player. Either the values were missing or did not exist. As a
-result I could not test those lines of code. 
+result I could not test those lines of code. The result of these shortcomings
+is the way the other methods were built. 
 
 ***********************************  unittest1  ***********************************
 

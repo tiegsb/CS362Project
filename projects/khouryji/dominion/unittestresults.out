@@ -1,0 +1,344 @@
+Result for running all unit tests:
+unittest1.c:
+*****************************************************
+*UNITTEST1 Suite 
+  (tests endTurn() with 50 semi-random state)
+*****************************************************
+Test handCount: FAILED
+Error: current player should have a handCount of 5.
+Actual handCount: 0
+stateBefore:0, stateAfter:0
+
+Test handCount: FAILED
+Error: current player should have a handCount of 5.
+Actual handCount: 3
+stateBefore:0, stateAfter:3
+
+Test handCount: FAILED
+Error: current player should have a handCount of 5.
+Actual handCount: 3
+stateBefore:0, stateAfter:3
+
+Test handCount: FAILED
+Error: current player should have a handCount of 5.
+Actual handCount: 1
+stateBefore:0, stateAfter:1
+
+File 'dominion.c'
+Lines executed:13.70% of 584
+dominion.c:creating 'dominion.c.gcov'
+
+unittest2.c:
+*****************************************************
+*UNITTEST2 Suite 
+  (tests drawCard() with 100 semi-random state)
+*****************************************************
+Test deckCount when empty before: FAILED
+deckCount Before: 0
+deckCount After: 0
+discardCount Before: 0
+
+Test handCount: FAILED
+handCount Before: 5
+handCount After: 5
+
+File 'dominion.c'
+Lines executed:8.05% of 584
+dominion.c:creating 'dominion.c.gcov'
+
+unittest3.c:
+*****************************************************
+*UNITTEST3 Suite 
+  (tests discardCard() with 100 semi-random state)
+*****************************************************
+File 'dominion.c'
+Lines executed:2.05% of 584
+dominion.c:creating 'dominion.c.gcov'
+
+unittest4.c:
+*****************************************************
+*UNITTEST4 Suite 
+  (tests gainCard() with 100 semi-random state)
+*****************************************************
+File 'dominion.c'
+Lines executed:2.57% of 584
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest1.c:
+*****************************************************
+*UNITTEST4 Suite 
+  (tests gainCard() with 10 semi-random state)
+*****************************************************
+Error: hand changed.
+Player#1 hand position#6 Before: 26
+Player#1 hand position#6 After: 0
+
+Error: handCount changed.
+Player#1 handCount Before: 0
+Player#1 handCount After: -1
+
+Error: hand changed.
+Player#1 hand position#2 Before: 25
+Player#1 hand position#2 After: 26
+
+Error: handCount changed.
+Player#1 handCount Before: -1
+Player#1 handCount After: -2
+
+Error: hand changed.
+Player#1 hand position#0 Before: 19
+Player#1 hand position#0 After: 18
+
+Error: handCount changed.
+Player#1 handCount Before: -2
+Player#1 handCount After: -3
+
+Error: hand changed.
+Player#2 hand position#0 Before: 5
+Player#2 hand position#0 After: 16
+
+Error: handCount changed.
+Player#2 handCount Before: 0
+Player#2 handCount After: -1
+
+Error: hand changed.
+Player#1 hand position#12 Before: 2
+Player#1 hand position#12 After: -1
+
+Error: handCount changed.
+Player#1 handCount Before: 13
+Player#1 handCount After: 12
+
+Error: hand changed.
+Player#2 hand position#4 Before: 4
+Player#2 hand position#4 After: 12
+
+Error: handCount changed.
+Player#2 handCount Before: -1
+Player#2 handCount After: -2
+
+Error: hand changed.
+Player#2 hand position#7 Before: 17
+Player#2 hand position#7 After: 8
+
+Error: handCount changed.
+Player#2 handCount Before: -2
+Player#2 handCount After: -3
+
+Error: hand changed.
+Player#1 hand position#6 Before: 20
+Player#1 hand position#6 After: 16
+
+Error: hand changed.
+Player#1 hand position#12 Before: 16
+Player#1 hand position#12 After: -1
+
+Error: handCount changed.
+Player#1 handCount Before: 13
+Player#1 handCount After: 12
+
+Error: hand changed.
+Player#3 hand position#2 Before: 4
+Player#3 hand position#2 After: 21
+
+Error: handCount changed.
+Player#3 handCount Before: 0
+Player#3 handCount After: -1
+
+Error: hand changed.
+Player#1 hand position#8 Before: 8
+Player#1 hand position#8 After: 23
+
+Error: hand changed.
+Player#1 hand position#11 Before: 23
+Player#1 hand position#11 After: -1
+
+Error: handCount changed.
+Player#1 handCount Before: 12
+Player#1 handCount After: 11
+
+File 'dominion.c'
+Lines executed:4.28% of 584
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest2.c:
+*****************************************************
+*CARDTEST2 Suite 
+  (tests ADVENTURER with 3 semi-random states)
+*****************************************************
+Test handCount+=1: FAILED
+handCount Before: 5
+handCount After: -236
+
+Test last card is treasure: FAILED
+lastCard: 7
+
+Test second to last card is treasure: FAILED
+second to lastCard: 7
+
+Test handCount+=1: FAILED
+handCount Before: 2
+handCount After: -479
+
+Test last card is treasure: FAILED
+lastCard: 50
+
+Test second to last card is treasure: FAILED
+second to lastCard: 0
+
+Test handCount+=1: FAILED
+handCount Before: 5
+handCount After: -438
+
+Test last card is treasure: FAILED
+lastCard: 16
+
+Test second to last card is treasure: FAILED
+second to lastCard: 12
+
+File 'dominion.c'
+Lines executed:10.79% of 584
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest3.c:
+*****************************************************
+*CARDTEST3 Suite 
+  (tests STEWARD with 3 semi-random states)
+*****************************************************
+Test handCount+=1: FAILED
+handCount Before: 5
+handCount After: 5
+
+Test discardCount+=3: FAILED
+discardCount Before: 5
+discardCount After: 5
+
+Error: hand changed.
+Player#2 hand position#0 Before: 1
+Player#2 hand position#0 After: 14
+
+Error: handCount changed.
+Player#2 handCount Before: 0
+Player#2 handCount After: 1
+
+Error: deckCount changed.
+Player#2 deckCount Before: 361
+Player#2 deckCount After: 360
+
+Error: playedCards changed.
+playedCard#0 Before: 2078292101
+playedCard#0 After: 7
+
+Error: playedCardCount changed.
+playedCardCount Before: 0
+playedCardCount After: 1
+
+Test coins+=2: FAILED
+coins Before: 106
+coins After: 107
+
+Test discardCount+=3: FAILED
+discardCount Before: 2
+discardCount After: 1
+
+Error: coins changed.
+coins Before: 106
+coins After: 107
+
+Error: hand changed.
+Player#0 hand position#0 Before: 1
+Player#0 hand position#0 After: 8
+
+Error: hand changed.
+Player#0 hand position#1 Before: 8
+Player#0 hand position#1 After: -1
+
+Error: handCount changed.
+Player#0 handCount Before: 2
+Player#0 handCount After: 1
+
+Error: playedCards changed.
+playedCard#0 Before: 9
+playedCard#0 After: 1
+
+Error: playedCardCount changed.
+playedCardCount Before: 0
+playedCardCount After: 1
+
+Test handCount+=1: FAILED
+handCount Before: 5
+handCount After: 5
+
+Test discardCount+=3: FAILED
+discardCount Before: 5
+discardCount After: 5
+
+Error: hand changed.
+Player#3 hand position#0 Before: 15
+Player#3 hand position#0 After: 11
+
+Error: handCount changed.
+Player#3 handCount Before: 0
+Player#3 handCount After: 1
+
+Error: deckCount changed.
+Player#3 deckCount Before: 2
+Player#3 deckCount After: 1
+
+Error: playedCards changed.
+playedCard#16 Before: 7
+playedCard#16 After: 24
+
+Error: playedCardCount changed.
+playedCardCount Before: 16
+playedCardCount After: 17
+
+File 'dominion.c'
+Lines executed:10.96% of 584
+dominion.c:creating 'dominion.c.gcov'
+
+cardtest4.c:
+*****************************************************
+*CARDTEST4 Suite 
+  (tests VILLAGE with 3 semi-random states)
+*****************************************************
+Test numActions+=2: FAILED
+numActions Before: 42
+numActions After: 2
+
+Error: playedCards changed.
+playedCard#1 Before: 50
+playedCard#1 After: 7
+
+Error: playedCardCount changed.
+playedCardCount Before: 0
+playedCardCount After: 2
+
+Test numActions+=2: FAILED
+numActions Before: 28
+numActions After: 6
+
+Error: playedCards changed.
+playedCard#5 Before: 10
+playedCard#5 After: 8
+
+Error: playedCardCount changed.
+playedCardCount Before: 4
+playedCardCount After: 6
+
+Test numActions+=2: FAILED
+numActions Before: 36
+numActions After: 2
+
+Error: playedCards changed.
+playedCard#1 Before: 26
+playedCard#1 After: 2
+
+Error: playedCardCount changed.
+playedCardCount Before: 0
+playedCardCount After: 2
+
+File 'dominion.c'
+Lines executed:4.28% of 584
+dominion.c:creating 'dominion.c.gcov'
+

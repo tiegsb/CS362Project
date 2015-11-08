@@ -1,2 +1,0 @@
-//Keenan Bishop
-//coverage.c
