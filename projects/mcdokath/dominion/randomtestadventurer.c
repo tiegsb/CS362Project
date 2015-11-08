@@ -14,12 +14,6 @@
 // how many times the tester should run
 #define RUNTIMES 100
 
-// to remove printfs, set PRINT_TEST to 0
-#define PRINT_TEST 1
-
-// to enable asserts, set ENABLE_ASSERTS to 1
-#define ENABLE_ASSERTS 0
-
 int testInitializeGame(int numPlayers, int kingdomCards[10], struct gameState *state) {
   int i;
   int j;
@@ -232,8 +226,39 @@ void insertAdventurer(struct gameState *state, int player, int maxHandCount, int
 }
 
 int consistencyCheck(int numPlayers, int testedPlayer, int kingdomCards[10], struct gameState *currentState, struct gameState *saveState) {
-  printf("numPlayers: %d\n", numPlayers);
-  printf("tested Player: %d\n", testedPlayer);
+  /* check that numActions decremented */
+  if (!(currentState->numActions == saveState->numActions - 1)) {
+    printf("----------\nERROR: numActions\n");
+    return -1;
+  }
+  
+  /* check unchanged game state elements */
+  if (!(currentState->numPlayers == saveState->numPlayers)) {
+    printf("----------\nERROR: numPlayers\n");
+    return -1;
+  }
+  if (!(currentState->whoseTurn == saveState->whoseTurn)) {
+    printf("----------\nERROR: whoseTurn\n");
+    return -1;
+  }
+  if (!(currentState->phase == saveState->phase)) {
+    printf("----------\nERROR: phase\n");
+    return -1;
+  }
+  if (!(currentState->numBuys == saveState->numBuys)) {
+    printf("----------\nERROR: numBuys\n");
+    return -1;
+  }
+  if (!(currentState->handCount[testedPlayer] == saveState->handCount[testedPlayer] + 2)) {
+    printf("----------\nERROR: handCount\n");
+    return -1;
+  }
+  if (!(currentState->deckCount[testedPlayer] == saveState->deckCount[testedPlayer] - 1)) {
+    printf("----------\nERROR: deckCount\n");
+    return -1;
+  }
+  
+  /* if all tests passed, return 0 */
   return 0;
 }
 
@@ -248,116 +273,57 @@ int main() {
   struct gameState Save;
   int maxHandCount = 5;
   
-  /* set random seed */
-  time_t t;
-  srand((unsigned) time(&t));
-  
-  /* randomly generate amount of players */
-  int numPlayers = generateNumPlayers();
-  
-  /* initialize decks */
-  testInitializeGame(numPlayers, k, &G);
-  
-  /* randomly generate which player to test */
-  int testedPlayer = choosePlayer(numPlayers);
-  
-  /* set the turn to that player */
-  G.whoseTurn = testedPlayer;
-  
-  /* randomly generate a hand */
-  int result = generateHand(&G, testedPlayer, maxHandCount);
-  assert(result == 0);
-  
-  /* randomly include adventurer card in one of the hand positions */
-  if (checkAdventurer(&G, testedPlayer, maxHandCount, &adventurerPos) != 0) {
-    insertAdventurer(&G, testedPlayer, maxHandCount, &adventurerPos);
+  for (i = 0; i < RUNTIMES; i++) {
+    /* set random seed */
+    time_t t;
+    srand((unsigned) time(&t));
+    
+    /* randomly generate amount of players */
+    int numPlayers = generateNumPlayers();
+    
+    /* initialize decks */
+    testInitializeGame(numPlayers, k, &G);
+    
+    /* randomly generate which player to test */
+    int testedPlayer = choosePlayer(numPlayers);
+    
+    /* set the turn to that player */
+    G.whoseTurn = testedPlayer;
+    
+    /* randomly generate a hand */
+    int result = generateHand(&G, testedPlayer, maxHandCount);
+    assert(result == 0);
+    
+    /* randomly include adventurer card in one of the hand positions */
+    if (checkAdventurer(&G, testedPlayer, maxHandCount, &adventurerPos) != 0) {
+      insertAdventurer(&G, testedPlayer, maxHandCount, &adventurerPos);
+    }
+    
+    G.handCount[testedPlayer] = 5;
+    
+    /* save game state */
+    Save.numPlayers = G.numPlayers;
+    Save.whoseTurn = G.whoseTurn;
+    Save.phase = G.phase;
+    Save.numActions = G.numActions;
+    Save.numBuys = G.numBuys;
+    Save.handCount[testedPlayer] = G.handCount[testedPlayer];
+    Save.deckCount[testedPlayer] = G.deckCount[testedPlayer];
+    
+    /* play adventurer card */
+    result = playCard(adventurerPos, -1, -1, -1, &G);
+    assert(result == 0);
+    
+    /* check consistency */
+    int testState = consistencyCheck(numPlayers, testedPlayer, k, &G, &Save);
+    
+    /* report */
+    if (testState == 0) {
+      printf("All tests passed!\n");
+    }
+    else {
+      printf("FAILURE\nnumPlayers: %d, tested player: %d\n",numPlayers,testedPlayer);
+    }
   }
-  
-  /* save game state */
-  
-  /* play adventurer card */
-  result = playCard(adventurerPos, -1, -1, -1, &G);
-  assert(result == 0);
-  
-  /* check consistency */
-  int testState = consistencyCheck(numPlayers, testedPlayer, k, &G, &Save);
-  
-  /* report */
-  if (testState == 0) {
-    printf("All tests passed!\n");
-  }
-  else {
-    printf("FAILURE\nnumPlayers: %d, tested player: %d\n",numPlayers,testedPlayer);
-  }
- 
-  /* set up game state */
- /* 
-  
-
-  
-  /* set up hand for Player 0 */
- /* G.hand[0][0] = copper;
-  G.hand[0][1] = copper;
-  G.hand[0][2] = copper;
-  G.hand[0][3] = copper;
-  G.hand[0][4] = adventurer;
-  
-  G.handCount[0] = 5;
-  
-  printf("Setup complete.\n");
-  
-  /* test */
- // printf("Testing Adventurer Card...\n");
-  
-  /* save game state */
- /* struct gameState Save;
-  Save.numActions = G.numActions;
-  Save.numBuys = G.numBuys;
-  Save.handCount[0] = G.handCount[0];*/
-  
-  /* play adventurer */
-  /*int adventurerResult = adventurerEffect(&G,0);
-#if (PRINT_TEST == 1)
-  printf("adventurerResult: %d ",adventurerResult);
-  if (adventurerResult == 0)
-    printf("Pass!\n");
-  else
-    printf("Fail!\n");
-#endif
-  
-#if (ENABLE_ASSERTS == 1)
-  assert(adventurerResult == 0);
-#endif
-  
-  /* confirm +2 cards */
-/*#if (PRINT_TEST == 1)
-  printf("Hand Count: %d ",G.handCount[0]);
-  if (G.handCount[0] - Save.handCount[0] == 2)
-    printf("Pass!\n");
-  else
-    printf("Fail!\n");
-#endif
-  
-#if (ENABLE_ASSERTS == 1)
-  assert(G.handCount[0] - Save.handCount[0] == 2);
-#endif
-  
-  /* confirm that drawn cards are Treasure Cards */
- /* for (i = 5; i < G.handCount[0]; i++) { // start after existing hand
-#if (PRINT_TEST == 1)
-    if (G.hand[0][i] == copper || silver || gold)
-      printf("Drawn card is Treasure: Pass!\n");
-    else
-      printf("Drawn card is Treasure: Fail!\n");
-#endif
-#if (ENABLE_ASSERTS == 1)
-    assert(G.hand[0][i] == copper || silver || gold);
-#endif
-  }
-  
-#if (ENABLE_ASSERTS == 1)
-  printf("All tests passed!\n");
-#endif
-  */
   return 0;
 }
