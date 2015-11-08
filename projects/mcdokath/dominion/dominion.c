@@ -755,6 +755,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     {
     case adventurer:
       adventurerEffect(state, currentPlayer);
+      return 0;
 	  break;
 			
     case council_room:
@@ -900,10 +901,12 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 		
     case smithy:
 	  smithyEffect(state, currentPlayer, handPos);
+	  return 0;
 	  break;
 		
     case village:
       villageEffect(state, currentPlayer, handPos);
+      return 0;
 	  break;
 		
     case baron:
@@ -959,6 +962,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 		
     case great_hall:
       greathallEffect(state, currentPlayer, handPos);
+      return 0;
 	  break;
 		
     case minion:
