@@ -7,7 +7,7 @@
 #include <assert.h>
 #include "rngs.h"
 
-#define VERBOSE 0 
+#define VERBOSE 0
 
 // the purpose here is to test the playSmithy() function
 int testVillage(int player) {
