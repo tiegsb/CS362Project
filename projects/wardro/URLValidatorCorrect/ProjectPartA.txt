@@ -1,0 +1,32 @@
+﻿Jibrahn Khoury, Kevin Thompson, Robert Ward
+
+11/7/2015
+
+CS 362
+
+Final Project Part A
+
+ProjectPartA.txt
+
+1. testIsValid Function explanation:
+The testIsValid() function tests all of the urls that can be constructed by the ResultPairs that are contained in the testUrlParts array. Each test consists of a url with 5 parts, <scheme><authority><port><path><query>. The ResultPair objects contain a string and a boolean that says whether or not that string is a valid part of the url. If any of the ResultPairs that were used to construct a particular url are not valid then the whole url is considered invalid. The test fails if a valid url is rejected or if an invalid url is accepted.
+
+2. Total number of URLs tested:
+The total number of urls tested is the product of the ReslutPair array lengths in testUrlParts[]
+Total = 9*19*7*10*3 = 35910
+
+
+3. How is it building all the urls:
+The urls built consist of 5 parts, the scheme, authority, port, path, and query. The Object[ ] testUrlParts consists of 5 ResultPair[ ]’s that contain the strings to be tested. Each url is built using one of each of the strings of the ResultPair arrays. The current strings being tested is kept track of by the int[ ] testPartsIndex. testPartsIndex contains 5 ints that are initially 0, these ints represent the current index to be tested of the 5 ResultPair[ ]’s. After each url is constructed the testPartsIndex is incremented, this happens until each of the possible urls has been tested.
+
+4. Example of valid url being tested by testIsValid():
+One good url would be when testPartsIndex = { 2, 1, 5, 0, 1 }. This produces the following url: “h3t://go.com:65636/test1?action=view”. Each of the 5 ResultPair parts is valid which results in a valid url.
+
+5. Example of invalid url being tested by testIsValid():
+Similar to the valid url above, when testPartsIndex = { 2, 1, 6, 0, 1 } the result is invalid. The resulting url is “h3t://go.com:65a/test1?action=view”. The testUrlPort value of “:65a” is not valid therefore the whole url in invalid.
+
+
+6. Is this real world test vary different than the unit tests and card tests that we wrote?
+I don’t think that this test is that much different in concepts & complexity than the tests that we wrote in the last assignment. While it was written more professionally, I think that the basic concepts that our test covered were the same. Our test also tried to test valid inputs and invalid inputs to determine if our program worked correctly.
+
+
