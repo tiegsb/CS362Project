@@ -655,9 +655,6 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 
   int tributeRevealedCards[2] = {-1, -1};
   int temphand[MAX_HAND];// moved above the if statement
-  int drawntreasure=0;
-  int cardDrawn;
-  int z = 0;// this is the counter for the temp hand
   if (nextPlayer > (state->numPlayers - 1)){
     nextPlayer = 0;
   }
@@ -1275,7 +1272,7 @@ int playSmithy( int handPos, struct gameState *state )
     // Smithy
     int i;
     int discard = 2; // 1 is for trashing, we are moving to played cards pile though
-    int currentPlayer = whoseTurn(state);
+    int currentPlayer = whoseTurn(state); // get the current player
     // draw 3 cards
     for (i = 0; i < 3; i++ )
     {
@@ -1299,8 +1296,9 @@ int playAdventurer( struct gameState *state )
         if (state->deckCount[currentPlayer] <1){
             shuffle(currentPlayer, state);
         }
-        drawCard(currentPlayer, state);
-        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]];
+        if ( drawCard(currentPlayer, state) == -1)
+        	break;
+        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] -1 ];
         if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
             drawntreasure++;
         else{
