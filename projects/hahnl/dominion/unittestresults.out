@@ -88,4 +88,3 @@ cardtest4.c - Test for greatHallCard() function:
 File 'dominion.c'
 Lines executed:35.40% of 582
 dominion.c:creating 'dominion.c.gcov'
-
