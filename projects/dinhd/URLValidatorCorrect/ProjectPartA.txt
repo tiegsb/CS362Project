@@ -1,0 +1,97 @@
+﻿CS 362 PROJECT: Part a
+Group Members:  
+    Dustin Dinh
+    Jason Flaig
+    Kelvin Watson
+========================================================================
+
+
+Explanation of testIsValid() function:
+************************************************************************************************
+First[a], an object of the UrlValidator class is instantiated by calling a 
+constructor:
+UrlValidator urlVal = new UrlValidator(null, null, options);      
+The constructor being called is the following:
+public UrlValidator(String[] schemes, RegexValidator authorityValidator, long options);
+
+
+The first parameter passed to the constructor is NULL. Passing in NULL will default to the "http,https,ftp" schemes being valid.
+
+
+The second parameter is set to NULL. This tells URLValidator that there is no regular expression authority validator object to be used for manual validation of the authority part of the URL. This makes sense since the test data does not include username or password portions as part of the authorities, so a RegexValidator object is not required for this test. 
+
+
+The third argument passes in any options that were set when testIsValid() was called. These options are defined as the public constants ALLOW_2_SLASHES, NO_FRAGMENT, and ALLOW_ALL_SCHEMES and modify the behavior of validation. In this case, testIsValid() was called with the argument UrlValidator.ALLOW_ALL_SCHEMES (line 44).
+
+
+On line 87 and 88, the assertTrue method is called on the urlVal.isValid() method with the argument strings "http://www.google.com" and "http://www.google.com/". These seem to be  manual tests of the isValid() function. They only trivially test the UrlValidator as only one scheme is being tested, and there are no authorities, queries or fragments in these URL’s.
+
+
+************************************************************************************************
+Creating URLs to Test isValid():
+
+
+The FOR loop beginning on line 97 combines 5 strings from the testObjects array to form a URL string. Each of these 5 strings is drawn from array of values to be tested. For example testUrlScheme array contains “http://”, “ftp://”, “3htp”. These 5 arrays are stored in an object called testObjects. The following is a list of each url component stored in testObjects: 
+
+
+testObjects[0] = testUrlScheme array
+testObject[1] = testUrlAuthority array
+testObject[2] = testUrlPort array
+testObject[3] = testPath array
+testObject[4] = testUrlQuery array
+
+
+This FOR loop is nested inside a DO...WHILE loop that allows the the FOR loop to create all possible combinations of URL’s from the URL arrays. The following is a walkthrough of the first two iterations of the FOR loop:
+On the first iteration of the for loop (testPartsIndexIndex = 0): 
+* The “index” variable is assigned the value 0 since testPartIndex[0]=0
+* The “part” variable is assigned the testUrlScheme array, so part[index].item (part[0].item) is assigned the string “http://”.
+* On line 100, the first element of the testUrlScheme array (“http://”) is appended to the testBuffer
+* Each array that stores one of the 5 parts of a URL also stores a boolean for each string that states whether or not the string is a valid URL component. For instance, the corresponding boolean value for “http://” is “true”. The corresponding boolean value for “3ttp://” is “false”. The variable “expected” is bitwise AND’d with the boolean associated with each string. In this case, since expected is true and “http://” is true, the result remains true. If “3ttp://” had been added, which it will occur later on, the “expected” would evaluate to false, and remain false for the rest of the loop iterations. Note that once “expected” has been set to false, it will stay false until loop termination since the expression false & false evaluates to false, and the expression false & true also evaluates to false.
+On the next iteration of the for loop, testPartsIndexIndex is incremented to 1. 
+* “index” is assigned the value 0 since testPartIndex[1]=0.
+* The “part” variable is assigned the testUrlAuthority array, so so part[index].item (part[0].item) is assigned the string “www.google.com”.
+* On line 100, the first element of the testUrlAuthority (“www.google.com”) is appended to the testBuffer. As a result, testBuffer holds “http://www.google.com”. 
+* Again the variable “expected” is bitwise AND’d to part[0].valid, which is the corresponding boolean value of part[0] (the first element of testUrlAuthority array). “expected” does not change to false because www.google.com is true. 
+
+
+This continues until the first part (element 0) of every string array (testUrlScheme, testURLAuthority etc), has been appended to testBuffer. Upon termination of the FOR loop, the string “http://www.google.com:80/test1?action=view” is stored in testBuffer.
+
+
+After the testBuffer has been populated, the buffer is converted to a string and stored in the variable url on line 104. Thus, after all concatenations within the previous for loop, the “url” contains “http://www.google.com:80/test1/?action=view”. Lines 107 and 108 print the url only if the isValid() method returns true. The assertion on line 109 determines whether the expected value (determined in the for loop) is the same as the result of the call to isValid().
+
+
+
+
+At the end of the do-while loop, the incrementTestPartsIndex() method is called. In this method, the FOR loop iterates starting at the last valid index of the testPartsIndex array. Continuing our execution above, the testPartsIndex array still holds {0,0,0,0,0}, and since the for loop starts at the last element (i.e. testPartsIndexIndex = 4), the index variable is assigned 0, since indexPartsIndex[testPartsIndexIndex] = indexPartsIndex[4] = 0. Thus, index keeps track of which array element is being/has been processed in a particular testObjects array (e.g. testUrlScheme, testUrlAuthority etc).  The last element of the testPartsIndex is the testUrlQuery array, so “part” is assigned the entirety of the testUrlQuery array on the first iteration of the for loop. Since “carry” is true, the if(carry) block is executed. The index variable is 0, and part.length-1 evaluates to 2 since part.length is 3 (the testUrlQuery array has 3 elements). Index is incremented to 1, and this value is assigned to testPartsIndex[testPartsIndexIndex] = testPartsIndex[4]. Note that testPartsIndexIndex is currently 4, so we are assigning a 1 to the testPartsIndex array at position 4. Thus, we have testPartsIndex[] = {0,0,0,0,1}. This is an indication of the next URL to be tested in isValid(). 
+
+
+Specifically, on the next iteration of the do-while loop in isValid(), the testBuffer will contain 
+http://www.google.com:80/test1/action=edit&mode=up since “?action=edit&mode=up” is element 1 of the testUrlQuery array, which is in turn referenced by the testPartsIndex[] array at position 4. Finally, the block ends by setting carry to false. On line 286, whether or not index is equal to part.length-1 (the last element of a testObjects array) is determined, and the boolean value of this expression is used to evaluate the expression maxIndex &= (index == (part.length - 1)), again, using the And bitwise operator. Again, this expression is equivalent to maxIndex = maxIndex & (index == (part.length - 1)), so maxIndex is computed on every iteration to determine if any of the arrays (testUrlScheme, testUrlAuthority etc) have been completely tested. If the index and part.length-1 values are equal on a single iteration, then the test will have completed testing all of the array elements of one particular testObjects array. So, if by the last iteration, all of the index variables have reached part.length-1, then maxIndex would evaluate to true on every iteration (since true & true  true), and the return value for this function would be false (note that the return value is the opposite of maxIndex). If, on the other hand, the index does not equal part.length-1 on ANY of the iterations, then maxIndex would evaluate to false on one or more iterations, and would stay false until termination of the for loop (since false & true  false). To understand this, we need to know that it does not matter whether index==part.length-1 subsequently evaluates to true once it has already been assigned a value of false. Once a false has been assigned to maxIndex variable, it can not be changed to true for the rest of the loop iterations. This means that there are still elements in one or more of the arrays (e.g. testUrlScheme, etc) that have not yet been tested. In our case, maxIndex will be assigned a value of false, since the index = 1, and part.length-1 = 4 on the first iteration of the for loop. On subsequent iterations, maxIndex would evaluate to false as well, since index=0 and part.length != 0 for any of the arrays testUrlScheme, testUrlAuthority etc. On line 290, the opposite (true) is returned to the while loop condition, and the test continues. If maxIndex was evaluated to true, then this function returns false, and the while loop in isValid() terminates.
+
+
+Upon termination of the for loop, every combination of strings (i.e. the testUrlScheme, testUrlAuthority, testUrlPort, testPath, testUrlQuery) would have been tested/exhausted.
+
+
+Of note, the tests seem to prematurely terminate after 31920 tests. Specifically, when the scheme is an empty string, the tests do not proceed further. In addition, several tests are also omitted due to truncation. This results in 19 authorities * 7 ports * 10 paths * 3 queries = 3990 tests that are omitted, resulting in an actual test count of 31920, rather than 35910. We are uncertain whether this is intentional or not, but it results in truncation of probably intended test cases.[b] 
+
+
+************************************************************************************* 
+Do you think the real world test is very different than the card tests we ran?
+*************************************************************************************
+This real world test is not too much different from the card tests that we ran for dominion.c. This test uses combinatorial testing to test all of the possible combinations of the schemes, authorities, ports, paths and queries in a brute-force fashion. Since the ordering of the elements of each URL matters, we can compute the permutation of all of these combinations to make up the URLs:  9 schemes * 19 authorities * 7 ports * 10 paths * 3 queries  = 35910 possible URL combinations being tested (*actually only 31920 tests are actually run as noted above).  Like the unit tests that we wrote for dominion.c, these UrlValidator tests are somewhat limited as they only test a small portion of the input domain space, due to the lack of random inputs. 
+
+
+
+
+************************************************************************************* 
+Give an example of valid url being tested and an invalid url being tested by testIsValid() method
+*************************************************************************************
+An example of a valid URL being tested is: “http://www.google.com:80/test1/?action=view”
+An invalid example is: ““http/www.google.com:80/test1/?action=view”
+
+
+Sources:
+https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/RegexValidator.html
+[a]I removed "Set up:" as a title to avoid confusion since setUp() is actually a method called prior to each test case.
+[b]I made a note of a weird issue. It seems the tests prematurely terminate - unsure if this is a bug or not but the last few entries of each test component are not even generated.

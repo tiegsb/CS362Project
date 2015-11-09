@@ -4,19 +4,6 @@
 
 // Test code adapted from examples in week 3 lecture "How to Write a Simple Random Tester."
 
-// test / assert against state of game before and after smithy is played
-
-// hand will have 3 more cards in post than in pre
-
-// discard pile will either have 1 more card in post than in pre
-// or will have 1 card (in case of empty deck during draw)
-
-
-
-// what should be random?
-// # of players?
-// which player it is
-
 #include <assert.h>    // for assert
 #include <stdio.h>
 #include <stdlib.h>    // for rand and srand
@@ -24,10 +11,10 @@
 #include <string.h>    // for memcpy
 #include "dominion.h"
 #include "dominion_helpers.h"
-//#include "rngs.h"
 
 #define NUM_TESTS 2000 // number of tests to run
 #define NUM_PLAYERS  2 
+
 
 
 /*****************************************************************************

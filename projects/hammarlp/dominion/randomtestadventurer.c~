@@ -46,7 +46,11 @@ void testAdventurerCard(){
 
 	
 
+<<<<<<< HEAD
 	printf("Test 1. Player has enough treasure in their hand to go through\n");
+=======
+	printf("Random test:\n");
+>>>>>>> 94eed62ad3efd70d35cc28d7a33db35dbc5fe612
 	adventurerCard(state);
 
 	//total cards in hand should be 5. 

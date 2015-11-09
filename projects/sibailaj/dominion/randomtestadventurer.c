@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	srand(time(NULL));
 	testAdventurer();
     return 0;
+    
 }
 
 void testAdventurer() {

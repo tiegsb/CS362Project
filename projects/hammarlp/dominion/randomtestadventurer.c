@@ -49,6 +49,7 @@ void testAdventurerCard(){
 	printf("Random test:\n");
 	adventurerCard(state);
 
+<<<<<<< HEAD
 	//total cards in hand should be 5. 
 	if( state->handCount[0] == 5 ){
 		printf("Test passed. Correct final number cards in hand\n");
@@ -86,6 +87,8 @@ void testAdventurerCard(){
 
 	//printf("%d %d %d\n", state->handCount[0], state->discardCount[0], state->deckCount[0]);
 */
+=======
+>>>>>>> 94eed62ad3efd70d35cc28d7a33db35dbc5fe612
 	
 }
 
@@ -94,5 +97,10 @@ int main(){
 
 	testAdventurerCard();
 
+<<<<<<< HEAD
+=======
+	printf("Testing done");
+
+>>>>>>> 94eed62ad3efd70d35cc28d7a33db35dbc5fe612
 	return 0;
 }
