@@ -124,8 +124,6 @@ int main(int argc, char *argv[])
 int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
 {
 
-    //printf("in function\n");
-
     int retVal;
     int cardsAvailable;
 
