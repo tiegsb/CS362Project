@@ -1,0 +1,50 @@
+CS 362 Software Engineering II
+Fall Term 2015
+11.03.2015
+
+Assignment: Final Project Part A
+
+Team Members:
+Connor Peavey
+Sharon Kuo
+Tara Massey
+
+
+Explain testIsValid() Function of UrlValidator test code:
+Within the UrlValidator test code the testIsValid() begins by instantiating an instance of the UrlValidator class. Next, the function appears to check for a valid test state by asserting that two valid known addresses are, indeed, indicated valid. Next, the function generates URLs by systematically choosing an item from each of the five available URL parts. These parts are scheme, authority, port, path, and query. After URL creation, as explained below, the URL is stored as a string. The string is then checked for validity using the isValid() method, returning a boolean to indicate the truth value. If the URL is valid, true is expected. If the URL is invalid, false is expected. If the resulting boolean value is true, the URL will print to console. An assertion checks the URL. This process will occur for all combinations created within the do-while loop.
+
+
+
+How many total number of URLs it is testing:
+To determine the total number of URLs tested, we look first must note that testIsValid() generates all combinations of the five different components of a URL. We can then note the following:
+testUrlScheme is 9
+testUrlAuthority is 19
+testUrlPort is 7
+testPath is 10
+testUrlQuery is 3
+
+In general, after calculating the permutations for the above, we see a total of 35910 possible combinations. Put simply, we see: 9 * 19 * 7 * 10 * 3 = 35910. This is the total number of possible permutations, but not necessarily the total number of URLs that will be tested.
+
+In order to find the total number of URLs tested from the above possible combinations, we need to be aware that the do-while loop that combines the URLs is dependant upon the testPartsIndex. We can see that this now results in a total of 31920 URLs actually being tested. This was verified through the use of a counter variable placed in the do-while loop of testIsValid(), which was printed out at the end of the test.
+
+
+
+Explain how it is building all the URLs:
+The URLs are being built inside of the do loop on line 94. A new string buffer is created which is where the url will be stored as it is built. The variable array testPartsIndex is like a template for the URL creation. It has an int for each part of a URL, scheme, authority, port, path options, and query. Line 99 and 100 selects the first item from each list in result pair, and appends the corresponding string to the string buffer. This process is repeated as the indexes of ResultPair are increased, eventually forming every iteration of the strings found in the lists of ResultPair. In addition, the validity of the individual parts are used to determine the validity of the entire built URL, which is later checked against the expected result.
+
+
+
+Give an example of valid URL being tested by testIsValid() method:
+http://go.com:80/t123?action=edit&mode=up
+
+
+
+Invalid url being tested by testIsValid() method:
+3ht://255.com:0/test1?action=view
+
+
+
+Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)? Explain in few lines:
+It is our opinion that the testIsValid() test is not so different from our unit and card tests in terms of concepts and complexity. To start, both testIsValid() and our own tests had to account for an appropriate domain. The testIsValid() test created inputs that were appropriate given the domain by connecting various URL parts. For own tests, we also needed to account for various possible inputs into the gameState, as well as to the card or unit function. In the beginning stages of testing, however, we had not yet created a system to generate combinations of possible valid input. In doing so, our testing methodology would have borne more resemblance to what was done here.
+
+Additionally, both the testIsValid() test and our own tests came up with cases that were expected to be valid, or expected to be invalid, to check for proper functionality. Conceptually, we used the same criteria to determine if our tests were working as expected. Along these lines, both the tesIsValid() test and our own tests used expected values to determine if a test passed or failed. While the testIsValid() test did this with a boolean value, and we may have provided comparisons between past and present game states, the concept is the same.
