@@ -46,7 +46,7 @@ int randInt(int min, int max);
  **                   within valid ranges for the game. testState is a
  **                   initialized and its member variables should have valid
  **                   values, at least for the more important game parameters
- ** Post-Conditions:  The smithyEffect function has been tested. Any errors 
+ ** Post-Conditions:  The smithyEffect function has been tested. Errors 
  **                   and discrepancies between the actual results and expected
  **                   results have been output to the console.
  **
