@@ -4,28 +4,16 @@
 
 // Test code adapted from examples in week 3 lecture "How to Write a Simple Random Tester."
 
-// test / assert against state of game before and after smithy is played
-
-// hand will have 3 more cards in post than in pre
-
-// discard pile will either have 1 more card in post than in pre
-// or will have 1 card (in case of empty deck during draw)
-
-
-
-// what should be random?
-// # of players?
-// which player it is
-
-
+#include <assert.h>    // for assert
 #include <stdio.h>
 #include <stdlib.h>    // for rand and srand
 #include <time.h>      // for time
+#include <string.h>    // for memcpy
 #include "dominion.h"
 #include "dominion_helpers.h"
-//#include "rngs.h"
 
 #define NUM_TESTS 2000 // number of tests to run
+#define NUM_PLAYERS  2 
 
 
 
@@ -58,7 +46,7 @@ int randInt(int min, int max);
  **                   within valid ranges for the game. testState is a
  **                   initialized and its member variables should have valid
  **                   values, at least for the more important game parameters
- ** Post-Conditions:  The smithyEffect function has been tested. Any errors 
+ ** Post-Conditions:  The smithyEffect function has been tested. Errors 
  **                   and discrepancies between the actual results and expected
  **                   results have been output to the console.
  **
@@ -74,7 +62,13 @@ int main(int argc, char *argv[])
     int i;
     int j;
     int playerNumber;
+    int handPos;
+    int retVal;
+    int seed = 1; // better to make this random too?
     time_t sysClock;
+
+    int cards[10] = {adventurer, council_room, feast, gardens, mine, remodel,
+                    smithy, village, baron, great_hall};
 
     // seed the rand() function with system clock to avoid getting same rand #s
     srand((unsigned) time(&sysClock));
@@ -88,6 +82,9 @@ int main(int argc, char *argv[])
             ((char*)&testState)[j] = randInt(0, 256);
         }
 
+        // initialize game to prevent segmentation fault errors
+        retVal = initializeGame(NUM_PLAYERS, cards, seed, &testState);
+
         // generate sensible random values for important preconditions:
         // select a random player
         playerNumber = randInt(1, 2); // can this go to 4 players?
@@ -97,8 +94,15 @@ int main(int argc, char *argv[])
         testState.discardCount[playerNumber] = randInt(0, MAX_DECK);
         // random number of cards in current player's hand
         testState.handCount[playerNumber] = randInt(0, MAX_HAND);
+
+        // prevent negative values for array indices
+        if (testState.handCount[playerNumber] == 0)
+            handPos = 0;
+        else
+            handPos = testState.handCount[playerNumber] - 1;
+
         // random value for position in hand of card to discard
-        handPos = randInt(0, testState.handCount[playerNumber] - 1);
+        handPos = randInt(0, handPos);
 
         // call test oracle function and pass it these parameters
         int retVal = testSmithyEffect(playerNumber, &testState, handPos);
@@ -120,19 +124,54 @@ int main(int argc, char *argv[])
 int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
 {
 
+    //printf("in function\n");
+
+    int retVal;
+    int cardsAvailable;
+
     // create duplicate of game state for before and after comparison
     struct gameState pre;
     memcpy (&pre, post, sizeof(struct gameState));
 
     // call smithyEffect function
-    smithyEffect(playerNumber, post, handPos);
+    retVal = smithyEffect(playerNumber, post, handPos);
 
     // make changes to pre based on what smithyEffect should do
 
-    // compare actual result to expected result (post to pre)
+    // hand should have 3 more cards in post than in pre
+    // but what happens if no cards are in discard pile or deck?
 
-    // return zero if smithyEffect did not crash
-    return 0;
+    // determine how many cards are left between deck and discard pile 
+    cardsAvailable = pre.deckCount[playerNumber] + pre.discardCount[playerNumber];
+
+    // add three cards to hand or as many as are available if less than 3
+    if (cardsAvailable >= 3) 
+        pre.handCount[playerNumber] = pre.handCount[playerNumber] + 3;
+    else // 0, 1, or 2 cards
+        pre.handCount[playerNumber] = pre.handCount[playerNumber] + cardsAvailable;
+
+    // discard pile will either have 1 more card in post than in pre
+    // or will have 1 card (in case of empty deck during draw)
+
+
+    // make sure smithyEffect did not crash
+    if (retVal < 0)
+    {
+        printf("smithyEffect returned a nonzero value\n");
+    }
+    else
+    {
+        // compare actual result to expected result (post to pre)
+        // to make sure smithyEffect is working properly
+        if (pre.handCount[playerNumber] != post->handCount[playerNumber])
+        {
+            printf("smithyEffect did not add the expected number of cards to the player's hand.\n");
+            retVal = -1;
+        }
+    }
+
+    // returns zero if smithyEffect did not crash
+    return retVal;
 }
 
 

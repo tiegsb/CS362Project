@@ -1,0 +1,22 @@
+Allyce McWhorter
+08-Nov-2015
+CS 362
+Assignment 4
+randomhistory.txt
+
+randomtestcard.c
+
+randomtestcard.c was tested to check the village card. The test was written to send a gameState to the cardeffect() method with the village card specified, and a copy of the 
+gameState called pre having its fields of numActions and handCount modified manually.The test checked to not only see if both states were identical , but to see if the numActions were increased 
+by 2 by comparing the game->numActions+2 to an integer that was initaited at the beginning of the function called int preActionCount and comparison of an integer
+iniated at the bginning of the test function called preHandCount to game->handCount to see if both fields matched. No bugs were found with this function. It was supposed to
+increase the numAction by 2, and the handcount should be the same, as a card is drawn from the deck and the village card is discarded from the hand.
+
+
+randomadventurercard.c
+
+randomadventurercard.c was tested by using a random number of players to initialize a new game state, and a random player is given a turn. The new game state is then checked to make sure 
+the card functioned properly.  In the case of cards being drawn, the new game state is compared against the old game state to ensure that the correct number has been drawn.  
+For the adventurer card, the drawn cards must be of a certain type (money), the last two cards are tested to see if they are in fact money.  The test run is performed many times with many 
+different randomized game states to ensure good coverage. 
+
