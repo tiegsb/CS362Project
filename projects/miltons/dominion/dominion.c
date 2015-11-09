@@ -713,7 +713,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 
     case smithy:
 
-      return smithyEffect(currentPlayer, state, handPos);
+      return smithyEffect(currentPlayer, state, handPos); // see line 1230
 
     case village:
       //+1 Card
@@ -1234,11 +1234,11 @@ int smithyEffect(int currentPlayer, struct gameState *state, int handPos)
   //+3 Cards
   for (i = 0; i <= 3; i++)
   {
-	drawCard(currentPlayer, state);
+	drawCard(currentPlayer, state); // drawCard on line 530
   }
 
   //discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
+  discardCard(handPos, currentPlayer, state, 0); // discardCard on line 1102
   return 0;
 }
 

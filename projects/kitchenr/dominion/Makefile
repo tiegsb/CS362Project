@@ -1,5 +1,34 @@
 CFLAGS = -Wall -fpic -coverage -lm -std=c99
 
+randomtestadventurer: randomtestadventurer.c rngs.o
+	gcc -o randomtestadventurer randomtestadventurer.c rngs.o $(CFLAGS)
+
+rta.tmp:
+	touch rta.tmp
+
+randomtestadventurer.out: randomtestadventurer rta.tmp
+	rm -rf randomtestadventurer.out rta.tmp
+	@echo "Doing 1000 random tests of card adventurer"
+	@chmod +x randomtestadventurer.sh
+	@./randomtestadventurer.sh
+	@echo "Done!"
+	@echo "There are `grep -c INVALID randomtestadventurer.out` invalid results"
+
+randomtestcard: randomtestcard.c rngs.o
+	gcc -o randomtestcard randomtestcard.c rngs.o $(CFLAGS)
+
+
+rtc.tmp:
+	touch rtc.tmp
+
+randomtestcard.out: randomtestcard rtc.tmp
+	rm -rf randomtestcard.out rtc.tmp
+	@echo "Doing 1000 random tests of card mine"
+	@chmod +x randomtestcard.sh
+	@./randomtestcard.sh
+	@echo "Done!" 
+	@echo "There are `grep -c INVALID randomtestcard.out` invalid results"
+
 unittest1: rngs.o
 	gcc -o unittest1 -DUNIT_TEST_1 dominion.c rngs.o $(CFLAGS)
 
