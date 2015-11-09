@@ -1,0 +1,99 @@
+        -:    0:Source:unittest2.c
+        -:    0:Graph:unittest2.gcno
+        -:    0:Data:unittest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/********************************************************
+        -:    2:*	Name: 	Robert Tang
+        -:    3:*	Class:	CS 362
+        -:    4:*	File:	unittest2.c
+        -:    5:*
+        -:    6:*	Description: 
+        -:    7:*		Test for Discard 
+        -:    8:*		
+        -:    9:********************************************************/
+        -:   10:
+        -:   11:#include "dominion.h"
+        -:   12:#include "dominion_helpers.h"
+        -:   13:#include "dominion.c"
+        -:   14:#include <string.h>
+        -:   15:#include <stdio.h>
+        -:   16:#include "rngs.h"
+        -:   17:#include "interface.h"
+        -:   18:
+        1:   19:void discardHelper (struct gameState *testGame, int currentPlayer)
+        -:   20:{		
+        1:   21:	int handSize = 6;
+        1:   22:	int currentHand[handSize];
+        -:   23:	int i;
+        -:   24:	
+        7:   25:	for (i = 0; i < handSize; i++)
+        6:   26:		currentHand[i] = 0;
+        -:   27:	
+        1:   28:	currentHand[0] = copper;
+        1:   29:	currentHand[1] = silver;
+        1:   30:	currentHand[2] = gold;
+        1:   31:	currentHand[3] = mine;
+        1:   32:	currentHand[4] = gardens;
+        1:   33:	currentHand[5] = baron;
+        -:   34:
+        1:   35:	memcpy(testGame->hand[currentPlayer], currentHand, (sizeof(int) * handSize));
+        -:   36:	
+        1:   37:	int discardCountBefore = testGame->discardCount[currentPlayer];
+        1:   38:	int handCountBefore = testGame->handCount[currentPlayer];
+        -:   39:	
+        1:   40:	printf("Discard Test \n");
+        1:   41:	printf("-----------------------------\n");
+        1:   42:	printf("Discard Count %d \n", discardCountBefore);
+        1:   43:	printf("Hand Count %d \n", handCountBefore);
+        -:   44:	
+        1:   45:	int handPosition = 3;
+        1:   46:	int trashFlag = 0;
+        1:   47:	discardCard(handPosition, currentPlayer, testGame, trashFlag);
+        1:   48:	printf("discarding card #%d \n\n", handPosition);
+        -:   49:
+        1:   50:	if (discardCountBefore + 1 == testGame->discardCount[currentPlayer])
+    #####:   51:		printf("Discard Count - Check \n");
+        -:   52:	else 
+        -:   53:	{
+        1:   54:		printf("Discard Count - Fail \n");
+        1:   55:		printf("Discard Count %d \n", testGame->discardCount[currentPlayer]);
+        -:   56:	}
+        -:   57:	
+        1:   58:	if (handCountBefore - 1 == testGame->handCount[currentPlayer])
+        1:   59:		printf("Hand Count - Check \n");
+        -:   60:	else
+    #####:   61:		printf("Hand Count - Fail \n");
+        1:   62:	printf("Hand Count %d \n", testGame->handCount[currentPlayer]);
+        1:   63:}
+        -:   64:
+        -:   65:
+        -:   66:
+        -:   67:
+        1:   68:void cardDiscardTest()
+        -:   69:// set up enough tests for all 27 cards
+        -:   70://		requires "3" test 10x3
+        -:   71:{
+        -:   72:
+        1:   73:	int numPlayer = 2;
+        1:   74:	int seed = 1000;
+        1:   75:	struct gameState* testGame = newGame();
+        -:   76:	int k[10] = {adventurer, council_room, feast, gardens, mine,
+        1:   77:			remodel, smithy, village, baron, great_hall};
+        -:   78:	// cards used are irrelevant for this test
+        -:   79:
+        -:   80:		
+        1:   81:	initializeGame(numPlayer, k, seed, testGame);
+        -:   82:	//	retain the reference information for game;
+        -:   83:	
+        1:   84:	int currentPlayer = 0;
+        1:   85:	printf("Test 1 - discard from hand\n");
+        -:   86:	//	situation one - standard draw
+        1:   87:	discardHelper (testGame, currentPlayer);
+        1:   88:}
+        -:   89:
+        1:   90:int main()
+        -:   91:{
+        1:   92:	cardDiscardTest();
+        1:   93:	return 0;
+        -:   94:}

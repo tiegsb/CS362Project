@@ -1,0 +1,32 @@
+Final Project Part A
+
+Writeup by Ian Kronquist, Jesse Poor, and James Guerra
+
+Structure of the testIsValid function
+1. Explain testIsValid Function of UrlValidator test code
+The UrlValidatorTest program uses the junit testing framework. The testIsValid function has two overloads. The first has has a signature of public void testIsValid() which means that it can be called by other objects, has no arguments and no return variables. It delegates to the other overload of the testIsValid function and then calls the setup function. The setup function initializes all of the elements of the testPartsIndex array to zero. The TestPartsIndex is an array of 5 integers which were already initialized to zero.
+The second, more complex, overload of the testIsValid function has the signature public void testIsValid(Object[] testObjects, long options). It takes an array of test objects as its first argument and a bitfield indicating the options passed to the test as its second argument.
+The function first creates a new UrlValidator object with the options it was given. Then it runs two simple assertions as sanity checks to ensure “http://www.google.com” and “http://www.google.com/” are both valid domains. It initializes several variables to control output formatting and enters the primary do...while loop.
+The condition of the do...while is such that the loop will run for all test parts. Within the do...while loop the program firsts allocates a StringBuffer for the test samples. Then it iterates through each part in the testPartsIndex. For each part it unpacks the part into a result pair and appends the result pair’s item property to the test StringBuffer. It then ands the expected result indicator with the result pair’s valid property, so that if any of the tests urls are invalid the test should fail. It then exits the for loop. It transforms the test StringBuffer to a string called url and finally uses the URL validator to check if the url is valid. If it the test has been configured to print its output it will then do so and continue the do... while loop for the rest of the tests.
+
+
+Analysis of the tests being performed
+2. Give how many total number of urls it is testing.
+It tests 53 URL result pairs and 2 versions of google.com for a total of 69 URLs.
+
+3.  Also, explain how it is building all the urls.
+It is building the URLs by combining all of the possible combinations of testing UrlSchemes, UrlAuthorities, UrlPorts, and Paths together and running them through the UrlValidator.
+
+
+Examples of valid and invalid URLS
+4. Give an example of valid url being tested and an invalid url being tested by testIsValid() method. 
+A valid URL being tested: “http://www.google.com:80/test1”
+An invalid URL being tested: http:/256.256.256.256:65a/..
+
+
+Reflection
+5. Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)?
+
+I think that the code quality of the URL Validator’s test cases is severely lacking. It is not idiomatic Java in the slightest and does not leverage the many built in methods and tools which come with the junit framework. I would hope that the code we write is idiomatic C and is more straightforward and less hackish.
+That said, I believe that the combinatorial structure of the test is significantly more advanced than the tests we have been writing.
+

@@ -13,22 +13,38 @@ Goal: The goal of this program is to test the "Adventure" card.
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 int testAdven(int *hand, int player, int handcount, int handpos, int changeDeck);
 
 int main (){
 	
-	printf("Test 1:\n");
-	int hand1[5] = {smithy,mine,adventurer,tribute,gold};
-	testAdven(hand1, 0, 5, 2, 1);
+	srand(time(NULL));
+	int i, cardsInHand;
+	numOfRandTests=20;
 	
-	printf("Test 2:\n");
-	int hand2[5] = {adventurer,smithy,village,tribute,gold};
-	testAdven(hand2, 0, 5, 0, 0);	
+	for (i=0; i<20;i++){
+		cardsInHand = cardNum();
+	}
+	
+//	printf("Test 1:\n");
+	int hand1[5] = {smithy,mine,adventurer,tribute,gold};
+	for(i=0; i<5; i++){
+		printf("%d\n",hand1[i]);
+	}
+	
+	
+	
+	
+	//	testAdven(hand1, 0, 5, 2, 1);
+	
+//	printf("Test 2:\n");
+//	int hand2[5] = {adventurer,smithy,village,tribute,gold};
+//	testAdven(hand2, 0, 5, 0, 0);	
 
-	printf("Test 3:\n");
-	int hand3[5] = {mine,village,smithy,tribute,gold};
-	testAdven(hand3, 0, 5, 2, 2);
+//	printf("Test 3:\n");
+//	int hand3[5] = {mine,village,smithy,tribute,gold};
+//	testAdven(hand3, 0, 5, 2, 2);
 
 	return 0;
 }
@@ -109,4 +125,9 @@ int testAdven(int *hand, int player, int handCount, int handpos, int changeDeck)
 	}
 
 	return 0;
+}
+
+int cardNum(){
+	int cards = rand()%10+1;
+return cards;
 }

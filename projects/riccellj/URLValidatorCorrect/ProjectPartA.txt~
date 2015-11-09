@@ -1,0 +1,103 @@
+CS362-400 - Final Project Part A
+Jason Gourley
+James Riccelli
+Michael Walker
+-------------------------------------------------------------------------------
+
+Explain testIsValid Function of UrlValidator test code.
+
+	The testIsValid method handles an object of URL parameters as well as 
+	UrlValidator options.  After a new UrlValidator object has been instantiated 
+	the method combines the passed parameters to create full URLs one at a time.  
+	Each of these URLs is passed after creation to the UrlValidator method to test 
+	if the expected boolean value from the passed object matches the return value 
+	or not.  The URL is printed to the console it it has been validated, this loop 
+	terminates when all possible permutations of URLs has been reached.
+
+-------------------------------------------------------------------------------
+
+Give how many total number of urls it is testing.
+
+	The total number of URLs tested is equal to the amount of permutations possible 
+	based on the number of parts used in URL creation. 
+
+	URL parts and variations in each object for construction:
+	testUrlScheme:		9
+	testUrlAuthority:	19
+	testUrlPort: 		7
+	testPath: 		10
+	testUrlQuery: 		3
+
+	Total number of possible permutations is:
+	9 * 19 * 7 * 10 * 3 = 35,910
+
+-------------------------------------------------------------------------------
+
+Explain how it is building all the urls.
+
+	The URLs which are used by the testIsValid method are being constructed by 
+	putting together individual parts provided in the URLValidatorTest.java file.  
+	Each URL under test consists of five separate parts which are then combined 
+	in the test function as a single string which results in creating a large set 
+	of permutations for testing.  The URLs are created following the pattern: 
+	<scheme>://<authority><port><path>?<query>.  
+
+	The individual parts for constructing URLs are divided into five dictionary 
+	objects.  Each entry is a key and value pair where the key is a string that 
+	can be used as part of the URL construction and a boolean value representing 
+	whether a test including the particular string should pass or fail the 
+	validator.  The individual dictionaries for each URL section are:
+	testUrlScheme (e.g. “http://”)
+	testUrlAuthority (e.g. “www.google.com”)
+	testUrlPort (e.g. “:80”)
+	testPath (e.g. “/test1”)
+	testUrlQuery (e.g. “?action=view”)
+
+	These dictionaries are combined into the single testUrlParts object, which is 
+	then passed to the testIsValid method when the main method is invoked.  A do 
+	while loop is utilized to move through each individual test case.  Within this 
+	loop there is first a for loop which handles the creation of the next permutation 
+	URL from the testUrlParts object, then the url is converted to a string allowing 
+	it to go through the rest of the test steps to validate the entire URL as well 
+	as the individual parts of the URL.
+
+-------------------------------------------------------------------------------
+
+Give an example of valid url being tested by testIsValid() method.
+
+	“http://www.google.com:80/test1?action=view”
+
+
+-------------------------------------------------------------------------------
+
+Give an example of an invalid url being tested by testIsValid() method.
+
+	“http://www.google.com:80/..?action=edit&mode=up”
+
+-------------------------------------------------------------------------------
+
+Do you think that a real world test (URL Validator's testIsValid() test in this 
+case) is very different than the unit tests and card tests that we wrote (in 
+terms of concepts & complexity)? 
+
+	This real world example of unit testing is definitely more complicated than 
+	my approach has been when tackling the test suite for dominion.  At the core 
+	my unit tests more recently were designed with the intention to duplicate the 
+	same types of combinations as can be seen in this unit tests.  The tests 
+	created in prior assignments were static in construction, along the lines of 
+	the tests that are represented in the methods like testValidator248.  
+
+	The use of the individual parts to be combined into a more complicated test 
+	case was a concept I had not previously fully understood the power of through 
+	combinational testing.  I stumbled into some similar but far less complicated 
+	ideas while constructing random test cases for dominion.
+
+	The validation that is occurring here is slightly different from dominion in 
+	complexity of objects that affect the validity of the test case.  The URL 
+	strings under test are constructed of five parts where the dominion methods 
+	handle many more parameters for the game state as well as the players hands, 
+	decks, and discard piles.  The complexity for verification in the case of 
+	dominion does require an understanding of the game state and how the method 
+	under test is using it.  The construction of the test objects in this case 
+	are easier to get at a conceptual level and understand the implementation.
+

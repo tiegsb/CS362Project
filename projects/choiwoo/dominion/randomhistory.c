@@ -25,13 +25,13 @@ At the end of the test, it will list out number of successful runs and failed ru
 and also the times that the card wasn't used.
 
 Expectations:
-	Both Smithy and Adventurer will have problems. They were the cards that I added bugs
+	Both Smithy and Adventurer will have bugs. They were the cards that I added bugs
 	to for a previous assignment. So, they will always have failed tests.
 
 Problem with Testing:
-	For adventurer, I did not test if it's actually working correctly. 
+	For adventurer, I did not thoroughly test if the card is actually working correctly. 
 	I only tested for the result. If working correctly, it will give 2 treasure card
-	on hand. I just compared the number of cards in hand after adventurer was used. 
-	This doesn't test for discarded nontreasure cards, and also if treasure card function
-	is actually working correctly.
+	to hand. I compared the number of cards in hand after adventurer was used. 
+	This doesn't test for discarded nontreasure cards, and also if the process 
+	of treasure card function is actually working correctly.
 

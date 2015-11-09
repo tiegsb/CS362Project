@@ -1,0 +1,20 @@
+testIsValid(): Runs testIsValid(string[], long) two separate times, once for the array of test values in testUrlParts and once for the values in testUrlPartsOptions.
+testIsValid(string[], long) runs all possible permutations of the strings in argument 1 through the isValid() url testing function and printfs the results. Variable 2, long,
+determines the flags that are set when utilizing the isValid function.
+
+The total of urls tested by the testIsValid(string[], long) comes to 89,777.
+2x www.google.com
+2x www.google.com/
+35,910x permutations of testUrlParts
+53,865x permutations of testUrlPartsOptions
+
+valid url example: h3t://www.google.com:80
+invalid url example: 3ht://www.google.com:80
+
+Our previous unit tests were largely ineffective relative to software testing that is applied in the real world (such as the above mentioned test suite); this is because,
+when designing a unit test on the scope that we were implementing them, the time savings is minimal and the arguments typically only cover a very small portion of the
+potential arguments. When randomizing testing, as in the above example, we get much closer to the actual variation of input that the program would be subjected to once
+it is deployed and utilized in the real world. That being said, it is nearly impossible in many cases to account for the variability provided by actual users so testing,
+while it strives to as closely mirror actual user input as possible, will often fall slightly short of actual real-world testing by users. For example, despite providing
+a large number of test cases, the above example only utilizes 19 'authority' strings, while in the real world it would likely experience many more possible inputs on
+this segment.
