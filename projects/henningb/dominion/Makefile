@@ -123,6 +123,36 @@ unittestresults.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest2.c
 	gcov -b dominion.c >> unittestresults.out
 	gcov -b cardtest4.c >> unittestresults.out
 
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
+	echo "-------------------------------------------------------" >> randomtestadventurer.out
+	echo "RESULTS FOR RANDOMTESTADVENTURER:" >> randomtestadventurer.out
+	echo "-------------------------------------------------------" >> randomtestadventurer.out
+	gcc -o randomtestadventurer dominion.o rngs.o randomtestadventurer.c $(CFLAGS)
+	randomtestadventurer >> randomtestadventurer.out
+	echo "-------------------------------------------------------" >> randomtestadventurer.out
+	echo "GCOV RESULTS" >> randomtestadventurer.out
+	echo "-------------------------------------------------------" >> randomtestadventurer.out
+	gcov -b dominion.c >> randomtestadventurer.out
+	gcov -b randomtestadventurer.c >> randomtestadventurer.out
+
+randomtestcard: randomtestcard.c dominion.o rngs.o
+	gcc -o randomtestcard -g randomtestcard.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard.out: randomtestcard.c dominion.o rngs.o
+	echo "-------------------------------------------------------" >> randomtestcard.out
+	echo "RESULTS FOR RANDOMTESTCARD (SMITHY):" >> randomtestcard.out
+	echo "-------------------------------------------------------" >> randomtestcard.out
+	gcc -o randomtestcard dominion.o rngs.o randomtestcard.c $(CFLAGS)
+	randomtestcard >> randomtestcard.out
+	echo "-------------------------------------------------------" >> randomtestcard.out	
+	echo "GCOV RESULTS" >> randomtestcard.out
+	echo "-------------------------------------------------------" >> randomtestcard.out
+	gcov -b dominion.c >> randomtestcard.out	
+	gcov -b randomtestcard.c >> randomtestcard.out
+	
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
