@@ -1,0 +1,62 @@
+unittest1.c TEST
+Testing for 27 card cost values
+-------------------------------
+Card Number : 0 	Card Name : curse 
+Card Cost : 0 	checked 
+Card Number : 1 	Card Name : estate 
+Card Cost : 2 	checked 
+Card Number : 2 	Card Name : duchy 
+Card Cost : 5 	checked 
+Card Number : 3 	Card Name : province 
+Card Cost : 8 	checked 
+Card Number : 4 	Card Name : copper 
+Card Cost : 0 	checked 
+Card Number : 5 	Card Name : silver 
+Card Cost : 3 	checked 
+Card Number : 6 	Card Name : gold 
+Card Cost : 6 	checked 
+Card Number : 7 	Card Name : adventurer 
+Card Cost : 6 	checked 
+Card Number : 8 	Card Name : council_room 
+Card Cost : 5 	checked 
+Card Number : 9 	Card Name : gardens 
+Card Cost : 4 	checked 
+Card Number : 10 	Card Name : gardens 
+Card Cost : 4 	checked 
+Card Number : 11 	Card Name : mine 
+Card Cost : 5 	checked 
+Card Number : 12 	Card Name : remodel 
+Card Cost : 4 	checked 
+Card Number : 13 	Card Name : smithy 
+Card Cost : 4 	checked 
+Card Number : 14 	Card Name : village 
+Card Cost : 3 	checked 
+Card Number : 15 	Card Name : baron 
+Card Cost : 4 	checked 
+Card Number : 16 	Card Name : great_hall 
+Card Cost : 3 	checked 
+Card Number : 17 	Card Name : minion 
+Card Cost : 5 	checked 
+Card Number : 18 	Card Name : steward 
+Card Cost : 3 	checked 
+Card Number : 19 	Card Name : tribute 
+Card Cost : 5 	checked 
+Card Number : 20 	Card Name : ambassador 
+Card Cost : 3 	checked 
+Card Number : 21 	Card Name : cutpurse 
+Card Cost : 4 	checked 
+Card Number : 22 	Card Name : embargo 
+Card Cost : 2 	checked 
+Card Number : 23 	Card Name : outpost 
+Card Cost : 5 	checked 
+Card Number : 24 	Card Name : salvager 
+Card Cost : 4 	checked 
+Card Number : 25 	Card Name : sea_hag 
+Card Cost : 4 	checked 
+Card Number : 26 	Card Name : treasure_map 
+Card Cost : 4 	checked 
+File 'dominion.c'
+No executable lines
+dominion.c:creating 'dominion.c.gcov'
+
+unittest2.c TEST

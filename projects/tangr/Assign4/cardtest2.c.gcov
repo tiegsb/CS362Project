@@ -1,0 +1,76 @@
+        -:    0:Source:cardtest2.c
+        -:    0:Graph:cardtest2.gcno
+        -:    0:Data:cardtest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/********************************************************
+        -:    2:*	Name: 	Robert Tang
+        -:    3:*	Class:	CS 362
+        -:    4:*	File:	cardtest2.c
+        -:    5:*
+        -:    6:*	Description: 
+        -:    7:*		Test for Adventure Card
+        -:    8:********************************************************/
+        -:    9:
+        -:   10:#include "dominion.h"
+        -:   11:#include "dominion_helpers.h"
+        -:   12:#include "dominion.c"
+        -:   13:#include <string.h>
+        -:   14:#include <stdio.h>
+        -:   15:#include "rngs.h"
+        -:   16:#include "interface.h"
+        -:   17:
+        1:   18:int main ()
+        -:   19:{
+        1:   20:	int seed = 1000;
+        1:   21:	int numPlayer = 2;
+        1:   22:	struct gameState* testGame = newGame();
+        -:   23:	
+        -:   24:	
+        -:   25: 	
+        -:   26: 	int k[10] = {adventurer, council_room, feast, gardens, mine,
+        1:   27: 				remodel, smithy, village, baron, great_hall}; 
+        -:   28:
+        1:   29:	initializeGame(numPlayer, k, seed, testGame);
+        -:   30:	
+        1:   31:	int currentPlayer = 0;	
+        1:   32:	int handCount = testGame->handCount[currentPlayer];
+        1:   33:	int handPosition = handCount - 1;
+        1:   34:	int deckSize = testGame->deckCount[currentPlayer];
+        1:   35:	testGame->hand[currentPlayer][handPosition] = council_room; //replace
+        -:   36:	
+        1:   37:	int test = playCouncil_Room (testGame, handPosition);
+        1:   38:	if (test == 0)
+        1:   39:		printf("Testing Council Room\n");
+        -:   40:	else
+    #####:   41:		printf("Testing Council Room - Fail \n");
+        -:   42:///////////////////////Draw Section////////////////////
+        1:   43:	if (testGame->handCount[currentPlayer] != handCount - 1 + 4)
+    #####:   44:		printf("Council Room Card Effect1 - Fail \n");
+        -:   45:	else
+        1:   46:		printf("Council Room Effect -  check \n");
+        -:   47:	
+        1:   48:	if (testGame->hand[currentPlayer][handPosition] != smithy)
+        1:   49:		printf("Council Room  Not In Hand - check \n");
+        -:   50:	else
+    #####:   51:		printf("Council Room  Not In Hand  - check \n");
+        -:   52:	
+        1:   53:	if (testGame->playedCards[testGame->playedCardCount] != council_room)
+        1:   54:		printf("Council Room  Placed in Played - check \n");
+        -:   55:	else
+    #####:   56:		printf("Council Room  Placed in Played - fail \n");
+        -:   57:	
+        1:   58:	if (testGame->deckCount[currentPlayer] != deckSize - 4)
+    #####:   59:		printf("Council Room  Card Draw - Fail \n");
+        -:   60:	else
+        1:   61:		printf("Council Room  Card Draw - check \n");
+        -:   62:	
+        -:   63://///////////////////Buy Section///////////////////////////
+        1:   64:	if (testGame->numBuys != 2)
+    #####:   65:		printf("Council Room  Card Buy Increase - Fail \n");
+        -:   66:	else
+        1:   67:		printf("Council Room  Card Buy Increase - check \n");
+        -:   68:	
+        1:   69:	return 0;
+        -:   70:	
+        -:   71:}
