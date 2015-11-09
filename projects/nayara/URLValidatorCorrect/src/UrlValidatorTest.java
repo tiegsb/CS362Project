@@ -82,6 +82,7 @@ public class UrlValidatorTest extends TestCase {
     *
     * @param testObjects Used to create a url.
     */
+   
    public void testIsValid(Object[] testObjects, long options) {
       UrlValidator urlVal = new UrlValidator(null, null, options);
       assertTrue(urlVal.isValid("http://www.google.com"));
@@ -92,13 +93,16 @@ public class UrlValidatorTest extends TestCase {
          statusPerLine = 6;
       }
       do {
+    	 // Declare empty string buffer
          StringBuffer testBuffer = new StringBuffer();
          boolean expected = true;
          for (int testPartsIndexIndex = 0; testPartsIndexIndex < testPartsIndex.length; ++testPartsIndexIndex) {
-            int index = testPartsIndex[testPartsIndexIndex];
+        	 int index = testPartsIndex[testPartsIndexIndex];
             ResultPair[] part = (ResultPair[]) testObjects[testPartsIndexIndex];
+            
             testBuffer.append(part[index].item);
             expected &= part[index].valid;
+            System.out.println(expected);
          }
          //System.out.println(testPartsIndex[0]);
          String url = testBuffer.toString();
@@ -194,8 +198,8 @@ public class UrlValidatorTest extends TestCase {
         assertFalse("first.my-testing should not validate",
                 validator.isValid("http://first.my-testing/test/index.html"));
 
-        //assertFalse("broke.hostname should not validate",
-          //      validator.isValid("http://broke.hostname/test/index.html"));
+//        assertFalse("broke.hostname should not validate",
+//                validator.isValid("http://broke.hostname/test/index.html"));
 
         assertTrue("www.apache.org should still validate",
                 validator.isValid("http://www.apache.org/test/index.html"));
