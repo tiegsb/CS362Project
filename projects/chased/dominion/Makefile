@@ -33,7 +33,7 @@ runtests: testDrawCard
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-unittestresults.out: rngs.o dominion.o unittest2.c unittest3.c unittest1.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c
+unittestresults.out: rngs.o dominion.o unittest2.c unittest3.c unittest1.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c 
 	echo "Function and card test results:" > unittestresults.out
 
 	echo "unittest1.c:" >> unittestresults.out
@@ -75,6 +75,26 @@ unittestresults.out: rngs.o dominion.o unittest2.c unittest3.c unittest1.c unitt
 	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o $(CFLAGS)
 	./cardtest4 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	
+randomtestcard.out: randomtestcard.c dominion.h dominion.c rngs.h rngs.c
+	gcc -c rngs.c -g  $(CFLAGS) 
+	gcc -c dominion.c -g  $(CFLAGS)
+	
+	echo "Random card test results (Smithy):" > randomtestcard.out
+	echo "randomtestcard.c:" >> randomtestcard.out
+	gcc -o randomtestcard -g randomtestcard.c dominion.o rngs.o $(CFLAGS)
+	./randomtestcard >> randomtestcard.out
+	gcov dominion.c >> randomtestcard.out
+
+randomtestadventurer.out: randomtestadventurer.c dominion.h dominion.c rngs.h rngs.c
+	gcc -c rngs.c -g  $(CFLAGS) 
+	gcc -c dominion.c -g  $(CFLAGS)
+	
+	echo "Adventurer random card test results:" > randomtestadventurer.out
+	echo "randomtestadventurer.c:" >> randomtestadventurer.out
+	gcc -o randomcardadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+	./randomcardadventurer >> randomtestadventurer.out
+	gcov dominion.c >> randomtestadventurer.out
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 

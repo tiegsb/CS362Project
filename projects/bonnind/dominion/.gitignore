@@ -4,3 +4,6 @@ badTestDrawCard
 testDrawCard
 *.gcno
 *.o
+unittestresults.out
+randomtestcard.out
+randomtestadventurer.out

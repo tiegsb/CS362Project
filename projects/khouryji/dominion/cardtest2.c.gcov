@@ -1,0 +1,127 @@
+        -:    0:Source:cardtest2.c
+        -:    0:Graph:cardtest2.gcno
+        -:    0:Data:cardtest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include <string.h>
+        -:    3:#include <stdio.h>
+        -:    4:#include "unittestHelper.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <limits.h>
+        -:    7:
+        -:    8:
+        1:    9:int main()
+        -:   10:{
+        -:   11:  int i;
+        1:   12:  int TEST_TIMES= 3;
+        -:   13:  struct gameState testerState;
+        1:   14:  srand(time(0));
+        -:   15:
+        1:   16:  printf("*****************************************************\n");
+        1:   17:  printf("*CARDTEST2 Suite \n");
+        1:   18:  printf("  (tests ADVENTURER with 3 semi-random states)\n");
+        1:   19:  printf("*****************************************************\n");
+        4:   20:  for(i=0; i<TEST_TIMES; i++)
+        -:   21:  {    
+        3:   22:    createRandState(&testerState);
+        3:   23:    testerState.handCount[testerState.whoseTurn]= rand() % 13 +1;
+        3:   24:    unittest2(&testerState);
+        -:   25:  }
+        -:   26:  
+        1:   27:  return 0;
+        -:   28:}
+        -:   29:  
+        -:   30://Tests drawCard()
+        3:   31:unittest2(struct gameState *state)
+        -:   32:{
+        3:   33:  int i, b, r, test[E_playedCardCount+1]= {0};
+        3:   34:  int handPos=0;
+        -:   35:
+        3:   36:  int hand[1]={-1}, //arrays that show how many players may have differences in those attributes after call
+        3:   37:    handCount[1]={-1},
+        3:   38:    deck[1]={-1},
+        3:   39:    deckCount[1]={-1},
+        3:   40:    discard[1]={-1},
+        3:   41:    discardCount[1]={-1};
+        -:   42:
+        -:   43:
+        3:   44:  int hLen=1,
+        3:   45:    hcLen=1,
+        3:   46:    deLen=1,
+        3:   47:    decLen=1,
+        3:   48:    diLen=1,
+        3:   49:    dicLen=1;
+        -:   50:
+        -:   51:  struct gameState copyState, afterCopy;
+        -:   52:  
+        -:   53:  
+        -:   54:  //snapshot of state BEFORE
+        3:   55:  copyState= *state;
+        -:   56:
+        3:   57:  if(copyState.handCount[copyState.whoseTurn]== 0)
+        -:   58:  {
+    #####:   59:    printf("Skipping this random state: Random handCount assigned 0.\n\n");
+    #####:   60:    return 0;
+        -:   61:  }
+        -:   62:  else
+        -:   63:  {
+        3:   64:    handPos= rand() % copyState.handCount[copyState.whoseTurn];
+        -:   65:  }
+        3:   66:  caseAdventurer(copyState.whoseTurn, handPos, state);
+        -:   67:
+        -:   68:  //snapshot of state AFTER
+        3:   69:  afterCopy= *state;
+        -:   70:
+        -:   71:    //*********************************************************************
+        -:   72:    //These assignments affect the difference finder function at the end
+        -:   73:    //
+        -:   74:    //hand for this player is expected to be changed (increased in size by 2)
+        3:   75:    hand[0]= copyState.whoseTurn;
+        3:   76:    handCount[0]= copyState.whoseTurn;
+        -:   77:    //playedCards should be changed by smithy
+        3:   78:    test[E_playedCards]= 1;
+        3:   79:    test[E_playedCardCount]= 1;
+        -:   80:    //deck for this player is expected to change as the player draws cards from the deck
+        3:   81:    deck[0]= copyState.whoseTurn;
+        3:   82:    deckCount[0]= copyState.whoseTurn;
+        -:   83:    //the discard pile for this player should take all non treasure cards and should change if the 
+        -:   84:    //deck runs empty
+        3:   85:    test[E_discard]= 1;
+        3:   86:    test[E_discardCount]= 1;
+        -:   87:    //*********************************************************************
+        -:   88:
+        -:   89:  //check if handCount when up by 1 (draw 2 treasure cards and discard adventurer)
+        3:   90:  if(afterCopy.handCount[afterCopy.whoseTurn]!= copyState.handCount[copyState.whoseTurn]+ 2)
+        -:   91:  {
+        3:   92:        printf("Test handCount+=1: FAILED\n");
+        3:   93:        printf("handCount Before: %d\n", copyState.handCount[copyState.whoseTurn]);
+        3:   94:        printf("handCount After: %d\n\n", afterCopy.handCount[afterCopy.whoseTurn]);
+        -:   95:  }
+        -:   96:
+        -:   97:  //check if last card is now a treasure card
+        9:   98:  if((afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-1] != copper)
+        3:   99:    &&(afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-1] != silver)
+        3:  100:    &&(afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-1] != gold))
+        -:  101:  {
+        3:  102:    printf("Test last card is treasure: FAILED\n");
+        3:  103:    printf("lastCard: %d\n\n", afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-1]);
+        -:  104:  }
+        -:  105:
+        -:  106:  //check if second to last card is now a treasure card
+        9:  107:  if((afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-2] != copper)
+        3:  108:    &&(afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-2] != silver)
+        3:  109:    &&(afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-2] != gold))
+        -:  110:  {
+        3:  111:    printf("Test second to last card is treasure: FAILED\n");
+        3:  112:    printf("second to lastCard: %d\n\n", afterCopy.hand[afterCopy.whoseTurn][afterCopy.handCount[afterCopy.whoseTurn]-2]);
+        -:  113:  } 
+        -:  114:
+        -:  115:  //******************************************************************************
+        -:  116:  //Find all changes to gamestate and print errors if changes were not expected
+        3:  117:  printBadDiffs(&copyState, &afterCopy, test, hand, hLen, handCount, hcLen, discard, diLen, discardCount, dicLen, deck, deLen, deckCount, decLen);  
+        -:  118:
+        3:  119:  return 0;
+        -:  120:}
+        -:  121:  
+        -:  122:

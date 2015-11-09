@@ -548,7 +548,7 @@ int drawCard(int player, struct gameState *state)
     state->deckCount[player] = state->discardCount[player];
     state->discardCount[player] = 0;//Reset discard
 
-    //Shufffle the deck
+    //Shuffle the deck
     shuffle(player, state);//Shuffle the deck up and make it so that we can draw
    
     if (DEBUG){//Debug statements
@@ -1290,6 +1290,7 @@ int adventurerCard(struct gameState *state, int currentPlayer) {
     }
     drawCard(currentPlayer, state);
     //cardDrawn = top card of hand = most recently drawn card.
+    
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];
 
     //If cardDrawn is treasure, increment drawntreasure.

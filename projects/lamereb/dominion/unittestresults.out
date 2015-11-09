@@ -1,0 +1,279 @@
+unittest1.c --> 
+
+UNIT TEST 1 COMPLETE with 0 ERRORS
+
+File 'dominion.c'
+Lines executed:32.63% of 567
+Creating 'dominion.c.gcov'
+
+unittest2.c --> 
+
+UNIT TEST 2 COMPLETE with 0 ERRORS
+
+File 'dominion.c'
+Lines executed:32.63% of 567
+Creating 'dominion.c.gcov'
+
+unittest3.c --> 
+
+UNIT TEST 3 COMPLETE with 0 ERRORS
+
+File 'dominion.c'
+Lines executed:32.63% of 567
+Creating 'dominion.c.gcov'
+
+unittest4.c --> 
+
+UNIT TEST 4 COMPLETE with 0 ERRORS
+
+File 'dominion.c'
+Lines executed:32.63% of 567
+Creating 'dominion.c.gcov'
+
+cardtest1.c --> 
+ TESTING SMITHY CARD
+Starting deck count: 15
+Starting hand count: 5
+Starting discard count: 0
+Hand Card 0 : 1
+Hand Card 1 : 4
+Hand Card 2 : 4
+Hand Card 3 : 1
+Hand Card 4 : 1
+ERROR: player 0 able to play smithy card that's not in hand
+# Hand AFTER playing SMITHY card:
+Hand Card 0 : 1
+Hand Card 1 : 4
+Hand Card 2 : 4
+Hand Card 3 : 1
+Hand Card 4 : 1
+Hand Card 5 : 6
+Hand Card 6 : 6
+# Hand AFTER adding SMITHY card:
+Hand Card 0 : 1
+Hand Card 1 : 4
+Hand Card 2 : 4
+Hand Card 3 : 1
+Hand Card 4 : 1
+Hand Card 5 : 6
+Hand Card 6 : 6
+Hand Card 7 : 13
+ --> 8 : hand size before playing smithy
+ --> 10 : hand size after playing smithy
+ERROR: 3 cards were not added to player's hand
+card at pos 7 = 6
+Hand Card 0 : 1
+Hand Card 1 : 4
+Hand Card 2 : 4
+Hand Card 3 : 1
+Hand Card 4 : 1
+Hand Card 5 : 6
+Hand Card 6 : 6
+Hand Card 7 : 6
+Hand Card 8 : 6
+Hand Card 9 : 6
+ERROR: smithy card never added to discard pile
+Discard Card 0 : 0
+Discard Card 1 : 0
+
+SMITHY CARD TEST COMPLETE with 3 ERRORS
+
+File 'dominion.c'
+Lines executed:32.63% of 567
+Creating 'dominion.c.gcov'
+
+cardtest2.c --> 
+ TESTING VILLAGE CARD
+Starting hand count: 5
+Starting deck count: 5
+Starting discard count: 0
+Starting action count: 1
+
+# Hand BEFORE playing VILLAGE card:
+Hand Card: 0 : 1
+Hand Card: 1 : 4
+Hand Card: 2 : 4
+Hand Card: 3 : 1
+Hand Card: 4 : 1
+ERROR: player 0 able to play village card that's not in hand
+
+ AFTER PLAYING VILLAGE CARD
+Ending hand count: 6
+Ending deck count: 3
+Ending discard count: 0
+Ending action count: 3
+
+# Hand AFTER playing VILLAGE card:
+Hand Card: 0 : 1
+Hand Card: 1 : 4
+Hand Card: 2 : 4
+Hand Card: 3 : 1
+Hand Card: 4 : 1
+Hand Card: 5 : 4
+ERROR: Village card not properly discarded.
+ TESTING VILLAGE CARD
+Starting hand count: 0
+Starting deck count: 10
+Starting discard count: 0
+Starting action count: 1
+
+# Hand BEFORE playing VILLAGE card:
+ERROR: player 1 able to play village card that's not in hand
+
+ AFTER PLAYING VILLAGE CARD
+Ending hand count: 1
+Ending deck count: 8
+Ending discard count: 0
+Ending action count: 3
+
+# Hand AFTER playing VILLAGE card:
+Hand Card: 0 : 4
+ERROR: Village card not properly discarded.
+
+VILLAGE CARD TEST COMPLETE with 4 ERRORS
+
+File 'dominion.c'
+Lines executed:32.63% of 567
+Creating 'dominion.c.gcov'
+
+cardtest3.c --> 
+ TESTING COUNCIL ROOM CARD
+Starting hand count for 0:	5
+Starting deck count for 0:	5
+Starting discard count for 0:	0
+Starting hand count for 1:	0
+Starting deck count for 1:	10
+Starting discard count for 1:	0
+Starting hand count for 2:	0
+Starting deck count for 2:	10
+Starting discard count for 2:	0
+Starting hand count for 3:	0
+Starting deck count for 3:	10
+Starting discard count for 3:	0
+Starting numBuys: 1
+
+# Player hand BEFORE playing VILLAGE card:
+Hand Card: 0 : 1
+Hand Card: 1 : 4
+Hand Card: 2 : 4
+Hand Card: 3 : 1
+Hand Card: 4 : 1
+ERROR: player 0 able to play village card that's not in hand
+
+ AFTER PLAYING VILLAGE CARD
+Ending hand count for 0:	8
+Ending deck count for 0:	1
+Ending discard count for 0:	0
+Ending hand count for 1:	1
+Ending deck count for 1:	9
+Ending discard count for 1:	0
+Ending hand count for 2:	1
+Ending deck count for 2:	9
+Ending discard count for 2:	0
+Ending hand count for 3:	1
+Ending deck count for 3:	9
+Ending discard count for 3:	0
+Ending count numBuys: 4
+
+# Player hand AFTER playing VILLAGE card:
+Hand Card: 0 : 1
+Hand Card: 1 : 4
+Hand Card: 2 : 4
+Hand Card: 3 : 1
+Hand Card: 4 : 1
+Hand Card: 5 : 4
+Hand Card: 6 : 4
+Hand Card: 7 : 4
+ERROR: Player given 3 cards instead of 1.
+ERROR: Player given 3 buys instead of 1.
+ERROR: Council Room card not properly discarded.
+Player 1 PASSED properly drawing a card
+Player 2 PASSED properly drawing a card
+Player 3 PASSED properly drawing a card
+ TESTING COUNCIL ROOM CARD
+Starting hand count for 0:	5
+Starting deck count for 0:	5
+Starting discard count for 0:	0
+Starting hand count for 1:	0
+Starting deck count for 1:	10
+Starting discard count for 1:	0
+Starting hand count for 2:	0
+Starting deck count for 2:	10
+Starting discard count for 2:	0
+Starting hand count for 3:	0
+Starting deck count for 3:	10
+Starting discard count for 3:	0
+Starting numBuys: 1
+
+# Player hand BEFORE playing VILLAGE card:
+ERROR: player 1 able to play village card that's not in hand
+
+ AFTER PLAYING VILLAGE CARD
+Ending hand count for 0:	6
+Ending deck count for 0:	4
+Ending discard count for 0:	0
+Ending hand count for 1:	3
+Ending deck count for 1:	6
+Ending discard count for 1:	0
+Ending hand count for 2:	1
+Ending deck count for 2:	9
+Ending discard count for 2:	0
+Ending hand count for 3:	1
+Ending deck count for 3:	9
+Ending discard count for 3:	0
+Ending count numBuys: 2
+
+# Player hand AFTER playing VILLAGE card:
+Hand Card: 0 : 4
+Hand Card: 1 : 4
+Hand Card: 2 : 4
+ERROR: Player given 3 cards instead of 1.
+Player 1 PASSED having +1 buys
+ERROR: Council Room card not properly discarded.
+Player 0 PASSED properly drawing a card
+Player 2 PASSED properly drawing a card
+Player 3 PASSED properly drawing a card
+
+COUNCIL ROOM CARD TEST COMPLETE with 7 ERRORS
+
+File 'dominion.c'
+Lines executed:32.63% of 567
+Creating 'dominion.c.gcov'
+
+cardtest4.c --> 
+ TESTING ADVENTURER CARD
+Starting hand count:	5
+Starting deck count:	5
+Starting discard count:	0
+
+# Player hand BEFORE playing ADVENTURER card:
+Hand Card: 0 : 1
+Hand Card: 1 : 4
+Hand Card: 2 : 4
+Hand Card: 3 : 1
+Hand Card: 4 : 1
+ERROR: player 0 able to play ADVENTURER card that's not in hand
+
+ AFTER PLAYING ADVENTURER CARD
+Ending hand count:	7
+Ending deck count:	3
+Ending discard count:	0
+
+# Player hand AFTER playing ADVENTURER card:
+Hand Card: 0 : 1
+Hand Card: 1 : 4
+Hand Card: 2 : 4
+Hand Card: 3 : 1
+Hand Card: 4 : 1
+Hand Card: 5 : 4
+Hand Card: 6 : 4
+ -- previous count of coin cards:	2
+ -- current count of coin cards:	4
+ERROR: Council Room card not properly discarded.
+
+ADVENTURE CARD TEST COMPLETE with 2 ERRORS
+
+File 'dominion.c'
+Lines executed:32.63% of 567
+Creating 'dominion.c.gcov'
+
