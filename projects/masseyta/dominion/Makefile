@@ -46,6 +46,36 @@ unittestresults.out:
 	echo "Results now written to file: unittestresults.out"
 	echo "Please open or CAT to view"
 
+randomtestresults.out:
+	make randomTests
+	echo "------- RUNNING RANDOM TEST BUNDLE: Printout -------------" >> randomtestresults.out
+	echo "All" >> randomtestresults.out
+	echo "----------- COVERAGE ---------------" >> randomtestresults.out
+	gcov -f -b dominion.c >> randomtestresults.out
+	echo "Results now written to file: randomtestresults.out"
+	echo "Please open or CAT to view"
+
+randomtestcard.out:
+	make all
+	make randomcard
+	echo "------- RUNNING RANDOM TEST BUNDLE: Printout -------------" >> randomtestcard.out
+	echo "All" >> randomtestcard.out
+	echo "----------- COVERAGE ---------------" >> randomtestcard.out
+	gcov -f -b dominion.c >> randomtestcard.out
+	echo "Results now written to file randomtestcard.out"
+	echo "Please open or CAT to view"
+
+randomtestadventurer.out:
+	make all
+	make randomadventurer
+	echo "------- RUNNING RANDOM TEST BUNDLE: Printout -------------" >> randomtestadventurer.out
+	echo "All" >> randomtestadventurer.out
+	echo "----------- COVERAGE ---------------" >> randomtestadventurer.out
+	gcov -f -b dominion.c >> randomtestadventurer.out
+	echo "Results now written to file randomtestadventurer.out"
+	echo "Please open or CAT to view"
+
+
 tests: 
 	./cardtest1
 	./cardtest2
@@ -55,6 +85,26 @@ tests:
 	./unittest1
 	./unittest2
 	./unittest4
+
+randomTests:
+	make randomtestadventurer
+	make randomtestcard
+	./randomtestadventurer
+	./randomtestcard
+
+randomadventurer:
+	make randomtestadventurer
+	./randomtestadventurer
+
+randomcard:
+	make randomtestcard
+	./randomtestcard
+
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard: randomtestcard.c dominion.o rngs.o
+	gcc -o randomtestcard -g randomtestcard.c dominion.o rngs.o $(CFLAGS)
 
 cardtest1: cardtest1.c dominion.o rngs.o
 	gcc -o cardtest1 -g  cardtest1.c dominion.o rngs.o $(CFLAGS)
@@ -87,4 +137,4 @@ all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
-	rm -f unittestresults.out
+	rm -f unittestresults.out rm -f randomtestcard.out rm -f randomtestadventurer.out
