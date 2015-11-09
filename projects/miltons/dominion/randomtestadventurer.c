@@ -128,7 +128,7 @@ int testAdventurerEffect(int playerNumber, struct gameState *post)
     int cardsAvailable;
     int drawnTreasure = 0;
     int tempHand[MAX_HAND];
-    int cardDrawn;
+    int cardDrawn = 0; 
     int z = 0;
 
     // create duplicate of game state for before and after comparison
