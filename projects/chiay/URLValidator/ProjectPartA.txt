@@ -1,0 +1,46 @@
+Yi Xuan Chia
+Jeffrey Jones
+
+CS362 Fall 2015
+Final Project
+
+Part a: 
+
+(i) testIsValid Function
+
+	First, the method declares a new URLValidator object, and then asserting with a valid url to get correct
+	feedback. In the do-while loop, a StringBuffer object is declared to form a standard format of a url .
+ 	Next, the for-loop will get the parts from 5 ResultPair arrays to generate urls for testing. The arrays are 
+	declared as:
+		(a) testUrlScheme
+		(b) testUrlAuthority
+		(c) testUrlPort
+		(d) testUrlPathOptions
+		(e) testUrlQuery
+	The set up will then convert to string and passed to the isValid() method in URLValidator. If the isValid() 
+	method return "true", the url will be displayed to the user.
+
+(ii) Number of URLs tested
+
+	The testIsValid() method is testing 31290 urls.
+
+(iii) Building URLs to test
+
+	A complete URL is composed by scheme, authority, port, path, and query. As mentioned, these parts are
+	stored in 5 ResultPair arrays. Each array contains elements of composition, and the boolean expression that 
+	identifies whether each element is valid or not. The for-loop then get each valid element accordingly and
+	append to the string buffer with a valid url format, eventually form a complete url string for testing in the
+	isValid() method.
+
+(iv) Examples of valid and invalid URLs
+
+	Valid   :- http://www.google.com:80/test1?action=view
+
+	Invalid:- ://.aaa:-1/..//file?action=view
+
+(v) Real World Test vs Dominion Unit Test
+
+	Students may learn what they so called case studies from real world, so I assumed that the concepts of 
+	testing from the real world are college are very similar. However, the complexity for both sides will
+	be different. Students are currently in a learning stage, so they will perform more on basic testing. 
+	The real world has larger and complex software that may need more complex testing.
