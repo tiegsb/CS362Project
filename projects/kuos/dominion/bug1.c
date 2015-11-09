@@ -1,5 +1,5 @@
 /******************************************************************************
-coverage1.c
+bug1.c
 Sharon Kuo (kuos@oregonstate.edu)
 CS362-400: Assignment 3
 Description: Notes on bugs found in unit tests for functions and cards,
