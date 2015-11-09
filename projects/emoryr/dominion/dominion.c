@@ -649,13 +649,32 @@ int adventurer_play(struct gameState *state, int currentPlayer, int handPos) {
     int drawntreasure =0;
     int cardDrawn;
     int temphand[MAX_HAND];
+    // iterate through deck + discard and check for >=2 treasure cards
+    int cnt = 0;
+    for (int i = 0; i < state->deckCount[currentPlayer]; i++) {
+      int card = state->deck[currentPlayer][i];
+        if (card == gold || card == silver || card == copper) {
+            cnt++;
+        }
+    }
+    
+    for (int i = 0; i < state->discardCount[currentPlayer]; i++) {
+      int card = state->discard[currentPlayer][i];
+        if (card == gold || card == silver || card == copper) {
+            cnt++;
+        }
+    }
+    if (cnt < 2) {
+        return -1;
+    }
+
     while(drawntreasure<2){
         if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
             shuffle(currentPlayer, state);
         }
         drawCard(currentPlayer, state);
         cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-        if (cardDrawn == copper || cardDrawn == silver)
+        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
             drawntreasure++;
         else{
             temphand[z]=cardDrawn;
@@ -667,6 +686,9 @@ int adventurer_play(struct gameState *state, int currentPlayer, int handPos) {
         state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
         z=z-1;
     }
+
+    
+    
     return 0;
 }
 
@@ -696,8 +718,10 @@ return 0;
 
 int smithy_play (struct gameState *state, int currentPlayer, int handPos) {
     //+3 Cards
+
     for (int i = 0; i <= 3; i++)
     {
+
         drawCard(currentPlayer, state);
     }
     

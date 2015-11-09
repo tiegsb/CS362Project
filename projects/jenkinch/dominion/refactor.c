@@ -26,7 +26,9 @@ Adventurer:
     zero and so the switch statement simply returns the call to the function.
     
     Bugs: In the first call to drawCard(), the first parameter of currentPlayer
-          was replaced with cardDrawn.
+          was replaced with cardDrawn. [UPDATE: This bug was fixed for the sake of
+          Assignment 4. It would too often throw a segmentation fault and thus made
+          generating the .out file inconsistent.]
           
           In the second if-else block, the "z++" was moved from the bottom of the else to the bottom of the if.
           

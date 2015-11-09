@@ -153,7 +153,7 @@ int main() {
                      printf("Other player's hands: \n");
                      printf("Player %d hand count: %d expected: %d\n", p + 1, testG.handCount[p], G.handCount[p]);
                  }
-             }
+             }//change
              /*get value of sum of enumerated values from hand before
              and after cards are played*/
              printf("\nTEST 4: Card sum(correct cards added to hand):\n");

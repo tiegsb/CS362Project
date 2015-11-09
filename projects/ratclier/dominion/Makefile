@@ -35,11 +35,20 @@ player: player.c interface.o
 unittestresults.out:
 	cd unittests_assign3 && $(MAKE)
 
+randomtestadventurer.out:
+	cd randomtests_assign4 && $(MAKE)
+
+randomtestcard.out:
+	cd randomtests_assign4 && $(MAKE) teststreasuremap.out
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard 
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so unittestresults.out
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so unittestresults.out randomtestsadventurer.out randomtestcard.out
 
 cleanunittests:
 	cd unittests_assign3 && $(MAKE) cleanall
+
+cleanrandomtests:
+	cd randomtests_assign4 && $(MAKE) cleanall
 

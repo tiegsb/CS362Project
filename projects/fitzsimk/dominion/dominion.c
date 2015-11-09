@@ -1,3 +1,10 @@
+/**
+*  student: Kayla Fitzsimmons
+*  course: Software Engineering II
+*  term: Fall 2015
+*  file: dominion.c
+*  description: Dominion card game main functions
+**/
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
@@ -6,7 +13,15 @@
 #include <stdlib.h>
 
 
-
+/**
+*  compare
+*
+*  param: [in] a Parameter_Description
+*  param: [in] b Parameter_Description
+*  return: Return_Description
+*
+*  details: Details
+**/
 int compare(const void* a, const void* b) {
   if (*(int*)a > *(int*)b)
     return 1;
@@ -19,7 +34,14 @@ struct gameState* newGame() {
   struct gameState* g = malloc(sizeof(struct gameState));
   return g;
 }
-
+/**
+*  kingdomCards
+*
+*  params: 10  Kingdom cards
+*
+*  return: array of kingdom cards
+*
+**/
 int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
 		  int k8, int k9, int k10) {
   int* k = malloc(10 * sizeof(int));
@@ -799,16 +821,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case smithy:
-      //+3 Cards
-      for (i = 0; i < 3; i++)
-	{
-	  drawCard(currentPlayer, state);
-	}
-			
-      //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-      return 0;
-		
+    //play_smithy(game)
     case village:
       //+1 Card
       drawCard(currentPlayer, state);
@@ -1333,6 +1346,36 @@ int play_smithy(int currentPlayer,struct gameState *state, int handPos){
       }
       return 0;
 }
+
+/*
+    PLAY ADVENTURER ALT
+*/
+ int play_adventurer_alt(int currentPlayer,struct gameState *state, int handPos){
+   int drawntreasure=0;
+   int cardDrawn;
+   int temphand[MAX_HAND];
+   int z=0; //coutner for tempHand array
+   while(drawntreasure<2){
+	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+	  shuffle(currentPlayer, state);
+	}
+	drawCard(currentPlayer, state);
+	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+	if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+	  drawntreasure++;
+	else{
+	  temphand[z]=cardDrawn;
+	  state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+	  z++;
+	}
+      }
+      while(z-1>=0){
+        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+        z=z-1;
+      }
+      return 0;
+}
+
 
 /*
     PLAY_MINE
