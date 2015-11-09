@@ -1,5 +1,9 @@
 #include "dominion.h"
+#include "dominion_helpers.h"
 #include "cards.h"
+#include "rngs.h"
+#include <assert.h>
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -95,11 +99,12 @@ static inline int isTreasure(int c) {
   return c == copper || c == silver || c == gold;
 }
 
-static void assert(const char *msg, int test) {
+static void assertThat(const char *msg, int test) {
     printf("TEST %s: %s\n", msg, test ? "PASS" : "FAIL");
     if (!test && FAST_FAIL) {
         printf("Assertion failed, quitting!\n");
         quit();
+        exit(1);
     }
 }
 
@@ -151,26 +156,117 @@ static int countPlayerCards(const struct gameState *state, int playerNum) {
         + state->discardCount[playerNum];
 }
 
+/* checks that the active player has the same cards as before
+This requires copying all their cards into an array and sorting them to compare.
+
+Return 1 on pass, 0 on fail.
+ */
+static int checkActivePlayerCards(const struct gameState *previous, 
+                                   const struct gameState *current) {
+    assert(previous->numPlayers == current->numPlayers);
+    assert(previous->whoseTurn == current->whoseTurn);
+
+    int prevCards[MAX_HAND + MAX_DECK + MAX_DECK];
+    int currCards[MAX_HAND + MAX_DECK + MAX_DECK];
+
+    int player = previous->whoseTurn;
+    int numPrevCards = 0;
+
+    // TODO
+    // copy all cards from previous to prevCards
+    // hand
+    for (int i = 0; i < previous->handCount[player]; i++)
+        prevCards[numPrevCards++] = previous->hand[player][i];
+    // deck
+    for (int i = 0; i < previous->deckCount[player]; i++)
+        prevCards[numPrevCards++] = previous->deck[player][i];
+    // discard
+    for (int i = 0; i < previous->discardCount[player]; i++)
+        prevCards[numPrevCards++] = previous->discard[player][i];
+    // sort
+    qsort((void*) prevCards, numPrevCards, sizeof(int), compare);
+
+
+
+    int numCurrCards = 0;
+
+    // copy all cards from current to currCards
+    // hand
+    for (int i = 0; i < current->handCount[player]; i++)
+        currCards[numCurrCards++] = current->hand[player][i];
+    // deck
+    for (int i = 0; i < current->deckCount[player]; i++)
+        currCards[numCurrCards++] = current->deck[player][i];
+    // discard
+    for (int i = 0; i < current->discardCount[player]; i++)
+        currCards[numCurrCards++] = current->discard[player][i];
+    // sort
+    qsort((void*) currCards, numCurrCards, sizeof(int), compare);
+
+    assert(numPrevCards == numCurrCards);
+
+    // iterate and check that all cards are the same
+    for (int i = 0; i < numCurrCards; i++)
+        if (prevCards[i] != currCards[i])
+            return 0;
+
+    return 1;
+}
+
+/* checks that inactive players cards are the same.
+Requires that the inactive players cards not have been modified or reordered in
+any way
+
+Return 1 on pass, 0 on fail. */
+static int checkInactivePlayerCards(const struct gameState *previous, 
+                                    const struct gameState *current) {
+    assert(previous->numPlayers == current->numPlayers);
+    assert(previous->whoseTurn == current->whoseTurn);
+
+    for (int player = 0; player < current->numPlayers; player++) {
+        // hand
+        for (int i = 0; i < current->handCount[player]; i++)
+            if (previous->hand[player][i] != current->hand[player][i])
+                return 0;
+
+        // deck
+        for (int i = 0; i < current->deckCount[player]; i++)
+            if (previous->deck[player][i] != current->deck[player][i])
+                return 0;
+
+        // discard
+        for (int i = 0; i < current->discardCount[player]; i++)
+            if (previous->discard[player][i] != current->discard[player][i])
+                return 0;
+    }
+
+    return 1;
+}
+
 /*
 Check that the gameState struct doesn't have any incoherent values suggesting
 a failure.
 */
 static void integrityCheck(const struct gameState *referenceState,
                           const struct gameState *state) {
-    assert("Integrity Check - numPlayers", 
+    assertThat("Integrity Check - numPlayers", 
            referenceState->numPlayers == state->numPlayers);
-    assert("Integrity Check - whoseTurn",
+    assertThat("Integrity Check - whoseTurn",
            referenceState->whoseTurn == state->whoseTurn);
-    assert("Integrity Check - player 0 counts",
+    assertThat("Integrity Check - player 0 counts",
            countPlayerCards(referenceState, 0) == countPlayerCards(state, 0));
-    assert("Integrity Check - player 1 counts",
+    assertThat("Integrity Check - player 1 counts",
            countPlayerCards(referenceState, 1) == countPlayerCards(state, 1));
     if (state->numPlayers > 2)
-        assert("Integrity Check - player 2 counts",
+        assertThat("Integrity Check - player 2 counts",
            countPlayerCards(referenceState, 2) == countPlayerCards(state, 2));
     if (state->numPlayers > 3)
-        assert("Integrity Check - player 3 counts",
+        assertThat("Integrity Check - player 3 counts",
            countPlayerCards(referenceState, 3) == countPlayerCards(state, 3));
+    assertThat("integrity check - active player cards",
+               checkActivePlayerCards(referenceState, state));
+    assertThat("integrity check - inactive player cards",
+               checkInactivePlayerCards(referenceState, state));
 }
 
 /* print a comma-delimited list of cards to a buffer 
@@ -228,7 +324,7 @@ static int loadCards(char *cardString, int *cards, int maxCards) {
 
 /* print the state struct in human and machine-readable format to a buffer 
 */
-static void saveState(char buffer[STATE_BUFFER_SIZE], struct gameState *state) {
+static void saveStateReadable(char buffer[STATE_BUFFER_SIZE], struct gameState *state) {
     char playerHand[MAX_PLAYERS][CARD_BUFFER_SIZE];
     char playerDeck[MAX_PLAYERS][CARD_BUFFER_SIZE];
     char playerDiscard[MAX_PLAYERS][CARD_BUFFER_SIZE];
@@ -273,7 +369,7 @@ static void saveState(char buffer[STATE_BUFFER_SIZE], struct gameState *state) {
 }
 
 /* load the human and machine-readable state struct data from a buffer */
-static void loadState(const char *buffer, 
+static void loadStateReadable(const char *buffer, 
                       struct gameState *state) {
     char playerHand[MAX_PLAYERS][CARD_BUFFER_SIZE];
     char playerDeck[MAX_PLAYERS][CARD_BUFFER_SIZE];
@@ -349,14 +445,141 @@ static void loadState(const char *buffer,
     }
 }
 
+/*
+saveState writes the gameState struct to the given file name. returns 0 on fail,
+1 on success
+*/
+int saveState(const char *filename, const struct gameState *state) {
+    FILE *outputfile = fopen(filename, "w");
+    if (!outputfile) {
+        perror("saveState - fopen failed");
+        return 0;
+    }
+
+    int written = fwrite(state, sizeof(struct gameState), 1, outputfile);
+    if (written < 1) {
+        if (ferror(outputfile)) {
+            perror("saveState - fwrite failed");
+            return 0;
+        }
+    }
+
+    fclose(outputfile);
+
+    return 1;
+}
+
+int loadState(const char *filename, struct gameState *state) {
+    FILE *inputfile = fopen(filename, "r");
+    if (!inputfile) {
+        perror("loadState - fopen failed");
+        return 0;
+    }
+
+    int read = fread(state, sizeof(struct gameState), 1, inputfile);
+    if (read < 1) {
+        if (ferror(inputfile)) {
+            perror("loadState - fread failed");
+            return 0;
+        }
+    }
+
+    fclose(inputfile);
+
+    return 1;
+}
+
+/* quits the test after a failure
+
+handles outputting status info and whatnot */
 static void quit()
 {
 
 }
 
-static void genTestSetup(struct gameState *state) {}
+static int randomCard() {
+    return floor(Random() * treasure_map);
+}
 
-static void runTest(struct gameState *state) {}
+static int randomNonTreasureCard() {
+    int card;
+    do {
+        card = randomCard();
+    } while (isTreasure(card));
+    return card;
+}
+
+static void setActivePlayerCards(struct gameState *state) {
+    int deckTreasure;
+    int discardTreasure;
+
+    int player = state->whoseTurn;
+
+    // pick cases
+    deckTreasure = floor(Random() * 4);
+    discardTreasure = floor(Random() * 4);
+
+    // fill hand with adventurer for simplicity
+    state->handCount[player] = 5;
+    for (int h = 0; h < 5; h++)
+        state->hand[player][h] = adventurer;
+
+    // set up deck
+    state->deckCount[player] = floor(Random() * (MAX_DECK - deckTreasure));
+    for (int d = 0; d < deckTreasure; d++)
+        state->deck[player][d] = copper;
+    for (int d = deckTreasure; d < state->deckCount[player]; d++)
+        state->deck[player][d] = randomNonTreasureCard();
+    shuffle(player, state);
+
+    // set up discard
+    state->discardCount[player] = floor(Random() * MAX_DECK - discardTreasure);
+    for (int d = 0; d < discardTreasure; d++)
+        state->discard[player][d] = gold;
+    for (int d = discardTreasure; d < state->discardCount[player]; d++)
+        state->discard[player][d] = randomNonTreasureCard();
+    // no need to shuffle discard because it should be shuffled by adventurer
+}
+
+static void setInactivePlayerCards(struct gameState *state) {
+    for (int p = 0; p < state->numPlayers; p++) {
+        if (p == state->whoseTurn)  // skip active player
+            continue;
+
+        state->handCount[p] = 5;
+        for (int i = 0; i < state->handCount[p]; i++)
+            state->hand[p][i] = randomCard();
+
+        state->deckCount[p] = floor(Random() * MAX_DECK);
+        for (int i = 0; i < state->deckCount[p]; i++)
+            state->deck[p][i] = randomCard();
+
+        state->discardCount[p] = floor(Random() * MAX_DECK);
+        for (int i = 0; i < state->discardCount[p]; i++)
+            state->discard[p][i] = randomCard();
+    }
+}
+
+/* generates a random state before the test */
+static void genTestState(struct gameState *state) {
+    memset(state, 0, sizeof(struct gameState));
+
+    // numPlayers
+    state->numPlayers = floor(Random() * 4);
+
+    // whoseTurn
+    state->whoseTurn = floor(Random() * state->numPlayers);
+
+    // set active player's cards
+    setActivePlayerCards(state);
+
+    // set other players cards
+    setInactivePlayerCards(state);
+}
+
+static void runTest(struct gameState *state) {
+
+}
 
 /*
 Usage: randomtestadventurer [options] [command] ...
@@ -381,12 +604,12 @@ int main(int argc, char **argv) {
 
     status = initializeGame(2, k, atoi(argv[1]), &G);
 
-  if (status == -1) {
-    fprintf(stderr, "error 000: couldn't initialize game\n");
-    return 1;
-  }
+    if (status == -1) {
+        fprintf(stderr, "error 000: couldn't initialize game\n");
+        return 1;
+    }
 
-  // print state
+    
 
     return 0;
 }
