@@ -61,6 +61,9 @@ cardtest3: dominion.o cards.o rngs.o cardtest3.c
 cardtest4: dominion.o cards.o rngs.o cardtest4.c
 	$(GCC) -o cardtest4 cardtest4.c dominion.o cards.o rngs.o $(CFLAGS)
 
+randomtestadventurer: dominion.o cards.o rngs.o randomtestadventurer.c
+	$(GCC) -o randomtestadventurer randomtestadventurer.c dominion.o cards.o rngs.o $(CFLAGS)
+
 testAll: dominion.o cards.o testSuite.c
 	$(GCC) -o testSuite testSuite.c  dominion.o cards.o rngs.o $(CFLAGS)
 
@@ -109,5 +112,9 @@ runcardtest4: cardtest4
 	./cardtest4 &> unittestresult.out
 	$(GCOV) cards.c >> unittestresult.out
 	cat cards.c.gcov >> unittestresult.out
+
+runrandomtestadventurer: randomtestadventurer
+	./randomtestadventurer &> randomtestadventurer.out
+	# TODO
 
 unittestresult.out: clean rununittest1 rununittest2 rununittest3 rununittest4 runcardtest1 runcardtest2 runcardtest3 runcardtest4
