@@ -1,28 +1,18 @@
-CFLAGS = -Wall -fpic -coverage -lm -std=c99
+CFLAGS = -Wall -fpic -coverage -lm 
 
-default: randomtestcard.out
-
-rngs.o: rngs.h rngs.c
-	gcc -c rngs.c -g  $(CFLAGS)
-
-dominion.o: dominion.h dominion.c rngs.o
-	gcc -c dominion.c -g  $(CFLAGS)
-
-randomtestcard.out: randomtestcard.c dominion.o rngs.o
+randomtestcard.out: randomtestcard.c dominion.c rngs.c
 	echo "Result for running random tests:" > randomtestcard.out
 	
-	gcc -o randomtestcard -g randomtestcard.c dominion.o rngs.o $(CFLAGS)
+	gcc -o randomtestcard randomtestcard.c dominion.c rngs.c $(CFLAGS)
 	./randomtestcard >> randomtestcard.out
-	gcov dominion.c -b -f >> randomtestcard.out
-	cat dominion.c.gcov >> randomtestcard.out
+	gcov dominion.c -b -c >> randomtestcard.out
 
-randomtestadventurer.out:  randomtestadventurer.c dominion.o  rngs.o
+randomtestadventurer.out:  randomtestadventurer.c dominion.c  rngs.c
 	echo "Result for running random tests: " > randomtestadventurer.out
-
-	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+	
+	gcc -o randomtestadventurer randomtestadventurer.c dominion.c rngs.c $(CFLAGS)
 	./randomtestadventurer >> randomtestadventurer.out
-	gcov dominion.c -b -f >> randomtestadventurer.out
-	cat dominion.c.gcov >> randomtestadventurer.out
+	gcov dominion.c -b -c >> randomtestadventurer.out
 	
 run_all:
 	./randomtestadventurer

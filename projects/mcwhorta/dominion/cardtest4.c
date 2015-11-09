@@ -1,110 +1,83 @@
 #include "dominion.h"
+#include "interface.h"
 #include "dominion_helpers.h"
 #include <string.h>
 #include <stdio.h>
 #include <assert.h>
 #include "rngs.h"
-#include <math.h>
-#include <stdlib.h>
 
-#define DEBUG 0
-#define NOISY_TEST 1
+int main() {
+    int seed = 12345;
+    int i = 0;
+    int advFlag = 0;
+    int numPlayers = 2;
+    int player = 0;
+    int handNum = 5;
+    int currHand[handNum];
+    int k[10] = {adventurer, ambassador, embargo, smithy, village, feast, mine, gardens, baron, council_room};
 
-int checkAdventurerCardEffect(struct gameState *post){
+while (player <= numPlayers){
+    advFlag = 0;
+    i = 0;
+    handNum = 5;
+    currHand[0] = copper;  //worth 1
+    currHand[1] = silver;  //worth 3
+    currHand[2] = estate;    //
+    currHand[3] = remodel; //can trash a card
+    currHand[4] = adventurer; 
 
+    struct gameState newGame;
+    memcpy(newGame.hand[player], currHand, sizeof(int)*handNum);
+    //itnialzieGame supplies all the supplyCounts of cards
+    printf("TESTING adventurer card\n");
+    initializeGame(numPlayers, k, seed, &newGame);
 
-    struct gameState pre;
-    memcpy (&pre, post, sizeof(struct gameState));
-
-
-    int drawntreasure=0;
-    int cardDrawn, z;
-    int currentPlayer = whoseTurn(&pre);
-    int temphand[MAX_HAND];
-
-    while(drawntreasure<2){
-        if (pre.deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
-            shuffle(currentPlayer, &pre);
-        }
-        drawCard(currentPlayer, &pre);
-        cardDrawn = pre.hand[currentPlayer][pre.handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-            drawntreasure++;
-        else{
-            temphand[z]=cardDrawn;
-            pre.handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
-            z++;
-        }
-    }
-    while(z-1>=0){
-        pre.discard[currentPlayer][pre.discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
-        z=z-1;
-    }
-
-
-    cardEffect(adventurer, -1, -1, -1, post,-1,0);
-//    assert(memcmp(&pre, post, sizeof(struct gameState)) == 0);
-    if(memcmp(&pre, post, sizeof(struct gameState)) != 0){
-        printf("--Test failed\n");
+    for(i = 0; i < handNum; i++) {
+    	if (currHand[i] == adventurer) {
+    		advFlag = 1;
+    		break;
+    	} else {
+    		continue;
+    	}
     }
 
-    return 0;
-}
+
+    int drawntreasureBefore, drawntreasureAfter = 0;
+    int handNumBefore = handNum;
+    int deckCountBefore = newGame.deckCount[player];
+    int discardCountBefore = newGame.discardCount[player];
+
+    if (!advFlag) {
+    	printf("No Adventurer Card In Hand!\n");
+    } else {
+    	//check number of treasuare cards before
+    	for (i = 0; i <= handNum; i++){
+    		if ((currHand[i] == copper) || (currHand[i] == silver) || (currHand[i] == gold)){
+    			drawntreasureBefore++;
+    		}
+    	}
+
+    	if ((deckCountBefore + discardCountBefore) != (newGame.deckCount[player] + newGame.discardCount[player])){
+		printf("TESTS FAILED\n");
+    	}
 
 
-int main () {
+    	//check hand has two more cards
+    	if (handNumBefore+2 != newGame.handCount[player]) {
+		printf("TESTS FAILED\n");
+    	}
 
-    int i, n, r, p;
-
-    int k[10] = {adventurer, council_room, feast, gardens, mine,
-        remodel, smithy, village, baron, great_hall};
-
-    struct gameState G;
-
-    printf ("TESTING Adventurer Card.\n");
-
-    SelectStream(2);
-    PutSeed(3);
-
-    for (n = 0; n < 2000; n++) {
-        for (i = 0; i < sizeof(struct gameState); i++) {
-            ((char*)&G)[i] = floor(Random() * 256);
-        }
-
-
-        r = initializeGame(2, k, 1, &G);
-        p = floor(Random() * 4);
-        G.numPlayers = 2 + floor(Random() * 4);         // max 4 player, min 2
-        G.deckCount[p] = floor(Random() * MAX_DECK);
-        G.discardCount[p] = floor(Random() * MAX_DECK);
-        G.handCount[p] = floor(Random() * MAX_HAND);
-        G.whoseTurn = p;
-
-        for (i = 0; i < treasure_map; i++) {
-            G.supplyCount[i] = floor(Random() * 25);
-        }
-
-        for (i = 0; i < G.handCount[p]; i++) {
-            G.hand[p][i] = floor(Random() * MAX_HAND);
-        }
-        for (i = 0; i < G.discardCount[p]; i++) {
-            G.discard[p][i] = floor(Random() * MAX_DECK);
-        }
-        for (i = 0; i < G.deckCount[p]; i++) {
-            G.deck[p][i] = floor(Random() * MAX_DECK);
-        }
-
-        for (i = 0; i < G.playedCardCount; i++) {
-            G.playedCards[i] = floor(Random() * MAX_DECK);
-        }
-
-
-//        printf("Random player: %d    --deckCount:  %d \n", p,G.deckCount[p]);
-
-        checkAdventurerCardEffect( &G);
+    	//check hand has two more treasure cards
+    	for (i = 0; i <= handNum; i++){
+    		if ((currHand[i] == copper) || (currHand[i] == silver) || (currHand[i] == gold)){
+    			drawntreasureAfter++;
+    		}
+    	}
+    	if ((drawntreasureBefore+2) != drawntreasureAfter){
+		printf("TESTS FAILED");
+    	}
     }
-
-    printf ("ALL TESTS OK\n");
-
-    return 0;
+    player++;
+    }
+	return 0;
 }

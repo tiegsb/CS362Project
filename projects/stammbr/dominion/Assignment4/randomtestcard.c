@@ -2,7 +2,7 @@
  * Author:  Brian Stamm
  * Title:  randomtestcard.c
  * Assignment:  4
- * Date:  11.1.15
+ * Date:  11.8.15
  * Notes:  Tests the Village card, in villageMethod().
  * ****************/
 
@@ -72,11 +72,11 @@ void test(){
 
 //Then do random decks, similar to shuffle test.
   printf("\nRandom Testing to Start\n");
-  counter = 1;
+  counter = 0;
   errorNum = 0;
   errorTotal = 0;
 
-  while(counter < 1001){
+  while(counter < 100000){
     //Fills player's deck with random cards, random amount
     //gets random number
 
@@ -153,6 +153,7 @@ void test(){
     }
     counter++;      
   }
+  printf("Total Random Tests:  %d\n", counter);
   printf("villageMethod() Random Test fail number iterations:  %d\n", errorNum);
   printf("villageMethod() Random Test fail number total:  %d\n", errorTotal);
 }

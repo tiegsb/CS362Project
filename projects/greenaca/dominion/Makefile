@@ -113,8 +113,8 @@ randomtestcard.out: randomtestcard.c dominion.o rngs.o
 	./randomtestcard >> randomtestcard.out
 	gcov -b dominion.c >> randomtestcard.out
 
-randomtestadventurer: randomtestcard.c dominion.o rngs.o
-	gcc -o randomtestcard -g randomtestcard.c dominion.c rngs.o $(CFLAGS)
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.c rngs.o $(CFLAGS)
 
 randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
 	echo "Result for running randomtestadventurer tests:" > randomtestadventurer.out
