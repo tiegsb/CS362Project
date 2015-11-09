@@ -18,4 +18,11 @@ cards drawn with about 10000 each of copper and gold. This was expected given
 Also, originally I only outputted the total subtests passed. Then I included how many
 of each subtest passed.
 
+Village:
+
+Originally I had just two subtests for this function, the realized the
+last two tests for adventurer could be easily adapted to this function as well.
+I was really surprised the actions test passed, though that is perhaps some other
+part of the game engine has a bug or hasn't been run yet.
+
 */

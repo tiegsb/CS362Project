@@ -97,6 +97,14 @@ unittestresults.out: cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2
 
 	cat dominion.c.gcov >> unittestresults.out
 	
+randomtestadventurer.out: dominion.c rngs.o interface.o
+	echo "Result for random test card:" > randomtestcard.out
+	
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.c rngs.o interface.o $(CFLAGS)
+	randomtestadventurer >> randomtestadventurer.out
+	gcov -b randomtestadventurer.c >> randomtestadventurer.out
+	gcov -b dominion.c >> randomtestadventurer.out	
+	
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
