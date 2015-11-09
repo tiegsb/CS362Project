@@ -23,12 +23,12 @@
 
 int main(){
     srand(time(NULL));
-    int gameSeed = rand() % 1000 + 1;
+    int gameSeed = rand();
     int p;
     int numPlayer = 4;
     int i = 0, n;
     int error1 = 0, error2 = 0;
-    int randomIt = (rand() % 100) + 2001;  
+    int randomIt = (rand() % 10000) + 20001;  
     int k[10] = {adventurer, council_room, feast, gardens, mine,
                 remodel, smithy, village, baron, great_hall};
 
@@ -41,24 +41,31 @@ int main(){
     printf("\nStarting random testing for adventurer card effects...\n");
 
     for(n = 0; n < randomIt; n++){
-
         int temphand[MAX_HAND];
-             
+        int randNum = rand()% 3;
+
         p = floor(Random() * 4);
        
-        
-        memset(&G, 23, sizeof(struct gameState));   //clear game state
         initializeGame(numPlayer, k, gameSeed, &G); //initialize game
     
+        /*Randomizing deck count to induce shuffling if deck <=0*/
+        if(randNum == 0){
+            G.deckCount[p] = 0;
+        } else if(randNum == 1) {
+            G.deckCount[p] = -1;
+        } else{
+            G.deckCount[p] = floor(Random() * MAX_DECK);
+        }
 
-        G.deckCount[p] = floor(Random() * MAX_DECK);
-        G.discardCount[p] = floor(Random() * MAX_DECK);
+       
+        G.discardCount[p] = floor(Random() * MAX_DECK);   
         G.playedCardCount = floor(Random() * MAX_DECK);
 
         /*Set up deck, hand, discard*/
         for(i = 0; i < G.deckCount[p]; i++){
             G.deck[p][i] = floor(Random() * 5);
         }
+        
         for(i = 0; i < G.discardCount[p]; i++){
             G.discard[p][i] = floor(Random() * 5);
         }
@@ -90,6 +97,8 @@ int main(){
             printf("TEST FAILED - drawntreasure count is inccorect\n");
             error2++;
         }
+
+        memset(&G, 23, sizeof(struct gameState));   //clear game state
     }
 
     /*Print summary of error counts of both tests after testing finishes*/

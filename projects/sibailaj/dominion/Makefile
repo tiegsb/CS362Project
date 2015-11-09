@@ -71,6 +71,20 @@ rununittests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardte
 	gov cardtest3.c -p -b >> unittestresults.out	
 	gov cardtest4.c -p -b >> unittestresults.out	
 
+randomtestcard: randomtestcard.c
+	gcc -o randomtestcard randomtestcard.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer: randomtestadventurer.c
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
+	
+runrandomtests: randomtestcard
+	gcc -o randomtestcard randomtestcard.c -g dominion.o rngs.o $(CFLAGS)
+	./randomtestcard &> randomtestcard.out
+
+runrandomadventurer: randomtestadventurer
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
+	./randomtestadventurer &> randomtestadventurer.out
+	
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 

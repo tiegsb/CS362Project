@@ -129,7 +129,7 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
    1, others to 0 */
 int play_smithy(int currentPlayer, struct gameState *state, int handPos);
 /* draw three cards, calls drawCard 3 times and discards smithy card*/
-int play_adventurer(struct gameState *state, int currentPlayer, int *temphand);
+int play_adventurer(struct gameState *state, int drawntreasure, int currentPlayer, int temphand[MAX_HAND], int cardDrawn);
 /* iterate through deck until you get two treasure cards and discard
 other cards drawn which are stored in a temp array */
 int play_remodel(struct gameState *state, int choice2, int choice1, int currentPlayer, int handPos);

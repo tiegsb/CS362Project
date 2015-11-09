@@ -1,0 +1,38 @@
+CS 362 Fall 2015
+ Project Part A 
+Team: Sarah Cawley, Tony Huynh, Keenan Bishop
+
+
+
+testIsValid()
+
+
+
+1) Give how many total number of URLs it is testing. 9 x 19 x 7 x 10 x 3 = 35,910 tests
+
+
+
+2) Explain how it is building all the URLs.
+
+	testIsValid() is using a 2 dimensional array. The top level array represents the 5 parts of a URL: scheme, authority, port, path, and query.  The second level arrays are filled with valid and invalid component values. Here is a list of the top level array with the size the second level (testUrlScheme[9], testUrlAuthority[19], testUrlPort[7], testPath[10], testUrlQuery[3]).
+	
+
+	The Do-While loop goes through increasing and resetting the indices of the 2nd level array such that every unique combination of URL components will be used. Internally it uses a for loop to combine one part from each second level array to create a complete URL. Each section of the URL must have the boolean value of true (paired with the section of the URL) for the entire URL to be valid. 
+
+
+
+3) Give an example of valid URL being tested and an invalid URL being tested by testIsValid() method.
+  
+	valid: ftp://go.com:65535/t123?action=view
+
+	invalid: 3ht://go.com:65535/t123?action=view
+ 
+	The invalid case is invalid because 3ht is an invalid scheme.
+
+
+
+4) Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)? Explain in few lines:
+
+	The concepts are the same, aka test each part of the output to see if it is valid or not with a comprehensive set of inputs. The complexity is greater by the number of tests being run, the construction of the test inputs, and the inputs being amalgamations of valid and invalid parts.
+
+
