@@ -65,6 +65,11 @@ randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
 randomtestadventurer.out: randomtestadventurer.c dominion.c rngs.o
 	echo "Result random test:" > randomtestadventurer.out
 
+	echo "randomtestadventurer.c” >> randomtestadventurer.out
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.c rngs.o $(CFLAGS)
+	randomtestadventurer >> randomtestadventurer.out
+	gcov dominion.c >> randomtestadvenuturer.out
+
 	
 randomtestcard: randomtestcard.c dominion.o rngs.o
 	gcc -o randomtestcard randomtestcard.c -g dominion.o rngs.o $(CFLAGS)
