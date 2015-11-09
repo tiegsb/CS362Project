@@ -135,24 +135,6 @@ randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
 	gcov -b dominion.c >> randomtestadventurer.out
 	gcov -b randomtestadventurer.c >> randomtestadventurer.out
 
-# randomtestall.out
-# optional for both card tests
-randomtestall.out: randomtestcard.c randomtestadventurer.c dominion.o rngs.o
-	rm -f randomtestall.out
-	echo "Result for running random card tests:" >> randomtestall.out
-
-	echo "randomtestcard.c:" >> randomtestall.out
-	gcc -o randomtestcard -g randomtestcard.c dominion.c rngs.c $(CFLAGS)
-	./randomtestcard >> randomtestcard.out
-	gcov -b dominion.c >> randomtestcard.out
-	gcov -b randomtestcard.c >> randomtestcard.out
-
-	echo "randomtestadventurer.c:" >> randomtestall.out
-	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.c rngs.c $(CFLAGS)
-	./randomtestadventurer >> randomtestadventurer.out
-	gcov -b dominion.c >> randomtestadventurer.out
-	gcov -b randomtestadventurer.c >> randomtestadventurer.out
-
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
