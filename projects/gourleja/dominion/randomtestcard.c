@@ -13,7 +13,7 @@
 
 #define CARDNAME    "minion"
 #define BASESEED    10
-#define TESTNUMBER  500
+#define TESTNUMBER  400
 
 /*
  * Description:     Create a random array of kingdom cards, always including the card under test
@@ -26,27 +26,20 @@ void randomCardSetup(int * kingdomCards, int setupSize)
 
     kingdomCards[0] = CARDNAME; // Ensure card to test is always in the set of cards
 
-    for (i = 1; i<setupSize; i++)
-    {
+    for (i = 1; i<setupSize; i++){
         int cardCheck = 0;
-        while(cardCheck == 0)
-        {
+        while(cardCheck == 0){
             int testCard = rand()%20 + 7; // 20 kingdom cards available starting at the seventh position
-            if (testCard == CARDNAME) // Check for duplication of the card under test
-            {
+            if (testCard == CARDNAME) {// Check for duplication of the card under test
                 cardCheck = 0;
-            } else // Check cards that are already pulled into the available set
-            {
+            } else { // Check cards that are already pulled into the available set
                 kingdomCards[i] = testCard;
                 int j;
-                for (j = 0; j < i; j++)
-                {
-                    if(kingdomCards[j] == testCard)
-                    {
+                for (j = 0; j < i; j++) {
+                    if(kingdomCards[j] == testCard){
                         cardCheck = 0;
                         break;
-                    } else
-                    {
+                    } else{
                         cardCheck = 1;
                     }
                 }

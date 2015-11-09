@@ -1,0 +1,126 @@
+        -:    0:Source:unittest4.c
+        -:    0:Graph:unittest4.gcno
+        -:    0:Data:unittest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/********************************************************
+        -:    2:*	Name: 	Robert Tang
+        -:    3:*	Class:	CS 362
+        -:    4:*	File:	unittest4.c
+        -:    5:*
+        -:    6:*	Description: 
+        -:    7:*		Test for draw
+        -:    8:*			hand - check number of cards
+        -:    9:*				if card is drawn, +1
+        -:   10:*				if no card is drawn, +0
+        -:   11:*
+        -:   12:*			deck
+        -:   13:*				draw from deck
+        -:   14:*				deck empty -> reshuffle
+        -:   15:*				deck empty -> no cards left
+        -:   16:
+        -:   17:*			handpos
+        -:   18:*			
+        -:   19:********************************************************/
+        -:   20:#include "dominion.h"
+        -:   21:#include "dominion_helpers.h"
+        -:   22:#include "dominion.c"
+        -:   23:#include <string.h>
+        -:   24:#include <stdio.h>
+        -:   25:#include "rngs.h"
+        -:   26:#include "interface.h"
+        -:   27:
+        3:   28:void cardDrawTestHelper (struct gameState *testGame)
+        -:   29:{
+        -:   30:	int i;
+        -:   31:	
+        -:   32:	int deckSize;
+        -:   33:	int handSizeBefore;
+        -:   34:	int handSizeAfter;
+        -:   35:	int discardSizeBefore;
+        -:   36:	int discardSizeAfter;
+        -:   37:	int deckSizeBefore;
+        -:   38:	int deckSizeAfter;
+        3:   39:	int currentPlayer = 0;
+        -:   40:
+        3:   41:	deckSize = fullDeckCount(currentPlayer, 0, testGame);
+        -:   42:	
+        3:   43:	handSizeBefore = numHandCards(testGame);
+        3:   44:	deckSizeBefore = deckSize - handSizeBefore;
+        3:   45:	discardSizeBefore = 0;
+        -:   46:
+        3:   47:	drawCard(currentPlayer, testGame);
+        -:   48:	
+        3:   49:	handSizeAfter = numHandCards(testGame);
+        -:   50:	
+        3:   51:	discardSizeAfter = 0;
+        3:   52:	for (i = 0; i < testGame->discardCount[currentPlayer]; i++)
+    #####:   53:		if (testGame->discard[currentPlayer][i] == 0) 
+    #####:   54:			discardSizeAfter++;
+        -:   55:		
+        3:   56:	deckSizeAfter = 0;
+       12:   57:	for (i = 0; i < testGame->deckCount[currentPlayer]; i++)
+        9:   58:		if (testGame->deck[currentPlayer][i] == 0) 
+    #####:   59:			deckSizeAfter++;
+        -:   60:		
+        -:   61:	// check hand size
+        3:   62:	if (handSizeBefore + 1 == handSizeAfter)
+        3:   63:		printf("Draw Test - Hand Size - Check\n");
+        -:   64:	else
+    #####:   65:		printf("Draw Test - Hand Size - Fail\n");
+        -:   66:	
+        -:   67:	//	check deck/discard
+        3:   68:	if (deckSizeBefore - 1 != deckSizeAfter)
+        3:   69:		printf("Draw test - Deck Size - Check\n");
+        -:   70:	else
+        -:   71:	{
+        -:   72:// Deck was empty, move discard
+    #####:   73:		if (discardSizeAfter == 0 
+    #####:   74:				&& deckSizeAfter == discardSizeBefore - 1)
+    #####:   75:			printf("Draw test - Deck Size - Check\n");
+        -:   76:// Empty Deck and Discard
+    #####:   77:		else if (discardSizeBefore == 0 && discardSizeAfter == 0
+        -:   78:				&& deckSizeBefore == 0 && deckSizeAfter == 0)
+    #####:   79:			printf("Draw test - Deck Size - Check\n");
+        -:   80:
+        -:   81:		else
+    #####:   82:			printf("Draw test - Deck Size - Fail\n");
+        -:   83:	}
+        3:   84:}
+        1:   85:void cardDrawTest()
+        -:   86://		requires "3" tests
+        -:   87:{
+        -:   88:	int k[10] = {adventurer, council_room, feast, gardens, mine,
+        1:   89:				remodel, smithy, village, baron, great_hall};
+        -:   90:	// cards used are irrelevant for this test
+        -:   91:	int i;
+        -:   92:	
+        1:   93:	int numPlayer = 2;
+        1:   94:	int seed = 1000;
+        1:   95:	struct gameState* testGame = newGame();
+        -:   96:	
+        1:   97:	initializeGame(numPlayer, k, seed, testGame);
+        -:   98:	//	retain the reference information for game;
+        -:   99:	
+        1:  100:	int currentPlayer = 0;
+        1:  101:	printf("Test 1 - draw from a deck\n");
+        -:  102:	//	situation one - standard draw
+        1:  103:	cardDrawTestHelper (testGame);
+        -:  104:	
+        1:  105:	printf("Test 2 - draw from empty deck\n");
+        -:  106:	// situation 2 - empty deck
+        1:  107:	int currentDeckSize = fullDeckCount(currentPlayer, 0, testGame);
+        1:  108:	for (i = numHandCards(testGame); i < currentDeckSize; i++)
+    #####:  109:		drawCard(currentPlayer, testGame);
+        1:  110:	cardDrawTestHelper (testGame);
+        -:  111:	
+        1:  112:	printf("Test 3 - draw from empty deck, with discard\n");
+        1:  113:	discardCard (1, currentPlayer, testGame, 0);
+        1:  114:	cardDrawTestHelper( testGame);
+        1:  115:}
+        -:  116:
+        1:  117:int main()
+        -:  118:{
+        1:  119:	cardDrawTest();
+        1:  120:	return 0;
+        -:  121:}

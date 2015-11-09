@@ -42,6 +42,12 @@ cardtest2: cardtest2.c dominion.o rngs.o
 cardtest3: cardtest3.c dominion.o rngs.o
 	gcc -o cardtest3 -g  cardtest3.c dominion.o rngs.o $(CFLAGS)
 
+randomtestcard: randomtestcard.c dominion.o rngs.o
+	gcc -o randomtestcard -g  randomtestcard.c dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomtestadventurer -g  randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+
 runtests: testDrawCard 
 	./testDrawCard &> unittestresult.out
 	gcov dominion.c >> unittestresult.out
@@ -69,13 +75,37 @@ unittestresults: unittest1 unittest2 unittest3 cardtest1 cardtest2 cardtest3 dom
 	gcov dominion.c >> unittestresults.out
 
 	cat dominion.c.gcov >> unittestresults.out
-	
-		
 
+randomtestcard.out:
+	make all
+	echo > randomtestcard.out
+	echo "<=============== RUNNING ALL TEST =====================>" >> randomtestcard.out
+	echo >> randomtestcard.out
+	make run_randomCard_test >> randomtestcard.out
+	echo "<=============== RUNNING COVERAGE TEST =====================>" >> randomtestcard.out
+	echo >> randomtestcard.out
+	gcov -b -f dominion.o >> randomtestcard.out
+
+run_randomCard_test:
+	./randomtestcard
+
+randomtestadventurer.out:
+	make all
+	echo > randomtestadventurer.out
+	echo "<=============== RUNNING ALL TEST =====================>" >> randomtestadventurer.out
+	echo >> randomtestadventurer.out
+	make run_randomAdven_test >> randomtestadventurer.out
+	echo "<=============== RUNNING COVERAGE TEST =====================>" >> randomtestadventurer.out
+	echo >> randomtestadventurer.out
+	gcov -b -f dominion.o >> randomtestadventurer.out
+
+run_randomAdven_test:
+	./randomtestadventurer
+		
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard unittest1 unittest2 cardtest1 cardtest2 cardtest3
+all: playdom player testDrawCard testBuyCard badTestDrawCard unittest1 unittest2 cardtest1 cardtest2 cardtest3 randomtestcard randomtestadventurer
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so

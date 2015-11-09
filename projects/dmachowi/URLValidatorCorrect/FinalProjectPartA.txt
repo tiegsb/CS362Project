@@ -1,0 +1,21 @@
+Final Project Part A
+Group Members:
+Drew Machowicz
+Benjamin Henning
+Joshua Johnson
+
+1)Explain testIsValid function. 
+When the testIsValid() function is called, the first line of code calls again the testIsValid() function specifying the URL parts and allowing all schemes. This means it tests each item listed in the authority, path, port and query lists that will be used to generate URLs. Each one specifies whether it should be valid (true) or invalid (false). It then calls a setUp() function that creates all possible URL combinations given the URL parts in the file. It then tests each one of those URLs allowing two slashes, all schemes and no fragments. It then prints out all the valid URLs as expected.
+
+2) Give number of URLs it tests
+538,250 possible combinations of which 2189 are correct. 
+
+3) Explain how it is building the URLs
+There is a list of schemes, authorities, paths, ports, and queries in the test file. The program checks each combination of these parts against the URL validator. It also says which parts should equate to false, so if one of the parts of the URL is invalid, then the whole URL is invalid. 
+
+4) Give an example of a valid and invalid URL being tested
+Valid URL - http://go.com/test1
+Invalid URL - 3ht://1.2.3.4.5:-1/../
+
+5) Do we think that this test is very different from the tests we made for dominion in terms of concepts and complexity -- explain in a few lines.
+It is not much more difficult or complex than the tests we have made in class. It is not random testing and it is also not testing every possible case, but it does a good job at checking most types of cases one would encounter. By breaking the URL into different parts and testing each of those parts separately to see if they are valid or invalid we know can first check that it is validating or invalidating the parts correctly. Since the number of parts is not so large it’s not a hard task to check manually which URL parts are valid or invalid. If one part of the URL is invalid, we know the whole URL should be invalid, so by testing all combinations of the parts we have a large number of tests and we can easily verify which ones should be valid and which ones should be invalid. 

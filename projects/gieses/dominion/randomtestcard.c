@@ -46,7 +46,7 @@ int main(){
 		G.hand[p][0] = 13;
 		
 		//randomly insert cards into player pile
-		for (j = 0; j < G.handCount[p]; j++){
+		for (j = 1; j < G.handCount[p]; j++){
 			randomNum = rand() % 10;
 			#if (NOISY_TEST == 1)
 			printf("Random number for hand: %d\n", randomNum);
@@ -98,7 +98,7 @@ int main(){
 		
 		//pre discard count - 3 should be the same as the discard count after
 		//the card is played since the player gains 3 cards
-		if(preDiscard - 3 == G.discardCount[p] && G.playedCardCount != 1){
+		if(preDiscard - 3 == G.discardCount[p]){
 			#if (NOISY_TEST == 1)
 			printf("Test passed!\n");
 			#endif

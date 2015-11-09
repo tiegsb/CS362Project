@@ -1,0 +1,251 @@
+        -:    0:Source:randomtestadventurer.c
+        -:    0:Graph:randomtestadventurer.gcno
+        -:    0:Data:randomtestadventurer.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:#include <string.h>
+        -:    8:#include <time.h>
+        -:    9:
+        -:   10:int testAdven(int *hand, int player, int handcount, int handpos, int changeDeck, int count, int *testPassed, int *testFailed);
+        -:   11:int cardNum();
+        -:   12:
+function main called 1 returned 100% blocks executed 100%
+        1:   13:int main (){
+        -:   14:	
+        1:   15:	srand(time(NULL));
+call    0 returned 100%
+call    1 returned 100%
+        1:   16:	int i, j, count, advPlace, numCardsInHand, testPassed=0, testFailed=0, cardsInHand[11];
+        1:   17:	int numOfRandTests=20;
+        -:   18:	
+      125:   19:	for (i=0; i<numOfRandTests;i++){
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+      124:   20:		count=0;
+      124:   21:		advPlace=0;
+      124:   22:		numCardsInHand = cardNum(); //set a random hand number between 1 and 11;
+call    0 returned 100%
+      820:   23:		for(j=0; j<numCardsInHand; j++){
+branch  0 taken 85%
+branch  1 taken 15% (fallthrough)
+      696:   24:			cardsInHand[j] = rand()%26; //select the cards to fill the hand at random
+call    0 returned 100%
+      696:   25:			if(cardsInHand[j] == 7){
+branch  0 taken 3% (fallthrough)
+branch  1 taken 97%
+       21:   26:				count++;
+       21:   27:				advPlace = j;
+        -:   28:			}
+        -:   29:		}
+        -:   30:		//if the hand does not have an adventure card then go back to the for loop.
+      124:   31:		if(count == 0){
+branch  0 taken 84% (fallthrough)
+branch  1 taken 16%
+      104:   32:			i--;
+      104:   33:			continue;
+        -:   34:		}
+        -:   35:		
+       20:   36:		printf("Test %d:\n",i+1);
+call    0 returned 100%
+       20:   37:		testAdven(cardsInHand, 0, numCardsInHand, advPlace, rand()%3, count, &testPassed, &testFailed);
+call    0 returned 100%
+call    1 returned 100%
+       20:   38:		printf("End Test %d\n\n",i+1);
+call    0 returned 100%
+        -:   39:	}
+        -:   40:	
+        1:   41:	printf("Failed tests = %d\n", testFailed);
+call    0 returned 100%
+        1:   42:	printf("Passed tests = %d\n\n", testPassed);
+call    0 returned 100%
+        -:   43:	
+        1:   44:	return 0;
+        -:   45:}
+        -:   46:
+function testAdven called 20 returned 100% blocks executed 86%
+       20:   47:int testAdven(int *hand, int player, int handCount, int handpos, int changeDeck, int count, int *testPassed, int *testFailed){
+        -:   48:	
+       20:   49:	int i=0,endcount=0,failed=0;
+        -:   50:	struct gameState state;
+       20:   51:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+       20:   52:	initializeGame(2,k,1000,&state);
+call    0 returned 100%
+        -:   53:	
+       20:   54:	memcpy(state.hand[player], hand, sizeof(int)*handCount);
+       20:   55:	state.handCount[player] = handCount;
+       20:   56:	int deckCount = state.deckCount[player];
+        -:   57:	
+        -:   58:	
+        -:   59:	//Use to add a mine card to the top of the deck to see if it is skipped
+       20:   60:	if(changeDeck == 1){
+branch  0 taken 20% (fallthrough)
+branch  1 taken 80%
+        4:   61:		state.deck[player][state.deckCount[player]-1] = mine;
+        -:   62:	}
+        -:   63:	
+        -:   64:	//Set the deck count to 0
+       20:   65:	if(changeDeck == 2){
+branch  0 taken 40% (fallthrough)
+branch  1 taken 60%
+        8:   66:		state.deckCount[player]=0;
+        -:   67:	}
+        -:   68:	
+       20:   69:	cardEffect(state.hand[player][handpos],0,0,0,&state,handpos,0);
+call    0 returned 100%
+        -:   70:	
+        -:   71:	
+        -:   72:	//check that the deck was shuffled and the discarded cards have been added to the new deck.
+       20:   73:	if(changeDeck == 2 && state.deckCount[player] == 0){
+branch  0 taken 40% (fallthrough)
+branch  1 taken 60%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        8:   74:		printf("\tFAILED - The deck count was 0 before and after adventure card played.\n");
+call    0 returned 100%
+        8:   75:		failed=1;
+        -:   76:	}
+        -:   77:	
+        -:   78:	//Check that the hand has been increased by two cards
+       20:   79:	if(state.handCount[player] == handCount+2){
+branch  0 taken 60% (fallthrough)
+branch  1 taken 40%
+       12:   80:		printf("\tPASS - The hand count +2.\n");
+call    0 returned 100%
+        -:   81:	}
+        -:   82:	else{
+        8:   83:		printf("\tFAIL - Post adventure the hand count is wrong.\n");
+call    0 returned 100%
+        8:   84:		failed=1;
+        -:   85:	}
+        -:   86:	
+        -:   87:	//Count the number of adventurer cards in the player's hand
+      162:   88:	for(i=0; i<state.handCount[player]; i++){
+branch  0 taken 88%
+branch  1 taken 12% (fallthrough)
+      142:   89:		if(state.hand[player][i] == 7){
+branch  0 taken 12% (fallthrough)
+branch  1 taken 88%
+       17:   90:			endcount++;
+        -:   91:		}
+        -:   92:	}
+        -:   93:	//compare the count of adventurer cards from the passed in hand to the count after execution of the adventurer card.
+       20:   94:	if(count == endcount){
+branch  0 taken 80% (fallthrough)
+branch  1 taken 20%
+       16:   95:		printf("\tFAIL - Advneture card not removed.\n");
+call    0 returned 100%
+       16:   96:		failed=1;
+        -:   97:	}
+        -:   98:	else{
+        4:   99:		printf("\tPASS - Adventurer card removed.\n");
+call    0 returned 100%
+        -:  100:	}
+        -:  101:	
+        -:  102:	//Check that the correct number of treasure cards were added.
+       20:  103:	endcount=0;
+      162:  104:	for(i=0; i<state.handCount[player]; i++){
+branch  0 taken 88%
+branch  1 taken 12% (fallthrough)
+      142:  105:		if(state.deck[player][i] == 4){
+branch  0 taken 59% (fallthrough)
+branch  1 taken 41%
+       84:  106:			endcount++;
+        -:  107:		}
+        -:  108:	}
+       20:  109:	if(endcount == 2){
+branch  0 taken 5% (fallthrough)
+branch  1 taken 95%
+        1:  110:		printf("\tFAIL - wrong number treasure cards added.\n");
+call    0 returned 100%
+        1:  111:		failed=1;
+        -:  112:	}
+        -:  113:	else{
+       19:  114:		printf("\tPASS - correct number of treasure cards added.\n");
+call    0 returned 100%
+        -:  115:	}
+        -:  116:	
+        -:  117:	//Check that if a "mine" card was added to the deck then that card was skipped and not added to the hand.
+       20:  118:	if(changeDeck == 1){
+branch  0 taken 20% (fallthrough)
+branch  1 taken 80%
+        4:  119:		if(deckCount-state.deckCount[0] > 2){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        4:  120:			printf("\tPASS - The mine card was stepped over.\n");
+call    0 returned 100%
+        -:  121:		}
+        -:  122:		else{
+    #####:  123:			printf("\tFAIL - The mine card was not stepped over.\n");
+call    0 never executed
+    #####:  124:			failed=1;
+        -:  125:		}
+        -:  126:	}
+        -:  127:	
+        -:  128:	//check that the deck was reduced by 2 cards in cases where the shuffle would not occur.
+       20:  129:	if(changeDeck == 0 || changeDeck == 1){
+branch  0 taken 60% (fallthrough)
+branch  1 taken 40%
+branch  2 taken 33% (fallthrough)
+branch  3 taken 67%
+       12:  130:		if(deckCount-state.deckCount[0] > 1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+       12:  131:			printf("\tPASS - Deck >= deck -2\n");
+call    0 returned 100%
+        -:  132:		}
+        -:  133:		else{
+    #####:  134:			printf("\tFAIL - Deck !>= deck -2\n");
+call    0 never executed
+    #####:  135:			failed=1;
+        -:  136:		}
+        -:  137:	}
+        -:  138:	
+        -:  139:	//check that all cards in the hand are valid
+       20:  140:	endcount=0;
+      162:  141:	for(i=0; i<state.handCount[player]; i++){
+branch  0 taken 88%
+branch  1 taken 12% (fallthrough)
+      142:  142:		if(state.hand[player][i] < 0 || state.hand[player][i] > 26){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+    #####:  143:			endcount++;
+        -:  144:		}
+        -:  145:	}
+       20:  146:	if(endcount > 0){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  147:		printf("\tFAIL - hand has invlaid card.\n");
+call    0 never executed
+    #####:  148:		failed=1;
+        -:  149:	}
+        -:  150:	else{
+       20:  151:		printf("\tPASS - hand is valid.\n");
+call    0 returned 100%
+        -:  152:	}
+        -:  153:	
+       20:  154:	if(failed == 1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+       20:  155:		*testFailed = *testFailed+1;
+        -:  156:	}
+        -:  157:	else{
+    #####:  158:		*testPassed = *testPassed+1;
+        -:  159:	}
+        -:  160:	
+       20:  161:	return 0;
+        -:  162:}
+        -:  163:
+function cardNum called 124 returned 100% blocks executed 100%
+      124:  164:int cardNum(){
+      124:  165:	int cards = rand()%10+1;
+call    0 returned 100%
+      124:  166:return cards;
+        -:  167:}

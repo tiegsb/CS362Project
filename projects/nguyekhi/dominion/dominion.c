@@ -1301,10 +1301,10 @@ void CEadventurer(struct gameState *state, int currentPlayer, int handPos)
         z++;
       }
   }
-  while(z >=0)    // the bug is here, it should be z-1 >= 0
+  while(z-1 >=0)
   {
-    state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z]; // discard all cards in play that have been drawn
-    z--;                                                                    // the bug is here, it should be temphand[z-1]
+    state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1];
+    z--;
     }
     // A major bug in this function is forget to discard the adventurer card
     // discardCard(handPos, currentPlayer, state, 0);
@@ -1343,7 +1343,7 @@ void CEsteward(int currentPlayer, struct gameState *state, int choice1, int choi
   if (choice1 == 1)
   {
     drawCard(currentPlayer, state);
-      drawCard(currentPlayer, state);
+    drawCard(currentPlayer, state);
   }
   else if (choice1 == 2)
     state->coins = state->coins + 2;

@@ -1245,12 +1245,16 @@ int adventurerCardPlayed(struct gameState *state)
 	  shuffle(currentPlayer, state);
 	}
 	drawCard(currentPlayer, state);
-	drawCard(currentPlayer, state);
-	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-2];//top card of hand is most recently drawn card.
+	//drawCard(currentPlayer, state);
+	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
 	if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
 	  drawntreasure++;
 	else{
 	  temphand[z]=cardDrawn;
+	  if (currentPlayer < 0 || currentPlayer > 3){ // Found bug here This is a check to keep tester running.
+	     return -1;
+	  }
+
 	  state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
 	  z++;
 	}
@@ -1271,7 +1275,7 @@ int smithyCardPlayed(struct gameState *state, int handPos)
 	{
 	  drawCard(currentPlayer, state);
 	  if(i == 2)
-        discardCard(state->hand[currentPlayer][state->handCount[currentPlayer]-1],currentPlayer,state,0);
+	  discardCard(state->handCount[currentPlayer]-1,currentPlayer,state,0);
 	}
 
       //discard card from hand

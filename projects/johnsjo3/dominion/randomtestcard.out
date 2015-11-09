@@ -1,0 +1,4004 @@
+Card Test 1
+Conducting 1000 random trials.
+TRIAL 0
+discardCount is not as expected.  Expected: 52, Actual: 51
+top of discard mismatch. Expected: 13, Actual 373310450
+deck + discard count is not as expected.  Expected: 208, Actual: 207
+TRIAL 1
+discardCount is not as expected.  Expected: 82, Actual: 81
+top of discard mismatch. Expected: 13, Actual 1949635603
+deck + discard count is not as expected.  Expected: 141, Actual: 140
+TRIAL 2
+discardCount is not as expected.  Expected: 234, Actual: 233
+top of discard mismatch. Expected: 13, Actual 339166566
+deck + discard count is not as expected.  Expected: 279, Actual: 278
+TRIAL 3
+discardCount is not as expected.  Expected: 277, Actual: 276
+top of discard mismatch. Expected: 13, Actual -752813350
+deck + discard count is not as expected.  Expected: 338, Actual: 337
+TRIAL 4
+discardCount is not as expected.  Expected: 40, Actual: 39
+top of discard mismatch. Expected: 13, Actual 474008110
+deck + discard count is not as expected.  Expected: 121, Actual: 120
+TRIAL 5
+discardCount is not as expected.  Expected: 179, Actual: 178
+top of discard mismatch. Expected: 13, Actual 1154739565
+deck + discard count is not as expected.  Expected: 264, Actual: 263
+TRIAL 6
+discardCount is not as expected.  Expected: 117, Actual: 116
+top of discard mismatch. Expected: 13, Actual -1810256822
+deck + discard count is not as expected.  Expected: 202, Actual: 201
+TRIAL 7
+discardCount is not as expected.  Expected: 117, Actual: 116
+top of discard mismatch. Expected: 13, Actual -1427339483
+deck + discard count is not as expected.  Expected: 172, Actual: 171
+TRIAL 8
+discardCount is not as expected.  Expected: 33, Actual: 32
+top of discard mismatch. Expected: 13, Actual 1258212571
+deck + discard count is not as expected.  Expected: 286, Actual: 285
+TRIAL 9
+discardCount is not as expected.  Expected: 211, Actual: 210
+top of discard mismatch. Expected: 13, Actual 2111248915
+deck + discard count is not as expected.  Expected: 287, Actual: 286
+TRIAL 10
+discardCount is not as expected.  Expected: 31, Actual: 30
+top of discard mismatch. Expected: 13, Actual 1361902398
+deck + discard count is not as expected.  Expected: 98, Actual: 97
+TRIAL 11
+discardCount is not as expected.  Expected: 10, Actual: 9
+top of discard mismatch. Expected: 13, Actual -1038103408
+deck + discard count is not as expected.  Expected: 169, Actual: 168
+TRIAL 12
+discardCount is not as expected.  Expected: 219, Actual: 218
+top of discard mismatch. Expected: 13, Actual 1861360449
+deck + discard count is not as expected.  Expected: 499, Actual: 498
+TRIAL 13
+discardCount is not as expected.  Expected: 183, Actual: 182
+top of discard mismatch. Expected: 13, Actual 1078527137
+deck + discard count is not as expected.  Expected: 288, Actual: 287
+TRIAL 14
+discardCount is not as expected.  Expected: 250, Actual: 249
+top of discard mismatch. Expected: 13, Actual -2067236780
+deck + discard count is not as expected.  Expected: 474, Actual: 473
+TRIAL 15
+discardCount is not as expected.  Expected: 105, Actual: 104
+top of discard mismatch. Expected: 13, Actual -1292568136
+deck + discard count is not as expected.  Expected: 301, Actual: 300
+TRIAL 16
+discardCount is not as expected.  Expected: 184, Actual: 183
+top of discard mismatch. Expected: 13, Actual -93560535
+deck + discard count is not as expected.  Expected: 429, Actual: 428
+TRIAL 17
+discardCount is not as expected.  Expected: 285, Actual: 284
+top of discard mismatch. Expected: 13, Actual 554060357
+deck + discard count is not as expected.  Expected: 434, Actual: 433
+TRIAL 18
+discardCount is not as expected.  Expected: 110, Actual: 109
+top of discard mismatch. Expected: 13, Actual 1199337137
+deck + discard count is not as expected.  Expected: 135, Actual: 134
+TRIAL 19
+discardCount is not as expected.  Expected: 170, Actual: 169
+top of discard mismatch. Expected: 13, Actual 2039010686
+deck + discard count is not as expected.  Expected: 304, Actual: 303
+TRIAL 20
+discardCount is not as expected.  Expected: 160, Actual: 159
+top of discard mismatch. Expected: 13, Actual 1022829635
+deck + discard count is not as expected.  Expected: 436, Actual: 435
+TRIAL 21
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1293583970
+deck + discard count is not as expected.  Expected: 242, Actual: 241
+TRIAL 22
+discardCount is not as expected.  Expected: 236, Actual: 235
+top of discard mismatch. Expected: 13, Actual -368385961
+deck + discard count is not as expected.  Expected: 280, Actual: 279
+TRIAL 23
+discardCount is not as expected.  Expected: 41, Actual: 40
+top of discard mismatch. Expected: 13, Actual 1705382488
+deck + discard count is not as expected.  Expected: 68, Actual: 67
+TRIAL 24
+discardCount is not as expected.  Expected: 100, Actual: 99
+top of discard mismatch. Expected: 13, Actual -2100665534
+deck + discard count is not as expected.  Expected: 106, Actual: 105
+TRIAL 25
+discardCount is not as expected.  Expected: 88, Actual: 87
+top of discard mismatch. Expected: 13, Actual -630773612
+deck + discard count is not as expected.  Expected: 321, Actual: 320
+TRIAL 26
+discardCount is not as expected.  Expected: 135, Actual: 134
+top of discard mismatch. Expected: 13, Actual -998598851
+deck + discard count is not as expected.  Expected: 380, Actual: 379
+TRIAL 27
+discardCount is not as expected.  Expected: 27, Actual: 26
+top of discard mismatch. Expected: 13, Actual 1748340024
+deck + discard count is not as expected.  Expected: 248, Actual: 247
+TRIAL 28
+discardCount is not as expected.  Expected: 84, Actual: 83
+top of discard mismatch. Expected: 13, Actual 771755058
+deck + discard count is not as expected.  Expected: 378, Actual: 377
+TRIAL 29
+discardCount is not as expected.  Expected: 270, Actual: 269
+top of discard mismatch. Expected: 13, Actual 261814207
+deck + discard count is not as expected.  Expected: 488, Actual: 487
+TRIAL 30
+discardCount is not as expected.  Expected: 297, Actual: 296
+top of discard mismatch. Expected: 13, Actual -954776165
+deck + discard count is not as expected.  Expected: 514, Actual: 513
+TRIAL 31
+discardCount is not as expected.  Expected: 278, Actual: 277
+top of discard mismatch. Expected: 13, Actual -1351788070
+deck + discard count is not as expected.  Expected: 421, Actual: 420
+TRIAL 32
+discardCount is not as expected.  Expected: 176, Actual: 175
+top of discard mismatch. Expected: 13, Actual -159004758
+deck + discard count is not as expected.  Expected: 246, Actual: 245
+TRIAL 33
+discardCount is not as expected.  Expected: 126, Actual: 125
+top of discard mismatch. Expected: 13, Actual -330792150
+deck + discard count is not as expected.  Expected: 196, Actual: 195
+TRIAL 34
+discardCount is not as expected.  Expected: 63, Actual: 62
+top of discard mismatch. Expected: 13, Actual -784954764
+deck + discard count is not as expected.  Expected: 143, Actual: 142
+TRIAL 35
+discardCount is not as expected.  Expected: 17, Actual: 16
+top of discard mismatch. Expected: 13, Actual -1240778062
+deck + discard count is not as expected.  Expected: 302, Actual: 301
+TRIAL 36
+discardCount is not as expected.  Expected: 254, Actual: 253
+top of discard mismatch. Expected: 13, Actual -1955267248
+deck + discard count is not as expected.  Expected: 412, Actual: 411
+TRIAL 37
+discardCount is not as expected.  Expected: 160, Actual: 159
+top of discard mismatch. Expected: 13, Actual 765530354
+deck + discard count is not as expected.  Expected: 362, Actual: 361
+TRIAL 38
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual -2116103171
+deck + discard count is not as expected.  Expected: 506, Actual: 505
+TRIAL 39
+discardCount is not as expected.  Expected: 9, Actual: 8
+top of discard mismatch. Expected: 13, Actual -489451429
+deck + discard count is not as expected.  Expected: 285, Actual: 284
+TRIAL 40
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -489379449
+deck + discard count is not as expected.  Expected: 264, Actual: 263
+TRIAL 41
+discardCount is not as expected.  Expected: 146, Actual: 145
+top of discard mismatch. Expected: 13, Actual -456613617
+deck + discard count is not as expected.  Expected: 413, Actual: 412
+TRIAL 42
+discardCount is not as expected.  Expected: 276, Actual: 275
+top of discard mismatch. Expected: 13, Actual 812350893
+deck + discard count is not as expected.  Expected: 327, Actual: 326
+TRIAL 43
+discardCount is not as expected.  Expected: 246, Actual: 245
+top of discard mismatch. Expected: 13, Actual -666265744
+deck + discard count is not as expected.  Expected: 266, Actual: 265
+TRIAL 44
+discardCount is not as expected.  Expected: 65, Actual: 64
+top of discard mismatch. Expected: 13, Actual -1934399849
+deck + discard count is not as expected.  Expected: 116, Actual: 115
+TRIAL 45
+discardCount is not as expected.  Expected: 88, Actual: 87
+top of discard mismatch. Expected: 13, Actual -1373066651
+deck + discard count is not as expected.  Expected: 346, Actual: 345
+TRIAL 46
+discardCount is not as expected.  Expected: 29, Actual: 28
+top of discard mismatch. Expected: 13, Actual -1441259915
+deck + discard count is not as expected.  Expected: 40, Actual: 39
+TRIAL 47
+discardCount is not as expected.  Expected: 188, Actual: 187
+top of discard mismatch. Expected: 13, Actual -1538554419
+deck + discard count is not as expected.  Expected: 369, Actual: 368
+TRIAL 48
+discardCount is not as expected.  Expected: 44, Actual: 43
+top of discard mismatch. Expected: 13, Actual -573029303
+deck + discard count is not as expected.  Expected: 249, Actual: 248
+TRIAL 49
+discardCount is not as expected.  Expected: 212, Actual: 211
+top of discard mismatch. Expected: 13, Actual 1583993400
+deck + discard count is not as expected.  Expected: 226, Actual: 225
+TRIAL 50
+discardCount is not as expected.  Expected: 279, Actual: 278
+top of discard mismatch. Expected: 13, Actual -1788448594
+deck + discard count is not as expected.  Expected: 375, Actual: 374
+TRIAL 51
+discardCount is not as expected.  Expected: 67, Actual: 66
+top of discard mismatch. Expected: 13, Actual -1043831589
+deck + discard count is not as expected.  Expected: 132, Actual: 131
+TRIAL 52
+discardCount is not as expected.  Expected: 81, Actual: 80
+top of discard mismatch. Expected: 13, Actual -880284002
+deck + discard count is not as expected.  Expected: 316, Actual: 315
+TRIAL 53
+discardCount is not as expected.  Expected: 47, Actual: 46
+top of discard mismatch. Expected: 13, Actual 1801524275
+deck + discard count is not as expected.  Expected: 145, Actual: 144
+TRIAL 54
+discardCount is not as expected.  Expected: 25, Actual: 24
+top of discard mismatch. Expected: 13, Actual 106908558
+deck + discard count is not as expected.  Expected: 83, Actual: 82
+TRIAL 55
+discardCount is not as expected.  Expected: 162, Actual: 161
+top of discard mismatch. Expected: 13, Actual -217018925
+deck + discard count is not as expected.  Expected: 244, Actual: 243
+TRIAL 56
+discardCount is not as expected.  Expected: 231, Actual: 230
+top of discard mismatch. Expected: 13, Actual 219584009
+deck + discard count is not as expected.  Expected: 284, Actual: 283
+TRIAL 57
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1122684176
+deck + discard count is not as expected.  Expected: 296, Actual: 295
+TRIAL 58
+discardCount is not as expected.  Expected: 159, Actual: 158
+top of discard mismatch. Expected: 13, Actual -1665553784
+deck + discard count is not as expected.  Expected: 424, Actual: 423
+TRIAL 59
+discardCount is not as expected.  Expected: 230, Actual: 229
+top of discard mismatch. Expected: 13, Actual -1489670150
+deck + discard count is not as expected.  Expected: 416, Actual: 415
+TRIAL 60
+discardCount is not as expected.  Expected: 257, Actual: 256
+top of discard mismatch. Expected: 13, Actual -1784508681
+deck + discard count is not as expected.  Expected: 336, Actual: 335
+TRIAL 61
+discardCount is not as expected.  Expected: 264, Actual: 263
+top of discard mismatch. Expected: 13, Actual 1025377398
+deck + discard count is not as expected.  Expected: 508, Actual: 507
+TRIAL 62
+discardCount is not as expected.  Expected: 145, Actual: 144
+top of discard mismatch. Expected: 13, Actual 113732863
+deck + discard count is not as expected.  Expected: 369, Actual: 368
+TRIAL 63
+discardCount is not as expected.  Expected: 61, Actual: 60
+top of discard mismatch. Expected: 13, Actual -194845839
+deck + discard count is not as expected.  Expected: 334, Actual: 333
+TRIAL 64
+discardCount is not as expected.  Expected: 117, Actual: 116
+top of discard mismatch. Expected: 13, Actual 984938957
+deck + discard count is not as expected.  Expected: 276, Actual: 275
+TRIAL 65
+discardCount is not as expected.  Expected: 38, Actual: 37
+top of discard mismatch. Expected: 13, Actual 1724814994
+deck + discard count is not as expected.  Expected: 117, Actual: 116
+TRIAL 66
+discardCount is not as expected.  Expected: 239, Actual: 238
+top of discard mismatch. Expected: 13, Actual -721419017
+deck + discard count is not as expected.  Expected: 400, Actual: 399
+TRIAL 67
+discardCount is not as expected.  Expected: 208, Actual: 207
+top of discard mismatch. Expected: 13, Actual -1826587155
+deck + discard count is not as expected.  Expected: 240, Actual: 239
+TRIAL 68
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1956254348
+deck + discard count is not as expected.  Expected: 82, Actual: 81
+TRIAL 69
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1378148163
+deck + discard count is not as expected.  Expected: 298, Actual: 297
+TRIAL 70
+discardCount is not as expected.  Expected: 235, Actual: 234
+top of discard mismatch. Expected: 13, Actual 1816106707
+deck + discard count is not as expected.  Expected: 450, Actual: 449
+TRIAL 71
+discardCount is not as expected.  Expected: 37, Actual: 36
+top of discard mismatch. Expected: 13, Actual 504865713
+deck + discard count is not as expected.  Expected: 315, Actual: 314
+TRIAL 72
+discardCount is not as expected.  Expected: 33, Actual: 32
+top of discard mismatch. Expected: 13, Actual -484991986
+deck + discard count is not as expected.  Expected: 51, Actual: 50
+TRIAL 73
+discardCount is not as expected.  Expected: 90, Actual: 89
+top of discard mismatch. Expected: 13, Actual -1589887559
+deck + discard count is not as expected.  Expected: 160, Actual: 159
+TRIAL 74
+discardCount is not as expected.  Expected: 114, Actual: 113
+top of discard mismatch. Expected: 13, Actual 1429986822
+deck + discard count is not as expected.  Expected: 254, Actual: 253
+TRIAL 75
+discardCount is not as expected.  Expected: 165, Actual: 164
+top of discard mismatch. Expected: 13, Actual 1749449825
+deck + discard count is not as expected.  Expected: 178, Actual: 177
+TRIAL 76
+discardCount is not as expected.  Expected: 133, Actual: 132
+top of discard mismatch. Expected: 13, Actual -1663945740
+deck + discard count is not as expected.  Expected: 190, Actual: 189
+TRIAL 77
+discardCount is not as expected.  Expected: 252, Actual: 251
+top of discard mismatch. Expected: 13, Actual -1119235582
+deck + discard count is not as expected.  Expected: 369, Actual: 368
+TRIAL 78
+discardCount is not as expected.  Expected: 184, Actual: 183
+top of discard mismatch. Expected: 13, Actual -993325797
+deck + discard count is not as expected.  Expected: 385, Actual: 384
+TRIAL 79
+discardCount is not as expected.  Expected: 149, Actual: 148
+top of discard mismatch. Expected: 13, Actual 1508224673
+deck + discard count is not as expected.  Expected: 193, Actual: 192
+TRIAL 80
+discardCount is not as expected.  Expected: 17, Actual: 16
+top of discard mismatch. Expected: 13, Actual -1993338724
+deck + discard count is not as expected.  Expected: 308, Actual: 307
+TRIAL 81
+discardCount is not as expected.  Expected: 147, Actual: 146
+top of discard mismatch. Expected: 13, Actual -1594343943
+deck + discard count is not as expected.  Expected: 435, Actual: 434
+TRIAL 82
+discardCount is not as expected.  Expected: 147, Actual: 146
+top of discard mismatch. Expected: 13, Actual 288752481
+deck + discard count is not as expected.  Expected: 347, Actual: 346
+TRIAL 83
+discardCount is not as expected.  Expected: 106, Actual: 105
+top of discard mismatch. Expected: 13, Actual -1488899488
+deck + discard count is not as expected.  Expected: 205, Actual: 204
+TRIAL 84
+discardCount is not as expected.  Expected: 217, Actual: 216
+top of discard mismatch. Expected: 13, Actual -565461006
+deck + discard count is not as expected.  Expected: 265, Actual: 264
+TRIAL 85
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1759346780
+deck + discard count is not as expected.  Expected: 134, Actual: 133
+TRIAL 86
+discardCount is not as expected.  Expected: 218, Actual: 217
+top of discard mismatch. Expected: 13, Actual 1547292197
+deck + discard count is not as expected.  Expected: 315, Actual: 314
+TRIAL 87
+discardCount is not as expected.  Expected: 243, Actual: 242
+top of discard mismatch. Expected: 13, Actual 1179223838
+deck + discard count is not as expected.  Expected: 369, Actual: 368
+TRIAL 88
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1722121987
+deck + discard count is not as expected.  Expected: 88, Actual: 87
+TRIAL 89
+discardCount is not as expected.  Expected: 93, Actual: 92
+top of discard mismatch. Expected: 13, Actual -1372099102
+deck + discard count is not as expected.  Expected: 115, Actual: 114
+TRIAL 90
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 311767703
+deck + discard count is not as expected.  Expected: 98, Actual: 97
+TRIAL 91
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual -1662448466
+deck + discard count is not as expected.  Expected: 417, Actual: 416
+TRIAL 92
+discardCount is not as expected.  Expected: 8, Actual: 7
+top of discard mismatch. Expected: 13, Actual -1321086801
+deck + discard count is not as expected.  Expected: 203, Actual: 202
+TRIAL 93
+discardCount is not as expected.  Expected: 129, Actual: 128
+top of discard mismatch. Expected: 13, Actual 1090448292
+deck + discard count is not as expected.  Expected: 137, Actual: 136
+TRIAL 94
+discardCount is not as expected.  Expected: 267, Actual: 266
+top of discard mismatch. Expected: 13, Actual 952638235
+deck + discard count is not as expected.  Expected: 286, Actual: 285
+TRIAL 95
+discardCount is not as expected.  Expected: 192, Actual: 191
+top of discard mismatch. Expected: 13, Actual 183365185
+deck + discard count is not as expected.  Expected: 453, Actual: 452
+TRIAL 96
+discardCount is not as expected.  Expected: 197, Actual: 196
+top of discard mismatch. Expected: 13, Actual -100797932
+deck + discard count is not as expected.  Expected: 309, Actual: 308
+TRIAL 97
+discardCount is not as expected.  Expected: 249, Actual: 248
+top of discard mismatch. Expected: 13, Actual 1120287891
+deck + discard count is not as expected.  Expected: 292, Actual: 291
+TRIAL 98
+discardCount is not as expected.  Expected: 42, Actual: 41
+top of discard mismatch. Expected: 13, Actual -1124124001
+deck + discard count is not as expected.  Expected: 209, Actual: 208
+TRIAL 99
+discardCount is not as expected.  Expected: 277, Actual: 276
+top of discard mismatch. Expected: 13, Actual 945648015
+deck + discard count is not as expected.  Expected: 366, Actual: 365
+TRIAL 100
+discardCount is not as expected.  Expected: 150, Actual: 149
+top of discard mismatch. Expected: 13, Actual -762988251
+deck + discard count is not as expected.  Expected: 360, Actual: 359
+TRIAL 101
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual 999166624
+deck + discard count is not as expected.  Expected: 461, Actual: 460
+TRIAL 102
+discardCount is not as expected.  Expected: 74, Actual: 73
+top of discard mismatch. Expected: 13, Actual 408643873
+deck + discard count is not as expected.  Expected: 214, Actual: 213
+TRIAL 103
+discardCount is not as expected.  Expected: 106, Actual: 105
+top of discard mismatch. Expected: 13, Actual 1889988837
+deck + discard count is not as expected.  Expected: 239, Actual: 238
+TRIAL 104
+discardCount is not as expected.  Expected: 241, Actual: 240
+top of discard mismatch. Expected: 13, Actual -1669195161
+deck + discard count is not as expected.  Expected: 492, Actual: 491
+TRIAL 105
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 283219323
+deck + discard count is not as expected.  Expected: 248, Actual: 247
+TRIAL 106
+discardCount is not as expected.  Expected: 227, Actual: 226
+top of discard mismatch. Expected: 13, Actual -1785183977
+deck + discard count is not as expected.  Expected: 268, Actual: 267
+TRIAL 107
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1618108545
+deck + discard count is not as expected.  Expected: 194, Actual: 193
+TRIAL 108
+discardCount is not as expected.  Expected: 75, Actual: 74
+top of discard mismatch. Expected: 13, Actual -2116932455
+deck + discard count is not as expected.  Expected: 198, Actual: 197
+TRIAL 109
+discardCount is not as expected.  Expected: 198, Actual: 197
+top of discard mismatch. Expected: 13, Actual -1178187865
+deck + discard count is not as expected.  Expected: 478, Actual: 477
+TRIAL 110
+discardCount is not as expected.  Expected: 215, Actual: 214
+top of discard mismatch. Expected: 13, Actual 586650399
+deck + discard count is not as expected.  Expected: 462, Actual: 461
+TRIAL 111
+discardCount is not as expected.  Expected: 263, Actual: 262
+top of discard mismatch. Expected: 13, Actual 655869399
+deck + discard count is not as expected.  Expected: 400, Actual: 399
+TRIAL 112
+discardCount is not as expected.  Expected: 27, Actual: 26
+top of discard mismatch. Expected: 13, Actual 308538968
+deck + discard count is not as expected.  Expected: 88, Actual: 87
+TRIAL 113
+discardCount is not as expected.  Expected: 54, Actual: 53
+top of discard mismatch. Expected: 13, Actual 2104750843
+deck + discard count is not as expected.  Expected: 169, Actual: 168
+TRIAL 114
+discardCount is not as expected.  Expected: 26, Actual: 25
+top of discard mismatch. Expected: 13, Actual -258556182
+deck + discard count is not as expected.  Expected: 192, Actual: 191
+TRIAL 115
+discardCount is not as expected.  Expected: 236, Actual: 235
+top of discard mismatch. Expected: 13, Actual -73732774
+deck + discard count is not as expected.  Expected: 501, Actual: 500
+TRIAL 116
+discardCount is not as expected.  Expected: 96, Actual: 95
+top of discard mismatch. Expected: 13, Actual 1649710459
+deck + discard count is not as expected.  Expected: 233, Actual: 232
+TRIAL 117
+discardCount is not as expected.  Expected: 219, Actual: 218
+top of discard mismatch. Expected: 13, Actual -1889348652
+deck + discard count is not as expected.  Expected: 343, Actual: 342
+TRIAL 118
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 549060801
+deck + discard count is not as expected.  Expected: 160, Actual: 159
+TRIAL 119
+discardCount is not as expected.  Expected: 60, Actual: 59
+top of discard mismatch. Expected: 13, Actual 390788425
+deck + discard count is not as expected.  Expected: 107, Actual: 106
+TRIAL 120
+discardCount is not as expected.  Expected: 203, Actual: 202
+top of discard mismatch. Expected: 13, Actual -1722751986
+deck + discard count is not as expected.  Expected: 337, Actual: 336
+TRIAL 121
+discardCount is not as expected.  Expected: 227, Actual: 226
+top of discard mismatch. Expected: 13, Actual -2098217659
+deck + discard count is not as expected.  Expected: 319, Actual: 318
+TRIAL 122
+discardCount is not as expected.  Expected: 111, Actual: 110
+top of discard mismatch. Expected: 13, Actual -1102852700
+deck + discard count is not as expected.  Expected: 309, Actual: 308
+TRIAL 123
+discardCount is not as expected.  Expected: 86, Actual: 85
+top of discard mismatch. Expected: 13, Actual 1584561791
+deck + discard count is not as expected.  Expected: 241, Actual: 240
+TRIAL 124
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1048741372
+deck + discard count is not as expected.  Expected: 162, Actual: 161
+TRIAL 125
+discardCount is not as expected.  Expected: 2, Actual: 1
+top of discard mismatch. Expected: 13, Actual -759408361
+deck + discard count is not as expected.  Expected: 118, Actual: 117
+TRIAL 126
+discardCount is not as expected.  Expected: 21, Actual: 20
+top of discard mismatch. Expected: 13, Actual 2124628038
+deck + discard count is not as expected.  Expected: 317, Actual: 316
+TRIAL 127
+discardCount is not as expected.  Expected: 237, Actual: 236
+top of discard mismatch. Expected: 13, Actual -1330226428
+deck + discard count is not as expected.  Expected: 336, Actual: 335
+TRIAL 128
+discardCount is not as expected.  Expected: 36, Actual: 35
+top of discard mismatch. Expected: 13, Actual -1055750886
+deck + discard count is not as expected.  Expected: 218, Actual: 217
+TRIAL 129
+discardCount is not as expected.  Expected: 126, Actual: 125
+top of discard mismatch. Expected: 13, Actual -642873630
+deck + discard count is not as expected.  Expected: 345, Actual: 344
+TRIAL 130
+discardCount is not as expected.  Expected: 155, Actual: 154
+top of discard mismatch. Expected: 13, Actual 1357754194
+deck + discard count is not as expected.  Expected: 300, Actual: 299
+TRIAL 131
+discardCount is not as expected.  Expected: 50, Actual: 49
+top of discard mismatch. Expected: 13, Actual -752185786
+deck + discard count is not as expected.  Expected: 299, Actual: 298
+TRIAL 132
+discardCount is not as expected.  Expected: 41, Actual: 40
+top of discard mismatch. Expected: 13, Actual 83575489
+deck + discard count is not as expected.  Expected: 86, Actual: 85
+TRIAL 133
+discardCount is not as expected.  Expected: 223, Actual: 222
+top of discard mismatch. Expected: 13, Actual 2000965126
+deck + discard count is not as expected.  Expected: 317, Actual: 316
+TRIAL 134
+discardCount is not as expected.  Expected: 270, Actual: 269
+top of discard mismatch. Expected: 13, Actual 1617668413
+deck + discard count is not as expected.  Expected: 341, Actual: 340
+TRIAL 135
+discardCount is not as expected.  Expected: 93, Actual: 92
+top of discard mismatch. Expected: 13, Actual 1511611719
+deck + discard count is not as expected.  Expected: 245, Actual: 244
+TRIAL 136
+discardCount is not as expected.  Expected: 43, Actual: 42
+top of discard mismatch. Expected: 13, Actual -1833820683
+deck + discard count is not as expected.  Expected: 172, Actual: 171
+TRIAL 137
+discardCount is not as expected.  Expected: 172, Actual: 171
+top of discard mismatch. Expected: 13, Actual 1608433473
+deck + discard count is not as expected.  Expected: 449, Actual: 448
+TRIAL 138
+discardCount is not as expected.  Expected: 105, Actual: 104
+top of discard mismatch. Expected: 13, Actual -1819871936
+deck + discard count is not as expected.  Expected: 385, Actual: 384
+TRIAL 139
+discardCount is not as expected.  Expected: 73, Actual: 72
+top of discard mismatch. Expected: 13, Actual 292099558
+deck + discard count is not as expected.  Expected: 229, Actual: 228
+TRIAL 140
+discardCount is not as expected.  Expected: 23, Actual: 22
+top of discard mismatch. Expected: 13, Actual -527334593
+deck + discard count is not as expected.  Expected: 159, Actual: 158
+TRIAL 141
+discardCount is not as expected.  Expected: 204, Actual: 203
+top of discard mismatch. Expected: 13, Actual 997495131
+deck + discard count is not as expected.  Expected: 348, Actual: 347
+TRIAL 142
+discardCount is not as expected.  Expected: 35, Actual: 34
+top of discard mismatch. Expected: 13, Actual 1715350596
+deck + discard count is not as expected.  Expected: 273, Actual: 272
+TRIAL 143
+discardCount is not as expected.  Expected: 155, Actual: 154
+top of discard mismatch. Expected: 13, Actual -1763089574
+deck + discard count is not as expected.  Expected: 288, Actual: 287
+TRIAL 144
+discardCount is not as expected.  Expected: 280, Actual: 279
+top of discard mismatch. Expected: 13, Actual 1019465146
+deck + discard count is not as expected.  Expected: 404, Actual: 403
+TRIAL 145
+discardCount is not as expected.  Expected: 72, Actual: 71
+top of discard mismatch. Expected: 13, Actual 1861035994
+deck + discard count is not as expected.  Expected: 255, Actual: 254
+TRIAL 146
+discardCount is not as expected.  Expected: 22, Actual: 21
+top of discard mismatch. Expected: 13, Actual 79564688
+deck + discard count is not as expected.  Expected: 207, Actual: 206
+TRIAL 147
+discardCount is not as expected.  Expected: 130, Actual: 129
+top of discard mismatch. Expected: 13, Actual 1557464222
+deck + discard count is not as expected.  Expected: 310, Actual: 309
+TRIAL 148
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1603535799
+deck + discard count is not as expected.  Expected: 5, Actual: 4
+TRIAL 149
+discardCount is not as expected.  Expected: 184, Actual: 183
+top of discard mismatch. Expected: 13, Actual 1432153596
+deck + discard count is not as expected.  Expected: 387, Actual: 386
+TRIAL 150
+discardCount is not as expected.  Expected: 190, Actual: 189
+top of discard mismatch. Expected: 13, Actual 1688630888
+deck + discard count is not as expected.  Expected: 422, Actual: 421
+TRIAL 151
+discardCount is not as expected.  Expected: 170, Actual: 169
+top of discard mismatch. Expected: 13, Actual -1232565034
+deck + discard count is not as expected.  Expected: 353, Actual: 352
+TRIAL 152
+discardCount is not as expected.  Expected: 229, Actual: 228
+top of discard mismatch. Expected: 13, Actual 1487880835
+deck + discard count is not as expected.  Expected: 362, Actual: 361
+TRIAL 153
+discardCount is not as expected.  Expected: 282, Actual: 281
+top of discard mismatch. Expected: 13, Actual -431895297
+deck + discard count is not as expected.  Expected: 383, Actual: 382
+TRIAL 154
+discardCount is not as expected.  Expected: 287, Actual: 286
+top of discard mismatch. Expected: 13, Actual -1843881525
+deck + discard count is not as expected.  Expected: 419, Actual: 418
+TRIAL 155
+discardCount is not as expected.  Expected: 219, Actual: 218
+top of discard mismatch. Expected: 13, Actual -1136164458
+deck + discard count is not as expected.  Expected: 431, Actual: 430
+TRIAL 156
+discardCount is not as expected.  Expected: 175, Actual: 174
+top of discard mismatch. Expected: 13, Actual -977974241
+deck + discard count is not as expected.  Expected: 417, Actual: 416
+TRIAL 157
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1585891066
+deck + discard count is not as expected.  Expected: 245, Actual: 244
+TRIAL 158
+discardCount is not as expected.  Expected: 297, Actual: 296
+top of discard mismatch. Expected: 13, Actual -1183681317
+deck + discard count is not as expected.  Expected: 417, Actual: 416
+TRIAL 159
+discardCount is not as expected.  Expected: 76, Actual: 75
+top of discard mismatch. Expected: 13, Actual 2107801560
+deck + discard count is not as expected.  Expected: 323, Actual: 322
+TRIAL 160
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1722944206
+deck + discard count is not as expected.  Expected: 288, Actual: 287
+TRIAL 161
+discardCount is not as expected.  Expected: 104, Actual: 103
+top of discard mismatch. Expected: 13, Actual -97387791
+deck + discard count is not as expected.  Expected: 293, Actual: 292
+TRIAL 162
+discardCount is not as expected.  Expected: 107, Actual: 106
+top of discard mismatch. Expected: 13, Actual -260305348
+deck + discard count is not as expected.  Expected: 382, Actual: 381
+TRIAL 163
+discardCount is not as expected.  Expected: 59, Actual: 58
+top of discard mismatch. Expected: 13, Actual -1155564085
+deck + discard count is not as expected.  Expected: 183, Actual: 182
+TRIAL 164
+discardCount is not as expected.  Expected: 220, Actual: 219
+top of discard mismatch. Expected: 13, Actual 1163410936
+deck + discard count is not as expected.  Expected: 465, Actual: 464
+TRIAL 165
+discardCount is not as expected.  Expected: 4, Actual: 3
+top of discard mismatch. Expected: 13, Actual 431755597
+deck + discard count is not as expected.  Expected: 4, Actual: 3
+TRIAL 166
+discardCount is not as expected.  Expected: 76, Actual: 75
+top of discard mismatch. Expected: 13, Actual 1124019547
+deck + discard count is not as expected.  Expected: 274, Actual: 273
+TRIAL 167
+discardCount is not as expected.  Expected: 281, Actual: 280
+top of discard mismatch. Expected: 13, Actual 1317833416
+deck + discard count is not as expected.  Expected: 537, Actual: 536
+TRIAL 168
+discardCount is not as expected.  Expected: 36, Actual: 35
+top of discard mismatch. Expected: 13, Actual 2030976249
+deck + discard count is not as expected.  Expected: 209, Actual: 208
+TRIAL 169
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1589455952
+deck + discard count is not as expected.  Expected: 1, Actual: 0
+TRIAL 170
+discardCount is not as expected.  Expected: 219, Actual: 218
+top of discard mismatch. Expected: 13, Actual -295331798
+deck + discard count is not as expected.  Expected: 316, Actual: 315
+TRIAL 171
+discardCount is not as expected.  Expected: 17, Actual: 16
+top of discard mismatch. Expected: 13, Actual 213999061
+deck + discard count is not as expected.  Expected: 83, Actual: 82
+TRIAL 172
+discardCount is not as expected.  Expected: 229, Actual: 228
+top of discard mismatch. Expected: 13, Actual -1774675970
+deck + discard count is not as expected.  Expected: 289, Actual: 288
+TRIAL 173
+discardCount is not as expected.  Expected: 115, Actual: 114
+top of discard mismatch. Expected: 13, Actual 40485359
+deck + discard count is not as expected.  Expected: 318, Actual: 317
+TRIAL 174
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -839645610
+deck + discard count is not as expected.  Expected: 169, Actual: 168
+TRIAL 175
+discardCount is not as expected.  Expected: 2, Actual: 1
+top of discard mismatch. Expected: 13, Actual -2127564423
+deck + discard count is not as expected.  Expected: 82, Actual: 81
+TRIAL 176
+discardCount is not as expected.  Expected: 299, Actual: 298
+top of discard mismatch. Expected: 13, Actual -293556926
+deck + discard count is not as expected.  Expected: 467, Actual: 466
+TRIAL 177
+discardCount is not as expected.  Expected: 84, Actual: 83
+top of discard mismatch. Expected: 13, Actual -1833602253
+deck + discard count is not as expected.  Expected: 182, Actual: 181
+TRIAL 178
+discardCount is not as expected.  Expected: 150, Actual: 149
+top of discard mismatch. Expected: 13, Actual -1524026839
+deck + discard count is not as expected.  Expected: 201, Actual: 200
+TRIAL 179
+discardCount is not as expected.  Expected: 80, Actual: 79
+top of discard mismatch. Expected: 13, Actual -1301213838
+deck + discard count is not as expected.  Expected: 168, Actual: 167
+TRIAL 180
+discardCount is not as expected.  Expected: 100, Actual: 99
+top of discard mismatch. Expected: 13, Actual -263576265
+deck + discard count is not as expected.  Expected: 236, Actual: 235
+TRIAL 181
+discardCount is not as expected.  Expected: 181, Actual: 180
+top of discard mismatch. Expected: 13, Actual -1257153086
+deck + discard count is not as expected.  Expected: 246, Actual: 245
+TRIAL 182
+discardCount is not as expected.  Expected: 78, Actual: 77
+top of discard mismatch. Expected: 13, Actual 1528237401
+deck + discard count is not as expected.  Expected: 230, Actual: 229
+TRIAL 183
+discardCount is not as expected.  Expected: 274, Actual: 273
+top of discard mismatch. Expected: 13, Actual 1933169948
+deck + discard count is not as expected.  Expected: 303, Actual: 302
+TRIAL 184
+discardCount is not as expected.  Expected: 25, Actual: 24
+top of discard mismatch. Expected: 13, Actual 297771590
+deck + discard count is not as expected.  Expected: 261, Actual: 260
+TRIAL 185
+discardCount is not as expected.  Expected: 174, Actual: 173
+top of discard mismatch. Expected: 13, Actual 1409402073
+deck + discard count is not as expected.  Expected: 254, Actual: 253
+TRIAL 186
+discardCount is not as expected.  Expected: 252, Actual: 251
+top of discard mismatch. Expected: 13, Actual 1687128200
+deck + discard count is not as expected.  Expected: 268, Actual: 267
+TRIAL 187
+discardCount is not as expected.  Expected: 125, Actual: 124
+top of discard mismatch. Expected: 13, Actual -834564694
+deck + discard count is not as expected.  Expected: 339, Actual: 338
+TRIAL 188
+discardCount is not as expected.  Expected: 32, Actual: 31
+top of discard mismatch. Expected: 13, Actual -1904317525
+deck + discard count is not as expected.  Expected: 293, Actual: 292
+TRIAL 189
+discardCount is not as expected.  Expected: 57, Actual: 56
+top of discard mismatch. Expected: 13, Actual 1530358681
+deck + discard count is not as expected.  Expected: 220, Actual: 219
+TRIAL 190
+discardCount is not as expected.  Expected: 213, Actual: 212
+top of discard mismatch. Expected: 13, Actual 1834347823
+deck + discard count is not as expected.  Expected: 311, Actual: 310
+TRIAL 191
+discardCount is not as expected.  Expected: 115, Actual: 114
+top of discard mismatch. Expected: 13, Actual -643585356
+deck + discard count is not as expected.  Expected: 144, Actual: 143
+TRIAL 192
+discardCount is not as expected.  Expected: 153, Actual: 152
+top of discard mismatch. Expected: 13, Actual -887146742
+deck + discard count is not as expected.  Expected: 176, Actual: 175
+TRIAL 193
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 389052047
+deck + discard count is not as expected.  Expected: 12, Actual: 11
+TRIAL 194
+discardCount is not as expected.  Expected: 90, Actual: 89
+top of discard mismatch. Expected: 13, Actual 1780496371
+deck + discard count is not as expected.  Expected: 305, Actual: 304
+TRIAL 195
+discardCount is not as expected.  Expected: 260, Actual: 259
+top of discard mismatch. Expected: 13, Actual -1623708388
+deck + discard count is not as expected.  Expected: 360, Actual: 359
+TRIAL 196
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 259343437
+deck + discard count is not as expected.  Expected: 23, Actual: 22
+TRIAL 197
+discardCount is not as expected.  Expected: 279, Actual: 278
+top of discard mismatch. Expected: 13, Actual 954763952
+deck + discard count is not as expected.  Expected: 501, Actual: 500
+TRIAL 198
+discardCount is not as expected.  Expected: 30, Actual: 29
+top of discard mismatch. Expected: 13, Actual 2017928911
+deck + discard count is not as expected.  Expected: 48, Actual: 47
+TRIAL 199
+discardCount is not as expected.  Expected: 221, Actual: 220
+top of discard mismatch. Expected: 13, Actual 1568974538
+deck + discard count is not as expected.  Expected: 347, Actual: 346
+TRIAL 200
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -620109838
+deck + discard count is not as expected.  Expected: 274, Actual: 273
+TRIAL 201
+discardCount is not as expected.  Expected: 116, Actual: 115
+top of discard mismatch. Expected: 13, Actual -84516209
+deck + discard count is not as expected.  Expected: 236, Actual: 235
+TRIAL 202
+discardCount is not as expected.  Expected: 196, Actual: 195
+top of discard mismatch. Expected: 13, Actual -48211033
+deck + discard count is not as expected.  Expected: 474, Actual: 473
+TRIAL 203
+discardCount is not as expected.  Expected: 42, Actual: 41
+top of discard mismatch. Expected: 13, Actual -141301865
+deck + discard count is not as expected.  Expected: 211, Actual: 210
+TRIAL 204
+discardCount is not as expected.  Expected: 207, Actual: 206
+top of discard mismatch. Expected: 13, Actual 142245413
+deck + discard count is not as expected.  Expected: 359, Actual: 358
+TRIAL 205
+discardCount is not as expected.  Expected: 120, Actual: 119
+top of discard mismatch. Expected: 13, Actual 619413831
+deck + discard count is not as expected.  Expected: 307, Actual: 306
+TRIAL 206
+discardCount is not as expected.  Expected: 63, Actual: 62
+top of discard mismatch. Expected: 13, Actual -1669421175
+deck + discard count is not as expected.  Expected: 206, Actual: 205
+TRIAL 207
+discardCount is not as expected.  Expected: 231, Actual: 230
+top of discard mismatch. Expected: 13, Actual -1592495116
+deck + discard count is not as expected.  Expected: 334, Actual: 333
+TRIAL 208
+discardCount is not as expected.  Expected: 36, Actual: 35
+top of discard mismatch. Expected: 13, Actual 1129129990
+deck + discard count is not as expected.  Expected: 177, Actual: 176
+TRIAL 209
+discardCount is not as expected.  Expected: 269, Actual: 268
+top of discard mismatch. Expected: 13, Actual -562375632
+deck + discard count is not as expected.  Expected: 391, Actual: 390
+TRIAL 210
+discardCount is not as expected.  Expected: 112, Actual: 111
+top of discard mismatch. Expected: 13, Actual -885285082
+deck + discard count is not as expected.  Expected: 132, Actual: 131
+TRIAL 211
+discardCount is not as expected.  Expected: 145, Actual: 144
+top of discard mismatch. Expected: 13, Actual -464537097
+deck + discard count is not as expected.  Expected: 316, Actual: 315
+TRIAL 212
+discardCount is not as expected.  Expected: 91, Actual: 90
+top of discard mismatch. Expected: 13, Actual 385917081
+deck + discard count is not as expected.  Expected: 261, Actual: 260
+TRIAL 213
+discardCount is not as expected.  Expected: 169, Actual: 168
+top of discard mismatch. Expected: 13, Actual -525791525
+deck + discard count is not as expected.  Expected: 299, Actual: 298
+TRIAL 214
+discardCount is not as expected.  Expected: 103, Actual: 102
+top of discard mismatch. Expected: 13, Actual -831970188
+deck + discard count is not as expected.  Expected: 286, Actual: 285
+TRIAL 215
+discardCount is not as expected.  Expected: 208, Actual: 207
+top of discard mismatch. Expected: 13, Actual -2022787308
+deck + discard count is not as expected.  Expected: 286, Actual: 285
+TRIAL 216
+discardCount is not as expected.  Expected: 225, Actual: 224
+top of discard mismatch. Expected: 13, Actual 153984242
+deck + discard count is not as expected.  Expected: 361, Actual: 360
+TRIAL 217
+discardCount is not as expected.  Expected: 28, Actual: 27
+top of discard mismatch. Expected: 13, Actual -1812113230
+deck + discard count is not as expected.  Expected: 147, Actual: 146
+TRIAL 218
+discardCount is not as expected.  Expected: 156, Actual: 155
+top of discard mismatch. Expected: 13, Actual -1202879814
+deck + discard count is not as expected.  Expected: 296, Actual: 295
+TRIAL 219
+discardCount is not as expected.  Expected: 69, Actual: 68
+top of discard mismatch. Expected: 13, Actual 1949217423
+deck + discard count is not as expected.  Expected: 176, Actual: 175
+TRIAL 220
+discardCount is not as expected.  Expected: 88, Actual: 87
+top of discard mismatch. Expected: 13, Actual -1348950033
+deck + discard count is not as expected.  Expected: 118, Actual: 117
+TRIAL 221
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1402881797
+deck + discard count is not as expected.  Expected: 261, Actual: 260
+TRIAL 222
+discardCount is not as expected.  Expected: 66, Actual: 65
+top of discard mismatch. Expected: 13, Actual -793040386
+deck + discard count is not as expected.  Expected: 228, Actual: 227
+TRIAL 223
+discardCount is not as expected.  Expected: 45, Actual: 44
+top of discard mismatch. Expected: 13, Actual -711792769
+deck + discard count is not as expected.  Expected: 214, Actual: 213
+TRIAL 224
+discardCount is not as expected.  Expected: 126, Actual: 125
+top of discard mismatch. Expected: 13, Actual 810851417
+deck + discard count is not as expected.  Expected: 208, Actual: 207
+TRIAL 225
+discardCount is not as expected.  Expected: 208, Actual: 207
+top of discard mismatch. Expected: 13, Actual -1700806445
+deck + discard count is not as expected.  Expected: 339, Actual: 338
+TRIAL 226
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 665691102
+deck + discard count is not as expected.  Expected: 1, Actual: 0
+TRIAL 227
+discardCount is not as expected.  Expected: 112, Actual: 111
+top of discard mismatch. Expected: 13, Actual -1135617152
+deck + discard count is not as expected.  Expected: 279, Actual: 278
+TRIAL 228
+discardCount is not as expected.  Expected: 45, Actual: 44
+top of discard mismatch. Expected: 13, Actual 814531235
+deck + discard count is not as expected.  Expected: 317, Actual: 316
+TRIAL 229
+discardCount is not as expected.  Expected: 261, Actual: 260
+top of discard mismatch. Expected: 13, Actual 538896680
+deck + discard count is not as expected.  Expected: 347, Actual: 346
+TRIAL 230
+discardCount is not as expected.  Expected: 234, Actual: 233
+top of discard mismatch. Expected: 13, Actual 2096778032
+deck + discard count is not as expected.  Expected: 357, Actual: 356
+TRIAL 231
+discardCount is not as expected.  Expected: 43, Actual: 42
+top of discard mismatch. Expected: 13, Actual -1427652734
+deck + discard count is not as expected.  Expected: 172, Actual: 171
+TRIAL 232
+discardCount is not as expected.  Expected: 157, Actual: 156
+top of discard mismatch. Expected: 13, Actual 969003136
+deck + discard count is not as expected.  Expected: 435, Actual: 434
+TRIAL 233
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual -1208341662
+deck + discard count is not as expected.  Expected: 244, Actual: 243
+TRIAL 234
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -51480774
+deck + discard count is not as expected.  Expected: 104, Actual: 103
+TRIAL 235
+discardCount is not as expected.  Expected: 58, Actual: 57
+top of discard mismatch. Expected: 13, Actual 1226401603
+deck + discard count is not as expected.  Expected: 68, Actual: 67
+TRIAL 236
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -416440580
+deck + discard count is not as expected.  Expected: 205, Actual: 204
+TRIAL 237
+discardCount is not as expected.  Expected: 65, Actual: 64
+top of discard mismatch. Expected: 13, Actual -853617227
+deck + discard count is not as expected.  Expected: 346, Actual: 345
+TRIAL 238
+discardCount is not as expected.  Expected: 242, Actual: 241
+top of discard mismatch. Expected: 13, Actual 1653672703
+deck + discard count is not as expected.  Expected: 509, Actual: 508
+TRIAL 239
+discardCount is not as expected.  Expected: 138, Actual: 137
+top of discard mismatch. Expected: 13, Actual -61204549
+deck + discard count is not as expected.  Expected: 322, Actual: 321
+TRIAL 240
+discardCount is not as expected.  Expected: 198, Actual: 197
+top of discard mismatch. Expected: 13, Actual 1678802651
+deck + discard count is not as expected.  Expected: 308, Actual: 307
+TRIAL 241
+discardCount is not as expected.  Expected: 281, Actual: 280
+top of discard mismatch. Expected: 13, Actual 334435434
+deck + discard count is not as expected.  Expected: 309, Actual: 308
+TRIAL 242
+discardCount is not as expected.  Expected: 140, Actual: 139
+top of discard mismatch. Expected: 13, Actual 153908324
+deck + discard count is not as expected.  Expected: 201, Actual: 200
+TRIAL 243
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 74296535
+deck + discard count is not as expected.  Expected: 48, Actual: 47
+TRIAL 244
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 430806707
+deck + discard count is not as expected.  Expected: 1, Actual: 0
+TRIAL 245
+discardCount is not as expected.  Expected: 263, Actual: 262
+top of discard mismatch. Expected: 13, Actual 912442186
+deck + discard count is not as expected.  Expected: 477, Actual: 476
+TRIAL 246
+discardCount is not as expected.  Expected: 114, Actual: 113
+top of discard mismatch. Expected: 13, Actual 731924712
+deck + discard count is not as expected.  Expected: 217, Actual: 216
+TRIAL 247
+discardCount is not as expected.  Expected: 114, Actual: 113
+top of discard mismatch. Expected: 13, Actual -920310095
+deck + discard count is not as expected.  Expected: 365, Actual: 364
+TRIAL 248
+discardCount is not as expected.  Expected: 35, Actual: 34
+top of discard mismatch. Expected: 13, Actual -1923684793
+deck + discard count is not as expected.  Expected: 298, Actual: 297
+TRIAL 249
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -137315759
+deck + discard count is not as expected.  Expected: 132, Actual: 131
+TRIAL 250
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1221393969
+deck + discard count is not as expected.  Expected: 1, Actual: 0
+TRIAL 251
+discardCount is not as expected.  Expected: 252, Actual: 251
+top of discard mismatch. Expected: 13, Actual 1951589651
+deck + discard count is not as expected.  Expected: 514, Actual: 513
+TRIAL 252
+discardCount is not as expected.  Expected: 105, Actual: 104
+top of discard mismatch. Expected: 13, Actual -305269428
+deck + discard count is not as expected.  Expected: 354, Actual: 353
+TRIAL 253
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1268181003
+deck + discard count is not as expected.  Expected: 180, Actual: 179
+TRIAL 254
+discardCount is not as expected.  Expected: 198, Actual: 197
+top of discard mismatch. Expected: 13, Actual 844883332
+deck + discard count is not as expected.  Expected: 416, Actual: 415
+TRIAL 255
+discardCount is not as expected.  Expected: 211, Actual: 210
+top of discard mismatch. Expected: 13, Actual -1303331419
+deck + discard count is not as expected.  Expected: 329, Actual: 328
+TRIAL 256
+discardCount is not as expected.  Expected: 91, Actual: 90
+top of discard mismatch. Expected: 13, Actual -1351353916
+deck + discard count is not as expected.  Expected: 289, Actual: 288
+TRIAL 257
+discardCount is not as expected.  Expected: 65, Actual: 64
+top of discard mismatch. Expected: 13, Actual 1087065643
+deck + discard count is not as expected.  Expected: 280, Actual: 279
+TRIAL 258
+discardCount is not as expected.  Expected: 79, Actual: 78
+top of discard mismatch. Expected: 13, Actual -1994775888
+deck + discard count is not as expected.  Expected: 203, Actual: 202
+TRIAL 259
+discardCount is not as expected.  Expected: 192, Actual: 191
+top of discard mismatch. Expected: 13, Actual -1539498151
+deck + discard count is not as expected.  Expected: 336, Actual: 335
+TRIAL 260
+discardCount is not as expected.  Expected: 177, Actual: 176
+top of discard mismatch. Expected: 13, Actual 588773125
+deck + discard count is not as expected.  Expected: 215, Actual: 214
+TRIAL 261
+discardCount is not as expected.  Expected: 227, Actual: 226
+top of discard mismatch. Expected: 13, Actual 151309825
+deck + discard count is not as expected.  Expected: 340, Actual: 339
+TRIAL 262
+discardCount is not as expected.  Expected: 207, Actual: 206
+top of discard mismatch. Expected: 13, Actual -485971018
+deck + discard count is not as expected.  Expected: 484, Actual: 483
+TRIAL 263
+discardCount is not as expected.  Expected: 40, Actual: 39
+top of discard mismatch. Expected: 13, Actual 555063711
+deck + discard count is not as expected.  Expected: 164, Actual: 163
+TRIAL 264
+discardCount is not as expected.  Expected: 158, Actual: 157
+top of discard mismatch. Expected: 13, Actual 1344111068
+deck + discard count is not as expected.  Expected: 422, Actual: 421
+TRIAL 265
+discardCount is not as expected.  Expected: 284, Actual: 283
+top of discard mismatch. Expected: 13, Actual -459413972
+deck + discard count is not as expected.  Expected: 352, Actual: 351
+TRIAL 266
+discardCount is not as expected.  Expected: 40, Actual: 39
+top of discard mismatch. Expected: 13, Actual -51695429
+deck + discard count is not as expected.  Expected: 64, Actual: 63
+TRIAL 267
+discardCount is not as expected.  Expected: 78, Actual: 77
+top of discard mismatch. Expected: 13, Actual 126475835
+deck + discard count is not as expected.  Expected: 120, Actual: 119
+TRIAL 268
+discardCount is not as expected.  Expected: 248, Actual: 247
+top of discard mismatch. Expected: 13, Actual -1732502967
+deck + discard count is not as expected.  Expected: 384, Actual: 383
+TRIAL 269
+discardCount is not as expected.  Expected: 289, Actual: 288
+top of discard mismatch. Expected: 13, Actual 363601335
+deck + discard count is not as expected.  Expected: 381, Actual: 380
+TRIAL 270
+discardCount is not as expected.  Expected: 101, Actual: 100
+top of discard mismatch. Expected: 13, Actual 495328000
+deck + discard count is not as expected.  Expected: 177, Actual: 176
+TRIAL 271
+discardCount is not as expected.  Expected: 300, Actual: 299
+top of discard mismatch. Expected: 13, Actual 911903817
+deck + discard count is not as expected.  Expected: 309, Actual: 308
+TRIAL 272
+discardCount is not as expected.  Expected: 202, Actual: 201
+top of discard mismatch. Expected: 13, Actual 1326223409
+deck + discard count is not as expected.  Expected: 490, Actual: 489
+TRIAL 273
+discardCount is not as expected.  Expected: 247, Actual: 246
+top of discard mismatch. Expected: 13, Actual 1901872785
+deck + discard count is not as expected.  Expected: 247, Actual: 246
+TRIAL 274
+discardCount is not as expected.  Expected: 167, Actual: 166
+top of discard mismatch. Expected: 13, Actual -399846068
+deck + discard count is not as expected.  Expected: 417, Actual: 416
+TRIAL 275
+discardCount is not as expected.  Expected: 157, Actual: 156
+top of discard mismatch. Expected: 13, Actual 87972245
+deck + discard count is not as expected.  Expected: 318, Actual: 317
+TRIAL 276
+discardCount is not as expected.  Expected: 105, Actual: 104
+top of discard mismatch. Expected: 13, Actual -539564658
+deck + discard count is not as expected.  Expected: 262, Actual: 261
+TRIAL 277
+discardCount is not as expected.  Expected: 57, Actual: 56
+top of discard mismatch. Expected: 13, Actual -460496790
+deck + discard count is not as expected.  Expected: 306, Actual: 305
+TRIAL 278
+discardCount is not as expected.  Expected: 221, Actual: 220
+top of discard mismatch. Expected: 13, Actual -1087001682
+deck + discard count is not as expected.  Expected: 518, Actual: 517
+TRIAL 279
+discardCount is not as expected.  Expected: 45, Actual: 44
+top of discard mismatch. Expected: 13, Actual -1371799158
+deck + discard count is not as expected.  Expected: 224, Actual: 223
+TRIAL 280
+discardCount is not as expected.  Expected: 18, Actual: 17
+top of discard mismatch. Expected: 13, Actual -1523844943
+deck + discard count is not as expected.  Expected: 31, Actual: 30
+TRIAL 281
+discardCount is not as expected.  Expected: 131, Actual: 130
+top of discard mismatch. Expected: 13, Actual -74795950
+deck + discard count is not as expected.  Expected: 416, Actual: 415
+TRIAL 282
+discardCount is not as expected.  Expected: 48, Actual: 47
+top of discard mismatch. Expected: 13, Actual -528057767
+deck + discard count is not as expected.  Expected: 173, Actual: 172
+TRIAL 283
+discardCount is not as expected.  Expected: 79, Actual: 78
+top of discard mismatch. Expected: 13, Actual 1043464726
+deck + discard count is not as expected.  Expected: 239, Actual: 238
+TRIAL 284
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 784122721
+deck + discard count is not as expected.  Expected: 89, Actual: 88
+TRIAL 285
+discardCount is not as expected.  Expected: 193, Actual: 192
+top of discard mismatch. Expected: 13, Actual -925234271
+deck + discard count is not as expected.  Expected: 486, Actual: 485
+TRIAL 286
+discardCount is not as expected.  Expected: 193, Actual: 192
+top of discard mismatch. Expected: 13, Actual 1906580628
+deck + discard count is not as expected.  Expected: 380, Actual: 379
+TRIAL 287
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual 351751787
+deck + discard count is not as expected.  Expected: 287, Actual: 286
+TRIAL 288
+discardCount is not as expected.  Expected: 21, Actual: 20
+top of discard mismatch. Expected: 13, Actual -1765764595
+deck + discard count is not as expected.  Expected: 240, Actual: 239
+TRIAL 289
+discardCount is not as expected.  Expected: 48, Actual: 47
+top of discard mismatch. Expected: 13, Actual -1732247837
+deck + discard count is not as expected.  Expected: 145, Actual: 144
+TRIAL 290
+discardCount is not as expected.  Expected: 63, Actual: 62
+top of discard mismatch. Expected: 13, Actual 1200939740
+deck + discard count is not as expected.  Expected: 173, Actual: 172
+TRIAL 291
+discardCount is not as expected.  Expected: 113, Actual: 112
+top of discard mismatch. Expected: 13, Actual -1488061512
+deck + discard count is not as expected.  Expected: 138, Actual: 137
+TRIAL 292
+discardCount is not as expected.  Expected: 44, Actual: 43
+top of discard mismatch. Expected: 13, Actual -1822084232
+deck + discard count is not as expected.  Expected: 197, Actual: 196
+TRIAL 293
+discardCount is not as expected.  Expected: 6, Actual: 5
+top of discard mismatch. Expected: 13, Actual 1919071368
+deck + discard count is not as expected.  Expected: 301, Actual: 300
+TRIAL 294
+discardCount is not as expected.  Expected: 119, Actual: 118
+top of discard mismatch. Expected: 13, Actual -1164888424
+deck + discard count is not as expected.  Expected: 390, Actual: 389
+TRIAL 295
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -844375863
+deck + discard count is not as expected.  Expected: 232, Actual: 231
+TRIAL 296
+discardCount is not as expected.  Expected: 210, Actual: 209
+top of discard mismatch. Expected: 13, Actual -1314087888
+deck + discard count is not as expected.  Expected: 431, Actual: 430
+TRIAL 297
+discardCount is not as expected.  Expected: 59, Actual: 58
+top of discard mismatch. Expected: 13, Actual 1570176307
+deck + discard count is not as expected.  Expected: 171, Actual: 170
+TRIAL 298
+discardCount is not as expected.  Expected: 189, Actual: 188
+top of discard mismatch. Expected: 13, Actual 2100921694
+deck + discard count is not as expected.  Expected: 413, Actual: 412
+TRIAL 299
+discardCount is not as expected.  Expected: 181, Actual: 180
+top of discard mismatch. Expected: 13, Actual 1168898414
+deck + discard count is not as expected.  Expected: 403, Actual: 402
+TRIAL 300
+discardCount is not as expected.  Expected: 210, Actual: 209
+top of discard mismatch. Expected: 13, Actual 679746137
+deck + discard count is not as expected.  Expected: 322, Actual: 321
+TRIAL 301
+discardCount is not as expected.  Expected: 249, Actual: 248
+top of discard mismatch. Expected: 13, Actual 871359439
+deck + discard count is not as expected.  Expected: 546, Actual: 545
+TRIAL 302
+discardCount is not as expected.  Expected: 139, Actual: 138
+top of discard mismatch. Expected: 13, Actual 739358014
+deck + discard count is not as expected.  Expected: 387, Actual: 386
+TRIAL 303
+discardCount is not as expected.  Expected: 41, Actual: 40
+top of discard mismatch. Expected: 13, Actual 2028733331
+deck + discard count is not as expected.  Expected: 55, Actual: 54
+TRIAL 304
+discardCount is not as expected.  Expected: 41, Actual: 40
+top of discard mismatch. Expected: 13, Actual -667299368
+deck + discard count is not as expected.  Expected: 283, Actual: 282
+TRIAL 305
+discardCount is not as expected.  Expected: 294, Actual: 293
+top of discard mismatch. Expected: 13, Actual -1656898606
+deck + discard count is not as expected.  Expected: 367, Actual: 366
+TRIAL 306
+discardCount is not as expected.  Expected: 258, Actual: 257
+top of discard mismatch. Expected: 13, Actual 896857881
+deck + discard count is not as expected.  Expected: 525, Actual: 524
+TRIAL 307
+discardCount is not as expected.  Expected: 26, Actual: 25
+top of discard mismatch. Expected: 13, Actual 1502629953
+deck + discard count is not as expected.  Expected: 263, Actual: 262
+TRIAL 308
+discardCount is not as expected.  Expected: 66, Actual: 65
+top of discard mismatch. Expected: 13, Actual 1091970567
+deck + discard count is not as expected.  Expected: 169, Actual: 168
+TRIAL 309
+discardCount is not as expected.  Expected: 282, Actual: 281
+top of discard mismatch. Expected: 13, Actual 861414349
+deck + discard count is not as expected.  Expected: 433, Actual: 432
+TRIAL 310
+discardCount is not as expected.  Expected: 99, Actual: 98
+top of discard mismatch. Expected: 13, Actual 1550422631
+deck + discard count is not as expected.  Expected: 288, Actual: 287
+TRIAL 311
+discardCount is not as expected.  Expected: 185, Actual: 184
+top of discard mismatch. Expected: 13, Actual 2116376607
+deck + discard count is not as expected.  Expected: 323, Actual: 322
+TRIAL 312
+discardCount is not as expected.  Expected: 148, Actual: 147
+top of discard mismatch. Expected: 13, Actual -451466467
+deck + discard count is not as expected.  Expected: 235, Actual: 234
+TRIAL 313
+discardCount is not as expected.  Expected: 273, Actual: 272
+top of discard mismatch. Expected: 13, Actual 1966798478
+deck + discard count is not as expected.  Expected: 555, Actual: 554
+TRIAL 314
+discardCount is not as expected.  Expected: 22, Actual: 21
+top of discard mismatch. Expected: 13, Actual -680935734
+deck + discard count is not as expected.  Expected: 79, Actual: 78
+TRIAL 315
+discardCount is not as expected.  Expected: 65, Actual: 64
+top of discard mismatch. Expected: 13, Actual -1147392868
+deck + discard count is not as expected.  Expected: 190, Actual: 189
+TRIAL 316
+discardCount is not as expected.  Expected: 31, Actual: 30
+top of discard mismatch. Expected: 13, Actual -1045664707
+deck + discard count is not as expected.  Expected: 38, Actual: 37
+TRIAL 317
+discardCount is not as expected.  Expected: 127, Actual: 126
+top of discard mismatch. Expected: 13, Actual -101589044
+deck + discard count is not as expected.  Expected: 403, Actual: 402
+TRIAL 318
+discardCount is not as expected.  Expected: 203, Actual: 202
+top of discard mismatch. Expected: 13, Actual 989587212
+deck + discard count is not as expected.  Expected: 402, Actual: 401
+TRIAL 319
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1744095330
+deck + discard count is not as expected.  Expected: 284, Actual: 283
+TRIAL 320
+discardCount is not as expected.  Expected: 9, Actual: 8
+top of discard mismatch. Expected: 13, Actual -484692263
+deck + discard count is not as expected.  Expected: 170, Actual: 169
+TRIAL 321
+discardCount is not as expected.  Expected: 279, Actual: 278
+top of discard mismatch. Expected: 13, Actual 1034523377
+deck + discard count is not as expected.  Expected: 441, Actual: 440
+TRIAL 322
+discardCount is not as expected.  Expected: 115, Actual: 114
+top of discard mismatch. Expected: 13, Actual -1526588961
+deck + discard count is not as expected.  Expected: 367, Actual: 366
+TRIAL 323
+discardCount is not as expected.  Expected: 88, Actual: 87
+top of discard mismatch. Expected: 13, Actual -1112503352
+deck + discard count is not as expected.  Expected: 195, Actual: 194
+TRIAL 324
+discardCount is not as expected.  Expected: 172, Actual: 171
+top of discard mismatch. Expected: 13, Actual 1237909181
+deck + discard count is not as expected.  Expected: 278, Actual: 277
+TRIAL 325
+discardCount is not as expected.  Expected: 128, Actual: 127
+top of discard mismatch. Expected: 13, Actual 1597153598
+deck + discard count is not as expected.  Expected: 191, Actual: 190
+TRIAL 326
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1786731124
+deck + discard count is not as expected.  Expected: 147, Actual: 146
+TRIAL 327
+discardCount is not as expected.  Expected: 165, Actual: 164
+top of discard mismatch. Expected: 13, Actual 1954238396
+deck + discard count is not as expected.  Expected: 356, Actual: 355
+TRIAL 328
+discardCount is not as expected.  Expected: 44, Actual: 43
+top of discard mismatch. Expected: 13, Actual -1326689286
+deck + discard count is not as expected.  Expected: 334, Actual: 333
+TRIAL 329
+discardCount is not as expected.  Expected: 277, Actual: 276
+top of discard mismatch. Expected: 13, Actual 1928970932
+deck + discard count is not as expected.  Expected: 530, Actual: 529
+TRIAL 330
+discardCount is not as expected.  Expected: 3, Actual: 2
+top of discard mismatch. Expected: 13, Actual 1870901615
+deck + discard count is not as expected.  Expected: 203, Actual: 202
+TRIAL 331
+discardCount is not as expected.  Expected: 196, Actual: 195
+top of discard mismatch. Expected: 13, Actual -396742152
+deck + discard count is not as expected.  Expected: 291, Actual: 290
+TRIAL 332
+discardCount is not as expected.  Expected: 301, Actual: 300
+top of discard mismatch. Expected: 13, Actual -1390262819
+deck + discard count is not as expected.  Expected: 329, Actual: 328
+TRIAL 333
+discardCount is not as expected.  Expected: 106, Actual: 105
+top of discard mismatch. Expected: 13, Actual 378495857
+deck + discard count is not as expected.  Expected: 357, Actual: 356
+TRIAL 334
+discardCount is not as expected.  Expected: 210, Actual: 209
+top of discard mismatch. Expected: 13, Actual 2032794561
+deck + discard count is not as expected.  Expected: 406, Actual: 405
+TRIAL 335
+discardCount is not as expected.  Expected: 238, Actual: 237
+top of discard mismatch. Expected: 13, Actual -1705622924
+deck + discard count is not as expected.  Expected: 485, Actual: 484
+TRIAL 336
+discardCount is not as expected.  Expected: 126, Actual: 125
+top of discard mismatch. Expected: 13, Actual -1123940725
+deck + discard count is not as expected.  Expected: 132, Actual: 131
+TRIAL 337
+discardCount is not as expected.  Expected: 246, Actual: 245
+top of discard mismatch. Expected: 13, Actual -1579472054
+deck + discard count is not as expected.  Expected: 503, Actual: 502
+TRIAL 338
+discardCount is not as expected.  Expected: 78, Actual: 77
+top of discard mismatch. Expected: 13, Actual -386321772
+deck + discard count is not as expected.  Expected: 370, Actual: 369
+TRIAL 339
+discardCount is not as expected.  Expected: 102, Actual: 101
+top of discard mismatch. Expected: 13, Actual -1705046284
+deck + discard count is not as expected.  Expected: 213, Actual: 212
+TRIAL 340
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 261400238
+deck + discard count is not as expected.  Expected: 171, Actual: 170
+TRIAL 341
+discardCount is not as expected.  Expected: 266, Actual: 265
+top of discard mismatch. Expected: 13, Actual -1927368353
+deck + discard count is not as expected.  Expected: 319, Actual: 318
+TRIAL 342
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 21763343
+deck + discard count is not as expected.  Expected: 65, Actual: 64
+TRIAL 343
+discardCount is not as expected.  Expected: 32, Actual: 31
+top of discard mismatch. Expected: 13, Actual 306384770
+deck + discard count is not as expected.  Expected: 295, Actual: 294
+TRIAL 344
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1438598863
+deck + discard count is not as expected.  Expected: 244, Actual: 243
+TRIAL 345
+discardCount is not as expected.  Expected: 229, Actual: 228
+top of discard mismatch. Expected: 13, Actual -2142704595
+deck + discard count is not as expected.  Expected: 365, Actual: 364
+TRIAL 346
+discardCount is not as expected.  Expected: 205, Actual: 204
+top of discard mismatch. Expected: 13, Actual -1703227135
+deck + discard count is not as expected.  Expected: 323, Actual: 322
+TRIAL 347
+discardCount is not as expected.  Expected: 115, Actual: 114
+top of discard mismatch. Expected: 13, Actual -165296866
+deck + discard count is not as expected.  Expected: 281, Actual: 280
+TRIAL 348
+discardCount is not as expected.  Expected: 265, Actual: 264
+top of discard mismatch. Expected: 13, Actual -1794751652
+deck + discard count is not as expected.  Expected: 512, Actual: 511
+TRIAL 349
+discardCount is not as expected.  Expected: 116, Actual: 115
+top of discard mismatch. Expected: 13, Actual 1435278103
+deck + discard count is not as expected.  Expected: 258, Actual: 257
+TRIAL 350
+discardCount is not as expected.  Expected: 218, Actual: 217
+top of discard mismatch. Expected: 13, Actual -1806768844
+deck + discard count is not as expected.  Expected: 488, Actual: 487
+TRIAL 351
+discardCount is not as expected.  Expected: 49, Actual: 48
+top of discard mismatch. Expected: 13, Actual 2045824383
+deck + discard count is not as expected.  Expected: 105, Actual: 104
+TRIAL 352
+discardCount is not as expected.  Expected: 166, Actual: 165
+top of discard mismatch. Expected: 13, Actual 577662014
+deck + discard count is not as expected.  Expected: 407, Actual: 406
+TRIAL 353
+discardCount is not as expected.  Expected: 203, Actual: 202
+top of discard mismatch. Expected: 13, Actual 1645972761
+deck + discard count is not as expected.  Expected: 224, Actual: 223
+TRIAL 354
+discardCount is not as expected.  Expected: 277, Actual: 276
+top of discard mismatch. Expected: 13, Actual 353305715
+deck + discard count is not as expected.  Expected: 519, Actual: 518
+TRIAL 355
+discardCount is not as expected.  Expected: 133, Actual: 132
+top of discard mismatch. Expected: 13, Actual 267979046
+deck + discard count is not as expected.  Expected: 329, Actual: 328
+TRIAL 356
+discardCount is not as expected.  Expected: 196, Actual: 195
+top of discard mismatch. Expected: 13, Actual 1626608813
+deck + discard count is not as expected.  Expected: 407, Actual: 406
+TRIAL 357
+discardCount is not as expected.  Expected: 187, Actual: 186
+top of discard mismatch. Expected: 13, Actual 1360200097
+deck + discard count is not as expected.  Expected: 277, Actual: 276
+TRIAL 358
+discardCount is not as expected.  Expected: 155, Actual: 154
+top of discard mismatch. Expected: 13, Actual 1416711281
+deck + discard count is not as expected.  Expected: 162, Actual: 161
+TRIAL 359
+discardCount is not as expected.  Expected: 265, Actual: 264
+top of discard mismatch. Expected: 13, Actual -11241163
+deck + discard count is not as expected.  Expected: 468, Actual: 467
+TRIAL 360
+discardCount is not as expected.  Expected: 204, Actual: 203
+top of discard mismatch. Expected: 13, Actual 1652226242
+deck + discard count is not as expected.  Expected: 358, Actual: 357
+TRIAL 361
+discardCount is not as expected.  Expected: 143, Actual: 142
+top of discard mismatch. Expected: 13, Actual 1609434889
+deck + discard count is not as expected.  Expected: 215, Actual: 214
+TRIAL 362
+discardCount is not as expected.  Expected: 207, Actual: 206
+top of discard mismatch. Expected: 13, Actual 327180198
+deck + discard count is not as expected.  Expected: 243, Actual: 242
+TRIAL 363
+discardCount is not as expected.  Expected: 71, Actual: 70
+top of discard mismatch. Expected: 13, Actual -967907599
+deck + discard count is not as expected.  Expected: 141, Actual: 140
+TRIAL 364
+discardCount is not as expected.  Expected: 71, Actual: 70
+top of discard mismatch. Expected: 13, Actual 533902979
+deck + discard count is not as expected.  Expected: 93, Actual: 92
+TRIAL 365
+discardCount is not as expected.  Expected: 176, Actual: 175
+top of discard mismatch. Expected: 13, Actual 1997264347
+deck + discard count is not as expected.  Expected: 313, Actual: 312
+TRIAL 366
+discardCount is not as expected.  Expected: 31, Actual: 30
+top of discard mismatch. Expected: 13, Actual -1037475792
+deck + discard count is not as expected.  Expected: 111, Actual: 110
+TRIAL 367
+discardCount is not as expected.  Expected: 278, Actual: 277
+top of discard mismatch. Expected: 13, Actual 797481755
+deck + discard count is not as expected.  Expected: 298, Actual: 297
+TRIAL 368
+discardCount is not as expected.  Expected: 177, Actual: 176
+top of discard mismatch. Expected: 13, Actual -1253372609
+deck + discard count is not as expected.  Expected: 357, Actual: 356
+TRIAL 369
+discardCount is not as expected.  Expected: 204, Actual: 203
+top of discard mismatch. Expected: 13, Actual 1054035913
+deck + discard count is not as expected.  Expected: 307, Actual: 306
+TRIAL 370
+discardCount is not as expected.  Expected: 285, Actual: 284
+top of discard mismatch. Expected: 13, Actual -1301735365
+deck + discard count is not as expected.  Expected: 399, Actual: 398
+TRIAL 371
+discardCount is not as expected.  Expected: 51, Actual: 50
+top of discard mismatch. Expected: 13, Actual 16557400
+deck + discard count is not as expected.  Expected: 142, Actual: 141
+TRIAL 372
+discardCount is not as expected.  Expected: 86, Actual: 85
+top of discard mismatch. Expected: 13, Actual 246771809
+deck + discard count is not as expected.  Expected: 210, Actual: 209
+TRIAL 373
+discardCount is not as expected.  Expected: 28, Actual: 27
+top of discard mismatch. Expected: 13, Actual 527458914
+deck + discard count is not as expected.  Expected: 189, Actual: 188
+TRIAL 374
+discardCount is not as expected.  Expected: 231, Actual: 230
+top of discard mismatch. Expected: 13, Actual 812711972
+deck + discard count is not as expected.  Expected: 309, Actual: 308
+TRIAL 375
+discardCount is not as expected.  Expected: 169, Actual: 168
+top of discard mismatch. Expected: 13, Actual 1107015401
+deck + discard count is not as expected.  Expected: 319, Actual: 318
+TRIAL 376
+discardCount is not as expected.  Expected: 224, Actual: 223
+top of discard mismatch. Expected: 13, Actual -149258350
+deck + discard count is not as expected.  Expected: 502, Actual: 501
+TRIAL 377
+discardCount is not as expected.  Expected: 128, Actual: 127
+top of discard mismatch. Expected: 13, Actual -1061745385
+deck + discard count is not as expected.  Expected: 421, Actual: 420
+TRIAL 378
+discardCount is not as expected.  Expected: 111, Actual: 110
+top of discard mismatch. Expected: 13, Actual -792514784
+deck + discard count is not as expected.  Expected: 394, Actual: 393
+TRIAL 379
+discardCount is not as expected.  Expected: 262, Actual: 261
+top of discard mismatch. Expected: 13, Actual 1134409145
+deck + discard count is not as expected.  Expected: 374, Actual: 373
+TRIAL 380
+discardCount is not as expected.  Expected: 208, Actual: 207
+top of discard mismatch. Expected: 13, Actual 152856704
+deck + discard count is not as expected.  Expected: 327, Actual: 326
+TRIAL 381
+discardCount is not as expected.  Expected: 296, Actual: 295
+top of discard mismatch. Expected: 13, Actual -1408543281
+deck + discard count is not as expected.  Expected: 579, Actual: 578
+TRIAL 382
+discardCount is not as expected.  Expected: 150, Actual: 149
+top of discard mismatch. Expected: 13, Actual -1241331872
+deck + discard count is not as expected.  Expected: 314, Actual: 313
+TRIAL 383
+discardCount is not as expected.  Expected: 71, Actual: 70
+top of discard mismatch. Expected: 13, Actual -859229828
+deck + discard count is not as expected.  Expected: 148, Actual: 147
+TRIAL 384
+discardCount is not as expected.  Expected: 139, Actual: 138
+top of discard mismatch. Expected: 13, Actual 1122483526
+deck + discard count is not as expected.  Expected: 420, Actual: 419
+TRIAL 385
+discardCount is not as expected.  Expected: 162, Actual: 161
+top of discard mismatch. Expected: 13, Actual -1416257707
+deck + discard count is not as expected.  Expected: 165, Actual: 164
+TRIAL 386
+discardCount is not as expected.  Expected: 139, Actual: 138
+top of discard mismatch. Expected: 13, Actual 531791496
+deck + discard count is not as expected.  Expected: 346, Actual: 345
+TRIAL 387
+discardCount is not as expected.  Expected: 249, Actual: 248
+top of discard mismatch. Expected: 13, Actual 1251197790
+deck + discard count is not as expected.  Expected: 463, Actual: 462
+TRIAL 388
+discardCount is not as expected.  Expected: 53, Actual: 52
+top of discard mismatch. Expected: 13, Actual -1940478431
+deck + discard count is not as expected.  Expected: 99, Actual: 98
+TRIAL 389
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -2098161404
+deck + discard count is not as expected.  Expected: 216, Actual: 215
+TRIAL 390
+discardCount is not as expected.  Expected: 101, Actual: 100
+top of discard mismatch. Expected: 13, Actual -91555889
+deck + discard count is not as expected.  Expected: 181, Actual: 180
+TRIAL 391
+discardCount is not as expected.  Expected: 122, Actual: 121
+top of discard mismatch. Expected: 13, Actual -1339381072
+deck + discard count is not as expected.  Expected: 125, Actual: 124
+TRIAL 392
+discardCount is not as expected.  Expected: 226, Actual: 225
+top of discard mismatch. Expected: 13, Actual -733879810
+deck + discard count is not as expected.  Expected: 314, Actual: 313
+TRIAL 393
+discardCount is not as expected.  Expected: 103, Actual: 102
+top of discard mismatch. Expected: 13, Actual 1074313290
+deck + discard count is not as expected.  Expected: 189, Actual: 188
+TRIAL 394
+discardCount is not as expected.  Expected: 64, Actual: 63
+top of discard mismatch. Expected: 13, Actual 426776737
+deck + discard count is not as expected.  Expected: 73, Actual: 72
+TRIAL 395
+discardCount is not as expected.  Expected: 139, Actual: 138
+top of discard mismatch. Expected: 13, Actual 1052203641
+deck + discard count is not as expected.  Expected: 415, Actual: 414
+TRIAL 396
+discardCount is not as expected.  Expected: 48, Actual: 47
+top of discard mismatch. Expected: 13, Actual -341049427
+deck + discard count is not as expected.  Expected: 154, Actual: 153
+TRIAL 397
+discardCount is not as expected.  Expected: 183, Actual: 182
+top of discard mismatch. Expected: 13, Actual -656892947
+deck + discard count is not as expected.  Expected: 226, Actual: 225
+TRIAL 398
+discardCount is not as expected.  Expected: 273, Actual: 272
+top of discard mismatch. Expected: 13, Actual 1540514854
+deck + discard count is not as expected.  Expected: 399, Actual: 398
+TRIAL 399
+discardCount is not as expected.  Expected: 62, Actual: 61
+top of discard mismatch. Expected: 13, Actual -2089656326
+deck + discard count is not as expected.  Expected: 296, Actual: 295
+TRIAL 400
+discardCount is not as expected.  Expected: 298, Actual: 297
+top of discard mismatch. Expected: 13, Actual -188970621
+deck + discard count is not as expected.  Expected: 461, Actual: 460
+TRIAL 401
+discardCount is not as expected.  Expected: 100, Actual: 99
+top of discard mismatch. Expected: 13, Actual -541516315
+deck + discard count is not as expected.  Expected: 180, Actual: 179
+TRIAL 402
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -2048423007
+deck + discard count is not as expected.  Expected: 78, Actual: 77
+TRIAL 403
+discardCount is not as expected.  Expected: 160, Actual: 159
+top of discard mismatch. Expected: 13, Actual 596916836
+deck + discard count is not as expected.  Expected: 375, Actual: 374
+TRIAL 404
+discardCount is not as expected.  Expected: 53, Actual: 52
+top of discard mismatch. Expected: 13, Actual 713547319
+deck + discard count is not as expected.  Expected: 166, Actual: 165
+TRIAL 405
+discardCount is not as expected.  Expected: 238, Actual: 237
+top of discard mismatch. Expected: 13, Actual -620240799
+deck + discard count is not as expected.  Expected: 410, Actual: 409
+TRIAL 406
+discardCount is not as expected.  Expected: 46, Actual: 45
+top of discard mismatch. Expected: 13, Actual -1881983820
+deck + discard count is not as expected.  Expected: 175, Actual: 174
+TRIAL 407
+discardCount is not as expected.  Expected: 120, Actual: 119
+top of discard mismatch. Expected: 13, Actual -1674862087
+deck + discard count is not as expected.  Expected: 367, Actual: 366
+TRIAL 408
+discardCount is not as expected.  Expected: 7, Actual: 6
+top of discard mismatch. Expected: 13, Actual 173287996
+deck + discard count is not as expected.  Expected: 281, Actual: 280
+TRIAL 409
+discardCount is not as expected.  Expected: 18, Actual: 17
+top of discard mismatch. Expected: 13, Actual 463204221
+deck + discard count is not as expected.  Expected: 26, Actual: 25
+TRIAL 410
+discardCount is not as expected.  Expected: 117, Actual: 116
+top of discard mismatch. Expected: 13, Actual -1551440609
+deck + discard count is not as expected.  Expected: 218, Actual: 217
+TRIAL 411
+discardCount is not as expected.  Expected: 141, Actual: 140
+top of discard mismatch. Expected: 13, Actual -1910739883
+deck + discard count is not as expected.  Expected: 169, Actual: 168
+TRIAL 412
+discardCount is not as expected.  Expected: 130, Actual: 129
+top of discard mismatch. Expected: 13, Actual -536299758
+deck + discard count is not as expected.  Expected: 221, Actual: 220
+TRIAL 413
+discardCount is not as expected.  Expected: 62, Actual: 61
+top of discard mismatch. Expected: 13, Actual 1046278688
+deck + discard count is not as expected.  Expected: 68, Actual: 67
+TRIAL 414
+discardCount is not as expected.  Expected: 93, Actual: 92
+top of discard mismatch. Expected: 13, Actual 2008408335
+deck + discard count is not as expected.  Expected: 161, Actual: 160
+TRIAL 415
+discardCount is not as expected.  Expected: 18, Actual: 17
+top of discard mismatch. Expected: 13, Actual 1712856687
+deck + discard count is not as expected.  Expected: 218, Actual: 217
+TRIAL 416
+discardCount is not as expected.  Expected: 273, Actual: 272
+top of discard mismatch. Expected: 13, Actual -1148850168
+deck + discard count is not as expected.  Expected: 515, Actual: 514
+TRIAL 417
+discardCount is not as expected.  Expected: 299, Actual: 298
+top of discard mismatch. Expected: 13, Actual 1161733480
+deck + discard count is not as expected.  Expected: 468, Actual: 467
+TRIAL 418
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -344319993
+deck + discard count is not as expected.  Expected: 1, Actual: 0
+TRIAL 419
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1957306771
+deck + discard count is not as expected.  Expected: 54, Actual: 53
+TRIAL 420
+discardCount is not as expected.  Expected: 173, Actual: 172
+top of discard mismatch. Expected: 13, Actual -308817274
+deck + discard count is not as expected.  Expected: 283, Actual: 282
+TRIAL 421
+discardCount is not as expected.  Expected: 33, Actual: 32
+top of discard mismatch. Expected: 13, Actual 1761764340
+deck + discard count is not as expected.  Expected: 266, Actual: 265
+TRIAL 422
+discardCount is not as expected.  Expected: 157, Actual: 156
+top of discard mismatch. Expected: 13, Actual 513001896
+deck + discard count is not as expected.  Expected: 274, Actual: 273
+TRIAL 423
+discardCount is not as expected.  Expected: 28, Actual: 27
+top of discard mismatch. Expected: 13, Actual -1226804218
+deck + discard count is not as expected.  Expected: 174, Actual: 173
+TRIAL 424
+discardCount is not as expected.  Expected: 90, Actual: 89
+top of discard mismatch. Expected: 13, Actual -932484756
+deck + discard count is not as expected.  Expected: 177, Actual: 176
+TRIAL 425
+discardCount is not as expected.  Expected: 165, Actual: 164
+top of discard mismatch. Expected: 13, Actual -230592455
+deck + discard count is not as expected.  Expected: 228, Actual: 227
+TRIAL 426
+discardCount is not as expected.  Expected: 168, Actual: 167
+top of discard mismatch. Expected: 13, Actual -724426478
+deck + discard count is not as expected.  Expected: 326, Actual: 325
+TRIAL 427
+discardCount is not as expected.  Expected: 229, Actual: 228
+top of discard mismatch. Expected: 13, Actual 1536143349
+deck + discard count is not as expected.  Expected: 439, Actual: 438
+TRIAL 428
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1304474515
+deck + discard count is not as expected.  Expected: 3, Actual: 2
+TRIAL 429
+discardCount is not as expected.  Expected: 14, Actual: 13
+top of discard mismatch. Expected: 13, Actual -1858537512
+deck + discard count is not as expected.  Expected: 222, Actual: 221
+TRIAL 430
+discardCount is not as expected.  Expected: 95, Actual: 94
+top of discard mismatch. Expected: 13, Actual 1370434232
+deck + discard count is not as expected.  Expected: 195, Actual: 194
+TRIAL 431
+discardCount is not as expected.  Expected: 14, Actual: 13
+top of discard mismatch. Expected: 13, Actual 290273066
+deck + discard count is not as expected.  Expected: 273, Actual: 272
+TRIAL 432
+discardCount is not as expected.  Expected: 4, Actual: 3
+top of discard mismatch. Expected: 13, Actual -1165232133
+deck + discard count is not as expected.  Expected: 229, Actual: 228
+TRIAL 433
+discardCount is not as expected.  Expected: 44, Actual: 43
+top of discard mismatch. Expected: 13, Actual 1859823993
+deck + discard count is not as expected.  Expected: 54, Actual: 53
+TRIAL 434
+discardCount is not as expected.  Expected: 59, Actual: 58
+top of discard mismatch. Expected: 13, Actual -393149451
+deck + discard count is not as expected.  Expected: 109, Actual: 108
+TRIAL 435
+discardCount is not as expected.  Expected: 265, Actual: 264
+top of discard mismatch. Expected: 13, Actual 248943817
+deck + discard count is not as expected.  Expected: 523, Actual: 522
+TRIAL 436
+discardCount is not as expected.  Expected: 138, Actual: 137
+top of discard mismatch. Expected: 13, Actual 1246073492
+deck + discard count is not as expected.  Expected: 415, Actual: 414
+TRIAL 437
+discardCount is not as expected.  Expected: 276, Actual: 275
+top of discard mismatch. Expected: 13, Actual 2121801336
+deck + discard count is not as expected.  Expected: 294, Actual: 293
+TRIAL 438
+discardCount is not as expected.  Expected: 219, Actual: 218
+top of discard mismatch. Expected: 13, Actual 11529959
+deck + discard count is not as expected.  Expected: 476, Actual: 475
+TRIAL 439
+discardCount is not as expected.  Expected: 61, Actual: 60
+top of discard mismatch. Expected: 13, Actual 1852010516
+deck + discard count is not as expected.  Expected: 188, Actual: 187
+TRIAL 440
+discardCount is not as expected.  Expected: 164, Actual: 163
+top of discard mismatch. Expected: 13, Actual 576917002
+deck + discard count is not as expected.  Expected: 251, Actual: 250
+TRIAL 441
+discardCount is not as expected.  Expected: 272, Actual: 271
+top of discard mismatch. Expected: 13, Actual 1687827714
+deck + discard count is not as expected.  Expected: 469, Actual: 468
+TRIAL 442
+discardCount is not as expected.  Expected: 161, Actual: 160
+top of discard mismatch. Expected: 13, Actual -1844632530
+deck + discard count is not as expected.  Expected: 363, Actual: 362
+TRIAL 443
+discardCount is not as expected.  Expected: 175, Actual: 174
+top of discard mismatch. Expected: 13, Actual -975819254
+deck + discard count is not as expected.  Expected: 220, Actual: 219
+TRIAL 444
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual -547549321
+deck + discard count is not as expected.  Expected: 515, Actual: 514
+TRIAL 445
+discardCount is not as expected.  Expected: 173, Actual: 172
+top of discard mismatch. Expected: 13, Actual 1001391235
+deck + discard count is not as expected.  Expected: 409, Actual: 408
+TRIAL 446
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1278580120
+deck + discard count is not as expected.  Expected: 55, Actual: 54
+TRIAL 447
+discardCount is not as expected.  Expected: 129, Actual: 128
+top of discard mismatch. Expected: 13, Actual -1124523927
+deck + discard count is not as expected.  Expected: 301, Actual: 300
+TRIAL 448
+discardCount is not as expected.  Expected: 226, Actual: 225
+top of discard mismatch. Expected: 13, Actual 1183748174
+deck + discard count is not as expected.  Expected: 316, Actual: 315
+TRIAL 449
+discardCount is not as expected.  Expected: 176, Actual: 175
+top of discard mismatch. Expected: 13, Actual 1601561897
+deck + discard count is not as expected.  Expected: 324, Actual: 323
+TRIAL 450
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -468961295
+deck + discard count is not as expected.  Expected: 94, Actual: 93
+TRIAL 451
+discardCount is not as expected.  Expected: 66, Actual: 65
+top of discard mismatch. Expected: 13, Actual -144667977
+deck + discard count is not as expected.  Expected: 108, Actual: 107
+TRIAL 452
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1129489814
+deck + discard count is not as expected.  Expected: 209, Actual: 208
+TRIAL 453
+discardCount is not as expected.  Expected: 297, Actual: 296
+top of discard mismatch. Expected: 13, Actual -635783974
+deck + discard count is not as expected.  Expected: 412, Actual: 411
+TRIAL 454
+discardCount is not as expected.  Expected: 122, Actual: 121
+top of discard mismatch. Expected: 13, Actual -348675201
+deck + discard count is not as expected.  Expected: 124, Actual: 123
+TRIAL 455
+discardCount is not as expected.  Expected: 87, Actual: 86
+top of discard mismatch. Expected: 13, Actual -1762177234
+deck + discard count is not as expected.  Expected: 191, Actual: 190
+TRIAL 456
+discardCount is not as expected.  Expected: 112, Actual: 111
+top of discard mismatch. Expected: 13, Actual 1462989834
+deck + discard count is not as expected.  Expected: 136, Actual: 135
+TRIAL 457
+discardCount is not as expected.  Expected: 174, Actual: 173
+top of discard mismatch. Expected: 13, Actual 1360699019
+deck + discard count is not as expected.  Expected: 467, Actual: 466
+TRIAL 458
+discardCount is not as expected.  Expected: 246, Actual: 245
+top of discard mismatch. Expected: 13, Actual 14946736
+deck + discard count is not as expected.  Expected: 466, Actual: 465
+TRIAL 459
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1863680565
+deck + discard count is not as expected.  Expected: 36, Actual: 35
+TRIAL 460
+discardCount is not as expected.  Expected: 138, Actual: 137
+top of discard mismatch. Expected: 13, Actual 1161584951
+deck + discard count is not as expected.  Expected: 189, Actual: 188
+TRIAL 461
+discardCount is not as expected.  Expected: 158, Actual: 157
+top of discard mismatch. Expected: 13, Actual -1906225325
+deck + discard count is not as expected.  Expected: 271, Actual: 270
+TRIAL 462
+discardCount is not as expected.  Expected: 99, Actual: 98
+top of discard mismatch. Expected: 13, Actual 1943567752
+deck + discard count is not as expected.  Expected: 169, Actual: 168
+TRIAL 463
+discardCount is not as expected.  Expected: 84, Actual: 83
+top of discard mismatch. Expected: 13, Actual 265582446
+deck + discard count is not as expected.  Expected: 239, Actual: 238
+TRIAL 464
+discardCount is not as expected.  Expected: 48, Actual: 47
+top of discard mismatch. Expected: 13, Actual 1429201848
+deck + discard count is not as expected.  Expected: 132, Actual: 131
+TRIAL 465
+discardCount is not as expected.  Expected: 11, Actual: 10
+top of discard mismatch. Expected: 13, Actual 1013348921
+deck + discard count is not as expected.  Expected: 82, Actual: 81
+TRIAL 466
+discardCount is not as expected.  Expected: 140, Actual: 139
+top of discard mismatch. Expected: 13, Actual 1307337040
+deck + discard count is not as expected.  Expected: 249, Actual: 248
+TRIAL 467
+discardCount is not as expected.  Expected: 257, Actual: 256
+top of discard mismatch. Expected: 13, Actual 2144973035
+deck + discard count is not as expected.  Expected: 550, Actual: 549
+TRIAL 468
+discardCount is not as expected.  Expected: 144, Actual: 143
+top of discard mismatch. Expected: 13, Actual 765634680
+deck + discard count is not as expected.  Expected: 332, Actual: 331
+TRIAL 469
+discardCount is not as expected.  Expected: 236, Actual: 235
+top of discard mismatch. Expected: 13, Actual -2128966904
+deck + discard count is not as expected.  Expected: 525, Actual: 524
+TRIAL 470
+discardCount is not as expected.  Expected: 116, Actual: 115
+top of discard mismatch. Expected: 13, Actual -906090399
+deck + discard count is not as expected.  Expected: 314, Actual: 313
+TRIAL 471
+discardCount is not as expected.  Expected: 87, Actual: 86
+top of discard mismatch. Expected: 13, Actual -1461651140
+deck + discard count is not as expected.  Expected: 197, Actual: 196
+TRIAL 472
+discardCount is not as expected.  Expected: 209, Actual: 208
+top of discard mismatch. Expected: 13, Actual -1545623323
+deck + discard count is not as expected.  Expected: 418, Actual: 417
+TRIAL 473
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 850075204
+deck + discard count is not as expected.  Expected: 69, Actual: 68
+TRIAL 474
+discardCount is not as expected.  Expected: 133, Actual: 132
+top of discard mismatch. Expected: 13, Actual 1765139491
+deck + discard count is not as expected.  Expected: 143, Actual: 142
+TRIAL 475
+discardCount is not as expected.  Expected: 288, Actual: 287
+top of discard mismatch. Expected: 13, Actual -51200651
+deck + discard count is not as expected.  Expected: 494, Actual: 493
+TRIAL 476
+discardCount is not as expected.  Expected: 16, Actual: 15
+top of discard mismatch. Expected: 13, Actual 258150591
+deck + discard count is not as expected.  Expected: 233, Actual: 232
+TRIAL 477
+discardCount is not as expected.  Expected: 274, Actual: 273
+top of discard mismatch. Expected: 13, Actual 357818381
+deck + discard count is not as expected.  Expected: 563, Actual: 562
+TRIAL 478
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual -1877568847
+deck + discard count is not as expected.  Expected: 164, Actual: 163
+TRIAL 479
+discardCount is not as expected.  Expected: 265, Actual: 264
+top of discard mismatch. Expected: 13, Actual -2039597761
+deck + discard count is not as expected.  Expected: 559, Actual: 558
+TRIAL 480
+discardCount is not as expected.  Expected: 160, Actual: 159
+top of discard mismatch. Expected: 13, Actual -1532402919
+deck + discard count is not as expected.  Expected: 372, Actual: 371
+TRIAL 481
+discardCount is not as expected.  Expected: 122, Actual: 121
+top of discard mismatch. Expected: 13, Actual 201036921
+deck + discard count is not as expected.  Expected: 135, Actual: 134
+TRIAL 482
+discardCount is not as expected.  Expected: 79, Actual: 78
+top of discard mismatch. Expected: 13, Actual 1581609935
+deck + discard count is not as expected.  Expected: 164, Actual: 163
+TRIAL 483
+discardCount is not as expected.  Expected: 39, Actual: 38
+top of discard mismatch. Expected: 13, Actual -353484342
+deck + discard count is not as expected.  Expected: 244, Actual: 243
+TRIAL 484
+discardCount is not as expected.  Expected: 189, Actual: 188
+top of discard mismatch. Expected: 13, Actual -694352373
+deck + discard count is not as expected.  Expected: 253, Actual: 252
+TRIAL 485
+discardCount is not as expected.  Expected: 214, Actual: 213
+top of discard mismatch. Expected: 13, Actual 925173098
+deck + discard count is not as expected.  Expected: 448, Actual: 447
+TRIAL 486
+discardCount is not as expected.  Expected: 131, Actual: 130
+top of discard mismatch. Expected: 13, Actual -1176497760
+deck + discard count is not as expected.  Expected: 187, Actual: 186
+TRIAL 487
+discardCount is not as expected.  Expected: 278, Actual: 277
+top of discard mismatch. Expected: 13, Actual -527496694
+deck + discard count is not as expected.  Expected: 507, Actual: 506
+TRIAL 488
+discardCount is not as expected.  Expected: 144, Actual: 143
+top of discard mismatch. Expected: 13, Actual 170359692
+deck + discard count is not as expected.  Expected: 416, Actual: 415
+TRIAL 489
+discardCount is not as expected.  Expected: 210, Actual: 209
+top of discard mismatch. Expected: 13, Actual 1472251324
+deck + discard count is not as expected.  Expected: 432, Actual: 431
+TRIAL 490
+discardCount is not as expected.  Expected: 66, Actual: 65
+top of discard mismatch. Expected: 13, Actual 1359738536
+deck + discard count is not as expected.  Expected: 199, Actual: 198
+TRIAL 491
+discardCount is not as expected.  Expected: 185, Actual: 184
+top of discard mismatch. Expected: 13, Actual -1442183018
+deck + discard count is not as expected.  Expected: 472, Actual: 471
+TRIAL 492
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -316685381
+deck + discard count is not as expected.  Expected: 153, Actual: 152
+TRIAL 493
+discardCount is not as expected.  Expected: 278, Actual: 277
+top of discard mismatch. Expected: 13, Actual 1072427363
+deck + discard count is not as expected.  Expected: 555, Actual: 554
+TRIAL 494
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1846822001
+deck + discard count is not as expected.  Expected: 263, Actual: 262
+TRIAL 495
+discardCount is not as expected.  Expected: 170, Actual: 169
+top of discard mismatch. Expected: 13, Actual 539470122
+deck + discard count is not as expected.  Expected: 406, Actual: 405
+TRIAL 496
+discardCount is not as expected.  Expected: 186, Actual: 185
+top of discard mismatch. Expected: 13, Actual -1062022433
+deck + discard count is not as expected.  Expected: 203, Actual: 202
+TRIAL 497
+discardCount is not as expected.  Expected: 274, Actual: 273
+top of discard mismatch. Expected: 13, Actual -1621695328
+deck + discard count is not as expected.  Expected: 451, Actual: 450
+TRIAL 498
+discardCount is not as expected.  Expected: 221, Actual: 220
+top of discard mismatch. Expected: 13, Actual 815831432
+deck + discard count is not as expected.  Expected: 347, Actual: 346
+TRIAL 499
+discardCount is not as expected.  Expected: 148, Actual: 147
+top of discard mismatch. Expected: 13, Actual 293262430
+deck + discard count is not as expected.  Expected: 378, Actual: 377
+TRIAL 500
+discardCount is not as expected.  Expected: 203, Actual: 202
+top of discard mismatch. Expected: 13, Actual -594598650
+deck + discard count is not as expected.  Expected: 404, Actual: 403
+TRIAL 501
+discardCount is not as expected.  Expected: 172, Actual: 171
+top of discard mismatch. Expected: 13, Actual 895727397
+deck + discard count is not as expected.  Expected: 398, Actual: 397
+TRIAL 502
+discardCount is not as expected.  Expected: 9, Actual: 8
+top of discard mismatch. Expected: 13, Actual -894880133
+deck + discard count is not as expected.  Expected: 173, Actual: 172
+TRIAL 503
+discardCount is not as expected.  Expected: 199, Actual: 198
+top of discard mismatch. Expected: 13, Actual 227483410
+deck + discard count is not as expected.  Expected: 423, Actual: 422
+TRIAL 504
+discardCount is not as expected.  Expected: 177, Actual: 176
+top of discard mismatch. Expected: 13, Actual -840797910
+deck + discard count is not as expected.  Expected: 288, Actual: 287
+TRIAL 505
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -409000226
+deck + discard count is not as expected.  Expected: 41, Actual: 40
+TRIAL 506
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1275286118
+deck + discard count is not as expected.  Expected: 176, Actual: 175
+TRIAL 507
+discardCount is not as expected.  Expected: 105, Actual: 104
+top of discard mismatch. Expected: 13, Actual 1370333039
+deck + discard count is not as expected.  Expected: 333, Actual: 332
+TRIAL 508
+discardCount is not as expected.  Expected: 243, Actual: 242
+top of discard mismatch. Expected: 13, Actual -2070619980
+deck + discard count is not as expected.  Expected: 442, Actual: 441
+TRIAL 509
+discardCount is not as expected.  Expected: 74, Actual: 73
+top of discard mismatch. Expected: 13, Actual -1752730929
+deck + discard count is not as expected.  Expected: 255, Actual: 254
+TRIAL 510
+discardCount is not as expected.  Expected: 139, Actual: 138
+top of discard mismatch. Expected: 13, Actual 1464495059
+deck + discard count is not as expected.  Expected: 267, Actual: 266
+TRIAL 511
+discardCount is not as expected.  Expected: 300, Actual: 299
+top of discard mismatch. Expected: 13, Actual 519805044
+deck + discard count is not as expected.  Expected: 358, Actual: 357
+TRIAL 512
+discardCount is not as expected.  Expected: 201, Actual: 200
+top of discard mismatch. Expected: 13, Actual 2139173982
+deck + discard count is not as expected.  Expected: 473, Actual: 472
+TRIAL 513
+discardCount is not as expected.  Expected: 192, Actual: 191
+top of discard mismatch. Expected: 13, Actual -1665309990
+deck + discard count is not as expected.  Expected: 463, Actual: 462
+TRIAL 514
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1885417521
+deck + discard count is not as expected.  Expected: 16, Actual: 15
+TRIAL 515
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1841033143
+deck + discard count is not as expected.  Expected: 154, Actual: 153
+TRIAL 516
+discardCount is not as expected.  Expected: 145, Actual: 144
+top of discard mismatch. Expected: 13, Actual -1347084868
+deck + discard count is not as expected.  Expected: 158, Actual: 157
+TRIAL 517
+discardCount is not as expected.  Expected: 15, Actual: 14
+top of discard mismatch. Expected: 13, Actual -1026381688
+deck + discard count is not as expected.  Expected: 83, Actual: 82
+TRIAL 518
+discardCount is not as expected.  Expected: 190, Actual: 189
+top of discard mismatch. Expected: 13, Actual 123244616
+deck + discard count is not as expected.  Expected: 417, Actual: 416
+TRIAL 519
+discardCount is not as expected.  Expected: 260, Actual: 259
+top of discard mismatch. Expected: 13, Actual 1298577435
+deck + discard count is not as expected.  Expected: 538, Actual: 537
+TRIAL 520
+discardCount is not as expected.  Expected: 277, Actual: 276
+top of discard mismatch. Expected: 13, Actual -1529588753
+deck + discard count is not as expected.  Expected: 282, Actual: 281
+TRIAL 521
+discardCount is not as expected.  Expected: 170, Actual: 169
+top of discard mismatch. Expected: 13, Actual -1658242187
+deck + discard count is not as expected.  Expected: 222, Actual: 221
+TRIAL 522
+discardCount is not as expected.  Expected: 187, Actual: 186
+top of discard mismatch. Expected: 13, Actual -1255089689
+deck + discard count is not as expected.  Expected: 293, Actual: 292
+TRIAL 523
+discardCount is not as expected.  Expected: 109, Actual: 108
+top of discard mismatch. Expected: 13, Actual -1466142341
+deck + discard count is not as expected.  Expected: 292, Actual: 291
+TRIAL 524
+discardCount is not as expected.  Expected: 161, Actual: 160
+top of discard mismatch. Expected: 13, Actual 1126673669
+deck + discard count is not as expected.  Expected: 203, Actual: 202
+TRIAL 525
+discardCount is not as expected.  Expected: 297, Actual: 296
+top of discard mismatch. Expected: 13, Actual 2113045775
+deck + discard count is not as expected.  Expected: 431, Actual: 430
+TRIAL 526
+discardCount is not as expected.  Expected: 216, Actual: 215
+top of discard mismatch. Expected: 13, Actual -710351572
+deck + discard count is not as expected.  Expected: 382, Actual: 381
+TRIAL 527
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 502082378
+deck + discard count is not as expected.  Expected: 257, Actual: 256
+TRIAL 528
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1980383637
+deck + discard count is not as expected.  Expected: 96, Actual: 95
+TRIAL 529
+discardCount is not as expected.  Expected: 119, Actual: 118
+top of discard mismatch. Expected: 13, Actual -1481133394
+deck + discard count is not as expected.  Expected: 290, Actual: 289
+TRIAL 530
+discardCount is not as expected.  Expected: 164, Actual: 163
+top of discard mismatch. Expected: 13, Actual 734916925
+deck + discard count is not as expected.  Expected: 437, Actual: 436
+TRIAL 531
+discardCount is not as expected.  Expected: 133, Actual: 132
+top of discard mismatch. Expected: 13, Actual -725676748
+deck + discard count is not as expected.  Expected: 309, Actual: 308
+TRIAL 532
+discardCount is not as expected.  Expected: 22, Actual: 21
+top of discard mismatch. Expected: 13, Actual 698158553
+deck + discard count is not as expected.  Expected: 144, Actual: 143
+TRIAL 533
+discardCount is not as expected.  Expected: 162, Actual: 161
+top of discard mismatch. Expected: 13, Actual 522554586
+deck + discard count is not as expected.  Expected: 383, Actual: 382
+TRIAL 534
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual -1011447729
+deck + discard count is not as expected.  Expected: 357, Actual: 356
+TRIAL 535
+discardCount is not as expected.  Expected: 137, Actual: 136
+top of discard mismatch. Expected: 13, Actual -1709456654
+deck + discard count is not as expected.  Expected: 268, Actual: 267
+TRIAL 536
+discardCount is not as expected.  Expected: 32, Actual: 31
+top of discard mismatch. Expected: 13, Actual 1932097040
+deck + discard count is not as expected.  Expected: 271, Actual: 270
+TRIAL 537
+discardCount is not as expected.  Expected: 140, Actual: 139
+top of discard mismatch. Expected: 13, Actual 2007706204
+deck + discard count is not as expected.  Expected: 144, Actual: 143
+TRIAL 538
+discardCount is not as expected.  Expected: 78, Actual: 77
+top of discard mismatch. Expected: 13, Actual -1667301493
+deck + discard count is not as expected.  Expected: 166, Actual: 165
+TRIAL 539
+discardCount is not as expected.  Expected: 193, Actual: 192
+top of discard mismatch. Expected: 13, Actual 913150494
+deck + discard count is not as expected.  Expected: 225, Actual: 224
+TRIAL 540
+discardCount is not as expected.  Expected: 292, Actual: 291
+top of discard mismatch. Expected: 13, Actual 433563071
+deck + discard count is not as expected.  Expected: 581, Actual: 580
+TRIAL 541
+discardCount is not as expected.  Expected: 145, Actual: 144
+top of discard mismatch. Expected: 13, Actual -613344982
+deck + discard count is not as expected.  Expected: 261, Actual: 260
+TRIAL 542
+discardCount is not as expected.  Expected: 4, Actual: 3
+top of discard mismatch. Expected: 13, Actual 1143447278
+deck + discard count is not as expected.  Expected: 11, Actual: 10
+TRIAL 543
+discardCount is not as expected.  Expected: 48, Actual: 47
+top of discard mismatch. Expected: 13, Actual -243786029
+deck + discard count is not as expected.  Expected: 230, Actual: 229
+TRIAL 544
+discardCount is not as expected.  Expected: 159, Actual: 158
+top of discard mismatch. Expected: 13, Actual -1366918791
+deck + discard count is not as expected.  Expected: 439, Actual: 438
+TRIAL 545
+discardCount is not as expected.  Expected: 37, Actual: 36
+top of discard mismatch. Expected: 13, Actual -934151292
+deck + discard count is not as expected.  Expected: 248, Actual: 247
+TRIAL 546
+discardCount is not as expected.  Expected: 29, Actual: 28
+top of discard mismatch. Expected: 13, Actual 1028047953
+deck + discard count is not as expected.  Expected: 229, Actual: 228
+TRIAL 547
+discardCount is not as expected.  Expected: 150, Actual: 149
+top of discard mismatch. Expected: 13, Actual -425349497
+deck + discard count is not as expected.  Expected: 438, Actual: 437
+TRIAL 548
+discardCount is not as expected.  Expected: 169, Actual: 168
+top of discard mismatch. Expected: 13, Actual -162008550
+deck + discard count is not as expected.  Expected: 452, Actual: 451
+TRIAL 549
+discardCount is not as expected.  Expected: 282, Actual: 281
+top of discard mismatch. Expected: 13, Actual -1252596098
+deck + discard count is not as expected.  Expected: 428, Actual: 427
+TRIAL 550
+discardCount is not as expected.  Expected: 25, Actual: 24
+top of discard mismatch. Expected: 13, Actual -306614187
+deck + discard count is not as expected.  Expected: 212, Actual: 211
+TRIAL 551
+discardCount is not as expected.  Expected: 87, Actual: 86
+top of discard mismatch. Expected: 13, Actual 985496805
+deck + discard count is not as expected.  Expected: 193, Actual: 192
+TRIAL 552
+discardCount is not as expected.  Expected: 57, Actual: 56
+top of discard mismatch. Expected: 13, Actual 1136599863
+deck + discard count is not as expected.  Expected: 320, Actual: 319
+TRIAL 553
+discardCount is not as expected.  Expected: 283, Actual: 282
+top of discard mismatch. Expected: 13, Actual -999001155
+deck + discard count is not as expected.  Expected: 425, Actual: 424
+TRIAL 554
+discardCount is not as expected.  Expected: 2, Actual: 1
+top of discard mismatch. Expected: 13, Actual 1270633330
+deck + discard count is not as expected.  Expected: 32, Actual: 31
+TRIAL 555
+discardCount is not as expected.  Expected: 252, Actual: 251
+top of discard mismatch. Expected: 13, Actual 1859223120
+deck + discard count is not as expected.  Expected: 458, Actual: 457
+TRIAL 556
+discardCount is not as expected.  Expected: 50, Actual: 49
+top of discard mismatch. Expected: 13, Actual -1346915561
+deck + discard count is not as expected.  Expected: 238, Actual: 237
+TRIAL 557
+discardCount is not as expected.  Expected: 257, Actual: 256
+top of discard mismatch. Expected: 13, Actual 1238319250
+deck + discard count is not as expected.  Expected: 354, Actual: 353
+TRIAL 558
+discardCount is not as expected.  Expected: 196, Actual: 195
+top of discard mismatch. Expected: 13, Actual 1752727926
+deck + discard count is not as expected.  Expected: 490, Actual: 489
+TRIAL 559
+discardCount is not as expected.  Expected: 95, Actual: 94
+top of discard mismatch. Expected: 13, Actual 1878950444
+deck + discard count is not as expected.  Expected: 184, Actual: 183
+TRIAL 560
+discardCount is not as expected.  Expected: 204, Actual: 203
+top of discard mismatch. Expected: 13, Actual 1141841618
+deck + discard count is not as expected.  Expected: 487, Actual: 486
+TRIAL 561
+discardCount is not as expected.  Expected: 291, Actual: 290
+top of discard mismatch. Expected: 13, Actual 674761314
+deck + discard count is not as expected.  Expected: 477, Actual: 476
+TRIAL 562
+discardCount is not as expected.  Expected: 102, Actual: 101
+top of discard mismatch. Expected: 13, Actual -587844656
+deck + discard count is not as expected.  Expected: 277, Actual: 276
+TRIAL 563
+discardCount is not as expected.  Expected: 210, Actual: 209
+top of discard mismatch. Expected: 13, Actual 403435856
+deck + discard count is not as expected.  Expected: 283, Actual: 282
+TRIAL 564
+discardCount is not as expected.  Expected: 237, Actual: 236
+top of discard mismatch. Expected: 13, Actual -1340941711
+deck + discard count is not as expected.  Expected: 464, Actual: 463
+TRIAL 565
+discardCount is not as expected.  Expected: 8, Actual: 7
+top of discard mismatch. Expected: 13, Actual 661834853
+deck + discard count is not as expected.  Expected: 132, Actual: 131
+TRIAL 566
+discardCount is not as expected.  Expected: 234, Actual: 233
+top of discard mismatch. Expected: 13, Actual 2029517943
+deck + discard count is not as expected.  Expected: 292, Actual: 291
+TRIAL 567
+discardCount is not as expected.  Expected: 218, Actual: 217
+top of discard mismatch. Expected: 13, Actual 1199755465
+deck + discard count is not as expected.  Expected: 252, Actual: 251
+TRIAL 568
+discardCount is not as expected.  Expected: 103, Actual: 102
+top of discard mismatch. Expected: 13, Actual -330596537
+deck + discard count is not as expected.  Expected: 275, Actual: 274
+TRIAL 569
+discardCount is not as expected.  Expected: 238, Actual: 237
+top of discard mismatch. Expected: 13, Actual 1497494993
+deck + discard count is not as expected.  Expected: 516, Actual: 515
+TRIAL 570
+discardCount is not as expected.  Expected: 226, Actual: 225
+top of discard mismatch. Expected: 13, Actual 1100141796
+deck + discard count is not as expected.  Expected: 377, Actual: 376
+TRIAL 571
+discardCount is not as expected.  Expected: 266, Actual: 265
+top of discard mismatch. Expected: 13, Actual 343679440
+deck + discard count is not as expected.  Expected: 376, Actual: 375
+TRIAL 572
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 98485428
+deck + discard count is not as expected.  Expected: 232, Actual: 231
+TRIAL 573
+discardCount is not as expected.  Expected: 85, Actual: 84
+top of discard mismatch. Expected: 13, Actual 472957988
+deck + discard count is not as expected.  Expected: 138, Actual: 137
+TRIAL 574
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -959697911
+deck + discard count is not as expected.  Expected: 198, Actual: 197
+TRIAL 575
+discardCount is not as expected.  Expected: 287, Actual: 286
+top of discard mismatch. Expected: 13, Actual -41923532
+deck + discard count is not as expected.  Expected: 526, Actual: 525
+TRIAL 576
+discardCount is not as expected.  Expected: 167, Actual: 166
+top of discard mismatch. Expected: 13, Actual 470762903
+deck + discard count is not as expected.  Expected: 219, Actual: 218
+TRIAL 577
+discardCount is not as expected.  Expected: 69, Actual: 68
+top of discard mismatch. Expected: 13, Actual -1590158401
+deck + discard count is not as expected.  Expected: 87, Actual: 86
+TRIAL 578
+discardCount is not as expected.  Expected: 51, Actual: 50
+top of discard mismatch. Expected: 13, Actual 1418355768
+deck + discard count is not as expected.  Expected: 139, Actual: 138
+TRIAL 579
+discardCount is not as expected.  Expected: 294, Actual: 293
+top of discard mismatch. Expected: 13, Actual -336587957
+deck + discard count is not as expected.  Expected: 517, Actual: 516
+TRIAL 580
+discardCount is not as expected.  Expected: 289, Actual: 288
+top of discard mismatch. Expected: 13, Actual -389287433
+deck + discard count is not as expected.  Expected: 457, Actual: 456
+TRIAL 581
+discardCount is not as expected.  Expected: 187, Actual: 186
+top of discard mismatch. Expected: 13, Actual -571670461
+deck + discard count is not as expected.  Expected: 316, Actual: 315
+TRIAL 582
+discardCount is not as expected.  Expected: 189, Actual: 188
+top of discard mismatch. Expected: 13, Actual -500521313
+deck + discard count is not as expected.  Expected: 210, Actual: 209
+TRIAL 583
+discardCount is not as expected.  Expected: 270, Actual: 269
+top of discard mismatch. Expected: 13, Actual -1198011934
+deck + discard count is not as expected.  Expected: 550, Actual: 549
+TRIAL 584
+discardCount is not as expected.  Expected: 256, Actual: 255
+top of discard mismatch. Expected: 13, Actual 1152595952
+deck + discard count is not as expected.  Expected: 538, Actual: 537
+TRIAL 585
+discardCount is not as expected.  Expected: 300, Actual: 299
+top of discard mismatch. Expected: 13, Actual -1014451784
+deck + discard count is not as expected.  Expected: 300, Actual: 299
+TRIAL 586
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 388127167
+deck + discard count is not as expected.  Expected: 92, Actual: 91
+TRIAL 587
+discardCount is not as expected.  Expected: 175, Actual: 174
+top of discard mismatch. Expected: 13, Actual -1389427100
+deck + discard count is not as expected.  Expected: 206, Actual: 205
+TRIAL 588
+discardCount is not as expected.  Expected: 195, Actual: 194
+top of discard mismatch. Expected: 13, Actual 2071092132
+deck + discard count is not as expected.  Expected: 359, Actual: 358
+TRIAL 589
+discardCount is not as expected.  Expected: 211, Actual: 210
+top of discard mismatch. Expected: 13, Actual -837886651
+deck + discard count is not as expected.  Expected: 436, Actual: 435
+TRIAL 590
+discardCount is not as expected.  Expected: 162, Actual: 161
+top of discard mismatch. Expected: 13, Actual -638823464
+deck + discard count is not as expected.  Expected: 351, Actual: 350
+TRIAL 591
+discardCount is not as expected.  Expected: 163, Actual: 162
+top of discard mismatch. Expected: 13, Actual 937962597
+deck + discard count is not as expected.  Expected: 274, Actual: 273
+TRIAL 592
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual 445206445
+deck + discard count is not as expected.  Expected: 364, Actual: 363
+TRIAL 593
+discardCount is not as expected.  Expected: 177, Actual: 176
+top of discard mismatch. Expected: 13, Actual -842944492
+deck + discard count is not as expected.  Expected: 463, Actual: 462
+TRIAL 594
+discardCount is not as expected.  Expected: 246, Actual: 245
+top of discard mismatch. Expected: 13, Actual 444769524
+deck + discard count is not as expected.  Expected: 462, Actual: 461
+TRIAL 595
+discardCount is not as expected.  Expected: 117, Actual: 116
+top of discard mismatch. Expected: 13, Actual 202652160
+deck + discard count is not as expected.  Expected: 258, Actual: 257
+TRIAL 596
+discardCount is not as expected.  Expected: 212, Actual: 211
+top of discard mismatch. Expected: 13, Actual -1052077832
+deck + discard count is not as expected.  Expected: 509, Actual: 508
+TRIAL 597
+discardCount is not as expected.  Expected: 57, Actual: 56
+top of discard mismatch. Expected: 13, Actual 1421989005
+deck + discard count is not as expected.  Expected: 149, Actual: 148
+TRIAL 598
+discardCount is not as expected.  Expected: 35, Actual: 34
+top of discard mismatch. Expected: 13, Actual -1235860893
+deck + discard count is not as expected.  Expected: 329, Actual: 328
+TRIAL 599
+discardCount is not as expected.  Expected: 37, Actual: 36
+top of discard mismatch. Expected: 13, Actual 849108841
+deck + discard count is not as expected.  Expected: 318, Actual: 317
+TRIAL 600
+discardCount is not as expected.  Expected: 183, Actual: 182
+top of discard mismatch. Expected: 13, Actual -1766986916
+deck + discard count is not as expected.  Expected: 375, Actual: 374
+TRIAL 601
+discardCount is not as expected.  Expected: 32, Actual: 31
+top of discard mismatch. Expected: 13, Actual -1924408695
+deck + discard count is not as expected.  Expected: 225, Actual: 224
+TRIAL 602
+discardCount is not as expected.  Expected: 244, Actual: 243
+top of discard mismatch. Expected: 13, Actual -1609074948
+deck + discard count is not as expected.  Expected: 415, Actual: 414
+TRIAL 603
+discardCount is not as expected.  Expected: 55, Actual: 54
+top of discard mismatch. Expected: 13, Actual 341350228
+deck + discard count is not as expected.  Expected: 113, Actual: 112
+TRIAL 604
+discardCount is not as expected.  Expected: 254, Actual: 253
+top of discard mismatch. Expected: 13, Actual -1794657500
+deck + discard count is not as expected.  Expected: 378, Actual: 377
+TRIAL 605
+discardCount is not as expected.  Expected: 200, Actual: 199
+top of discard mismatch. Expected: 13, Actual -599661021
+deck + discard count is not as expected.  Expected: 470, Actual: 469
+TRIAL 606
+discardCount is not as expected.  Expected: 178, Actual: 177
+top of discard mismatch. Expected: 13, Actual -543141500
+deck + discard count is not as expected.  Expected: 473, Actual: 472
+TRIAL 607
+discardCount is not as expected.  Expected: 274, Actual: 273
+top of discard mismatch. Expected: 13, Actual 19170448
+deck + discard count is not as expected.  Expected: 547, Actual: 546
+TRIAL 608
+discardCount is not as expected.  Expected: 67, Actual: 66
+top of discard mismatch. Expected: 13, Actual 1645872447
+deck + discard count is not as expected.  Expected: 355, Actual: 354
+TRIAL 609
+discardCount is not as expected.  Expected: 110, Actual: 109
+top of discard mismatch. Expected: 13, Actual -763522286
+deck + discard count is not as expected.  Expected: 140, Actual: 139
+TRIAL 610
+discardCount is not as expected.  Expected: 129, Actual: 128
+top of discard mismatch. Expected: 13, Actual 595481092
+deck + discard count is not as expected.  Expected: 129, Actual: 128
+TRIAL 611
+discardCount is not as expected.  Expected: 135, Actual: 134
+top of discard mismatch. Expected: 13, Actual 925282591
+deck + discard count is not as expected.  Expected: 380, Actual: 379
+TRIAL 612
+discardCount is not as expected.  Expected: 281, Actual: 280
+top of discard mismatch. Expected: 13, Actual 1124067061
+deck + discard count is not as expected.  Expected: 292, Actual: 291
+TRIAL 613
+discardCount is not as expected.  Expected: 156, Actual: 155
+top of discard mismatch. Expected: 13, Actual -1917727634
+deck + discard count is not as expected.  Expected: 287, Actual: 286
+TRIAL 614
+discardCount is not as expected.  Expected: 188, Actual: 187
+top of discard mismatch. Expected: 13, Actual -659968668
+deck + discard count is not as expected.  Expected: 462, Actual: 461
+TRIAL 615
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 2049132619
+deck + discard count is not as expected.  Expected: 109, Actual: 108
+TRIAL 616
+discardCount is not as expected.  Expected: 282, Actual: 281
+top of discard mismatch. Expected: 13, Actual -1884967728
+deck + discard count is not as expected.  Expected: 476, Actual: 475
+TRIAL 617
+discardCount is not as expected.  Expected: 154, Actual: 153
+top of discard mismatch. Expected: 13, Actual -283389643
+deck + discard count is not as expected.  Expected: 404, Actual: 403
+TRIAL 618
+discardCount is not as expected.  Expected: 64, Actual: 63
+top of discard mismatch. Expected: 13, Actual -2004249125
+deck + discard count is not as expected.  Expected: 340, Actual: 339
+TRIAL 619
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 15295629
+deck + discard count is not as expected.  Expected: 181, Actual: 180
+TRIAL 620
+discardCount is not as expected.  Expected: 149, Actual: 148
+top of discard mismatch. Expected: 13, Actual 1853148840
+deck + discard count is not as expected.  Expected: 235, Actual: 234
+TRIAL 621
+discardCount is not as expected.  Expected: 144, Actual: 143
+top of discard mismatch. Expected: 13, Actual -842673663
+deck + discard count is not as expected.  Expected: 148, Actual: 147
+TRIAL 622
+discardCount is not as expected.  Expected: 25, Actual: 24
+top of discard mismatch. Expected: 13, Actual 1171198003
+deck + discard count is not as expected.  Expected: 179, Actual: 178
+TRIAL 623
+discardCount is not as expected.  Expected: 114, Actual: 113
+top of discard mismatch. Expected: 13, Actual -116937423
+deck + discard count is not as expected.  Expected: 119, Actual: 118
+TRIAL 624
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1576953992
+deck + discard count is not as expected.  Expected: 95, Actual: 94
+TRIAL 625
+discardCount is not as expected.  Expected: 201, Actual: 200
+top of discard mismatch. Expected: 13, Actual 2047519799
+deck + discard count is not as expected.  Expected: 334, Actual: 333
+TRIAL 626
+discardCount is not as expected.  Expected: 153, Actual: 152
+top of discard mismatch. Expected: 13, Actual -662643110
+deck + discard count is not as expected.  Expected: 372, Actual: 371
+TRIAL 627
+discardCount is not as expected.  Expected: 273, Actual: 272
+top of discard mismatch. Expected: 13, Actual -361390435
+deck + discard count is not as expected.  Expected: 273, Actual: 272
+TRIAL 628
+discardCount is not as expected.  Expected: 59, Actual: 58
+top of discard mismatch. Expected: 13, Actual 1319289057
+deck + discard count is not as expected.  Expected: 226, Actual: 225
+TRIAL 629
+discardCount is not as expected.  Expected: 78, Actual: 77
+top of discard mismatch. Expected: 13, Actual 399784242
+deck + discard count is not as expected.  Expected: 356, Actual: 355
+TRIAL 630
+discardCount is not as expected.  Expected: 52, Actual: 51
+top of discard mismatch. Expected: 13, Actual -808624717
+deck + discard count is not as expected.  Expected: 309, Actual: 308
+TRIAL 631
+discardCount is not as expected.  Expected: 76, Actual: 75
+top of discard mismatch. Expected: 13, Actual 1794584883
+deck + discard count is not as expected.  Expected: 298, Actual: 297
+TRIAL 632
+discardCount is not as expected.  Expected: 50, Actual: 49
+top of discard mismatch. Expected: 13, Actual -619612983
+deck + discard count is not as expected.  Expected: 103, Actual: 102
+TRIAL 633
+discardCount is not as expected.  Expected: 284, Actual: 283
+top of discard mismatch. Expected: 13, Actual -329103929
+deck + discard count is not as expected.  Expected: 564, Actual: 563
+TRIAL 634
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 741300318
+deck + discard count is not as expected.  Expected: 34, Actual: 33
+TRIAL 635
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1324571357
+deck + discard count is not as expected.  Expected: 269, Actual: 268
+TRIAL 636
+discardCount is not as expected.  Expected: 143, Actual: 142
+top of discard mismatch. Expected: 13, Actual -262322394
+deck + discard count is not as expected.  Expected: 434, Actual: 433
+TRIAL 637
+discardCount is not as expected.  Expected: 203, Actual: 202
+top of discard mismatch. Expected: 13, Actual 1930894922
+deck + discard count is not as expected.  Expected: 498, Actual: 497
+TRIAL 638
+discardCount is not as expected.  Expected: 248, Actual: 247
+top of discard mismatch. Expected: 13, Actual -594674625
+deck + discard count is not as expected.  Expected: 296, Actual: 295
+TRIAL 639
+discardCount is not as expected.  Expected: 167, Actual: 166
+top of discard mismatch. Expected: 13, Actual -1881081446
+deck + discard count is not as expected.  Expected: 264, Actual: 263
+TRIAL 640
+discardCount is not as expected.  Expected: 298, Actual: 297
+top of discard mismatch. Expected: 13, Actual 1049062030
+deck + discard count is not as expected.  Expected: 538, Actual: 537
+TRIAL 641
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual -1221161894
+deck + discard count is not as expected.  Expected: 175, Actual: 174
+TRIAL 642
+discardCount is not as expected.  Expected: 41, Actual: 40
+top of discard mismatch. Expected: 13, Actual 1444939469
+deck + discard count is not as expected.  Expected: 266, Actual: 265
+TRIAL 643
+discardCount is not as expected.  Expected: 169, Actual: 168
+top of discard mismatch. Expected: 13, Actual -584921172
+deck + discard count is not as expected.  Expected: 409, Actual: 408
+TRIAL 644
+discardCount is not as expected.  Expected: 135, Actual: 134
+top of discard mismatch. Expected: 13, Actual 1471611004
+deck + discard count is not as expected.  Expected: 200, Actual: 199
+TRIAL 645
+discardCount is not as expected.  Expected: 243, Actual: 242
+top of discard mismatch. Expected: 13, Actual -559213103
+deck + discard count is not as expected.  Expected: 349, Actual: 348
+TRIAL 646
+discardCount is not as expected.  Expected: 250, Actual: 249
+top of discard mismatch. Expected: 13, Actual 2133066710
+deck + discard count is not as expected.  Expected: 517, Actual: 516
+TRIAL 647
+discardCount is not as expected.  Expected: 85, Actual: 84
+top of discard mismatch. Expected: 13, Actual -483020253
+deck + discard count is not as expected.  Expected: 328, Actual: 327
+TRIAL 648
+discardCount is not as expected.  Expected: 86, Actual: 85
+top of discard mismatch. Expected: 13, Actual 1043355383
+deck + discard count is not as expected.  Expected: 250, Actual: 249
+TRIAL 649
+discardCount is not as expected.  Expected: 54, Actual: 53
+top of discard mismatch. Expected: 13, Actual 1462804077
+deck + discard count is not as expected.  Expected: 181, Actual: 180
+TRIAL 650
+discardCount is not as expected.  Expected: 53, Actual: 52
+top of discard mismatch. Expected: 13, Actual -1046389081
+deck + discard count is not as expected.  Expected: 344, Actual: 343
+TRIAL 651
+discardCount is not as expected.  Expected: 301, Actual: 300
+top of discard mismatch. Expected: 13, Actual 2087519174
+deck + discard count is not as expected.  Expected: 399, Actual: 398
+TRIAL 652
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1292660175
+deck + discard count is not as expected.  Expected: 234, Actual: 233
+TRIAL 653
+discardCount is not as expected.  Expected: 132, Actual: 131
+top of discard mismatch. Expected: 13, Actual 765575597
+deck + discard count is not as expected.  Expected: 272, Actual: 271
+TRIAL 654
+discardCount is not as expected.  Expected: 83, Actual: 82
+top of discard mismatch. Expected: 13, Actual 425356912
+deck + discard count is not as expected.  Expected: 244, Actual: 243
+TRIAL 655
+discardCount is not as expected.  Expected: 231, Actual: 230
+top of discard mismatch. Expected: 13, Actual -1489461229
+deck + discard count is not as expected.  Expected: 265, Actual: 264
+TRIAL 656
+discardCount is not as expected.  Expected: 229, Actual: 228
+top of discard mismatch. Expected: 13, Actual -1019473002
+deck + discard count is not as expected.  Expected: 282, Actual: 281
+TRIAL 657
+discardCount is not as expected.  Expected: 38, Actual: 37
+top of discard mismatch. Expected: 13, Actual 1671709309
+deck + discard count is not as expected.  Expected: 245, Actual: 244
+TRIAL 658
+discardCount is not as expected.  Expected: 118, Actual: 117
+top of discard mismatch. Expected: 13, Actual 1622812541
+deck + discard count is not as expected.  Expected: 297, Actual: 296
+TRIAL 659
+discardCount is not as expected.  Expected: 286, Actual: 285
+top of discard mismatch. Expected: 13, Actual -472643232
+deck + discard count is not as expected.  Expected: 410, Actual: 409
+TRIAL 660
+discardCount is not as expected.  Expected: 264, Actual: 263
+top of discard mismatch. Expected: 13, Actual -1543647595
+deck + discard count is not as expected.  Expected: 508, Actual: 507
+TRIAL 661
+discardCount is not as expected.  Expected: 165, Actual: 164
+top of discard mismatch. Expected: 13, Actual 1149376095
+deck + discard count is not as expected.  Expected: 288, Actual: 287
+TRIAL 662
+discardCount is not as expected.  Expected: 144, Actual: 143
+top of discard mismatch. Expected: 13, Actual 1496481907
+deck + discard count is not as expected.  Expected: 302, Actual: 301
+TRIAL 663
+discardCount is not as expected.  Expected: 125, Actual: 124
+top of discard mismatch. Expected: 13, Actual 947162951
+deck + discard count is not as expected.  Expected: 137, Actual: 136
+TRIAL 664
+discardCount is not as expected.  Expected: 17, Actual: 16
+top of discard mismatch. Expected: 13, Actual 1527009320
+deck + discard count is not as expected.  Expected: 143, Actual: 142
+TRIAL 665
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual -1410889421
+deck + discard count is not as expected.  Expected: 283, Actual: 282
+TRIAL 666
+discardCount is not as expected.  Expected: 39, Actual: 38
+top of discard mismatch. Expected: 13, Actual 643635648
+deck + discard count is not as expected.  Expected: 72, Actual: 71
+TRIAL 667
+discardCount is not as expected.  Expected: 102, Actual: 101
+top of discard mismatch. Expected: 13, Actual 1626763715
+deck + discard count is not as expected.  Expected: 326, Actual: 325
+TRIAL 668
+discardCount is not as expected.  Expected: 219, Actual: 218
+top of discard mismatch. Expected: 13, Actual 615754362
+deck + discard count is not as expected.  Expected: 435, Actual: 434
+TRIAL 669
+discardCount is not as expected.  Expected: 131, Actual: 130
+top of discard mismatch. Expected: 13, Actual 2140767922
+deck + discard count is not as expected.  Expected: 136, Actual: 135
+TRIAL 670
+discardCount is not as expected.  Expected: 244, Actual: 243
+top of discard mismatch. Expected: 13, Actual 992505067
+deck + discard count is not as expected.  Expected: 524, Actual: 523
+TRIAL 671
+discardCount is not as expected.  Expected: 219, Actual: 218
+top of discard mismatch. Expected: 13, Actual -1844817777
+deck + discard count is not as expected.  Expected: 495, Actual: 494
+TRIAL 672
+discardCount is not as expected.  Expected: 237, Actual: 236
+top of discard mismatch. Expected: 13, Actual -958372227
+deck + discard count is not as expected.  Expected: 520, Actual: 519
+TRIAL 673
+discardCount is not as expected.  Expected: 6, Actual: 5
+top of discard mismatch. Expected: 13, Actual 523764265
+deck + discard count is not as expected.  Expected: 231, Actual: 230
+TRIAL 674
+discardCount is not as expected.  Expected: 106, Actual: 105
+top of discard mismatch. Expected: 13, Actual 543152856
+deck + discard count is not as expected.  Expected: 123, Actual: 122
+TRIAL 675
+discardCount is not as expected.  Expected: 181, Actual: 180
+top of discard mismatch. Expected: 13, Actual 848005234
+deck + discard count is not as expected.  Expected: 286, Actual: 285
+TRIAL 676
+discardCount is not as expected.  Expected: 131, Actual: 130
+top of discard mismatch. Expected: 13, Actual -1808112043
+deck + discard count is not as expected.  Expected: 153, Actual: 152
+TRIAL 677
+discardCount is not as expected.  Expected: 89, Actual: 88
+top of discard mismatch. Expected: 13, Actual 573088974
+deck + discard count is not as expected.  Expected: 134, Actual: 133
+TRIAL 678
+discardCount is not as expected.  Expected: 162, Actual: 161
+top of discard mismatch. Expected: 13, Actual -420401879
+deck + discard count is not as expected.  Expected: 298, Actual: 297
+TRIAL 679
+discardCount is not as expected.  Expected: 135, Actual: 134
+top of discard mismatch. Expected: 13, Actual -1785511524
+deck + discard count is not as expected.  Expected: 336, Actual: 335
+TRIAL 680
+discardCount is not as expected.  Expected: 55, Actual: 54
+top of discard mismatch. Expected: 13, Actual -1099394001
+deck + discard count is not as expected.  Expected: 88, Actual: 87
+TRIAL 681
+discardCount is not as expected.  Expected: 191, Actual: 190
+top of discard mismatch. Expected: 13, Actual -510945110
+deck + discard count is not as expected.  Expected: 300, Actual: 299
+TRIAL 682
+discardCount is not as expected.  Expected: 73, Actual: 72
+top of discard mismatch. Expected: 13, Actual -1710946593
+deck + discard count is not as expected.  Expected: 184, Actual: 183
+TRIAL 683
+discardCount is not as expected.  Expected: 248, Actual: 247
+top of discard mismatch. Expected: 13, Actual 2111238425
+deck + discard count is not as expected.  Expected: 514, Actual: 513
+TRIAL 684
+discardCount is not as expected.  Expected: 247, Actual: 246
+top of discard mismatch. Expected: 13, Actual 175900060
+deck + discard count is not as expected.  Expected: 387, Actual: 386
+TRIAL 685
+discardCount is not as expected.  Expected: 183, Actual: 182
+top of discard mismatch. Expected: 13, Actual 1172501039
+deck + discard count is not as expected.  Expected: 301, Actual: 300
+TRIAL 686
+discardCount is not as expected.  Expected: 212, Actual: 211
+top of discard mismatch. Expected: 13, Actual -211665107
+deck + discard count is not as expected.  Expected: 465, Actual: 464
+TRIAL 687
+discardCount is not as expected.  Expected: 167, Actual: 166
+top of discard mismatch. Expected: 13, Actual -840216358
+deck + discard count is not as expected.  Expected: 398, Actual: 397
+TRIAL 688
+discardCount is not as expected.  Expected: 34, Actual: 33
+top of discard mismatch. Expected: 13, Actual -492172212
+deck + discard count is not as expected.  Expected: 145, Actual: 144
+TRIAL 689
+discardCount is not as expected.  Expected: 263, Actual: 262
+top of discard mismatch. Expected: 13, Actual -391395150
+deck + discard count is not as expected.  Expected: 477, Actual: 476
+TRIAL 690
+discardCount is not as expected.  Expected: 179, Actual: 178
+top of discard mismatch. Expected: 13, Actual 938401657
+deck + discard count is not as expected.  Expected: 271, Actual: 270
+TRIAL 691
+discardCount is not as expected.  Expected: 12, Actual: 11
+top of discard mismatch. Expected: 13, Actual -318788627
+deck + discard count is not as expected.  Expected: 291, Actual: 290
+TRIAL 692
+discardCount is not as expected.  Expected: 273, Actual: 272
+top of discard mismatch. Expected: 13, Actual -1274392175
+deck + discard count is not as expected.  Expected: 398, Actual: 397
+TRIAL 693
+discardCount is not as expected.  Expected: 80, Actual: 79
+top of discard mismatch. Expected: 13, Actual -910549882
+deck + discard count is not as expected.  Expected: 286, Actual: 285
+TRIAL 694
+discardCount is not as expected.  Expected: 21, Actual: 20
+top of discard mismatch. Expected: 13, Actual 2086550938
+deck + discard count is not as expected.  Expected: 200, Actual: 199
+TRIAL 695
+discardCount is not as expected.  Expected: 6, Actual: 5
+top of discard mismatch. Expected: 13, Actual 2097323830
+deck + discard count is not as expected.  Expected: 263, Actual: 262
+TRIAL 696
+discardCount is not as expected.  Expected: 12, Actual: 11
+top of discard mismatch. Expected: 13, Actual -1997813052
+deck + discard count is not as expected.  Expected: 94, Actual: 93
+TRIAL 697
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1365235595
+deck + discard count is not as expected.  Expected: 183, Actual: 182
+TRIAL 698
+discardCount is not as expected.  Expected: 47, Actual: 46
+top of discard mismatch. Expected: 13, Actual -1428288216
+deck + discard count is not as expected.  Expected: 117, Actual: 116
+TRIAL 699
+discardCount is not as expected.  Expected: 208, Actual: 207
+top of discard mismatch. Expected: 13, Actual 1046662138
+deck + discard count is not as expected.  Expected: 400, Actual: 399
+TRIAL 700
+discardCount is not as expected.  Expected: 181, Actual: 180
+top of discard mismatch. Expected: 13, Actual 851673717
+deck + discard count is not as expected.  Expected: 412, Actual: 411
+TRIAL 701
+discardCount is not as expected.  Expected: 192, Actual: 191
+top of discard mismatch. Expected: 13, Actual 711744796
+deck + discard count is not as expected.  Expected: 483, Actual: 482
+TRIAL 702
+discardCount is not as expected.  Expected: 32, Actual: 31
+top of discard mismatch. Expected: 13, Actual 2045528005
+deck + discard count is not as expected.  Expected: 143, Actual: 142
+TRIAL 703
+discardCount is not as expected.  Expected: 73, Actual: 72
+top of discard mismatch. Expected: 13, Actual 266522309
+deck + discard count is not as expected.  Expected: 126, Actual: 125
+TRIAL 704
+discardCount is not as expected.  Expected: 51, Actual: 50
+top of discard mismatch. Expected: 13, Actual -1899174819
+deck + discard count is not as expected.  Expected: 99, Actual: 98
+TRIAL 705
+discardCount is not as expected.  Expected: 24, Actual: 23
+top of discard mismatch. Expected: 13, Actual 1762015990
+deck + discard count is not as expected.  Expected: 100, Actual: 99
+TRIAL 706
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual 807798303
+deck + discard count is not as expected.  Expected: 147, Actual: 146
+TRIAL 707
+discardCount is not as expected.  Expected: 279, Actual: 278
+top of discard mismatch. Expected: 13, Actual 99662240
+deck + discard count is not as expected.  Expected: 451, Actual: 450
+TRIAL 708
+discardCount is not as expected.  Expected: 247, Actual: 246
+top of discard mismatch. Expected: 13, Actual 915975602
+deck + discard count is not as expected.  Expected: 336, Actual: 335
+TRIAL 709
+discardCount is not as expected.  Expected: 291, Actual: 290
+top of discard mismatch. Expected: 13, Actual 1969571804
+deck + discard count is not as expected.  Expected: 539, Actual: 538
+TRIAL 710
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 220184946
+deck + discard count is not as expected.  Expected: 264, Actual: 263
+TRIAL 711
+discardCount is not as expected.  Expected: 95, Actual: 94
+top of discard mismatch. Expected: 13, Actual -705603817
+deck + discard count is not as expected.  Expected: 284, Actual: 283
+TRIAL 712
+discardCount is not as expected.  Expected: 236, Actual: 235
+top of discard mismatch. Expected: 13, Actual -1092834668
+deck + discard count is not as expected.  Expected: 518, Actual: 517
+TRIAL 713
+discardCount is not as expected.  Expected: 146, Actual: 145
+top of discard mismatch. Expected: 13, Actual 1637043420
+deck + discard count is not as expected.  Expected: 161, Actual: 160
+TRIAL 714
+discardCount is not as expected.  Expected: 164, Actual: 163
+top of discard mismatch. Expected: 13, Actual 1129394033
+deck + discard count is not as expected.  Expected: 348, Actual: 347
+TRIAL 715
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -11285994
+deck + discard count is not as expected.  Expected: 56, Actual: 55
+TRIAL 716
+discardCount is not as expected.  Expected: 184, Actual: 183
+top of discard mismatch. Expected: 13, Actual 1358923879
+deck + discard count is not as expected.  Expected: 414, Actual: 413
+TRIAL 717
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -517277132
+deck + discard count is not as expected.  Expected: 30, Actual: 29
+TRIAL 718
+discardCount is not as expected.  Expected: 28, Actual: 27
+top of discard mismatch. Expected: 13, Actual -698258234
+deck + discard count is not as expected.  Expected: 81, Actual: 80
+TRIAL 719
+discardCount is not as expected.  Expected: 259, Actual: 258
+top of discard mismatch. Expected: 13, Actual -1445053926
+deck + discard count is not as expected.  Expected: 493, Actual: 492
+TRIAL 720
+discardCount is not as expected.  Expected: 166, Actual: 165
+top of discard mismatch. Expected: 13, Actual 1612493133
+deck + discard count is not as expected.  Expected: 208, Actual: 207
+TRIAL 721
+discardCount is not as expected.  Expected: 154, Actual: 153
+top of discard mismatch. Expected: 13, Actual 206690435
+deck + discard count is not as expected.  Expected: 380, Actual: 379
+TRIAL 722
+discardCount is not as expected.  Expected: 230, Actual: 229
+top of discard mismatch. Expected: 13, Actual -1916694497
+deck + discard count is not as expected.  Expected: 386, Actual: 385
+TRIAL 723
+discardCount is not as expected.  Expected: 281, Actual: 280
+top of discard mismatch. Expected: 13, Actual 1947103931
+deck + discard count is not as expected.  Expected: 415, Actual: 414
+TRIAL 724
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 675195504
+deck + discard count is not as expected.  Expected: 146, Actual: 145
+TRIAL 725
+discardCount is not as expected.  Expected: 31, Actual: 30
+top of discard mismatch. Expected: 13, Actual 1204517293
+deck + discard count is not as expected.  Expected: 287, Actual: 286
+TRIAL 726
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -424821308
+deck + discard count is not as expected.  Expected: 160, Actual: 159
+TRIAL 727
+discardCount is not as expected.  Expected: 244, Actual: 243
+top of discard mismatch. Expected: 13, Actual 153252277
+deck + discard count is not as expected.  Expected: 414, Actual: 413
+TRIAL 728
+discardCount is not as expected.  Expected: 270, Actual: 269
+top of discard mismatch. Expected: 13, Actual -1703145992
+deck + discard count is not as expected.  Expected: 478, Actual: 477
+TRIAL 729
+discardCount is not as expected.  Expected: 17, Actual: 16
+top of discard mismatch. Expected: 13, Actual -1831869034
+deck + discard count is not as expected.  Expected: 61, Actual: 60
+TRIAL 730
+discardCount is not as expected.  Expected: 66, Actual: 65
+top of discard mismatch. Expected: 13, Actual 2013959666
+deck + discard count is not as expected.  Expected: 162, Actual: 161
+TRIAL 731
+discardCount is not as expected.  Expected: 33, Actual: 32
+top of discard mismatch. Expected: 13, Actual -606596433
+deck + discard count is not as expected.  Expected: 51, Actual: 50
+TRIAL 732
+discardCount is not as expected.  Expected: 12, Actual: 11
+top of discard mismatch. Expected: 13, Actual 1384708115
+deck + discard count is not as expected.  Expected: 225, Actual: 224
+TRIAL 733
+discardCount is not as expected.  Expected: 41, Actual: 40
+top of discard mismatch. Expected: 13, Actual 1366391808
+deck + discard count is not as expected.  Expected: 159, Actual: 158
+TRIAL 734
+discardCount is not as expected.  Expected: 52, Actual: 51
+top of discard mismatch. Expected: 13, Actual -25905281
+deck + discard count is not as expected.  Expected: 245, Actual: 244
+TRIAL 735
+discardCount is not as expected.  Expected: 151, Actual: 150
+top of discard mismatch. Expected: 13, Actual 2109824192
+deck + discard count is not as expected.  Expected: 293, Actual: 292
+TRIAL 736
+discardCount is not as expected.  Expected: 296, Actual: 295
+top of discard mismatch. Expected: 13, Actual 135744638
+deck + discard count is not as expected.  Expected: 392, Actual: 391
+TRIAL 737
+discardCount is not as expected.  Expected: 298, Actual: 297
+top of discard mismatch. Expected: 13, Actual -1064398672
+deck + discard count is not as expected.  Expected: 583, Actual: 582
+TRIAL 738
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1078818670
+deck + discard count is not as expected.  Expected: 231, Actual: 230
+TRIAL 739
+discardCount is not as expected.  Expected: 22, Actual: 21
+top of discard mismatch. Expected: 13, Actual 2119261710
+deck + discard count is not as expected.  Expected: 269, Actual: 268
+TRIAL 740
+discardCount is not as expected.  Expected: 61, Actual: 60
+top of discard mismatch. Expected: 13, Actual -714603326
+deck + discard count is not as expected.  Expected: 230, Actual: 229
+TRIAL 741
+discardCount is not as expected.  Expected: 184, Actual: 183
+top of discard mismatch. Expected: 13, Actual 442221597
+deck + discard count is not as expected.  Expected: 216, Actual: 215
+TRIAL 742
+discardCount is not as expected.  Expected: 85, Actual: 84
+top of discard mismatch. Expected: 13, Actual -817327420
+deck + discard count is not as expected.  Expected: 162, Actual: 161
+TRIAL 743
+discardCount is not as expected.  Expected: 103, Actual: 102
+top of discard mismatch. Expected: 13, Actual -157553359
+deck + discard count is not as expected.  Expected: 379, Actual: 378
+TRIAL 744
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -278209724
+deck + discard count is not as expected.  Expected: 116, Actual: 115
+TRIAL 745
+discardCount is not as expected.  Expected: 53, Actual: 52
+top of discard mismatch. Expected: 13, Actual -175060472
+deck + discard count is not as expected.  Expected: 59, Actual: 58
+TRIAL 746
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual -104585564
+deck + discard count is not as expected.  Expected: 168, Actual: 167
+TRIAL 747
+discardCount is not as expected.  Expected: 247, Actual: 246
+top of discard mismatch. Expected: 13, Actual -502560140
+deck + discard count is not as expected.  Expected: 281, Actual: 280
+TRIAL 748
+discardCount is not as expected.  Expected: 26, Actual: 25
+top of discard mismatch. Expected: 13, Actual -725515211
+deck + discard count is not as expected.  Expected: 103, Actual: 102
+TRIAL 749
+discardCount is not as expected.  Expected: 144, Actual: 143
+top of discard mismatch. Expected: 13, Actual -1274724281
+deck + discard count is not as expected.  Expected: 321, Actual: 320
+TRIAL 750
+discardCount is not as expected.  Expected: 202, Actual: 201
+top of discard mismatch. Expected: 13, Actual 2047344156
+deck + discard count is not as expected.  Expected: 474, Actual: 473
+TRIAL 751
+discardCount is not as expected.  Expected: 52, Actual: 51
+top of discard mismatch. Expected: 13, Actual 1709953862
+deck + discard count is not as expected.  Expected: 308, Actual: 307
+TRIAL 752
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -414734774
+deck + discard count is not as expected.  Expected: 92, Actual: 91
+TRIAL 753
+discardCount is not as expected.  Expected: 41, Actual: 40
+top of discard mismatch. Expected: 13, Actual 2097371107
+deck + discard count is not as expected.  Expected: 56, Actual: 55
+TRIAL 754
+discardCount is not as expected.  Expected: 286, Actual: 285
+top of discard mismatch. Expected: 13, Actual -1908854909
+deck + discard count is not as expected.  Expected: 345, Actual: 344
+TRIAL 755
+discardCount is not as expected.  Expected: 222, Actual: 221
+top of discard mismatch. Expected: 13, Actual -1094056325
+deck + discard count is not as expected.  Expected: 274, Actual: 273
+TRIAL 756
+discardCount is not as expected.  Expected: 139, Actual: 138
+top of discard mismatch. Expected: 13, Actual 1663436946
+deck + discard count is not as expected.  Expected: 172, Actual: 171
+TRIAL 757
+discardCount is not as expected.  Expected: 285, Actual: 284
+top of discard mismatch. Expected: 13, Actual 1750818878
+deck + discard count is not as expected.  Expected: 431, Actual: 430
+TRIAL 758
+discardCount is not as expected.  Expected: 27, Actual: 26
+top of discard mismatch. Expected: 13, Actual 2097377336
+deck + discard count is not as expected.  Expected: 293, Actual: 292
+TRIAL 759
+discardCount is not as expected.  Expected: 56, Actual: 55
+top of discard mismatch. Expected: 13, Actual -704843885
+deck + discard count is not as expected.  Expected: 267, Actual: 266
+TRIAL 760
+discardCount is not as expected.  Expected: 183, Actual: 182
+top of discard mismatch. Expected: 13, Actual -436755732
+deck + discard count is not as expected.  Expected: 442, Actual: 441
+TRIAL 761
+discardCount is not as expected.  Expected: 143, Actual: 142
+top of discard mismatch. Expected: 13, Actual 944878253
+deck + discard count is not as expected.  Expected: 200, Actual: 199
+TRIAL 762
+discardCount is not as expected.  Expected: 107, Actual: 106
+top of discard mismatch. Expected: 13, Actual 507349119
+deck + discard count is not as expected.  Expected: 159, Actual: 158
+TRIAL 763
+discardCount is not as expected.  Expected: 138, Actual: 137
+top of discard mismatch. Expected: 13, Actual 1435121556
+deck + discard count is not as expected.  Expected: 372, Actual: 371
+TRIAL 764
+discardCount is not as expected.  Expected: 123, Actual: 122
+top of discard mismatch. Expected: 13, Actual -1298672747
+deck + discard count is not as expected.  Expected: 181, Actual: 180
+TRIAL 765
+discardCount is not as expected.  Expected: 94, Actual: 93
+top of discard mismatch. Expected: 13, Actual -416727604
+deck + discard count is not as expected.  Expected: 107, Actual: 106
+TRIAL 766
+discardCount is not as expected.  Expected: 281, Actual: 280
+top of discard mismatch. Expected: 13, Actual 554846179
+deck + discard count is not as expected.  Expected: 372, Actual: 371
+TRIAL 767
+discardCount is not as expected.  Expected: 225, Actual: 224
+top of discard mismatch. Expected: 13, Actual 1370846365
+deck + discard count is not as expected.  Expected: 386, Actual: 385
+TRIAL 768
+discardCount is not as expected.  Expected: 235, Actual: 234
+top of discard mismatch. Expected: 13, Actual 676234099
+deck + discard count is not as expected.  Expected: 431, Actual: 430
+TRIAL 769
+discardCount is not as expected.  Expected: 118, Actual: 117
+top of discard mismatch. Expected: 13, Actual -1679575495
+deck + discard count is not as expected.  Expected: 264, Actual: 263
+TRIAL 770
+discardCount is not as expected.  Expected: 195, Actual: 194
+top of discard mismatch. Expected: 13, Actual 1058773924
+deck + discard count is not as expected.  Expected: 417, Actual: 416
+TRIAL 771
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1834808116
+deck + discard count is not as expected.  Expected: 17, Actual: 16
+TRIAL 772
+discardCount is not as expected.  Expected: 28, Actual: 27
+top of discard mismatch. Expected: 13, Actual -2036641327
+deck + discard count is not as expected.  Expected: 30, Actual: 29
+TRIAL 773
+discardCount is not as expected.  Expected: 257, Actual: 256
+top of discard mismatch. Expected: 13, Actual 619412190
+deck + discard count is not as expected.  Expected: 317, Actual: 316
+TRIAL 774
+discardCount is not as expected.  Expected: 96, Actual: 95
+top of discard mismatch. Expected: 13, Actual 1712529148
+deck + discard count is not as expected.  Expected: 316, Actual: 315
+TRIAL 775
+discardCount is not as expected.  Expected: 230, Actual: 229
+top of discard mismatch. Expected: 13, Actual -1486580532
+deck + discard count is not as expected.  Expected: 300, Actual: 299
+TRIAL 776
+discardCount is not as expected.  Expected: 118, Actual: 117
+top of discard mismatch. Expected: 13, Actual -382488906
+deck + discard count is not as expected.  Expected: 235, Actual: 234
+TRIAL 777
+discardCount is not as expected.  Expected: 76, Actual: 75
+top of discard mismatch. Expected: 13, Actual -1634960076
+deck + discard count is not as expected.  Expected: 353, Actual: 352
+TRIAL 778
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual 1807781090
+deck + discard count is not as expected.  Expected: 125, Actual: 124
+TRIAL 779
+discardCount is not as expected.  Expected: 258, Actual: 257
+top of discard mismatch. Expected: 13, Actual -721616557
+deck + discard count is not as expected.  Expected: 534, Actual: 533
+TRIAL 780
+discardCount is not as expected.  Expected: 18, Actual: 17
+top of discard mismatch. Expected: 13, Actual -786376996
+deck + discard count is not as expected.  Expected: 168, Actual: 167
+TRIAL 781
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1066777658
+deck + discard count is not as expected.  Expected: 7, Actual: 6
+TRIAL 782
+discardCount is not as expected.  Expected: 97, Actual: 96
+top of discard mismatch. Expected: 13, Actual -882787649
+deck + discard count is not as expected.  Expected: 217, Actual: 216
+TRIAL 783
+discardCount is not as expected.  Expected: 154, Actual: 153
+top of discard mismatch. Expected: 13, Actual -1842463230
+deck + discard count is not as expected.  Expected: 434, Actual: 433
+TRIAL 784
+discardCount is not as expected.  Expected: 217, Actual: 216
+top of discard mismatch. Expected: 13, Actual -1868442818
+deck + discard count is not as expected.  Expected: 502, Actual: 501
+TRIAL 785
+discardCount is not as expected.  Expected: 58, Actual: 57
+top of discard mismatch. Expected: 13, Actual -470500056
+deck + discard count is not as expected.  Expected: 288, Actual: 287
+TRIAL 786
+discardCount is not as expected.  Expected: 243, Actual: 242
+top of discard mismatch. Expected: 13, Actual -1431811319
+deck + discard count is not as expected.  Expected: 520, Actual: 519
+TRIAL 787
+discardCount is not as expected.  Expected: 141, Actual: 140
+top of discard mismatch. Expected: 13, Actual 1143661081
+deck + discard count is not as expected.  Expected: 230, Actual: 229
+TRIAL 788
+discardCount is not as expected.  Expected: 210, Actual: 209
+top of discard mismatch. Expected: 13, Actual 81682143
+deck + discard count is not as expected.  Expected: 292, Actual: 291
+TRIAL 789
+discardCount is not as expected.  Expected: 164, Actual: 163
+top of discard mismatch. Expected: 13, Actual 1775543893
+deck + discard count is not as expected.  Expected: 181, Actual: 180
+TRIAL 790
+discardCount is not as expected.  Expected: 252, Actual: 251
+top of discard mismatch. Expected: 13, Actual 961857023
+deck + discard count is not as expected.  Expected: 428, Actual: 427
+TRIAL 791
+discardCount is not as expected.  Expected: 245, Actual: 244
+top of discard mismatch. Expected: 13, Actual 1347550303
+deck + discard count is not as expected.  Expected: 492, Actual: 491
+TRIAL 792
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1483632091
+deck + discard count is not as expected.  Expected: 105, Actual: 104
+TRIAL 793
+discardCount is not as expected.  Expected: 88, Actual: 87
+top of discard mismatch. Expected: 13, Actual 678063005
+deck + discard count is not as expected.  Expected: 168, Actual: 167
+TRIAL 794
+discardCount is not as expected.  Expected: 57, Actual: 56
+top of discard mismatch. Expected: 13, Actual 1940001247
+deck + discard count is not as expected.  Expected: 306, Actual: 305
+TRIAL 795
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1823527259
+deck + discard count is not as expected.  Expected: 240, Actual: 239
+TRIAL 796
+discardCount is not as expected.  Expected: 67, Actual: 66
+top of discard mismatch. Expected: 13, Actual -396371585
+deck + discard count is not as expected.  Expected: 318, Actual: 317
+TRIAL 797
+discardCount is not as expected.  Expected: 113, Actual: 112
+top of discard mismatch. Expected: 13, Actual -1772000812
+deck + discard count is not as expected.  Expected: 243, Actual: 242
+TRIAL 798
+discardCount is not as expected.  Expected: 71, Actual: 70
+top of discard mismatch. Expected: 13, Actual -1195175620
+deck + discard count is not as expected.  Expected: 135, Actual: 134
+TRIAL 799
+discardCount is not as expected.  Expected: 84, Actual: 83
+top of discard mismatch. Expected: 13, Actual -1433540502
+deck + discard count is not as expected.  Expected: 95, Actual: 94
+TRIAL 800
+discardCount is not as expected.  Expected: 149, Actual: 148
+top of discard mismatch. Expected: 13, Actual 870460303
+deck + discard count is not as expected.  Expected: 236, Actual: 235
+TRIAL 801
+discardCount is not as expected.  Expected: 260, Actual: 259
+top of discard mismatch. Expected: 13, Actual 329021571
+deck + discard count is not as expected.  Expected: 264, Actual: 263
+TRIAL 802
+discardCount is not as expected.  Expected: 243, Actual: 242
+top of discard mismatch. Expected: 13, Actual 884939129
+deck + discard count is not as expected.  Expected: 371, Actual: 370
+TRIAL 803
+discardCount is not as expected.  Expected: 160, Actual: 159
+top of discard mismatch. Expected: 13, Actual 807503704
+deck + discard count is not as expected.  Expected: 175, Actual: 174
+TRIAL 804
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1255224619
+deck + discard count is not as expected.  Expected: 34, Actual: 33
+TRIAL 805
+discardCount is not as expected.  Expected: 20, Actual: 19
+top of discard mismatch. Expected: 13, Actual 1378260594
+deck + discard count is not as expected.  Expected: 273, Actual: 272
+TRIAL 806
+discardCount is not as expected.  Expected: 13, Actual: 12
+top of discard mismatch. Expected: 13, Actual 1049844206
+deck + discard count is not as expected.  Expected: 103, Actual: 102
+TRIAL 807
+discardCount is not as expected.  Expected: 296, Actual: 295
+top of discard mismatch. Expected: 13, Actual 497284125
+deck + discard count is not as expected.  Expected: 416, Actual: 415
+TRIAL 808
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 2112952019
+deck + discard count is not as expected.  Expected: 246, Actual: 245
+TRIAL 809
+discardCount is not as expected.  Expected: 200, Actual: 199
+top of discard mismatch. Expected: 13, Actual -759763014
+deck + discard count is not as expected.  Expected: 290, Actual: 289
+TRIAL 810
+discardCount is not as expected.  Expected: 116, Actual: 115
+top of discard mismatch. Expected: 13, Actual -888890852
+deck + discard count is not as expected.  Expected: 336, Actual: 335
+TRIAL 811
+discardCount is not as expected.  Expected: 243, Actual: 242
+top of discard mismatch. Expected: 13, Actual 172920870
+deck + discard count is not as expected.  Expected: 434, Actual: 433
+TRIAL 812
+discardCount is not as expected.  Expected: 207, Actual: 206
+top of discard mismatch. Expected: 13, Actual 1182884074
+deck + discard count is not as expected.  Expected: 335, Actual: 334
+TRIAL 813
+discardCount is not as expected.  Expected: 92, Actual: 91
+top of discard mismatch. Expected: 13, Actual 1737198161
+deck + discard count is not as expected.  Expected: 303, Actual: 302
+TRIAL 814
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 472463328
+deck + discard count is not as expected.  Expected: 130, Actual: 129
+TRIAL 815
+discardCount is not as expected.  Expected: 25, Actual: 24
+top of discard mismatch. Expected: 13, Actual 572658618
+deck + discard count is not as expected.  Expected: 53, Actual: 52
+TRIAL 816
+discardCount is not as expected.  Expected: 115, Actual: 114
+top of discard mismatch. Expected: 13, Actual -413920015
+deck + discard count is not as expected.  Expected: 313, Actual: 312
+TRIAL 817
+discardCount is not as expected.  Expected: 284, Actual: 283
+top of discard mismatch. Expected: 13, Actual 1887350371
+deck + discard count is not as expected.  Expected: 522, Actual: 521
+TRIAL 818
+discardCount is not as expected.  Expected: 63, Actual: 62
+top of discard mismatch. Expected: 13, Actual -2118156562
+deck + discard count is not as expected.  Expected: 140, Actual: 139
+TRIAL 819
+discardCount is not as expected.  Expected: 73, Actual: 72
+top of discard mismatch. Expected: 13, Actual 43285325
+deck + discard count is not as expected.  Expected: 238, Actual: 237
+TRIAL 820
+discardCount is not as expected.  Expected: 53, Actual: 52
+top of discard mismatch. Expected: 13, Actual 232280045
+deck + discard count is not as expected.  Expected: 167, Actual: 166
+TRIAL 821
+discardCount is not as expected.  Expected: 126, Actual: 125
+top of discard mismatch. Expected: 13, Actual -414984433
+deck + discard count is not as expected.  Expected: 164, Actual: 163
+TRIAL 822
+discardCount is not as expected.  Expected: 164, Actual: 163
+top of discard mismatch. Expected: 13, Actual 919417828
+deck + discard count is not as expected.  Expected: 216, Actual: 215
+TRIAL 823
+discardCount is not as expected.  Expected: 76, Actual: 75
+top of discard mismatch. Expected: 13, Actual 1837914195
+deck + discard count is not as expected.  Expected: 109, Actual: 108
+TRIAL 824
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual 793959872
+deck + discard count is not as expected.  Expected: 338, Actual: 337
+TRIAL 825
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -95157636
+deck + discard count is not as expected.  Expected: 91, Actual: 90
+TRIAL 826
+discardCount is not as expected.  Expected: 64, Actual: 63
+top of discard mismatch. Expected: 13, Actual 478833041
+deck + discard count is not as expected.  Expected: 94, Actual: 93
+TRIAL 827
+discardCount is not as expected.  Expected: 21, Actual: 20
+top of discard mismatch. Expected: 13, Actual 1735464037
+deck + discard count is not as expected.  Expected: 88, Actual: 87
+TRIAL 828
+discardCount is not as expected.  Expected: 240, Actual: 239
+top of discard mismatch. Expected: 13, Actual 1009400645
+deck + discard count is not as expected.  Expected: 463, Actual: 462
+TRIAL 829
+discardCount is not as expected.  Expected: 130, Actual: 129
+top of discard mismatch. Expected: 13, Actual -1869868871
+deck + discard count is not as expected.  Expected: 207, Actual: 206
+TRIAL 830
+discardCount is not as expected.  Expected: 34, Actual: 33
+top of discard mismatch. Expected: 13, Actual 627438711
+deck + discard count is not as expected.  Expected: 228, Actual: 227
+TRIAL 831
+discardCount is not as expected.  Expected: 258, Actual: 257
+top of discard mismatch. Expected: 13, Actual -2141264200
+deck + discard count is not as expected.  Expected: 294, Actual: 293
+TRIAL 832
+discardCount is not as expected.  Expected: 53, Actual: 52
+top of discard mismatch. Expected: 13, Actual 1274681467
+deck + discard count is not as expected.  Expected: 231, Actual: 230
+TRIAL 833
+discardCount is not as expected.  Expected: 179, Actual: 178
+top of discard mismatch. Expected: 13, Actual 752071708
+deck + discard count is not as expected.  Expected: 225, Actual: 224
+TRIAL 834
+discardCount is not as expected.  Expected: 14, Actual: 13
+top of discard mismatch. Expected: 13, Actual 1346357253
+deck + discard count is not as expected.  Expected: 220, Actual: 219
+TRIAL 835
+discardCount is not as expected.  Expected: 84, Actual: 83
+top of discard mismatch. Expected: 13, Actual 941016342
+deck + discard count is not as expected.  Expected: 100, Actual: 99
+TRIAL 836
+discardCount is not as expected.  Expected: 280, Actual: 279
+top of discard mismatch. Expected: 13, Actual -259883305
+deck + discard count is not as expected.  Expected: 288, Actual: 287
+TRIAL 837
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1178588195
+deck + discard count is not as expected.  Expected: 1, Actual: 0
+TRIAL 838
+discardCount is not as expected.  Expected: 180, Actual: 179
+top of discard mismatch. Expected: 13, Actual -1322403604
+deck + discard count is not as expected.  Expected: 426, Actual: 425
+TRIAL 839
+discardCount is not as expected.  Expected: 290, Actual: 289
+top of discard mismatch. Expected: 13, Actual -1936633301
+deck + discard count is not as expected.  Expected: 359, Actual: 358
+TRIAL 840
+discardCount is not as expected.  Expected: 126, Actual: 125
+top of discard mismatch. Expected: 13, Actual 649155726
+deck + discard count is not as expected.  Expected: 421, Actual: 420
+TRIAL 841
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -433165920
+deck + discard count is not as expected.  Expected: 279, Actual: 278
+TRIAL 842
+discardCount is not as expected.  Expected: 251, Actual: 250
+top of discard mismatch. Expected: 13, Actual 1916624703
+deck + discard count is not as expected.  Expected: 441, Actual: 440
+TRIAL 843
+discardCount is not as expected.  Expected: 146, Actual: 145
+top of discard mismatch. Expected: 13, Actual -844504489
+deck + discard count is not as expected.  Expected: 409, Actual: 408
+TRIAL 844
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 501752924
+deck + discard count is not as expected.  Expected: 96, Actual: 95
+TRIAL 845
+discardCount is not as expected.  Expected: 268, Actual: 267
+top of discard mismatch. Expected: 13, Actual -2087555033
+deck + discard count is not as expected.  Expected: 535, Actual: 534
+TRIAL 846
+discardCount is not as expected.  Expected: 274, Actual: 273
+top of discard mismatch. Expected: 13, Actual -678166875
+deck + discard count is not as expected.  Expected: 510, Actual: 509
+TRIAL 847
+discardCount is not as expected.  Expected: 269, Actual: 268
+top of discard mismatch. Expected: 13, Actual 2001259998
+deck + discard count is not as expected.  Expected: 393, Actual: 392
+TRIAL 848
+discardCount is not as expected.  Expected: 82, Actual: 81
+top of discard mismatch. Expected: 13, Actual -564201833
+deck + discard count is not as expected.  Expected: 84, Actual: 83
+TRIAL 849
+discardCount is not as expected.  Expected: 53, Actual: 52
+top of discard mismatch. Expected: 13, Actual -1536999663
+deck + discard count is not as expected.  Expected: 176, Actual: 175
+TRIAL 850
+discardCount is not as expected.  Expected: 171, Actual: 170
+top of discard mismatch. Expected: 13, Actual 526712845
+deck + discard count is not as expected.  Expected: 352, Actual: 351
+TRIAL 851
+discardCount is not as expected.  Expected: 204, Actual: 203
+top of discard mismatch. Expected: 13, Actual -1311793043
+deck + discard count is not as expected.  Expected: 471, Actual: 470
+TRIAL 852
+discardCount is not as expected.  Expected: 181, Actual: 180
+top of discard mismatch. Expected: 13, Actual 1848514518
+deck + discard count is not as expected.  Expected: 369, Actual: 368
+TRIAL 853
+discardCount is not as expected.  Expected: 148, Actual: 147
+top of discard mismatch. Expected: 13, Actual -2109289558
+deck + discard count is not as expected.  Expected: 248, Actual: 247
+TRIAL 854
+discardCount is not as expected.  Expected: 15, Actual: 14
+top of discard mismatch. Expected: 13, Actual 1911511781
+deck + discard count is not as expected.  Expected: 188, Actual: 187
+TRIAL 855
+discardCount is not as expected.  Expected: 271, Actual: 270
+top of discard mismatch. Expected: 13, Actual -1567442576
+deck + discard count is not as expected.  Expected: 401, Actual: 400
+TRIAL 856
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual -2133659553
+deck + discard count is not as expected.  Expected: 345, Actual: 344
+TRIAL 857
+discardCount is not as expected.  Expected: 211, Actual: 210
+top of discard mismatch. Expected: 13, Actual -2073155446
+deck + discard count is not as expected.  Expected: 272, Actual: 271
+TRIAL 858
+discardCount is not as expected.  Expected: 215, Actual: 214
+top of discard mismatch. Expected: 13, Actual -1746681686
+deck + discard count is not as expected.  Expected: 459, Actual: 458
+TRIAL 859
+discardCount is not as expected.  Expected: 147, Actual: 146
+top of discard mismatch. Expected: 13, Actual 1991665623
+deck + discard count is not as expected.  Expected: 312, Actual: 311
+TRIAL 860
+discardCount is not as expected.  Expected: 300, Actual: 299
+top of discard mismatch. Expected: 13, Actual -1311750302
+deck + discard count is not as expected.  Expected: 494, Actual: 493
+TRIAL 861
+discardCount is not as expected.  Expected: 139, Actual: 138
+top of discard mismatch. Expected: 13, Actual -1047821835
+deck + discard count is not as expected.  Expected: 429, Actual: 428
+TRIAL 862
+discardCount is not as expected.  Expected: 227, Actual: 226
+top of discard mismatch. Expected: 13, Actual 692610037
+deck + discard count is not as expected.  Expected: 270, Actual: 269
+TRIAL 863
+discardCount is not as expected.  Expected: 294, Actual: 293
+top of discard mismatch. Expected: 13, Actual 1320632912
+deck + discard count is not as expected.  Expected: 549, Actual: 548
+TRIAL 864
+discardCount is not as expected.  Expected: 29, Actual: 28
+top of discard mismatch. Expected: 13, Actual 1573849141
+deck + discard count is not as expected.  Expected: 116, Actual: 115
+TRIAL 865
+discardCount is not as expected.  Expected: 281, Actual: 280
+top of discard mismatch. Expected: 13, Actual 1266170673
+deck + discard count is not as expected.  Expected: 438, Actual: 437
+TRIAL 866
+discardCount is not as expected.  Expected: 245, Actual: 244
+top of discard mismatch. Expected: 13, Actual -635005476
+deck + discard count is not as expected.  Expected: 354, Actual: 353
+TRIAL 867
+discardCount is not as expected.  Expected: 136, Actual: 135
+top of discard mismatch. Expected: 13, Actual -940503417
+deck + discard count is not as expected.  Expected: 267, Actual: 266
+TRIAL 868
+discardCount is not as expected.  Expected: 265, Actual: 264
+top of discard mismatch. Expected: 13, Actual 1413601987
+deck + discard count is not as expected.  Expected: 325, Actual: 324
+TRIAL 869
+discardCount is not as expected.  Expected: 182, Actual: 181
+top of discard mismatch. Expected: 13, Actual 1517884058
+deck + discard count is not as expected.  Expected: 318, Actual: 317
+TRIAL 870
+discardCount is not as expected.  Expected: 41, Actual: 40
+top of discard mismatch. Expected: 13, Actual 191970689
+deck + discard count is not as expected.  Expected: 337, Actual: 336
+TRIAL 871
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1704304436
+deck + discard count is not as expected.  Expected: 143, Actual: 142
+TRIAL 872
+discardCount is not as expected.  Expected: 279, Actual: 278
+top of discard mismatch. Expected: 13, Actual -352889356
+deck + discard count is not as expected.  Expected: 520, Actual: 519
+TRIAL 873
+discardCount is not as expected.  Expected: 18, Actual: 17
+top of discard mismatch. Expected: 13, Actual -243399427
+deck + discard count is not as expected.  Expected: 34, Actual: 33
+TRIAL 874
+discardCount is not as expected.  Expected: 259, Actual: 258
+top of discard mismatch. Expected: 13, Actual -816618455
+deck + discard count is not as expected.  Expected: 475, Actual: 474
+TRIAL 875
+discardCount is not as expected.  Expected: 101, Actual: 100
+top of discard mismatch. Expected: 13, Actual 27398705
+deck + discard count is not as expected.  Expected: 323, Actual: 322
+TRIAL 876
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1260812190
+deck + discard count is not as expected.  Expected: 52, Actual: 51
+TRIAL 877
+discardCount is not as expected.  Expected: 86, Actual: 85
+top of discard mismatch. Expected: 13, Actual -632398452
+deck + discard count is not as expected.  Expected: 136, Actual: 135
+TRIAL 878
+discardCount is not as expected.  Expected: 141, Actual: 140
+top of discard mismatch. Expected: 13, Actual -1614928633
+deck + discard count is not as expected.  Expected: 231, Actual: 230
+TRIAL 879
+discardCount is not as expected.  Expected: 247, Actual: 246
+top of discard mismatch. Expected: 13, Actual -1423683902
+deck + discard count is not as expected.  Expected: 265, Actual: 264
+TRIAL 880
+discardCount is not as expected.  Expected: 93, Actual: 92
+top of discard mismatch. Expected: 13, Actual -2026103267
+deck + discard count is not as expected.  Expected: 265, Actual: 264
+TRIAL 881
+discardCount is not as expected.  Expected: 212, Actual: 211
+top of discard mismatch. Expected: 13, Actual -441228986
+deck + discard count is not as expected.  Expected: 342, Actual: 341
+TRIAL 882
+discardCount is not as expected.  Expected: 119, Actual: 118
+top of discard mismatch. Expected: 13, Actual -708867738
+deck + discard count is not as expected.  Expected: 356, Actual: 355
+TRIAL 883
+discardCount is not as expected.  Expected: 90, Actual: 89
+top of discard mismatch. Expected: 13, Actual -1839177902
+deck + discard count is not as expected.  Expected: 121, Actual: 120
+TRIAL 884
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1140061817
+deck + discard count is not as expected.  Expected: 198, Actual: 197
+TRIAL 885
+discardCount is not as expected.  Expected: 279, Actual: 278
+top of discard mismatch. Expected: 13, Actual -1160115128
+deck + discard count is not as expected.  Expected: 296, Actual: 295
+TRIAL 886
+discardCount is not as expected.  Expected: 280, Actual: 279
+top of discard mismatch. Expected: 13, Actual -248538401
+deck + discard count is not as expected.  Expected: 406, Actual: 405
+TRIAL 887
+discardCount is not as expected.  Expected: 110, Actual: 109
+top of discard mismatch. Expected: 13, Actual -1059990994
+deck + discard count is not as expected.  Expected: 286, Actual: 285
+TRIAL 888
+discardCount is not as expected.  Expected: 75, Actual: 74
+top of discard mismatch. Expected: 13, Actual 715507878
+deck + discard count is not as expected.  Expected: 192, Actual: 191
+TRIAL 889
+discardCount is not as expected.  Expected: 15, Actual: 14
+top of discard mismatch. Expected: 13, Actual 240936127
+deck + discard count is not as expected.  Expected: 174, Actual: 173
+TRIAL 890
+discardCount is not as expected.  Expected: 8, Actual: 7
+top of discard mismatch. Expected: 13, Actual 453062062
+deck + discard count is not as expected.  Expected: 128, Actual: 127
+TRIAL 891
+discardCount is not as expected.  Expected: 16, Actual: 15
+top of discard mismatch. Expected: 13, Actual -254187542
+deck + discard count is not as expected.  Expected: 162, Actual: 161
+TRIAL 892
+discardCount is not as expected.  Expected: 275, Actual: 274
+top of discard mismatch. Expected: 13, Actual -1718311054
+deck + discard count is not as expected.  Expected: 417, Actual: 416
+TRIAL 893
+discardCount is not as expected.  Expected: 257, Actual: 256
+top of discard mismatch. Expected: 13, Actual -941280330
+deck + discard count is not as expected.  Expected: 472, Actual: 471
+TRIAL 894
+discardCount is not as expected.  Expected: 93, Actual: 92
+top of discard mismatch. Expected: 13, Actual 983339073
+deck + discard count is not as expected.  Expected: 283, Actual: 282
+TRIAL 895
+discardCount is not as expected.  Expected: 5, Actual: 4
+top of discard mismatch. Expected: 13, Actual -69221893
+deck + discard count is not as expected.  Expected: 55, Actual: 54
+TRIAL 896
+discardCount is not as expected.  Expected: 45, Actual: 44
+top of discard mismatch. Expected: 13, Actual -908379978
+deck + discard count is not as expected.  Expected: 330, Actual: 329
+TRIAL 897
+discardCount is not as expected.  Expected: 93, Actual: 92
+top of discard mismatch. Expected: 13, Actual -1874754241
+deck + discard count is not as expected.  Expected: 121, Actual: 120
+TRIAL 898
+discardCount is not as expected.  Expected: 90, Actual: 89
+top of discard mismatch. Expected: 13, Actual -1745763001
+deck + discard count is not as expected.  Expected: 254, Actual: 253
+TRIAL 899
+discardCount is not as expected.  Expected: 48, Actual: 47
+top of discard mismatch. Expected: 13, Actual -1929889317
+deck + discard count is not as expected.  Expected: 201, Actual: 200
+TRIAL 900
+discardCount is not as expected.  Expected: 217, Actual: 216
+top of discard mismatch. Expected: 13, Actual -1859915869
+deck + discard count is not as expected.  Expected: 480, Actual: 479
+TRIAL 901
+discardCount is not as expected.  Expected: 257, Actual: 256
+top of discard mismatch. Expected: 13, Actual -333106403
+deck + discard count is not as expected.  Expected: 340, Actual: 339
+TRIAL 902
+discardCount is not as expected.  Expected: 113, Actual: 112
+top of discard mismatch. Expected: 13, Actual 5855937
+deck + discard count is not as expected.  Expected: 395, Actual: 394
+TRIAL 903
+discardCount is not as expected.  Expected: 120, Actual: 119
+top of discard mismatch. Expected: 13, Actual 263369923
+deck + discard count is not as expected.  Expected: 218, Actual: 217
+TRIAL 904
+discardCount is not as expected.  Expected: 28, Actual: 27
+top of discard mismatch. Expected: 13, Actual 1348266886
+deck + discard count is not as expected.  Expected: 74, Actual: 73
+TRIAL 905
+discardCount is not as expected.  Expected: 273, Actual: 272
+top of discard mismatch. Expected: 13, Actual 192438966
+deck + discard count is not as expected.  Expected: 331, Actual: 330
+TRIAL 906
+discardCount is not as expected.  Expected: 21, Actual: 20
+top of discard mismatch. Expected: 13, Actual -1503266607
+deck + discard count is not as expected.  Expected: 91, Actual: 90
+TRIAL 907
+discardCount is not as expected.  Expected: 285, Actual: 284
+top of discard mismatch. Expected: 13, Actual 1127802244
+deck + discard count is not as expected.  Expected: 570, Actual: 569
+TRIAL 908
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1453799792
+deck + discard count is not as expected.  Expected: 1, Actual: 0
+TRIAL 909
+discardCount is not as expected.  Expected: 196, Actual: 195
+top of discard mismatch. Expected: 13, Actual -1516830326
+deck + discard count is not as expected.  Expected: 280, Actual: 279
+TRIAL 910
+discardCount is not as expected.  Expected: 131, Actual: 130
+top of discard mismatch. Expected: 13, Actual 1116292067
+deck + discard count is not as expected.  Expected: 299, Actual: 298
+TRIAL 911
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1994013459
+deck + discard count is not as expected.  Expected: 21, Actual: 20
+TRIAL 912
+discardCount is not as expected.  Expected: 89, Actual: 88
+top of discard mismatch. Expected: 13, Actual -1968200929
+deck + discard count is not as expected.  Expected: 137, Actual: 136
+TRIAL 913
+discardCount is not as expected.  Expected: 287, Actual: 286
+top of discard mismatch. Expected: 13, Actual 1579349406
+deck + discard count is not as expected.  Expected: 350, Actual: 349
+TRIAL 914
+discardCount is not as expected.  Expected: 163, Actual: 162
+top of discard mismatch. Expected: 13, Actual -1940724424
+deck + discard count is not as expected.  Expected: 413, Actual: 412
+TRIAL 915
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 473467529
+deck + discard count is not as expected.  Expected: 60, Actual: 59
+TRIAL 916
+discardCount is not as expected.  Expected: 250, Actual: 249
+top of discard mismatch. Expected: 13, Actual 1550979045
+deck + discard count is not as expected.  Expected: 540, Actual: 539
+TRIAL 917
+discardCount is not as expected.  Expected: 137, Actual: 136
+top of discard mismatch. Expected: 13, Actual 831684902
+deck + discard count is not as expected.  Expected: 408, Actual: 407
+TRIAL 918
+discardCount is not as expected.  Expected: 142, Actual: 141
+top of discard mismatch. Expected: 13, Actual -290177552
+deck + discard count is not as expected.  Expected: 218, Actual: 217
+TRIAL 919
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1232731382
+deck + discard count is not as expected.  Expected: 95, Actual: 94
+TRIAL 920
+discardCount is not as expected.  Expected: 215, Actual: 214
+top of discard mismatch. Expected: 13, Actual 1221418090
+deck + discard count is not as expected.  Expected: 457, Actual: 456
+TRIAL 921
+discardCount is not as expected.  Expected: 149, Actual: 148
+top of discard mismatch. Expected: 13, Actual 2133223142
+deck + discard count is not as expected.  Expected: 351, Actual: 350
+TRIAL 922
+discardCount is not as expected.  Expected: 118, Actual: 117
+top of discard mismatch. Expected: 13, Actual -1576292283
+deck + discard count is not as expected.  Expected: 210, Actual: 209
+TRIAL 923
+discardCount is not as expected.  Expected: 267, Actual: 266
+top of discard mismatch. Expected: 13, Actual -277944482
+deck + discard count is not as expected.  Expected: 343, Actual: 342
+TRIAL 924
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1640651522
+deck + discard count is not as expected.  Expected: 278, Actual: 277
+TRIAL 925
+discardCount is not as expected.  Expected: 99, Actual: 98
+top of discard mismatch. Expected: 13, Actual -948243795
+deck + discard count is not as expected.  Expected: 369, Actual: 368
+TRIAL 926
+discardCount is not as expected.  Expected: 93, Actual: 92
+top of discard mismatch. Expected: 13, Actual -172846660
+deck + discard count is not as expected.  Expected: 118, Actual: 117
+TRIAL 927
+discardCount is not as expected.  Expected: 175, Actual: 174
+top of discard mismatch. Expected: 13, Actual 1003652265
+deck + discard count is not as expected.  Expected: 183, Actual: 182
+TRIAL 928
+discardCount is not as expected.  Expected: 24, Actual: 23
+top of discard mismatch. Expected: 13, Actual -1750620253
+deck + discard count is not as expected.  Expected: 29, Actual: 28
+TRIAL 929
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1046771183
+deck + discard count is not as expected.  Expected: 229, Actual: 228
+TRIAL 930
+discardCount is not as expected.  Expected: 42, Actual: 41
+top of discard mismatch. Expected: 13, Actual -2016056804
+deck + discard count is not as expected.  Expected: 272, Actual: 271
+TRIAL 931
+discardCount is not as expected.  Expected: 223, Actual: 222
+top of discard mismatch. Expected: 13, Actual 405779204
+deck + discard count is not as expected.  Expected: 285, Actual: 284
+TRIAL 932
+discardCount is not as expected.  Expected: 43, Actual: 42
+top of discard mismatch. Expected: 13, Actual 1753539253
+deck + discard count is not as expected.  Expected: 162, Actual: 161
+TRIAL 933
+discardCount is not as expected.  Expected: 90, Actual: 89
+top of discard mismatch. Expected: 13, Actual 1109393473
+deck + discard count is not as expected.  Expected: 135, Actual: 134
+TRIAL 934
+discardCount is not as expected.  Expected: 293, Actual: 292
+top of discard mismatch. Expected: 13, Actual -1803591942
+deck + discard count is not as expected.  Expected: 479, Actual: 478
+TRIAL 935
+discardCount is not as expected.  Expected: 265, Actual: 264
+top of discard mismatch. Expected: 13, Actual 2057658355
+deck + discard count is not as expected.  Expected: 502, Actual: 501
+TRIAL 936
+discardCount is not as expected.  Expected: 61, Actual: 60
+top of discard mismatch. Expected: 13, Actual -1516953580
+deck + discard count is not as expected.  Expected: 137, Actual: 136
+TRIAL 937
+discardCount is not as expected.  Expected: 210, Actual: 209
+top of discard mismatch. Expected: 13, Actual 1372115277
+deck + discard count is not as expected.  Expected: 501, Actual: 500
+TRIAL 938
+discardCount is not as expected.  Expected: 232, Actual: 231
+top of discard mismatch. Expected: 13, Actual -1456155778
+deck + discard count is not as expected.  Expected: 412, Actual: 411
+TRIAL 939
+discardCount is not as expected.  Expected: 205, Actual: 204
+top of discard mismatch. Expected: 13, Actual -1537677924
+deck + discard count is not as expected.  Expected: 369, Actual: 368
+TRIAL 940
+discardCount is not as expected.  Expected: 126, Actual: 125
+top of discard mismatch. Expected: 13, Actual 603391525
+deck + discard count is not as expected.  Expected: 168, Actual: 167
+TRIAL 941
+discardCount is not as expected.  Expected: 200, Actual: 199
+top of discard mismatch. Expected: 13, Actual 1715819934
+deck + discard count is not as expected.  Expected: 341, Actual: 340
+TRIAL 942
+discardCount is not as expected.  Expected: 82, Actual: 81
+top of discard mismatch. Expected: 13, Actual -1909941115
+deck + discard count is not as expected.  Expected: 217, Actual: 216
+TRIAL 943
+discardCount is not as expected.  Expected: 219, Actual: 218
+top of discard mismatch. Expected: 13, Actual 568668201
+deck + discard count is not as expected.  Expected: 396, Actual: 395
+TRIAL 944
+discardCount is not as expected.  Expected: 234, Actual: 233
+top of discard mismatch. Expected: 13, Actual -1998710028
+deck + discard count is not as expected.  Expected: 297, Actual: 296
+TRIAL 945
+discardCount is not as expected.  Expected: 188, Actual: 187
+top of discard mismatch. Expected: 13, Actual 708524470
+deck + discard count is not as expected.  Expected: 192, Actual: 191
+TRIAL 946
+discardCount is not as expected.  Expected: 106, Actual: 105
+top of discard mismatch. Expected: 13, Actual -274043423
+deck + discard count is not as expected.  Expected: 319, Actual: 318
+TRIAL 947
+discardCount is not as expected.  Expected: 108, Actual: 107
+top of discard mismatch. Expected: 13, Actual 317770642
+deck + discard count is not as expected.  Expected: 246, Actual: 245
+TRIAL 948
+discardCount is not as expected.  Expected: 192, Actual: 191
+top of discard mismatch. Expected: 13, Actual 901466744
+deck + discard count is not as expected.  Expected: 467, Actual: 466
+TRIAL 949
+discardCount is not as expected.  Expected: 94, Actual: 93
+top of discard mismatch. Expected: 13, Actual 1753507459
+deck + discard count is not as expected.  Expected: 194, Actual: 193
+TRIAL 950
+discardCount is not as expected.  Expected: 112, Actual: 111
+top of discard mismatch. Expected: 13, Actual -1261176529
+deck + discard count is not as expected.  Expected: 237, Actual: 236
+TRIAL 951
+discardCount is not as expected.  Expected: 215, Actual: 214
+top of discard mismatch. Expected: 13, Actual -407089291
+deck + discard count is not as expected.  Expected: 278, Actual: 277
+TRIAL 952
+discardCount is not as expected.  Expected: 204, Actual: 203
+top of discard mismatch. Expected: 13, Actual -466464141
+deck + discard count is not as expected.  Expected: 311, Actual: 310
+TRIAL 953
+discardCount is not as expected.  Expected: 48, Actual: 47
+top of discard mismatch. Expected: 13, Actual -1414051808
+deck + discard count is not as expected.  Expected: 144, Actual: 143
+TRIAL 954
+discardCount is not as expected.  Expected: 52, Actual: 51
+top of discard mismatch. Expected: 13, Actual 901316218
+deck + discard count is not as expected.  Expected: 248, Actual: 247
+TRIAL 955
+discardCount is not as expected.  Expected: 4, Actual: 3
+top of discard mismatch. Expected: 13, Actual 1765720283
+deck + discard count is not as expected.  Expected: 82, Actual: 81
+TRIAL 956
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -1349129279
+deck + discard count is not as expected.  Expected: 2, Actual: 1
+TRIAL 957
+discardCount is not as expected.  Expected: 153, Actual: 152
+top of discard mismatch. Expected: 13, Actual 1435135491
+deck + discard count is not as expected.  Expected: 290, Actual: 289
+TRIAL 958
+discardCount is not as expected.  Expected: 233, Actual: 232
+top of discard mismatch. Expected: 13, Actual 9475713
+deck + discard count is not as expected.  Expected: 269, Actual: 268
+TRIAL 959
+discardCount is not as expected.  Expected: 300, Actual: 299
+top of discard mismatch. Expected: 13, Actual 1043917707
+deck + discard count is not as expected.  Expected: 372, Actual: 371
+TRIAL 960
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -369872891
+deck + discard count is not as expected.  Expected: 119, Actual: 118
+TRIAL 961
+discardCount is not as expected.  Expected: 5, Actual: 4
+top of discard mismatch. Expected: 13, Actual -1645246575
+deck + discard count is not as expected.  Expected: 100, Actual: 99
+TRIAL 962
+discardCount is not as expected.  Expected: 105, Actual: 104
+top of discard mismatch. Expected: 13, Actual -1670595533
+deck + discard count is not as expected.  Expected: 319, Actual: 318
+TRIAL 963
+discardCount is not as expected.  Expected: 186, Actual: 185
+top of discard mismatch. Expected: 13, Actual -34499210
+deck + discard count is not as expected.  Expected: 359, Actual: 358
+TRIAL 964
+discardCount is not as expected.  Expected: 176, Actual: 175
+top of discard mismatch. Expected: 13, Actual -697160265
+deck + discard count is not as expected.  Expected: 297, Actual: 296
+TRIAL 965
+discardCount is not as expected.  Expected: 207, Actual: 206
+top of discard mismatch. Expected: 13, Actual 108393273
+deck + discard count is not as expected.  Expected: 383, Actual: 382
+TRIAL 966
+discardCount is not as expected.  Expected: 298, Actual: 297
+top of discard mismatch. Expected: 13, Actual -1909578935
+deck + discard count is not as expected.  Expected: 496, Actual: 495
+TRIAL 967
+discardCount is not as expected.  Expected: 296, Actual: 295
+top of discard mismatch. Expected: 13, Actual -2020983267
+deck + discard count is not as expected.  Expected: 503, Actual: 502
+TRIAL 968
+discardCount is not as expected.  Expected: 98, Actual: 97
+top of discard mismatch. Expected: 13, Actual 1066478398
+deck + discard count is not as expected.  Expected: 212, Actual: 211
+TRIAL 969
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual -58615935
+deck + discard count is not as expected.  Expected: 284, Actual: 283
+TRIAL 970
+discardCount is not as expected.  Expected: 299, Actual: 298
+top of discard mismatch. Expected: 13, Actual 662669170
+deck + discard count is not as expected.  Expected: 308, Actual: 307
+TRIAL 971
+discardCount is not as expected.  Expected: 172, Actual: 171
+top of discard mismatch. Expected: 13, Actual 204896659
+deck + discard count is not as expected.  Expected: 230, Actual: 229
+TRIAL 972
+discardCount is not as expected.  Expected: 259, Actual: 258
+top of discard mismatch. Expected: 13, Actual -1562046567
+deck + discard count is not as expected.  Expected: 360, Actual: 359
+TRIAL 973
+discardCount is not as expected.  Expected: 132, Actual: 131
+top of discard mismatch. Expected: 13, Actual -822932421
+deck + discard count is not as expected.  Expected: 180, Actual: 179
+TRIAL 974
+discardCount is not as expected.  Expected: 232, Actual: 231
+top of discard mismatch. Expected: 13, Actual -1012951295
+deck + discard count is not as expected.  Expected: 522, Actual: 521
+TRIAL 975
+discardCount is not as expected.  Expected: 7, Actual: 6
+top of discard mismatch. Expected: 13, Actual 622338646
+deck + discard count is not as expected.  Expected: 59, Actual: 58
+TRIAL 976
+discardCount is not as expected.  Expected: 213, Actual: 212
+top of discard mismatch. Expected: 13, Actual 1529893029
+deck + discard count is not as expected.  Expected: 366, Actual: 365
+TRIAL 977
+discardCount is not as expected.  Expected: 262, Actual: 261
+top of discard mismatch. Expected: 13, Actual -1958348184
+deck + discard count is not as expected.  Expected: 274, Actual: 273
+TRIAL 978
+discardCount is not as expected.  Expected: 26, Actual: 25
+top of discard mismatch. Expected: 13, Actual 1005246298
+deck + discard count is not as expected.  Expected: 150, Actual: 149
+TRIAL 979
+discardCount is not as expected.  Expected: 180, Actual: 179
+top of discard mismatch. Expected: 13, Actual 1968226428
+deck + discard count is not as expected.  Expected: 387, Actual: 386
+TRIAL 980
+discardCount is not as expected.  Expected: 220, Actual: 219
+top of discard mismatch. Expected: 13, Actual 575343576
+deck + discard count is not as expected.  Expected: 387, Actual: 386
+TRIAL 981
+discardCount is not as expected.  Expected: 84, Actual: 83
+top of discard mismatch. Expected: 13, Actual 1141132922
+deck + discard count is not as expected.  Expected: 294, Actual: 293
+TRIAL 982
+discardCount is not as expected.  Expected: 284, Actual: 283
+top of discard mismatch. Expected: 13, Actual -1292811228
+deck + discard count is not as expected.  Expected: 368, Actual: 367
+TRIAL 983
+discardCount is not as expected.  Expected: 46, Actual: 45
+top of discard mismatch. Expected: 13, Actual 1713280862
+deck + discard count is not as expected.  Expected: 278, Actual: 277
+TRIAL 984
+discardCount is not as expected.  Expected: 276, Actual: 275
+top of discard mismatch. Expected: 13, Actual 1217375602
+deck + discard count is not as expected.  Expected: 291, Actual: 290
+TRIAL 985
+discardCount is not as expected.  Expected: 146, Actual: 145
+top of discard mismatch. Expected: 13, Actual -2145820529
+deck + discard count is not as expected.  Expected: 170, Actual: 169
+TRIAL 986
+discardCount is not as expected.  Expected: 130, Actual: 129
+top of discard mismatch. Expected: 13, Actual -264899800
+deck + discard count is not as expected.  Expected: 244, Actual: 243
+TRIAL 987
+discardCount is not as expected.  Expected: 149, Actual: 148
+top of discard mismatch. Expected: 13, Actual 460616235
+deck + discard count is not as expected.  Expected: 309, Actual: 308
+TRIAL 988
+discardCount is not as expected.  Expected: 142, Actual: 141
+top of discard mismatch. Expected: 13, Actual 711902268
+deck + discard count is not as expected.  Expected: 323, Actual: 322
+TRIAL 989
+discardCount is not as expected.  Expected: 1, Actual: 0
+top of discard mismatch. Expected: 13, Actual 1841628408
+deck + discard count is not as expected.  Expected: 202, Actual: 201
+TRIAL 990
+discardCount is not as expected.  Expected: 288, Actual: 287
+top of discard mismatch. Expected: 13, Actual 1976572112
+deck + discard count is not as expected.  Expected: 418, Actual: 417
+TRIAL 991
+discardCount is not as expected.  Expected: 27, Actual: 26
+top of discard mismatch. Expected: 13, Actual 1929937141
+deck + discard count is not as expected.  Expected: 82, Actual: 81
+TRIAL 992
+discardCount is not as expected.  Expected: 245, Actual: 244
+top of discard mismatch. Expected: 13, Actual -209589125
+deck + discard count is not as expected.  Expected: 332, Actual: 331
+TRIAL 993
+discardCount is not as expected.  Expected: 59, Actual: 58
+top of discard mismatch. Expected: 13, Actual 244925399
+deck + discard count is not as expected.  Expected: 130, Actual: 129
+TRIAL 994
+discardCount is not as expected.  Expected: 188, Actual: 187
+top of discard mismatch. Expected: 13, Actual 1237685143
+deck + discard count is not as expected.  Expected: 444, Actual: 443
+TRIAL 995
+discardCount is not as expected.  Expected: 133, Actual: 132
+top of discard mismatch. Expected: 13, Actual -601853519
+deck + discard count is not as expected.  Expected: 333, Actual: 332
+TRIAL 996
+discardCount is not as expected.  Expected: 236, Actual: 235
+top of discard mismatch. Expected: 13, Actual 688748147
+deck + discard count is not as expected.  Expected: 316, Actual: 315
+TRIAL 997
+discardCount is not as expected.  Expected: 124, Actual: 123
+top of discard mismatch. Expected: 13, Actual 73932952
+deck + discard count is not as expected.  Expected: 167, Actual: 166
+TRIAL 998
+discardCount is not as expected.  Expected: 23, Actual: 22
+top of discard mismatch. Expected: 13, Actual -1083980212
+deck + discard count is not as expected.  Expected: 241, Actual: 240
+TRIAL 999
+discardCount is not as expected.  Expected: 215, Actual: 214
+top of discard mismatch. Expected: 13, Actual 1016419498
+deck + discard count is not as expected.  Expected: 499, Actual: 498
+Card Test 1 Complete
+Number of errors found: 3000

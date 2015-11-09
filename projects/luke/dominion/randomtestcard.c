@@ -29,7 +29,7 @@ int main() {
 	int handPos = 0;
 	int testFail = 0;
 
-	for (i = 0; i < 2001; i++) {
+	for (i = 0; i < 2000; i++) {
 
 		for(y = 0; y < sizeof(struct gameState); y++) {
 			((char*)&G)[i] = floor(Random() * 256);
@@ -82,7 +82,7 @@ int main() {
 
 	    if(memcmp(&pre, &post, sizeof(struct gameState)) != 0) {
 	    	//printf("FAIL\n");
-	    	testFail = 1;
+	    	testFail = testFail + 1;
 	    } 
 	    // else {
 	    // 	printf("PASS\n");
@@ -96,6 +96,7 @@ int main() {
 	} else {
 		printf("\n");
 		printf("RANDOM TEST FAILED\n");
+		printf("%d/2000 TESTS HAVE FAILED\n", testFail);
 	}
 
 	return 0;

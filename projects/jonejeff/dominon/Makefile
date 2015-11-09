@@ -82,6 +82,23 @@ cardTestGreatHall: cardtestgreathall.c dominion.o rngs.o
 cardTestRemodel: cardtestremodel.c dominion.o rngs.o
 	gcc -o cardTestRemodel -g cardtestremodel.c dominion.o rngs.o $(CFLAGS)
 
+RandomCardTestAdventur: randomcardtestadventur.c dominion.o rngs.o
+	gcc -o randomtestAdventurer -g randomcardtestadventur.c dominion.o rngs.o $(CFLAGS)
+
+RandomCardTestSmithy: randomcardtestsmithy.c dominion.o rngs.o
+	gcc -o randomTestSmithy -g randomcardtestsmithy.c dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer.out: RandomCardTestAdventur
+	./randomtestAdventurer &> randomtestadventurer.out
+	gcov dominion.c >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out
+
+randomtestcard.out: RandomCardTestSmithy
+	./randomTestSmithy &> randomtestcard.out
+	gcov dominion.c >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out
+
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:

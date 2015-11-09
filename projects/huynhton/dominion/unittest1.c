@@ -44,7 +44,7 @@ int main() {
 		beforeGainCard = 0;	// set beforeGainCard to zero before test
         for (handCount = 1; handCount <= maxHandCount; handCount++)
         {
-                            
+                //printf("Last card in hand: %d\n", handCard(handCount, &G));            
 				gainCard(gold, &G, 2, currentPlayer);		// add a test gold card to the current player's hand
                 G.handCount[p] = handCount;                 // set the number of cards on hand after gaining card
 				//printf("Before gain num: %d\tActual card num: %d\n",beforeGainCard,G.handCount[p]);

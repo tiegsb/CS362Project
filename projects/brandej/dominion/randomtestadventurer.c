@@ -101,7 +101,7 @@ int main() {
        memcpy(&state.discardCount, &tempDiscardCount, sizeof(int) * maxPlayers);
 
 
-        //print tests
+//print tests
 //        for (i = 0; i < curPlayers; ++i) {
 //            printf("tmpHandCount: %d, handCount: %d\n", tempHandCount[i], state.handCount[i]);
 //            printf("Player: %d\ttempHand\tstateHand\n", i);
@@ -125,7 +125,7 @@ int main() {
 
         for (p = 0; p < curPlayers; ++p) {
             int preTreasureCardCount = tempTreasureCount[p][0]; //# of treasure cards in hand before
-            int postTreasureCardCount;
+            int postTreasureCardCount = 0;
             state.whoseTurn = p;
             playAdventurer(&state);
 
@@ -170,9 +170,8 @@ int main() {
             else {
                 failCounter++;
             }
+            //printf("pre %d, post %d\n", preTreasureCardCount, postTreasureCardCount);
         }
-
-        printf("trial #: %d\n", trials);
         --trials;
     }
 
@@ -182,7 +181,7 @@ int main() {
         printf("All tests passed the Adventure Card\n");
     }
     else  {
-        printf("%d tests failed on the adventure card\n\n", failCounter);
+        printf("pass: %d, fail: %d\n", passCounter, failCounter);
     }
 
     return 0;

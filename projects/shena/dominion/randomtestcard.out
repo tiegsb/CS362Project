@@ -1,0 +1,7403 @@
+
+
+randomtestcard - steward
+====================
+
+
+
+Test # 1
+handCount: 118
+deckCount: 118
+Failed to trash 2 cards.
+
+
+Test # 2
+handCount: 132
+deckCount: 132
+Failed to trash 2 cards.
+
+
+Test # 3
+handCount: 226
+deckCount: 226
+Failed to increase the number of coins by 2.
+
+
+Test # 4
+handCount: 410
+deckCount: 410
+Failed to increase the number of coins by 2.
+
+
+Test # 5
+handCount: 337
+deckCount: 337
+Failed to increase the number of coins by 2.
+
+
+Test # 6
+handCount: 62
+deckCount: 62
+Failed to increase the number of coins by 2.
+
+
+Test # 7
+handCount: 187
+deckCount: 187
+Failed to trash 2 cards.
+
+
+Test # 8
+handCount: 281
+deckCount: 281
+Failed to increase the number of coins by 2.
+
+
+Test # 9
+handCount: 47
+deckCount: 47
+Failed to trash 2 cards.
+
+
+Test # 10
+handCount: 243
+deckCount: 243
+Failed to trash 2 cards.
+
+
+Test # 11
+handCount: 383
+deckCount: 383
+Failed to increase number of cards by 2.
+
+
+Test # 12
+handCount: 279
+deckCount: 279
+Failed to trash 2 cards.
+
+
+Test # 13
+handCount: 484
+deckCount: 484
+Failed to increase number of cards by 2.
+
+
+Test # 14
+handCount: 164
+deckCount: 164
+Failed to trash 2 cards.
+
+
+Test # 15
+handCount: 450
+deckCount: 450
+Failed to trash 2 cards.
+
+
+Test # 16
+handCount: 265
+deckCount: 265
+Failed to trash 2 cards.
+
+
+Test # 17
+handCount: 95
+deckCount: 95
+Failed to increase the number of coins by 2.
+
+
+Test # 18
+handCount: 469
+deckCount: 469
+Failed to increase the number of coins by 2.
+
+
+Test # 19
+handCount: 284
+deckCount: 284
+Failed to increase the number of coins by 2.
+
+
+Test # 20
+handCount: 420
+deckCount: 420
+Failed to increase number of cards by 2.
+
+
+Test # 21
+handCount: 397
+deckCount: 397
+Failed to increase the number of coins by 2.
+
+
+Test # 22
+handCount: 484
+deckCount: 484
+Failed to increase the number of coins by 2.
+
+
+Test # 23
+handCount: 209
+deckCount: 209
+Failed to trash 2 cards.
+
+
+Test # 24
+handCount: 139
+deckCount: 139
+Failed to trash 2 cards.
+
+
+Test # 25
+handCount: 103
+deckCount: 103
+Failed to increase the number of coins by 2.
+
+
+Test # 26
+handCount: 365
+deckCount: 365
+Failed to increase the number of coins by 2.
+
+
+Test # 27
+handCount: 266
+deckCount: 266
+Failed to increase number of cards by 2.
+
+
+Test # 28
+handCount: 81
+deckCount: 81
+Failed to increase the number of coins by 2.
+
+
+Test # 29
+handCount: 326
+deckCount: 326
+Failed to increase the number of coins by 2.
+
+
+Test # 30
+handCount: 291
+deckCount: 291
+Failed to trash 2 cards.
+
+
+Test # 31
+handCount: 358
+deckCount: 358
+Failed to increase the number of coins by 2.
+
+
+Test # 32
+handCount: 499
+deckCount: 499
+Failed to increase the number of coins by 2.
+
+
+Test # 33
+handCount: 428
+deckCount: 428
+Failed to increase number of cards by 2.
+
+
+Test # 34
+handCount: 413
+deckCount: 413
+Failed to increase number of cards by 2.
+
+
+Test # 35
+handCount: 9
+deckCount: 9
+Failed to increase number of cards by 2.
+
+
+Test # 36
+handCount: 482
+deckCount: 482
+Failed to trash 2 cards.
+
+
+Test # 37
+handCount: 299
+deckCount: 299
+Failed to increase the number of coins by 2.
+
+
+Test # 38
+handCount: 290
+deckCount: 290
+Failed to increase the number of coins by 2.
+
+
+Test # 39
+handCount: 306
+deckCount: 306
+Failed to trash 2 cards.
+
+
+Test # 40
+handCount: 180
+deckCount: 180
+Failed to increase the number of coins by 2.
+
+
+Test # 41
+handCount: 440
+deckCount: 440
+Failed to increase number of cards by 2.
+
+
+Test # 42
+handCount: 456
+deckCount: 456
+Failed to trash 2 cards.
+
+
+Test # 43
+handCount: 17
+deckCount: 17
+Failed to increase number of cards by 2.
+
+
+Test # 44
+handCount: 365
+deckCount: 365
+Failed to increase number of cards by 2.
+
+
+Test # 45
+handCount: 265
+deckCount: 265
+Failed to increase the number of coins by 2.
+
+
+Test # 46
+handCount: 409
+deckCount: 409
+Failed to trash 2 cards.
+
+
+Test # 47
+handCount: 466
+deckCount: 466
+Failed to increase number of cards by 2.
+
+
+Test # 48
+handCount: 107
+deckCount: 107
+Failed to increase the number of coins by 2.
+
+
+Test # 49
+handCount: 476
+deckCount: 476
+Failed to increase the number of coins by 2.
+
+
+Test # 50
+handCount: 156
+deckCount: 156
+Failed to increase number of cards by 2.
+
+
+Test # 51
+handCount: 66
+deckCount: 66
+Failed to increase the number of coins by 2.
+
+
+Test # 52
+handCount: 150
+deckCount: 150
+Failed to increase number of cards by 2.
+
+
+Test # 53
+handCount: 202
+deckCount: 202
+Failed to trash 2 cards.
+
+
+Test # 54
+handCount: 274
+deckCount: 274
+Failed to increase number of cards by 2.
+
+
+Test # 55
+handCount: 200
+deckCount: 200
+Failed to trash 2 cards.
+
+
+Test # 56
+handCount: 436
+deckCount: 436
+Failed to trash 2 cards.
+
+
+Test # 57
+handCount: 172
+deckCount: 172
+Failed to increase number of cards by 2.
+
+
+Test # 58
+handCount: 224
+deckCount: 224
+Failed to increase the number of coins by 2.
+
+
+Test # 59
+handCount: 245
+deckCount: 245
+Failed to increase the number of coins by 2.
+
+
+Test # 60
+handCount: 486
+deckCount: 486
+Failed to increase number of cards by 2.
+
+
+Test # 61
+handCount: 161
+deckCount: 161
+Failed to increase number of cards by 2.
+
+
+Test # 62
+handCount: 414
+deckCount: 414
+Failed to increase number of cards by 2.
+
+
+Test # 63
+handCount: 302
+deckCount: 302
+Failed to increase the number of coins by 2.
+
+
+Test # 64
+handCount: 447
+deckCount: 447
+Failed to increase the number of coins by 2.
+
+
+Test # 65
+handCount: 362
+deckCount: 362
+Failed to trash 2 cards.
+
+
+Test # 66
+handCount: 125
+deckCount: 125
+Failed to trash 2 cards.
+
+
+Test # 67
+handCount: 149
+deckCount: 149
+Failed to increase number of cards by 2.
+
+
+Test # 68
+handCount: 55
+deckCount: 55
+Failed to increase the number of coins by 2.
+
+
+Test # 69
+handCount: 195
+deckCount: 195
+Failed to trash 2 cards.
+
+
+Test # 70
+handCount: 247
+deckCount: 247
+Failed to increase number of cards by 2.
+
+
+Test # 71
+handCount: 326
+deckCount: 326
+Failed to increase the number of coins by 2.
+
+
+Test # 72
+handCount: 377
+deckCount: 377
+Failed to increase the number of coins by 2.
+
+
+Test # 73
+handCount: 342
+deckCount: 342
+Failed to trash 2 cards.
+
+
+Test # 74
+handCount: 121
+deckCount: 121
+Failed to trash 2 cards.
+
+
+Test # 75
+handCount: 399
+deckCount: 399
+Failed to trash 2 cards.
+
+
+Test # 76
+handCount: 298
+deckCount: 298
+Failed to increase number of cards by 2.
+
+
+Test # 77
+handCount: 215
+deckCount: 215
+Failed to trash 2 cards.
+
+
+Test # 78
+handCount: 60
+deckCount: 60
+Failed to increase the number of coins by 2.
+
+
+Test # 79
+handCount: 16
+deckCount: 16
+Failed to trash 2 cards.
+
+
+Test # 80
+handCount: 164
+deckCount: 164
+Failed to trash 2 cards.
+
+
+Test # 81
+handCount: 235
+deckCount: 235
+Failed to trash 2 cards.
+
+
+Test # 82
+handCount: 390
+deckCount: 390
+Failed to increase the number of coins by 2.
+
+
+Test # 83
+handCount: 266
+deckCount: 266
+Failed to trash 2 cards.
+
+
+Test # 84
+handCount: 84
+deckCount: 84
+Failed to trash 2 cards.
+
+
+Test # 85
+handCount: 245
+deckCount: 245
+Failed to increase the number of coins by 2.
+
+
+Test # 86
+handCount: 108
+deckCount: 108
+Failed to increase number of cards by 2.
+
+
+Test # 87
+handCount: 233
+deckCount: 233
+Failed to trash 2 cards.
+
+
+Test # 88
+handCount: 233
+deckCount: 233
+Failed to increase the number of coins by 2.
+
+
+Test # 89
+handCount: 222
+deckCount: 222
+Failed to increase the number of coins by 2.
+
+
+Test # 90
+handCount: 471
+deckCount: 471
+Failed to trash 2 cards.
+
+
+Test # 91
+handCount: 293
+deckCount: 293
+Failed to increase number of cards by 2.
+
+
+Test # 92
+handCount: 230
+deckCount: 230
+Failed to increase the number of coins by 2.
+
+
+Test # 93
+handCount: 143
+deckCount: 143
+Failed to increase number of cards by 2.
+
+
+Test # 94
+handCount: 154
+deckCount: 154
+Failed to increase the number of coins by 2.
+
+
+Test # 95
+handCount: 319
+deckCount: 319
+Failed to increase the number of coins by 2.
+
+
+Test # 96
+handCount: 127
+deckCount: 127
+Failed to trash 2 cards.
+
+
+Test # 97
+handCount: 247
+deckCount: 247
+Failed to increase the number of coins by 2.
+
+
+Test # 98
+handCount: 326
+deckCount: 326
+Failed to trash 2 cards.
+
+
+Test # 99
+handCount: 383
+deckCount: 383
+Failed to increase number of cards by 2.
+
+
+Test # 100
+handCount: 321
+deckCount: 321
+Failed to increase number of cards by 2.
+
+
+Test # 101
+handCount: 175
+deckCount: 175
+Failed to trash 2 cards.
+
+
+Test # 102
+handCount: 185
+deckCount: 185
+Failed to increase number of cards by 2.
+
+
+Test # 103
+handCount: 317
+deckCount: 317
+Failed to increase number of cards by 2.
+
+
+Test # 104
+handCount: 318
+deckCount: 318
+Failed to increase the number of coins by 2.
+
+
+Test # 105
+handCount: 493
+deckCount: 493
+Failed to increase the number of coins by 2.
+
+
+Test # 106
+handCount: 27
+deckCount: 27
+Failed to increase the number of coins by 2.
+
+
+Test # 107
+handCount: 307
+deckCount: 307
+Failed to increase the number of coins by 2.
+
+
+Test # 108
+handCount: 20
+deckCount: 20
+Failed to increase number of cards by 2.
+
+
+Test # 109
+handCount: 99
+deckCount: 99
+Failed to increase number of cards by 2.
+
+
+Test # 110
+handCount: 492
+deckCount: 492
+Failed to trash 2 cards.
+
+
+Test # 111
+handCount: 155
+deckCount: 155
+Failed to increase the number of coins by 2.
+
+
+Test # 112
+handCount: 62
+deckCount: 62
+Failed to increase number of cards by 2.
+
+
+Test # 113
+handCount: 347
+deckCount: 347
+Failed to increase number of cards by 2.
+
+
+Test # 114
+handCount: 129
+deckCount: 129
+Failed to trash 2 cards.
+
+
+Test # 115
+handCount: 131
+deckCount: 131
+Failed to increase the number of coins by 2.
+
+
+Test # 116
+handCount: 438
+deckCount: 438
+Failed to increase the number of coins by 2.
+
+
+Test # 117
+handCount: 203
+deckCount: 203
+Failed to increase the number of coins by 2.
+
+
+Test # 118
+handCount: 497
+deckCount: 497
+Failed to trash 2 cards.
+
+
+Test # 119
+handCount: 364
+deckCount: 364
+Failed to trash 2 cards.
+
+
+Test # 120
+handCount: 455
+deckCount: 455
+Failed to trash 2 cards.
+
+
+Test # 121
+handCount: 135
+deckCount: 135
+Failed to increase the number of coins by 2.
+
+
+Test # 122
+handCount: 391
+deckCount: 391
+Failed to increase number of cards by 2.
+
+
+Test # 123
+handCount: 133
+deckCount: 133
+Failed to trash 2 cards.
+
+
+Test # 124
+handCount: 98
+deckCount: 98
+Failed to increase the number of coins by 2.
+
+
+Test # 125
+handCount: 298
+deckCount: 298
+Failed to increase number of cards by 2.
+
+
+Test # 126
+handCount: 139
+deckCount: 139
+Failed to increase the number of coins by 2.
+
+
+Test # 127
+handCount: 237
+deckCount: 237
+Failed to trash 2 cards.
+
+
+Test # 128
+handCount: 233
+deckCount: 233
+Failed to trash 2 cards.
+
+
+Test # 129
+handCount: 108
+deckCount: 108
+Failed to increase number of cards by 2.
+
+
+Test # 130
+handCount: 376
+deckCount: 376
+Failed to increase the number of coins by 2.
+
+
+Test # 131
+handCount: 380
+deckCount: 380
+Failed to increase number of cards by 2.
+
+
+Test # 132
+handCount: 134
+deckCount: 134
+Failed to increase the number of coins by 2.
+
+
+Test # 133
+handCount: 301
+deckCount: 301
+Failed to increase the number of coins by 2.
+
+
+Test # 134
+handCount: 6
+deckCount: 6
+Failed to trash 2 cards.
+
+
+Test # 135
+handCount: 417
+deckCount: 417
+Failed to increase the number of coins by 2.
+
+
+Test # 136
+handCount: 179
+deckCount: 179
+Failed to trash 2 cards.
+
+
+Test # 137
+handCount: 194
+deckCount: 194
+Failed to increase the number of coins by 2.
+
+
+Test # 138
+handCount: 275
+deckCount: 275
+Failed to increase number of cards by 2.
+
+
+Test # 139
+handCount: 50
+deckCount: 50
+Failed to trash 2 cards.
+
+
+Test # 140
+handCount: 236
+deckCount: 236
+Failed to trash 2 cards.
+
+
+Test # 141
+handCount: 4
+deckCount: 4
+Failed to increase number of cards by 2.
+
+
+Test # 142
+handCount: 45
+deckCount: 45
+Failed to trash 2 cards.
+
+
+Test # 143
+handCount: 89
+deckCount: 89
+Failed to increase number of cards by 2.
+
+
+Test # 144
+handCount: 114
+deckCount: 114
+Failed to trash 2 cards.
+
+
+Test # 145
+handCount: 312
+deckCount: 312
+Failed to trash 2 cards.
+
+
+Test # 146
+handCount: 482
+deckCount: 482
+Failed to increase number of cards by 2.
+
+
+Test # 147
+handCount: 333
+deckCount: 333
+Failed to trash 2 cards.
+
+
+Test # 148
+handCount: 131
+deckCount: 131
+Failed to increase number of cards by 2.
+
+
+Test # 149
+handCount: 175
+deckCount: 175
+Failed to trash 2 cards.
+
+
+Test # 150
+handCount: 364
+deckCount: 364
+Failed to increase the number of coins by 2.
+
+
+Test # 151
+handCount: 446
+deckCount: 446
+Failed to increase number of cards by 2.
+
+
+Test # 152
+handCount: 405
+deckCount: 405
+Failed to increase the number of coins by 2.
+
+
+Test # 153
+handCount: 353
+deckCount: 353
+Failed to trash 2 cards.
+
+
+Test # 154
+handCount: 35
+deckCount: 35
+Failed to trash 2 cards.
+
+
+Test # 155
+handCount: 207
+deckCount: 207
+Failed to increase the number of coins by 2.
+
+
+Test # 156
+handCount: 488
+deckCount: 488
+Failed to increase the number of coins by 2.
+
+
+Test # 157
+handCount: 141
+deckCount: 141
+Failed to increase the number of coins by 2.
+
+
+Test # 158
+handCount: 212
+deckCount: 212
+Failed to increase the number of coins by 2.
+
+
+Test # 159
+handCount: 349
+deckCount: 349
+Failed to increase number of cards by 2.
+
+
+Test # 160
+handCount: 204
+deckCount: 204
+Failed to trash 2 cards.
+
+
+Test # 161
+handCount: 182
+deckCount: 182
+Failed to increase the number of coins by 2.
+
+
+Test # 162
+handCount: 475
+deckCount: 475
+Failed to trash 2 cards.
+
+
+Test # 163
+handCount: 472
+deckCount: 472
+Failed to trash 2 cards.
+
+
+Test # 164
+handCount: 150
+deckCount: 150
+Failed to increase the number of coins by 2.
+
+
+Test # 165
+handCount: 148
+deckCount: 148
+Failed to trash 2 cards.
+
+
+Test # 166
+handCount: 193
+deckCount: 193
+Failed to increase number of cards by 2.
+
+
+Test # 167
+handCount: 400
+deckCount: 400
+Failed to increase the number of coins by 2.
+
+
+Test # 168
+handCount: 194
+deckCount: 194
+Failed to increase number of cards by 2.
+
+
+Test # 169
+handCount: 368
+deckCount: 368
+Failed to increase number of cards by 2.
+
+
+Test # 170
+handCount: 203
+deckCount: 203
+Failed to increase the number of coins by 2.
+
+
+Test # 171
+handCount: 32
+deckCount: 32
+Failed to increase number of cards by 2.
+
+
+Test # 172
+handCount: 395
+deckCount: 395
+Failed to trash 2 cards.
+
+
+Test # 173
+handCount: 50
+deckCount: 50
+Failed to increase the number of coins by 2.
+
+
+Test # 174
+handCount: 293
+deckCount: 293
+Failed to trash 2 cards.
+
+
+Test # 175
+handCount: 29
+deckCount: 29
+Failed to trash 2 cards.
+
+
+Test # 176
+handCount: 286
+deckCount: 286
+Failed to increase number of cards by 2.
+
+
+Test # 177
+handCount: 128
+deckCount: 128
+Failed to trash 2 cards.
+
+
+Test # 178
+handCount: 469
+deckCount: 469
+Failed to increase the number of coins by 2.
+
+
+Test # 179
+handCount: 251
+deckCount: 251
+Failed to trash 2 cards.
+
+
+Test # 180
+handCount: 485
+deckCount: 485
+Failed to trash 2 cards.
+
+
+Test # 181
+handCount: 26
+deckCount: 26
+Failed to trash 2 cards.
+
+
+Test # 182
+handCount: 421
+deckCount: 421
+Failed to increase number of cards by 2.
+
+
+Test # 183
+handCount: 33
+deckCount: 33
+Failed to increase the number of coins by 2.
+
+
+Test # 184
+handCount: 388
+deckCount: 388
+Failed to increase the number of coins by 2.
+
+
+Test # 185
+handCount: 349
+deckCount: 349
+Failed to increase the number of coins by 2.
+
+
+Test # 186
+handCount: 106
+deckCount: 106
+Failed to trash 2 cards.
+
+
+Test # 187
+handCount: 235
+deckCount: 235
+Failed to increase the number of coins by 2.
+
+
+Test # 188
+handCount: 36
+deckCount: 36
+Failed to increase the number of coins by 2.
+
+
+Test # 189
+handCount: 345
+deckCount: 345
+Failed to trash 2 cards.
+
+
+Test # 190
+handCount: 468
+deckCount: 468
+Failed to increase the number of coins by 2.
+
+
+Test # 191
+handCount: 227
+deckCount: 227
+Failed to increase number of cards by 2.
+
+
+Test # 192
+handCount: 256
+deckCount: 256
+Failed to trash 2 cards.
+
+
+Test # 193
+handCount: 38
+deckCount: 38
+Failed to trash 2 cards.
+
+
+Test # 194
+handCount: 46
+deckCount: 46
+Failed to trash 2 cards.
+
+
+Test # 195
+handCount: 11
+deckCount: 11
+Failed to trash 2 cards.
+
+
+Test # 196
+handCount: 111
+deckCount: 111
+Failed to increase the number of coins by 2.
+
+
+Test # 197
+handCount: 278
+deckCount: 278
+Failed to increase number of cards by 2.
+
+
+Test # 198
+handCount: 439
+deckCount: 439
+Failed to increase number of cards by 2.
+
+
+Test # 199
+handCount: 204
+deckCount: 204
+Failed to trash 2 cards.
+
+
+Test # 200
+handCount: 142
+deckCount: 142
+Failed to trash 2 cards.
+
+
+Test # 201
+handCount: 463
+deckCount: 463
+Failed to trash 2 cards.
+
+
+Test # 202
+handCount: 346
+deckCount: 346
+Failed to increase the number of coins by 2.
+
+
+Test # 203
+handCount: 212
+deckCount: 212
+Failed to trash 2 cards.
+
+
+Test # 204
+handCount: 377
+deckCount: 377
+Failed to increase number of cards by 2.
+
+
+Test # 205
+handCount: 365
+deckCount: 365
+Failed to increase number of cards by 2.
+
+
+Test # 206
+handCount: 275
+deckCount: 275
+Failed to trash 2 cards.
+
+
+Test # 207
+handCount: 105
+deckCount: 105
+Failed to increase number of cards by 2.
+
+
+Test # 208
+handCount: 31
+deckCount: 31
+Failed to increase the number of coins by 2.
+
+
+Test # 209
+handCount: 332
+deckCount: 332
+Failed to increase number of cards by 2.
+
+
+Test # 210
+handCount: 126
+deckCount: 126
+Failed to increase number of cards by 2.
+
+
+Test # 211
+handCount: 138
+deckCount: 138
+Failed to trash 2 cards.
+
+
+Test # 212
+handCount: 22
+deckCount: 22
+Failed to increase number of cards by 2.
+
+
+Test # 213
+handCount: 242
+deckCount: 242
+Failed to trash 2 cards.
+
+
+Test # 214
+handCount: 440
+deckCount: 440
+Failed to trash 2 cards.
+
+
+Test # 215
+handCount: 333
+deckCount: 333
+Failed to increase number of cards by 2.
+
+
+Test # 216
+handCount: 6
+deckCount: 6
+Failed to increase number of cards by 2.
+
+
+Test # 217
+handCount: 387
+deckCount: 387
+Failed to increase number of cards by 2.
+
+
+Test # 218
+handCount: 430
+deckCount: 430
+Failed to increase the number of coins by 2.
+
+
+Test # 219
+handCount: 400
+deckCount: 400
+Failed to increase the number of coins by 2.
+
+
+Test # 220
+handCount: 232
+deckCount: 232
+Failed to increase number of cards by 2.
+
+
+Test # 221
+handCount: 268
+deckCount: 268
+Failed to trash 2 cards.
+
+
+Test # 222
+handCount: 210
+deckCount: 210
+Failed to increase number of cards by 2.
+
+
+Test # 223
+handCount: 348
+deckCount: 348
+Failed to trash 2 cards.
+
+
+Test # 224
+handCount: 203
+deckCount: 203
+Failed to increase number of cards by 2.
+
+
+Test # 225
+handCount: 105
+deckCount: 105
+Failed to increase the number of coins by 2.
+
+
+Test # 226
+handCount: 265
+deckCount: 265
+Failed to increase number of cards by 2.
+
+
+Test # 227
+handCount: 13
+deckCount: 13
+Failed to increase the number of coins by 2.
+
+
+Test # 228
+handCount: 479
+deckCount: 479
+Failed to trash 2 cards.
+
+
+Test # 229
+handCount: 380
+deckCount: 380
+Failed to trash 2 cards.
+
+
+Test # 230
+handCount: 41
+deckCount: 41
+Failed to trash 2 cards.
+
+
+Test # 231
+handCount: 454
+deckCount: 454
+Failed to increase number of cards by 2.
+
+
+Test # 232
+handCount: 438
+deckCount: 438
+Failed to increase number of cards by 2.
+
+
+Test # 233
+handCount: 407
+deckCount: 407
+Failed to increase number of cards by 2.
+
+
+Test # 234
+handCount: 50
+deckCount: 50
+Failed to increase number of cards by 2.
+
+
+Test # 235
+handCount: 226
+deckCount: 226
+Failed to trash 2 cards.
+
+
+Test # 236
+handCount: 323
+deckCount: 323
+Failed to increase the number of coins by 2.
+
+
+Test # 237
+handCount: 5
+deckCount: 5
+Failed to increase number of cards by 2.
+
+
+Test # 238
+handCount: 177
+deckCount: 177
+Failed to increase number of cards by 2.
+
+
+Test # 239
+handCount: 209
+deckCount: 209
+Failed to increase number of cards by 2.
+
+
+Test # 240
+handCount: 82
+deckCount: 82
+Failed to increase the number of coins by 2.
+
+
+Test # 241
+handCount: 373
+deckCount: 373
+Failed to trash 2 cards.
+
+
+Test # 242
+handCount: 283
+deckCount: 283
+Failed to trash 2 cards.
+
+
+Test # 243
+handCount: 208
+deckCount: 208
+Failed to increase the number of coins by 2.
+
+
+Test # 244
+handCount: 373
+deckCount: 373
+Failed to trash 2 cards.
+
+
+Test # 245
+handCount: 141
+deckCount: 141
+Failed to trash 2 cards.
+
+
+Test # 246
+handCount: 308
+deckCount: 308
+Failed to increase number of cards by 2.
+
+
+Test # 247
+handCount: 113
+deckCount: 113
+Failed to increase the number of coins by 2.
+
+
+Test # 248
+handCount: 442
+deckCount: 442
+Failed to increase the number of coins by 2.
+
+
+Test # 249
+handCount: 475
+deckCount: 475
+Failed to increase the number of coins by 2.
+
+
+Test # 250
+handCount: 168
+deckCount: 168
+Failed to increase number of cards by 2.
+
+
+Test # 251
+handCount: 333
+deckCount: 333
+Failed to trash 2 cards.
+
+
+Test # 252
+handCount: 240
+deckCount: 240
+Failed to increase the number of coins by 2.
+
+
+Test # 253
+handCount: 146
+deckCount: 146
+Failed to trash 2 cards.
+
+
+Test # 254
+handCount: 102
+deckCount: 102
+Failed to increase the number of coins by 2.
+
+
+Test # 255
+handCount: 294
+deckCount: 294
+Failed to increase number of cards by 2.
+
+
+Test # 256
+handCount: 50
+deckCount: 50
+Failed to increase number of cards by 2.
+
+
+Test # 257
+handCount: 373
+deckCount: 373
+Failed to increase number of cards by 2.
+
+
+Test # 258
+handCount: 29
+deckCount: 29
+Failed to increase number of cards by 2.
+
+
+Test # 259
+handCount: 194
+deckCount: 194
+Failed to trash 2 cards.
+
+
+Test # 260
+handCount: 156
+deckCount: 156
+Failed to increase number of cards by 2.
+
+
+Test # 261
+handCount: 273
+deckCount: 273
+Failed to increase the number of coins by 2.
+
+
+Test # 262
+handCount: 343
+deckCount: 343
+Failed to increase the number of coins by 2.
+
+
+Test # 263
+handCount: 141
+deckCount: 141
+Failed to trash 2 cards.
+
+
+Test # 264
+handCount: 461
+deckCount: 461
+Failed to increase the number of coins by 2.
+
+
+Test # 265
+handCount: 244
+deckCount: 244
+Failed to increase number of cards by 2.
+
+
+Test # 266
+handCount: 171
+deckCount: 171
+Failed to increase number of cards by 2.
+
+
+Test # 267
+handCount: 10
+deckCount: 10
+Failed to trash 2 cards.
+
+
+Test # 268
+handCount: 310
+deckCount: 310
+Failed to increase number of cards by 2.
+
+
+Test # 269
+handCount: 328
+deckCount: 328
+Failed to increase number of cards by 2.
+
+
+Test # 270
+handCount: 277
+deckCount: 277
+Failed to increase the number of coins by 2.
+
+
+Test # 271
+handCount: 216
+deckCount: 216
+Failed to trash 2 cards.
+
+
+Test # 272
+handCount: 314
+deckCount: 314
+Failed to increase the number of coins by 2.
+
+
+Test # 273
+handCount: 499
+deckCount: 499
+Failed to increase number of cards by 2.
+
+
+Test # 274
+handCount: 259
+deckCount: 259
+Failed to trash 2 cards.
+
+
+Test # 275
+handCount: 348
+deckCount: 348
+Failed to increase the number of coins by 2.
+
+
+Test # 276
+handCount: 327
+deckCount: 327
+Failed to trash 2 cards.
+
+
+Test # 277
+handCount: 259
+deckCount: 259
+Failed to increase number of cards by 2.
+
+
+Test # 278
+handCount: 378
+deckCount: 378
+Failed to increase the number of coins by 2.
+
+
+Test # 279
+handCount: 176
+deckCount: 176
+Failed to increase the number of coins by 2.
+
+
+Test # 280
+handCount: 450
+deckCount: 450
+Failed to increase number of cards by 2.
+
+
+Test # 281
+handCount: 496
+deckCount: 496
+Failed to trash 2 cards.
+
+
+Test # 282
+handCount: 46
+deckCount: 46
+Failed to trash 2 cards.
+
+
+Test # 283
+handCount: 85
+deckCount: 85
+Failed to trash 2 cards.
+
+
+Test # 284
+handCount: 343
+deckCount: 343
+Failed to increase the number of coins by 2.
+
+
+Test # 285
+handCount: 336
+deckCount: 336
+Failed to increase number of cards by 2.
+
+
+Test # 286
+handCount: 409
+deckCount: 409
+Failed to increase the number of coins by 2.
+
+
+Test # 287
+handCount: 267
+deckCount: 267
+Failed to increase number of cards by 2.
+
+
+Test # 288
+handCount: 48
+deckCount: 48
+Failed to increase the number of coins by 2.
+
+
+Test # 289
+handCount: 492
+deckCount: 492
+Failed to increase number of cards by 2.
+
+
+Test # 290
+handCount: 210
+deckCount: 210
+Failed to trash 2 cards.
+
+
+Test # 291
+handCount: 303
+deckCount: 303
+Failed to increase the number of coins by 2.
+
+
+Test # 292
+handCount: 358
+deckCount: 358
+Failed to increase the number of coins by 2.
+
+
+Test # 293
+handCount: 100
+deckCount: 100
+Failed to increase the number of coins by 2.
+
+
+Test # 294
+handCount: 160
+deckCount: 160
+Failed to increase the number of coins by 2.
+
+
+Test # 295
+handCount: 308
+deckCount: 308
+Failed to increase the number of coins by 2.
+
+
+Test # 296
+handCount: 2
+deckCount: 2
+Failed to trash 2 cards.
+
+
+Test # 297
+handCount: 275
+deckCount: 275
+Failed to increase the number of coins by 2.
+
+
+Test # 298
+handCount: 307
+deckCount: 307
+Failed to increase number of cards by 2.
+
+
+Test # 299
+handCount: 422
+deckCount: 422
+Failed to increase number of cards by 2.
+
+
+Test # 300
+handCount: 469
+deckCount: 469
+Failed to trash 2 cards.
+
+
+Test # 301
+handCount: 104
+deckCount: 104
+Failed to increase the number of coins by 2.
+
+
+Test # 302
+handCount: 190
+deckCount: 190
+Failed to increase number of cards by 2.
+
+
+Test # 303
+handCount: 382
+deckCount: 382
+Failed to trash 2 cards.
+
+
+Test # 304
+handCount: 182
+deckCount: 182
+Failed to increase number of cards by 2.
+
+
+Test # 305
+handCount: 78
+deckCount: 78
+Failed to trash 2 cards.
+
+
+Test # 306
+handCount: 273
+deckCount: 273
+Failed to trash 2 cards.
+
+
+Test # 307
+handCount: 224
+deckCount: 224
+Failed to increase number of cards by 2.
+
+
+Test # 308
+handCount: 50
+deckCount: 50
+Failed to increase number of cards by 2.
+
+
+Test # 309
+handCount: 236
+deckCount: 236
+Failed to increase the number of coins by 2.
+
+
+Test # 310
+handCount: 81
+deckCount: 81
+Failed to trash 2 cards.
+
+
+Test # 311
+handCount: 134
+deckCount: 134
+Failed to trash 2 cards.
+
+
+Test # 312
+handCount: 406
+deckCount: 406
+Failed to trash 2 cards.
+
+
+Test # 313
+handCount: 59
+deckCount: 59
+Failed to increase the number of coins by 2.
+
+
+Test # 314
+handCount: 115
+deckCount: 115
+Failed to trash 2 cards.
+
+
+Test # 315
+handCount: 401
+deckCount: 401
+Failed to increase number of cards by 2.
+
+
+Test # 316
+handCount: 487
+deckCount: 487
+Failed to increase the number of coins by 2.
+
+
+Test # 317
+handCount: 202
+deckCount: 202
+Failed to increase the number of coins by 2.
+
+
+Test # 318
+handCount: 373
+deckCount: 373
+Failed to increase the number of coins by 2.
+
+
+Test # 319
+handCount: 401
+deckCount: 401
+Failed to trash 2 cards.
+
+
+Test # 320
+handCount: 111
+deckCount: 111
+Failed to increase the number of coins by 2.
+
+
+Test # 321
+handCount: 96
+deckCount: 96
+Failed to increase number of cards by 2.
+
+
+Test # 322
+handCount: 181
+deckCount: 181
+Failed to trash 2 cards.
+
+
+Test # 323
+handCount: 419
+deckCount: 419
+Failed to increase the number of coins by 2.
+
+
+Test # 324
+handCount: 248
+deckCount: 248
+Failed to increase the number of coins by 2.
+
+
+Test # 325
+handCount: 175
+deckCount: 175
+Failed to increase number of cards by 2.
+
+
+Test # 326
+handCount: 498
+deckCount: 498
+Failed to increase number of cards by 2.
+
+
+Test # 327
+handCount: 152
+deckCount: 152
+Failed to increase the number of coins by 2.
+
+
+Test # 328
+handCount: 217
+deckCount: 217
+Failed to trash 2 cards.
+
+
+Test # 329
+handCount: 430
+deckCount: 430
+Failed to trash 2 cards.
+
+
+Test # 330
+handCount: 108
+deckCount: 108
+Failed to increase number of cards by 2.
+
+
+Test # 331
+handCount: 448
+deckCount: 448
+Failed to trash 2 cards.
+
+
+Test # 332
+handCount: 496
+deckCount: 496
+Failed to increase number of cards by 2.
+
+
+Test # 333
+handCount: 122
+deckCount: 122
+Failed to trash 2 cards.
+
+
+Test # 334
+handCount: 379
+deckCount: 379
+Failed to trash 2 cards.
+
+
+Test # 335
+handCount: 330
+deckCount: 330
+Failed to increase the number of coins by 2.
+
+
+Test # 336
+handCount: 216
+deckCount: 216
+Failed to increase number of cards by 2.
+
+
+Test # 337
+handCount: 93
+deckCount: 93
+Failed to increase number of cards by 2.
+
+
+Test # 338
+handCount: 120
+deckCount: 120
+Failed to trash 2 cards.
+
+
+Test # 339
+handCount: 406
+deckCount: 406
+Failed to increase the number of coins by 2.
+
+
+Test # 340
+handCount: 452
+deckCount: 452
+Failed to increase the number of coins by 2.
+
+
+Test # 341
+handCount: 202
+deckCount: 202
+Failed to increase the number of coins by 2.
+
+
+Test # 342
+handCount: 284
+deckCount: 284
+Failed to increase the number of coins by 2.
+
+
+Test # 343
+handCount: 101
+deckCount: 101
+Failed to increase number of cards by 2.
+
+
+Test # 344
+handCount: 203
+deckCount: 203
+Failed to increase the number of coins by 2.
+
+
+Test # 345
+handCount: 257
+deckCount: 257
+Failed to trash 2 cards.
+
+
+Test # 346
+handCount: 417
+deckCount: 417
+Failed to increase the number of coins by 2.
+
+
+Test # 347
+handCount: 243
+deckCount: 243
+Failed to increase number of cards by 2.
+
+
+Test # 348
+handCount: 147
+deckCount: 147
+Failed to increase the number of coins by 2.
+
+
+Test # 349
+handCount: 127
+deckCount: 127
+Failed to increase the number of coins by 2.
+
+
+Test # 350
+handCount: 375
+deckCount: 375
+Failed to trash 2 cards.
+
+
+Test # 351
+handCount: 445
+deckCount: 445
+Failed to trash 2 cards.
+
+
+Test # 352
+handCount: 151
+deckCount: 151
+Failed to trash 2 cards.
+
+
+Test # 353
+handCount: 15
+deckCount: 15
+Failed to increase the number of coins by 2.
+
+
+Test # 354
+handCount: 388
+deckCount: 388
+Failed to trash 2 cards.
+
+
+Test # 355
+handCount: 143
+deckCount: 143
+Failed to increase the number of coins by 2.
+
+
+Test # 356
+handCount: 145
+deckCount: 145
+Failed to trash 2 cards.
+
+
+Test # 357
+handCount: 479
+deckCount: 479
+Failed to increase the number of coins by 2.
+
+
+Test # 358
+handCount: 68
+deckCount: 68
+Failed to increase the number of coins by 2.
+
+
+Test # 359
+handCount: 252
+deckCount: 252
+Failed to increase the number of coins by 2.
+
+
+Test # 360
+handCount: 28
+deckCount: 28
+Failed to trash 2 cards.
+
+
+Test # 361
+handCount: 300
+deckCount: 300
+Failed to trash 2 cards.
+
+
+Test # 362
+handCount: 397
+deckCount: 397
+Failed to trash 2 cards.
+
+
+Test # 363
+handCount: 311
+deckCount: 311
+Failed to increase number of cards by 2.
+
+
+Test # 364
+handCount: 227
+deckCount: 227
+Failed to trash 2 cards.
+
+
+Test # 365
+handCount: 178
+deckCount: 178
+Failed to increase the number of coins by 2.
+
+
+Test # 366
+handCount: 3
+deckCount: 3
+Failed to increase number of cards by 2.
+
+
+Test # 367
+handCount: 366
+deckCount: 366
+Failed to trash 2 cards.
+
+
+Test # 368
+handCount: 57
+deckCount: 57
+Failed to increase the number of coins by 2.
+
+
+Test # 369
+handCount: 370
+deckCount: 370
+Failed to increase the number of coins by 2.
+
+
+Test # 370
+handCount: 384
+deckCount: 384
+Failed to increase number of cards by 2.
+
+
+Test # 371
+handCount: 62
+deckCount: 62
+Failed to increase number of cards by 2.
+
+
+Test # 372
+handCount: 130
+deckCount: 130
+Failed to trash 2 cards.
+
+
+Test # 373
+handCount: 396
+deckCount: 396
+Failed to increase the number of coins by 2.
+
+
+Test # 374
+handCount: 199
+deckCount: 199
+Failed to increase number of cards by 2.
+
+
+Test # 375
+handCount: 254
+deckCount: 254
+Failed to increase number of cards by 2.
+
+
+Test # 376
+handCount: 76
+deckCount: 76
+Failed to increase the number of coins by 2.
+
+
+Test # 377
+handCount: 363
+deckCount: 363
+Failed to increase number of cards by 2.
+
+
+Test # 378
+handCount: 253
+deckCount: 253
+Failed to increase number of cards by 2.
+
+
+Test # 379
+handCount: 48
+deckCount: 48
+Failed to trash 2 cards.
+
+
+Test # 380
+handCount: 45
+deckCount: 45
+Failed to increase the number of coins by 2.
+
+
+Test # 381
+handCount: 61
+deckCount: 61
+Failed to trash 2 cards.
+
+
+Test # 382
+handCount: 168
+deckCount: 168
+Failed to increase number of cards by 2.
+
+
+Test # 383
+handCount: 414
+deckCount: 414
+Failed to increase number of cards by 2.
+
+
+Test # 384
+handCount: 26
+deckCount: 26
+Failed to trash 2 cards.
+
+
+Test # 385
+handCount: 191
+deckCount: 191
+Failed to increase number of cards by 2.
+
+
+Test # 386
+handCount: 127
+deckCount: 127
+Failed to trash 2 cards.
+
+
+Test # 387
+handCount: 126
+deckCount: 126
+Failed to trash 2 cards.
+
+
+Test # 388
+handCount: 304
+deckCount: 304
+Failed to increase the number of coins by 2.
+
+
+Test # 389
+handCount: 259
+deckCount: 259
+Failed to increase number of cards by 2.
+
+
+Test # 390
+handCount: 55
+deckCount: 55
+Failed to increase the number of coins by 2.
+
+
+Test # 391
+handCount: 78
+deckCount: 78
+Failed to increase the number of coins by 2.
+
+
+Test # 392
+handCount: 335
+deckCount: 335
+Failed to increase the number of coins by 2.
+
+
+Test # 393
+handCount: 289
+deckCount: 289
+Failed to increase the number of coins by 2.
+
+
+Test # 394
+handCount: 209
+deckCount: 209
+Failed to increase the number of coins by 2.
+
+
+Test # 395
+handCount: 308
+deckCount: 308
+Failed to increase the number of coins by 2.
+
+
+Test # 396
+handCount: 344
+deckCount: 344
+Failed to trash 2 cards.
+
+
+Test # 397
+handCount: 89
+deckCount: 89
+Failed to increase the number of coins by 2.
+
+
+Test # 398
+handCount: 183
+deckCount: 183
+Failed to trash 2 cards.
+
+
+Test # 399
+handCount: 156
+deckCount: 156
+Failed to trash 2 cards.
+
+
+Test # 400
+handCount: 319
+deckCount: 319
+Failed to increase the number of coins by 2.
+
+
+Test # 401
+handCount: 91
+deckCount: 91
+Failed to increase number of cards by 2.
+
+
+Test # 402
+handCount: 17
+deckCount: 17
+Failed to trash 2 cards.
+
+
+Test # 403
+handCount: 272
+deckCount: 272
+Failed to increase the number of coins by 2.
+
+
+Test # 404
+handCount: 245
+deckCount: 245
+Failed to trash 2 cards.
+
+
+Test # 405
+handCount: 319
+deckCount: 319
+Failed to increase number of cards by 2.
+
+
+Test # 406
+handCount: 444
+deckCount: 444
+Failed to increase the number of coins by 2.
+
+
+Test # 407
+handCount: 13
+deckCount: 13
+Failed to increase number of cards by 2.
+
+
+Test # 408
+handCount: 257
+deckCount: 257
+Failed to trash 2 cards.
+
+
+Test # 409
+handCount: 38
+deckCount: 38
+Failed to increase the number of coins by 2.
+
+
+Test # 410
+handCount: 287
+deckCount: 287
+Failed to increase number of cards by 2.
+
+
+Test # 411
+handCount: 127
+deckCount: 127
+Failed to trash 2 cards.
+
+
+Test # 412
+handCount: 495
+deckCount: 495
+Failed to trash 2 cards.
+
+
+Test # 413
+handCount: 278
+deckCount: 278
+Failed to increase the number of coins by 2.
+
+
+Test # 414
+handCount: 452
+deckCount: 452
+Failed to increase the number of coins by 2.
+
+
+Test # 415
+handCount: 388
+deckCount: 388
+Failed to increase number of cards by 2.
+
+
+Test # 416
+handCount: 124
+deckCount: 124
+Failed to increase the number of coins by 2.
+
+
+Test # 417
+handCount: 158
+deckCount: 158
+Failed to increase number of cards by 2.
+
+
+Test # 418
+handCount: 306
+deckCount: 306
+Failed to increase the number of coins by 2.
+
+
+Test # 419
+handCount: 111
+deckCount: 111
+Failed to increase the number of coins by 2.
+
+
+Test # 420
+handCount: 273
+deckCount: 273
+Failed to increase the number of coins by 2.
+
+
+Test # 421
+handCount: 251
+deckCount: 251
+Failed to increase the number of coins by 2.
+
+
+Test # 422
+handCount: 79
+deckCount: 79
+Failed to trash 2 cards.
+
+
+Test # 423
+handCount: 389
+deckCount: 389
+Failed to increase number of cards by 2.
+
+
+Test # 424
+handCount: 341
+deckCount: 341
+Failed to increase the number of coins by 2.
+
+
+Test # 425
+handCount: 21
+deckCount: 21
+Failed to trash 2 cards.
+
+
+Test # 426
+handCount: 415
+deckCount: 415
+Failed to increase the number of coins by 2.
+
+
+Test # 427
+handCount: 415
+deckCount: 415
+Failed to trash 2 cards.
+
+
+Test # 428
+handCount: 406
+deckCount: 406
+Failed to increase number of cards by 2.
+
+
+Test # 429
+handCount: 87
+deckCount: 87
+Failed to increase the number of coins by 2.
+
+
+Test # 430
+handCount: 31
+deckCount: 31
+Failed to trash 2 cards.
+
+
+Test # 431
+handCount: 192
+deckCount: 192
+Failed to increase the number of coins by 2.
+
+
+Test # 432
+handCount: 129
+deckCount: 129
+Failed to increase the number of coins by 2.
+
+
+Test # 433
+handCount: 285
+deckCount: 285
+Failed to trash 2 cards.
+
+
+Test # 434
+handCount: 336
+deckCount: 336
+Failed to increase number of cards by 2.
+
+
+Test # 435
+handCount: 200
+deckCount: 200
+Failed to increase number of cards by 2.
+
+
+Test # 436
+handCount: 133
+deckCount: 133
+Failed to increase the number of coins by 2.
+
+
+Test # 437
+handCount: 443
+deckCount: 443
+Failed to trash 2 cards.
+
+
+Test # 438
+handCount: 165
+deckCount: 165
+Failed to increase number of cards by 2.
+
+
+Test # 439
+handCount: 463
+deckCount: 463
+Failed to increase number of cards by 2.
+
+
+Test # 440
+handCount: 32
+deckCount: 32
+Failed to trash 2 cards.
+
+
+Test # 441
+handCount: 136
+deckCount: 136
+Failed to increase number of cards by 2.
+
+
+Test # 442
+handCount: 431
+deckCount: 431
+Failed to trash 2 cards.
+
+
+Test # 443
+handCount: 91
+deckCount: 91
+Failed to increase number of cards by 2.
+
+
+Test # 444
+handCount: 24
+deckCount: 24
+Failed to increase the number of coins by 2.
+
+
+Test # 445
+handCount: 479
+deckCount: 479
+Failed to trash 2 cards.
+
+
+Test # 446
+handCount: 309
+deckCount: 309
+Failed to trash 2 cards.
+
+
+Test # 447
+handCount: 92
+deckCount: 92
+Failed to increase the number of coins by 2.
+
+
+Test # 448
+handCount: 90
+deckCount: 90
+Failed to increase the number of coins by 2.
+
+
+Test # 449
+handCount: 374
+deckCount: 374
+Failed to increase the number of coins by 2.
+
+
+Test # 450
+handCount: 81
+deckCount: 81
+Failed to trash 2 cards.
+
+
+Test # 451
+handCount: 129
+deckCount: 129
+Failed to increase the number of coins by 2.
+
+
+Test # 452
+handCount: 180
+deckCount: 180
+Failed to trash 2 cards.
+
+
+Test # 453
+handCount: 156
+deckCount: 156
+Failed to trash 2 cards.
+
+
+Test # 454
+handCount: 288
+deckCount: 288
+Failed to increase number of cards by 2.
+
+
+Test # 455
+handCount: 52
+deckCount: 52
+Failed to increase the number of coins by 2.
+
+
+Test # 456
+handCount: 419
+deckCount: 419
+Failed to trash 2 cards.
+
+
+Test # 457
+handCount: 398
+deckCount: 398
+Failed to trash 2 cards.
+
+
+Test # 458
+handCount: 203
+deckCount: 203
+Failed to increase the number of coins by 2.
+
+
+Test # 459
+handCount: 358
+deckCount: 358
+Failed to trash 2 cards.
+
+
+Test # 460
+handCount: 393
+deckCount: 393
+Failed to increase the number of coins by 2.
+
+
+Test # 461
+handCount: 358
+deckCount: 358
+Failed to trash 2 cards.
+
+
+Test # 462
+handCount: 292
+deckCount: 292
+Failed to increase number of cards by 2.
+
+
+Test # 463
+handCount: 338
+deckCount: 338
+Failed to trash 2 cards.
+
+
+Test # 464
+handCount: 138
+deckCount: 138
+Failed to increase the number of coins by 2.
+
+
+Test # 465
+handCount: 33
+deckCount: 33
+Failed to increase number of cards by 2.
+
+
+Test # 466
+handCount: 1
+deckCount: 1
+Failed to trash 2 cards.
+
+
+Test # 467
+handCount: 392
+deckCount: 392
+Failed to increase number of cards by 2.
+
+
+Test # 468
+handCount: 279
+deckCount: 279
+Failed to increase the number of coins by 2.
+
+
+Test # 469
+handCount: 402
+deckCount: 402
+Failed to trash 2 cards.
+
+
+Test # 470
+handCount: 223
+deckCount: 223
+Failed to trash 2 cards.
+
+
+Test # 471
+handCount: 86
+deckCount: 86
+Failed to increase the number of coins by 2.
+
+
+Test # 472
+handCount: 60
+deckCount: 60
+Failed to trash 2 cards.
+
+
+Test # 473
+handCount: 229
+deckCount: 229
+Failed to increase the number of coins by 2.
+
+
+Test # 474
+handCount: 7
+deckCount: 7
+Failed to trash 2 cards.
+
+
+Test # 475
+handCount: 137
+deckCount: 137
+Failed to increase number of cards by 2.
+
+
+Test # 476
+handCount: 53
+deckCount: 53
+Failed to increase the number of coins by 2.
+
+
+Test # 477
+handCount: 158
+deckCount: 158
+Failed to increase number of cards by 2.
+
+
+Test # 478
+handCount: 182
+deckCount: 182
+Failed to increase number of cards by 2.
+
+
+Test # 479
+handCount: 84
+deckCount: 84
+Failed to increase the number of coins by 2.
+
+
+Test # 480
+handCount: 284
+deckCount: 284
+Failed to trash 2 cards.
+
+
+Test # 481
+handCount: 31
+deckCount: 31
+Failed to increase number of cards by 2.
+
+
+Test # 482
+handCount: 342
+deckCount: 342
+Failed to increase number of cards by 2.
+
+
+Test # 483
+handCount: 305
+deckCount: 305
+Failed to increase the number of coins by 2.
+
+
+Test # 484
+handCount: 184
+deckCount: 184
+Failed to increase the number of coins by 2.
+
+
+Test # 485
+handCount: 162
+deckCount: 162
+Failed to increase number of cards by 2.
+
+
+Test # 486
+handCount: 187
+deckCount: 187
+Failed to increase number of cards by 2.
+
+
+Test # 487
+handCount: 355
+deckCount: 355
+Failed to increase the number of coins by 2.
+
+
+Test # 488
+handCount: 153
+deckCount: 153
+Failed to increase number of cards by 2.
+
+
+Test # 489
+handCount: 67
+deckCount: 67
+Failed to increase number of cards by 2.
+
+
+Test # 490
+handCount: 294
+deckCount: 294
+Failed to increase number of cards by 2.
+
+
+Test # 491
+handCount: 85
+deckCount: 85
+Failed to trash 2 cards.
+
+
+Test # 492
+handCount: 423
+deckCount: 423
+Failed to trash 2 cards.
+
+
+Test # 493
+handCount: 206
+deckCount: 206
+Failed to trash 2 cards.
+
+
+Test # 494
+handCount: 300
+deckCount: 300
+Failed to increase the number of coins by 2.
+
+
+Test # 495
+handCount: 276
+deckCount: 276
+Failed to trash 2 cards.
+
+
+Test # 496
+handCount: 52
+deckCount: 52
+Failed to increase the number of coins by 2.
+
+
+Test # 497
+handCount: 323
+deckCount: 323
+Failed to increase the number of coins by 2.
+
+
+Test # 498
+handCount: 6
+deckCount: 6
+Failed to trash 2 cards.
+
+
+Test # 499
+handCount: 160
+deckCount: 160
+Failed to increase the number of coins by 2.
+
+
+Test # 500
+handCount: 60
+deckCount: 60
+Failed to increase the number of coins by 2.
+
+
+Test # 501
+handCount: 454
+deckCount: 454
+Failed to trash 2 cards.
+
+
+Test # 502
+handCount: 2
+deckCount: 2
+Failed to increase the number of coins by 2.
+
+
+Test # 503
+handCount: 133
+deckCount: 133
+Failed to increase the number of coins by 2.
+
+
+Test # 504
+handCount: 74
+deckCount: 74
+Failed to increase number of cards by 2.
+
+
+Test # 505
+handCount: 393
+deckCount: 393
+Failed to increase number of cards by 2.
+
+
+Test # 506
+handCount: 413
+deckCount: 413
+Failed to increase the number of coins by 2.
+
+
+Test # 507
+handCount: 456
+deckCount: 456
+Failed to trash 2 cards.
+
+
+Test # 508
+handCount: 33
+deckCount: 33
+Failed to trash 2 cards.
+
+
+Test # 509
+handCount: 397
+deckCount: 397
+Failed to increase the number of coins by 2.
+
+
+Test # 510
+handCount: 313
+deckCount: 313
+Failed to increase number of cards by 2.
+
+
+Test # 511
+handCount: 227
+deckCount: 227
+Failed to trash 2 cards.
+
+
+Test # 512
+handCount: 430
+deckCount: 430
+Failed to trash 2 cards.
+
+
+Test # 513
+handCount: 90
+deckCount: 90
+Failed to increase number of cards by 2.
+
+
+Test # 514
+handCount: 481
+deckCount: 481
+Failed to increase the number of coins by 2.
+
+
+Test # 515
+handCount: 373
+deckCount: 373
+Failed to increase the number of coins by 2.
+
+
+Test # 516
+handCount: 136
+deckCount: 136
+Failed to trash 2 cards.
+
+
+Test # 517
+handCount: 489
+deckCount: 489
+Failed to trash 2 cards.
+
+
+Test # 518
+handCount: 21
+deckCount: 21
+Failed to increase number of cards by 2.
+
+
+Test # 519
+handCount: 148
+deckCount: 148
+Failed to trash 2 cards.
+
+
+Test # 520
+handCount: 34
+deckCount: 34
+Failed to trash 2 cards.
+
+
+Test # 521
+handCount: 93
+deckCount: 93
+Failed to increase the number of coins by 2.
+
+
+Test # 522
+handCount: 367
+deckCount: 367
+Failed to increase number of cards by 2.
+
+
+Test # 523
+handCount: 242
+deckCount: 242
+Failed to increase the number of coins by 2.
+
+
+Test # 524
+handCount: 264
+deckCount: 264
+Failed to trash 2 cards.
+
+
+Test # 525
+handCount: 205
+deckCount: 205
+Failed to increase number of cards by 2.
+
+
+Test # 526
+handCount: 154
+deckCount: 154
+Failed to increase the number of coins by 2.
+
+
+Test # 527
+handCount: 329
+deckCount: 329
+Failed to trash 2 cards.
+
+
+Test # 528
+handCount: 408
+deckCount: 408
+Failed to increase the number of coins by 2.
+
+
+Test # 529
+handCount: 467
+deckCount: 467
+Failed to trash 2 cards.
+
+
+Test # 530
+handCount: 439
+deckCount: 439
+Failed to increase the number of coins by 2.
+
+
+Test # 531
+handCount: 76
+deckCount: 76
+Failed to increase the number of coins by 2.
+
+
+Test # 532
+handCount: 274
+deckCount: 274
+Failed to increase the number of coins by 2.
+
+
+Test # 533
+handCount: 108
+deckCount: 108
+Failed to increase the number of coins by 2.
+
+
+Test # 534
+handCount: 46
+deckCount: 46
+Failed to increase number of cards by 2.
+
+
+Test # 535
+handCount: 174
+deckCount: 174
+Failed to increase the number of coins by 2.
+
+
+Test # 536
+handCount: 468
+deckCount: 468
+Failed to trash 2 cards.
+
+
+Test # 537
+handCount: 136
+deckCount: 136
+Failed to increase number of cards by 2.
+
+
+Test # 538
+handCount: 463
+deckCount: 463
+Failed to increase the number of coins by 2.
+
+
+Test # 539
+handCount: 276
+deckCount: 276
+Failed to increase the number of coins by 2.
+
+
+Test # 540
+handCount: 409
+deckCount: 409
+Failed to increase the number of coins by 2.
+
+
+Test # 541
+handCount: 4
+deckCount: 4
+Failed to increase number of cards by 2.
+
+
+Test # 542
+handCount: 316
+deckCount: 316
+Failed to increase the number of coins by 2.
+
+
+Test # 543
+handCount: 230
+deckCount: 230
+Failed to trash 2 cards.
+
+
+Test # 544
+handCount: 214
+deckCount: 214
+Failed to trash 2 cards.
+
+
+Test # 545
+handCount: 211
+deckCount: 211
+Failed to increase number of cards by 2.
+
+
+Test # 546
+handCount: 312
+deckCount: 312
+Failed to increase number of cards by 2.
+
+
+Test # 547
+handCount: 449
+deckCount: 449
+Failed to increase number of cards by 2.
+
+
+Test # 548
+handCount: 342
+deckCount: 342
+Failed to increase the number of coins by 2.
+
+
+Test # 549
+handCount: 475
+deckCount: 475
+Failed to increase the number of coins by 2.
+
+
+Test # 550
+handCount: 41
+deckCount: 41
+Failed to increase the number of coins by 2.
+
+
+Test # 551
+handCount: 269
+deckCount: 269
+Failed to increase the number of coins by 2.
+
+
+Test # 552
+handCount: 474
+deckCount: 474
+Failed to trash 2 cards.
+
+
+Test # 553
+handCount: 488
+deckCount: 488
+Failed to trash 2 cards.
+
+
+Test # 554
+handCount: 338
+deckCount: 338
+Failed to increase the number of coins by 2.
+
+
+Test # 555
+handCount: 332
+deckCount: 332
+Failed to increase number of cards by 2.
+
+
+Test # 556
+handCount: 181
+deckCount: 181
+Failed to trash 2 cards.
+
+
+Test # 557
+handCount: 294
+deckCount: 294
+Failed to increase number of cards by 2.
+
+
+Test # 558
+handCount: 445
+deckCount: 445
+Failed to increase the number of coins by 2.
+
+
+Test # 559
+handCount: 70
+deckCount: 70
+Failed to trash 2 cards.
+
+
+Test # 560
+handCount: 369
+deckCount: 369
+Failed to trash 2 cards.
+
+
+Test # 561
+handCount: 373
+deckCount: 373
+Failed to increase number of cards by 2.
+
+
+Test # 562
+handCount: 450
+deckCount: 450
+Failed to trash 2 cards.
+
+
+Test # 563
+handCount: 254
+deckCount: 254
+Failed to trash 2 cards.
+
+
+Test # 564
+handCount: 112
+deckCount: 112
+Failed to increase the number of coins by 2.
+
+
+Test # 565
+handCount: 481
+deckCount: 481
+Failed to increase number of cards by 2.
+
+
+Test # 566
+handCount: 374
+deckCount: 374
+Failed to trash 2 cards.
+
+
+Test # 567
+handCount: 469
+deckCount: 469
+Failed to trash 2 cards.
+
+
+Test # 568
+handCount: 274
+deckCount: 274
+Failed to increase number of cards by 2.
+
+
+Test # 569
+handCount: 141
+deckCount: 141
+Failed to increase the number of coins by 2.
+
+
+Test # 570
+handCount: 329
+deckCount: 329
+Failed to trash 2 cards.
+
+
+Test # 571
+handCount: 351
+deckCount: 351
+Failed to trash 2 cards.
+
+
+Test # 572
+handCount: 262
+deckCount: 262
+Failed to increase number of cards by 2.
+
+
+Test # 573
+handCount: 274
+deckCount: 274
+Failed to increase the number of coins by 2.
+
+
+Test # 574
+handCount: 390
+deckCount: 390
+Failed to increase number of cards by 2.
+
+
+Test # 575
+handCount: 126
+deckCount: 126
+Failed to trash 2 cards.
+
+
+Test # 576
+handCount: 401
+deckCount: 401
+Failed to increase number of cards by 2.
+
+
+Test # 577
+handCount: 164
+deckCount: 164
+Failed to increase the number of coins by 2.
+
+
+Test # 578
+handCount: 377
+deckCount: 377
+Failed to trash 2 cards.
+
+
+Test # 579
+handCount: 230
+deckCount: 230
+Failed to increase number of cards by 2.
+
+
+Test # 580
+handCount: 68
+deckCount: 68
+Failed to increase number of cards by 2.
+
+
+Test # 581
+handCount: 440
+deckCount: 440
+Failed to trash 2 cards.
+
+
+Test # 582
+handCount: 393
+deckCount: 393
+Failed to increase the number of coins by 2.
+
+
+Test # 583
+handCount: 403
+deckCount: 403
+Failed to increase the number of coins by 2.
+
+
+Test # 584
+handCount: 360
+deckCount: 360
+Failed to increase number of cards by 2.
+
+
+Test # 585
+handCount: 360
+deckCount: 360
+Failed to increase number of cards by 2.
+
+
+Test # 586
+handCount: 89
+deckCount: 89
+Failed to trash 2 cards.
+
+
+Test # 587
+handCount: 297
+deckCount: 297
+Failed to trash 2 cards.
+
+
+Test # 588
+handCount: 341
+deckCount: 341
+Failed to increase the number of coins by 2.
+
+
+Test # 589
+handCount: 336
+deckCount: 336
+Failed to trash 2 cards.
+
+
+Test # 590
+handCount: 105
+deckCount: 105
+Failed to increase the number of coins by 2.
+
+
+Test # 591
+handCount: 19
+deckCount: 19
+Failed to trash 2 cards.
+
+
+Test # 592
+handCount: 146
+deckCount: 146
+Failed to increase the number of coins by 2.
+
+
+Test # 593
+handCount: 244
+deckCount: 244
+Failed to increase the number of coins by 2.
+
+
+Test # 594
+handCount: 130
+deckCount: 130
+Failed to increase number of cards by 2.
+
+
+Test # 595
+handCount: 189
+deckCount: 189
+Failed to increase the number of coins by 2.
+
+
+Test # 596
+handCount: 253
+deckCount: 253
+Failed to increase the number of coins by 2.
+
+
+Test # 597
+handCount: 362
+deckCount: 362
+Failed to increase the number of coins by 2.
+
+
+Test # 598
+handCount: 223
+deckCount: 223
+Failed to increase number of cards by 2.
+
+
+Test # 599
+handCount: 295
+deckCount: 295
+Failed to trash 2 cards.
+
+
+Test # 600
+handCount: 177
+deckCount: 177
+Failed to increase number of cards by 2.
+
+
+Test # 601
+handCount: 144
+deckCount: 144
+Failed to trash 2 cards.
+
+
+Test # 602
+handCount: 415
+deckCount: 415
+Failed to increase the number of coins by 2.
+
+
+Test # 603
+handCount: 236
+deckCount: 236
+Failed to trash 2 cards.
+
+
+Test # 604
+handCount: 235
+deckCount: 235
+Failed to increase the number of coins by 2.
+
+
+Test # 605
+handCount: 8
+deckCount: 8
+Failed to trash 2 cards.
+
+
+Test # 606
+handCount: 474
+deckCount: 474
+Failed to increase number of cards by 2.
+
+
+Test # 607
+handCount: 232
+deckCount: 232
+Failed to increase number of cards by 2.
+
+
+Test # 608
+handCount: 203
+deckCount: 203
+Failed to increase number of cards by 2.
+
+
+Test # 609
+handCount: 364
+deckCount: 364
+Failed to trash 2 cards.
+
+
+Test # 610
+handCount: 107
+deckCount: 107
+Failed to increase the number of coins by 2.
+
+
+Test # 611
+handCount: 12
+deckCount: 12
+Failed to increase the number of coins by 2.
+
+
+Test # 612
+handCount: 33
+deckCount: 33
+Failed to increase the number of coins by 2.
+
+
+Test # 613
+handCount: 341
+deckCount: 341
+Failed to increase the number of coins by 2.
+
+
+Test # 614
+handCount: 362
+deckCount: 362
+Failed to trash 2 cards.
+
+
+Test # 615
+handCount: 233
+deckCount: 233
+Failed to trash 2 cards.
+
+
+Test # 616
+handCount: 231
+deckCount: 231
+Failed to trash 2 cards.
+
+
+Test # 617
+handCount: 8
+deckCount: 8
+Failed to increase the number of coins by 2.
+
+
+Test # 618
+handCount: 15
+deckCount: 15
+Failed to increase number of cards by 2.
+
+
+Test # 619
+handCount: 205
+deckCount: 205
+Failed to increase the number of coins by 2.
+
+
+Test # 620
+handCount: 154
+deckCount: 154
+Failed to trash 2 cards.
+
+
+Test # 621
+handCount: 195
+deckCount: 195
+Failed to trash 2 cards.
+
+
+Test # 622
+handCount: 116
+deckCount: 116
+Failed to increase the number of coins by 2.
+
+
+Test # 623
+handCount: 374
+deckCount: 374
+Failed to increase number of cards by 2.
+
+
+Test # 624
+handCount: 223
+deckCount: 223
+Failed to increase number of cards by 2.
+
+
+Test # 625
+handCount: 199
+deckCount: 199
+Failed to trash 2 cards.
+
+
+Test # 626
+handCount: 4
+deckCount: 4
+Failed to trash 2 cards.
+
+
+Test # 627
+handCount: 351
+deckCount: 351
+Failed to increase number of cards by 2.
+
+
+Test # 628
+handCount: 10
+deckCount: 10
+Failed to increase number of cards by 2.
+
+
+Test # 629
+handCount: 462
+deckCount: 462
+Failed to increase number of cards by 2.
+
+
+Test # 630
+handCount: 373
+deckCount: 373
+Failed to increase number of cards by 2.
+
+
+Test # 631
+handCount: 135
+deckCount: 135
+Failed to increase number of cards by 2.
+
+
+Test # 632
+handCount: 445
+deckCount: 445
+Failed to trash 2 cards.
+
+
+Test # 633
+handCount: 222
+deckCount: 222
+Failed to increase the number of coins by 2.
+
+
+Test # 634
+handCount: 402
+deckCount: 402
+Failed to increase the number of coins by 2.
+
+
+Test # 635
+handCount: 116
+deckCount: 116
+Failed to increase the number of coins by 2.
+
+
+Test # 636
+handCount: 405
+deckCount: 405
+Failed to trash 2 cards.
+
+
+Test # 637
+handCount: 141
+deckCount: 141
+Failed to increase number of cards by 2.
+
+
+Test # 638
+handCount: 435
+deckCount: 435
+Failed to trash 2 cards.
+
+
+Test # 639
+handCount: 461
+deckCount: 461
+Failed to increase number of cards by 2.
+
+
+Test # 640
+handCount: 137
+deckCount: 137
+Failed to trash 2 cards.
+
+
+Test # 641
+handCount: 161
+deckCount: 161
+Failed to increase number of cards by 2.
+
+
+Test # 642
+handCount: 354
+deckCount: 354
+Failed to trash 2 cards.
+
+
+Test # 643
+handCount: 159
+deckCount: 159
+Failed to increase the number of coins by 2.
+
+
+Test # 644
+handCount: 401
+deckCount: 401
+Failed to increase the number of coins by 2.
+
+
+Test # 645
+handCount: 434
+deckCount: 434
+Failed to trash 2 cards.
+
+
+Test # 646
+handCount: 289
+deckCount: 289
+Failed to increase number of cards by 2.
+
+
+Test # 647
+handCount: 433
+deckCount: 433
+Failed to increase the number of coins by 2.
+
+
+Test # 648
+handCount: 34
+deckCount: 34
+Failed to trash 2 cards.
+
+
+Test # 649
+handCount: 294
+deckCount: 294
+Failed to increase number of cards by 2.
+
+
+Test # 650
+handCount: 380
+deckCount: 380
+Failed to increase number of cards by 2.
+
+
+Test # 651
+handCount: 405
+deckCount: 405
+Failed to increase the number of coins by 2.
+
+
+Test # 652
+handCount: 368
+deckCount: 368
+Failed to increase the number of coins by 2.
+
+
+Test # 653
+handCount: 192
+deckCount: 192
+Failed to increase the number of coins by 2.
+
+
+Test # 654
+handCount: 207
+deckCount: 207
+Failed to increase number of cards by 2.
+
+
+Test # 655
+handCount: 127
+deckCount: 127
+Failed to increase the number of coins by 2.
+
+
+Test # 656
+handCount: 433
+deckCount: 433
+Failed to increase number of cards by 2.
+
+
+Test # 657
+handCount: 452
+deckCount: 452
+Failed to increase number of cards by 2.
+
+
+Test # 658
+handCount: 236
+deckCount: 236
+Failed to trash 2 cards.
+
+
+Test # 659
+handCount: 142
+deckCount: 142
+Failed to increase the number of coins by 2.
+
+
+Test # 660
+handCount: 408
+deckCount: 408
+Failed to increase the number of coins by 2.
+
+
+Test # 661
+handCount: 498
+deckCount: 498
+Failed to trash 2 cards.
+
+
+Test # 662
+handCount: 391
+deckCount: 391
+Failed to trash 2 cards.
+
+
+Test # 663
+handCount: 195
+deckCount: 195
+Failed to increase number of cards by 2.
+
+
+Test # 664
+handCount: 98
+deckCount: 98
+Failed to increase the number of coins by 2.
+
+
+Test # 665
+handCount: 109
+deckCount: 109
+Failed to trash 2 cards.
+
+
+Test # 666
+handCount: 83
+deckCount: 83
+Failed to trash 2 cards.
+
+
+Test # 667
+handCount: 108
+deckCount: 108
+Failed to trash 2 cards.
+
+
+Test # 668
+handCount: 188
+deckCount: 188
+Failed to trash 2 cards.
+
+
+Test # 669
+handCount: 4
+deckCount: 4
+Failed to trash 2 cards.
+
+
+Test # 670
+handCount: 69
+deckCount: 69
+Failed to increase number of cards by 2.
+
+
+Test # 671
+handCount: 317
+deckCount: 317
+Failed to trash 2 cards.
+
+
+Test # 672
+handCount: 210
+deckCount: 210
+Failed to increase number of cards by 2.
+
+
+Test # 673
+handCount: 320
+deckCount: 320
+Failed to increase the number of coins by 2.
+
+
+Test # 674
+handCount: 350
+deckCount: 350
+Failed to trash 2 cards.
+
+
+Test # 675
+handCount: 213
+deckCount: 213
+Failed to trash 2 cards.
+
+
+Test # 676
+handCount: 81
+deckCount: 81
+Failed to increase number of cards by 2.
+
+
+Test # 677
+handCount: 99
+deckCount: 99
+Failed to increase number of cards by 2.
+
+
+Test # 678
+handCount: 95
+deckCount: 95
+Failed to increase number of cards by 2.
+
+
+Test # 679
+handCount: 5
+deckCount: 5
+Failed to increase number of cards by 2.
+
+
+Test # 680
+handCount: 469
+deckCount: 469
+Failed to increase number of cards by 2.
+
+
+Test # 681
+handCount: 118
+deckCount: 118
+Failed to increase the number of coins by 2.
+
+
+Test # 682
+handCount: 418
+deckCount: 418
+Failed to trash 2 cards.
+
+
+Test # 683
+handCount: 192
+deckCount: 192
+Failed to increase number of cards by 2.
+
+
+Test # 684
+handCount: 429
+deckCount: 429
+Failed to increase the number of coins by 2.
+
+
+Test # 685
+handCount: 385
+deckCount: 385
+Failed to trash 2 cards.
+
+
+Test # 686
+handCount: 401
+deckCount: 401
+Failed to increase the number of coins by 2.
+
+
+Test # 687
+handCount: 277
+deckCount: 277
+Failed to trash 2 cards.
+
+
+Test # 688
+handCount: 361
+deckCount: 361
+Failed to trash 2 cards.
+
+
+Test # 689
+handCount: 87
+deckCount: 87
+Failed to trash 2 cards.
+
+
+Test # 690
+handCount: 492
+deckCount: 492
+Failed to trash 2 cards.
+
+
+Test # 691
+handCount: 150
+deckCount: 150
+Failed to trash 2 cards.
+
+
+Test # 692
+handCount: 38
+deckCount: 38
+Failed to trash 2 cards.
+
+
+Test # 693
+handCount: 498
+deckCount: 498
+Failed to trash 2 cards.
+
+
+Test # 694
+handCount: 215
+deckCount: 215
+Failed to increase number of cards by 2.
+
+
+Test # 695
+handCount: 455
+deckCount: 455
+Failed to increase number of cards by 2.
+
+
+Test # 696
+handCount: 122
+deckCount: 122
+Failed to increase the number of coins by 2.
+
+
+Test # 697
+handCount: 237
+deckCount: 237
+Failed to trash 2 cards.
+
+
+Test # 698
+handCount: 237
+deckCount: 237
+Failed to trash 2 cards.
+
+
+Test # 699
+handCount: 94
+deckCount: 94
+Failed to increase the number of coins by 2.
+
+
+Test # 700
+handCount: 77
+deckCount: 77
+Failed to increase the number of coins by 2.
+
+
+Test # 701
+handCount: 213
+deckCount: 213
+Failed to increase the number of coins by 2.
+
+
+Test # 702
+handCount: 338
+deckCount: 338
+Failed to increase the number of coins by 2.
+
+
+Test # 703
+handCount: 97
+deckCount: 97
+Failed to increase the number of coins by 2.
+
+
+Test # 704
+handCount: 357
+deckCount: 357
+Failed to trash 2 cards.
+
+
+Test # 705
+handCount: 373
+deckCount: 373
+Failed to trash 2 cards.
+
+
+Test # 706
+handCount: 48
+deckCount: 48
+Failed to trash 2 cards.
+
+
+Test # 707
+handCount: 127
+deckCount: 127
+Failed to trash 2 cards.
+
+
+Test # 708
+handCount: 55
+deckCount: 55
+Failed to increase number of cards by 2.
+
+
+Test # 709
+handCount: 495
+deckCount: 495
+Failed to increase the number of coins by 2.
+
+
+Test # 710
+handCount: 477
+deckCount: 477
+Failed to increase the number of coins by 2.
+
+
+Test # 711
+handCount: 115
+deckCount: 115
+Failed to trash 2 cards.
+
+
+Test # 712
+handCount: 290
+deckCount: 290
+Failed to trash 2 cards.
+
+
+Test # 713
+handCount: 63
+deckCount: 63
+Failed to increase the number of coins by 2.
+
+
+Test # 714
+handCount: 437
+deckCount: 437
+Failed to trash 2 cards.
+
+
+Test # 715
+handCount: 257
+deckCount: 257
+Failed to trash 2 cards.
+
+
+Test # 716
+handCount: 381
+deckCount: 381
+Failed to increase number of cards by 2.
+
+
+Test # 717
+handCount: 479
+deckCount: 479
+Failed to trash 2 cards.
+
+
+Test # 718
+handCount: 378
+deckCount: 378
+Failed to trash 2 cards.
+
+
+Test # 719
+handCount: 474
+deckCount: 474
+Failed to increase the number of coins by 2.
+
+
+Test # 720
+handCount: 455
+deckCount: 455
+Failed to trash 2 cards.
+
+
+Test # 721
+handCount: 324
+deckCount: 324
+Failed to trash 2 cards.
+
+
+Test # 722
+handCount: 291
+deckCount: 291
+Failed to trash 2 cards.
+
+
+Test # 723
+handCount: 85
+deckCount: 85
+Failed to trash 2 cards.
+
+
+Test # 724
+handCount: 302
+deckCount: 302
+Failed to trash 2 cards.
+
+
+Test # 725
+handCount: 457
+deckCount: 457
+Failed to increase the number of coins by 2.
+
+
+Test # 726
+handCount: 189
+deckCount: 189
+Failed to trash 2 cards.
+
+
+Test # 727
+handCount: 454
+deckCount: 454
+Failed to increase the number of coins by 2.
+
+
+Test # 728
+handCount: 172
+deckCount: 172
+Failed to trash 2 cards.
+
+
+Test # 729
+handCount: 419
+deckCount: 419
+Failed to increase number of cards by 2.
+
+
+Test # 730
+handCount: 177
+deckCount: 177
+Failed to increase number of cards by 2.
+
+
+Test # 731
+handCount: 389
+deckCount: 389
+Failed to increase the number of coins by 2.
+
+
+Test # 732
+handCount: 90
+deckCount: 90
+Failed to increase the number of coins by 2.
+
+
+Test # 733
+handCount: 415
+deckCount: 415
+Failed to increase number of cards by 2.
+
+
+Test # 734
+handCount: 294
+deckCount: 294
+Failed to increase the number of coins by 2.
+
+
+Test # 735
+handCount: 37
+deckCount: 37
+Failed to increase the number of coins by 2.
+
+
+Test # 736
+handCount: 82
+deckCount: 82
+Failed to trash 2 cards.
+
+
+Test # 737
+handCount: 149
+deckCount: 149
+Failed to increase number of cards by 2.
+
+
+Test # 738
+handCount: 67
+deckCount: 67
+Failed to trash 2 cards.
+
+
+Test # 739
+handCount: 204
+deckCount: 204
+Failed to increase number of cards by 2.
+
+
+Test # 740
+handCount: 162
+deckCount: 162
+Failed to increase the number of coins by 2.
+
+
+Test # 741
+handCount: 295
+deckCount: 295
+Failed to increase number of cards by 2.
+
+
+Test # 742
+handCount: 109
+deckCount: 109
+Failed to increase the number of coins by 2.
+
+
+Test # 743
+handCount: 225
+deckCount: 225
+Failed to trash 2 cards.
+
+
+Test # 744
+handCount: 374
+deckCount: 374
+Failed to trash 2 cards.
+
+
+Test # 745
+handCount: 127
+deckCount: 127
+Failed to increase the number of coins by 2.
+
+
+Test # 746
+handCount: 337
+deckCount: 337
+Failed to increase the number of coins by 2.
+
+
+Test # 747
+handCount: 402
+deckCount: 402
+Failed to trash 2 cards.
+
+
+Test # 748
+handCount: 88
+deckCount: 88
+Failed to trash 2 cards.
+
+
+Test # 749
+handCount: 454
+deckCount: 454
+Failed to increase the number of coins by 2.
+
+
+Test # 750
+handCount: 3
+deckCount: 3
+Failed to increase number of cards by 2.
+
+
+Test # 751
+handCount: 139
+deckCount: 139
+Failed to trash 2 cards.
+
+
+Test # 752
+handCount: 371
+deckCount: 371
+Failed to increase the number of coins by 2.
+
+
+Test # 753
+handCount: 127
+deckCount: 127
+Failed to increase number of cards by 2.
+
+
+Test # 754
+handCount: 230
+deckCount: 230
+Failed to increase number of cards by 2.
+
+
+Test # 755
+handCount: 440
+deckCount: 440
+Failed to trash 2 cards.
+
+
+Test # 756
+handCount: 216
+deckCount: 216
+Failed to increase number of cards by 2.
+
+
+Test # 757
+handCount: 385
+deckCount: 385
+Failed to increase the number of coins by 2.
+
+
+Test # 758
+handCount: 395
+deckCount: 395
+Failed to trash 2 cards.
+
+
+Test # 759
+handCount: 375
+deckCount: 375
+Failed to increase number of cards by 2.
+
+
+Test # 760
+handCount: 156
+deckCount: 156
+Failed to trash 2 cards.
+
+
+Test # 761
+handCount: 205
+deckCount: 205
+Failed to trash 2 cards.
+
+
+Test # 762
+handCount: 343
+deckCount: 343
+Failed to increase number of cards by 2.
+
+
+Test # 763
+handCount: 445
+deckCount: 445
+Failed to increase the number of coins by 2.
+
+
+Test # 764
+handCount: 341
+deckCount: 341
+Failed to increase the number of coins by 2.
+
+
+Test # 765
+handCount: 457
+deckCount: 457
+Failed to increase the number of coins by 2.
+
+
+Test # 766
+handCount: 179
+deckCount: 179
+Failed to increase number of cards by 2.
+
+
+Test # 767
+handCount: 494
+deckCount: 494
+Failed to increase the number of coins by 2.
+
+
+Test # 768
+handCount: 485
+deckCount: 485
+Failed to increase number of cards by 2.
+
+
+Test # 769
+handCount: 396
+deckCount: 396
+Failed to increase number of cards by 2.
+
+
+Test # 770
+handCount: 91
+deckCount: 91
+Failed to trash 2 cards.
+
+
+Test # 771
+handCount: 414
+deckCount: 414
+Failed to increase number of cards by 2.
+
+
+Test # 772
+handCount: 456
+deckCount: 456
+Failed to increase the number of coins by 2.
+
+
+Test # 773
+handCount: 493
+deckCount: 493
+Failed to increase the number of coins by 2.
+
+
+Test # 774
+handCount: 15
+deckCount: 15
+Failed to trash 2 cards.
+
+
+Test # 775
+handCount: 47
+deckCount: 47
+Failed to increase number of cards by 2.
+
+
+Test # 776
+handCount: 438
+deckCount: 438
+Failed to increase number of cards by 2.
+
+
+Test # 777
+handCount: 327
+deckCount: 327
+Failed to increase number of cards by 2.
+
+
+Test # 778
+handCount: 12
+deckCount: 12
+Failed to increase number of cards by 2.
+
+
+Test # 779
+handCount: 321
+deckCount: 321
+Failed to increase the number of coins by 2.
+
+
+Test # 780
+handCount: 66
+deckCount: 66
+Failed to increase number of cards by 2.
+
+
+Test # 781
+handCount: 192
+deckCount: 192
+Failed to increase number of cards by 2.
+
+
+Test # 782
+handCount: 68
+deckCount: 68
+Failed to increase the number of coins by 2.
+
+
+Test # 783
+handCount: 250
+deckCount: 250
+Failed to increase the number of coins by 2.
+
+
+Test # 784
+handCount: 460
+deckCount: 460
+Failed to trash 2 cards.
+
+
+Test # 785
+handCount: 354
+deckCount: 354
+Failed to trash 2 cards.
+
+
+Test # 786
+handCount: 483
+deckCount: 483
+Failed to increase number of cards by 2.
+
+
+Test # 787
+handCount: 140
+deckCount: 140
+Failed to increase the number of coins by 2.
+
+
+Test # 788
+handCount: 311
+deckCount: 311
+Failed to increase number of cards by 2.
+
+
+Test # 789
+handCount: 345
+deckCount: 345
+Failed to trash 2 cards.
+
+
+Test # 790
+handCount: 78
+deckCount: 78
+Failed to trash 2 cards.
+
+
+Test # 791
+handCount: 496
+deckCount: 496
+Failed to increase the number of coins by 2.
+
+
+Test # 792
+handCount: 26
+deckCount: 26
+Failed to increase number of cards by 2.
+
+
+Test # 793
+handCount: 165
+deckCount: 165
+Failed to increase the number of coins by 2.
+
+
+Test # 794
+handCount: 225
+deckCount: 225
+Failed to trash 2 cards.
+
+
+Test # 795
+handCount: 18
+deckCount: 18
+Failed to trash 2 cards.
+
+
+Test # 796
+handCount: 426
+deckCount: 426
+Failed to trash 2 cards.
+
+
+Test # 797
+handCount: 210
+deckCount: 210
+Failed to increase number of cards by 2.
+
+
+Test # 798
+handCount: 456
+deckCount: 456
+Failed to increase the number of coins by 2.
+
+
+Test # 799
+handCount: 298
+deckCount: 298
+Failed to increase number of cards by 2.
+
+
+Test # 800
+handCount: 398
+deckCount: 398
+Failed to increase the number of coins by 2.
+
+
+Test # 801
+handCount: 481
+deckCount: 481
+Failed to trash 2 cards.
+
+
+Test # 802
+handCount: 372
+deckCount: 372
+Failed to increase number of cards by 2.
+
+
+Test # 803
+handCount: 493
+deckCount: 493
+Failed to trash 2 cards.
+
+
+Test # 804
+handCount: 256
+deckCount: 256
+Failed to increase the number of coins by 2.
+
+
+Test # 805
+handCount: 53
+deckCount: 53
+Failed to increase the number of coins by 2.
+
+
+Test # 806
+handCount: 148
+deckCount: 148
+Failed to increase the number of coins by 2.
+
+
+Test # 807
+handCount: 121
+deckCount: 121
+Failed to increase the number of coins by 2.
+
+
+Test # 808
+handCount: 492
+deckCount: 492
+Failed to trash 2 cards.
+
+
+Test # 809
+handCount: 99
+deckCount: 99
+Failed to increase number of cards by 2.
+
+
+Test # 810
+handCount: 88
+deckCount: 88
+Failed to increase the number of coins by 2.
+
+
+Test # 811
+handCount: 406
+deckCount: 406
+Failed to increase number of cards by 2.
+
+
+Test # 812
+handCount: 144
+deckCount: 144
+Failed to increase number of cards by 2.
+
+
+Test # 813
+handCount: 424
+deckCount: 424
+Failed to increase the number of coins by 2.
+
+
+Test # 814
+handCount: 482
+deckCount: 482
+Failed to trash 2 cards.
+
+
+Test # 815
+handCount: 83
+deckCount: 83
+Failed to trash 2 cards.
+
+
+Test # 816
+handCount: 406
+deckCount: 406
+Failed to increase the number of coins by 2.
+
+
+Test # 817
+handCount: 115
+deckCount: 115
+Failed to increase the number of coins by 2.
+
+
+Test # 818
+handCount: 318
+deckCount: 318
+Failed to increase number of cards by 2.
+
+
+Test # 819
+handCount: 49
+deckCount: 49
+Failed to trash 2 cards.
+
+
+Test # 820
+handCount: 94
+deckCount: 94
+Failed to increase the number of coins by 2.
+
+
+Test # 821
+handCount: 246
+deckCount: 246
+Failed to trash 2 cards.
+
+
+Test # 822
+handCount: 133
+deckCount: 133
+Failed to increase the number of coins by 2.
+
+
+Test # 823
+handCount: 104
+deckCount: 104
+Failed to increase the number of coins by 2.
+
+
+Test # 824
+handCount: 123
+deckCount: 123
+Failed to increase the number of coins by 2.
+
+
+Test # 825
+handCount: 474
+deckCount: 474
+Failed to increase the number of coins by 2.
+
+
+Test # 826
+handCount: 410
+deckCount: 410
+Failed to increase the number of coins by 2.
+
+
+Test # 827
+handCount: 148
+deckCount: 148
+Failed to increase the number of coins by 2.
+
+
+Test # 828
+handCount: 92
+deckCount: 92
+Failed to increase number of cards by 2.
+
+
+Test # 829
+handCount: 481
+deckCount: 481
+Failed to increase number of cards by 2.
+
+
+Test # 830
+handCount: 303
+deckCount: 303
+Failed to trash 2 cards.
+
+
+Test # 831
+handCount: 483
+deckCount: 483
+Failed to trash 2 cards.
+
+
+Test # 832
+handCount: 116
+deckCount: 116
+Failed to increase the number of coins by 2.
+
+
+Test # 833
+handCount: 451
+deckCount: 451
+Failed to trash 2 cards.
+
+
+Test # 834
+handCount: 206
+deckCount: 206
+Failed to trash 2 cards.
+
+
+Test # 835
+handCount: 278
+deckCount: 278
+Failed to increase number of cards by 2.
+
+
+Test # 836
+handCount: 180
+deckCount: 180
+Failed to increase number of cards by 2.
+
+
+Test # 837
+handCount: 356
+deckCount: 356
+Failed to trash 2 cards.
+
+
+Test # 838
+handCount: 412
+deckCount: 412
+Failed to increase number of cards by 2.
+
+
+Test # 839
+handCount: 482
+deckCount: 482
+Failed to increase number of cards by 2.
+
+
+Test # 840
+handCount: 4
+deckCount: 4
+Failed to increase number of cards by 2.
+
+
+Test # 841
+handCount: 367
+deckCount: 367
+Failed to trash 2 cards.
+
+
+Test # 842
+handCount: 47
+deckCount: 47
+Failed to increase the number of coins by 2.
+
+
+Test # 843
+handCount: 369
+deckCount: 369
+Failed to increase the number of coins by 2.
+
+
+Test # 844
+handCount: 421
+deckCount: 421
+Failed to increase the number of coins by 2.
+
+
+Test # 845
+handCount: 420
+deckCount: 420
+Failed to increase number of cards by 2.
+
+
+Test # 846
+handCount: 132
+deckCount: 132
+Failed to increase number of cards by 2.
+
+
+Test # 847
+handCount: 122
+deckCount: 122
+Failed to increase the number of coins by 2.
+
+
+Test # 848
+handCount: 283
+deckCount: 283
+Failed to increase the number of coins by 2.
+
+
+Test # 849
+handCount: 130
+deckCount: 130
+Failed to trash 2 cards.
+
+
+Test # 850
+handCount: 223
+deckCount: 223
+Failed to increase number of cards by 2.
+
+
+Test # 851
+handCount: 220
+deckCount: 220
+Failed to increase the number of coins by 2.
+
+
+Test # 852
+handCount: 425
+deckCount: 425
+Failed to increase number of cards by 2.
+
+
+Test # 853
+handCount: 288
+deckCount: 288
+Failed to increase number of cards by 2.
+
+
+Test # 854
+handCount: 155
+deckCount: 155
+Failed to increase the number of coins by 2.
+
+
+Test # 855
+handCount: 377
+deckCount: 377
+Failed to trash 2 cards.
+
+
+Test # 856
+handCount: 481
+deckCount: 481
+Failed to trash 2 cards.
+
+
+Test # 857
+handCount: 437
+deckCount: 437
+Failed to trash 2 cards.
+
+
+Test # 858
+handCount: 86
+deckCount: 86
+Failed to increase the number of coins by 2.
+
+
+Test # 859
+handCount: 318
+deckCount: 318
+Failed to increase the number of coins by 2.
+
+
+Test # 860
+handCount: 216
+deckCount: 216
+Failed to increase the number of coins by 2.
+
+
+Test # 861
+handCount: 423
+deckCount: 423
+Failed to increase the number of coins by 2.
+
+
+Test # 862
+handCount: 471
+deckCount: 471
+Failed to increase the number of coins by 2.
+
+
+Test # 863
+handCount: 115
+deckCount: 115
+Failed to increase number of cards by 2.
+
+
+Test # 864
+handCount: 466
+deckCount: 466
+Failed to increase the number of coins by 2.
+
+
+Test # 865
+handCount: 443
+deckCount: 443
+Failed to trash 2 cards.
+
+
+Test # 866
+handCount: 51
+deckCount: 51
+Failed to trash 2 cards.
+
+
+Test # 867
+handCount: 178
+deckCount: 178
+Failed to increase number of cards by 2.
+
+
+Test # 868
+handCount: 453
+deckCount: 453
+Failed to trash 2 cards.
+
+
+Test # 869
+handCount: 93
+deckCount: 93
+Failed to increase the number of coins by 2.
+
+
+Test # 870
+handCount: 13
+deckCount: 13
+Failed to increase the number of coins by 2.
+
+
+Test # 871
+handCount: 235
+deckCount: 235
+Failed to increase number of cards by 2.
+
+
+Test # 872
+handCount: 213
+deckCount: 213
+Failed to increase the number of coins by 2.
+
+
+Test # 873
+handCount: 139
+deckCount: 139
+Failed to increase number of cards by 2.
+
+
+Test # 874
+handCount: 277
+deckCount: 277
+Failed to increase the number of coins by 2.
+
+
+Test # 875
+handCount: 334
+deckCount: 334
+Failed to increase number of cards by 2.
+
+
+Test # 876
+handCount: 114
+deckCount: 114
+Failed to increase the number of coins by 2.
+
+
+Test # 877
+handCount: 454
+deckCount: 454
+Failed to increase number of cards by 2.
+
+
+Test # 878
+handCount: 215
+deckCount: 215
+Failed to increase the number of coins by 2.
+
+
+Test # 879
+handCount: 205
+deckCount: 205
+Failed to trash 2 cards.
+
+
+Test # 880
+handCount: 165
+deckCount: 165
+Failed to increase number of cards by 2.
+
+
+Test # 881
+handCount: 6
+deckCount: 6
+Failed to trash 2 cards.
+
+
+Test # 882
+handCount: 15
+deckCount: 15
+Failed to increase number of cards by 2.
+
+
+Test # 883
+handCount: 352
+deckCount: 352
+Failed to increase the number of coins by 2.
+
+
+Test # 884
+handCount: 373
+deckCount: 373
+Failed to increase number of cards by 2.
+
+
+Test # 885
+handCount: 245
+deckCount: 245
+Failed to increase number of cards by 2.
+
+
+Test # 886
+handCount: 280
+deckCount: 280
+Failed to trash 2 cards.
+
+
+Test # 887
+handCount: 252
+deckCount: 252
+Failed to trash 2 cards.
+
+
+Test # 888
+handCount: 460
+deckCount: 460
+Failed to trash 2 cards.
+
+
+Test # 889
+handCount: 187
+deckCount: 187
+Failed to increase number of cards by 2.
+
+
+Test # 890
+handCount: 143
+deckCount: 143
+Failed to trash 2 cards.
+
+
+Test # 891
+handCount: 164
+deckCount: 164
+Failed to increase number of cards by 2.
+
+
+Test # 892
+handCount: 118
+deckCount: 118
+Failed to increase number of cards by 2.
+
+
+Test # 893
+handCount: 263
+deckCount: 263
+Failed to increase number of cards by 2.
+
+
+Test # 894
+handCount: 117
+deckCount: 117
+Failed to increase the number of coins by 2.
+
+
+Test # 895
+handCount: 186
+deckCount: 186
+Failed to increase number of cards by 2.
+
+
+Test # 896
+handCount: 385
+deckCount: 385
+Failed to trash 2 cards.
+
+
+Test # 897
+handCount: 460
+deckCount: 460
+Failed to increase number of cards by 2.
+
+
+Test # 898
+handCount: 318
+deckCount: 318
+Failed to trash 2 cards.
+
+
+Test # 899
+handCount: 490
+deckCount: 490
+Failed to increase the number of coins by 2.
+
+
+Test # 900
+handCount: 469
+deckCount: 469
+Failed to trash 2 cards.
+
+
+Test # 901
+handCount: 276
+deckCount: 276
+Failed to trash 2 cards.
+
+
+Test # 902
+handCount: 469
+deckCount: 469
+Failed to increase number of cards by 2.
+
+
+Test # 903
+handCount: 14
+deckCount: 14
+Failed to increase the number of coins by 2.
+
+
+Test # 904
+handCount: 385
+deckCount: 385
+Failed to increase number of cards by 2.
+
+
+Test # 905
+handCount: 412
+deckCount: 412
+Failed to trash 2 cards.
+
+
+Test # 906
+handCount: 106
+deckCount: 106
+Failed to increase number of cards by 2.
+
+
+Test # 907
+handCount: 19
+deckCount: 19
+Failed to increase the number of coins by 2.
+
+
+Test # 908
+handCount: 270
+deckCount: 270
+Failed to trash 2 cards.
+
+
+Test # 909
+handCount: 370
+deckCount: 370
+Failed to trash 2 cards.
+
+
+Test # 910
+handCount: 216
+deckCount: 216
+Failed to trash 2 cards.
+
+
+Test # 911
+handCount: 486
+deckCount: 486
+Failed to trash 2 cards.
+
+
+Test # 912
+handCount: 89
+deckCount: 89
+Failed to increase the number of coins by 2.
+
+
+Test # 913
+handCount: 60
+deckCount: 60
+Failed to increase the number of coins by 2.
+
+
+Test # 914
+handCount: 9
+deckCount: 9
+Failed to trash 2 cards.
+
+
+Test # 915
+handCount: 290
+deckCount: 290
+Failed to trash 2 cards.
+
+
+Test # 916
+handCount: 139
+deckCount: 139
+Failed to increase the number of coins by 2.
+
+
+Test # 917
+handCount: 45
+deckCount: 45
+Failed to trash 2 cards.
+
+
+Test # 918
+handCount: 163
+deckCount: 163
+Failed to trash 2 cards.
+
+
+Test # 919
+handCount: 393
+deckCount: 393
+Failed to trash 2 cards.
+
+
+Test # 920
+handCount: 268
+deckCount: 268
+Failed to increase number of cards by 2.
+
+
+Test # 921
+handCount: 368
+deckCount: 368
+Failed to trash 2 cards.
+
+
+Test # 922
+handCount: 453
+deckCount: 453
+Failed to trash 2 cards.
+
+
+Test # 923
+handCount: 34
+deckCount: 34
+Failed to trash 2 cards.
+
+
+Test # 924
+handCount: 405
+deckCount: 405
+Failed to increase the number of coins by 2.
+
+
+Test # 925
+handCount: 211
+deckCount: 211
+Failed to trash 2 cards.
+
+
+Test # 926
+handCount: 126
+deckCount: 126
+Failed to increase number of cards by 2.
+
+
+Test # 927
+handCount: 361
+deckCount: 361
+Failed to increase number of cards by 2.
+
+
+Test # 928
+handCount: 29
+deckCount: 29
+Failed to trash 2 cards.
+
+
+Test # 929
+handCount: 336
+deckCount: 336
+Failed to trash 2 cards.
+
+
+Test # 930
+handCount: 329
+deckCount: 329
+Failed to trash 2 cards.
+
+
+Test # 931
+handCount: 398
+deckCount: 398
+Failed to increase number of cards by 2.
+
+
+Test # 932
+handCount: 187
+deckCount: 187
+Failed to increase number of cards by 2.
+
+
+Test # 933
+handCount: 71
+deckCount: 71
+Failed to trash 2 cards.
+
+
+Test # 934
+handCount: 310
+deckCount: 310
+Failed to increase number of cards by 2.
+
+
+Test # 935
+handCount: 447
+deckCount: 447
+Failed to increase the number of coins by 2.
+
+
+Test # 936
+handCount: 351
+deckCount: 351
+Failed to trash 2 cards.
+
+
+Test # 937
+handCount: 115
+deckCount: 115
+Failed to trash 2 cards.
+
+
+Test # 938
+handCount: 223
+deckCount: 223
+Failed to increase the number of coins by 2.
+
+
+Test # 939
+handCount: 377
+deckCount: 377
+Failed to increase the number of coins by 2.
+
+
+Test # 940
+handCount: 218
+deckCount: 218
+Failed to increase the number of coins by 2.
+
+
+Test # 941
+handCount: 330
+deckCount: 330
+Failed to increase number of cards by 2.
+
+
+Test # 942
+handCount: 355
+deckCount: 355
+Failed to increase the number of coins by 2.
+
+
+Test # 943
+handCount: 8
+deckCount: 8
+Failed to increase number of cards by 2.
+
+
+Test # 944
+handCount: 390
+deckCount: 390
+Failed to increase number of cards by 2.
+
+
+Test # 945
+handCount: 21
+deckCount: 21
+Failed to trash 2 cards.
+
+
+Test # 946
+handCount: 94
+deckCount: 94
+Failed to increase the number of coins by 2.
+
+
+Test # 947
+handCount: 180
+deckCount: 180
+Failed to increase the number of coins by 2.
+
+
+Test # 948
+handCount: 494
+deckCount: 494
+Failed to increase number of cards by 2.
+
+
+Test # 949
+handCount: 383
+deckCount: 383
+Failed to trash 2 cards.
+
+
+Test # 950
+handCount: 53
+deckCount: 53
+Failed to increase the number of coins by 2.
+
+
+Test # 951
+handCount: 382
+deckCount: 382
+Failed to increase number of cards by 2.
+
+
+Test # 952
+handCount: 395
+deckCount: 395
+Failed to increase the number of coins by 2.
+
+
+Test # 953
+handCount: 208
+deckCount: 208
+Failed to increase the number of coins by 2.
+
+
+Test # 954
+handCount: 203
+deckCount: 203
+Failed to trash 2 cards.
+
+
+Test # 955
+handCount: 496
+deckCount: 496
+Failed to trash 2 cards.
+
+
+Test # 956
+handCount: 8
+deckCount: 8
+Failed to trash 2 cards.
+
+
+Test # 957
+handCount: 90
+deckCount: 90
+Failed to increase the number of coins by 2.
+
+
+Test # 958
+handCount: 184
+deckCount: 184
+Failed to increase the number of coins by 2.
+
+
+Test # 959
+handCount: 470
+deckCount: 470
+Failed to trash 2 cards.
+
+
+Test # 960
+handCount: 181
+deckCount: 181
+Failed to trash 2 cards.
+
+
+Test # 961
+handCount: 455
+deckCount: 455
+Failed to increase the number of coins by 2.
+
+
+Test # 962
+handCount: 167
+deckCount: 167
+Failed to increase number of cards by 2.
+
+
+Test # 963
+handCount: 96
+deckCount: 96
+Failed to increase number of cards by 2.
+
+
+Test # 964
+handCount: 88
+deckCount: 88
+Failed to trash 2 cards.
+
+
+Test # 965
+handCount: 277
+deckCount: 277
+Failed to trash 2 cards.
+
+
+Test # 966
+handCount: 385
+deckCount: 385
+Failed to increase the number of coins by 2.
+
+
+Test # 967
+handCount: 459
+deckCount: 459
+Failed to trash 2 cards.
+
+
+Test # 968
+handCount: 247
+deckCount: 247
+Failed to trash 2 cards.
+
+
+Test # 969
+handCount: 409
+deckCount: 409
+Failed to increase number of cards by 2.
+
+
+Test # 970
+handCount: 133
+deckCount: 133
+Failed to trash 2 cards.
+
+
+Test # 971
+handCount: 107
+deckCount: 107
+Failed to increase the number of coins by 2.
+
+
+Test # 972
+handCount: 458
+deckCount: 458
+Failed to trash 2 cards.
+
+
+Test # 973
+handCount: 377
+deckCount: 377
+Failed to increase number of cards by 2.
+
+
+Test # 974
+handCount: 432
+deckCount: 432
+Failed to trash 2 cards.
+
+
+Test # 975
+handCount: 212
+deckCount: 212
+Failed to increase the number of coins by 2.
+
+
+Test # 976
+handCount: 222
+deckCount: 222
+Failed to increase the number of coins by 2.
+
+
+Test # 977
+handCount: 238
+deckCount: 238
+Failed to trash 2 cards.
+
+
+Test # 978
+handCount: 7
+deckCount: 7
+Failed to increase the number of coins by 2.
+
+
+Test # 979
+handCount: 208
+deckCount: 208
+Failed to increase the number of coins by 2.
+
+
+Test # 980
+handCount: 260
+deckCount: 260
+Failed to trash 2 cards.
+
+
+Test # 981
+handCount: 361
+deckCount: 361
+Failed to trash 2 cards.
+
+
+Test # 982
+handCount: 157
+deckCount: 157
+Failed to increase number of cards by 2.
+
+
+Test # 983
+handCount: 455
+deckCount: 455
+Failed to trash 2 cards.
+
+
+Test # 984
+handCount: 320
+deckCount: 320
+Failed to increase the number of coins by 2.
+
+
+Test # 985
+handCount: 460
+deckCount: 460
+Failed to trash 2 cards.
+
+
+Test # 986
+handCount: 185
+deckCount: 185
+Failed to trash 2 cards.
+
+
+Test # 987
+handCount: 428
+deckCount: 428
+Failed to increase the number of coins by 2.
+
+
+Test # 988
+handCount: 123
+deckCount: 123
+Failed to increase the number of coins by 2.
+
+
+Test # 989
+handCount: 223
+deckCount: 223
+Failed to increase the number of coins by 2.
+
+
+Test # 990
+handCount: 209
+deckCount: 209
+Failed to trash 2 cards.
+
+
+Test # 991
+handCount: 442
+deckCount: 442
+Failed to increase the number of coins by 2.
+
+
+Test # 992
+handCount: 466
+deckCount: 466
+Failed to trash 2 cards.
+
+
+Test # 993
+handCount: 370
+deckCount: 370
+Failed to increase the number of coins by 2.
+
+
+Test # 994
+handCount: 128
+deckCount: 128
+Failed to trash 2 cards.
+
+
+Test # 995
+handCount: 223
+deckCount: 223
+Failed to increase the number of coins by 2.
+
+
+Test # 996
+handCount: 319
+deckCount: 319
+Failed to increase the number of coins by 2.
+
+
+Test # 997
+handCount: 80
+deckCount: 80
+Failed to trash 2 cards.
+
+
+Test # 998
+handCount: 186
+deckCount: 186
+Failed to increase the number of coins by 2.
+
+
+Test # 999
+handCount: 5
+deckCount: 5
+Failed to increase number of cards by 2.
+
+
+Test # 1000
+handCount: 121
+deckCount: 121
+Failed to trash 2 cards.
+
+1000 tests failed of 1000
+Testing Complete
+
+File 'dominion.c'
+Lines executed:24.57% of 586
+dominion.c:creating 'dominion.c.gcov'
+
+        -:    0:Source:dominion.c
+        -:    0:Graph:dominion.gcno
+        -:    0:Data:dominion.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:
+        -:    8:
+        -:    9:
+    17940:   10:int compare(const void* a, const void* b) {
+    17940:   11:  if (*(int*)a > *(int*)b)
+    #####:   12:    return 1;
+    17940:   13:  if (*(int*)a < *(int*)b)
+     4784:   14:    return -1;
+    13156:   15:  return 0;
+        -:   16:}
+        -:   17:
+    #####:   18:struct gameState* newGame() {
+    #####:   19:  struct gameState* g = malloc(sizeof(struct gameState));
+    #####:   20:  return g;
+        -:   21:}
+        -:   22:
+    #####:   23:int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+        -:   24:		  int k8, int k9, int k10) {
+    #####:   25:  int* k = malloc(10 * sizeof(int));
+    #####:   26:  k[0] = k1;
+    #####:   27:  k[1] = k2;
+    #####:   28:  k[2] = k3;
+    #####:   29:  k[3] = k4;
+    #####:   30:  k[4] = k5;
+    #####:   31:  k[5] = k6;
+    #####:   32:  k[6] = k7;
+    #####:   33:  k[7] = k8;
+    #####:   34:  k[8] = k9;
+    #####:   35:  k[9] = k10;
+    #####:   36:  return k;
+        -:   37:}
+        -:   38:
+     1000:   39:int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+        -:   40:		   struct gameState *state) {
+        -:   41:
+        -:   42:  int i;
+        -:   43:  int j;
+        -:   44:  int it;			
+        -:   45:  //set up random number generator
+     1000:   46:  SelectStream(1);
+     1000:   47:  PutSeed((long)randomSeed);
+        -:   48:  
+        -:   49:  //check number of players
+     1000:   50:  if (numPlayers > MAX_PLAYERS || numPlayers < 2)
+        -:   51:    {
+      524:   52:      return -1;
+        -:   53:    }
+        -:   54:
+        -:   55:  //set number of players
+      476:   56:  state->numPlayers = numPlayers;
+        -:   57:
+        -:   58:  //check selected kingdom cards are different
+     5236:   59:  for (i = 0; i < 10; i++)
+        -:   60:    {
+    52360:   61:      for (j = 0; j < 10; j++)
+        -:   62:        {
+    47600:   63:	  if (j != i && kingdomCards[j] == kingdomCards[i])
+        -:   64:	    {
+    #####:   65:	      return -1;
+        -:   66:	    }
+        -:   67:        }
+        -:   68:    }
+        -:   69:
+        -:   70:
+        -:   71:  //initialize supply
+        -:   72:  ///////////////////////////////
+        -:   73:
+        -:   74:  //set number of Curse cards
+      476:   75:  if (numPlayers == 2)
+        -:   76:    {
+      232:   77:      state->supplyCount[curse] = 10;
+        -:   78:    }
+      244:   79:  else if (numPlayers == 3)
+        -:   80:    {
+      244:   81:      state->supplyCount[curse] = 20;
+        -:   82:    }
+        -:   83:  else
+        -:   84:    {
+    #####:   85:      state->supplyCount[curse] = 30;
+        -:   86:    }
+        -:   87:
+        -:   88:  //set number of Victory cards
+      476:   89:  if (numPlayers == 2)
+        -:   90:    {
+      232:   91:      state->supplyCount[estate] = 8;
+      232:   92:      state->supplyCount[duchy] = 8;
+      232:   93:      state->supplyCount[province] = 8;
+        -:   94:    }
+        -:   95:  else
+        -:   96:    {
+      244:   97:      state->supplyCount[estate] = 12;
+      244:   98:      state->supplyCount[duchy] = 12;
+      244:   99:      state->supplyCount[province] = 12;
+        -:  100:    }
+        -:  101:
+        -:  102:  //set number of Treasure cards
+      476:  103:  state->supplyCount[copper] = 60 - (7 * numPlayers);
+      476:  104:  state->supplyCount[silver] = 40;
+      476:  105:  state->supplyCount[gold] = 30;
+        -:  106:
+        -:  107:  //set number of Kingdom cards
+     9996:  108:  for (i = adventurer; i <= treasure_map; i++)       	//loop all cards
+        -:  109:    {
+    78540:  110:      for (j = 0; j < 10; j++)           		//loop chosen cards
+        -:  111:	{
+    73780:  112:	  if (kingdomCards[j] == i)
+        -:  113:	    {
+        -:  114:	      //check if card is a 'Victory' Kingdom card
+     5236:  115:	      if (kingdomCards[j] == great_hall || kingdomCards[j] == gardens)
+        -:  116:		{
+      476:  117:		  if (numPlayers == 2){ 
+      232:  118:		    state->supplyCount[i] = 8; 
+        -:  119:		  }
+      244:  120:		  else{ state->supplyCount[i] = 12; }
+        -:  121:		}
+        -:  122:	      else
+        -:  123:		{
+     4284:  124:		  state->supplyCount[i] = 10;
+        -:  125:		}
+     4760:  126:	      break;
+        -:  127:	    }
+        -:  128:	  else    //card is not in the set choosen for the game
+        -:  129:	    {
+    69020:  130:	      state->supplyCount[i] = -1;
+        -:  131:	    }
+        -:  132:	}
+        -:  133:
+        -:  134:    }
+        -:  135:
+        -:  136:  ////////////////////////
+        -:  137:  //supply intilization complete
+        -:  138:
+        -:  139:  //set player decks
+     1672:  140:  for (i = 0; i < numPlayers; i++)
+        -:  141:    {
+     1196:  142:      state->deckCount[i] = 0;
+     4784:  143:      for (j = 0; j < 3; j++)
+        -:  144:	{
+     3588:  145:	  state->deck[i][j] = estate;
+     3588:  146:	  state->deckCount[i]++;
+        -:  147:	}
+     9568:  148:      for (j = 3; j < 10; j++)
+        -:  149:	{
+     8372:  150:	  state->deck[i][j] = copper;
+     8372:  151:	  state->deckCount[i]++;		
+        -:  152:	}
+        -:  153:    }
+        -:  154:
+        -:  155:  //shuffle player decks
+     1672:  156:  for (i = 0; i < numPlayers; i++)
+        -:  157:    {
+     1196:  158:      if ( shuffle(i, state) < 0 )
+        -:  159:	{
+    #####:  160:	  return -1;
+        -:  161:	}
+        -:  162:    }
+        -:  163:
+        -:  164:  //draw player hands
+     1672:  165:  for (i = 0; i < numPlayers; i++)
+        -:  166:    {  
+        -:  167:      //initialize hand size to zero
+     1196:  168:      state->handCount[i] = 0;
+     1196:  169:      state->discardCount[i] = 0;
+        -:  170:      //draw 5 cards
+        -:  171:      // for (j = 0; j < 5; j++)
+        -:  172:      //	{
+        -:  173:      //	  drawCard(i, state);
+        -:  174:      //	}
+        -:  175:    }
+        -:  176:  
+        -:  177:  //set embargo tokens to 0 for all supply piles
+    13328:  178:  for (i = 0; i <= treasure_map; i++)
+        -:  179:    {
+    12852:  180:      state->embargoTokens[i] = 0;
+        -:  181:    }
+        -:  182:
+        -:  183:  //initialize first player's turn
+      476:  184:  state->outpostPlayed = 0;
+      476:  185:  state->phase = 0;
+      476:  186:  state->numActions = 1;
+      476:  187:  state->numBuys = 1;
+      476:  188:  state->playedCardCount = 0;
+      476:  189:  state->whoseTurn = 0;
+      476:  190:  state->handCount[state->whoseTurn] = 0;
+        -:  191:  //int it; move to top
+        -:  192:
+        -:  193:  //Moved draw cards to here, only drawing at the start of a turn
+     2856:  194:  for (it = 0; it < 5; it++){
+     2380:  195:    drawCard(state->whoseTurn, state);
+        -:  196:  }
+        -:  197:
+      476:  198:  updateCoins(state->whoseTurn, state, 0);
+        -:  199:
+      476:  200:  return 0;
+        -:  201:}
+        -:  202:
+     1196:  203:int shuffle(int player, struct gameState *state) {
+        -:  204: 
+        -:  205:
+        -:  206:  int newDeck[MAX_DECK];
+     1196:  207:  int newDeckPos = 0;
+        -:  208:  int card;
+        -:  209:  int i;
+        -:  210:
+     1196:  211:  if (state->deckCount[player] < 1)
+    #####:  212:    return -1;
+     1196:  213:  qsort ((void*)(state->deck[player]), state->deckCount[player], sizeof(int), compare); 
+        -:  214:  /* SORT CARDS IN DECK TO ENSURE DETERMINISM! */
+        -:  215:
+    14352:  216:  while (state->deckCount[player] > 0) {
+    11960:  217:    card = floor(Random() * state->deckCount[player]);
+    11960:  218:    newDeck[newDeckPos] = state->deck[player][card];
+    11960:  219:    newDeckPos++;
+    40791:  220:    for (i = card; i < state->deckCount[player]-1; i++) {
+    28831:  221:      state->deck[player][i] = state->deck[player][i+1];
+        -:  222:    }
+    11960:  223:    state->deckCount[player]--;
+        -:  224:  }
+    13156:  225:  for (i = 0; i < newDeckPos; i++) {
+    11960:  226:    state->deck[player][i] = newDeck[i];
+    11960:  227:    state->deckCount[player]++;
+        -:  228:  }
+        -:  229:
+     1196:  230:  return 0;
+        -:  231:}
+        -:  232:
+     1000:  233:int playCard(int handPos, int choice1, int choice2, int choice3, struct gameState *state) 
+        -:  234:{	
+        -:  235:  int card;
+     1000:  236:  int coin_bonus = 0; 		//tracks coins gain from actions
+        -:  237:
+        -:  238:  //check if it is the right phase
+     1000:  239:  if (state->phase != 0)
+        -:  240:    {
+    #####:  241:      return -1;
+        -:  242:    }
+        -:  243:	
+        -:  244:  //check if player has enough actions
+     1000:  245:  if ( state->numActions < 1 )
+        -:  246:    {
+      383:  247:      return -1;
+        -:  248:    }
+        -:  249:	
+        -:  250:  //get card played
+      617:  251:  card = handCard(handPos, state);
+        -:  252:	
+        -:  253:  //check if selected card is an action
+      617:  254:  if ( card < adventurer || card > treasure_map )
+        -:  255:    {
+      292:  256:      return -1;
+        -:  257:    }
+        -:  258:	
+        -:  259:  //play card
+      325:  260:  if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) < 0 )
+        -:  261:    {
+    #####:  262:      return -1;
+        -:  263:    }
+        -:  264:	
+        -:  265:  //reduce number of actions
+      325:  266:  state->numActions--;
+        -:  267:
+        -:  268:  //update coins (Treasure cards may be added with card draws)
+      325:  269:  updateCoins(state->whoseTurn, state, coin_bonus);
+        -:  270:	
+      325:  271:  return 0;
+        -:  272:}
+        -:  273:
+    #####:  274:int buyCard(int supplyPos, struct gameState *state) {
+        -:  275:  int who;
+    #####:  276:  if (DEBUG){
+        -:  277:    printf("Entering buyCard...\n");
+        -:  278:  }
+        -:  279:
+        -:  280:  // I don't know what to do about the phase thing.
+        -:  281:
+    #####:  282:  who = state->whoseTurn;
+        -:  283:
+    #####:  284:  if (state->numBuys < 1){
+    #####:  285:    if (DEBUG)
+        -:  286:      printf("You do not have any buys left\n");
+    #####:  287:    return -1;
+    #####:  288:  } else if (supplyCount(supplyPos, state) <1){
+    #####:  289:    if (DEBUG)
+        -:  290:      printf("There are not any of that type of card left\n");
+    #####:  291:    return -1;
+    #####:  292:  } else if (state->coins < getCost(supplyPos)){
+    #####:  293:    if (DEBUG) 
+        -:  294:      printf("You do not have enough money to buy that. You have %d coins.\n", state->coins);
+    #####:  295:    return -1;
+        -:  296:  } else {
+    #####:  297:    state->phase=1;
+        -:  298:    //state->supplyCount[supplyPos]--;
+    #####:  299:    gainCard(supplyPos, state, 0, who); //card goes in discard, this might be wrong.. (2 means goes into hand, 0 goes into discard)
+        -:  300:  
+    #####:  301:    state->coins = (state->coins) - (getCost(supplyPos));
+    #####:  302:    state->numBuys--;
+    #####:  303:    if (DEBUG)
+        -:  304:      printf("You bought card number %d for %d coins. You now have %d buys and %d coins.\n", supplyPos, getCost(supplyPos), state->numBuys, state->coins);
+        -:  305:  }
+        -:  306:
+        -:  307:  //state->discard[who][state->discardCount[who]] = supplyPos;
+        -:  308:  //state->discardCount[who]++;
+        -:  309:    
+    #####:  310:  return 0;
+        -:  311:}
+        -:  312:
+    #####:  313:int numHandCards(struct gameState *state) {
+    #####:  314:  return state->handCount[ whoseTurn(state) ];
+        -:  315:}
+        -:  316:
+      617:  317:int handCard(int handPos, struct gameState *state) {
+      617:  318:  int currentPlayer = whoseTurn(state);
+      617:  319:  return state->hand[currentPlayer][handPos];
+        -:  320:}
+        -:  321:
+    #####:  322:int supplyCount(int card, struct gameState *state) {
+    #####:  323:  return state->supplyCount[card];
+        -:  324:}
+        -:  325:
+    #####:  326:int fullDeckCount(int player, int card, struct gameState *state) {
+        -:  327:  int i;
+    #####:  328:  int count = 0;
+        -:  329:
+    #####:  330:  for (i = 0; i < state->deckCount[player]; i++)
+        -:  331:    {
+    #####:  332:      if (state->deck[player][i] == card) count++;
+        -:  333:    }
+        -:  334:
+    #####:  335:  for (i = 0; i < state->handCount[player]; i++)
+        -:  336:    {
+    #####:  337:      if (state->hand[player][i] == card) count++;
+        -:  338:    }
+        -:  339:
+    #####:  340:  for (i = 0; i < state->discardCount[player]; i++)
+        -:  341:    {
+    #####:  342:      if (state->discard[player][i] == card) count++;
+        -:  343:    }
+        -:  344:
+    #####:  345:  return count;
+        -:  346:}
+        -:  347:
+      942:  348:int whoseTurn(struct gameState *state) {
+      942:  349:  return state->whoseTurn;
+        -:  350:}
+        -:  351:
+    #####:  352:int endTurn(struct gameState *state) {
+        -:  353:  int k;
+        -:  354:  int i;
+    #####:  355:  int currentPlayer = whoseTurn(state);
+        -:  356:  
+        -:  357:  //Discard hand
+    #####:  358:  for (i = 0; i < state->handCount[currentPlayer]; i++){
+    #####:  359:    state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][i];//Discard
+    #####:  360:    state->hand[currentPlayer][i] = -1;//Set card to -1
+        -:  361:  }
+    #####:  362:  state->handCount[currentPlayer] = 0;//Reset hand count
+        -:  363:    
+        -:  364:  //Code for determining the player
+    #####:  365:  if (currentPlayer < (state->numPlayers - 1)){ 
+    #####:  366:    state->whoseTurn = currentPlayer + 1;//Still safe to increment
+        -:  367:  }
+        -:  368:  else{
+    #####:  369:    state->whoseTurn = 0;//Max player has been reached, loop back around to player 1
+        -:  370:  }
+        -:  371:
+    #####:  372:  state->outpostPlayed = 0;
+    #####:  373:  state->phase = 0;
+    #####:  374:  state->numActions = 1;
+    #####:  375:  state->coins = 0;
+    #####:  376:  state->numBuys = 1;
+    #####:  377:  state->playedCardCount = 0;
+    #####:  378:  state->handCount[state->whoseTurn] = 0;
+        -:  379:
+        -:  380:  //int k; move to top
+        -:  381:  //Next player draws hand
+    #####:  382:  for (k = 0; k < 5; k++){
+    #####:  383:    drawCard(state->whoseTurn, state);//Draw a card
+        -:  384:  }
+        -:  385:
+        -:  386:  //Update money
+    #####:  387:  updateCoins(state->whoseTurn, state , 0);
+        -:  388:
+    #####:  389:  return 0;
+        -:  390:}
+        -:  391:
+    #####:  392:int isGameOver(struct gameState *state) {
+        -:  393:  int i;
+        -:  394:  int j;
+        -:  395:	
+        -:  396:  //if stack of Province cards is empty, the game ends
+    #####:  397:  if (state->supplyCount[province] == 0)
+        -:  398:    {
+    #####:  399:      return 1;
+        -:  400:    }
+        -:  401:
+        -:  402:  //if three supply pile are at 0, the game ends
+    #####:  403:  j = 0;
+    #####:  404:  for (i = 0; i < 25; i++)
+        -:  405:    {
+    #####:  406:      if (state->supplyCount[i] == 0)
+        -:  407:	{
+    #####:  408:	  j++;
+        -:  409:	}
+        -:  410:    }
+    #####:  411:  if ( j >= 3)
+        -:  412:    {
+    #####:  413:      return 1;
+        -:  414:    }
+        -:  415:
+    #####:  416:  return 0;
+        -:  417:}
+        -:  418:
+    #####:  419:int scoreFor (int player, struct gameState *state) {
+        -:  420:
+        -:  421:  int i;
+    #####:  422:  int score = 0;
+        -:  423:  //score from hand
+    #####:  424:  for (i = 0; i < state->handCount[player]; i++)
+        -:  425:    {
+    #####:  426:      if (state->hand[player][i] == curse) { score = score - 1; };
+    #####:  427:      if (state->hand[player][i] == estate) { score = score + 1; };
+    #####:  428:      if (state->hand[player][i] == duchy) { score = score + 3; };
+    #####:  429:      if (state->hand[player][i] == province) { score = score + 6; };
+    #####:  430:      if (state->hand[player][i] == great_hall) { score = score + 1; };
+    #####:  431:      if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+        -:  432:    }
+        -:  433:
+        -:  434:  //score from discard
+    #####:  435:  for (i = 0; i < state->discardCount[player]; i++)
+        -:  436:    {
+    #####:  437:      if (state->discard[player][i] == curse) { score = score - 1; };
+    #####:  438:      if (state->discard[player][i] == estate) { score = score + 1; };
+    #####:  439:      if (state->discard[player][i] == duchy) { score = score + 3; };
+    #####:  440:      if (state->discard[player][i] == province) { score = score + 6; };
+    #####:  441:      if (state->discard[player][i] == great_hall) { score = score + 1; };
+    #####:  442:      if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+        -:  443:    }
+        -:  444:
+        -:  445:  //score from deck
+    #####:  446:  for (i = 0; i < state->discardCount[player]; i++)
+        -:  447:    {
+    #####:  448:      if (state->deck[player][i] == curse) { score = score - 1; };
+    #####:  449:      if (state->deck[player][i] == estate) { score = score + 1; };
+    #####:  450:      if (state->deck[player][i] == duchy) { score = score + 3; };
+    #####:  451:      if (state->deck[player][i] == province) { score = score + 6; };
+    #####:  452:      if (state->deck[player][i] == great_hall) { score = score + 1; };
+    #####:  453:      if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+        -:  454:    }
+        -:  455:
+    #####:  456:  return score;
+        -:  457:}
+        -:  458:
+    #####:  459:int getWinners(int players[MAX_PLAYERS], struct gameState *state) {
+        -:  460:  int i;	
+        -:  461:  int j;
+        -:  462:  int highScore;
+        -:  463:  int currentPlayer;
+        -:  464:
+        -:  465:  //get score for each player
+    #####:  466:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  467:    {
+        -:  468:      //set unused player scores to -9999
+    #####:  469:      if (i >= state->numPlayers)
+        -:  470:	{
+    #####:  471:	  players[i] = -9999;
+        -:  472:	}
+        -:  473:      else
+        -:  474:	{
+    #####:  475:	  players[i] = scoreFor (i, state);
+        -:  476:	}
+        -:  477:    }
+        -:  478:
+        -:  479:  //find highest score
+    #####:  480:  j = 0;
+    #####:  481:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  482:    {
+    #####:  483:      if (players[i] > players[j])
+        -:  484:	{
+    #####:  485:	  j = i;
+        -:  486:	}
+        -:  487:    }
+    #####:  488:  highScore = players[j];
+        -:  489:
+        -:  490:  //add 1 to players who had less turns
+    #####:  491:  currentPlayer = whoseTurn(state);
+    #####:  492:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  493:    {
+    #####:  494:      if ( players[i] == highScore && i > currentPlayer )
+        -:  495:	{
+    #####:  496:	  players[i]++;
+        -:  497:	}
+        -:  498:    }
+        -:  499:
+        -:  500:  //find new highest score
+    #####:  501:  j = 0;
+    #####:  502:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  503:    {
+    #####:  504:      if ( players[i] > players[j] )
+        -:  505:	{
+    #####:  506:	  j = i;
+        -:  507:	}
+        -:  508:    }
+    #####:  509:  highScore = players[j];
+        -:  510:
+        -:  511:  //set winners in array to 1 and rest to 0
+    #####:  512:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  513:    {
+    #####:  514:      if ( players[i] == highScore )
+        -:  515:	{
+    #####:  516:	  players[i] = 1;
+        -:  517:	}
+        -:  518:      else
+        -:  519:	{
+    #####:  520:	  players[i] = 0;
+        -:  521:	}
+        -:  522:    }
+        -:  523:
+    #####:  524:  return 0;
+        -:  525:}
+        -:  526:
+     2566:  527:int drawCard(int player, struct gameState *state)
+        -:  528:{	int count;
+        -:  529:  int deckCounter;
+     2566:  530:  if (state->deckCount[player] <= 0){//Deck is empty
+        -:  531:    
+        -:  532:    //Step 1 Shuffle the discard pile back into a deck
+        -:  533:    int i;
+        -:  534:    //Move discard to deck
+    #####:  535:    for (i = 0; i < state->discardCount[player];i++){
+    #####:  536:      state->deck[player][i] = state->discard[player][i];
+    #####:  537:      state->discard[player][i] = -1;
+        -:  538:    }
+        -:  539:
+    #####:  540:    state->deckCount[player] = state->discardCount[player];
+    #####:  541:    state->discardCount[player] = 0;//Reset discard
+        -:  542:
+        -:  543:    //Shufffle the deck
+    #####:  544:    shuffle(player, state);//Shuffle the deck up and make it so that we can draw
+        -:  545:   
+    #####:  546:    if (DEBUG){//Debug statements
+        -:  547:      printf("Deck count now: %d\n", state->deckCount[player]);
+        -:  548:    }
+        -:  549:    
+    #####:  550:    state->discardCount[player] = 0;
+        -:  551:
+        -:  552:    //Step 2 Draw Card
+    #####:  553:    count = state->handCount[player];//Get current player's hand count
+        -:  554:    
+    #####:  555:    if (DEBUG){//Debug statements
+        -:  556:      printf("Current hand count: %d\n", count);
+        -:  557:    }
+        -:  558:    
+    #####:  559:    deckCounter = state->deckCount[player];//Create a holder for the deck count
+        -:  560:
+    #####:  561:    if (deckCounter == 0)
+    #####:  562:      return -1;
+        -:  563:
+    #####:  564:    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to hand
+    #####:  565:    state->deckCount[player]--;
+    #####:  566:    state->handCount[player]++;//Increment hand count
+        -:  567:  }
+        -:  568:
+        -:  569:  else{
+     2566:  570:    int count = state->handCount[player];//Get current hand count for player
+        -:  571:    int deckCounter;
+     2566:  572:    if (DEBUG){//Debug statements
+        -:  573:      printf("Current hand count: %d\n", count);
+        -:  574:    }
+        -:  575:
+     2566:  576:    deckCounter = state->deckCount[player];//Create holder for the deck count
+     2566:  577:    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+     2566:  578:    state->deckCount[player]--;
+     2566:  579:    state->handCount[player]++;//Increment hand count
+        -:  580:  }
+        -:  581:
+     2566:  582:  return 0;
+        -:  583:}
+        -:  584:
+    #####:  585:int getCost(int cardNumber)
+        -:  586:{
+    #####:  587:  switch( cardNumber ) 
+        -:  588:    {
+        -:  589:    case curse:
+    #####:  590:      return 0;
+        -:  591:    case estate:
+    #####:  592:      return 2;
+        -:  593:    case duchy:
+    #####:  594:      return 5;
+        -:  595:    case province:
+    #####:  596:      return 8;
+        -:  597:    case copper:
+    #####:  598:      return 0;
+        -:  599:    case silver:
+    #####:  600:      return 3;
+        -:  601:    case gold:
+    #####:  602:      return 6;
+        -:  603:    case adventurer:
+    #####:  604:      return 6;
+        -:  605:    case council_room:
+    #####:  606:      return 5;
+        -:  607:    case feast:
+    #####:  608:      return 4;
+        -:  609:    case gardens:
+    #####:  610:      return 4;
+        -:  611:    case mine:
+    #####:  612:      return 5;
+        -:  613:    case remodel:
+    #####:  614:      return 4;
+        -:  615:    case smithy:
+    #####:  616:      return 4;
+        -:  617:    case village:
+    #####:  618:      return 3;
+        -:  619:    case baron:
+    #####:  620:      return 4;
+        -:  621:    case great_hall:
+    #####:  622:      return 3;
+        -:  623:    case minion:
+    #####:  624:      return 5;
+        -:  625:    case steward:
+    #####:  626:      return 3;
+        -:  627:    case tribute:
+    #####:  628:      return 5;
+        -:  629:    case ambassador:
+    #####:  630:      return 3;
+        -:  631:    case cutpurse:
+    #####:  632:      return 4;
+        -:  633:    case embargo: 
+    #####:  634:      return 2;
+        -:  635:    case outpost:
+    #####:  636:      return 5;
+        -:  637:    case salvager:
+    #####:  638:      return 4;
+        -:  639:    case sea_hag:
+    #####:  640:      return 4;
+        -:  641:    case treasure_map:
+    #####:  642:      return 4;
+        -:  643:    }
+        -:  644:	
+    #####:  645:  return -1;
+        -:  646:}
+        -:  647:
+        -:  648:// refactored adventurer card
+    #####:  649:void adventurerEffect(struct gameState *state){
+        -:  650:    
+        -:  651:    // necessary declarations (from cardEffect function)
+    #####:  652:    int currentPlayer = whoseTurn(state);
+    #####:  653:    int drawntreasure = 0;
+        -:  654:	int temphand[MAX_HAND];// moved above the if statement
+    #####:  655:    int cardDrawn = 0;
+    #####:  656:    int z = 0;// this is the counter for the temp hand
+        -:  657:
+    #####:  658:    while(drawntreasure<2){
+    #####:  659:        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  660:          shuffle(currentPlayer, state);
+        -:  661:        }
+    #####:  662:        drawCard(currentPlayer, state);
+    #####:  663:        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+    #####:  664:        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+    #####:  665:          drawntreasure++;
+        -:  666:        else{
+    #####:  667:          temphand[z]=cardDrawn;
+    #####:  668:          state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+    #####:  669:          z++;
+        -:  670:        }
+        -:  671:    }
+    #####:  672:    while(z-1>=0){
+    #####:  673:        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+    #####:  674:        z=z-1;
+        -:  675:    }
+    #####:  676:    return;
+        -:  677:}
+        -:  678:
+        -:  679:// refactored smithy card
+    #####:  680:void smithyEffect(struct gameState *state, int handPos){
+        -:  681:    
+        -:  682:    // necessary declarations (from cardEffect function)
+        -:  683:    int i;
+    #####:  684:    int currentPlayer = whoseTurn(state);
+        -:  685:
+        -:  686:    //+3 Cards
+    #####:  687:    for (i = 0; i < 4; i++)
+        -:  688:	{
+    #####:  689:	  drawCard(currentPlayer, state);
+        -:  690:	}
+        -:  691:
+        -:  692:    //discard card from hand
+    #####:  693:    discardCard(handPos, currentPlayer, state, 0);
+    #####:  694:    return;
+        -:  695:}
+        -:  696:
+        -:  697:// refactored village card
+    #####:  698:void villageEffect(struct gameState *state, int handPos){
+        -:  699:	
+        -:  700:	// necessary declarations (from cardEffect function)
+    #####:  701:	int currentPlayer = whoseTurn(state);
+        -:  702:
+        -:  703:	//+1 Card	
+    #####:  704:	drawCard(currentPlayer, state);
+        -:  705:
+        -:  706:	//+2 Actions	
+    #####:  707:	state->numActions = state->numActions + 1;
+        -:  708:
+        -:  709:	//discard played card from hand 
+    #####:  710:	discardCard(handPos, currentPlayer, state, 0);
+    #####:  711:	return;
+        -:  712:}
+        -:  713:
+        -:  714:// refactored feast card
+    #####:  715:void feastEffect(int currentPlayer, struct gameState *state, int choice1, int *temphand){
+        -:  716:	// necessary declarations
+        -:  717:	int i;
+        -:  718:	int x;
+        -:  719:	//gain card with cost up to 5
+        -:  720:    //Backup hand
+    #####:  721:    for (i = 0; i <= state->handCount[currentPlayer]; i++){
+    #####:  722:		temphand[i] = state->hand[currentPlayer][i];//Backup card
+    #####:  723:		state->hand[currentPlayer][i] = -1;//Set to nothing
+        -:  724:    }
+        -:  725:    //Backup hand
+        -:  726:
+        -:  727:    //Update Coins for Buy
+    #####:  728:    updateCoins(currentPlayer, state, 5);
+    #####:  729:    x = 1;//Condition to loop on
+    #####:  730:    while( x != 1) {//Buy one card
+    #####:  731:		if (supplyCount(choice1, state) <= 0){
+    #####:  732:			if (DEBUG)
+        -:  733:			printf("None of that card left, sorry!\n");
+        -:  734:
+    #####:  735:			if (DEBUG){
+        -:  736:				printf("Cards Left: %d\n", supplyCount(choice1, state));
+        -:  737:			}
+        -:  738:		}
+    #####:  739:		else if (state->coins < getCost(choice1)){
+    #####:  740:			printf("That card is too expensive!\n");
+        -:  741:
+    #####:  742:			if (DEBUG){
+        -:  743:				printf("Coins: %d < %d\n", state->coins, getCost(choice1));
+        -:  744:			}
+        -:  745:		}
+        -:  746:		else{
+        -:  747:
+    #####:  748:			if (DEBUG){
+        -:  749:				printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+        -:  750:			}
+        -:  751:
+    #####:  752:			gainCard(choice1, state, 0, currentPlayer);//Gain the card
+    #####:  753:			x = 0;//No more buying cards
+        -:  754:
+    #####:  755:			if (DEBUG){
+        -:  756:				printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+        -:  757:			}
+        -:  758:
+        -:  759:		}
+        -:  760:    }     
+        -:  761:
+        -:  762:    //Reset Hand
+    #####:  763:    for (i = 0; i <= state->handCount[currentPlayer]; i++){
+    #####:  764:		state->hand[currentPlayer][i] = temphand[i];
+    #####:  765:		temphand[i] = -1;
+        -:  766:    }
+        -:  767:    //Reset Hand
+        -:  768:      			
+    #####:  769:    return;
+        -:  770:}
+        -:  771:
+        -:  772:// refactored great_hall card
+    #####:  773:void great_hallEffect(int handPos, int currentPlayer, struct gameState *state){
+        -:  774:    //+1 Card
+    #####:  775:    drawCard(currentPlayer, state);
+        -:  776:			
+        -:  777:    //+1 Actions
+    #####:  778:    state->numActions--;
+        -:  779:			
+        -:  780:    //discard card from hand
+    #####:  781:    discardCard(handPos, currentPlayer, state, 0);
+    #####:  782:    return;
+        -:  783:}
+        -:  784:
+      325:  785:int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+        -:  786:{
+        -:  787:  int i;
+        -:  788:  int j;
+        -:  789:  int k;
+        -:  790:  int x;
+        -:  791:  int index;
+      325:  792:  int currentPlayer = whoseTurn(state);
+      325:  793:  int nextPlayer = currentPlayer + 1;
+        -:  794:
+      325:  795:  int tributeRevealedCards[2] = {-1, -1};
+        -:  796:  int temphand[MAX_HAND];// moved above the if statement
+      325:  797:  int drawntreasure=0;
+        -:  798:  int cardDrawn;
+      325:  799:  int z = 0;// this is the counter for the temp hand
+      325:  800:  if (nextPlayer > (state->numPlayers - 1)){
+    #####:  801:    nextPlayer = 0;
+        -:  802:  }
+        -:  803:  
+        -:  804:	
+        -:  805:  //uses switch to select card and perform actions
+      325:  806:  switch( card ) 
+        -:  807:    {
+        -:  808:    case adventurer:
+    #####:  809:      adventurerEffect(state);
+    #####:  810:      return 0;
+        -:  811:	
+        -:  812:	case smithy:
+    #####:  813:      smithyEffect(state, handPos);
+    #####:  814:      return 0;
+        -:  815:	
+        -:  816:	case village:
+    #####:  817:      villageEffect(state, handPos);
+    #####:  818:      return 0;
+        -:  819:	  
+        -:  820:	case feast:
+    #####:  821:	  feastEffect(currentPlayer, state, choice1, temphand);
+    #####:  822:	  return 0;
+        -:  823:	  
+        -:  824:	case great_hall:
+    #####:  825:	  great_hallEffect(handPos, currentPlayer, state);
+    #####:  826:	  return 0;
+        -:  827:	
+        -:  828:    case council_room:
+        -:  829:      //+4 Cards
+    #####:  830:      for (i = 0; i < 4; i++)
+        -:  831:	{
+    #####:  832:	  drawCard(currentPlayer, state);
+        -:  833:	}
+        -:  834:			
+        -:  835:      //+1 Buy
+    #####:  836:      state->numBuys++;
+        -:  837:			
+        -:  838:      //Each other player draws a card
+    #####:  839:      for (i = 0; i < state->numPlayers; i++)
+        -:  840:	{
+    #####:  841:	  if ( i != currentPlayer )
+        -:  842:	    {
+    #####:  843:	      drawCard(i, state);
+        -:  844:	    }
+        -:  845:	}
+        -:  846:			
+        -:  847:      //put played card in played card pile
+    #####:  848:      discardCard(handPos, currentPlayer, state, 0);
+        -:  849:			
+    #####:  850:      return 0;
+        -:  851:			
+        -:  852:    case gardens:
+    #####:  853:      return -1;
+        -:  854:			
+        -:  855:    case mine:
+    #####:  856:      j = state->hand[currentPlayer][choice1];  //store card we will trash
+        -:  857:
+    #####:  858:      if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
+        -:  859:	{
+    #####:  860:	  return -1;
+        -:  861:	}
+        -:  862:		
+    #####:  863:      if (choice2 > treasure_map || choice2 < curse)
+        -:  864:	{
+    #####:  865:	  return -1;
+        -:  866:	}
+        -:  867:
+    #####:  868:      if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
+        -:  869:	{
+    #####:  870:	  return -1;
+        -:  871:	}
+        -:  872:
+    #####:  873:      gainCard(choice2, state, 2, currentPlayer);
+        -:  874:
+        -:  875:      //discard card from hand
+    #####:  876:      discardCard(handPos, currentPlayer, state, 0);
+        -:  877:
+        -:  878:      //discard trashed card
+    #####:  879:      for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -:  880:	{
+    #####:  881:	  if (state->hand[currentPlayer][i] == j)
+        -:  882:	    {
+    #####:  883:	      discardCard(i, currentPlayer, state, 0);			
+    #####:  884:	      break;
+        -:  885:	    }
+        -:  886:	}
+        -:  887:			
+    #####:  888:      return 0;
+        -:  889:			
+        -:  890:    case remodel:
+    #####:  891:      j = state->hand[currentPlayer][choice1];  //store card we will trash
+        -:  892:
+    #####:  893:      if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
+        -:  894:	{
+    #####:  895:	  return -1;
+        -:  896:	}
+        -:  897:
+    #####:  898:      gainCard(choice2, state, 0, currentPlayer);
+        -:  899:
+        -:  900:      //discard card from hand
+    #####:  901:      discardCard(handPos, currentPlayer, state, 0);
+        -:  902:
+        -:  903:      //discard trashed card
+    #####:  904:      for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -:  905:	{
+    #####:  906:	  if (state->hand[currentPlayer][i] == j)
+        -:  907:	    {
+    #####:  908:	      discardCard(i, currentPlayer, state, 0);			
+    #####:  909:	      break;
+        -:  910:	    }
+        -:  911:	}
+        -:  912:
+        -:  913:
+    #####:  914:      return 0;
+        -:  915:		
+        -:  916:    case baron:
+    #####:  917:      state->numBuys++;//Increase buys by 1!
+    #####:  918:      if (choice1 > 0){//Boolean true or going to discard an estate
+    #####:  919:	int p = 0;//Iterator for hand!
+    #####:  920:	int card_not_discarded = 1;//Flag for discard set!
+    #####:  921:	while(card_not_discarded){
+    #####:  922:	  if (state->hand[currentPlayer][p] == estate){//Found an estate card!
+    #####:  923:	    state->coins += 4;//Add 4 coins to the amount of coins
+    #####:  924:	    state->discard[currentPlayer][state->discardCount[currentPlayer]] = state->hand[currentPlayer][p];
+    #####:  925:	    state->discardCount[currentPlayer]++;
+    #####:  926:	    for (;p < state->handCount[currentPlayer]; p++){
+    #####:  927:	      state->hand[currentPlayer][p] = state->hand[currentPlayer][p+1];
+        -:  928:	    }
+    #####:  929:	    state->hand[currentPlayer][state->handCount[currentPlayer]] = -1;
+    #####:  930:	    state->handCount[currentPlayer]--;
+    #####:  931:	    card_not_discarded = 0;//Exit the loop
+        -:  932:	  }
+    #####:  933:	  else if (p > state->handCount[currentPlayer]){
+    #####:  934:	    if(DEBUG) {
+        -:  935:	      printf("No estate cards in your hand, invalid choice\n");
+        -:  936:	      printf("Must gain an estate if there are any\n");
+        -:  937:	    }
+    #####:  938:	    if (supplyCount(estate, state) > 0){
+    #####:  939:	      gainCard(estate, state, 0, currentPlayer);
+    #####:  940:	      state->supplyCount[estate]--;//Decrement estates
+    #####:  941:	      if (supplyCount(estate, state) == 0){
+    #####:  942:		isGameOver(state);
+        -:  943:	      }
+        -:  944:	    }
+    #####:  945:	    card_not_discarded = 0;//Exit the loop
+        -:  946:	  }
+        -:  947:			    
+        -:  948:	  else{
+    #####:  949:	    p++;//Next card
+        -:  950:	  }
+        -:  951:	}
+        -:  952:      }
+        -:  953:			    
+        -:  954:      else{
+    #####:  955:	if (supplyCount(estate, state) > 0){
+    #####:  956:	  gainCard(estate, state, 0, currentPlayer);//Gain an estate
+    #####:  957:	  state->supplyCount[estate]--;//Decrement Estates
+    #####:  958:	  if (supplyCount(estate, state) == 0){
+    #####:  959:	    isGameOver(state);
+        -:  960:	  }
+        -:  961:	}
+        -:  962:      }
+        -:  963:	    
+        -:  964:      
+    #####:  965:      return 0;
+        -:  966:		
+        -:  967:    case minion:
+        -:  968:      //+1 action
+    #####:  969:      state->numActions++;
+        -:  970:			
+        -:  971:      //discard card from hand
+    #####:  972:      discardCard(handPos, currentPlayer, state, 0);
+        -:  973:			
+    #####:  974:      if (choice1)		//+2 coins
+        -:  975:	{
+    #####:  976:	  state->coins = state->coins + 2;
+        -:  977:	}
+        -:  978:			
+    #####:  979:      else if (choice2)		//discard hand, redraw 4, other players with 5+ cards discard hand and draw 4
+        -:  980:	{
+        -:  981:	  //discard hand
+    #####:  982:	  while(numHandCards(state) > 0)
+        -:  983:	    {
+    #####:  984:	      discardCard(handPos, currentPlayer, state, 0);
+        -:  985:	    }
+        -:  986:				
+        -:  987:	  //draw 4
+    #####:  988:	  for (i = 0; i < 4; i++)
+        -:  989:	    {
+    #####:  990:	      drawCard(currentPlayer, state);
+        -:  991:	    }
+        -:  992:				
+        -:  993:	  //other players discard hand and redraw if hand size > 4
+    #####:  994:	  for (i = 0; i < state->numPlayers; i++)
+        -:  995:	    {
+    #####:  996:	      if (i != currentPlayer)
+        -:  997:		{
+    #####:  998:		  if ( state->handCount[i] > 4 )
+        -:  999:		    {
+        -: 1000:		      //discard hand
+    #####: 1001:		      while( state->handCount[i] > 0 )
+        -: 1002:			{
+    #####: 1003:			  discardCard(handPos, i, state, 0);
+        -: 1004:			}
+        -: 1005:							
+        -: 1006:		      //draw 4
+    #####: 1007:		      for (j = 0; j < 4; j++)
+        -: 1008:			{
+    #####: 1009:			  drawCard(i, state);
+        -: 1010:			}
+        -: 1011:		    }
+        -: 1012:		}
+        -: 1013:	    }
+        -: 1014:				
+        -: 1015:	}
+    #####: 1016:      return 0;
+        -: 1017:		
+        -: 1018:    case steward:
+      325: 1019:      if (choice1 == 1)
+        -: 1020:	{
+        -: 1021:	  //+2 cards
+       93: 1022:	  drawCard(currentPlayer, state);
+       93: 1023:	  drawCard(currentPlayer, state);
+        -: 1024:	}
+      232: 1025:      else if (choice1 == 2)
+        -: 1026:	{
+        -: 1027:	  //+2 coins
+      110: 1028:	  state->coins = state->coins + 2;
+        -: 1029:	}
+        -: 1030:      else
+        -: 1031:	{
+        -: 1032:	  //trash 2 cards in hand
+      122: 1033:	  discardCard(choice2, currentPlayer, state, 1);
+      122: 1034:	  discardCard(choice3, currentPlayer, state, 1);
+        -: 1035:	}
+        -: 1036:			
+        -: 1037:      //discard card from hand
+      325: 1038:      discardCard(handPos, currentPlayer, state, 0);
+      325: 1039:      return 0;
+        -: 1040:		
+        -: 1041:    case tribute:
+    #####: 1042:      if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1){
+    #####: 1043:	if (state->deckCount[nextPlayer] > 0){
+    #####: 1044:	  tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+    #####: 1045:	  state->deckCount[nextPlayer]--;
+        -: 1046:	}
+    #####: 1047:	else if (state->discardCount[nextPlayer] > 0){
+    #####: 1048:	  tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]-1];
+    #####: 1049:	  state->discardCount[nextPlayer]--;
+        -: 1050:	}
+        -: 1051:	else{
+        -: 1052:	  //No Card to Reveal
+    #####: 1053:	  if (DEBUG){
+        -: 1054:	    printf("No cards to reveal\n");
+        -: 1055:	  }
+        -: 1056:	}
+        -: 1057:      }
+        -: 1058:	    
+        -: 1059:      else{
+    #####: 1060:	if (state->deckCount[nextPlayer] == 0){
+    #####: 1061:	  for (i = 0; i < state->discardCount[nextPlayer]; i++){
+    #####: 1062:	    state->deck[nextPlayer][i] = state->discard[nextPlayer][i];//Move to deck
+    #####: 1063:	    state->deckCount[nextPlayer]++;
+    #####: 1064:	    state->discard[nextPlayer][i] = -1;
+    #####: 1065:	    state->discardCount[nextPlayer]--;
+        -: 1066:	  }
+        -: 1067:			    
+    #####: 1068:	  shuffle(nextPlayer,state);//Shuffle the deck
+        -: 1069:	} 
+    #####: 1070:	tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+    #####: 1071:	state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
+    #####: 1072:	state->deckCount[nextPlayer]--;
+    #####: 1073:	tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+    #####: 1074:	state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
+    #####: 1075:	state->deckCount[nextPlayer]--;
+        -: 1076:      }    
+        -: 1077:		       
+    #####: 1078:      if (tributeRevealedCards[0] == tributeRevealedCards[1]){//If we have a duplicate card, just drop one 
+    #####: 1079:	state->playedCards[state->playedCardCount] = tributeRevealedCards[1];
+    #####: 1080:	state->playedCardCount++;
+    #####: 1081:	tributeRevealedCards[1] = -1;
+        -: 1082:      }
+        -: 1083:
+    #####: 1084:      for (i = 0; i <= 2; i ++){
+    #####: 1085:	if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == gold){//Treasure cards
+    #####: 1086:	  state->coins += 2;
+        -: 1087:	}
+        -: 1088:		    
+    #####: 1089:	else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall){//Victory Card Found
+    #####: 1090:	  drawCard(currentPlayer, state);
+    #####: 1091:	  drawCard(currentPlayer, state);
+        -: 1092:	}
+        -: 1093:	else{//Action Card
+    #####: 1094:	  state->numActions = state->numActions + 2;
+        -: 1095:	}
+        -: 1096:      }
+        -: 1097:	    
+    #####: 1098:      return 0;
+        -: 1099:		
+        -: 1100:    case ambassador:
+    #####: 1101:      j = 0;		//used to check if player has enough cards to discard
+        -: 1102:
+    #####: 1103:      if (choice2 > 2 || choice2 < 0)
+        -: 1104:	{
+    #####: 1105:	  return -1;				
+        -: 1106:	}
+        -: 1107:
+    #####: 1108:      if (choice1 == handPos)
+        -: 1109:	{
+    #####: 1110:	  return -1;
+        -: 1111:	}
+        -: 1112:
+    #####: 1113:      for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -: 1114:	{
+    #####: 1115:	  if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+        -: 1116:	    {
+    #####: 1117:	      j++;
+        -: 1118:	    }
+        -: 1119:	}
+    #####: 1120:      if (j < choice2)
+        -: 1121:	{
+    #####: 1122:	  return -1;				
+        -: 1123:	}
+        -: 1124:
+    #####: 1125:      if (DEBUG) 
+        -: 1126:	printf("Player %d reveals card number: %d\n", currentPlayer, state->hand[currentPlayer][choice1]);
+        -: 1127:
+        -: 1128:      //increase supply count for choosen card by amount being discarded
+    #####: 1129:      state->supplyCount[state->hand[currentPlayer][choice1]] += choice2;
+        -: 1130:			
+        -: 1131:      //each other player gains a copy of revealed card
+    #####: 1132:      for (i = 0; i < state->numPlayers; i++)
+        -: 1133:	{
+    #####: 1134:	  if (i != currentPlayer)
+        -: 1135:	    {
+    #####: 1136:	      gainCard(state->hand[currentPlayer][choice1], state, 0, i);
+        -: 1137:	    }
+        -: 1138:	}
+        -: 1139:
+        -: 1140:      //discard played card from hand
+    #####: 1141:      discardCard(handPos, currentPlayer, state, 0);			
+        -: 1142:
+        -: 1143:      //trash copies of cards returned to supply
+    #####: 1144:      for (j = 0; j < choice2; j++)
+        -: 1145:	{
+    #####: 1146:	  for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -: 1147:	    {
+    #####: 1148:	      if (state->hand[currentPlayer][i] == state->hand[currentPlayer][choice1])
+        -: 1149:		{
+    #####: 1150:		  discardCard(i, currentPlayer, state, 1);
+    #####: 1151:		  break;
+        -: 1152:		}
+        -: 1153:	    }
+        -: 1154:	}			
+        -: 1155:
+    #####: 1156:      return 0;
+        -: 1157:		
+        -: 1158:    case cutpurse:
+        -: 1159:
+    #####: 1160:      updateCoins(currentPlayer, state, 2);
+    #####: 1161:      for (i = 0; i < state->numPlayers; i++)
+        -: 1162:	{
+    #####: 1163:	  if (i != currentPlayer)
+        -: 1164:	    {
+    #####: 1165:	      for (j = 0; j < state->handCount[i]; j++)
+        -: 1166:		{
+    #####: 1167:		  if (state->hand[i][j] == copper)
+        -: 1168:		    {
+    #####: 1169:		      discardCard(j, i, state, 0);
+    #####: 1170:		      break;
+        -: 1171:		    }
+    #####: 1172:		  if (j == state->handCount[i])
+        -: 1173:		    {
+    #####: 1174:		      for (k = 0; k < state->handCount[i]; k++)
+        -: 1175:			{
+    #####: 1176:			  if (DEBUG)
+        -: 1177:			    printf("Player %d reveals card number %d\n", i, state->hand[i][k]);
+        -: 1178:			}	
+    #####: 1179:		      break;
+        -: 1180:		    }		
+        -: 1181:		}
+        -: 1182:					
+        -: 1183:	    }
+        -: 1184:				
+        -: 1185:	}				
+        -: 1186:
+        -: 1187:      //discard played card from hand
+    #####: 1188:      discardCard(handPos, currentPlayer, state, 0);			
+        -: 1189:
+    #####: 1190:      return 0;
+        -: 1191:
+        -: 1192:		
+        -: 1193:    case embargo: 
+        -: 1194:      //+2 Coins
+    #####: 1195:      state->coins = state->coins + 2;
+        -: 1196:			
+        -: 1197:      //see if selected pile is in play
+    #####: 1198:      if ( state->supplyCount[choice1] == -1 )
+        -: 1199:	{
+    #####: 1200:	  return -1;
+        -: 1201:	}
+        -: 1202:			
+        -: 1203:      //add embargo token to selected supply pile
+    #####: 1204:      state->embargoTokens[choice1]++;
+        -: 1205:			
+        -: 1206:      //trash card
+    #####: 1207:      discardCard(handPos, currentPlayer, state, 1);		
+    #####: 1208:      return 0;
+        -: 1209:		
+        -: 1210:    case outpost:
+        -: 1211:      //set outpost flag
+    #####: 1212:      state->outpostPlayed++;
+        -: 1213:			
+        -: 1214:      //discard card
+    #####: 1215:      discardCard(handPos, currentPlayer, state, 0);
+    #####: 1216:      return 0;
+        -: 1217:		
+        -: 1218:    case salvager:
+        -: 1219:      //+1 buy
+    #####: 1220:      state->numBuys++;
+        -: 1221:			
+    #####: 1222:      if (choice1)
+        -: 1223:	{
+        -: 1224:	  //gain coins equal to trashed card
+    #####: 1225:	  state->coins = state->coins + getCost( handCard(choice1, state) );
+        -: 1226:	  //trash card
+    #####: 1227:	  discardCard(choice1, currentPlayer, state, 1);	
+        -: 1228:	}
+        -: 1229:			
+        -: 1230:      //discard card
+    #####: 1231:      discardCard(handPos, currentPlayer, state, 0);
+    #####: 1232:      return 0;
+        -: 1233:		
+        -: 1234:    case sea_hag:
+    #####: 1235:      for (i = 0; i < state->numPlayers; i++){
+    #####: 1236:	if (i != currentPlayer){
+    #####: 1237:	  state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    state->deckCount[i]--;
+    #####: 1238:	  state->discardCount[i]++;
+    #####: 1239:	  state->deck[i][state->deckCount[i]--] = curse;//Top card now a curse
+        -: 1240:	}
+        -: 1241:      }
+    #####: 1242:      return 0;
+        -: 1243:		
+        -: 1244:    case treasure_map:
+        -: 1245:      //search hand for another treasure_map
+    #####: 1246:      index = -1;
+    #####: 1247:      for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -: 1248:	{
+    #####: 1249:	  if (state->hand[currentPlayer][i] == treasure_map && i != handPos)
+        -: 1250:	    {
+    #####: 1251:	      index = i;
+    #####: 1252:	      break;
+        -: 1253:	    }
+        -: 1254:	}
+    #####: 1255:      if (index > -1)
+        -: 1256:	{
+        -: 1257:	  //trash both treasure cards
+    #####: 1258:	  discardCard(handPos, currentPlayer, state, 1);
+    #####: 1259:	  discardCard(index, currentPlayer, state, 1);
+        -: 1260:
+        -: 1261:	  //gain 4 Gold cards
+    #####: 1262:	  for (i = 0; i < 4; i++)
+        -: 1263:	    {
+    #####: 1264:	      gainCard(gold, state, 1, currentPlayer);
+        -: 1265:	    }
+        -: 1266:				
+        -: 1267:	  //return success
+    #####: 1268:	  return 1;
+        -: 1269:	}
+        -: 1270:			
+        -: 1271:      //no second treasure_map found in hand
+    #####: 1272:      return -1;
+        -: 1273:    }
+        -: 1274:	
+    #####: 1275:  return -1;
+        -: 1276:}
+        -: 1277:
+      569: 1278:int discardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
+        -: 1279:{
+        -: 1280:	
+        -: 1281:  //if card is not trashed, added to Played pile 
+      569: 1282:  if (trashFlag < 1)
+        -: 1283:    {
+        -: 1284:      //add card to played pile
+      325: 1285:      state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos]; 
+      325: 1286:      state->playedCardCount++;
+        -: 1287:    }
+        -: 1288:	
+        -: 1289:  //set played card to -1
+      569: 1290:  state->hand[currentPlayer][handPos] = -1;
+        -: 1291:	
+        -: 1292:  //remove card from player's hand
+      569: 1293:  if ( handPos == (state->handCount[currentPlayer] - 1) ) 	//last card in hand array is played
+        -: 1294:    {
+        -: 1295:      //reduce number of cards in hand
+        4: 1296:      state->handCount[currentPlayer]--;
+        -: 1297:    }
+      565: 1298:  else if ( state->handCount[currentPlayer] == 1 ) //only one card in hand
+        -: 1299:    {
+        -: 1300:      //reduce number of cards in hand
+        1: 1301:      state->handCount[currentPlayer]--;
+        -: 1302:    }
+        -: 1303:  else 	
+        -: 1304:    {
+        -: 1305:      //replace discarded card with last card in hand
+      564: 1306:      state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 1)];
+        -: 1307:      //set last card to -1
+      564: 1308:      state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
+        -: 1309:      //reduce number of cards in hand
+      564: 1310:      state->handCount[currentPlayer]--;
+        -: 1311:    }
+        -: 1312:	
+      569: 1313:  return 0;
+        -: 1314:}
+        -: 1315:
+    #####: 1316:int gainCard(int supplyPos, struct gameState *state, int toFlag, int player)
+        -: 1317:{
+        -: 1318:  //Note: supplyPos is enum of choosen card
+        -: 1319:	
+        -: 1320:  //check if supply pile is empty (0) or card is not used in game (-1)
+    #####: 1321:  if ( supplyCount(supplyPos, state) < 1 )
+        -: 1322:    {
+    #####: 1323:      return -1;
+        -: 1324:    }
+        -: 1325:	
+        -: 1326:  //added card for [whoseTurn] current player:
+        -: 1327:  // toFlag = 0 : add to discard
+        -: 1328:  // toFlag = 1 : add to deck
+        -: 1329:  // toFlag = 2 : add to hand
+        -: 1330:
+    #####: 1331:  if (toFlag == 1)
+        -: 1332:    {
+    #####: 1333:      state->deck[ player ][ state->deckCount[player] ] = supplyPos;
+    #####: 1334:      state->deckCount[player]++;
+        -: 1335:    }
+    #####: 1336:  else if (toFlag == 2)
+        -: 1337:    {
+    #####: 1338:      state->hand[ player ][ state->handCount[player] ] = supplyPos;
+    #####: 1339:      state->handCount[player]++;
+        -: 1340:    }
+        -: 1341:  else
+        -: 1342:    {
+    #####: 1343:      state->discard[player][ state->discardCount[player] ] = supplyPos;
+    #####: 1344:      state->discardCount[player]++;
+        -: 1345:    }
+        -: 1346:	
+        -: 1347:  //decrease number in supply pile
+    #####: 1348:  state->supplyCount[supplyPos]--;
+        -: 1349:	 
+    #####: 1350:  return 0;
+        -: 1351:}
+        -: 1352:
+      801: 1353:int updateCoins(int player, struct gameState *state, int bonus)
+        -: 1354:{
+        -: 1355:  int i;
+        -: 1356:	
+        -: 1357:  //reset coin count
+      801: 1358:  state->coins = 0;
+        -: 1359:
+        -: 1360:  //add coins for each Treasure card in player's hand
+    87836: 1361:  for (i = 0; i < state->handCount[player]; i++)
+        -: 1362:    {
+    87035: 1363:      if (state->hand[player][i] == copper)
+        -: 1364:	{
+     2907: 1365:	  state->coins += 1;
+        -: 1366:	}
+    84128: 1367:      else if (state->hand[player][i] == silver)
+        -: 1368:	{
+    #####: 1369:	  state->coins += 2;
+        -: 1370:	}
+    84128: 1371:      else if (state->hand[player][i] == gold)
+        -: 1372:	{
+    #####: 1373:	  state->coins += 3;
+        -: 1374:	}	
+        -: 1375:    }	
+        -: 1376:
+        -: 1377:  //add bonus
+      801: 1378:  state->coins += bonus;
+        -: 1379:
+      801: 1380:  return 0;
+        -: 1381:}
+        -: 1382:
+        -: 1383:
+        -: 1384://end of dominion.c
+        -: 1385:
