@@ -1,0 +1,88 @@
+﻿Joshua Brande
+Allan Chan
+Woo Choi
+CS 362 F15
+
+Project Part A
+
+
+Topics Covered:
+* Explanation of testIsValid() 
+* Building urls
+   * How is it building urls
+   * Example of valid url being tested
+   * Example of invalid url being tested
+* Number of urls testing
+* Do you think that a real world test is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)?
+
+
+Explanation of testisValid() function:
+Object of UrlValidator class is instantiated by calling constructor:
+        UrlValidator urlVal = new UrlValidator(null, null, options);
+The constructor that is then called is:
+        public UrlValidator(String[] schemes, RegexValidator authorityValidator, long options)
+The first parameter passed into the constructor is null for String[] schemes which makes the DEFAULT_SCHEMES that allow {“http”, “https”, “ftp”} as valid schemes. 
+The second parameter passed into the constructor is null for RegexValidator authorityValidator which states no regular expression to manually validate authorities for the url.
+The third parameter is options for long options. In testIsValid(), options was set as UrlValidator.ALLOW_ALL_SCHEMES. It allows all validly formatted schemes to pass validation instead of supplying a set of valid schemes. Validation behavior is modified by passing in options.
+There are two manual tests for assertTrue(url.isValid( )). One for “http://www.google.com” and the other for “http://www.google.com/.” 
+The do/while loop sequentially goes through all of the Result Pairs and builds combinations of scheme, authority, path, and query.
+
+
+
+
+Building urls
+For loop builds urls (lines 97-100) from testObjects[0] to testObjects[4].
+Approximates 4 parts of URL construction: <scheme>://<authority><path>?<query>
+Port number removed from authority to increase number of permutations.
+
+
+(Determined from lines 343 to 413)
+testObjects[0] = testUrlScheme        	 (9)
+testObjects[1] = testUrlAuthority        (19)
+testObjects[2] = testUrlPort             (7)
+testObjects[3] = testPath                (10)
+testObjects[4] = testUrlQuery            (3)
+
+
+
+
+Number of urls testing
+Number of possible  url combinations = 9 x 19 x 7 x 10 x 3 = 35,910
+Number of actual url combinations tested = 8 x 19 x 7 x 10 x 3 = 31,920 (scheme == null is considered invalid and no further testing would be done on the built url, although it contains a ResultPair of true).
+
+
+
+
+Example of valid url tested
+A valid url must contain all true valid argument of ResultPair from testUrlParts:
+
+http://www.google.com:80/test1?action=view 
+        ResultPair("http://", true)
+	ResultPair("www.google.com", true)
+        ResultPair(":80", true)
+        ResultPair("/test1", true)
+	ResultPair("?action=view", true)
+
+
+
+
+Example of invalid url tested
+An invalid url contains any one or more part of false valid argument of ResultPair from testUrlParts:
+http:/go.com:80/test1?action=view (http:/ is not a valid url scheme)
+	ResultPair("http:/", false)
+	ResultPair("go.com", true)
+	ResultPair(":80", true)
+	ResultPair("/test1", true)
+	ResultPair("?action=view", true)
+
+
+
+
+Do you think that a real world test is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)?
+
+
+The concepts in class will be very similar to those used in the real world. 
+The complexity of the testing suite is dependent on the testing strategy and the complexity of the software under test. 
+A real world piece of software of equal complexity will have testing of similar complexity (perhaps more robust in catching edge cases). 
+A much more complex piece of software with more interacting components will require many more edge cases and possible inputs to be covered. 
+The domain of possible errors will expand exponentially as you add more interacting modules.

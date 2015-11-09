@@ -1246,7 +1246,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 
 int discardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
 {
-	
+
   //if card is not trashed, added to Played pile 
   if (trashFlag < 1)
     {
@@ -1257,28 +1257,31 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state, int tra
 	
   //set played card to -1
   state->hand[currentPlayer][handPos] = -1;
-	
+
   //remove card from player's hand
   if ( handPos == (state->handCount[currentPlayer] - 1) ) 	//last card in hand array is played
     {
-      //reduce number of cards in hand
+	  //reduce number of cards in hand
       state->handCount[currentPlayer]--;
     }
+
   else if ( state->handCount[currentPlayer] == 1 ) //only one card in hand
     {
       //reduce number of cards in hand
       state->handCount[currentPlayer]--;
     }
   else 	
-    {
+    { 
       //replace discarded card with last card in hand
       state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 1)];
-      //set last card to -1
+     
+	  //set last card to -1
       state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
-      //reduce number of cards in hand
+      
+	  //reduce number of cards in hand
       state->handCount[currentPlayer]--;
-    }
-	
+    } 
+
   return 0;
 }
 
@@ -1353,14 +1356,14 @@ int playSmithy(int handPos, int currentPlayer, struct gameState *state) {
      int i;
      
      //+3 Cards
-      for (i = 0; i < 3; ++i)
+      for (i = 0; i < 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
 			
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+	  return 0;
 }
 
 int playAdventurer(int currentPlayer, struct gameState *state) {
@@ -1368,9 +1371,9 @@ int playAdventurer(int currentPlayer, struct gameState *state) {
      int cardDrawn;
      int temphand[MAX_HAND];
      int z = 0;// this is the counter for the temp hand
-     
-     while(drawntreasure>2)
-          if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+	 
+     while(drawntreasure<2) {
+		if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
             shuffle(currentPlayer, state);
           }
           drawCard(currentPlayer, state);
@@ -1381,6 +1384,7 @@ int playAdventurer(int currentPlayer, struct gameState *state) {
             temphand[z]=cardDrawn;
             state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
             z++;
+		  }
 	}
       while(z-1>=0){
           state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn

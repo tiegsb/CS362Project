@@ -1,0 +1,8 @@
+Random Test - Adventurer
+Conducting 1000 random trials.
+Mismatched deckCount + discardCount. Expected: -1, Actual: 0
+Mismatched handCount. Expected: 152, Actual: 151
+Mismatched deckCount + discardCount. Expected: -1, Actual: 0
+Mismatched handCount. Expected: 168, Actual: 167
+Number of errors: 4
+End Random Test - Adventurer
