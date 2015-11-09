@@ -21,12 +21,13 @@
 #include <stdio.h>
 #include <stdlib.h>    // for rand and srand
 #include <time.h>      // for time
+#include <string.h>
 #include "dominion.h"
 #include "dominion_helpers.h"
 //#include "rngs.h"
 
 #define NUM_TESTS 2000 // number of tests to run
-
+#define NUM_PLAYERS  2 
 
 
 /*****************************************************************************
@@ -74,7 +75,13 @@ int main(int argc, char *argv[])
     int i;
     int j;
     int playerNumber;
+    int handPos;
+    int retVal;
+    int seed = 1; // better to make this random too?
     time_t sysClock;
+
+    int cards[10] = {adventurer, council_room, feast, gardens, mine, remodel,
+                    smithy, village, baron, great_hall};
 
     // seed the rand() function with system clock to avoid getting same rand #s
     srand((unsigned) time(&sysClock));
@@ -88,6 +95,9 @@ int main(int argc, char *argv[])
             ((char*)&testState)[j] = randInt(0, 256);
         }
 
+        // initialize game to prevent segmentation fault errors
+        retVal = initializeGame(NUM_PLAYERS, cards, seed, &testState);
+
         // generate sensible random values for important preconditions:
         // select a random player
         playerNumber = randInt(1, 2); // can this go to 4 players?
@@ -97,8 +107,14 @@ int main(int argc, char *argv[])
         testState.discardCount[playerNumber] = randInt(0, MAX_DECK);
         // random number of cards in current player's hand
         testState.handCount[playerNumber] = randInt(0, MAX_HAND);
+
+        if (testState.handCount[playerNumber] == 0)
+            handPos = 0;
+        else
+            handPos = testState.handCount[playerNumber] - 1;
+
         // random value for position in hand of card to discard
-        handPos = randInt(0, testState.handCount[playerNumber] - 1);
+        handPos = randInt(0, handPos);
 
         // call test oracle function and pass it these parameters
         int retVal = testSmithyEffect(playerNumber, &testState, handPos);
