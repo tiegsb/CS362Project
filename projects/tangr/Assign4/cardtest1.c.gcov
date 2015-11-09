@@ -1,0 +1,73 @@
+        -:    0:Source:cardtest1.c
+        -:    0:Graph:cardtest1.gcno
+        -:    0:Data:cardtest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    0:Source is newer than graph
+        -:    1:/********************************************************
+        -:    2:*	Name: 	Robert Tang
+        -:    3:*	Class:	CS 362
+        -:    4:*	File:	cardtest1.c
+        -:    5:*
+        -:    6:*	Description: 
+        -:    7:*		Test for Smithy
+        -:    8:********************************************************/
+        -:    9:
+        -:   10:
+        -:   11:
+        -:   12:#include "dominion.h"
+        -:   13:#include "dominion_helpers.h"
+        -:   14:#include "dominion.c"
+        -:   15:#include <string.h>
+        -:   16:#include <stdio.h>
+        -:   17:#include "rngs.h"
+        -:   18:#include "interface.h"
+        -:   19:
+        1:   20:int main ()
+        -:   21:{
+        1:   22:	int seed = 1000;
+        1:   23:	int numPlayer = 2;
+        1:   24:	struct gameState* testGame = newGame();
+        -:   25:	
+        -:   26:	
+        -:   27: 	int k[10] = {adventurer, council_room, feast, gardens, mine,
+        1:   28: 				remodel, smithy, village, baron, great_hall}; 
+        -:   29:
+        1:   30:	initializeGame(numPlayer, k, seed, testGame);
+        -:   31:	
+        1:   32:	printf("Test - Smithy \n");
+        -:   33:	
+        1:   34:	int currentPlayer = 0;
+        1:   35:	int handSize = testGame->handCount[currentPlayer];
+        1:   36:	int handPosition = handSize - 1;
+        1:   37:	int deckSize = testGame->deckCount[currentPlayer];
+        1:   38://	int playedCards = testGame->playedCardCount;
+        1:   39:	testGame->hand[currentPlayer][handPosition] = smithy;
+        -:   40:	
+        1:   41:	int tester = playSmithy(testGame, handPosition);
+        1:   42:		printf("Smithy Card Play - ");
+        1:   43:	if (tester != 0)
+    #####:   44:		printf(" Fail \n");
+        -:   45:	else
+        1:   46:		printf(" check \n");
+        1:   47:	if (testGame->handCount[currentPlayer] != handSize - 1 + 3)
+    #####:   48:		printf("Smithy Card Effect - Fail \n");
+        -:   49:	else
+        1:   50:		printf("Smithy Card Effect -  check \n");
+        -:   51:	
+        1:   52:	if (testGame->hand[currentPlayer][handPosition] != smithy)
+        1:   53:		printf("Smithy Card Not In Hand - check \n");
+        -:   54:	else
+    #####:   55:		printf("Smithy Card Not In Hand  - check \n");
+        -:   56:	
+        1:   57:	if (testGame->playedCards[testGame->playedCardCount] != smithy)
+        1:   58:		printf("Smith Card Placed in Played - check \n");
+        -:   59:	else
+    #####:   60:		printf("Smith Card Placed in Played - fail \n");
+        1:   61:	
+    #####:   62:	if (testGame->deckCount[currentPlayer] != deckSize - 3)
+        -:   63:		printf("Smith Card Draw - Fail \n");
+        1:   64:	else
+        1:   65:		printf("Smith Card Draw - check \n");	
+        -:   66:	return 0;
+        -:   67:}

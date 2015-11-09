@@ -1,0 +1,73 @@
+        -:    0:Source:cardtest4.c
+        -:    0:Graph:cardtest4.gcno
+        -:    0:Data:cardtest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/********************************************************
+        -:    2:*	Name: 	Robert Tang
+        -:    3:*	Class:	CS 362
+        -:    4:*	File:	unittest1.c
+        -:    5:*
+        -:    6:*	Description: 
+        -:    7:*		Test for card cost
+        -:    8:********************************************************/
+        -:    9:
+        -:   10:#include "dominion.h"
+        -:   11:#include "dominion_helpers.h"
+        -:   12:#include "dominion.c"
+        -:   13:#include <string.h>
+        -:   14:#include <stdio.h>
+        -:   15:#include "rngs.h"
+        -:   16:#include "interface.h"
+        -:   17:
+        1:   18:int main ()
+        -:   19:{
+        1:   20:	int seed = 1000;
+        1:   21:	int numPlayer = 2;
+        1:   22:	struct gameState* testGame = newGame();
+        -:   23:	
+        -:   24:	
+        -:   25: 	int k[10] = {adventurer, council_room, feast, gardens, mine,
+        1:   26: 				remodel, smithy, village, baron, great_hall}; 
+        -:   27:
+        1:   28:	initializeGame(numPlayer, k, seed, testGame);
+        -:   29:	
+        1:   30:	printf("Test - Adventurer \n");
+        -:   31:	
+        1:   32:	int currentPlayer = 0;
+        1:   33:	int handCount = testGame->handCount[currentPlayer];
+        -:   34:
+        -:   35://	int deckCount = testGame->deckCount[currentPlayer];
+        -:   36://	int discardCount = testGame->discardCount[currentPlayer];
+        -:   37:	
+        1:   38:	playAdventurer(testGame);
+        -:   39:	
+        1:   40:	int currentHandCount = testGame->handCount[currentPlayer];
+        1:   41:	int treasure1 = testGame->hand[currentPlayer][currentHandCount - 1];	// last treasure
+        1:   42:	int treasure2 = testGame->hand[currentPlayer][currentHandCount - 2];	//	first treasure
+        1:   43:	int drawnDiscard = testGame->discardCount[currentPlayer];
+        -:   44:	
+        1:   45:	if (testGame->handCount[currentPlayer != handCount - 1 + 2])
+    #####:   46:		printf("Adventurer add 2 cards remove 1 - Fail \n");
+        -:   47:	else
+        1:   48:		printf("Adventurer add 2 cards remove 1 - check \n");
+        -:   49:	
+        2:   50:	if (treasure1 == copper || treasure1 == silver || treasure1 == gold)
+        1:   51:		printf("Adventurer last Treasure Care - Check \n");
+        -:   52:	else
+    #####:   53:		printf("Adventurer last Treasure Care - Fail \n");
+        -:   54:
+        2:   55:	if (treasure2 == copper || treasure2 == silver || treasure2 == gold)
+        1:   56:		printf("Adventurer first Treasure Care - Check \n");
+        -:   57:	else
+    #####:   58:		printf("Adventurer first Treasure Care - Fail \n");
+        -:   59:	
+        1:   60:	if (drawnDiscard - 2 + 1 == testGame->discardCount[currentPlayer])
+    #####:   61:		printf("Adventurer drawn discards - check \n");
+        -:   62:	else
+        1:   63:		printf("Adventurer drawn discards - fail \n");
+        -:   64:
+        -:   65:
+        1:   66:	return 0;
+        -:   67:	
+        -:   68:}
