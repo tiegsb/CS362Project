@@ -17,11 +17,11 @@
 // # of players?
 // which player it is
 
-
+#include <assert.h>    // for assert
 #include <stdio.h>
 #include <stdlib.h>    // for rand and srand
 #include <time.h>      // for time
-#include <string.h>
+#include <string.h>    // for memcpy
 #include "dominion.h"
 #include "dominion_helpers.h"
 //#include "rngs.h"
@@ -137,6 +137,8 @@ int main(int argc, char *argv[])
 int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
 {
 
+    //printf("in function\n");
+
     int retVal;
     int cardsAvailable;
 
@@ -152,11 +154,13 @@ int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
     // hand should have 3 more cards in post than in pre
     // but what happens if no cards are in discard pile or deck?
 
+    // determine how many cards are left between deck and discard pile 
     cardsAvailable = pre.deckCount[playerNumber] + pre.discardCount[playerNumber];
 
-    if (cardsAvailable >= 3) // 0, 1, or 2 cards
+    // add three cards to hand or as many as are available if less than 3
+    if (cardsAvailable >= 3) 
         pre.handCount[playerNumber] = pre.handCount[playerNumber] + 3;
-    else
+    else // 0, 1, or 2 cards
         pre.handCount[playerNumber] = pre.handCount[playerNumber] + cardsAvailable;
 
     // discard pile will either have 1 more card in post than in pre
@@ -164,11 +168,22 @@ int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
 
 
     // make sure smithyEffect did not crash
-    assert (retVal = 0);
-
-    // compare actual result to expected result (post to pre)
-    // to make sure smithyEffect is working properly
-    assert (pre.handCount[playerNumber] == post.handCount[playerNumber]);
+    if (retVal < 0)
+    {
+        printf("smithyEffect returned a nonzero value\n");
+        perror("Error number: ");
+    }
+    else
+    {
+        // compare actual result to expected result (post to pre)
+        // to make sure smithyEffect is working properly
+        if (pre.handCount[playerNumber] != post->handCount[playerNumber])
+        {
+            printf("smithyEffect did not add the expected number of cards to the player's hand.\n");
+            perror("Error number: "); 
+            retVal = -1;
+        }
+    }
 
     // returns zero if smithyEffect did not crash
     return retVal;
