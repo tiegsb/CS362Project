@@ -25,7 +25,7 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 unittestresult.out
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so badTestDrawCard testDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 unittestresult.out randomtestadventurer randomtestadventurer.out randomtestcard randomtestcard.out statefile
 
 # unit tests
 testDrawCard: testDrawCard.c dominion.o cards.o rngs.o
@@ -63,6 +63,9 @@ cardtest4: dominion.o cards.o rngs.o cardtest4.c
 
 randomtestadventurer: dominion.o cards.o rngs.o randomtestadventurer.c
 	$(GCC) -o randomtestadventurer randomtestadventurer.c dominion.o cards.o rngs.o $(CFLAGS)
+
+randomtestcard: dominion.o cards.o rngs.o randomtestcard.c
+	$(GCC) -o randomtestcard randomtestcard.c dominion.o cards.o rngs.o $(CFLAGS)
 
 testAll: dominion.o cards.o testSuite.c
 	$(GCC) -o testSuite testSuite.c  dominion.o cards.o rngs.o $(CFLAGS)
@@ -114,7 +117,13 @@ runcardtest4: cardtest4
 	cat cards.c.gcov >> unittestresult.out
 
 runrandomtestadventurer: randomtestadventurer
-	./randomtestadventurer &> randomtestadventurer.out
-	# TODO
+	./randomtestadventurer run statefile &> randomtestadventurer.out
+	$(GCOV) cards.c >> unittestresult.out
+	cat cards.c.gcov >> unittestresult.out
+
+runrandomtestcard: randomtestcard
+	./randomtestcard run statefile &> randomtestcard.out
+	$(GCOV) cards.c >> unittestresult.out
+	cat cards.c.gcov >> unittestresult.out
 
 unittestresult.out: clean rununittest1 rununittest2 rununittest3 rununittest4 runcardtest1 runcardtest2 runcardtest3 runcardtest4

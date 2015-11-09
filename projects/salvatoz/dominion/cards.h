@@ -21,6 +21,9 @@ typedef int (*cardEffectHandler)(int choice1, int choice2, int choice3,
 int adventurerHandler(int choice1, int choice2, int choice3,
                       struct gameState* state, int handPos, int* bonus);
 
+int smithyHandler(int choice1, int choice2, int choice3,
+                  struct gameState* state, int handPos, int* bonus);
+
 /* struct cardData
  * Contains relevant data for cards.
  */

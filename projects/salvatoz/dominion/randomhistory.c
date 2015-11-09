@@ -1,8 +1,4 @@
 /*
-==========
-Adventurer
-==========
-
 Identifying the Interface
 -------------------------
 
@@ -150,4 +146,16 @@ player, and total number of cards is equal to what it was before calling
 adventurerHandler().
 
 Test reusability:
+Because we might want to rerun test cases later -- for example, to check that a
+previously failing test case now passes, or for regression testing to check bugs
+that we've fixed -- both of my testers have two commands: run and replay. run
+takes an optional filename, to which the tester outputs its generated state.
+replay takes a required filename, which should contain the generated state from 
+a previous invocation of run. This allows for easy reuse of test cases as 
+needed.
+
+Correctness
+-----------
+Both of my testers found bugs in the cards they test. Since we are required to
+have introduced bugs into the code, this makes sense.
 */
