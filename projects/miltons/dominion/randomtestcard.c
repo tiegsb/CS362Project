@@ -1,6 +1,8 @@
 // tests Smithy card
 // int smithyEffect(int currentPlayer, struct gameState *state, int handPos)
-// LINE 1230 of dominion.c
+// smithyEffect() on line 1230 of dominion.c
+
+// Test code adapted from examples in week 3 lecture "How to Write a Simple Random Tester."
 
 // test / assert against state of game before and after smithy is played
 
@@ -10,7 +12,6 @@
 // or will have 1 card (in case of empty deck during draw)
 
 
-// adapted from examples in week 3 lecture "How to Write a Simple Random Tester"
 
 // what should be random?
 // # of players?
@@ -43,13 +44,26 @@ int randInt(int min, int max);
 
 /*****************************************************************************
  ** Function:         testSmithyEffect()
- ** Description:      This function 
- ** Parameters:       
- ** Pre-Conditions:   
- ** Post-Conditions:  
+ ** Description:      This function tests the smithyEffect() function. It
+ **                   creates a copy of the game state, calls the function
+ **                   passing it the game state, makes changes to the copy of
+ **                   the game state based on what the function is expected to
+ **                   do if it is working correctly. Then actual results to
+ **                   the game state from smithyEffect() are compared to the 
+ **                   expected results to see if the function is working
+ **                   properly.
+ ** Parameters:       two int values: playerNumber, handPos
+ **                   a pointer to a struct of type gameState: testState
+ ** Pre-Conditions:   playerNumber and handPos are of type int with values
+ **                   within valid ranges for the game. testState is a
+ **                   initialized and its member variables should have valid
+ **                   values, at least for the more important game parameters
+ ** Post-Conditions:  The smithyEffect function has been tested. Any errors 
+ **                   and discrepancies between the actual results and expected
+ **                   results have been output to the console.
  **
  *****************************************************************************/
-int testSmithyEffect(int playerNumber, struct gameState *testState);
+int testSmithyEffect(int playerNumber, struct gameState *testState, int handPos);
 
 
 
@@ -83,9 +97,11 @@ int main(int argc, char *argv[])
         testState.discardCount[playerNumber] = randInt(0, MAX_DECK);
         // random number of cards in current player's hand
         testState.handCount[playerNumber] = randInt(0, MAX_HAND);
+        // random value for position in hand of card to discard
+        handPos = randInt(0, testState.handCount[playerNumber] - 1);
 
         // call test oracle function and pass it these parameters
-        int retVal = testSmithyEffect(playerNumber, &testState);
+        int retVal = testSmithyEffect(playerNumber, &testState, handPos);
 
         // check return value for failure / crash
         if (retVal < 0)
@@ -101,10 +117,19 @@ int main(int argc, char *argv[])
 
 
 
-int testSmithyEffect(int playerNumber, struct gameState *post)
+int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
 {
+
+    // create duplicate of game state for before and after comparison
+    struct gameState pre;
+    memcpy (&pre, post, sizeof(struct gameState));
+
     // call smithyEffect function
-    //smithyEffect
+    smithyEffect(playerNumber, post, handPos);
+
+    // make changes to pre based on what smithyEffect should do
+
+    // compare actual result to expected result (post to pre)
 
     // return zero if smithyEffect did not crash
     return 0;
