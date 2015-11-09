@@ -108,6 +108,7 @@ int main(int argc, char *argv[])
         // random number of cards in current player's hand
         testState.handCount[playerNumber] = randInt(0, MAX_HAND);
 
+        // prevent negative values for array indices
         if (testState.handCount[playerNumber] == 0)
             handPos = 0;
         else
@@ -136,19 +137,41 @@ int main(int argc, char *argv[])
 int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
 {
 
+    int retVal;
+    int cardsAvailable;
+
     // create duplicate of game state for before and after comparison
     struct gameState pre;
     memcpy (&pre, post, sizeof(struct gameState));
 
     // call smithyEffect function
-    smithyEffect(playerNumber, post, handPos);
+    retVal = smithyEffect(playerNumber, post, handPos);
 
     // make changes to pre based on what smithyEffect should do
 
-    // compare actual result to expected result (post to pre)
+    // hand should have 3 more cards in post than in pre
+    // but what happens if no cards are in discard pile or deck?
 
-    // return zero if smithyEffect did not crash
-    return 0;
+    cardsAvailable = pre.deckCount[playerNumber] + pre.discardCount[playerNumber];
+
+    if (cardsAvailable >= 3) // 0, 1, or 2 cards
+        pre.handCount[playerNumber] = pre.handCount[playerNumber] + 3;
+    else
+        pre.handCount[playerNumber] = pre.handCount[playerNumber] + cardsAvailable;
+
+    // discard pile will either have 1 more card in post than in pre
+    // or will have 1 card (in case of empty deck during draw)
+
+
+    // make sure smithyEffect did not crash
+    assert (retVal = 0);
+
+    // compare actual result to expected result (post to pre)
+    // to make sure smithyEffect is working properly
+    assert (pre.handCount[playerNumber] == post.handCount[playerNumber]);
+
+    // returns zero if smithyEffect did not crash
+    return retVal;
 }
 
 
