@@ -31,6 +31,48 @@ runtests: testDrawCard
 
 unittest1: unittest1.c
 	gcc -o unittest1 unittest1.c -g dominion.o rngs.o $(CFLAGS)
+<<<<<<< HEAD
+
+unittest2: unittest2.c
+	gcc -o unittest2 unittest2.c -g dominion.o rngs.o $(CFLAGS)
+
+unittest3: unittest3.c
+	gcc -o unittest3 unittest3.c -g dominion.o rngs.o $(CFLAGS)
+
+unittest4: unittest4.c
+	gcc -o unittest4 unittest4.c -g dominion.o rngs.o $(CFLAGS)
+
+cardtest1: cardtest1.c
+	gcc -o cardtest1 cardtest1.c -g dominion.o rngs.o $(CFLAGS)
+
+cardtest2: cardtest2.c
+	gcc -o cardtest2 cardtest2.c -g dominion.o rngs.o $(CFLAGS)
+
+cardtest3: cardtest3.c
+	gcc -o cardtest3 cardtest3.c -g dominion.o rngs.o $(CFLAGS)
+
+cardtest4: cardtest4.c
+	gcc -o cardtest4 cardtest4.c -g dominion.o rngs.o $(CFLAGS)
+
+rununittests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
+	gcc -o unittest1 unittest1.c -g dominion.o rngs.o $(CFLAGS)
+	gcc -o unittest2 unittest2.c -g dominion.o rngs.o $(CFLAGS)
+	gcc -o unittest3 unittest3.c -g dominion.o rngs.o $(CFLAGS)
+	gcc -o unittest4 unittest4.c -g dominion.o rngs.o $(CFLAGS)
+	gcc -o cardtest1 cardtest1.c -g dominion.o rngs.o $(CFLAGS)
+	gcc -o cardtest2 cardtest2.c -g dominion.o rngs.o $(CFLAGS)
+	gcc -o cardtest3 cardtest3.c -g dominion.o rngs.o $(CFLAGS)
+	gcc -o cardtest4 cardtest4.c -g dominion.o rngs.o $(CFLAGS)
+	gov unittest1.c -p -b >> unittestresults.out
+	gov unittest2.c -p -b >> unittestresults.out	
+	gov unittest3.c -p -b >> unittestresults.out
+	gov unittest4.c -p -b >> unittestresults.out
+	gov cardtest1.c -p -b >> unittestresults.out	
+	gov cardtest2.c -p -b >> unittestresults.out
+	gov cardtest3.c -p -b >> unittestresults.out	
+	gov cardtest4.c -p -b >> unittestresults.out	
+=======
+>>>>>>> b8fed9de43626a0f5914fb324808d499ca8a59c8
 
 unittest2: unittest2.c
 	gcc -o unittest2 unittest2.c -g dominion.o rngs.o $(CFLAGS)
@@ -71,6 +113,20 @@ rununittests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardte
 	gov cardtest3.c -p -b >> unittestresults.out	
 	gov cardtest4.c -p -b >> unittestresults.out	
 
+randomtestcard: randomtestcard.c
+	gcc -o randomtestcard randomtestcard.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer: randomtestadventurer.c
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
+	
+runrandomtests: randomtestcard
+	gcc -o randomtestcard randomtestcard.c -g dominion.o rngs.o $(CFLAGS)
+	./randomtestcard &> randomtestcard.out
+
+runrandomadventurer: randomtestadventurer
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
+	./randomtestadventurer &> randomtestadventurer.out
+	
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
