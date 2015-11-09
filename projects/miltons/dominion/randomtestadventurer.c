@@ -153,7 +153,6 @@ int testAdventurerEffect(int playerNumber, struct gameState *post)
     if (retVal < 0)
     {
         printf("adventurerEffect returned a nonzero value\n");
-        perror("Error number: ");
     }
     else
     {
@@ -162,7 +161,6 @@ int testAdventurerEffect(int playerNumber, struct gameState *post)
         if (pre.handCount[playerNumber] != post->handCount[playerNumber])
         {
             printf("adventurerEffect did not add the expected number of cards to the player's hand.\n");
-            perror("Error number: "); 
             retVal = -1;
         }
     }

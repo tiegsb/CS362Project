@@ -158,7 +158,6 @@ int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
     if (retVal < 0)
     {
         printf("smithyEffect returned a nonzero value\n");
-        perror("Error number: ");
     }
     else
     {
@@ -167,7 +166,6 @@ int testSmithyEffect(int playerNumber, struct gameState *post, int handPos)
         if (pre.handCount[playerNumber] != post->handCount[playerNumber])
         {
             printf("smithyEffect did not add the expected number of cards to the player's hand.\n");
-            perror("Error number: "); 
             retVal = -1;
         }
     }
