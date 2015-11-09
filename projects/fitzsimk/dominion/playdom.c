@@ -1,6 +1,8 @@
 #include "dominion.h"
+#include "interface.h"
 #include <stdio.h>
 #include "rngs.h"
+
 #include <stdlib.h>
 
 int main (int argc, char** argv) {
@@ -19,11 +21,12 @@ int main (int argc, char** argv) {
 
   int numSmithies = 0;
   int numAdventurers = 0;
-
+   int player;
   while (!isGameOver(&G)) {
     money = 0;
     smithyPos = -1;
     adventurerPos = -1;
+    
     for (i = 0; i < numHandCards(&G); i++) {
       if (handCard(i, &G) == copper)
     money++;

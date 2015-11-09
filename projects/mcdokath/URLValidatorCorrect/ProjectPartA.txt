@@ -1,0 +1,24 @@
+Final Project Part A
+Sami Picotte
+Andrew Weckwerth
+Kathryn McDonald
+
+Explain testIsValid():
+1. How many total URLS it is testing
+Running the test produces a test output of 1890 URLs.
+
+2. How is it building the URLs
+testIsValid() builds the URLs by first storing them in a new string buffer.
+It then loops through appending each designated link section to the test buffer.
+Within this loop, ResultPair[] is used to combine the “item” of the pair with the “valid” flag of the pair.
+At the end, everything stored in the test buffer is converted to a string, which is then tested.
+
+3. Example of valid URL and invalid URL being tested
+Example of valid URL being tested (assuming default options): 
+When example valid URL "http://www.google.com/test1" is tested with testIsValid(), it is split according to the "http" scheme into parts, <scheme>://<authority><path>, then each part is tested individually. In this case, each ResultPair matches a valid format, and returns "true". Each of these return values is reported, and used to build a string. That string is parsed, and when all values are valid, testIsValid() returns "true".                   
+
+Example of invalid URL being tested:                                        
+"http:www.google.com/.." When this URL is split into parts in the same way, the first and third part return false. In testIsValid, either of these would be sufficient to cause the function to return false in the respective parse techniques & subsequent test: urlMatcher.group(PARSE_URL_SCHEME) or urlMatcher.group(PARSE_URL_PATH). 
+
+4. Do you think that a real world test is very different than unit tests and card tests?  Explain.
+Fundamentally, there are similarities, but some differences may apply with regard to application complexity and consequently test complexity. Also, in the real world there are many applications where testing efficacy is very important such highly critical code that can affect critical infrastructure and potentially lives.

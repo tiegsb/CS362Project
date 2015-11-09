@@ -1239,8 +1239,8 @@ int adventurerCard(int currentPlayer, struct gameState *state)
 	drawCard(currentPlayer, state);
 	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1];//top card of hand is most recently drawn card.
 
-	//if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold){
-	if (cardDrawn == copper || cardDrawn == gold){
+	if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold){
+	//if (cardDrawn == copper || cardDrawn == gold){
 	//bug: silver card does not update drawn treasure!
 		drawntreasure++;
 	}

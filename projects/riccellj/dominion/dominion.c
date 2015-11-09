@@ -672,7 +672,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   switch( card ) 
     {
     case adventurer:
-		adventurerEffectCard(z, cardDrawn, drawntreasure, currentPlayer, handpos, temphand, state);
+		adventurerEffectCard(z, cardDrawn, drawntreasure, currentPlayer, handPos, temphand, state);
 		return 0;
 			
     case council_room:
@@ -1133,7 +1133,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case salvager:
-      salvagerEffectCard(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int currentPlayer, int *bonus);
+      salvagerEffectCard(card,choice1,choice2, choice3, state, handPos,currentPlayer,bonus);
 	  return 0;
 		
     case sea_hag:
@@ -1308,7 +1308,8 @@ void adventurerEffectCard(int z, int cardDrawn, int drawntreasure, int currentPl
 }
 
 void smithyEffectCard(int handPos, int currentPlayer, struct gameState *state){	  
-      for (i = 0; i <= 3; i++)
+   int i = 0;   
+   for (i = 0; i <= 3; i++)
 		{
 			drawCard(currentPlayer, state);
 		}

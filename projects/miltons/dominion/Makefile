@@ -85,7 +85,7 @@ randomtestadventurer.out: randomtestadventurer.c dominion.c rngs.c
 	randomtestadventurer >> randomtestadventurer.out
 	gcov dominion.c >> randomtestadventurer.out
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard unittestresults.out
+all: playdom player testDrawCard testBuyCard badTestDrawCard unittestresults.out randomtestcard.out randomtestadventurer.out
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe unittestresults.out cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4 *.gcov *.gcda *.gcno *.so
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe unittestresults.out cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4 randomtestcard randomtestadventurer randomtestcard.out randomtestadventurer.out *.gcov *.gcda *.gcno *.so

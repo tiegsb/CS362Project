@@ -1,0 +1,89 @@
+genTestSetup():
+    set numPlayers
+    pick 0 <= whoseTurn < numPlayers
+    populate inactive players hands, decks, discards
+        any random assortment of cards // can't just be all the same -- what if the code clobbered the other players' cards?
+    populate active player's hand, deck, discard
+        pick one:
+            - no treasure in deck
+            - 1 treasure in deck
+            - 2 treasures in deck
+            - more than 2 treasures in deck
+        pick one:
+            - no treasure in discard
+            - 1 treasure in discard
+            - 2 treasures in discard
+            - more than 2 treasures in discard
+        put treasures in deck and discard to satisfy conditions
+            - put coppers in deck and golds in discard to check where they came 
+              from afterwards
+        set handCount, deckCount, discardCount to random numbers
+        fill hand, deck, discard with random non-treasure cards
+        shuffle deck
+
+saveTestSetup(state):
+    write handCount, deckCount, discardCount, hand, deck, and discard to file for all players
+
+loadTestSetup():
+    load state from file
+
+runTest():
+    adventurerHandler()
+    integrityCheck()
+    report results
+
+
+main():
+    if new test:
+        state <- genTestSetup()
+        saveTestSetup(state)
+    else if replay:
+        state <- loadTestSetup(filename)
+    runTest(state)
+
+
+integrityCheck()
+    make sure values that should be constant stayed the same
+        - whoseTurn
+        - numPlayers
+        - each player's total card counts
+        - supply piles
+    check that all players card collections stayed the same (verifyOtherPlayerCards() and verifyActivePlayerCards())
+    check that the active player gained the right treasures (verifyTreasuresGained())
+
+verifyOtherPlayerCards(before, after)
+    cards before and after should be identical -- they should never shuffle or move
+
+verifyActivePlayerCards(before, after)
+    put all before cards into one sorted list
+    put all after cards into one sorted list
+    check that both sorted lists are the same
+
+verifyTreasuresGained(before, after)
+    before hand treasures + treasureToGain() == after hand treasure
+    check case: (16 possible inputs but only 6 possible results)
+        - no treasure in deck before
+            - no treasure in discard before
+                no treasure gained (1)
+            - 1 treasure in discard before
+                1 gold gained (2)
+            - 2 treasure in discard before
+                2 gold gained (3)
+            - >2 treasure in discard before
+                2 gold gained (3)
+        - 1 treasure in deck before
+            - no treasure in discard before
+                1 copper gained (4)
+            - 1 treasure in discard before
+                1 copper and 1 gold gained (5)
+            - 2 treasure in discard before
+                1 copper and 1 gold gained (5)
+            - >2 treasure in discard before
+                1 copper and 1 gold gained (5)
+        - 2 treasure in deck before
+            2 copper must always be gained (6)
+        - >2 treasure in deck before
+            2 copper must always be gained (6)
+
+treasureToGain()
+    return 2 or the number of treasures in discard and deck, whichever is lower

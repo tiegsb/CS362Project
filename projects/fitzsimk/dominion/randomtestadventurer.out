@@ -1,0 +1,10 @@
+Total Tests Run: 300000
+Total Tests Passed: 64981
+Total Tests Failed: 234657
+File 'dominion.c'
+Lines executed:21.52% of 618
+Branches executed:18.67% of 450
+Taken at least once:17.56% of 450
+Calls executed:10.20% of 98
+dominion.c:creating 'dominion.c.gcov'
+
