@@ -5,9 +5,9 @@ Changes to adventurer, smithy, village, steward, and outpost
 
 Adventurer changes:
 
-'shuffle(currentPlayer,state) changed to shuffle(currentPlayer++,state)
-[state->handCount[currentPlayer]-1] changed to [state->handCount[currentPlayer+1]-1]
-in line: cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1]; 
+	I put the shuffle function call into an if condition and checked for a negative
+	return value, and return 1 if that is the case.
+
 
 Smithy changes:
 
