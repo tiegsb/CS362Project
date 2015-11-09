@@ -205,7 +205,7 @@ int testCardEffect(int card) {
                     passed++;
             }
             else{
-                if(pre.hand[currentPlayer][i] != copper || pre.hand[currentPlayer][i] != silver || pre.hand[currentPlayer][i] != gold){
+                if(post.hand[currentPlayer][i] != copper || post.hand[currentPlayer][i] != silver || post.hand[currentPlayer][i] != gold){
                     printf("cardEffect(adventurer): FAIL, incorrect card in handPos %d \n", i);
                     failed++;
                 }

@@ -82,3 +82,35 @@ higher, but output file size would be prohibitive. I do not want to remove
 the extended reporting, the only way to reduce output file size without
 fixing the bug. I guess we're at an impasse.
 
+
+11/8/2015 (later):
+
+Got randomtestcard.c going. With randomtestadventurer going smoothly, getting
+this tester set up wasn't very difficult. I'm slightly perplexed by the
+coverage, though, at least on the first round.
+
+From the coverage report in assignment 3:
+
+  Lines executed:92.86% of 14
+  Branches executed:100.00% of 10
+  Taken at least once:70.00% of 10
+  Calls executed:100.00% of 4
+
+From the first test runs of randomtestcard:
+
+  Lines executed:100.00% of 14
+  Branches executed:100.00% of 10
+  Taken at least once:90.00% of 10
+  Calls executed:100.00% of 4
+
+An improvement for sure, but the "Taken..." line only reports 90%. 100% of
+branches are executed, though, so I'm honestly not sure this is an issue. 
+
+As with randomtestadventurer, randomtestcard outputs quite a bit of content if
+tests fail. I still feel that this is important to leave in, so rather than
+limit my reporting I'm opting to limit the number of test runs to the same
+number that is run with randomtestadventurer: 30,000. This results in an output
+file that approaches 140MB. Perhaps this is not large by testing standards, but
+it feels like a lot to me. I'm sure I'll hear if this is acceptable or if I need
+to adjust the testers to output less and run longer. For now, I think I'm going
+to clean up the code and submit the assignment.
