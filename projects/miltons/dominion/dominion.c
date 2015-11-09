@@ -1234,11 +1234,11 @@ int smithyEffect(int currentPlayer, struct gameState *state, int handPos)
   //+3 Cards
   for (i = 0; i <= 3; i++)
   {
-	drawCard(currentPlayer, state);
+	drawCard(currentPlayer, state); // drawCard on line 530
   }
 
   //discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
+  discardCard(handPos, currentPlayer, state, 0); // discardCard on line 1102
   return 0;
 }
 

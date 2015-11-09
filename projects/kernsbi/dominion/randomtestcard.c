@@ -67,6 +67,9 @@ int main(){
 	if(errorCount != 0){
 		#if(NOISY_TEST != 1)
 		printf("At least 1 test failed.  Define NOISY_TEST to 1 for more information\n");
+		printf("Total Test Runs: %d\n", n);
+		printf("Passing Tests: %d\n", n - errorCount);
+		printf("Failed Tests: %d\n", errorCount);
 		#endif
 	}
 	else {

@@ -1,5 +1,6 @@
 // tests Adventurer card
 // int adventurerEffect(int currentPlayer, int drawntreasure, int temphand[MAX_HAND], struct gameState *state, int cardDrawn, int z)
+// adventurerEffect() is on line 1207 of dominion.c
 
 // test / assert against state of game before and after adventurer is played
 
@@ -13,6 +14,8 @@
 // either deck or discard pile will be empty, maybe both???
 // (check - Doesn't recycle + reshuffle discard pile if deck empty,
 //  if so could have less)
+
+// adapted from examples in week 3 lecture "How to Write a Simple Random Tester"
 
 #include <stdio.h>
 #include "dominion.h"
