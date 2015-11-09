@@ -114,16 +114,15 @@ int main(int argc, char *argv[])
 int testAdventurerEffect(int playerNumber, struct gameState *post)
 {
 
-// hand will have 2 more cards in post than in pre AND
+// hand should have 2 more cards in post than in pre AND
 // discard pile will have same or more cards in post than in pre
-// case where deck doesn't run out of cards
+// in case where deck doesn't run out of cards before 2 cards are
+// drawn
 
 // OR
 
 // hand will have 0 or 1 more cards in post than in pre AND
-// either deck or discard pile will be empty, maybe both???
-// (check - Doesn't recycle + reshuffle discard pile if deck empty,
-//  if so could have less)
+// either deck and discard pile will be empty
 
     int retVal = 0;
     int cardsAvailable;
@@ -139,34 +138,34 @@ int testAdventurerEffect(int playerNumber, struct gameState *post)
     // call adventurerEffect function
     retVal = adventurerEffect(playerNumber, drawnTreasure, tempHand, post, cardDrawn, z);
 
-    // // make changes to pre based on what adventurerEffect should do
+    // make changes to pre based on what adventurerEffect should do
 
-    // // determine how many cards are left between deck and discard pile 
-    // cardsAvailable = pre.deckCount[playerNumber] + pre.discardCount[playerNumber];
+    // determine how many cards are left between deck and discard pile
+    cardsAvailable = pre.deckCount[playerNumber] + pre.discardCount[playerNumber];
 
-    // // add three cards to hand or as many as are available if less than 3
-    // if (cardsAvailable >= 3) 
-    //     pre.handCount[playerNumber] = pre.handCount[playerNumber] + 3;
-    // else // 0, 1, or 2 cards
-    //     pre.handCount[playerNumber] = pre.handCount[playerNumber] + cardsAvailable;
+    // add 2 cards to hand or as many as are available if less than 2
+    if (cardsAvailable >= 2)
+        pre.handCount[playerNumber] = pre.handCount[playerNumber] + 2;
+    else // 0 cards or 1 card
+        pre.handCount[playerNumber] = pre.handCount[playerNumber] + cardsAvailable;
 
-    // // make sure adventurerEffect did not crash
-    // if (retVal < 0)
-    // {
-    //     printf("adventurerEffect returned a nonzero value\n");
-    //     perror("Error number: ");
-    // }
-    // else
-    // {
-    //     // compare actual result to expected result (post to pre)
-    //     // to make sure adventurerEffect is working properly
-    //     if (pre.handCount[playerNumber] != post->handCount[playerNumber])
-    //     {
-    //         printf("adventurerEffect did not add the expected number of cards to the player's hand.\n");
-    //         perror("Error number: "); 
-    //         retVal = -1;
-    //     }
-    // }
+    // make sure adventurerEffect did not crash
+    if (retVal < 0)
+    {
+        printf("adventurerEffect returned a nonzero value\n");
+        perror("Error number: ");
+    }
+    else
+    {
+        // compare actual result to expected result (post to pre)
+        // to make sure adventurerEffect is working properly
+        if (pre.handCount[playerNumber] != post->handCount[playerNumber])
+        {
+            printf("adventurerEffect did not add the expected number of cards to the player's hand.\n");
+            perror("Error number: "); 
+            retVal = -1;
+        }
+    }
 
     // returns zero if adventurerEffect did not crash
     return retVal;
