@@ -53,9 +53,9 @@ int adventurerHandler(int choice1, int choice2, int choice3,
       shuffle(currentPlayer, state);
     }
     drawCard(currentPlayer, state);
-    cardDrawn = lastDrawn(currentPlayer, state);
+    cardDrawn = lastDrawn(currentPlayer, state);  // !
     if (isTreasure(cardDrawn))
-      drawntreasure++;
+      drawntreasure++;  // !
     else {
       temphand[z++] = cardDrawn;
       state->handCount[currentPlayer]--;

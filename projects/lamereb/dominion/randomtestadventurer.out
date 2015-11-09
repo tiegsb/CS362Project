@@ -1,0 +1,170 @@
+randomtestadventurer.c -->
+File 'dominion.c'
+Lines executed:34.92% of 567
+Creating 'dominion.c.gcov'
+
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 3, after= 4
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 0
+ERROR: not +2 Treasure cards. Coins before= 0, after= 0
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 3, after= 4
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is -72
+ERROR: not +2 Treasure cards. Coins before= 1, after= 0
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 2, after= 3
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 2, after= 3
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is -72
+ERROR: not +2 Treasure cards. Coins before= 0, after= 0
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 1, after= 2
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ERROR: expected player's hand-count to be +2, but it is 1
+ERROR: not +2 Treasure cards. Coins before= 0, after= 1
+ -- VILLAGE CARD TESTED 1050 TIMES  WITH 164 ERRORS

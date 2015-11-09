@@ -1,0 +1,127 @@
+Test 1:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 1
+
+Test 2:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 2
+
+Test 3:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 3
+
+Test 4:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 4
+
+Test 5:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 5
+
+Test 6:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 6
+
+Test 7:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 7
+
+Test 8:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 8
+
+Test 9:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 9
+
+Test 10:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 10
+
+Test 11:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 11
+
+Test 12:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 12
+
+Test 13:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 13
+
+Test 14:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 14
+
+Test 15:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 15
+
+Test 16:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 16
+
+Test 17:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 17
+
+Test 18:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 18
+
+Test 19:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 19
+
+Test 20:
+	FAILED - HandCount was not increased by 2.
+	PASSED - Smithy card was removed.
+	FAILED - Exactly 3 cards were not removed from the deck.
+End Test 20
+
+Failed tests = 20
+Passed tests = 0
+
+File 'dominion.c'
+No executable lines
+Removing 'dominion.c.gcov'
+

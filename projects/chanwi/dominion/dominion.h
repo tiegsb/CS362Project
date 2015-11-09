@@ -95,6 +95,16 @@ int shuffle(int player, struct gameState *state);
 /* Assumes all cards are now in deck array (or hand/played):  discard is
  empty */
 
+int adventurerCard(int drawntreasure, int cardDrawn, int currentPlayer, int z, int temphand[], struct gameState *state);
+
+int smithyCard(int i, int currentPlayer, int handPos, struct gameState *state);
+
+int councilRoomCard(int i, int currentPlayer, int handPos, struct gameState *state);
+
+int villageCard(int currentPlayer, int handPos, struct gameState *state);
+
+int treasureMapCard(int index, int i, int currentPlayer, int handPos, struct gameState *state);
+
 int playCard(int handPos, int choice1, int choice2, int choice3,
 	     struct gameState *state);
 /* Play card with index handPos from current player's hand */

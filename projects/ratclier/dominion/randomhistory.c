@@ -1,6 +1,8 @@
 NOTES ON RANDOM TESTING
 --------------------------------------------------
 
+11/7/2015:
+
 Converting my existing card test code to random-testing code was a bit
 more work than I expected. The volume of output concerned me, as I
 originally set up my non-random card tester for the Adventurer card
@@ -59,4 +61,56 @@ that I am running adventurerCard() with limited or even no treasure cards,
 I must be exercising the function more thoroughly.
 
 
+11/8/2015:
 
+I have discovered the reason my test runs had to be limited: not because of
+output file size (which gets huge), but because I had two sets of major memory
+leaks, one for each set of structs (the game state struct and the other struct
+that stores the game state before it's changed). 
+
+Before fixing the leaks, running even 12,000 tests could lock up resources and,
+if it exited at all, would leave the system in an instable state. Now that the
+memory leaks have been fixed, the tester runs too fast. Again, the dilemma
+is the bug that I introduced into the adventurerCard() function earlier in
+the quarter, the one that guarantees the testing will fail. When a test
+fails, a full comparison between the original game state and the changed
+game state is done and the results are reported. This, times 30,000 (the
+current number of test runs), makes the output file approximately 140MB
+depending on how the random number generation goes. I am going to continue
+to limit the tests to 30,000 runs because of this. I could go higher, much
+higher, but output file size would be prohibitive. I do not want to remove
+the extended reporting, the only way to reduce output file size without
+fixing the bug. I guess we're at an impasse.
+
+
+11/8/2015 (later):
+
+Got randomtestcard.c going. With randomtestadventurer going smoothly, getting
+this tester set up wasn't very difficult. I'm slightly perplexed by the
+coverage, though, at least on the first round.
+
+From the coverage report in assignment 3:
+
+  Lines executed:92.86% of 14
+  Branches executed:100.00% of 10
+  Taken at least once:70.00% of 10
+  Calls executed:100.00% of 4
+
+From the first test runs of randomtestcard:
+
+  Lines executed:100.00% of 14
+  Branches executed:100.00% of 10
+  Taken at least once:90.00% of 10
+  Calls executed:100.00% of 4
+
+An improvement for sure, but the "Taken..." line only reports 90%. 100% of
+branches are executed, though, so I'm honestly not sure this is an issue. 
+
+As with randomtestadventurer, randomtestcard outputs quite a bit of content if
+tests fail. I still feel that this is important to leave in, so rather than
+limit my reporting I'm opting to limit the number of test runs to the same
+number that is run with randomtestadventurer: 30,000. This results in an output
+file that approaches 140MB. Perhaps this is not large by testing standards, but
+it feels like a lot to me. I'm sure I'll hear if this is acceptable or if I need
+to adjust the testers to output less and run longer. For now, I think I'm going
+to clean up the code and submit the assignment.

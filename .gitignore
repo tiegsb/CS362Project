@@ -3,3 +3,6 @@ projects/watsokel/dominion/*.o
 projects/watsokel/dominion/*.gcov
 
 Assignment3/unittest3.c
+*.o
+*.gcda
+*.gcno

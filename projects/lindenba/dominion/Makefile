@@ -1,4 +1,6 @@
-CFLAGS = -Wall -fpic -coverage -lm -std=c99 -ftest-coverage -fprofile-arcs
+CFLAGS = -Wall -fpic -coverage -lm 
+
+all: playdom player testDrawCard testBuyCard badTestDrawCard cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4 unittestresults.out randomtestadventurer randomtestadventurer.out randomtestcard randomtestcard.out
 
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
@@ -57,7 +59,30 @@ cardtest3: cardtest3.c dominion.o rngs.o interface.o
 cardtest4: cardtest4.c dominion.o rngs.o interface.o
 	gcc -o cardtest4 cardtest4.c -g dominion.o rngs.o interface.o $(CFLAGS)
 
-unittestresults.out: cardtest1.c unittest1.c dominion.c rngs.o interface.o
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer.out: randomtestadventurer.c dominion.c rngs.o
+	echo "Result random test:" > randomtestadventurer.out
+
+	echo "randomtestadventurer.c” >> randomtestadventurer.out
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.c rngs.o $(CFLAGS)
+	randomtestadventurer >> randomtestadventurer.out
+	gcov dominion.c >> randomtestadvenuturer.out
+
+	
+randomtestcard: randomtestcard.c dominion.o rngs.o
+	gcc -o randomtestcard randomtestcard.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestcard.out: randomtestcard.c dominion.c rngs.o
+	echo "Result random test:" > randomtestcard.out
+	
+	echo "randomtestcard.c" >> randomtestcard.out
+	gcc -o randomtestcard randomtestcard.c -g dominion.c rngs.o $(CFLAGS)
+	randomtestcard >> randomtestcard.out
+	gcov dominion.c >> randomtestcard.out
+
+unittestresults.out: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest2.c unittest3.c unittest4.c dominion.c rngs.o interface.o
 	echo “Results for unit tests:” > unittestresults.out
 
 	echo “unittest1.c” >> unittestresults.out
@@ -100,7 +125,7 @@ unittestresults.out: cardtest1.c unittest1.c dominion.c rngs.o interface.o
 	cardtest4 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4
+
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe cardtest1.exe unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 *.gcov *.gcda *.gcno *.so
+	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe cardtest1.exe cardtest1 cardtest2.exe cardtest2 cardtest3.exe cardtest3 cardtest4.exe cardtest4 unittest1.exe unittest1 unittest2.exe unittest2 unittest3.exe unittest3 unittest4.exe unittest4 *.gcov *.gcda *.gcno *.so

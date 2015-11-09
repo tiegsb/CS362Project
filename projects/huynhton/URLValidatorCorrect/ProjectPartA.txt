@@ -1,12 +1,38 @@
-Tony Huynh	CS 362 Fall 2015	Project Part A
+CS 362 Fall 2015
+ Project Part A 
+Team: Sarah Cawley, Tony Huynh, Keenan Bishop
 
-This is my first exposure to Java and first time looking at a URLValidator test.  I Will try to answer the questions to the best of my abilities given my other programmming experience.
 
-First, there seems to be two testIsValid functions, each with different arguments.  The one with no arguments calls upon the testIsValid function that takes in two arguments.  Following that, it calls the setUp function, which seems to initialize some test parts.
 
-Looking at the testIsValid that takes in arguments, it takes in the object to be tested and takes in an option argument.  In that testIsValid function, there are two URLs that are being tested: "http://www.google.com" and "http://www.google.com/".  The URLs are manually typed in as strings and passed through an urlVal.isValid() function.
+testIsValid()
 
-When you pass in a valid url, its string gets tested.  The function would iterate through each character, and it seems to check them individually and as a group. If it is tested correctly, the testIsValid function outputs a '.'.  If the input string does not meet the expected result, it outputs an 'X'.  From the testValidators, one example of a valid URL is "http://hostname", and one invalid URL is "http://broke.my-test/test/index.html"
 
-In terms of concepts, I can see some similarities. From one of the lines in the testIsValid function, we have the command "assertEquals(url, expected, result);".  Without knowing in great detail what is going on, I can see the variables "url" and "expected."  In the tests that I have made so far in this class, I have received actual results (comparable to the input url) and compared them to expected values (comparable to the "expected" variable).  From this I can conclude that our concepts must share some similarities.  As far as complexity goes, I believe that depends on the student.  For me, I have kept my tests simple in assignment 3.  I only slightly increased its complexity in assignment 4 by trying to add on a random element to testing.  The URLValidatorTest is on a higher level of complexity.  It seems to check expected results in much greater detail. 
+
+1) Give how many total number of URLs it is testing. 9 x 19 x 7 x 10 x 3 = 35,910 tests
+
+
+
+2) Explain how it is building all the URLs.
+
+	testIsValid() is using a 2 dimensional array. The top level array represents the 5 parts of a URL: scheme, authority, port, path, and query.  The second level arrays are filled with valid and invalid component values. Here is a list of the top level array with the size the second level (testUrlScheme[9], testUrlAuthority[19], testUrlPort[7], testPath[10], testUrlQuery[3]).
+	
+
+	The Do-While loop goes through increasing and resetting the indices of the 2nd level array such that every unique combination of URL components will be used. Internally it uses a for loop to combine one part from each second level array to create a complete URL. Each section of the URL must have the boolean value of true (paired with the section of the URL) for the entire URL to be valid. 
+
+
+
+3) Give an example of valid URL being tested and an invalid URL being tested by testIsValid() method.
+  
+	valid: ftp://go.com:65535/t123?action=view
+
+	invalid: 3ht://go.com:65535/t123?action=view
+ 
+	The invalid case is invalid because 3ht is an invalid scheme.
+
+
+
+4) Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and card tests that we wrote (in terms of concepts & complexity)? Explain in few lines:
+
+	The concepts are the same, aka test each part of the output to see if it is valid or not with a comprehensive set of inputs. The complexity is greater by the number of tests being run, the construction of the test inputs, and the inputs being amalgamations of valid and invalid parts.
+
 
