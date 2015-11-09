@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+struct gameState G;
+
 /* some semi-magic numbers for buffer sizes.
 13 is the length of the string "treasure_map" plus one character for a delimiter
 10000 seemed like a big enough number of the extra stuff I want in the state
@@ -577,9 +579,20 @@ static void genTestState(struct gameState *state) {
     setInactivePlayerCards(state);
 }
 
+/*
+precondition: state has been initialized
+*/
 static void runTest(struct gameState *state) {
-
+    struct gameState stateCopy;
+    memcpy(&stateCopy, state, sizeof(struct gameState));
+    adventurerHandler(0, 0, 0, state, 0, NULL);
+    integrityCheck(&stateCopy, state);
 }
+
+enum TESTMODE {
+    fresh,
+    replay
+};
 
 /*
 Usage: randomtestadventurer [options] [command] ...
@@ -597,19 +610,38 @@ Commands:
 
 */
 int main(int argc, char **argv) {
-    struct gameState G;
-    int k[10] = {adventurer, gardens,  embargo, village, minion,
-               mine,       cutpurse, sea_hag, tribute, smithy};
-    int status;
+    enum TESTMODE mode = fresh;
+    char *filename;
 
-    status = initializeGame(2, k, atoi(argv[1]), &G);
-
-    if (status == -1) {
-        fprintf(stderr, "error 000: couldn't initialize game\n");
-        return 1;
+    if (argc < 2) {
+        printf("Usage: %s [command] [file]\n", argv[0]);
+        return 0;
+    } else if (argc < 3) {
+        printf("Not using file.\n");
+        filename = NULL;
+        if (strcmp(argv[1], "replay") == 0)
+            mode = replay;
+        else if (strcmp(argv[1], "run") == 0)
+            mode = fresh;
+        else {
+            printf("Mode %s is unknown - must use run or replay\n", argv[1]);
+            return 1;
+        }
+    } else {
+        filename = argv[2];
+        printf("Using file %s\n", filename);
     }
 
-    
+    if (mode == fresh) {
+        genTestState(&G);
+        if (filename) {
+            saveState(filename, &G);
+        }
+    } else if (mode == replay) {
+        loadState(filename, &G);
+    }
+
+    runTest(&G);
 
     return 0;
 }
