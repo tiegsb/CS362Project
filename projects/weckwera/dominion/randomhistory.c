@@ -20,3 +20,14 @@
  * segfault in my first rounds of testing. I had to change the adventurerCard()
  * function in order to show further random test functionality, but it was
  * caught.
+ *
+ *
+ * Feast card test: I got to 22% line coverage with this function, which I
+ * thought was relatively successful. My branch coverage was 26.6%, indicating
+ * at least a moderately successful test function. Randomly choosing a card to
+ * be purchased was a successful route here, and did show some errors in the
+ * function implementation, because it was unable to return successfully.
+ *
+ * I had to quiet the print statements in the feast card function, because with
+ * random testing most statements would typically be "This card is too
+ * expensive!"
