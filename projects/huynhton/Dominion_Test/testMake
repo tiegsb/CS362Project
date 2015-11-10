@@ -1,2 +1,0 @@
-testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
-       gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)

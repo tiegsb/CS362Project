@@ -1,2 +1,0 @@
-Kayla Fitzsimmons 
-Project Folder
