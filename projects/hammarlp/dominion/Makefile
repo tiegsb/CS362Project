@@ -87,7 +87,11 @@ randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
 randomtestcard.out: randomtestcard.c dominion.o rngs.o
 	echo "Running randomtestcard tests:" > randomtestcard.out
 	
+<<<<<<< HEAD
+	echo "-------unittest1.c:" >> randomtestcard.out
+=======
 	echo "-------randomtestcard.c:" >> randomtestcard.out
+>>>>>>> 94eed62ad3efd70d35cc28d7a33db35dbc5fe612
 	gcc -o randomtestcard -g randomtestcard.c dominion.o rngs.o $(CFLAGS)
 	./randomtestcard >> randomtestcard.out
 	gcov dominion.c >> randomtestcard.out

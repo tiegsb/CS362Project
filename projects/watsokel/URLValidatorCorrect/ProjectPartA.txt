@@ -180,6 +180,16 @@ as noted above). Like the unit tests that we wrote for dominion.c, these
 UrlValidator tests are somewhat limited as they only test a small 
 portion of the input domain space, due to the lack of random inputs. 
 
+
+Give an example of valid url being tested and an invalid url being tested by testIsValid() method
+------------------------------------------------------------------------------ 
+An example of a valid URL being tested is: “http://www.google.com:80/test1/?action=view”
+An invalid example is: “http/www.google.com:80/test1/?action=view”
+
+Sources:
+https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/RegexValidator.html
+
 Sources: https://en.wikipedia.org/wiki/Uniform_Resource_Identifier 
 https://commons.apache.org/proper/commons-validator/apidocs/org/apache/c 
 ommons/validator/routines/RegexValidator.html 

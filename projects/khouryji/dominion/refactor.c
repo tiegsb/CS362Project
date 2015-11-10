@@ -5,11 +5,9 @@ Changes to adventurer, smithy, village, steward, and outpost
 
 Adventurer changes:
 
-tempHand's array size is set to 4 instead of MAX_HAND.
-While loop condition set to drawntreasure<20 instead of <2.
-shuffle(currentPlayer,state) changed to shuffle(currentPlayer++,state)
-[state->handCount[currentPlayer]-1] changed to [state->handCount[currentPlayer+1]-1]
-in line: cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1]; 
+	I put the shuffle function call into an if condition and checked for a negative
+	return value, and return 1 if that is the case.
+
 
 Smithy changes:
 
@@ -27,9 +25,7 @@ state->numActions = state->numActions + 2;
 changed to
 state->numActions = state->playedCardCount++ + 2;
 
-discardCard(handPos,
-changed to
-discardCard(handPos--,
+
 
 Steward changes:
 

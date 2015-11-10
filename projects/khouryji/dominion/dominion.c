@@ -666,23 +666,28 @@ int caseVillage(int currentPlayer, int handPos, struct gameState *state)
       discardCard(handPos--, currentPlayer, state, 0);
       return 0;
 }
-/*All cards drawn need to be put into
-either the players hand or the discard
-pile of that player. Only 2 treasure
-cards should be added to hand*/
+/*
+case: deckCount current player < 1
+case: cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1] is copper silver or gold
+case: else
+*/
 int caseAdventurer(int currentPlayer, int handPos, struct gameState *state)
 {
   int drawntreasure=0;
   int z=0;
   int cardDrawn;
   int temphand[MAX_HAND];
+  int r;
 
   while(drawntreasure<2){
     if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
-      shuffle(currentPlayer, state);
+      if(r= shuffle(currentPlayer, state) == -1)
+      {
+        return 1;
+      }
     }
-    drawCard(currentPlayer, state);
-    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer+1]-1];//top card of hand is most recently drawn card.
+    if(r= drawCard(currentPlayer, state) == -1)
+    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
     if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
       drawntreasure++;
     else{
@@ -711,6 +716,11 @@ int caseSmithy(int currentPlayer, int handPos, struct gameState *state){
   return 0;
 }
 
+/*
+  case choice1 == 1
+  case choice1 == 2
+  else
+*/
 int caseSteward(int choice1, int choice2, int choice3, int currentPlayer, int handPos, struct gameState *state)
 {
   if (choice1 == 1)
@@ -722,7 +732,7 @@ int caseSteward(int choice1, int choice2, int choice3, int currentPlayer, int ha
       else if (choice1 == 2)
   {
     //+2 coins
-    state->coins = state->coins + 1;
+    state->coins = state->coins + 2;
   }
       else
   {
@@ -737,40 +747,40 @@ int caseSteward(int choice1, int choice2, int choice3, int currentPlayer, int ha
 
 int caseMine(int choice1, int choice2, int currentPlayer, int handPos, struct gameState *state)
 {
-      int i,j;
+  int i,j;
       j = state->hand[currentPlayer][choice1];  //store card we will trash
 
       if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
       {
-         return -1;
-      }
-    
-      if (choice2 > treasure_map || choice2 < curse)
-      {
-         return -1;
-      }
+       return -1;
+     }
 
-      if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
-      {
-         return -1;
-      }
+     if (choice2 > treasure_map || choice2 < curse)
+     {
+       return -1;
+     }
 
-      gainCard(choice2, state, 2, currentPlayer);
+     if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
+     {
+       return -1;
+     }
+
+     gainCard(choice2, state, 2, currentPlayer);
 
       //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
+     discardCard(handPos, currentPlayer, state, 0);
 
       //discard trashed card
-      for (i = 0; i < state->handCount[currentPlayer]; i++)
-      {
-         if (state->hand[currentPlayer][i] == j)
-         {
-           discardCard(i, currentPlayer, state, 0);     
-           break;
-         }
-      }
-      return 0;
-}
+     for (i = 0; i < state->handCount[currentPlayer]; i++)
+     {
+       if (state->hand[currentPlayer][i] == j)
+       {
+         discardCard(i, currentPlayer, state, 0);     
+         break;
+       }
+     }
+     return 0;
+   }
 
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {

@@ -1,0 +1,18 @@
+Group Members:
+	Rebecca Emroy: emroyr@oregonstate.edu
+	Keith Bergreen: bergreek@oregonstate.edu
+
+There are a total of 48 pieces of a URL in the 5 arrays, and those URLS are combined in different ways, so it would be 48 choose 5 (with the options flag set this would be 53 choose 5) that testIsValid() is testing.  
+
+URLs are tested by passing in an array of testObjects which are the parts of the array. Each of the elements in the testObjects array is an array of possible inputs for that type along with a boolean value to denote whether that is a valid part. An options flag is also passed to the function that modifies the path part by adding 5 extra possible paths.
+
+URLs are constructed using the format <scheme><authority><port><path><query>. A complete URL has all parts. A string is created by combining a the first scheme option with the first port option, and so on until there is a complete URL. The boolean value from all result pairs is recorded. All parts must have a result value of true for the string to be a valid URL. An assert is run against the isValid function to test that the function output matches the expected output.
+
+Example of a Valid URL
+http://go.com:80/test1 
+
+Example of an Invalid URL
+ftp://1.2.3:80/t123?action=view , because 1.2.3 has a result pair boolean value of false. It is not a valid authority.
+
+Real World Tests
+The concept of testing in this system is the same as what we have studied in this class. This is an example of a well thought out random tester. Because the objects used are more complicated, it is necessary to store results pairs instead of using simple assertions on values.

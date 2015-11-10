@@ -1,8 +1,11 @@
 -------------------------Testing Card: Village-------------------------
 
 At least 1 test failed.  Define NOISY_TEST to 1 for more information
+Total Test Runs: 5000
+Passing Tests: 0
+Failed Tests: 5000
 File 'randomtestcard.c'
-Lines executed:86.44% of 59
+Lines executed:87.10% of 62
 randomtestcard.c:creating 'randomtestcard.c.gcov'
 
 File 'dominion.c'
