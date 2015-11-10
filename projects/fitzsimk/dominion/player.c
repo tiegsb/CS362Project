@@ -192,7 +192,7 @@ int main(int argc, char* argv[]) {
 			break;
 		} else
 		if(COMPARE(command, show) == 0) {
-			if(gameStarted == FALSE) continue;
+			//if(gameStarted == FALSE) continue;
 			printHand(currentPlayer, game);
 			printPlayed(currentPlayer, game);
 			//printDiscard(currentPlayer, game);

@@ -1,0 +1,73 @@
+        -:    0:Source:cardtest3.c
+        -:    0:Graph:cardtest3.gcno
+        -:    0:Data:cardtest3.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/********************************************************
+        -:    2:*	Name: 	Robert Tang
+        -:    3:*	Class:	CS 362
+        -:    4:*	File:	unittest1.c
+        -:    5:*
+        -:    6:*	Description: 
+        -:    7:*		Test for card cost
+        -:    8:********************************************************/
+        -:    9:
+        -:   10:
+        -:   11:#include "dominion.h"
+        -:   12:#include "dominion_helpers.h"
+        -:   13:#include "dominion.c"
+        -:   14:#include <string.h>
+        -:   15:#include <stdio.h>
+        -:   16:#include "rngs.h"
+        -:   17:#include "interface.h"
+        -:   18:
+        1:   19:int main ()
+        -:   20:{
+        1:   21:	int seed = 1000;
+        1:   22:	int numPlayer = 2;
+        1:   23:	struct gameState* testGame = newGame();
+        -:   24:	
+        -:   25:
+        -:   26: 	int k[10] = {adventurer, council_room, feast, gardens, mine,
+        1:   27: 				remodel, smithy, village, baron, great_hall}; 
+        -:   28:
+        1:   29:	initializeGame(numPlayer, k, seed, testGame);
+        -:   30:	
+        1:   31:	int currentPlayer = 0;	
+        1:   32:	int handCount = testGame->handCount[currentPlayer];
+        1:   33:	int handPosition = handCount - 1;
+        1:   34:	testGame->hand[currentPlayer][handPosition] = feast; //replace
+        1:   35:	int deckSize = testGame->deckCount[currentPlayer];
+        -:   36:
+        1:   37:	int tester = playFeast(testGame, handPosition);
+        -:   38:	
+        1:   39:	printf("Test - Feast \n");
+        -:   40:	
+        -:   41:		
+        1:   42:	if (tester != 0)
+    #####:   43:		printf("Play feast - Fail \n");
+        -:   44:	else
+        1:   45:		printf("Play feast - check \n");
+        1:   46:	if (testGame->handCount[currentPlayer] != handCount - 1)
+        1:   47:		printf("feast Card Effect - Fail \n");
+        -:   48:	else
+    #####:   49:		printf("feast Card Effect -  check \n");
+        -:   50:	
+        1:   51:	if (testGame->hand[currentPlayer][handPosition] != feast)
+    #####:   52:		printf("feast Card Not In Hand - check \n");
+        -:   53:	else
+        1:   54:		printf("feast Card Not In Hand  - check \n");
+        -:   55:	
+        1:   56:		if (testGame->playedCards[testGame->playedCardCount] == feast)
+    #####:   57:		printf("feast Card Placed in Played - check \n");
+        -:   58:	else
+        1:   59:		printf("feast Card Placed in Played - fail \n");
+        -:   60:	
+        -:   61:		
+        1:   62:	if (testGame->deckCount[currentPlayer] != deckSize)
+    #####:   63:		printf("feast Card Draw - Fail \n");
+        -:   64:	else
+        1:   65:		printf("feast Card Draw - check \n");
+        1:   66:	return 0;
+        -:   67:	
+        -:   68:}

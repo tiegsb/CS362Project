@@ -55,6 +55,13 @@ cardtest3: cardtest3.c dominion.o rngs.o
 cardtest4: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest4 -g cardtest4.c dominion.c rngs.c $(CFLAGS)
 
+# random tests
+randomtestcard: randomtestcard.c dominion.o rngs.o
+	gcc -o randomtestcard -g randomtestcard.c dominion.c rngs.c $(CFLAGS)
+
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.c rngs.c $(CFLAGS)
+
 # unittestresults.out
 unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c cardtest3.c cardtest4.c dominion.o rngs.o
 	rm -f unittestresults.out
@@ -108,6 +115,26 @@ unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c
 	gcov -b dominion.c >> unittestresults.out
 	gcov -b cardtest4.c >> unittestresults.out
 
+# randomtestcard.out
+randomtestcard.out: randomtestcard.c dominion.o rngs.o
+	rm -f randomtestcard.out
+	echo "Result for running randomtestcard:" >> randomtestcard.out
+
+	gcc -o randomtestcard -g randomtestcard.c dominion.c rngs.c $(CFLAGS)
+	./randomtestcard >> randomtestcard.out
+	gcov -b dominion.c >> randomtestcard.out
+	gcov -b randomtestcard.c >> randomtestcard.out
+
+# randomtestadventurer.out
+randomtestadventurer.out: randomtestadventurer.c dominion.o rngs.o
+	rm -f randomtestadventurer.out
+	echo "Result for running randomtestadventurer:" >> randomtestadventurer.out
+
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.c rngs.c $(CFLAGS)
+	./randomtestadventurer >> randomtestadventurer.out
+	gcov -b dominion.c >> randomtestadventurer.out
+	gcov -b randomtestadventurer.c >> randomtestadventurer.out
+
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
@@ -116,3 +143,4 @@ all: playdom player testDrawCard testBuyCard badTestDrawCard
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so
 	rm -f unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 unittestresults.out
+	rm -f randomtestcard.out randomtestadventurer.out randomtestcard randomtestadventurer randomtestall.out

@@ -1,0 +1,59 @@
+Kayla Fitzsimmons
+Jana Gallina
+Anne Lindenberg
+CS362
+Project Part A
+
+
+Explain testIsValid Function of UrlValidator test code.
+
+The testIsValid function is a member of the UrlValidatorTest class, which extends the junit.framework.TestCase class. There are two 
+testIsValid functions in the source code.  The first testIsValid function takes no parameters, and is overloading the other testIsValid 
+function which takes in two parameters.  It is also acting as a driver function for the second testIsValid function. The testIsValid function, 
+that takes two parameters is called with the following two arguments. The first argument provided to the 'inner' testIsValid function is an 
+array of testUrlParts objects. The testUrlParts argument is composed of five arrays of ResultPair objects: testUrlScheme, testUrlAuthority, 
+testUrlPort, testPath and testUrlQuery. This array of objects is iterated over to generate each part of the url to be tested. The second 
+argument is an options flag, UrlValidator.ALLOW_ALL_SCHEMES. This flag, allows all validly formatted schemes to pass validation 
+instead of supplying a set of valid schemes. This flag is set in the parameterless testIsValid function, so we know that the inner is
+TestValid function will be testing all of the valid schemes defined in the UrlValidatorTest test data. 
+Next, a function called setUp is called, which sets the testPartsIndex to zero for all testParts. Inside of the testIsValid function (with parameters),
+in a while loop with a conditional check, the  incrementTestPartsInde function is called to increment the correspondng index in the testPartsIndex 
+array for each part of the url is added to the buffer string. After the isValid function is called with the generated url, if the result is true for all scheme, 
+authority, port, path, and query parts, the url is printed.
+ 
+Give how many total number of urls it is testing. Also, explain how it is building all the urls. 
+
+The testUrlScheme determines the amount of url’s testing from scheme, authority, port, path, and query. The urls are built by loading each test 
+part in the test parts index into a buffer, and a boolean is updated as each url part is added. If a part of the url is invalid, then the expected result 
+for that url will stay invalid despite the addition of any other correct url parts to the buffer. The buffer is then turned into a string and is fed to the 
+isValid function in the UrlValidation object. The result is compared to the expected result. If the value is true then it prints true values. The test we
+ were provided did not test all path options, but it was supposed to test all schemes.
+
+Lengths of Object Arrays in testUrlParts
+testUrlScheme = 9
+testUrlAuthoirty = 19
+testUrlPort= 7
+testPath = 10
+testUrlQuery = 3
+
+If you were to calculate the number of urls mathematically, by the rule of products, the number of url’s we would expect testIsValid to be testing is 35910. However, 
+the number of tests that testIsValid is actually testing, is 31920.  There is a bug in the incrementTestPartsIndex function that results in it prematurely returning false. 
+For example, the function returns false when testPartsIndex is equal to {8,0,0,0,0}, when instead it should return false only when testPartsIndex is equal 
+to {8,18, 6, 9, 2}.
+
+Give an example of valid url being tested and an invalid url being tested by testIsValid() method.  
+valid:
+http://go.com:80/test1
+invalid:
+http:// www.google.com :80/../?action=view
+
+Do you think that a real world test (URL Validator's testIsValid() test in this case) is very different than the unit tests and card tests that we wrote 
+(in terms of concepts & complexity)? Explain in few lines. 
+
+Conceptually, these tests are very similar to the tests we wrote for the dominion code base. The testIsValid function checks that the isValid function behaves as 
+expected for a predefined set of inputs, as determined by a predefined set of expected outputs. Their approach was to generate unit tests with pseudo random 
+url combinations where each part of the url could be checked individually against hard coded ‘expected’ results. In terms of complexity, the UrlValidator code was 
+constructed using an object oriented testing design, which was something that was not a requirement for any of the dominion tests. These tests also used 
+bitwise operators which can make it confusing to debug.  Neither of these design choices necessarily make their tests more complex, if anything the object 
+oriented approach makes it easier to follow.
+

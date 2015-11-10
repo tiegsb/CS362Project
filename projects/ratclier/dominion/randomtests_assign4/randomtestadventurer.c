@@ -16,6 +16,7 @@
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "unittest_helpers.h"
+#include "randomtest_helpers.h"
 
 #define testRuns 30000
 
@@ -44,17 +45,6 @@
 // have finished revealing cards. If you run out of cards after shuffling
 // and still only have one treasure, you get just that one treasure.
 //
-
-// Influenced by code from the following webpage:
-// http://stackoverflow.com/questions/9571738/picking-random-number-between-two-points-in-c
-//
-int randomByRange(int min, int max)
-{
-    int diff = max - min;
-    return (int) (((double)(diff+1)/RAND_MAX) * rand() + min);
-}
-
-
 int testAdventurerCard(struct gameState *state)
 {
     struct gameState *origState;  // copy of game state
@@ -135,16 +125,15 @@ int testAdventurerCard(struct gameState *state)
 
 int main(int argc, char *argv[])
 {
-    int numPlayers = 2;         // number of players
-    int randomSeed = 1000;      // random seed for the game
-    //struct gameState *state;    // holds the updated game state
-    int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
-    int idx = 0;                // loop iterator
-    int idx2 = 0;               // loop iterator, misc value holder
-    int card = 0;
-    int treasureCardCount = 0;
-    int deckSize = 0;
-    int testRunNum = 0;
+    int numPlayers        = 2;     // number of players
+    int randomSeed        = 1000;  // random seed for the game
+    int idx               = 0;     // loop iterator
+    int idx2              = 0;     // loop iterator, misc value holder
+    int card              = 0;     // for card assignment loops
+    int treasureCardCount = 0;     // holds running count of treasure cards
+    int deckSize          = 0;     // holds random size of deck
+    int testRunNum        = 0;     // which test run we're on
+    int kingdomCards[10]  = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
 
     // Seed the randomizer
     //
@@ -246,8 +235,6 @@ int main(int argc, char *argv[])
         //
         deckSize = randomByRange(9, MAX_DECK - 1);
 
-        // TEST 2: random deck size up to MAX_DECK, one treasure card
-        //
         for(idx = 0; idx < numPlayers; idx++)
         {
             printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
@@ -297,8 +284,6 @@ int main(int argc, char *argv[])
 
         deckSize = randomByRange(0, 9);
 
-        // TEST 3: tiny deck size, random cards in deck
-        //
         for(idx = 0; idx < numPlayers; idx++)
         {
             printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");

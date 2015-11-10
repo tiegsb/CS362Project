@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 	srand(time(NULL));
 	testSmithy();
     return 0;
+    
 }
 
 void testSmithy() {
