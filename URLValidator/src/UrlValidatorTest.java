@@ -59,7 +59,7 @@ public class UrlValidatorTest extends TestCase {
 		 new urlPart("ht1tp://", true),
 		 new urlPart("1http://", false),
 		 new urlPart("://", false),
-		 new urlPart("ht.tp://", false),
+		 new urlPart("ht.tp://", true),
 		 new urlPart("ht:tp://", false),
 		 new urlPart("ht/tp://", false),
 		 new urlPart("ht!tp://", false),
@@ -68,6 +68,9 @@ public class UrlValidatorTest extends TestCase {
    
    urlPart[] authority = new urlPart[] {
 		 new urlPart("www.google.com", true),
+		 new urlPart("www.google.uk", true),
+		 new urlPart("www.google.u", false),
+		 new urlPart("www.google.in", true),
 		 new urlPart("www.google.c123om", false),
 		 new urlPart("abc.google.com", true),
 		 new urlPart("01234567890.google.com", true),
@@ -218,11 +221,28 @@ public class UrlValidatorTest extends TestCase {
 	   
 	   queryPartition();
 	   
+	   unitTest();	   
    }
    
-   public void testAnyOtherUnitTest()
+   public void unitTest()
    {
+	   String url;
+	   boolean expected;
 	   
+	   for (int schemeIt = 0; schemeIt < scheme.length; schemeIt++){
+		   for (int authIt = 0; authIt < authority.length; authIt++){
+			   for (int portIt = 0; portIt < port.length; portIt++){
+				   for (int pathIt = 0; pathIt < path.length; pathIt++){
+					   for (int queryIt = 0; queryIt < query.length; queryIt++){
+						   url = scheme[schemeIt].url + authority[authIt].url + port[portIt].url + path[pathIt].url + query[queryIt].url;
+						   expected = scheme[schemeIt].valid & authority[authIt].valid & port[portIt].valid & path[pathIt].valid & query[queryIt].valid;
+						   
+						   printTest(url, expected);
+					   }
+				   }  
+			   } 
+		   }
+	   }
    }
    
    public void printTest(String url, Boolean expected)
@@ -233,12 +253,11 @@ public class UrlValidatorTest extends TestCase {
 	   
 	   try {
 		   assertEquals(expected, result);
-		   System.out.print("PASS");
+		   //System.out.printf("PASS - Test URL: %s Expected: %s Result: %s\n",url, expected, result);
 	   }
 	   catch(AssertionError e){
-		   System.out.print("FAIL");
+		   System.out.printf("FAIL - Test URL: %s Expected: %s Result: %s\n",url, expected, result);
 	   }
-	   System.out.printf(" - Test URL: %s Expected: %s Result: %s\n",url, expected, result);
    }
    /**
     * Create set of tests by taking the testUrlXXX arrays and
