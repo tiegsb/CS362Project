@@ -297,10 +297,10 @@ public class UrlValidatorTest extends TestCase {
 	   fragmentPartition();
 
 	   //unit testing
-	   unitTest();	   
+	   testUnitTest();	   
    }
    
-   public void unitTest()
+   public void testUnitTest()
    {
 	   String url;
 	   boolean expected;
