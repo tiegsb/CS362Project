@@ -199,7 +199,7 @@ public class UrlValidatorTest extends TestCase {
    {
 	   String url;
 	   int failCount = 0;
-	   int testCount = 0;.
+	   int testCount = 0;
 
 	   for(int i = 0; i < authority.length; i++){
 		   url = "http://" + authority[i].url;
